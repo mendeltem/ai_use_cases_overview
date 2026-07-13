@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Use Cases · Overview · Evidence · Growth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16232B; --ink-soft:#3C525E; --ink-faint:#6E828C;
+    --paper:#EEF0EC; --surface:#FBFBF9; --surface-2:#F4F5F1;
+    --line:#D5DAD3; --line-strong:#BFC6BD;
+    --petrol:#0E6E6C; --petrol-dark:#0A4F4E;
+    --solid:#2E7D4F; --solid-bg:#E4F0E7;
+    --mid:#B47D12; --mid-bg:#F5ECD6;
+    --thin:#B4462F; --thin-bg:#F3E1DB;
+    --prod:#0E6E6C; --early:#3E8A6B; --pilot:#B47D12; --research:#8B6BA0;
+    --g-exp:#1668B0; --g-strong:#2F7DB8; --g-steady:#6C9BC0; --g-nascent:#94A0A8;
+    --shadow:0 1px 2px rgba(22,35,43,.06), 0 6px 20px rgba(22,35,43,.05);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',system-ui,sans-serif; font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;}
+  a{color:var(--petrol)}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 22px}
+
+  header.top{background:linear-gradient(180deg,#12242C 0%,#132A31 100%); color:#EAF0EE; position:relative; overflow:hidden; border-bottom:3px solid var(--petrol);}
+  header.top::before{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--petrol-dark) 1px,transparent 1px),linear-gradient(90deg,var(--petrol-dark) 1px,transparent 1px); background-size:34px 34px; opacity:.14; pointer-events:none;}
+  .top .wrap{position:relative; padding-top:34px; padding-bottom:30px}
+  .topbar{display:flex; justify-content:space-between; align-items:flex-start; gap:16px}
+  .eyebrow{font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase; color:#7FD0C4; margin:0 0 12px;}
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(28px,5vw,46px); line-height:1.04; margin:0 0 14px; letter-spacing:-.01em;}
+  h1 .accent{color:#7FD0C4}
+  .thesis{max-width:680px; color:#C4D3CF; font-size:16px; margin:0 0 22px}
+  .thesis strong{color:#EAF0EE; font-weight:600}
+  .dist{display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; margin-top:6px}
+  .dist-item{min-width:90px}
+  .dist-num{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px; line-height:1}
+  .dist-label{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:#9FB4AF; margin-top:4px}
+  .dist-num.s{color:#7ED09A}.dist-num.m{color:#E7C877}.dist-num.t{color:#E39A87}.dist-num.g{color:#7BB6E6}
+  .dist-total .dist-num{color:#EAF0EE}
+
+  .langtoggle{display:inline-flex; border:1px solid rgba(127,208,196,.4); border-radius:8px; overflow:hidden; flex-shrink:0}
+  .langtoggle button{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.08em; padding:6px 12px; background:transparent; color:#9FB4AF; border:none; cursor:pointer; transition:.12s}
+  .langtoggle button[aria-pressed="true"]{background:var(--petrol); color:#fff}
+  .langtoggle button:focus-visible{outline:2px solid #7FD0C4; outline-offset:-2px}
+
+  .legend{background:var(--surface); border-bottom:1px solid var(--line)}
+  .legend .wrap{display:flex; flex-wrap:wrap; gap:22px; padding:13px 22px; align-items:center}
+  .legend h3{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-faint); margin:0 6px 0 0; font-weight:500}
+  .lg-group{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+  .lg{display:flex; align-items:center; gap:6px; font-size:12px; color:var(--ink-soft)}
+  .meter{display:inline-flex; gap:2px}
+  .seg{width:8px; height:12px; border-radius:1.5px; background:var(--line-strong)}
+  .meter.q3 .seg:nth-child(-n+3){background:var(--solid)}
+  .meter.q2 .seg:nth-child(-n+2){background:var(--mid)}
+  .meter.q1 .seg:nth-child(-n+1){background:var(--thin)}
+  .mpill{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.03em; padding:2px 8px; border-radius:20px; font-weight:500; white-space:nowrap}
+  .m-prod{background:var(--prod); color:#fff}
+  .m-early{background:var(--early); color:#fff}
+  .m-pilot{background:var(--pilot); color:#fff}
+  .m-research{background:transparent; color:var(--research); border:1px solid var(--research)}
+  .garrow{font-weight:700; font-size:13px; line-height:1}
+  .g-explosive{color:var(--g-exp)} .g-strong{color:var(--g-strong)} .g-steady{color:var(--g-steady)} .g-nascent{color:var(--g-nascent)}
+
+  .controls{position:sticky; top:0; z-index:20; background:rgba(238,240,236,.93); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-strong)}
+  .controls .wrap{padding:11px 22px}
+  .ctrl-row{display:flex; flex-wrap:wrap; gap:7px 6px; align-items:center; margin-bottom:8px}
+  .ctrl-row:last-child{margin-bottom:0}
+  .ctrl-label{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); margin-right:6px; min-width:78px}
+  .chip{font-family:'Inter',sans-serif; font-size:12px; font-weight:500; padding:5px 11px; border-radius:20px; border:1px solid var(--line-strong); background:var(--surface); color:var(--ink-soft); cursor:pointer; transition:.12s;}
+  .chip:hover{border-color:var(--petrol); color:var(--petrol)}
+  .chip[aria-pressed="true"]{background:var(--ink); color:#fff; border-color:var(--ink)}
+  .chip.q[aria-pressed="true"]{background:var(--petrol); border-color:var(--petrol)}
+  .chip.g[aria-pressed="true"]{background:var(--g-exp); border-color:var(--g-exp)}
+  .search{flex:1; min-width:170px; font-family:'Inter',sans-serif; font-size:13px; padding:6px 12px; border:1px solid var(--line-strong); border-radius:8px; background:var(--surface); color:var(--ink);}
+  .search:focus{outline:2px solid var(--petrol); outline-offset:1px; border-color:var(--petrol)}
+  .count-out{font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--ink-faint); white-space:nowrap}
+
+  main{padding:24px 0 60px}
+  .cluster{margin-bottom:10px}
+  .cluster.hidden{display:none}
+  .cl-head{display:flex; gap:15px; align-items:baseline; padding:20px 0 11px; border-top:1px solid var(--line); margin-top:10px}
+  .cl-num{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:24px; color:var(--petrol); line-height:1; min-width:34px}
+  .cl-meta{flex:1}
+  .cl-title{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin:0 0 3px; letter-spacing:-.01em}
+  .cl-kern{font-size:13px; color:var(--ink-soft); margin:0}
+  .cl-verdict{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.02em; color:var(--ink-faint); background:var(--surface-2); border:1px solid var(--line); padding:6px 11px; border-radius:7px; max-width:230px; line-height:1.4}
+  .cl-tag{font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:.14em; text-transform:uppercase; padding:2px 7px; border-radius:4px; margin-left:8px; vertical-align:middle}
+  .cl-tag.phys{background:#E4EFEE; color:var(--petrol-dark)}
+  .cl-tag.soft{background:#E7E2F0; color:#6B4E8E}
+  .cl-tag.infra{background:#EDEBE4; color:#7A6A2E}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:10px}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:11px; box-shadow:var(--shadow); overflow:hidden; transition:.14s;}
+  .card.hidden{display:none}
+  .card:hover{border-color:var(--line-strong); transform:translateY(-1px)}
+  .card-btn{width:100%; text-align:left; background:none; border:none; cursor:pointer; padding:13px 14px 12px; font-family:inherit; color:inherit; display:block;}
+  .card-btn:focus-visible{outline:2px solid var(--petrol); outline-offset:-2px}
+  .card-top{display:flex; justify-content:space-between; align-items:flex-start; gap:9px; margin-bottom:8px}
+  .uc-name{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; line-height:1.2}
+  .uc-prov{font-size:11px; color:var(--ink-faint); margin-top:2px; font-family:'JetBrains Mono',monospace; letter-spacing:.01em}
+  .card-mid{display:flex; align-items:center; gap:8px; margin:9px 0 2px; flex-wrap:wrap}
+  .metric{font-size:12.5px; color:var(--ink); line-height:1.4}
+  .metric b{font-weight:600}
+  .growthline{display:flex; align-items:center; gap:6px; margin-top:9px; font-size:11.5px; color:var(--ink-soft)}
+  .growthline .garrow{font-size:14px}
+  .growthline .glabel{font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.01em}
+  .expand-hint{font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--ink-faint); margin-top:8px; display:flex; align-items:center; gap:5px}
+  .chev{transition:transform .18s; display:inline-block}
+  .card.open .chev{transform:rotate(90deg)}
+  .detail{max-height:0; overflow:hidden; transition:max-height .28s ease; background:var(--surface-2); border-top:1px solid transparent}
+  .card.open .detail{max-height:640px; border-top-color:var(--line)}
+  .detail-in{padding:12px 14px 14px; font-size:12.5px; color:var(--ink-soft); line-height:1.55}
+  .detail-in .src{margin-top:9px; font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink-faint); letter-spacing:.01em}
+  .detail-in .src b{color:var(--ink-soft); font-weight:500}
+  .srclink{color:var(--petrol); text-decoration:none; border-bottom:1px solid rgba(14,110,108,.3); transition:.12s}
+  .srclink:hover{border-bottom-color:var(--petrol); background:rgba(14,110,108,.06)}
+  .srclink:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
+  .flag{display:inline-block; font-size:10.5px; padding:2px 8px; border-radius:5px; margin-top:9px; font-weight:500}
+  .flag.warn{background:var(--thin-bg); color:var(--thin)}
+  .flag.note{background:var(--mid-bg); color:var(--mid)}
+  .flag.good{background:var(--solid-bg); color:var(--solid)}
+  .empty{text-align:center; padding:60px 20px; color:var(--ink-faint); font-family:'JetBrains Mono',monospace; font-size:13px; display:none}
+  footer{border-top:1px solid var(--line); background:var(--surface); padding:22px 0 34px}
+  footer .wrap{font-size:12px; color:var(--ink-faint); line-height:1.6}
+  footer b{color:var(--ink-soft)}
+  @media (max-width:640px){ .cl-head{flex-wrap:wrap} .cl-verdict{max-width:none; width:100%} .dist{gap:16px} .dist-num{font-size:25px} .topbar{flex-direction:column-reverse; align-items:flex-start} }
+  @media (prefers-reduced-motion:reduce){ *{transition:none!important; scroll-behavior:auto!important} }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="h1"></h1>
+      </div>
+      <div class="langtoggle" role="group" aria-label="Language">
+        <button id="btnEN" aria-pressed="true" onclick="setLang('en')">EN</button>
+        <button id="btnDE" aria-pressed="false" onclick="setLang('de')">DE</button>
+      </div>
+    </div>
+    <p class="thesis" id="thesis"></p>
+    <div class="dist" id="dist"></div>
+  </div>
+</header>
+
+<section class="legend">
+  <div class="wrap">
+    <div class="lg-group">
+      <h3 id="legDataH"></h3>
+      <span class="lg"><span class="meter q3"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legSolid"></span></span>
+      <span class="lg"><span class="meter q2"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legMid"></span></span>
+      <span class="lg"><span class="meter q1"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legThin"></span></span>
+    </div>
+    <div class="lg-group">
+      <h3 id="legMatH"></h3>
+      <span class="lg"><span class="mpill m-prod" id="legProd"></span></span>
+      <span class="lg"><span class="mpill m-early" id="legEarly"></span></span>
+      <span class="lg"><span class="mpill m-pilot" id="legPilot"></span></span>
+      <span class="lg"><span class="mpill m-research" id="legRes"></span></span>
+    </div>
+    <div class="lg-group">
+      <h3 id="legGrowH"></h3>
+      <span class="lg"><span class="garrow g-explosive">⇈</span><span id="legGExp"></span></span>
+      <span class="lg"><span class="garrow g-strong">↑</span><span id="legGStr"></span></span>
+      <span class="lg"><span class="garrow g-steady">↗</span><span id="legGSte"></span></span>
+      <span class="lg"><span class="garrow g-nascent">◦</span><span id="legGNas"></span></span>
+    </div>
+  </div>
+</section>
+
+<section class="controls">
+  <div class="wrap">
+    <div class="ctrl-row" id="clusterChips"><span class="ctrl-label" id="lblCluster"></span></div>
+    <div class="ctrl-row"><span class="ctrl-label" id="lblMat"></span><div id="matChips" style="display:contents"></div>
+      <span class="ctrl-label" id="lblGrow" style="min-width:auto; margin-left:8px"></span><div id="growChips" style="display:contents"></div></div>
+    <div class="ctrl-row">
+      <span class="ctrl-label" id="lblQual"></span>
+      <div id="qualChips" style="display:contents"></div>
+      <input class="search" id="search" type="search" aria-label="Search use cases">
+      <span class="count-out" id="countOut"></span>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap" id="board"></div>
+  <div class="empty" id="empty"></div>
+</main>
+
+<footer><div class="wrap" id="footerTxt"></div></footer>
+
+<script>
+const UI = {
+  en:{
+    eyebrow:"AI Use Cases · As of July 2026 · Maturity · Evidence · Growth",
+    h1a:"What AI is ", h1accent:"actually", h1b:" doing<br>in the real world",
+    thesis:"From robots on the factory floor to agents in the back office — the concrete AI use cases that already run. Each rated on three axes: <strong>how far it runs</strong>, <strong>how solid the numbers are</strong>, and <strong>how fast it's growing</strong>.",
+    distUC:"Use cases", distSolid:"Solidly evidenced", distMid:"Medium evidence", distThin:"Thin evidence", distGrow:"Fast-growing", distCl:"Clusters",
+    legData:"Evidence", legSolid:"Solid · primary / peer-review", legMid:"Medium · plausible claim", legThin:"Thin · marketing / single source",
+    legMat:"Maturity", mProd:"Production", mEarly:"Early prod.", mPilot:"Pilot", mRes:"Research",
+    legGrow:"Growth", gExp:"Explosive · multiplies yearly", gStr:"Strong · double-digit+ YoY", gSte:"Steady · moderate/linear", gNas:"Nascent · too new to trend",
+    lblCluster:"Cluster", lblMat:"Maturity", lblGrow:"Growth", lblQual:"Evidence",
+    all:"All", searchPh:"Search: provider, metric, term…", countSuffix:"use cases",
+    empty:"No matches for these filters.", srcLabel:"Source:", growLabel:"Growth:", detailsHint:"Details & source",
+    physical:"Physical", software:"Software / agentic", infra:"Infrastructure",
+    footer:"<b>Source base:</b> project knowledge plus web verification, July 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Click a card for detail, source and caveat."
+  },
+  de:{
+    eyebrow:"KI-Use-Cases · Stand Juli 2026 · Reifegrad · Datenlage · Wachstum",
+    h1a:"Was KI ", h1accent:"wirklich", h1b:" schon tut,<br>in der echten Welt",
+    thesis:"Von Robotern in der Fabrik bis zu Agenten im Backoffice — die konkreten KI-Use-Cases, die real laufen. Jeder nach drei Achsen: <strong>wie weit er läuft</strong>, <strong>wie belastbar die Zahlen sind</strong> und <strong>wie schnell er wächst</strong>.",
+    distUC:"Use Cases", distSolid:"Solide belegt", distMid:"Mittlere Datenlage", distThin:"Dünne Datenlage", distGrow:"Stark wachsend", distCl:"Cluster",
+    legData:"Datenlage", legSolid:"Solide · Primär / Peer-Review", legMid:"Mittel · plausible Angabe", legThin:"Dünn · Marketing / Einzelquelle",
+    legMat:"Reifegrad", mProd:"Produktion", mEarly:"Frühe Prod.", mPilot:"Pilot", mRes:"Forschung",
+    legGrow:"Wachstum", gExp:"Explosiv · vervielfacht sich jährlich", gStr:"Stark · zweistellig+ p.a.", gSte:"Stetig · moderat/linear", gNas:"Anlaufend · zu neu für Trend",
+    lblCluster:"Cluster", lblMat:"Reifegrad", lblGrow:"Wachstum", lblQual:"Datenlage",
+    all:"Alle", searchPh:"Suche: Anbieter, Kennzahl, Begriff…", countSuffix:"Use Cases",
+    empty:"Keine Treffer für diese Filter.", srcLabel:"Quelle:", growLabel:"Wachstum:", detailsHint:"Details & Quelle",
+    physical:"Physisch", software:"Software / Agentic", infra:"Infrastruktur",
+    footer:"<b>Quellenbasis:</b> Projektwissen plus Web-Verifikation Juli 2026. Solide-Anker u.a.: Intuitive Surgical SEC-10-K, Lemonade 10-K, Aurora SEC-8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operativ), John Deere See & Spray (Peer-Review), IFR World Robotics 2025 (4,66 Mio. Industrieroboter, +9 % YoY). Wachstums-Signale zeigen die beste aktuelle Kennzahl je Fall; wo Wachstum ein Firmenziel statt realisiert ist, steht das auf der Karte. Effizienz-Prozente ohne „solide\"-Kennzeichnung sind überwiegend Firmenangaben — richtungssicher, nicht punktgenau. Klick auf eine Karte öffnet Detail, Quelle und Vorbehalt."
+  }
+};
+
+const MATS = [
+  {k:"prod", uiKey:"mProd", cls:"m-prod"},
+  {k:"early", uiKey:"mEarly", cls:"m-early"},
+  {k:"pilot", uiKey:"mPilot", cls:"m-pilot"},
+  {k:"research", uiKey:"mRes", cls:"m-research"}
+];
+const QUAL_LABELS = {en:{3:"Solid",2:"Medium",1:"Thin"}, de:{3:"Solide",2:"Mittel",1:"Dünn"}};
+const GROW = {
+  explosive:{glyph:"⇈", cls:"g-explosive", uiKey:"gExp"},
+  strong:{glyph:"↑", cls:"g-strong", uiKey:"gStr"},
+  steady:{glyph:"↗", cls:"g-steady", uiKey:"gSte"},
+  nascent:{glyph:"◦", cls:"g-nascent", uiKey:"gNas"}
+};
+const GROW_LABELS = {en:{explosive:"Explosive",strong:"Strong",steady:"Steady",nascent:"Nascent"}, de:{explosive:"Explosiv",strong:"Stark",steady:"Stetig",nascent:"Anlaufend"}};
+
+// cat: phys | soft | infra
+const CLUSTERS = [
+  {n:1, cat:"phys", short:{en:"mobility & transport",de:"Mobilität & Transport"},
+    title:{en:"Mobility & transport",de:"Mobilität & Transport"},
+    kern:{en:"Vehicles that drive, fly and sail themselves — the most visible and fastest-scaling physical AI.",de:"Fahrzeuge, die selbst fahren, fliegen und segeln — die sichtbarste und am schnellsten skalierende Physical AI."},
+    verdict:{en:"Robotaxis & trucks solidly evidenced; eVTOL still in certification.",de:"Robotaxis & Trucks solide belegt; eVTOL noch in Zertifizierung."}},
+  {n:2, cat:"phys", short:{en:"warehouse & energy",de:"Lager & Energie"},
+    title:{en:"Physical flows: warehouse & energy",de:"Physische Ströme: Lager & Energie"},
+    kern:{en:"Directs goods and energy flows — from the parcel to the ore to the electricity.",de:"Dirigiert Güter- und Energieströme — vom Paket über den Rohstoff bis zum Strom."},
+    verdict:{en:"Inventory counts solid, efficiency percentages mostly self-reported.",de:"Bestandszahlen solide, Effizienz-Prozente meist selbst-berichtet."}},
+  {n:3, cat:"phys", short:{en:"industry & humanoids",de:"Industrie & Humanoide"},
+    title:{en:"Robots at work: industry & humanoids",de:"Roboter am Werk: Industrie & Humanoide"},
+    kern:{en:"The factory floor — a mature 4.66M-robot base plus the humanoids just entering production.",de:"Die Fabrikhalle — eine reife Basis von 4,66 Mio. Robotern plus die gerade anlaufenden Humanoiden."},
+    verdict:{en:"Industrial base rock-solid (IFR); humanoids explosive but early.",de:"Industriebasis grundsolide (IFR); Humanoide explosiv, aber früh."}},
+  {n:4, cat:"phys", short:{en:"agriculture",de:"Landwirtschaft"},
+    title:{en:"Agriculture",de:"Landwirtschaft"},
+    kern:{en:"Monitors animals, doses water and herbicide, spots disease.",de:"Überwacht Tiere, dosiert Wasser und Herbizid, erkennt Krankheiten."},
+    verdict:{en:"See & Spray independently confirmed; otherwise vendor-driven.",de:"See & Spray unabhängig belegt; sonst herstellergetrieben."}},
+  {n:5, cat:"phys", short:{en:"medicine & the body",de:"Medizin & Körper"},
+    title:{en:"Medicine & the body",de:"Medizin & Körper"},
+    kern:{en:"Not paperwork — the operation itself. Millions of robot-assisted surgeries; first AI drug in Phase III.",de:"Nicht Papierkram, sondern Eingriff. Millionen OPs roboterassistiert; erster KI-Wirkstoff in Phase III."},
+    verdict:{en:"Surgical robots & studies solid; pharma time advantage unproven.",de:"OP-Roboter & Studien solide; Pharma-Zeitvorteil unbewiesen."}},
+  {n:6, cat:"phys", short:{en:"hazardous zones",de:"Gefahrenzonen"},
+    title:{en:"Hazardous zones",de:"Gefahrenzonen"},
+    kern:{en:"Takes over fires, disasters, inspection at height and depth.",de:"Übernimmt Brände, Katastrophen, Inspektion in Höhe und Tiefe."},
+    verdict:{en:"Deployments documented, but quantified benefit is thin.",de:"Einsätze dokumentiert, aber quantifizierter Nutzen dünn."}},
+  {n:7, cat:"phys", short:{en:"science & forecasting",de:"Wissenschaft & Vorhersage"},
+    title:{en:"Science & forecasting",de:"Wissenschaft & Vorhersage"},
+    kern:{en:"Sees patterns no human can — weather, proteins, materials, emissions from orbit.",de:"Sieht Muster, die kein Mensch sieht — Wetter, Proteine, Materialien, Emissionen aus dem Orbit."},
+    verdict:{en:"Best evidence in the set: peer review and a Nobel Prize.",de:"Beste Datenlage: Peer-Review und ein Nobelpreis."}},
+  {n:8, cat:"soft", short:{en:"knowledge-work agents",de:"Wissensarbeit-Agenten"},
+    title:{en:"Knowledge-work agents",de:"Wissensarbeit-Agenten"},
+    kern:{en:"Software agents that code, answer customers, do legal work, sell and translate — the fastest-revenue-growing layer.",de:"Software-Agenten, die programmieren, Kunden bedienen, Recht bearbeiten, verkaufen und übersetzen — die umsatzstärkste Wachstumsebene."},
+    verdict:{en:"Revenue curves steepest here; autonomy depth still limited.",de:"Umsatzkurven hier am steilsten; autonome Tiefe noch begrenzt."}},
+  {n:9, cat:"soft", short:{en:"security & fraud",de:"Security & Fraud"},
+    title:{en:"Defends systems: security & fraud",de:"Systeme verteidigen: Security & Fraud"},
+    kern:{en:"Protects accounts and critical infrastructure — mostly invisibly. Because attackers use AI, AI defense is mandatory.",de:"Schützt Konten und kritische Infrastruktur — meist unsichtbar. Weil Angreifer KI nutzen, ist KI-Verteidigung Pflicht."},
+    verdict:{en:"Deployment & regulation real, impact percentages vendor-heavy.",de:"Einsatz & Regulierung real, Wirkungs-Prozente vendor-lastig."}},
+  {n:10, cat:"soft", short:{en:"back office & bureaucracy",de:"Backoffice & Bürokratie"},
+    title:{en:"Back office & bureaucracy",de:"Backoffice & Bürokratie"},
+    kern:{en:"Healthcare's biggest time sink is paperwork, not medicine. Transfers to any administration.",de:"Der größte Zeitfresser im Gesundheitswesen ist Papier, nicht Medizin. Überträgt sich auf jede Verwaltung."},
+    verdict:{en:"Claims & documentation partly peer-reviewed; RCM softer.",de:"Claims & Doku teils peer-reviewed; RCM weicher."}},
+  {n:11, cat:"infra", short:{en:"the city's background",de:"Hintergrund der Stadt"},
+    title:{en:"The city in the background",de:"Die Stadt im Hintergrund"},
+    kern:{en:"Traffic lights, waste sorting, cleaning, data-center cooling — steered without residents noticing.",de:"Ampeln, Müllsortierung, Reinigung, Rechenzentrums-Kühlung — gesteuert, ohne dass Bewohner es merken."},
+    verdict:{en:"Traffic lights academically confirmed, the rest vendor-driven.",de:"Ampeln akademisch belegt, Rest herstellergetrieben."}},
+  {n:12, cat:"infra", short:{en:"enablers",de:"Enabler"},
+    title:{en:"Enablers",de:"Enabler"},
+    kern:{en:"The layer everything else needs: robot foundation models, digital twins, connectivity.",de:"Die Ebene, die alles andere braucht: Roboter-Foundation-Models, Digital Twins, Konnektivität."},
+    verdict:{en:"Foundation models exploding; twins & 5G mature enablers.",de:"Foundation Models explodieren; Twins & 5G reife Enabler."}}
+];
+
+// helper to keep entries compact: [cluster, prov, mat, q, growthTier, name{}, growLabel{}, metric{}, detail{}, src{}, flagT, flagX{}]
+function U(c,prov,mat,q,g,name,glab,metric,detail,src,ft,fx){return {c,prov,mat,q,g,name,glab,metric,detail,src,flag:{t:ft,x:fx}};}
+const E=(en,de)=>({en,de});
+
+const UC = [
+  // ---- Cluster 1: Mobility ----
+  U(1,"Waymo, Baidu Apollo Go","prod",3,"explosive",
+    E("Robotaxis / autonomous driving","Robotaxis / autonomes Fahren"),
+    E("50k→500k rides/wk in 2 yrs (10×)","50k→500k Fahrten/Wo in 2 J. (10×)"),
+    E("<b>~500k paid rides/week</b>, 20M+ lifetime; expanding to 14+ US cities","<b>~500k bezahlte Fahrten/Woche</b>, 20 Mio+ gesamt; Ausbau auf 14+ US-Städte"),
+    E("Waymo runs ~500k paid rides/week (mid-2026), up from ~50k two years earlier. On 8 Jul 2026 it added four US cities (14+ total); target 1M/week by year-end (independent forecast ~775k). Baidu Apollo Go leads globally at 350k+/week.","Waymo fährt ~500k bezahlte Fahrten/Woche (Mitte 2026), von ~50k zwei Jahre zuvor. Am 8.7.2026 vier neue US-Städte (14+ gesamt); Ziel 1 Mio/Woche zum Jahresende (unabh. Prognose ~775k). Baidu Apollo Go global vorn: 350k+/Woche."),
+    E("Waymo / CNBC (8 Jul 2026); Alphabet Q1-2026","Waymo / CNBC (8.7.2026); Alphabet Q1-2026"),
+    "good", E("ride volume regulated-tracked","Fahrtvolumen reguliert erfasst")),
+  U(1,"Aurora, Kodiak, Waabi, Gatik","early",3,"strong",
+    E("Autonomous trucks","Autonome Trucks"),
+    E("0→100k+ driverless miles since Apr 2025","0→100k+ fahrerlose Meilen seit Apr 2025"),
+    E("<b>100,000+ driverless miles</b>, zero attributed collisions, two commercial routes","<b>100.000+ fahrerlose Meilen</b>, null verschuldete Kollisionen, zwei kommerzielle Strecken"),
+    E("Aurora launched the first driverless commercial trucking on public roads in late April 2025 (Dallas–Houston), now also Fort Worth–El Paso. Kodiak reports 2.8M+ autonomous miles. Ramping, geographically/weather-limited.","Aurora startete Ende April 2025 den ersten fahrerlosen Lkw-Betrieb (Dallas–Houston), jetzt auch Fort Worth–El Paso. Kodiak meldet 2,8 Mio+ autonome Meilen. Im Hochlauf, geografisch/witterungsbegrenzt."),
+    E("Aurora SEC 8-K (Q3 2025); Kodiak SEC 425","Aurora SEC-8-K (Q3 2025); Kodiak SEC-425"),
+    "good", E("SEC filing","SEC-Filing")),
+  U(1,"Joby, EHang, Archer","early",2,"nascent",
+    E("eVTOL / flying taxis","eVTOL / Flugtaxis"),
+    E("China commercial; US cert pending","China kommerziell; US-Zertifizierung offen"),
+    E("China: EHang commercial. US: Joby first to clear <b>FAA Stage 4</b>, Phase-5 flight tests ongoing","China: EHang kommerziell. USA: Joby als erster <b>FAA Stage 4</b> abgeschlossen, Phase-5-Tests laufen"),
+    E("EHang runs commercial flights in China. Joby completed FAA Stage 4 (Mar 2026) and flew a JFK–Manhattan demo; type-cert targeted end-2026, but independent analysts lean mid-2027 (20–30% odds). Archer trails at Stage 3–4 with a UAE dual-track.","EHang fliegt kommerziell in China. Joby schloss FAA Stage 4 ab (März 2026), Demo-Flug JFK–Manhattan; TC-Ziel Ende 2026, unabh. Analysten eher Mitte 2027 (20–30%). Archer dahinter (Stage 3–4), UAE-Doppelstrategie."),
+    E("FAA; The Air Current; Low Altitude Economy","FAA; The Air Current; Low Altitude Economy"),
+    "note", E("US timeline uncertain","US-Zeitplan unsicher")),
+  U(1,"Yara Birkeland, Kongsberg","early",2,"steady",
+    E("Autonomous ships","Autonome Schiffe"),
+    E("first autonomous line ferry live","erste autonome Linienfähre in Betrieb"),
+    E("First autonomous electric container ship & line ferry (Norway); market ~$13B by 2030","Erstes autonomes E-Containerschiff & Linienfähre (Norwegen); Markt ~$13 Mrd bis 2030"),
+    E("Yara Birkeland (electric, autonomous) operates in Norway; Kongsberg supplies the autonomy stack. Still a handful of vessels, not a fleet.","Yara Birkeland (elektrisch, autonom) fährt in Norwegen; Kongsberg liefert die Autonomie. Noch wenige Schiffe, keine Flotte."),
+    E("Yara / Kongsberg Maritime","Yara / Kongsberg Maritime"),
+    "note", E("few vessels","wenige Schiffe")),
+  U(1,"Zipline, Wing, Meituan","prod",2,"strong",
+    E("Delivery & medical drones","Liefer- & Medizin-Drohnen"),
+    E("millions of deliveries, scaling fast","Millionen Lieferungen, skaliert schnell"),
+    E("Zipline: millions of autonomous deliveries; defibrillator in 2 vs 8 min (Sweden trials)","Zipline: Mio. autonome Lieferungen; Defibrillator in 2 statt 8 Min (Schweden-Tests)"),
+    E("Zipline and Wing run large autonomous delivery networks; medical/AED drones cut response time sharply. Effect figures partly trial-based.","Zipline und Wing betreiben große autonome Liefernetze; Medizin-/AED-Drohnen senken Reaktionszeit stark. Effektzahlen teils aus Tests."),
+    E("Zipline; Wing; trial reports","Zipline; Wing; Studienberichte"),
+    "note", E("effect partly trial-based","Effekt teils aus Tests")),
+  U(1,"Starship, Nuro","early",2,"steady",
+    E("Sidewalk delivery robots","Gehweg-Lieferroboter"),
+    E("10M+ deliveries cumulative","10 Mio+ Lieferungen kumuliert"),
+    E("Starship <b>10M+ deliveries</b>; last mile = 50–60% of logistics cost","Starship <b>10 Mio+ Lieferungen</b>; letzte Meile = 50–60 % der Logistikkosten"),
+    E("Starship has passed 10M autonomous deliveries on sidewalks; Nuro focuses on road vehicles (now also supplying an L4 stack for Uber/Lucid). Expanding city by city.","Starship über 10 Mio autonome Gehweg-Lieferungen; Nuro auf Straßenfahrzeuge fokussiert (jetzt auch L4-Stack für Uber/Lucid). Stadtweiser Ausbau."),
+    E("Starship; Nuro","Starship; Nuro"),
+    "note", E("expanding by city","stadtweiser Ausbau")),
+
+  // ---- Cluster 2: warehouse & energy ----
+  U(2,"Amazon Robotics, Ocado, Geek+","prod",2,"strong",
+    E("Warehouse robots","Lagerroboter"),
+    E("750k→1M+ robots '24→'25","750k→1M+ Roboter ’24→’25"),
+    E("<b>1M+ robots</b> across 300+ sites; ~75% of orders robot-assisted","<b>1 Mio+ Roboter</b> über 300+ Standorte; ~75 % der Bestellungen robotergestützt"),
+    E("Amazon passed 1M deployed robots on 1 Jul 2025 (up from ~750k). The 75% figure is Amazon's, relayed by the WSJ. New AI model DeepFleet claims -10% fleet travel time (self-reported).","Amazon überschritt am 1.7.2025 1 Mio. Roboter (von ~750k). Die 75 %-Angabe stammt von Amazon (vom WSJ weitergegeben). DeepFleet soll -10 % Reisezeit bringen (selbst-berichtet)."),
+    E("Amazon / TechCrunch, 1 Jul 2025","Amazon / TechCrunch, 1.7.2025"),
+    "note", E("count solid, effect self-reported","Bestandszahl solide, Effekt selbst-berichtet")),
+  U(2,"Walmart, DHL, Locus, RTS Labs","prod",2,"steady",
+    E("Logistics orchestration","Logistik-Orchestrierung"),
+    E("adoption rising, autonomy still shallow","Adoption steigt, Autonomie noch flach"),
+    E("~<b>25–30% process efficiency</b>, ~15% lower cost (sub-processes)","~<b>25–30 % Prozesseffizienz</b>, ~15 % niedrigere Kosten (Teilprozesse)"),
+    E("Agents detect delays, reroute, update the WMS — mostly decision support, not end-to-end autonomy. Independently verified percentages are scarce.","Agenten erkennen Verspätungen, routen um, aktualisieren WMS — meist Decision-Support. Unabhängig verifizierte Prozentzahlen sind knapp."),
+    E("Company figures (Walmart, DHL et al.)","Firmenangaben (Walmart, DHL u.a.)"),
+    "note", E("mostly PR figures","überwiegend PR-Zahlen")),
+  U(2,"Rio Tinto, BHP, Caterpillar, Komatsu","prod",2,"steady",
+    E("Autonomous mine fleets","Autonome Minen-Flotten"),
+    E("full autonomy at greenfield sites","Vollautonomie an Greenfield-Standorten"),
+    E("~<b>15% lower haulage unit cost</b>; Gudai-Darri launched 100% autonomous","~<b>15 % niedrigere Transport-Stückkosten</b>; Gudai-Darri startete 100 % autonom"),
+    E("Rio Tinto's Pilbara fleet runs ~15% cheaper; AutoHaul runs up to 53 autonomous trains, 326 Mt of ore in 2025. The cited \"~$500M/yr\" is an industry estimate, not an audited figure.","Rio Tintos Pilbara-Flotte ~15 % günstiger; AutoHaul bis 53 autonome Züge, 326 Mt Erz 2025. Die „~500 Mio. USD/Jahr\" sind Branchenschätzung, nicht geprüft."),
+    E("Rio Tinto SEC 6-K; Rail Journal","Rio Tinto SEC-6-K; Rail Journal"),
+    "note", E("$500M = secondary source","$500 Mio = Sekundärquelle")),
+  U(2,"Tesla Autobidder, Fluence, AutoGrid","prod",2,"steady",
+    E("Grid energy trading","Energienetz-Trading"),
+    E("scales with battery build-out","skaliert mit Batterie-Ausbau"),
+    E("Hornsdale: <b>AUD 40–50M in FCAS costs</b> cut in year one","Hornsdale: <b>40–50 Mio. AUD FCAS-Kosten</b> im ersten Jahr gesenkt"),
+    E("Autobidder autonomously trades the Hornsdale battery. The claim that algorithmic bidding \"roughly quintuples\" revenue vs. humans is a manager statement, not peer-reviewed.","Autobidder handelt die Hornsdale-Batterie autonom. Die Aussage, Bidding könne Erlöse „etwa verfünffachen\", ist eine Manager-Aussage, nicht peer-reviewed."),
+    E("RenewEconomy / AMS review","RenewEconomy / AMS-Review"),
+    "note", E("core claim not peer-reviewed","Kernaussage nicht peer-reviewed")),
+
+  // ---- Cluster 3: industry & humanoids ----
+  U(3,"FANUC, ABB, KUKA, Universal Robots","prod",3,"steady",
+    E("Industrial robots","Industrieroboter"),
+    E("4.66M installed, +9% YoY (IFR)","4,66 Mio installiert, +9 % YoY (IFR)"),
+    E("<b>4.66M robots operational</b> worldwide (2024), 542k installed that year","<b>4,66 Mio Roboter</b> weltweit im Einsatz (2024), 542k allein installiert"),
+    E("IFR World Robotics 2025: 4,664,000 industrial robots operational (+9% YoY), 542,000 installed in 2024 (4th straight year >500k). China alone holds 2M+. The mature backbone of physical AI.","IFR World Robotics 2025: 4.664.000 Industrieroboter im Einsatz (+9 % YoY), 542.000 installiert 2024 (4. Jahr in Folge >500k). China allein 2 Mio+. Das reife Rückgrat der Physical AI."),
+    E("IFR World Robotics 2025 (25 Sep 2025)","IFR World Robotics 2025 (25.9.2025)"),
+    "good", E("IFR industry data","IFR-Branchendaten")),
+  U(3,"Figure, Tesla Optimus, Unitree, AgiBot","early",2,"explosive",
+    E("Humanoid robots","Humanoide Roboter"),
+    E("2026 ships more than all prior years combined","2026 mehr Auslieferungen als alle Vorjahre"),
+    E("Figure 03 at BMW (~$25/robot-hr); Unitree 5,500+ shipped '25, targeting <b>10–20k in '26</b>","Figure 03 bei BMW (~$25/Roboterstunde); Unitree 5.500+ ’25, Ziel <b>10–20k in ’26</b>"),
+    E("Q2/Q3 2026 marks the shift from pilot to first serial production: Tesla's Optimus line ramps at Fremont, Figure runs commercially at BMW, Unitree targets 10–20k units and filed a ~$14.7B IPO. But Unitree's Q1 growth already cooled to +68% — a first consolidation signal. Broad scale-up: 2028–2030.","Q2/Q3 2026 markiert den Übergang von Pilot zu erster Serienfertigung: Optimus-Linie in Fremont im Hochlauf, Figure kommerziell bei BMW, Unitree Ziel 10–20k und ~$14,7-Mrd-IPO. Aber Unitrees Q1-Wachstum kühlte auf +68 % ab — erstes Konsolidierungssignal. Breite Skalierung: 2028–2030."),
+    E("KraneShares; BigGo; company targets","KraneShares; BigGo; Firmenziele"),
+    "note", E("2026 shipments are targets","2026er-Zahlen sind Ziele")),
+  U(3,"ICON, FBR, Built Robotics","pilot",2,"steady",
+    E("Construction robots","Baurobotik"),
+    E("from pilots toward early production","von Pilots zu früher Produktion"),
+    E("SAM100 lays 3,000 bricks/day (human: 500); ICON 3D-prints homes, NASA contract","SAM100 legt 3.000 Ziegel/Tag (Mensch: 500); ICON druckt Häuser 3D, NASA-Vertrag"),
+    E("3D-printing (ICON), bricklaying (FBR Hadrian X) and autonomous earthmoving (Built Robotics) are moving from pilots to early production. Labor shortage is the main driver.","3D-Druck (ICON), Mauern (FBR Hadrian X) und autonomer Erdbau (Built Robotics) gehen von Pilots in frühe Produktion. Fachkräftemangel treibt."),
+    E("ICON; FBR; Built Robotics","ICON; FBR; Built Robotics"),
+    "note", E("mostly pilots","überwiegend Pilots")),
+  U(3,"ASML, Applied Materials, TSMC","prod",2,"steady",
+    E("Semiconductor fab automation","Halbleiter-Fertigung"),
+    E("scales with chip demand","skaliert mit Chip-Nachfrage"),
+    E("AI cuts scrap from ~30% to <5%; detects defects 1000× smaller than a hair","KI senkt Ausschuss von ~30 % auf <5 %; erkennt Defekte 1000× kleiner als ein Haar"),
+    E("Chip fabs are among the most automated environments on earth; AI inspection and process control drive yield. Effect figures are industry-typical, not one audited source.","Chip-Fabs gehören zu den automatisiertesten Umgebungen; KI-Inspektion und Prozesskontrolle treiben die Ausbeute. Effektzahlen branchentypisch, keine geprüfte Einzelquelle."),
+    E("ASML; Applied Materials; TSMC","ASML; Applied Materials; TSMC"),
+    "note", E("industry-typical figures","branchentypische Zahlen")),
+
+  // ---- Cluster 4: agriculture ----
+  U(4,"John Deere","prod",3,"strong",
+    E("Precision spraying (See & Spray)","Präzisions-Spritzen (See & Spray)"),
+    E("0→5M+ acres, scaling fast","0→5 Mio+ Acres, skaliert schnell"),
+    E("~<b>50% less herbicide</b> — independently confirmed by peer review","~<b>50 % weniger Herbizid</b> — unabhängig durch Peer-Review bestätigt"),
+    E("Used on 5M+ acres in 2025, ~31M gallons saved. Vendor claims confirmed: Wiley 2026 found 58%, Arkansas AES ~50%, Iowa State 76% savings. Best-evidenced case in the cluster.","Einsatz auf 5 Mio+ Acres 2025, ~31 Mio Gallonen gespart. Herstellerangaben bestätigt: Wiley 2026 58 %, Arkansas AES ~50 %, Iowa State 76 %. Bestbelegter Fall des Clusters."),
+    E("Avent et al., Wiley 2026; Arkansas AES; Iowa State","Avent et al., Wiley 2026; Arkansas AES; Iowa State"),
+    "good", E("independently confirmed","unabhängig bestätigt")),
+  U(4,"Lely Astronaut, DeLaval, GEA","prod",2,"steady",
+    E("Milking robots","Melkroboter"),
+    E("50k+ installed, +18% revenue '25","50k+ installiert, +18 % Umsatz ’25"),
+    E("<b>50,000+ Astronaut robots</b> installed; disease early-warning marketed","<b>50.000+ Astronaut-Roboter</b> installiert; Krankheitsfrüherkennung beworben"),
+    E("Installed base over 50,000; Lely revenue 2025 €1.01B (+18%). Mastitis early detection is marketed but independent field studies confirming it are rare.","Installierte Basis über 50.000; Lely-Umsatz 2025 1,01 Mrd € (+18 %). Mastitis-Früherkennung beworben, unabhängige Feldstudien rar."),
+    E("Lely (company figure)","Lely (Herstellerangabe)"),
+    "note", E("health effects barely independent","Gesundheitseffekte kaum unabhängig")),
+  U(4,"DJI Agras, XAG, John Deere","prod",2,"strong",
+    E("Agricultural drones","Agrar-Drohnen"),
+    E("mass adoption in Asia","Massenadoption in Asien"),
+    E("Targeted application; <b>30–50% water</b> saved (company figure)","Gezielte Ausbringung; <b>30–50 % Wasser</b> gespart (Herstellerangabe)"),
+    E("Widely used in Asia, early production in the US/EU. Water/pesticide figures are mostly company claims.","Weit verbreitet in Asien, frühe Produktion in USA/EU. Wasser-/Pestizidzahlen überwiegend Herstellerangaben."),
+    E("Company figures (DJI, XAG)","Herstellerangaben (DJI, XAG)"),
+    "note", E("effect figures vendor","Effektzahlen vendor")),
+  U(4,"Carbon Robotics, Tortuga, Agrobot","early",2,"strong",
+    E("Harvest pickers & laser weeding","Ernte-Picker & Laser-Unkraut"),
+    E("laser weeding scaling; harvest lagging","Laser-Unkraut skaliert; Ernte hinkt"),
+    E("Carbon Robotics <b>LaserWeeder commercial</b>; fruit harvesting still pilot","Carbon Robotics <b>LaserWeeder kommerziell</b>; Fruchternte noch Pilot"),
+    E("Laser weeding is the most commercialized; robotic fruit harvesting stays hard and mostly early-stage.","Laser-Unkraut am weitesten kommerzialisiert; robotische Fruchternte bleibt schwierig und meist früh."),
+    E("Carbon Robotics; trade press","Carbon Robotics; Branchenpresse"),
+    "note", E("fruit harvest: pilot","Fruchternte: Pilot")),
+  U(4,"Stingray Marine, XpertSea, ReelData","early",1,"steady",
+    E("Aquaculture robots","Aquakultur-Roboter"),
+    E("commercial in Norway, slow spread","kommerziell in Norwegen, langsame Verbreitung"),
+    E("Laser <b>delousing without chemicals</b>; feed optimization","Laser-<b>Delousing ohne Chemie</b>; Futter-Optimierung"),
+    E("Stingray fights sea lice with lasers; XpertSea/ReelData optimize feeding. Independent effect figures are sparse; mostly company claims.","Stingray bekämpft Lachsläuse per Laser; XpertSea/ReelData optimieren Fütterung. Unabhängige Effektzahlen spärlich; überwiegend Herstellerangaben."),
+    E("Company figures","Herstellerangaben"),
+    "warn", E("impact figures thin","Wirkungszahlen dünn")),
+
+  // ---- Cluster 5: medicine ----
+  U(5,"Intuitive da Vinci, Medtronic Hugo","prod",3,"strong",
+    E("Surgical robots (assisted)","OP-Roboter (assistiert)"),
+    E("procedures +18% YoY, base +12%","OPs +18 % YoY, Basis +12 %"),
+    E("<b>11,106 da Vinci systems</b>, >3.1M procedures/yr (+18% YoY)","<b>11.106 da-Vinci-Systeme</b>, >3,1 Mio OPs/Jahr (+18 % YoY)"),
+    E("Intuitive 10-K FY2025: ~11,106 systems installed, 1,721 placed in 2025 alone, 3.1M+ procedures, revenue ~$10.06B. Medtronic Hugo got first FDA clearance 3 Dec 2025. IFR: surgery-robot sales +41% in 2024. Best-evidenced use case in the set.","Intuitive 10-K FY2025: ~11.106 Systeme installiert, 1.721 allein 2025 platziert, 3,1 Mio+ OPs, Umsatz ~10,06 Mrd USD. Hugo erste FDA-Freigabe 3.12.2025. IFR: OP-Roboter-Verkäufe +41 % 2024. Bestbelegter Fall."),
+    E("Intuitive SEC 10-K FY2025; IFR 2025; Medtronic","Intuitive SEC-10-K FY2025; IFR 2025; Medtronic"),
+    "good", E("SEC 10-K","SEC-10-K")),
+  U(5,"Insilico, Recursion, Isomorphic Labs","early",3,"strong",
+    E("AI drug discovery","KI-Wirkstoffentwicklung"),
+    E("first AI drug reaches Phase III","erster KI-Wirkstoff erreicht Phase III"),
+    E("First AI drug in <b>Phase III</b>; +98.4 mL FVC vs placebo (Nature Medicine)","Erster KI-Wirkstoff in <b>Phase III</b>; +98,4 mL FVC vs Placebo (Nature Medicine)"),
+    E("Insilico's Rentosertib (AI-identified target, generatively designed) entered Phase III in July 2026 (320 patients). Phase IIa efficacy in Nature Medicine (Jun 2025). BUT: still no approved AI drug, and the claimed time/cost advantage is not independently quantified.","Insilicos Rentosertib (KI-Target, generativ entworfen) startete Juli 2026 Phase III (320 Patienten). Phase-IIa-Wirksamkeit in Nature Medicine (Juni 2025). ABER: noch kein zugelassener KI-Wirkstoff, Zeit-/Kostenvorteil nicht unabhängig quantifiziert."),
+    E("Insilico Medicine; Nature Medicine (Jun 2025)","Insilico Medicine; Nature Medicine (Juni 2025)"),
+    "note", E("time advantage unproven","Zeitvorteil unbewiesen")),
+  U(5,"Johns Hopkins SRT-H","research",3,"nascent",
+    E("Autonomous surgery steps","Autonome Chirurgie-Schritte"),
+    E("research stage, first proof-of-concept","Forschungsstadium, erster Proof-of-Concept"),
+    E("Autonomous gallbladder phase, <b>100% success</b> (8/8 unseen cases)","Autonome Gallenblasen-Phase, <b>100 % Erfolg</b> (8/8 ungesehene Fälle)"),
+    E("SRT-H performed 17 tasks of a gallbladder removal autonomously — peer-reviewed. Caveat: ex vivo on pig cadavers; hardware doesn't yet fit standard ports. Proof of concept, not routine.","SRT-H führte 17 Aufgaben autonom aus — peer-reviewed. Einschränkung: ex vivo an Schweine-Kadavern; Hardware passt noch nicht durch Standard-Ports. Proof-of-Concept."),
+    E("Kim et al., Science Robotics (Jul 2025)","Kim et al., Science Robotics (Juli 2025)"),
+    "good", E("peer-reviewed, but research","peer-reviewed, aber Forschung")),
+  U(5,"FDA-cleared algorithms","prod",3,"strong",
+    E("Diagnostic AI (radiology)","Diagnostik-KI (Radiologie)"),
+    E("~1,451 devices cleared, curve rising","~1.451 Geräte, Kurve steigt"),
+    E("~<b>1,451 FDA AI devices</b> cumulatively, ~76% in radiology","~<b>1.451 FDA-KI-Geräte</b> kumuliert, ~76 % in der Radiologie"),
+    E("Per the official FDA list (as of Jun 2026), ~1,451 AI devices are authorized, ~1,104 in radiology. A peer-review analysis counts 168 ML devices for 2024 alone.","Laut offizieller FDA-Liste (Stand Juni 2026) ~1.451 KI-Geräte, ~1.104 Radiologie. Peer-Review-Analyse zählt 168 ML-Geräte allein für 2024."),
+    E("FDA list (tally: The Imaging Wire); PMC 2024","FDA-Liste (Tally: The Imaging Wire); PMC 2024"),
+    "good", E("FDA registry","FDA-Register")),
+  U(5,"Neocis Yomi, Dentsply Sirona","early",2,"steady",
+    E("Dental / implant robots","Zahn- / Implantat-Roboter"),
+    E("early production, steady","frühe Produktion, stetig"),
+    E("FDA-cleared robotic <b>implant surgery</b>; crowns in ~1 hr","FDA-freigegebene robotische <b>Implantat-Chirurgie</b>; Kronen in ~1 Std"),
+    E("Yomi is the FDA-cleared haptic robot for implant placement. Early production, limited independent effect data.","Yomi ist das FDA-freigegebene haptische System für Implantate. Frühe Produktion, begrenzte unabhängige Daten."),
+    E("Neocis (FDA clearance)","Neocis (FDA-Freigabe)"),
+    "note", E("limited effect data","begrenzte Wirkungsdaten")),
+
+  // ---- Cluster 6: hazardous ----
+  U(6,"Percepto, Saab, Skydio","prod",2,"steady",
+    E("Infrastructure / underwater inspection","Infrastruktur- / Unterwasser-Inspektion"),
+    E("replacing manual inspection steadily","ersetzt manuelle Inspektion stetig"),
+    E("Replaces costly/dangerous <b>diver & climber inspection</b>","Ersetzt teure/gefährliche <b>Taucher- & Kletterinspektion</b>"),
+    E("Drones inspect bridges, pipelines, wind turbines autonomously. Commercially deployed, but effect figures are company claims.","Drohnen inspizieren Brücken, Pipelines, Windräder autonom. Kommerziell, aber Effektzahlen sind Firmenangaben."),
+    E("Company figures","Herstellerangaben"),
+    "note", E("effect vendor","Effekt vendor")),
+  U(6,"Boston Dynamics Spot, DARPA","pilot",1,"nascent",
+    E("Disaster / search robotics","Katastrophen- / Suchrobotik"),
+    E("occasional deployments, no trend data","Einzeleinsätze, keine Trenddaten"),
+    E("Individual deployments (Turkey quake, Fukushima); <b>no impact statistics</b>","Einzeleinsätze (Erdbeben Türkei, Fukushima); <b>keine Wirkungsstatistik</b>"),
+    E("Spot et al. tested in earthquake and nuclear response. Quantified \"lives saved\" statistics essentially do not exist — evidence stays anecdotal.","Spot & Co. bei Erdbeben- und Nuklear-Einsätzen getestet. Quantifizierte „gerettete Leben\"-Statistiken existieren praktisch nicht — anekdotisch."),
+    E("Deployment reports (anecdotal)","Einsatzberichte (anekdotisch)"),
+    "warn", E("impact not quantified","Wirkung nicht quantifiziert")),
+  U(6,"Howe & Howe Thermite, DOK-ING","early",1,"nascent",
+    E("Firefighting robots","Feuerwehrroboter"),
+    E("individual units, no trend data","Einzelgeräte, keine Trenddaten"),
+    E("In real deployments in the US; <b>benefit anecdotal</b>","Bei echten Einsätzen in den USA; <b>Nutzen anekdotisch</b>"),
+    E("Deployed by individual fire departments; China investing heavily. Solid impact figures are missing.","Im Einsatz bei einzelnen Feuerwehren; China investiert massiv. Belastbare Wirkungszahlen fehlen."),
+    E("Deployment reports","Einsatzberichte"),
+    "warn", E("anecdotal","anekdotisch")),
+  U(6,"AI-assisted detection","pilot",1,"nascent",
+    E("Mine / ordnance clearance","Minen- / Kampfmittelräumung"),
+    E("trial stage","Erprobungsstadium"),
+    E("AI detection being trialed; <b>impact statistics missing</b>","KI-Detektion wird erprobt; <b>Wirkungsstatistik fehlt</b>"),
+    E("AI-assisted detection of mines and ordnance is in the trial stage; solid impact statistics are not available.","KI-gestützte Detektion von Minen/Kampfmitteln im Erprobungsstadium; belastbare Statistik fehlt."),
+    E("—","—"),
+    "warn", E("pilot, thin","Pilot, dünn")),
+
+  // ---- Cluster 7: science ----
+  U(7,"ECMWF AIFS, GraphCast, GenCast","prod",3,"strong",
+    E("AI weather forecasting","KI-Wettervorhersage"),
+    E("research → operational in ~2 yrs","Forschung → operativ in ~2 J."),
+    E("<b>Operational since 25 Feb 2025</b>; storm tracks up to 20% better, ~1000× less energy","<b>Operativ seit 25.2.2025</b>; Sturmbahnen bis 20 % besser, ~1000× weniger Energie"),
+    E("ECMWF put AIFS into operations (Feb 2025), the ensemble in Jul 2025 — AI in a real national weather service. GraphCast (Science 2023) and GenCast (Nature 2024) are peer-reviewed.","ECMWF nahm AIFS operativ (Feb 2025), das Ensemble Juli 2025 — KI im echten Wetterdienst. GraphCast (Science 2023) und GenCast (Nature 2024) peer-reviewed."),
+    E("ECMWF (operational); Science 2023; Nature 2024","ECMWF (operativ); Science 2023; Nature 2024"),
+    "good", E("operational + peer-reviewed","operativ + peer-reviewed")),
+  U(7,"AlphaFold (DeepMind), ESM","prod",3,"strong",
+    E("Protein folding / biology","Proteinfaltung / Biologie"),
+    E("standard tool, adoption pervasive","Standard-Werkzeug, Adoption durchgängig"),
+    E("<b>2024 Chemistry Nobel Prize</b>; standard tool in the life sciences","<b>Chemie-Nobelpreis 2024</b>; Standard-Werkzeug der Life Sciences"),
+    E("AlphaFold won the 2024 Chemistry Nobel Prize. AlphaFold 3 predicts protein-ligand and nucleic-acid complexes. Independently replicated — the highest evidence tier.","AlphaFold erhielt den Chemie-Nobelpreis 2024. AlphaFold 3 sagt Protein-Ligand-Komplexe voraus. Unabhängig repliziert — höchste Evidenzstufe."),
+    E("Nobel Prize Chemistry 2024; Nature","Nobelpreis Chemie 2024; Nature"),
+    "good", E("Nobel Prize","Nobelpreis")),
+  U(7,"MethaneSAT/EDF, Carbon Mapper, Kayrros","prod",3,"steady",
+    E("Emissions satellites","Emissions-Satelliten"),
+    E("fleet growing, but MethaneSAT lost","Flotte wächst, aber MethaneSAT verloren"),
+    E("Emissions of single facilities from orbit — <b>MethaneSAT lost Jun 2025</b>","Emissionen einzelner Anlagen aus dem Orbit — <b>MethaneSAT Juni 2025 verloren</b>"),
+    E("MethaneSAT collected a year of data over ~1,000 sites but lost contact 20 Jun 2025 (power failure) after ~15 of 60 planned months. The tech works, but the monitoring gap is real.","MethaneSAT sammelte ein Jahr Daten über ~1.000 Standorte, verlor aber am 20.6.2025 den Kontakt (Stromausfall) nach ~15 von 60 Monaten. Technik funktioniert, Überwachungslücke real."),
+    E("Science / EDF / Harvard Gazette (2025)","Science / EDF / Harvard Gazette (2025)"),
+    "good", E("failure documented","Ausfall dokumentiert")),
+  U(7,"Google DeepMind GNoME","research",3,"strong",
+    E("Materials science","Materialwissenschaft"),
+    E("2.2M structures predicted at once","2,2 Mio Strukturen auf einmal"),
+    E("<b>380,000 stable crystal structures</b> predicted","<b>380.000 stabile Kristallstrukturen</b> vorhergesagt"),
+    E("GNoME predicted 2.2M new crystal structures, 380,000 stable — per DeepMind \"nearly 800 years of knowledge\". Peer-reviewed (Nature 2023); experimental validation ongoing.","GNoME sagte 2,2 Mio Kristallstrukturen voraus, 380.000 stabil — laut DeepMind „~800 Jahre Wissen\". Peer-reviewed (Nature 2023); Validierung läuft."),
+    E("Merchant et al., Nature (Nov 2023)","Merchant et al., Nature (Nov 2023)"),
+    "good", E("Nature, but research","Nature, aber Forschung")),
+  U(7,"Argo program, Saildrone","prod",2,"steady",
+    E("Climate / ocean monitoring","Klima- / Ozean-Monitoring"),
+    E("~4,000 floats, steady expansion","~4.000 Bojen, stetiger Ausbau"),
+    E("<b>~4,000 autonomous floats</b> worldwide; 3M profiles reached (2024)","<b>~4.000 autonome Bojen</b> weltweit; 3 Mio Profile erreicht (2024)"),
+    E("The Argo program runs nearly 4,000 active floats from 30+ nations; three-millionth profile in July 2024. Solid, but less \"AI\" in the narrow sense.","Argo betreibt ~4.000 aktive Bojen aus 30+ Nationen; drei-millionstes Profil Juli 2024. Solide, aber weniger „KI\" im engeren Sinn."),
+    E("Argo / UCSD","Argo / UCSD"),
+    "note", E("more sensing than AI","eher Sensorik als KI")),
+
+  // ---- Cluster 8: knowledge-work agents (software) ----
+  U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
+    E("Coding agents","Coding-Agenten"),
+    E("Cursor $100M→$4B ARR in 18 months","Cursor $100M→$4B ARR in 18 Monaten"),
+    E("<b>Cursor ~$4B ARR</b> (Jun 2026), bought by SpaceX for $60B; AI-coding market $12.8B (2× 2024)","<b>Cursor ~$4 Mrd ARR</b> (Juni 2026), von SpaceX für $60 Mrd übernommen; KI-Coding-Markt $12,8 Mrd (2× 2024)"),
+    E("The steepest revenue curve in software history: Cursor went $100M (Jan '25) → $1B (Nov '25) → ~$4B ARR (Jun '26), then SpaceX acquired it for $60B (16 Jun 2026, all-stock). Claude Code is the fastest-growing rival. But autonomy depth is still limited — humans review, and margins are thin (retail model API costs).","Die steilste Umsatzkurve der Software-Geschichte: Cursor $100M (Jan ’25) → $1 Mrd (Nov ’25) → ~$4 Mrd ARR (Juni ’26), dann von SpaceX für $60 Mrd übernommen (16.6.2026, all-stock). Claude Code ist der am schnellsten wachsende Rivale. Aber die autonome Tiefe bleibt begrenzt — Menschen prüfen, Margen sind dünn (Retail-Modell-API-Kosten)."),
+    E("Wikipedia (Cursor); TechCrunch; The Next Web (2026)","Wikipedia (Cursor); TechCrunch; The Next Web (2026)"),
+    "note", E("ARR solid, autonomy shallow","ARR solide, Autonomie flach")),
+  U(8,"Sierra, Salesforce Agentforce, Decagon","prod",3,"explosive",
+    E("Customer service agents","Kundenservice-Agenten"),
+    E("Sierra $130M→$200M in ~2 quarters","Sierra $130M→$200M in ~2 Quartalen"),
+    E("Sierra <b>$200M ARR</b> (May 2026), 40%+ of the Fortune 50; voice overtook text","Sierra <b>$200M ARR</b> (Mai 2026), 40 %+ der Fortune 50; Voice überholte Text"),
+    E("Sierra hit $200M ARR in May 2026 (from ~$130M end-2025), $950M round at $15.8B, 40%+ of the Fortune 50. Resolution rates 70%+ at named clients. One of the fastest ARR ramps in enterprise software.","Sierra erreichte $200M ARR im Mai 2026 (von ~$130M Ende 2025), $950M-Runde @ $15,8 Mrd, 40 %+ der Fortune 50. Resolution-Raten 70 %+ bei benannten Kunden. Einer der schnellsten ARR-Hochläufe."),
+    E("Sacra; CNBC; Sierra (May 2026)","Sacra; CNBC; Sierra (Mai 2026)"),
+    "note", E("ARR solid, some claims vendor","ARR solide, Teilangaben vendor")),
+  U(8,"Harvey, Legora, Thomson Reuters","prod",3,"explosive",
+    E("Legal agents","Legal-Agenten"),
+    E("$100M→$300M ARR in 10 months (3×)","$100M→$300M ARR in 10 Monaten (3×)"),
+    E("Harvey <b>$300M ARR</b> (3× YoY), $11B valuation; 1→13 trillion tokens/month","Harvey <b>$300M ARR</b> (3× YoY), $11 Mrd Bewertung; 1→13 Bio. Tokens/Monat"),
+    E("Harvey reached $300M ARR (June 2026, 3× since Aug 2025), $11B valuation; token usage grew from 1T to 13T/month since January. RSGI (independent): 68% of firms deploy agents, power users save 11 hrs/week.","Harvey erreichte $300M ARR (Juni 2026, 3× seit Aug 2025), $11 Mrd Bewertung; Token-Nutzung 1→13 Bio/Monat seit Januar. RSGI (unabhängig): 68 % deployen Agents, Power-User sparen 11 h/Woche."),
+    E("Startup Riders; Sacra; RSGI (Jun 2026)","Startup Riders; Sacra; RSGI (Juni 2026)"),
+    "good", E("ARR + independent adoption study","ARR + unabhängige Adoptionsstudie")),
+  U(8,"11x, Clay, 6sense, Agentforce","early",2,"strong",
+    E("Sales & marketing agents","Sales- & Marketing-Agenten"),
+    E("market ~$58B→$240B by 2030 (~33% CAGR)","Markt ~$58→$240 Mrd bis 2030 (~33 % CAGR)"),
+    E("4–7× conversions, up to 70% cost savings; market ~<b>33% CAGR</b>","4–7× Conversions, bis 70 % Kostenersparnis; Markt ~<b>33 % CAGR</b>"),
+    E("Outbound and lead-gen agents scale fast, but closing stays human. Growth figures are market forecasts; per-vendor ROI varies.","Outbound- und Lead-Gen-Agenten skalieren schnell, aber der Abschluss bleibt menschlich. Wachstumszahlen sind Marktprognosen; ROI je Anbieter variiert."),
+    E("Market forecasts; vendor figures","Marktprognosen; Herstellerangaben"),
+    "note", E("market forecast, not realized","Marktprognose, nicht realisiert")),
+  U(8,"OpenAI Deep Research, Perplexity, Claude","early",2,"strong",
+    E("Deep research / knowledge","Deep Research / Wissen"),
+    E("very high adoption, autonomy 10–20%","sehr hohe Adoption, Autonomie 10–20 %"),
+    E("Very high adoption; <b>autonomy depth 10–20%</b>; brake: hallucination","Sehr hohe Adoption; <b>autonome Tiefe 10–20 %</b>; Bremse: Halluzination"),
+    E("Research agents are widely used but stall at pilot depth — hallucination and verification are the brakes. Adoption high, true autonomy low.","Research-Agenten weit genutzt, aber im Pilot-Stadium — Halluzination und Verifikation bremsen. Adoption hoch, echte Autonomie niedrig."),
+    E("Industry landscape 2026","Branchenlage 2026"),
+    "note", E("adoption ≠ autonomy","Adoption ≠ Autonomie")),
+  U(8,"Workday/Paradox, LinkedIn, HeyMilo","early",2,"strong",
+    E("HR / recruiting agents","HR- / Recruiting-Agenten"),
+    E("HR-AI adoption 26%→43%","HR-KI-Adoption 26 %→43 %"),
+    E("HR-AI 26%→43%; <b>3× screening capacity</b>, 70–85% faster time-to-hire","HR-KI 26 %→43 %; <b>3× Screening-Kapazität</b>, 70–85 % schnellere Time-to-Hire"),
+    E("Screening and scheduling agents scale fast; adoption jumped from 26% to 43%. Brake: candidate trust and anti-discrimination rules.","Screening- und Terminagenten skalieren schnell; Adoption sprang von 26 % auf 43 %. Bremse: Bewerbervertrauen und Anti-Diskriminierung."),
+    E("HR-AI adoption surveys 2026","HR-KI-Adoptionsstudien 2026"),
+    "note", E("adoption figures survey-based","Adoptionszahlen umfragebasiert")),
+  U(8,"DeepL, Google/Microsoft Translate","prod",3,"strong",
+    E("Machine translation","Maschinelle Übersetzung"),
+    E("DeepL revenue +31% YoY","DeepL Umsatz +31 % YoY"),
+    E("DeepL <b>$185M revenue (+31%)</b>, 250k+ customers; 50–80% lower localization cost","DeepL <b>$185M Umsatz (+31 %)</b>, 250k+ Kunden; 50–80 % niedrigere Lokalisierungskosten"),
+    E("DeepL reached $185M revenue (+31%), 250k+ customers. A mature, profitable production use case with steady strong growth.","DeepL erreichte $185M Umsatz (+31 %), 250k+ Kunden. Ein reifer, profitabler Produktions-Use-Case mit stetig starkem Wachstum."),
+    E("DeepL (company figures)","DeepL (Firmenangaben)"),
+    "note", E("company figures","Firmenangaben")),
+
+  // ---- Cluster 9: security & fraud (software) ----
+  U(9,"Abnormal Security, Material Security","prod",3,"explosive",
+    E("Email / BEC security","Email- / BEC-Security"),
+    E(">100% YoY ARR, $200M+","​>100 % YoY ARR, $200M+"),
+    E("<b>$200M+ ARR</b> (>100% YoY), $5.1B valuation; protects 17–20% of the Fortune 500","<b>$200M+ ARR</b> (>100 % YoY), $5,1 Mrd Bewertung; schützt 17–20 % der Fortune 500"),
+    E("Abnormal passed $200M ARR in 2024 (>100% YoY), Series D $250M at $5.1B, 3,000+ customers. Financials solid; damage-prevented-per-customer is an estimate.","Abnormal überschritt 2024 $200M ARR (>100 % YoY), Series D $250M @ $5,1 Mrd, 3.000+ Kunden. Finanzzahlen solide; verhinderter Schaden je Kunde ist Schätzung."),
+    E("Abnormal Security / Series D","Abnormal Security / Series D"),
+    "good", E("financials evidenced","Finanzzahlen belegt")),
+  U(9,"Nasdaq Verafin, Feedzai, Sardine","prod",2,"steady",
+    E("Fraud / AML (banking)","Fraud / AML (Banking)"),
+    E("650+ institutions on agentic workforce","650+ Institute auf Agentic Workforce"),
+    E("up to <b>90% less alert workload</b> (company); 2,700+ institutions in consortium","bis <b>90 % weniger Alert-Aufwand</b> (Firma); 2.700+ Institute im Konsortium"),
+    E("Verafin uses consortium data from 2,700+ institutions. The Agentic AI Workforce (up to 90% alert-review reduction) is used by 650+ institutions — self-reported. Independently verified figures are rare.","Verafin nutzt Konsortialdaten von 2.700+ Instituten. Die Agentic AI Workforce (bis 90 % weniger Alert-Review) bei 650+ Instituten — selbst-berichtet. Unabhängig verifizierte Zahlen rar."),
+    E("Nasdaq Verafin IR (self-reported)","Nasdaq Verafin IR (selbst-berichtet)"),
+    "note", E("effect figures vendor","Effektzahlen vendor")),
+  U(9,"Claroty, Dragos, Nozomi, Armis","prod",2,"strong",
+    E("OT / ICS security","OT / ICS-Security"),
+    E("NIS2/CISA drive rapid adoption","NIS2/CISA treiben schnelle Adoption"),
+    E("Finds <b>30–50% more devices</b> than operators knew; NIS2/CISA force adoption","Findet <b>30–50 % mehr Geräte</b> als Betreiber kannte; NIS2/CISA erzwingen Einsatz"),
+    E("The strongest evidence is inevitability: regulation (EU NIS2, US CISA) drives adoption. The percentages are vendor benchmarks that vary by environment.","Der stärkste Beleg ist die Zwangsläufigkeit: Regulierung (NIS2, CISA) treibt. Die Prozente sind Vendor-Benchmarks, umgebungsabhängig."),
+    E("Vendor benchmarks; NIS2/CISA","Vendor-Benchmarks; NIS2/CISA"),
+    "note", E("regulation real, figure soft","Regulierung real, Zahl weich")),
+  U(9,"Microsoft Entra, Okta, CrowdStrike","prod",2,"steady",
+    E("Identity & access security","Identity & Access Security"),
+    E("mature, steady","reif, stetig"),
+    E("Entra blocks <b>7,000+ password attacks/sec</b> (Microsoft figure)","Entra blockt <b>7.000+ Passwort-Angriffe/Sek</b> (Microsoft-Angabe)"),
+    E("Microsoft reports high block rates for identity attacks. Deployed broadly; figures are vendor telemetry.","Microsoft meldet hohe Blockraten. Flächig im Einsatz; Kennzahlen sind Hersteller-Telemetrie."),
+    E("Microsoft (company figure)","Microsoft (Herstellerangabe)"),
+    "note", E("vendor telemetry","Hersteller-Telemetrie")),
+  U(9,"Various (SOC agents)","early",2,"strong",
+    E("Autonomous SOC agents (AI vs AI)","Autonome SOC-Agenten (KI gegen KI)"),
+    E("threat-driven, fast uptake","bedrohungsgetrieben, schnelle Aufnahme"),
+    E("Attackers increasingly use AI; autonomous defense agents in <b>early production</b>","Angreifer nutzen KI zunehmend; autonome Abwehr-Agenten in <b>früher Produktion</b>"),
+    E("The threat side (phishing, deepfakes, automated exploits) drives defense. Autonomous SOC agents are early; unsupervised reliability not yet proven.","Die Bedrohungsseite (Phishing, Deepfakes, Auto-Exploits) treibt die Abwehr. Autonome SOC-Agenten sind früh; unbeaufsichtigte Zuverlässigkeit unbelegt."),
+    E("Industry landscape 2026","Branchenlage 2026"),
+    "note", E("young category","junge Kategorie")),
+
+  // ---- Cluster 10: back office ----
+  U(10,"Lemonade, Tractable, EvolutionIQ","prod",3,"strong",
+    E("Insurance claims","Versicherungs-Claims"),
+    E("2.5× claim volume, cost ratio 13%→7%","2,5× Claim-Volumen, Kostenquote 13 %→7 %"),
+    E("<b>96% of FNOL</b> handled without a human, ~55% of claims fully automated","<b>96 % der FNOL</b> ohne Mensch, ~55 % Claims vollautomatisch"),
+    E("Lemonade 10-K FY2025: \"AI Jim\" takes 96% of first notices of loss without humans, ~55% fully automated. Loss-adjustment cost ratio fell 13%→7% at 2.5× volume; $14/claim.","Lemonade 10-K FY2025: „AI Jim\" nimmt 96 % der Erstschadenmeldungen ohne Mensch, ~55 % vollautomatisch. Kostenquote 13 %→7 % bei 2,5× Volumen; 14 USD/Claim."),
+    E("Lemonade Inc. SEC 10-K FY2025","Lemonade Inc. SEC-10-K FY2025"),
+    "good", E("SEC filing","SEC-Filing")),
+  U(10,"Abridge, Nuance DAX, Ambience, Suki","prod",3,"explosive",
+    E("Ambient clinical documentation","Ambient Clinical Documentation"),
+    E("market ~2.4× YoY","Markt ~2,4× YoY"),
+    E("<b>13–16 min/day</b> less documentation (largest objective study); market ~2.4× YoY","<b>13–16 Min/Tag</b> weniger Doku (größte objektive Studie); Markt ~2,4× YoY"),
+    E("JAMA 2026 (8,581 clinicians): 13–16 min/day saved. Burnout fell 52.6%→30.7% elsewhere; Kaiser ~15,700 hrs saved. Market ~2.4× YoY. BUT: after-hours documentation unchanged, 79% non-adoption — self-reports exceed objective logs.","JAMA 2026 (8.581 Kliniker): 13–16 Min/Tag gespart. Burnout 52,6 %→30,7 %; Kaiser ~15.700 h. Markt ~2,4× YoY. ABER: Feierabend-Doku unverändert, 79 % Nicht-Adoption — Selbstauskünfte > Logs."),
+    E("Rotenstein et al., JAMA (Apr 2026); Sacra (market)","Rotenstein et al., JAMA (Apr 2026); Sacra (Markt)"),
+    "good", E("peer-reviewed, with nuance","peer-reviewed, mit Nuance")),
+  U(10,"Adonis, Cohere Health, Tennr, R1","early",2,"strong",
+    E("Revenue cycle & prior authorization","Revenue Cycle & Prior Authorization"),
+    E("real-time prior-auth rolling out","Echtzeit-Prior-Auth im Rollout"),
+    E("<b>60–80% lower coding cost</b>; real-time prior auth being built","<b>60–80 % niedrigere Coding-Kosten</b>; Echtzeit-Prior-Auth im Aufbau"),
+    E("~60% of healthcare IT spend is addressable. Abridge is going into real-time prior auth via Availity (Jan 2026). Effect figures are mostly company claims.","~60 % der Healthcare-IT-Ausgaben adressierbar. Abridge geht via Availity in Echtzeit-Prior-Auth (Jan 2026). Effektzahlen überwiegend Firmenangaben."),
+    E("Company figures (Adonis, Cohere et al.)","Firmenangaben (Adonis, Cohere u.a.)"),
+    "note", E("company figures","Firmenangaben")),
+  U(10,"Ramp, Basware","prod",2,"strong",
+    E("Finance / accounting","Finance / Accounting"),
+    E("90% of finance functions use ≥1 AI","90 % der Finanzfunktionen mit ≥1 KI"),
+    E("Ramp Policy Agent finds <b>7× more violations</b>, saves 4–5 hrs/week (company)","Ramp Policy Agent findet <b>7× mehr Verstöße</b>, spart 4–5 Std/Woche (Firma)"),
+    E("Invoice matching, expense checks, reconciliation increasingly run agentically; ~90% of finance functions use at least one AI tool by 2026. Figures are company claims.","Rechnungsabgleich, Spesenprüfung laufen zunehmend agentisch; ~90 % der Finanzfunktionen mit ≥1 KI bis 2026. Kennzahlen sind Firmenangaben."),
+    E("Ramp; Gartner (adoption)","Ramp; Gartner (Adoption)"),
+    "note", E("company figure","Firmenangabe")),
+  U(10,"Various (government)","pilot",1,"nascent",
+    E("Public administration / government","Öffentliche Verwaltung / Behörden"),
+    E("mostly pilots, no trend data","überwiegend Pilots, keine Trenddaten"),
+    E("Documented cases with hard metrics are <b>rare</b>; mostly pilots","Belegte Fälle mit harten Kennzahlen <b>selten</b>; überwiegend Pilotprojekte"),
+    E("The pattern (application processing, form checking) transfers, but solid quantified government deployments are scarce.","Das Muster (Antragsbearbeitung, Formularprüfung) überträgt sich, aber belastbare Behörden-Deployments sind rar."),
+    E("—","—"),
+    "warn", E("little hard evidence","kaum harte Belege")),
+
+  // ---- Cluster 11: city ----
+  U(11,"CMU Surtrac, Google Green Light, Siemens","prod",3,"strong",
+    E("Adaptive traffic signals","Adaptive Ampelsteuerung"),
+    E("Green Light in ~18 cities, expanding","Green Light in ~18 Städten, Ausbau"),
+    E("Surtrac: <b>-40% wait, -25% travel time</b>; Green Light in ~18 cities","Surtrac: <b>-40 % Wartezeit, -25 % Reisezeit</b>; Green Light in ~18 Städten"),
+    E("Surtrac (Pittsburgh, CMU) cut wait 40%, travel 25%; USDOT/ITS confirm -28 to -50% wait. Google Project Green Light runs live in ~18 cities, potential up to -30% stops. Surtrac figures come from an early 9-intersection pilot.","Surtrac (Pittsburgh, CMU) senkte Wartezeit 40 %, Reisezeit 25 %; USDOT/ITS bestätigen -28 bis -50 %. Green Light in ~18 Städten, bis -30 % Stopps. Surtrac-Werte aus frühem 9-Kreuzungs-Pilot."),
+    E("CMU Robotics Institute; USDOT/ITS; Google","CMU Robotics Institute; USDOT/ITS; Google"),
+    "good", E("academically confirmed","akademisch belegt")),
+  U(11,"AMP Robotics, Greyparrot","prod",2,"steady",
+    E("Recycling sortation","Recycling-Sortierung"),
+    E("140 picks/min, faster each year","140 Picks/Min, jährlich schneller"),
+    E("up to <b>140 picks/min</b> at 99% accuracy — ~2–3× a human","bis <b>140 Picks/Min</b> bei 99 % Genauigkeit — ~2–3× ein Mensch"),
+    E("AMP Cortex reached up to 140 picks/minute in June 2025 (a human manages ~30–40). Over 75B objects recognized. Figures are AMP's.","AMP Cortex erreichte im Juni 2025 bis 140 Picks/Minute (Mensch ~30–40). Über 75 Mrd Objekte erkannt. Zahlen sind AMP-Angaben."),
+    E("AMP Robotics (company figure)","AMP Robotics (Herstellerangabe)"),
+    "note", E("company figure","Herstellerangabe")),
+  U(11,"Google DeepMind, BrainBox AI","prod",2,"strong",
+    E("Data-center cooling","Rechenzentrum-Kühlung"),
+    E("scales with the AI build-out","skaliert mit dem KI-Ausbau"),
+    E("up to <b>40% less cooling energy</b> in Google data centers","bis <b>40 % weniger Kühlenergie</b> in Google-Rechenzentren"),
+    E("DeepMind cut Google data-center cooling energy by up to 40% (2016) — a much-cited self-report often repeated without update. Highly relevant as AI build-out drives power demand.","DeepMind senkte die Kühlenergie um bis zu 40 % (2016) — viel zitierte Eigenangabe, oft ohne Aktualisierung. Hochrelevant, weil der KI-Ausbau den Strombedarf treibt."),
+    E("Google DeepMind (2016, self-report)","Google DeepMind (2016, Eigenangabe)"),
+    "note", E("old & self-reported","alt & selbst-berichtet")),
+  U(11,"Gaussian Robotics, Trombia","early",2,"steady",
+    E("Autonomous street cleaning","Autonome Straßenreinigung"),
+    E("fleets in Asia, spreading","Flotten in Asien, Ausbreitung"),
+    E("Fleet operation in cities in <b>China and Singapore</b>","Flottenbetrieb in Städten in <b>China und Singapur</b>"),
+    E("Commercial in Asia, pilots elsewhere. Effect figures limited and vendor-driven.","Kommerziell in Asien, Pilots anderswo. Effektzahlen begrenzt und herstellergetrieben."),
+    E("Company figures","Herstellerangaben"),
+    "note", E("vendor","vendor")),
+
+  // ---- Cluster 12: enablers ----
+  U(12,"NVIDIA GR00T, Physical Intelligence, Gemini Robotics","early",2,"explosive",
+    E("Foundation models for robotics","Foundation Models für Robotik"),
+    E("new model generation every few months","neue Modellgeneration alle paar Monate"),
+    E("Generalist robot policies; GR00T 1.7 (GTC Mar 2026); validated on Unitree G1, AgiBot","Generalist-Policies; GR00T 1.7 (GTC März 2026); validiert auf Unitree G1, AgiBot"),
+    E("Robot foundation models (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) are iterating every few months and are the software layer that makes humanoids and general robots trainable. Early but explosively active.","Roboter-Foundation-Models (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) iterieren alle paar Monate und sind die Software-Ebene, die Humanoide/Generalroboter trainierbar macht. Früh, aber explosiv aktiv."),
+    E("NVIDIA GTC 2026; company releases","NVIDIA GTC 2026; Firmenreleases"),
+    "note", E("early, iterating fast","früh, iteriert schnell")),
+  U(12,"NVIDIA Omniverse, Siemens, GE Digital","prod",2,"strong",
+    E("Digital twins","Digital Twins"),
+    E("training env for nearly all physical AI","Trainingsumgebung für fast alle Physical AI"),
+    E("The <b>training environment</b> for nearly every physical-AI robot; simulation drives GPU demand","Die <b>Trainingsumgebung</b> für fast jeden Physical-AI-Roboter; Simulation treibt GPU-Nachfrage"),
+    E("Digital twins (NVIDIA Omniverse et al.) are where robots learn before the real world — a production enabler whose demand rises with every new robot family.","Digital Twins (NVIDIA Omniverse u.a.) sind der Ort, wo Roboter vor der realen Welt lernen — ein Produktions-Enabler, dessen Nachfrage mit jeder neuen Roboterfamilie steigt."),
+    E("NVIDIA Omniverse; Siemens","NVIDIA Omniverse; Siemens"),
+    "note", E("enabler, demand rising","Enabler, Nachfrage steigt")),
+  U(12,"Ericsson, Qualcomm","prod",2,"steady",
+    E("5G / connectivity for robotics","5G / Konnektivität für Robotik"),
+    E("infrastructure build-out","Infrastruktur-Ausbau"),
+    E("<b><1ms latency</b> for real-time robot control","<b><1ms Latenz</b> für Echtzeit-Robotersteuerung"),
+    E("Low-latency connectivity is the invisible enabler for real-time control of fleets and remote robots. Mature infrastructure, steady roll-out.","Niedriglatenz-Konnektivität ist der unsichtbare Enabler für Echtzeit-Steuerung von Flotten und Remote-Robotern. Reife Infrastruktur, stetiger Ausbau."),
+    E("Ericsson; Qualcomm","Ericsson; Qualcomm"),
+    "note", E("enabler","Enabler")),
+];
+
+// ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
+const URLS = {
+  "Robotaxis / autonomous driving":"https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
+  "Autonomous trucks":"https://www.sec.gov/Archives/edgar/data/1828108/000182810825000155/a25q3shareholderletter_f.htm",
+  "eVTOL / flying taxis":"https://www.jobyaviation.com/",
+  "Autonomous ships":"https://www.kongsberg.com/maritime/",
+  "Delivery & medical drones":"https://www.flyzipline.com/",
+  "Sidewalk delivery robots":"https://www.starship.xyz/",
+  "Warehouse robots":"https://techcrunch.com/2025/07/01/amazon-deploys-its-1-millionth-robot-releases-generative-ai-model/",
+  "Autonomous mine fleets":"https://www.railjournal.com/in_depth/autohaul-drives-efficiencies-at-rio-tinto/",
+  "Grid energy trading":"https://reneweconomy.com.au/tesla-big-battery-paves-way-for-artificial-intelligence-to-dominate-energy-trades-31949/",
+  "Industrial robots":"https://www.therobotreport.com/ifr-industrial-robot-deployments-have-doubled-in-10-years/",
+  "Humanoid robots":"https://www.unitree.com/",
+  "Construction robots":"https://www.iconbuild.com/",
+  "Semiconductor fab automation":"https://www.asml.com/",
+  "Precision spraying (See & Spray)":"https://acsess.onlinelibrary.wiley.com/doi/10.1002/agg2.70324",
+  "Milking robots":"https://www.lely.com/solutions/milking/astronaut/",
+  "Agricultural drones":"https://ag.dji.com/",
+  "Harvest pickers & laser weeding":"https://carbonrobotics.com/",
+  "Aquaculture robots":"https://www.stingray.no/",
+  "Surgical robots (assisted)":"https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm",
+  "AI drug discovery":"https://www.prnewswire.com/news-releases/insilico-initiates-phase-iii-clinical-trial-for-rentosertib-its-ai-empowered-tnik-inhibitor-for-idiopathic-pulmonary-fibrosis-302819553.html",
+  "Autonomous surgery steps":"https://www.therobotreport.com/johns-hopkins-teaches-robot-to-perform-a-gallbladder-removal-on-a-realistic-patient/",
+  "Diagnostic AI (radiology)":"https://theimagingwire.com/2026/03/11/numbers-from-the-fda-show-radiology-is-maintaining-its-lead/",
+  "Dental / implant robots":"https://www.neocis.com/",
+  "Infrastructure / underwater inspection":"https://percepto.co/",
+  "Disaster / search robotics":"https://bostondynamics.com/products/spot/",
+  "Firefighting robots":"https://www.howeandhowe.com/",
+  "AI weather forecasting":"https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
+  "Protein folding / biology":"https://www.nobelprize.org/prizes/chemistry/2024/",
+  "Emissions satellites":"https://www.science.org/content/article/methane-tracker-lost-space",
+  "Materials science":"https://www.nature.com/articles/s41586-023-06735-9",
+  "Climate / ocean monitoring":"https://argo.ucsd.edu/",
+  "Coding agents":"https://en.wikipedia.org/wiki/Cursor_(company)",
+  "Customer service agents":"https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html",
+  "Legal agents":"https://sacra.com/c/harvey/",
+  "Machine translation":"https://www.deepl.com/",
+  "Email / BEC security":"https://abnormal.ai/about/news/series-d-5b-valuation",
+  "Fraud / AML (banking)":"https://www.leaprate.com/financial-services/fintech/nasdaq-verafin-expands-agentic-ai-workforce-aml-fraud-detection/",
+  "OT / ICS security":"https://claroty.com/",
+  "Identity & access security":"https://www.microsoft.com/en-us/security",
+  "Insurance claims":"https://www.sec.gov/Archives/edgar/data/1691421/000169142126000016/lmnd-20251231.htm",
+  "Ambient clinical documentation":"https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/ai-scribes-linked-to-modest-reductions-in-ehr-documentation-time",
+  "Finance / accounting":"https://ramp.com/",
+  "Adaptive traffic signals":"https://blog.google/company-news/outreach-and-initiatives/sustainability/project-green-light-boston-expansion/",
+  "Recycling sortation":"https://ampsortation.com/articles/amp-robotics-achieves-data-milestones-and-recycling-automation-breakthrough",
+  "Data-center cooling":"https://deepmind.google/",
+  "Autonomous street cleaning":"https://www.gaussianrobotics.com/",
+  "Foundation models for robotics":"https://developer.nvidia.com/isaac",
+  "Digital twins":"https://www.nvidia.com/en-us/omniverse/",
+  "5G / connectivity for robotics":"https://www.ericsson.com/en/5g"
+};
+
+// ---------- state ----------
+let lang = 'en';
+let fCluster = 0, fText = "";
+let fMat = new Set(), fQual = new Set(), fGrow = new Set();
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.getElementById('btnEN').setAttribute('aria-pressed', l==='en');
+  document.getElementById('btnDE').setAttribute('aria-pressed', l==='de');
+  renderStatic(); buildChips(); buildBoard(); apply();
+}
+function T(o){ return o[lang]; }
+
+function renderStatic(){
+  const u = UI[lang];
+  document.getElementById('eyebrow').textContent = u.eyebrow;
+  document.getElementById('h1').innerHTML = u.h1a+'<span class="accent">'+u.h1accent+'</span>'+u.h1b;
+  document.getElementById('thesis').innerHTML = u.thesis;
+  document.getElementById('legDataH').textContent = u.legData;
+  document.getElementById('legSolid').textContent = u.legSolid;
+  document.getElementById('legMid').textContent = u.legMid;
+  document.getElementById('legThin').textContent = u.legThin;
+  document.getElementById('legMatH').textContent = u.legMat;
+  document.getElementById('legProd').textContent = u.mProd;
+  document.getElementById('legEarly').textContent = u.mEarly;
+  document.getElementById('legPilot').textContent = u.mPilot;
+  document.getElementById('legRes').textContent = u.mRes;
+  document.getElementById('legGrowH').textContent = u.legGrow;
+  document.getElementById('legGExp').textContent = u.gExp;
+  document.getElementById('legGStr').textContent = u.gStr;
+  document.getElementById('legGSte').textContent = u.gSte;
+  document.getElementById('legGNas').textContent = u.gNas;
+  document.getElementById('lblCluster').textContent = u.lblCluster;
+  document.getElementById('lblMat').textContent = u.lblMat;
+  document.getElementById('lblGrow').textContent = u.lblGrow;
+  document.getElementById('lblQual').textContent = u.lblQual;
+  document.getElementById('search').placeholder = u.searchPh;
+  document.getElementById('empty').textContent = u.empty;
+  document.getElementById('footerTxt').innerHTML = u.footer;
+  renderDist();
+}
+
+function renderDist(){
+  const u = UI[lang];
+  const s = UC.filter(x=>x.q===3).length, m = UC.filter(x=>x.q===2).length, t = UC.filter(x=>x.q===1).length;
+  const g = UC.filter(x=>x.g==='explosive'||x.g==='strong').length;
+  document.getElementById('dist').innerHTML =
+    '<div class="dist-item dist-total"><div class="dist-num">'+UC.length+'</div><div class="dist-label">'+u.distUC+'</div></div>'+
+    '<div class="dist-item"><div class="dist-num g">'+g+'</div><div class="dist-label">'+u.distGrow+'</div></div>'+
+    '<div class="dist-item"><div class="dist-num s">'+s+'</div><div class="dist-label">'+u.distSolid+'</div></div>'+
+    '<div class="dist-item"><div class="dist-num m">'+m+'</div><div class="dist-label">'+u.distMid+'</div></div>'+
+    '<div class="dist-item"><div class="dist-num t">'+t+'</div><div class="dist-label">'+u.distThin+'</div></div>'+
+    '<div class="dist-item"><div class="dist-num" style="color:#7FD0C4">12</div><div class="dist-label">'+u.distCl+'</div></div>';
+}
+
+function buildChips(){
+  const u = UI[lang];
+  const cc = document.getElementById('clusterChips');
+  cc.querySelectorAll('.chip').forEach(x=>x.remove());
+  const allBtn = mkChip(u.all, fCluster===0, function(){fCluster=0; syncCluster(); apply();});
+  allBtn.dataset.cl="0"; cc.appendChild(allBtn);
+  CLUSTERS.forEach(function(c){
+    const b = mkChip(c.n+" · "+T(c.short), fCluster===c.n, function(){fCluster=c.n; syncCluster(); apply();});
+    b.dataset.cl=c.n; cc.appendChild(b);
+  });
+  const mc = document.getElementById('matChips'); mc.innerHTML='';
+  MATS.forEach(function(m){
+    const b = mkChip(u[m.uiKey], fMat.has(m.k), function(){toggle(fMat,m.k); b.setAttribute('aria-pressed', fMat.has(m.k)); apply();});
+    mc.appendChild(b);
+  });
+  const gc = document.getElementById('growChips'); gc.innerHTML='';
+  ['explosive','strong','steady','nascent'].forEach(function(k){
+    const b = mkChip(GROW[k].glyph+' '+GROW_LABELS[lang][k], fGrow.has(k), function(){toggle(fGrow,k); b.setAttribute('aria-pressed', fGrow.has(k)); apply();});
+    b.classList.add('g'); gc.appendChild(b);
+  });
+  const qc = document.getElementById('qualChips'); qc.innerHTML='';
+  [3,2,1].forEach(function(k){
+    const b = mkChip(QUAL_LABELS[lang][k], fQual.has(k), function(){toggle(fQual,k); b.setAttribute('aria-pressed', fQual.has(k)); apply();});
+    b.classList.add('q'); qc.appendChild(b);
+  });
+}
+function mkChip(txt, pressed, fn){
+  const b=document.createElement('button');
+  b.className='chip'; b.textContent=txt; b.setAttribute('aria-pressed', pressed);
+  b.addEventListener('click', fn); return b;
+}
+function toggle(set,val){ if(set.has(val)){set.delete(val);}else{set.add(val);} }
+function syncCluster(){
+  document.querySelectorAll('#clusterChips .chip').forEach(function(b){
+    b.setAttribute('aria-pressed', String(Number(b.dataset.cl)===fCluster));
+  });
+}
+
+function meterHTML(q){ return '<span class="meter q'+q+'" title="'+QUAL_LABELS[lang][q]+'"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span>'; }
+function matHTML(mat){ const m = MATS.find(x=>x.k===mat); return '<span class="mpill '+m.cls+'">'+UI[lang][m.uiKey]+'</span>'; }
+function growHTML(x){
+  const g = GROW[x.g];
+  return '<div class="growthline"><span class="garrow '+g.cls+'">'+g.glyph+'</span><span class="glabel">'+T(x.glab)+'</span></div>';
+}
+function srcHTML(x){
+  const url = URLS[x.name.en];
+  const label = T(x.src);
+  if(url){
+    return '<a class="srclink" href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+' ↗</a>';
+  }
+  return label;
+}
+
+function buildBoard(){
+  const u = UI[lang];
+  const board = document.getElementById('board');
+  board.innerHTML = CLUSTERS.map(function(c){
+    const catLabel = c.cat==='phys'?u.physical:(c.cat==='soft'?u.software:u.infra);
+    const cards = UC.filter(x=>x.c===c.n).map(function(x){
+      const txt = (T(x.name)+' '+x.prov+' '+T(x.metric)+' '+T(x.detail)+' '+T(x.glab)).replace(/<[^>]+>/g,'').toLowerCase().replace(/"/g,'');
+      return '<div class="card" data-c="'+x.c+'" data-mat="'+x.mat+'" data-q="'+x.q+'" data-g="'+x.g+'" data-txt="'+txt+'">'+
+        '<button class="card-btn" aria-expanded="false">'+
+          '<div class="card-top"><div>'+
+            '<div class="uc-name">'+T(x.name)+'</div>'+
+            '<div class="uc-prov">'+x.prov+'</div>'+
+          '</div>'+matHTML(x.mat)+'</div>'+
+          '<div class="card-mid">'+meterHTML(x.q)+'<span class="metric">'+T(x.metric)+'</span></div>'+
+          growHTML(x)+
+          '<div class="expand-hint"><span class="chev">▸</span> '+u.detailsHint+'</div>'+
+        '</button>'+
+        '<div class="detail"><div class="detail-in">'+
+          T(x.detail)+
+          '<div class="flag '+x.flag.t+'">'+T(x.flag.x)+'</div>'+
+          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+
+        '</div></div>'+
+      '</div>';
+    }).join('');
+    return '<section class="cluster" data-cl="'+c.n+'">'+
+      '<div class="cl-head">'+
+        '<div class="cl-num">'+String(c.n).padStart(2,'0')+'</div>'+
+        '<div class="cl-meta"><h2 class="cl-title">'+T(c.title)+'<span class="cl-tag '+c.cat+'">'+catLabel+'</span></h2><p class="cl-kern">'+T(c.kern)+'</p></div>'+
+        '<div class="cl-verdict">'+T(c.verdict)+'</div>'+
+      '</div><div class="grid">'+cards+'</div></section>';
+  }).join('');
+
+  board.querySelectorAll('.card-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const card = btn.closest('.card');
+      const open = card.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  });
+}
+
+function apply(){
+  const u = UI[lang];
+  let shown=0;
+  document.querySelectorAll('.cluster').forEach(function(sec){
+    let any=false;
+    sec.querySelectorAll('.card').forEach(function(card){
+      const okC = fCluster===0 || Number(card.dataset.c)===fCluster;
+      const okM = fMat.size===0 || fMat.has(card.dataset.mat);
+      const okQ = fQual.size===0 || fQual.has(Number(card.dataset.q));
+      const okG = fGrow.size===0 || fGrow.has(card.dataset.g);
+      const okT = !fText || card.dataset.txt.indexOf(fText)!==-1;
+      const ok = okC&&okM&&okQ&&okG&&okT;
+      card.classList.toggle('hidden', !ok);
+      if(ok){any=true; shown++;}
+    });
+    sec.classList.toggle('hidden', !any);
+  });
+  document.getElementById('empty').style.display = shown===0 ? 'block':'none';
+  document.getElementById('countOut').textContent = shown + ' / ' + UC.length + ' ' + u.countSuffix;
+}
+
+document.getElementById('search').addEventListener('input', function(e){
+  fText = e.target.value.trim().toLowerCase(); apply();
+});
+
+setLang('en');
+</script>
+</body>
+</html>
