@@ -211,7 +211,7 @@ const UI = {
     all:"All", searchPh:"Search: provider, metric, term…", countSuffix:"use cases",
     empty:"No matches for these filters.", srcLabel:"Source:", growLabel:"Growth:", detailsHint:"Details & source",
     physical:"Physical", software:"Software / agentic", infra:"Infrastructure",
-    footer:"<b>Source base:</b> project knowledge plus web verification, July 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Click a card for detail, source and caveat."
+    footer:"<b>Source base:</b> project knowledge plus web verification, July 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Cluster 13 (compute & energy substrate) adds the hardware layer the whole board runs on — HBM (SK Hynix Q1'26), accelerators (NVIDIA FY26), CoWoS (TSMC), power/turbines, LiDAR (RoboSense Q1'26) — verified against company earnings. Click a card for detail, source and caveat."
   },
   de:{
     eyebrow:"KI-Use-Cases · Stand Juli 2026 · Reifegrad · Datenlage · Wachstum",
@@ -225,7 +225,7 @@ const UI = {
     all:"Alle", searchPh:"Suche: Anbieter, Kennzahl, Begriff…", countSuffix:"Use Cases",
     empty:"Keine Treffer für diese Filter.", srcLabel:"Quelle:", growLabel:"Wachstum:", detailsHint:"Details & Quelle",
     physical:"Physisch", software:"Software / Agentic", infra:"Infrastruktur",
-    footer:"<b>Quellenbasis:</b> Projektwissen plus Web-Verifikation Juli 2026. Solide-Anker u.a.: Intuitive Surgical SEC-10-K, Lemonade 10-K, Aurora SEC-8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operativ), John Deere See & Spray (Peer-Review), IFR World Robotics 2025 (4,66 Mio. Industrieroboter, +9 % YoY). Wachstums-Signale zeigen die beste aktuelle Kennzahl je Fall; wo Wachstum ein Firmenziel statt realisiert ist, steht das auf der Karte. Effizienz-Prozente ohne „solide\"-Kennzeichnung sind überwiegend Firmenangaben — richtungssicher, nicht punktgenau. Klick auf eine Karte öffnet Detail, Quelle und Vorbehalt."
+    footer:"<b>Quellenbasis:</b> Projektwissen plus Web-Verifikation Juli 2026. Solide-Anker u.a.: Intuitive Surgical SEC-10-K, Lemonade 10-K, Aurora SEC-8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operativ), John Deere See & Spray (Peer-Review), IFR World Robotics 2025 (4,66 Mio. Industrieroboter, +9 % YoY). Wachstums-Signale zeigen die beste aktuelle Kennzahl je Fall; wo Wachstum ein Firmenziel statt realisiert ist, steht das auf der Karte. Effizienz-Prozente ohne „solide\"-Kennzeichnung sind überwiegend Firmenangaben — richtungssicher, nicht punktgenau. Cluster 13 (Compute- & Energie-Substrat) ergänzt die Hardware-Ebene, auf der das ganze Board läuft — HBM (SK Hynix Q1'26), Beschleuniger (NVIDIA FY26), CoWoS (TSMC), Strom/Turbinen, LiDAR (RoboSense Q1'26) — gegen Firmen-Earnings verifiziert. Klick auf eine Karte öffnet Detail, Quelle und Vorbehalt."
   }
 };
 
@@ -293,7 +293,11 @@ const CLUSTERS = [
   {n:12, cat:"infra", short:{en:"enablers",de:"Enabler"},
     title:{en:"Enablers",de:"Enabler"},
     kern:{en:"The layer everything else needs: robot foundation models, digital twins, connectivity.",de:"Die Ebene, die alles andere braucht: Roboter-Foundation-Models, Digital Twins, Konnektivität."},
-    verdict:{en:"Foundation models exploding; twins & 5G mature enablers.",de:"Foundation Models explodieren; Twins & 5G reife Enabler."}}
+    verdict:{en:"Foundation models exploding; twins & 5G mature enablers.",de:"Foundation Models explodieren; Twins & 5G reife Enabler."}},
+  {n:13, cat:"infra", short:{en:"compute & energy substrate",de:"Compute- & Energie-Substrat"},
+    title:{en:"The compute & energy substrate",de:"Das Compute- & Energie-Substrat"},
+    kern:{en:"Not AI applications but the physical layer the whole board runs on: memory, chips, packaging, optics, power, sensors.",de:"Keine KI-Anwendungen, sondern die physische Ebene, auf der das ganze Board läuft: Speicher, Chips, Packaging, Optik, Strom, Sensoren."},
+    verdict:{en:"The hardest bottlenecks — and the best-evidenced tier, testified in quarterly earnings.",de:"Die härtesten Engpässe — und die bestbelegte Ebene, quartalsweise in Earnings testiert."}}
 ];
 
 // helper to keep entries compact: [cluster, prov, mat, q, growthTier, name{}, growLabel{}, metric{}, detail{}, src{}, flagT, flagX{}]
@@ -723,6 +727,64 @@ const UC = [
     E("Low-latency connectivity is the invisible enabler for real-time control of fleets and remote robots. Mature infrastructure, steady roll-out.","Niedriglatenz-Konnektivität ist der unsichtbare Enabler für Echtzeit-Steuerung von Flotten und Remote-Robotern. Reife Infrastruktur, stetiger Ausbau."),
     E("Ericsson; Qualcomm","Ericsson; Qualcomm"),
     "note", E("enabler","Enabler")),
+
+  // ---- Cluster 13: compute & energy substrate ----
+  U(13,"SK Hynix, Samsung, Micron","prod",3,"explosive",
+    E("HBM memory (the supercycle)","HBM-Speicher (der Supercycle)"),
+    E("SK Hynix rev +198% YoY; booked out ~3 yrs","SK Hynix Umsatz +198% YoY; ~3 J. vorverkauft"),
+    E("SK Hynix Q1'26 rev <b>₩52.6T (+198% YoY)</b>, 72% op-margin; HBM booked out ~3 yrs","SK Hynix Q1'26 Umsatz <b>52,6 Bio ₩ (+198% YoY)</b>, 72% OpM; HBM ~3 J. vorverkauft"),
+    E("The tightest bottleneck in the whole stack. SK Hynix Q1 2026: record ₩52.6T revenue (+198% YoY), 72% operating margin — above NVIDIA and TSMC — on ~57% HBM share. Management: HBM demand exceeds capacity for at least three years; chairman Chey sees the wafer shortage running to ~2030. Rubin needs 8 HBM4 stacks (288 GB) per GPU, Rubin Ultra up to 1 TB. Structural, not cyclical — this is the anchor of the project's memory-supercycle thesis.","Der engste Engpass des ganzen Stacks. SK Hynix Q1 2026: Rekord-Umsatz 52,6 Bio ₩ (+198% YoY), 72% operative Marge — über NVIDIA und TSMC — bei ~57% HBM-Anteil. Management: HBM-Nachfrage übersteigt die Kapazität für mindestens drei Jahre; Chairman Chey sieht die Wafer-Knappheit bis ~2030. Rubin braucht 8 HBM4-Stacks (288 GB) pro GPU, Rubin Ultra bis zu 1 TB. Strukturell, nicht zyklisch — der Anker der Memory-Supercycle-These."),
+    E("SK Hynix Q1 2026 release (22 Apr 2026)","SK Hynix Q1 2026 Release (22.4.2026)"),
+    "good", E("primary earnings","Primär-Earnings")),
+  U(13,"NVIDIA Rubin; TPU v7, Trainium3, MTIA","prod",3,"explosive",
+    E("AI accelerators & custom silicon","KI-Beschleuniger & Custom-Silizium"),
+    E("NVIDIA FY26 $215.9B (+65%); ~$1T order book","NVIDIA FY26 $215,9 Mrd (+65%); ~$1 Bio Orderbuch"),
+    E("NVIDIA FY2026 rev <b>$215.9B (+65% YoY)</b>, ~$1T Blackwell+Rubin orders through 2027; hyperscaler ASICs ramping","NVIDIA FY2026 Umsatz <b>$215,9 Mrd (+65% YoY)</b>, ~$1 Bio Blackwell+Rubin-Orders bis 2027; Hyperscaler-ASICs im Hochlauf"),
+    E("The compute engines under every use case on this board. NVIDIA FY2026 (ended Jan 2026): $215.9B revenue (+65%), ~60% GAAP operating margin; Huang cites ~$1T in Blackwell+Rubin orders through 2027. In parallel, hyperscaler custom silicon (Google TPU v7 Ironwood, AWS Trainium3, Meta MTIA, Microsoft Maia) scales fast — and most of it is HBM-hungry, so it reinforces rather than relieves the memory crunch. NVIDIA stays structurally ahead in frontier training and physical AI.","Die Recheneinheiten unter jedem Use-Case dieses Boards. NVIDIA FY2026 (endete Jan 2026): $215,9 Mrd Umsatz (+65%), ~60% GAAP-OpM; Huang nennt ~$1 Bio Blackwell+Rubin-Orders bis 2027. Parallel skaliert Hyperscaler-Custom-Silizium (Google TPU v7 Ironwood, AWS Trainium3, Meta MTIA, Microsoft Maia) — und das meiste davon ist HBM-hungrig, verstärkt die Knappheit also, statt sie zu lösen. NVIDIA bleibt in Frontier-Training und Physical AI strukturell vorn."),
+    E("NVIDIA FY2026 results (25 Feb 2026); GTC 2026","NVIDIA FY2026-Ergebnisse (25.2.2026); GTC 2026"),
+    "good", E("earnings + disclosures","Earnings + Offenlegungen")),
+  U(13,"TSMC (Amkor, SPIL, ASE)","prod",3,"strong",
+    E("CoWoS / advanced packaging","CoWoS / Advanced Packaging"),
+    E("~35→130 kWPM '24→'26; still sold out","~35→130 kWPM '24→'26; weiter ausverkauft"),
+    E("TSMC CoWoS ~35 kWPM (end-24) → ~130 kWPM (end-26); <b>fully booked through 2026</b>, NVIDIA >60%","TSMC CoWoS ~35 kWPM (Ende '24) → ~130 kWPM (Ende '26); <b>ausgebucht bis 2026</b>, NVIDIA >60%"),
+    E("The #2 bottleneck after HBM — advanced packaging directly caps how many Rubin GPUs ship. TSMC scaled CoWoS from ~35k wafers/month (end-2024) to ~75k (end-2025) toward ~125–130k (end-2026), a near-4× expansion — yet the lines stay sold out through 2026 (C.C. Wei, Jun 2026). NVIDIA holds ~60% allocation (~595–850k wafers); the top three (NVIDIA, Broadcom, AMD) hold >85%. TSMC outsources 240–270k wafers/yr to Amkor and SPIL.","Der #2-Engpass nach HBM — Advanced Packaging deckelt direkt, wie viele Rubin-GPUs ausgeliefert werden. TSMC skalierte CoWoS von ~35k Wafer/Monat (Ende 2024) auf ~75k (Ende 2025) Richtung ~125–130k (Ende 2026), fast 4× — und bleibt bis 2026 ausverkauft (C.C. Wei, Juni 2026). NVIDIA hält ~60% Allokation (~595–850k Wafer); die Top-3 (NVIDIA, Broadcom, AMD) >85%. TSMC lagert 240–270k Wafer/Jahr an Amkor und SPIL aus."),
+    E("TSMC (C.C. Wei, Jun 2026); TrendForce; Morgan Stanley","TSMC (C.C. Wei, Juni 2026); TrendForce; Morgan Stanley"),
+    "good", E("capacity figures solid","Kapazitätszahlen solide")),
+  U(13,"Broadcom, NVIDIA, TSMC COUPE, Ayar Labs","early",2,"strong",
+    E("Co-packaged optics (CPO)","Co-Packaged Optics (CPO)"),
+    E("shipping on switches '25/'26; XPU optical 2027+","auf Switches '25/'26; XPU-Optik ab 2027"),
+    E("Broadcom TH6 102.4 Tbps shipping; <b>~70% less optics power</b> vs pluggables; optical NVLink from Feynman '28","Broadcom TH6 102,4 Tbps liefert; <b>~70% weniger Optik-Leistung</b> vs Pluggables; optisches NVLink ab Feynman '28"),
+    E("As chips outrun copper, the interconnect becomes the bottleneck. Switch-CPO is real now: Broadcom TH6-Davisson (102.4 Tbps) shipping since Oct 2025, NVIDIA Quantum-X/Spectrum-X Photonics 2025/26, ~70% lower optics power vs pluggables. But optical scale-up at the GPU/NVLink level only arrives with Feynman (2028); in-package optical I/O (Ayar Labs, Lightmatter) reaches serious deployment ~2027. Early by volume, but the roadmap is firm.","Wenn Chips das Kupfer überholen, wird der Interconnect zum Engpass. Switch-CPO ist real: Broadcom TH6-Davisson (102,4 Tbps) liefert seit Okt 2025, NVIDIA Quantum-X/Spectrum-X Photonics 2025/26, ~70% weniger Optik-Leistung vs Pluggables. Aber optischer Scale-up auf GPU-/NVLink-Ebene kommt erst mit Feynman (2028); In-Package-Optical-I/O (Ayar Labs, Lightmatter) erreicht ernsthafte Deployments ~2027. Früh nach Volumen, aber feste Roadmap."),
+    E("Broadcom; NVIDIA; OFC 2026; project deep-dive","Broadcom; NVIDIA; OFC 2026; Projekt-Deep-Dive"),
+    "note", E("volume is 2027+","Volumen ab 2027")),
+  U(13,"GE Vernova, Siemens Energy, MHI","prod",3,"strong",
+    E("Data-center power & the grid","Rechenzentrums-Strom & Netz"),
+    E("turbines booked to ~2030; prices ~3×","Turbinen bis ~2030 gebucht; Preise ~3×"),
+    E("Gas turbines <b>booked through ~2030</b> (GE Vernova ~100 GW backlog); new CCGT ~$2,400/kW (~3× 2022)","Gasturbinen <b>bis ~2030 gebucht</b> (GE Vernova ~100 GW Backlog); neue CCGT ~$2.400/kW (~3× 2022)"),
+    E("Power is the third hard bottleneck after HBM and packaging. Heavy-duty gas turbines carry 3–6 yr lead times and are booking out through 2030 (GE Vernova gas backlog + reservations ~100 GW; Siemens Energy and MHI book-to-bill >2). New CCGT runs ~$2,400/kW, roughly 3× 2022. Grid-interconnect queues stretch 4–8 yrs; only ~2 GW of behind-the-meter gas is actually online. SMRs are a post-2030 option, not a 2020s fix. This gates whether data centers get energized at all.","Strom ist der dritte harte Engpass nach HBM und Packaging. Schwere Gasturbinen haben 3–6 J. Lieferzeit und sind bis 2030 vorgebucht (GE Vernova Gas-Backlog + Reservierungen ~100 GW; Siemens Energy und MHI Book-to-Bill >2). Neue CCGT kostet ~$2.400/kW, rund 3× von 2022. Netz-Interconnect-Queues 4–8 J.; real online sind nur ~2 GW Behind-the-Meter-Gas. SMRs sind ein Post-2030-Thema, kein 2020er-Fix. Das entscheidet, ob RZ überhaupt Strom bekommen."),
+    E("GE Vernova / Siemens Energy / MHI earnings; Wood Mackenzie","GE Vernova / Siemens Energy / MHI Earnings; Wood Mackenzie"),
+    "note", E("the real near-term gate","das eigentliche Near-Term-Gate")),
+  U(13,"Vicor, MPS, Infineon, Delta","early",2,"nascent",
+    E("800-VDC rack power","800-VDC-Rack-Strom"),
+    E("real volume 2027/28; content ~9× per rack","echtes Volumen 2027/28; Content ~9×/Rack"),
+    E("Power-semi content <b>~$11k→~$95k per rack</b> (B200→Rubin Ultra); true 800 VDC from Rubin Ultra (H2'27)","Power-Semi-Content <b>~$11k→~$95k/Rack</b> (B200→Rubin Ultra); echtes 800 VDC ab Rubin Ultra (H2'27)"),
+    E("Rubin-class racks (~600 kW) force a shift from 54 V to 800 VDC. Morgan Stanley puts power-semiconductor content per rack at ~$11k (B200) rising toward ~$95k (Rubin Ultra) and ~$191k (Feynman). But Rubin (H2'26) still uses 54 V; real 800 VDC volume is Rubin Ultra Kyber (H2'27). Confirmed winners with hard numbers: Vicor (backlog +70%), MPS (~70% Vera Rubin share per KeyBanc), Infineon (€1.5→2.5B AI-DC revenue FY26→27). Nascent by revenue, not by design.","Rubin-Klasse-Racks (~600 kW) erzwingen den Wechsel von 54 V auf 800 VDC. Morgan Stanley beziffert den Leistungshalbleiter-Content je Rack auf ~$11k (B200) steigend auf ~$95k (Rubin Ultra) und ~$191k (Feynman). Aber Rubin (H2'26) nutzt noch 54 V; echtes 800-VDC-Volumen ist Rubin Ultra Kyber (H2'27). Bestätigte Gewinner mit harten Zahlen: Vicor (Backlog +70%), MPS (~70% Vera-Rubin-Anteil laut KeyBanc), Infineon (€1,5→2,5 Mrd AI-DC-Umsatz FY26→27). Anlaufend nach Umsatz, nicht nach Design."),
+    E("Morgan Stanley; Vicor/MPS/Infineon earnings; SemiAnalysis","Morgan Stanley; Vicor/MPS/Infineon Earnings; SemiAnalysis"),
+    "note", E("revenue lands 2027/28","Umsatz ab 2027/28")),
+  U(13,"Hesai, RoboSense, Sony, Valeo","prod",3,"explosive",
+    E("LiDAR for physical AI","LiDAR für Physical AI"),
+    E("RoboSense robotics units +1,459% YoY, now > auto","RoboSense Robotik-Stück +1.459% YoY, jetzt > Auto"),
+    E("RoboSense Q1'26 robotics LiDAR <b>+1,459% YoY (185.5k units)</b>, first time > automotive; auto LiDAR market >$1B (+60%)","RoboSense Q1'26 Robotik-LiDAR <b>+1.459% YoY (185,5k Stück)</b>, erstmals > Automotive; Auto-LiDAR-Markt >$1 Mrd (+60%)"),
+    E("LiDAR is the eyes of physical AI, and the robotics inflection is happening now: RoboSense Q1 2026 robotics-LiDAR units +1,459% YoY to 185,500, surpassing its automotive business for the first time (56% of shipments); full-year guide 2–2.7M units. Automotive LiDAR crossed $1B in 2025 (+60%, Yole). Prices are collapsing (Hesai ATX <$200), driving volume but crushing margins (RoboSense gross margin 21.7%). Geopolitics splits the market (DoD 1260H list).","LiDAR sind die Augen der Physical AI, und die Robotik-Wende passiert jetzt: RoboSense Q1 2026 Robotik-LiDAR +1.459% YoY auf 185.500 Stück, erstmals über dem Automotive-Geschäft (56% des Volumens); Jahres-Guidance 2–2,7 Mio Stück. Automotive-LiDAR überschritt 2025 $1 Mrd (+60%, Yole). Preise fallen (Hesai ATX <$200), treibt Volumen, drückt Margen (RoboSense-Bruttomarge 21,7%). Geopolitik spaltet den Markt (DoD-1260H-Liste)."),
+    E("RoboSense Q1 2026 (Apr 2026); Yole ADAS 2026","RoboSense Q1 2026 (Apr 2026); Yole ADAS 2026"),
+    "good", E("shipment data solid","Stückzahldaten solide")),
+  U(13,"NVIDIA Jetson Thor, Ambarella, Mobileye","prod",3,"strong",
+    E("Edge-AI perception chips","Edge-KI-Wahrnehmungschips"),
+    E("Ambarella rev +58% YoY; Jetson Thor GA","Ambarella Umsatz +58% YoY; Jetson Thor verfügbar"),
+    E("Jetson Thor GA (2,070 FP4 TFLOPS, 7.5× Orin); Ambarella <b>+58% YoY</b>, >46M edge-AI SoCs; Mobileye +27%","Jetson Thor verfügbar (2.070 FP4 TFLOPS, 7,5× Orin); Ambarella <b>+58% YoY</b>, >46 Mio Edge-AI-SoCs; Mobileye +27%"),
+    E("The on-robot and on-vehicle brains that run perception at the edge. NVIDIA Jetson Thor (Blackwell, ~2,070 FP4 TFLOPS, 7.5× Orin) is the de-facto humanoid brain (Figure, Boston Dynamics, Agility, Caterpillar). Ambarella Q1 FY26 revenue +57.6% YoY, >70% from edge AI, >46M cumulative edge-AI SoCs; Mobileye Q1'26 +27% YoY with a $24.5B design pipeline. This layer scales directly with every robot and AV that ships.","Die Gehirne auf Robotern und Fahrzeugen, die Wahrnehmung am Edge rechnen. NVIDIA Jetson Thor (Blackwell, ~2.070 FP4 TFLOPS, 7,5× Orin) ist das De-facto-Humanoiden-Gehirn (Figure, Boston Dynamics, Agility, Caterpillar). Ambarella Q1 FY26 Umsatz +57,6% YoY, >70% aus Edge-AI, >46 Mio kumulierte Edge-AI-SoCs; Mobileye Q1'26 +27% YoY mit $24,5-Mrd-Design-Pipeline. Diese Ebene skaliert direkt mit jedem ausgelieferten Roboter und AV."),
+    E("NVIDIA; Ambarella & Mobileye Q1 2026 earnings","NVIDIA; Ambarella & Mobileye Q1 2026 Earnings"),
+    "good", E("chip revenue solid","Chip-Umsätze solide")),
 ];
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
@@ -775,7 +837,10 @@ const URLS = {
   "Autonomous street cleaning":"https://www.gaussianrobotics.com/",
   "Foundation models for robotics":"https://developer.nvidia.com/isaac",
   "Digital twins":"https://www.nvidia.com/en-us/omniverse/",
-  "5G / connectivity for robotics":"https://www.ericsson.com/en/5g"
+  "5G / connectivity for robotics":"https://www.ericsson.com/en/5g",
+  "HBM memory (the supercycle)":"https://www.prnewswire.com/news-releases/sk-hynix-announces-1q26-financial-results-302750959.html",
+  "AI accelerators & custom silicon":"https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+  "LiDAR for physical AI":"https://www.prnewswire.com/news-releases/robosense-announced-q1-2026-lidar-sales-robotics-segment-grows-1-458-8-yoy-to-over-185-500-units-302737619.html"
 };
 
 // ---------- Mongolian (Cyrillic) overlay ----------
@@ -1255,7 +1320,7 @@ function renderDist(){
     '<div class="dist-item"><div class="dist-num s">'+s+'</div><div class="dist-label">'+u.distSolid+'</div></div>'+
     '<div class="dist-item"><div class="dist-num m">'+m+'</div><div class="dist-label">'+u.distMid+'</div></div>'+
     '<div class="dist-item"><div class="dist-num t">'+t+'</div><div class="dist-label">'+u.distThin+'</div></div>'+
-    '<div class="dist-item"><div class="dist-num" style="color:#7FD0C4">12</div><div class="dist-label">'+u.distCl+'</div></div>';
+    '<div class="dist-item"><div class="dist-num" style="color:#7FD0C4">'+CLUSTERS.length+'</div><div class="dist-label">'+u.distCl+'</div></div>';
 }
 
 function buildChips(){
