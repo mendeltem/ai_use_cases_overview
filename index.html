@@ -161,6 +161,26 @@
   .cknd{font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--ink-faint)}
   .chip.c[aria-pressed="true"]{border-color:#B4451F; color:#B4451F}
   @media(max-width:820px){ .bridge .wrap{grid-template-columns:1fr} }
+
+  /* ---- Branchenabdeckung ---- */
+  .luecken{background:var(--surface-2); border-top:1px solid var(--line)}
+  .luecken .wrap{padding:30px 22px 34px}
+  .luecken h2{font-family:'Space Grotesk',sans-serif; font-size:19px; margin:0 0 10px}
+  .luecken p{margin:0 0 11px; color:var(--ink-soft); max-width:76ch}
+  .luecken p b{color:var(--ink); font-weight:600}
+  .lk-kopf,.lk{display:grid; grid-template-columns:minmax(0,1.15fr) 72px 96px minmax(0,2.6fr); gap:12px;
+       padding:7px 0; align-items:baseline}
+  .lk-kopf{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.11em;
+       text-transform:uppercase; color:var(--ink-faint); border-bottom:1px solid var(--line-strong); margin-top:16px}
+  .lk{border-bottom:1px solid var(--line); font-size:13.5px}
+  .lk-n{font-weight:600; color:var(--ink)}
+  .lk-z,.lk-b{font-family:'JetBrains Mono',monospace; font-size:12.5px; text-align:right; color:var(--ink-soft)}
+  .lk-f{color:var(--ink-faint); font-size:13px}
+  @media(max-width:760px){
+    .lk-kopf{display:none}
+    .lk{grid-template-columns:1fr 60px; row-gap:2px}
+    .lk-b{display:none} .lk-f{grid-column:1 / -1}
+  }
 </style>
 </head>
 <body>
@@ -256,6 +276,19 @@
   <div class="empty" id="empty"></div>
 </main>
 
+<section class="luecken">
+  <div class="wrap">
+    <h2 id="lkTitle"></h2>
+    <p id="lkP1"></p>
+    <p id="lkP2"></p>
+    <div class="lk-kopf">
+      <div id="lkHeadG"></div><div id="lkHeadN"></div><div id="lkHeadB"></div><div id="lkHeadF"></div>
+    </div>
+    <div id="lueckenListe"></div>
+    <p class="brnote" id="lkNote"></p>
+  </div>
+</section>
+
 <footer><div class="wrap" id="footerTxt"></div></footer>
 
 <script>
@@ -267,6 +300,11 @@ const UI = {
     cdP1:"The chain is short: a use case creates a workload, the workload burns GPU hours, the hours are rented or owned, and the money ends up one layer down. The number of applications alone does not carry that. What matters is how much compute an application actually draws and whether it runs in a data centre or on the device, so every card carries a rating. <b>__HOCH__ of __N__ are GPU-heavy, __MITTEL__ medium, __GERING__ light, and __SUB__ are the substrate itself rather than a consumer of it.</b>",
     cdP2:"The claim that more use cases mean safer demand holds only as far as the cases are independent of one another. They are not. Of the __HOCH__ heavy ones, __SINF__ are inference-driven and nearly all of those rest on the same condition: a frontier language model good enough that the token price pays for itself. If that condition breaks they break together. The other __STRAIN__ are training-driven and depend on a separate condition, namely that the next model generation is still worth training. <b>Breadth reduces variance through low correlation, not through a high count.</b>",
     cdNote:"The compute rating is my own assignment, not a measurement. It follows the dominant workload: training of large models, inference in the data centre, inference on the device, or GPU simulation. Cluster 13 is marked separately because those cards supply compute rather than consume it. Use the filter above to read the board as a demand map.",
+    lkTitle:"What this board does not cover",
+    lkP1:"A board of use cases is only worth as much as its blind spots are known, so here is the coverage check. Universe: all <b>__UNI__</b> companies that filed accounts with the SEC between 2025Q2 and 2026Q1, grouped by the SIC code in their own filing into <b>__GRP__</b> industry groups. Of those, __AB__ have at least one card here and <b>__LU__ have none</b> — together <b>__LF__ listed companies</b> and about <b>$__LB__ trillion</b> in balance-sheet total.",
+    lkP2:"An empty row does not mean the industry uses no AI. It means this board carries no evidenced case for it. The suggested case in the last column is my own proposal, not a source.",
+    lkHeadG:"industry group", lkHeadN:"firms", lkHeadB:"assets $bn", lkHeadF:"the case that is missing",
+    lkNote:"The universe is SEC filers only, so US-listed companies plus foreign issuers filing 20-F or 40-F. Most European, Japanese and Korean listings are absent, as is everything unlisted. Holdings, funds and filings without an industry code are excluded here because they are not an industry. Source: SEC Financial Statement Data Sets, sub.txt for 2025q2 to 2026q1; size measure us-gaap:Assets, latest date in 2026Q1.",
     brTitle:"Where the money goes",
     brP1:"Every use case on this board runs on compute that somebody pays for. Most companies rent it, and that is the whole reason the cloud providers earn from this list without operating a single use case themselves: <b>Google Cloud $24.8B</b> and <b>AWS $42.2B</b> in the quarter to 30 Jun 2026, together +51% year on year. Those rents fund the next round of buildout, and the buildout lands one layer down — memory, accelerators, packaging, power.",
     brP2:"Renting is not open to everyone. Where personal or regulated data is processed, where sovereignty rules apply, or where a contract fixes the place of processing, the only options are an own data centre or a sovereign region. That demand does not disappear, it changes buyer: hardware bought directly instead of capacity rented. For the layer underneath this board it makes no difference; for cloud revenue it does.",
@@ -297,6 +335,11 @@ const UI = {
     cdP1:"Die Kette ist kurz: ein Use-Case erzeugt eine Last, die Last verbraucht GPU-Stunden, die Stunden werden gemietet oder gekauft, und das Geld landet eine Ebene tiefer. Die Zahl der Anwendungen allein trägt das nicht. Entscheidend ist, wieviel Rechenzeit eine Anwendung tatsächlich zieht und ob sie im Rechenzentrum läuft oder auf dem Gerät, deshalb trägt jede Karte eine Einstufung. <b>__HOCH__ von __N__ sind rechenintensiv, __MITTEL__ mittel, __GERING__ gering, und __SUB__ sind das Substrat selbst und kein Verbraucher.</b>",
     cdP2:"Das Argument, mehr Use-Cases bedeuteten sicherere Nachfrage, hält nur, soweit die Fälle voneinander unabhängig sind. Sie sind es nicht. Von den __HOCH__ schweren sind __SINF__ inferenzgetrieben, und die hängen fast alle an derselben Bedingung: einem Sprachmodell, das gut genug ist, damit sich der Tokenpreis rechnet. Fällt die Bedingung, fallen sie gemeinsam. Die übrigen __STRAIN__ sind trainingsgetrieben und hängen an einer anderen Bedingung, nämlich dass sich die nächste Modellgeneration noch zu trainieren lohnt. <b>Breite senkt die Varianz über geringe Korrelation, nicht über eine hohe Zahl.</b>",
     cdNote:"Die Rechenlast-Einstufung ist meine eigene Zuordnung, nicht gemessen. Sie richtet sich nach der dominanten Last: Training großer Modelle, Inferenz im Rechenzentrum, Inferenz auf dem Gerät oder GPU-Simulation. Cluster 13 ist gesondert markiert, weil diese Karten Rechenzeit liefern statt sie zu verbrauchen. Über den Filter oben lässt sich das Board als Nachfragekarte lesen.",
+    lkTitle:"Was dieses Board nicht abdeckt",
+    lkP1:"Eine Sammlung von Use-Cases taugt nur so viel, wie ihre blinden Flecken bekannt sind, deshalb hier die Abdeckungsprüfung. Universum: alle <b>__UNI__</b> Gesellschaften, die zwischen 2025Q2 und 2026Q1 einen Abschluss bei der SEC eingereicht haben, nach dem SIC-Code der eigenen Einreichung zu <b>__GRP__</b> Branchengruppen zusammengefasst. Davon haben __AB__ mindestens eine Karte hier und <b>__LU__ keine einzige</b> — zusammen <b>__LF__ börsennotierte Firmen</b> und rund <b>__LB__ Billionen $</b> Bilanzsumme.",
+    lkP2:"Eine leere Zeile heißt nicht, dass die Branche keine KI einsetzt. Sie heißt, dass dieses Board dafür keinen belegten Fall führt. Der vorgeschlagene Fall in der letzten Spalte ist mein eigener Vorschlag, keine Quelle.",
+    lkHeadG:"Branchengruppe", lkHeadN:"Firmen", lkHeadB:"Bilanz Mrd $", lkHeadF:"der Fall, der fehlt",
+    lkNote:"Das Universum umfasst nur SEC-Einreicher, also US-notierte Gesellschaften plus ausländische Emittenten mit 20-F oder 40-F. Die meisten europäischen, japanischen und koreanischen Notierungen fehlen, ebenso alles Nichtbörsennotierte. Holdings, Fonds und Einreichungen ohne Branchenkennung sind hier herausgerechnet, weil sie keine Branche sind. Quelle: SEC Financial Statement Data Sets, sub.txt der Quartale 2025q2 bis 2026q1; Größenmaß us-gaap:Assets, letzter Stichtag 2026Q1.",
     brTitle:"Wohin das Geld fließt",
     brP1:"Jeder Use-Case auf diesem Board läuft auf Rechenzeit, die jemand bezahlt. Die meisten Firmen mieten sie, und genau deshalb verdienen die Cloud-Anbieter an dieser Liste, ohne selbst einen einzigen Use-Case zu betreiben: <b>Google Cloud 24,8 Mrd $</b> und <b>AWS 42,2 Mrd $</b> im Quartal bis 30.6.2026, zusammen +51% gegenüber Vorjahr. Aus diesen Mieten finanzieren die Anbieter den nächsten Ausbau, und der landet eine Ebene tiefer: Speicher, Beschleuniger, Packaging, Strom.",
     brP2:"Mieten steht aber nicht allen offen. Wo personenbezogene oder regulierte Daten verarbeitet werden, wo Souveränitätsauflagen gelten oder ein Vertrag den Ort der Verarbeitung festlegt, bleibt nur das eigene Rechenzentrum oder eine souveräne Region. Diese Nachfrage verschwindet nicht, sie wechselt den Käufer: Hardware direkt gekauft statt Kapazität gemietet. Für die Ebene unter diesem Board macht das keinen Unterschied, für die Cloud-Umsätze schon.",
@@ -1211,6 +1254,38 @@ function computeStat(){
           schwerTrain:schwer.filter(x=>x.ck==="train").length};
 }
 
+
+/* ---------- Branchenabdeckung ----------
+   Universum: alle 7204 Gesellschaften, die zwischen 2025Q2 und 2026Q1 einen
+   Abschluss bei der SEC eingereicht haben, SIC-Code aus der eigenen Einreichung,
+   zu 51 Gruppen zusammengefasst. Quelle: SEC Financial Statement Data Sets.
+   Groessenmass: Summe us-gaap:Assets, letzter Stichtag 2026Q1.
+   Die Zuordnung Karte zu Branche ist meine eigene. Holdings und Faelle ohne
+   Branchenkennung sind herausgerechnet, weil sie keine Branche sind. */
+const ABDECKUNG = {"universum": 7204, "gruppen": 51, "abgedeckt": 28, "luecken": 21, "lfirmen": 1416, "lbio": 12.8};
+const LUECKEN = [{"de":"Einzelhandel","en":"Retail","n":223,"b":2400,"fde":"Nachfrageprognose, Preissetzung, Empfehlung und Ranking, Inventurdifferenz","fen":"Demand forecasting, pricing, ranking and recommendation, shrinkage"},{"de":"Öl und Gas","en":"Oil & gas","n":177,"b":2150,"fde":"Seismische Interpretation, Reservoirmodellierung, Bohroptimierung, Leckerkennung","fen":"Seismic interpretation, reservoir modelling, drilling optimisation, leak detection"},{"de":"Großhandel","en":"Wholesale","n":140,"b":667,"fde":"Bestandsdisposition, Sortimentssteuerung, Preisverhandlung","fen":"Inventory allocation, assortment, price negotiation"},{"de":"Nahrung und Genuss","en":"Food & beverage","n":125,"b":1546,"fde":"Rezeptur, Haltbarkeitsprognose, Sichtprüfung in der Abfüllung","fen":"Formulation, shelf-life prediction, inline inspection on the filling line"},{"de":"Immobilien","en":"Real estate","n":108,"b":346,"fde":"Bewertung, Vermietung, Gebäudebetrieb und Belegungssteuerung","fen":"Valuation, leasing, building operation and occupancy"},{"de":"IT-Hardware","en":"Computer hardware","n":104,"b":1105,"fde":"Chipdesign und EDA, Verifikation, Layout","fen":"Chip design and EDA, verification, layout"},{"de":"Metallwaren","en":"Fabricated metal","n":61,"b":190,"fde":"Zerspanungsparameter, Werkzeugstandzeit, Sichtprüfung","fen":"Cutting parameters, tool life, visual inspection"},{"de":"Gastronomie","en":"Restaurants","n":60,"b":249,"fde":"Bedarfsprognose, Spracherfassung am Schalter, Küchenrobotik","fen":"Demand forecasting, voice ordering, kitchen robotics"},{"de":"Bildung","en":"Education","n":58,"b":33,"fde":"Adaptives Lernen, Bewertung, Sprachlernen","fen":"Adaptive learning, assessment, language learning"},{"de":"Textil und Bekleidung","en":"Textiles & apparel","n":53,"b":150,"fde":"Entwurf, Nachfrageprognose, virtuelle Anprobe","fen":"Design, demand forecasting, virtual try-on"},{"de":"Metallerzeugung","en":"Primary metals","n":46,"b":405,"fde":"abgedeckt über Prozessindustrie, aber ohne eigene Karte","fen":"Covered by the process-industry card, but without one of its own"},{"de":"Persönliche Dienste","en":"Personal services","n":45,"b":131,"fde":"Terminplanung, Nachfrageprognose","fen":"Scheduling, demand forecasting"},{"de":"Steine und Erden","en":"Stone, clay & glass","n":41,"b":218,"fde":"Brennprozessregelung im Zementwerk, Qualitätsprognose","fen":"Kiln control in cement, quality prediction"},{"de":"Luftverkehr","en":"Air transport","n":33,"b":443,"fde":"Flottenplanung, Crew-Einsatz, Wartungsprognose, Flugsicherung","fen":"Fleet planning, crew rostering, maintenance prediction, air traffic control"},{"de":"Holz und Möbel","en":"Wood & furniture","n":32,"b":66,"fde":"Zuschnittoptimierung, Sortierung nach Holzqualitaet","fen":"Cutting optimisation, grading by timber quality"},{"de":"Gummi und Kunststoff","en":"Rubber & plastics","n":25,"b":71,"fde":"Spritzgussparameter, Ausschussprognose","fen":"Injection-moulding parameters, scrap prediction"},{"de":"Raffinerie","en":"Refining","n":23,"b":1798,"fde":"Fahrweisenoptimierung, Ausbeutesteuerung, Anlagenzustand","fen":"Operating-mode optimisation, yield control, asset health"},{"de":"Druck und Verlag","en":"Printing & publishing","n":22,"b":67,"fde":"Redaktionelle Erzeugung, Personalisierung, Rechteklärung","fen":"Editorial generation, personalisation, rights clearance"},{"de":"Papier","en":"Paper","n":21,"b":314,"fde":"Prozessregelung der Papiermaschine, Bahnrissvorhersage","fen":"Paper-machine process control, web-break prediction"},{"de":"Kohle","en":"Coal","n":10,"b":25,"fde":"Förderplanung, Anlagenzustand","fen":"Extraction planning, asset health"},{"de":"Bahn und Nahverkehr","en":"Rail & transit","n":9,"b":407,"fde":"Fahrplanoptimierung, Gleiszustand, vorausschauende Wartung","fen":"Timetable optimisation, track condition, predictive maintenance"}];
+function zeichneLuecken(){
+  const u = UI[lang];
+  const el = document.getElementById('lueckenListe'); if(!el) return;
+  el.innerHTML = LUECKEN.map(function(x){
+    return '<div class="lk"><div class="lk-n">'+(lang==='de'?x.de:x.en)+'</div>'+
+      '<div class="lk-z">'+x.n+'</div>'+
+      '<div class="lk-b">'+x.b.toLocaleString(lang==='de'?'de-DE':'en-US')+'</div>'+
+      '<div class="lk-f">'+(lang==='de'?x.fde:x.fen)+'</div></div>';
+  }).join('');
+  document.getElementById('lkHeadN').textContent = u.lkHeadN;
+  document.getElementById('lkHeadB').textContent = u.lkHeadB;
+  document.getElementById('lkHeadF').textContent = u.lkHeadF;
+  document.getElementById('lkHeadG').textContent = u.lkHeadG;
+  for(const id of ['lkTitle','lkP1','lkP2','lkNote']){
+    const e=document.getElementById(id);
+    if(e) e.innerHTML = u[id].replace(/__UNI__/g,ABDECKUNG.universum.toLocaleString(lang==='de'?'de-DE':'en-US'))
+      .replace(/__GRP__/g,ABDECKUNG.gruppen).replace(/__AB__/g,ABDECKUNG.abgedeckt)
+      .replace(/__LU__/g,ABDECKUNG.luecken).replace(/__LF__/g,ABDECKUNG.lfirmen.toLocaleString(lang==='de'?'de-DE':'en-US'))
+      .replace(/__LB__/g,String(ABDECKUNG.lbio).replace('.',lang==='de'?',':'.'));
+  }
+}
+
 // ---- cluster translations (keyed by cluster number n) ----
 const MN_CL = {
   1:{short:"хөдөлгөөн ба тээвэр", title:"Хөдөлгөөн ба тээвэр",
@@ -1623,7 +1698,7 @@ function setLang(l){
   document.getElementById('btnEN').setAttribute('aria-pressed', l==='en');
   document.getElementById('btnDE').setAttribute('aria-pressed', l==='de');
   document.getElementById('btnMN').setAttribute('aria-pressed', l==='mn');
-  renderStatic(); buildChips(); buildBoard(); apply();
+  renderStatic(); buildChips(); buildBoard(); apply(); zeichneLuecken();
 }
 function T(o){ return o[lang] || o.en; }
 
