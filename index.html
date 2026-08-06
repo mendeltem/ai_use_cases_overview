@@ -129,6 +129,29 @@
   footer b{color:var(--ink-soft)}
   @media (max-width:640px){ .cl-head{flex-wrap:wrap} .cl-verdict{max-width:none; width:100%} .dist{gap:16px} .dist-num{font-size:25px} .topbar{flex-direction:column-reverse; align-items:flex-start} }
   @media (prefers-reduced-motion:reduce){ *{transition:none!important; scroll-behavior:auto!important} }
+
+  /* ---- Bruecke zur Lieferkettenseite ---- */
+  .bridge{background:var(--surface-2); border-bottom:1px solid var(--line)}
+  .bridge .wrap{padding:26px 22px 28px; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:28px; align-items:start}
+  .bridge h2{font-family:'Space Grotesk',sans-serif; font-size:19px; margin:0 0 10px; letter-spacing:-.01em}
+  .bridge p{margin:0 0 11px; color:var(--ink-soft); max-width:62ch}
+  .bridge p b{color:var(--ink); font-weight:600}
+  .bridge .brnote{font-size:12.5px; color:var(--ink-faint); margin:12px 0 0; border-left:2px solid var(--line-strong); padding-left:10px}
+  .brcard{display:block; background:var(--surface); border:1px solid var(--line-strong);
+          border-top:3px solid var(--petrol); padding:15px 16px 16px; text-decoration:none; color:inherit;
+          box-shadow:var(--shadow)}
+  .brcard:hover{border-color:var(--petrol)}
+  .brcard .brk{font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.16em;
+               text-transform:uppercase; color:var(--petrol); display:block; margin-bottom:7px}
+  .brcard .brt{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px; display:block; margin-bottom:6px}
+  .brcard .brs{font-size:13px; color:var(--ink-soft); display:block}
+  .brcard .brgo{font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--petrol);
+                display:block; margin-top:11px}
+  .brfig{display:flex; flex-wrap:wrap; gap:18px 26px; margin:14px 0 0; padding:13px 0 0; border-top:1px solid var(--line)}
+  .brfig div{min-width:132px}
+  .brfig b{font-family:'JetBrains Mono',monospace; font-size:17px; display:block; color:var(--petrol-dark)}
+  .brfig span{font-size:12px; color:var(--ink-faint)}
+  @media(max-width:820px){ .bridge .wrap{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -150,6 +173,28 @@
     <div class="dist" id="dist"></div>
   </div>
 </header>
+
+<section class="bridge">
+  <div class="wrap">
+    <div>
+      <h2 id="brTitle"></h2>
+      <p id="brP1"></p>
+      <p id="brP2"></p>
+      <div class="brfig">
+        <div><b id="brF1v"></b><span id="brF1l"></span></div>
+        <div><b id="brF2v"></b><span id="brF2l"></span></div>
+        <div><b id="brF3v"></b><span id="brF3l"></span></div>
+      </div>
+      <p class="brnote" id="brNote"></p>
+    </div>
+    <a class="brcard" href="https://mendeltem.github.io/AI_Companys/nvidia-oekosystem.html" target="_blank" rel="noopener">
+      <span class="brk" id="brCardK"></span>
+      <span class="brt" id="brCardT"></span>
+      <span class="brs" id="brCardS"></span>
+      <span class="brgo" id="brCardG"></span>
+    </a>
+  </div>
+</section>
 
 <section class="legend">
   <div class="wrap">
@@ -200,6 +245,16 @@
 <script>
 const UI = {
   en:{
+    brTitle:"Where the money goes",
+    brP1:"Every use case on this board runs on compute that somebody pays for. Most companies rent it, and that is the whole reason the cloud providers earn from this list without operating a single use case themselves: <b>Google Cloud $24.8B</b> and <b>AWS $42.2B</b> in the quarter to 30 Jun 2026, together +51% year on year. Those rents fund the next round of buildout, and the buildout lands one layer down — memory, accelerators, packaging, power.",
+    brP2:"Renting is not open to everyone. Where personal or regulated data is processed, where sovereignty rules apply, or where a contract fixes the place of processing, the only options are an own data centre or a sovereign region. That demand does not disappear, it changes buyer: hardware bought directly instead of capacity rented. For the layer underneath this board it makes no difference; for cloud revenue it does.",
+    brF1v:"+51%", brF1l:"Google Cloud + AWS, quarter y/y",
+    brF2v:"+112%", brF2l:"CoreWeave, rented GPU capacity y/y",
+    brF3v:"66", brF3l:"listed companies in that layer",
+    brNote:"The split between rented and self-built capacity is not measured on this board. The mechanism is well established; the ratio is not. The figures above are segment revenue from the companies\' own filings, quarter ended 30 Jun 2026 (Oracle 31 May, CoreWeave 31 Mar).",
+    brCardK:"Sister page", brCardT:"The Nvidia ecosystem",
+    brCardS:"Valuation and quarterly figures for 66 listed companies along the supply chain: memory, foundry, packaging, power, cloud, application.",
+    brCardG:"open →",
     eyebrow:"AI Use Cases · As of 6 August 2026 · Maturity · Evidence · Growth",
     h1a:"What AI is ", h1accent:"actually", h1b:" doing<br>in the real world",
     thesis:"From robots on the factory floor to agents in the back office — the concrete AI use cases that already run. Each rated on three axes: <strong>how far it runs</strong>, <strong>how solid the numbers are</strong>, and <strong>how fast it's growing</strong>.",
@@ -214,6 +269,16 @@ const UI = {
     footer:"<b>Source base:</b> project knowledge plus web verification, August 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Cluster 13 (compute & energy substrate) adds the hardware layer the whole board runs on — HBM and NAND (SK Hynix Q2'26, Sandisk Q4 FY26), accelerators (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), power/turbines, LiDAR (RoboSense Q1'26) — verified against company earnings. Click a card for detail, source and caveat."
   },
   de:{
+    brTitle:"Wohin das Geld fließt",
+    brP1:"Jeder Use-Case auf diesem Board läuft auf Rechenzeit, die jemand bezahlt. Die meisten Firmen mieten sie, und genau deshalb verdienen die Cloud-Anbieter an dieser Liste, ohne selbst einen einzigen Use-Case zu betreiben: <b>Google Cloud 24,8 Mrd $</b> und <b>AWS 42,2 Mrd $</b> im Quartal bis 30.6.2026, zusammen +51% gegenüber Vorjahr. Aus diesen Mieten finanzieren die Anbieter den nächsten Ausbau, und der landet eine Ebene tiefer: Speicher, Beschleuniger, Packaging, Strom.",
+    brP2:"Mieten steht aber nicht allen offen. Wo personenbezogene oder regulierte Daten verarbeitet werden, wo Souveränitätsauflagen gelten oder ein Vertrag den Ort der Verarbeitung festlegt, bleibt nur das eigene Rechenzentrum oder eine souveräne Region. Diese Nachfrage verschwindet nicht, sie wechselt den Käufer: Hardware direkt gekauft statt Kapazität gemietet. Für die Ebene unter diesem Board macht das keinen Unterschied, für die Cloud-Umsätze schon.",
+    brF1v:"+51%", brF1l:"Google Cloud + AWS, Quartal J/J",
+    brF2v:"+112%", brF2l:"CoreWeave, vermietete GPU-Kapazität J/J",
+    brF3v:"66", brF3l:"börsennotierte Firmen dieser Ebene",
+    brNote:"Die Aufteilung zwischen gemieteter und selbst gebauter Kapazität ist auf diesem Board nicht gemessen. Der Mechanismus ist belegt, das Verhältnis nicht. Die Zahlen oben sind Segmentumsätze aus den eigenen Berichten der Firmen, Quartal bis 30.6.2026 (Oracle 31.5., CoreWeave 31.3.).",
+    brCardK:"Schwesterseite", brCardT:"Das Nvidia-Ökosystem",
+    brCardS:"Bewertung und Quartalszahlen von 66 börsennotierten Firmen entlang der Lieferkette: Speicher, Fertigung, Packaging, Strom, Cloud, Anwendung.",
+    brCardG:"öffnen →",
     eyebrow:"KI-Use-Cases · Stand 6. August 2026 · Reifegrad · Datenlage · Wachstum",
     h1a:"Was KI ", h1accent:"wirklich", h1b:" schon tut,<br>in der echten Welt",
     thesis:"Von Robotern in der Fabrik bis zu Agenten im Backoffice — die konkreten KI-Use-Cases, die real laufen. Jeder nach drei Achsen: <strong>wie weit er läuft</strong>, <strong>wie belastbar die Zahlen sind</strong> und <strong>wie schnell er wächst</strong>.",
@@ -935,6 +1000,10 @@ UI.mn = {
   footer:"<b>Эх сурвалжийн суурь:</b> төслийн мэдлэг дээр вэб баталгаажуулалт нэмсэн, 2026 оны 7-р сар. Бат тулгуур эх сурвалжид: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (ашиглалтад), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66 сая аж үйлдвэрийн робот, +9% YoY) багтана. Өсөлтийн үзүүлэлт нь тохиолдол тус бүрийн хамгийн сүүлийн шилдэг тоог тусгасан; өсөлт нь бодит бус компанийн зорилт бол картад тэмдэглэсэн. \"Бат\" гэж тэмдэглэгдээгүй үр ашгийн хувиуд ихэвчлэн компанийн тоо — чиглэл зөв ч нарийн биш. Дэлгэрэнгүй, эх сурвалж, тайлбарыг үзэхийн тулд карт дээр дарна уу."
 };
 
+/* UI.mn wird als vollstaendiges Objekt gesetzt, nicht gemischt. Fehlt ein
+   Schluessel, stuende dort sonst "undefined"; deshalb aus dem Englischen auffuellen. */
+for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
+
 // ---- cluster translations (keyed by cluster number n) ----
 const MN_CL = {
   1:{short:"хөдөлгөөн ба тээвэр", title:"Хөдөлгөөн ба тээвэр",
@@ -1374,6 +1443,10 @@ function renderStatic(){
   document.getElementById('lblMat').textContent = u.lblMat;
   document.getElementById('lblGrow').textContent = u.lblGrow;
   document.getElementById('lblQual').textContent = u.lblQual;
+  for(const id of ['brTitle','brP1','brP2','brNote','brF1v','brF1l','brF2v','brF2l',
+                   'brF3v','brF3l','brCardK','brCardT','brCardS','brCardG']){
+    const el = document.getElementById(id); if(el) el.innerHTML = u[id];
+  }
   document.getElementById('search').placeholder = u.searchPh;
   document.getElementById('empty').textContent = u.empty;
   document.getElementById('footerTxt').innerHTML = u.footer;
