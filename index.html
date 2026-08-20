@@ -42,6 +42,17 @@
   .dist-num.s{color:#7ED09A}.dist-num.m{color:#E7C877}.dist-num.t{color:#E39A87}.dist-num.g{color:#7BB6E6}
   .dist-total .dist-num{color:#EAF0EE}
 
+  .topright{display:flex; flex-direction:column; align-items:flex-end; gap:9px; flex-shrink:0}
+  .sisterlink{display:inline-flex; align-items:baseline; gap:7px; max-width:270px; text-decoration:none;
+              border:1px solid rgba(127,208,196,.34); border-radius:8px; padding:6px 10px; transition:.12s}
+  .sisterlink:hover{border-color:#7FD0C4; background:rgba(127,208,196,.09)}
+  .sisterlink:focus-visible{outline:2px solid #7FD0C4; outline-offset:2px}
+  .sisterlink .sk{font-family:'JetBrains Mono',monospace; font-size:8.5px; letter-spacing:.15em;
+                  text-transform:uppercase; color:#7FD0C4; flex-shrink:0}
+  .sisterlink .st{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:12.5px; color:#EAF0EE;
+                  white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .sisterlink .sgo{color:#7FD0C4; font-size:12px; flex-shrink:0}
+  @media(max-width:640px){ .topright{align-items:flex-start} .sisterlink{max-width:none} }
   .langtoggle{display:inline-flex; border:1px solid rgba(127,208,196,.4); border-radius:8px; overflow:hidden; flex-shrink:0}
   .langtoggle button{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.08em; padding:6px 12px; background:transparent; color:#9FB4AF; border:none; cursor:pointer; transition:.12s}
   .langtoggle button[aria-pressed="true"]{background:var(--petrol); color:#fff}
@@ -168,7 +179,7 @@
 
   /* ---- Bruecke zur Lieferkettenseite ---- */
   .bridge{background:var(--surface-2); border-bottom:1px solid var(--line)}
-  .bridge .wrap{padding:26px 22px 28px; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:28px; align-items:start}
+  .bridge .wrap{padding:14px 22px 16px}
   .bridge h2{font-family:'Space Grotesk',sans-serif; font-size:19px; margin:0 0 10px; letter-spacing:-.01em}
   .bridge p{margin:0 0 11px; color:var(--ink-soft); max-width:62ch}
   .bridge p b{color:var(--ink); font-weight:600}
@@ -222,10 +233,17 @@
         <p class="eyebrow" id="eyebrow"></p>
         <h1 id="h1"></h1>
       </div>
-      <div class="langtoggle" role="group" aria-label="Language">
-        <button id="btnEN" aria-pressed="true" onclick="setLang('en')">EN</button>
-        <button id="btnDE" aria-pressed="false" onclick="setLang('de')">DE</button>
-      <button id="btnMN" aria-pressed="false" onclick="setLang('mn')">МН</button>
+      <div class="topright">
+        <div class="langtoggle" role="group" aria-label="Language">
+          <button id="btnEN" aria-pressed="true" onclick="setLang('en')">EN</button>
+          <button id="btnDE" aria-pressed="false" onclick="setLang('de')">DE</button>
+          <button id="btnMN" aria-pressed="false" onclick="setLang('mn')">МН</button>
+        </div>
+        <a class="sisterlink" href="https://mendeltem.github.io/AI_Companys/nvidia-oekosystem.html" target="_blank" rel="noopener">
+          <span class="sk" id="brCardK"></span>
+          <span class="st" id="brCardT"></span>
+          <span class="sgo" aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
     <p class="thesis" id="thesis"></p>
@@ -256,12 +274,6 @@
         </div>
       </div>
     </div>
-    <a class="brcard" href="https://mendeltem.github.io/AI_Companys/nvidia-oekosystem.html" target="_blank" rel="noopener">
-      <span class="brk" id="brCardK"></span>
-      <span class="brt" id="brCardT"></span>
-      <span class="brs" id="brCardS"></span>
-      <span class="brgo" id="brCardG"></span>
-    </a>
   </div>
 </section>
 
@@ -602,10 +614,10 @@ const UC = [
   U(3,"WEF Lighthouse sites, Rockwell, Cognex, Landing AI","prod",2,"steady",
     E("Visual inspection & predictive maintenance","Visuelle Prüfung & vorausschauende Instandhaltung"),
     E("the workhorse case, quietly everywhere","der Arbeitspferd-Fall, unauffällig überall"),
-    E("Rockwell Singapore, verified 2026: productivity <b>+43%</b>, defects <b>-35%</b>, time-to-competency -67%","Rockwell Singapur, verifiziert 2026: Produktivität <b>+43%</b>, Ausschuss <b>-35%</b>, Einarbeitungszeit -67%"),
+    E("Rockwell Singapore, WEF Lighthouse 2026: productivity <b>+43%</b>, defects <b>-35%</b>, onboarding -67%","Rockwell Singapur, WEF-Lighthouse 2026: Produktivität <b>+43%</b>, Ausschuss <b>-35%</b>, Einarbeitung -67%"),
     E("Cameras and prediction, the two things mass production actually buys AI for. Defect detection on the line, and vibration, acoustic and thermal monitoring that schedules a repair before the machine stops. The only cross-company set of vetted figures is the WEF Global Lighthouse Network, which reached 238 sites in June 2026 and reports generative AI as 23% of top solutions in 2025. Its newest example with published numbers is Rockwell Automation's Singapore plant, admitted June 2026 after deploying more than 50 digital and AI solutions including AI quality control and intelligent maintenance: labour productivity per person-hour up 43%, defects down 35%, time-to-competency down 67%. Two caveats. The Lighthouse sites are self-nominated and the figures are site-reported, so this is a selected sample of successes, not a population estimate. And for the compute question this card is deliberately light: inline inspection runs on embedded vision hardware and maintenance models are small, so the economic effect is large and the GPU demand is not.","Kameras und Vorhersage, die beiden Dinge, für die Massenfertigung tatsächlich KI kauft. Fehlererkennung an der Linie, und Schwingungs-, Schall- und Wärmeüberwachung, die eine Reparatur einplant, bevor die Maschine steht. Die einzige firmenübergreifende Sammlung geprüfter Zahlen ist das Global Lighthouse Network des WEF, das im Juni 2026 238 Standorte erreichte und generative KI mit 23% der Top-Lösungen für 2025 ausweist. Das jüngste Beispiel mit veröffentlichten Zahlen ist Rockwell Automations Werk in Singapur, aufgenommen im Juni 2026 nach Einführung von über 50 digitalen und KI-Lösungen einschließlich KI-Qualitätskontrolle und intelligenter Instandhaltung: Arbeitsproduktivität je Personenstunde plus 43%, Ausschuss minus 35%, Einarbeitungszeit minus 67%. Zwei Vorbehalte. Die Lighthouse-Standorte bewerben sich selbst und die Zahlen sind standortberichtet, das ist also eine ausgewählte Stichprobe von Erfolgen, keine Grundgesamtheit. Und für die Rechenfrage ist die Karte bewusst gering: Inline-Prüfung läuft auf eingebetteter Bildverarbeitung und Instandhaltungsmodelle sind klein, der wirtschaftliche Effekt ist also groß und die GPU-Nachfrage nicht."),
     E("WEF Global Lighthouse Network (Jun 2026); Rockwell/Singapore EDB","WEF Global Lighthouse Network (Juni 2026); Rockwell/Singapore EDB"),
-    "note", E("vetted sites, but self-selected and self-reported","geprüfte Standorte, aber selbst gewählt und selbst berichtet")),
+    "warn", E("the three percentages are in no fetchable primary document","die drei Prozentwerte stehen in keinem abrufbaren Primärdokument")),
   U(3,"Tata Steel Kalinganagar, POSCO, ArcelorMittal, BASF","prod",2,"steady",
     E("Process industry: metallurgy & chemicals","Prozessindustrie: Metallurgie & Chemie"),
     E("deployed at scale, effects almost entirely self-reported","großflächig im Einsatz, Wirkung fast nur selbst berichtet"),
@@ -1161,11 +1173,11 @@ const UC = [
 const URLS = {
   "Robotaxis / autonomous driving":"https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
   "Autonomous trucks":"https://www.sec.gov/Archives/edgar/data/1828108/000182810825000155/a25q3shareholderletter_f.htm",
-  "eVTOL / flying taxis":"https://www.jobyaviation.com/",
+  "eVTOL / flying taxis":"https://ir.jobyaviation.com/news-events/press-releases/detail/176/jobys-first-faa-conforming-aircraft-takes-flight",
   "Autonomous ships":"https://www.kongsberg.com/maritime/",
   "Delivery & medical drones":"https://www.flyzipline.com/",
   "Sidewalk delivery robots":"https://www.starship.xyz/",
-  "Warehouse robots":"https://techcrunch.com/2025/07/01/amazon-deploys-its-1-millionth-robot-releases-generative-ai-model/",
+  "Warehouse robots":"https://www.aboutamazon.com/news/operations/amazon-million-robots-ai-foundation-model",
   "Autonomous mine fleets":"https://www.railjournal.com/in_depth/autohaul-drives-efficiencies-at-rio-tinto/",
   "Grid energy trading":"https://reneweconomy.com.au/tesla-big-battery-paves-way-for-artificial-intelligence-to-dominate-energy-trades-31949/",
   "Industrial robots":"https://www.therobotreport.com/ifr-industrial-robot-deployments-have-doubled-in-10-years/",
@@ -1220,12 +1232,30 @@ const URLS = {
   "AI language learning":"https://investors.duolingo.com/static-files/961ce633-3cee-49d0-bd7a-2c63731d45fb",
   "Rail predictive maintenance":"https://www.deutschebahn.com/de/smarteinfrastruktur-6898504",
   "Restaurant kitchen automation":"https://www.restaurantbusinessonline.com/technology/sweetgreen-sell-spyce-technology-company-wonder-1864m",
+  "Visual inspection & predictive maintenance":"https://www.prnewswire.com/apac/news-releases/rockwell-automation-singapore-site-named-a-world-economic-forum-global-lighthouse-302809129.html",
+  "World models & 3D generation":"https://arxiv.org/abs/2501.03575",
 };
 
 /* ---------- Firmenseiten je Anwendung ----------
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Visual inspection & predictive maintenance":[
+    {n:"Rockwell", u:"https://www.rockwellautomation.com/en-us.html"},
+    {n:"Cognex", u:"https://investor.cognex.com/overview/default.aspx"},
+    {n:"Landing AI", u:"https://landing.ai/"}],
+  "Warehouse robots":[
+    {n:"Amazon Robotics", u:"https://www.aboutamazon.com/news/tag/robotics"},
+    {n:"Ocado", u:"https://www.ocadogroup.com/"},
+    {n:"Geek+", u:"https://www.geekplus.com/"}],
+  "World models & 3D generation":[
+    {n:"NVIDIA Cosmos/Omniverse", u:"https://www.nvidia.com/en-us/ai/cosmos/"},
+    {n:"DeepMind Genie", u:"https://deepmind.google/models/genie/"},
+    {n:"Microsoft Muse", u:"https://www.microsoft.com/en-us/research/blog/introducing-muse-our-first-generative-ai-model-designed-for-gameplay-ideation/"}],
+  "eVTOL / flying taxis":[
+    {n:"Joby", u:"https://www.jobyaviation.com/"},
+    {n:"EHang", u:"https://www.ehang.com/"},
+    {n:"Archer", u:"https://investors.archer.com/"}],
   "Robotaxis / autonomous driving":[
     {n:"Waymo", u:"https://waymo.com/"},
     {n:"Apollo Go", u:"https://www.apollogo.com/"},
