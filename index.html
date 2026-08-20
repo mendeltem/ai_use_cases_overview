@@ -93,7 +93,7 @@
   .cl-tag.soft{background:#E7E2F0; color:#6B4E8E}
   .cl-tag.infra{background:#EDEBE4; color:#7A6A2E}
 
-  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:10px}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px}
   .card{background:var(--surface); border:1px solid var(--line); border-radius:11px; box-shadow:var(--shadow); overflow:hidden; transition:.14s;}
   .card.hidden{display:none}
   .card:hover{border-color:var(--line-strong); transform:translateY(-1px)}
@@ -105,10 +105,41 @@
   .card-mid{display:flex; align-items:center; gap:8px; margin:9px 0 2px; flex-wrap:wrap}
   .metric{font-size:12.5px; color:var(--ink); line-height:1.4}
   .metric b{font-weight:600}
-  .growthline{display:flex; align-items:center; gap:6px; margin-top:9px; font-size:11.5px; color:var(--ink-soft)}
-  .growthline .garrow{font-size:14px}
-  .growthline .glabel{font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.01em}
-  .expand-hint{font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--ink-faint); margin-top:8px; display:flex; align-items:center; gap:5px}
+  /* Wachstum und Rechenlast teilen sich eine Zeile; frueher zwei getrennte Bloecke. */
+  .metaline{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 7px; margin-top:9px; font-size:11.5px; color:var(--ink-soft)}
+  .metaline .garrow{font-size:14px}
+  .metaline .glabel{font-size:11px; color:var(--ink-soft)}
+  .metaline .gpart{font-size:11px; color:var(--ink-soft)}
+  .metaline .cpart{font-size:11px; color:var(--ink-faint)}
+  .metaline .mdot{color:var(--line-strong)}
+  .metaline .ci{font-family:'JetBrains Mono',monospace; font-size:9.5px; letter-spacing:.09em; text-transform:uppercase}
+  .metaline .ci.ci3{color:#B4451F} .metaline .ci.ci2{color:#8A6A1F}
+  .metaline .ci.ci1{color:var(--ink-faint)} .metaline .ci.ci0{color:var(--petrol)}
+  .metaline .cknd{font-size:11px; color:var(--ink-faint)}
+  .expand-hint{font-size:11px; color:var(--ink-faint); margin-top:9px; display:flex; align-items:center; gap:5px}
+
+  /* Aufklappbare Bloecke: Legende, Zusatzfilter, Rechenbedarf-Argument. */
+  .disclose{display:inline-flex; align-items:center; gap:7px; background:none; border:none; cursor:pointer; padding:0;
+            font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+            color:var(--ink-faint); transition:.12s}
+  .disclose:hover{color:var(--petrol)}
+  .disclose:focus-visible{outline:2px solid var(--petrol); outline-offset:3px; border-radius:3px}
+  .disclose .chev{transition:transform .18s; display:inline-block}
+  .disclose[aria-expanded="true"] .chev{transform:rotate(90deg)}
+  .disclose .cnt{font-family:'Inter',sans-serif; letter-spacing:0; text-transform:none; color:var(--petrol); font-weight:600}
+  .disclose .cnt:empty{display:none}
+  #legendBody[hidden], #moreFilters[hidden], #warumBody[hidden]{display:none}
+  #legendBody{display:flex; flex-wrap:wrap; gap:22px; align-items:center; width:100%; margin-top:11px}
+  .brtoggle{font-family:'Space Grotesk',sans-serif; font-size:19px; font-weight:600; letter-spacing:-.01em;
+            text-transform:none; color:var(--ink); margin-bottom:4px}
+  .brtoggle .chev{color:var(--ink-faint); font-size:13px}
+  #bridgeBody[hidden]{display:none}
+  #bridgeBody{margin-top:12px}
+  #bridgeBody .brfig{margin-top:0; border-top:none; padding-top:0}
+  .warum .disclose{font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:600; letter-spacing:0;
+                   text-transform:none; color:var(--ink)}
+  .warum .disclose .chev{color:var(--ink-faint); font-size:12px}
+  #warumBody{margin-top:9px}
   .chev{transition:transform .18s; display:inline-block}
   .card.open .chev{transform:rotate(90deg)}
   .detail{max-height:0; overflow:hidden; transition:max-height .28s ease; background:var(--surface-2); border-top:1px solid transparent}
@@ -119,6 +150,11 @@
   .srclink{color:var(--petrol); text-decoration:none; border-bottom:1px solid rgba(14,110,108,.3); transition:.12s}
   .srclink:hover{border-bottom-color:var(--petrol); background:rgba(14,110,108,.06)}
   .srclink:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
+  .detail-in .firms{margin-top:7px; display:flex; flex-wrap:wrap; gap:6px; align-items:baseline}
+  .detail-in .firms > b{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink-soft); font-weight:500; letter-spacing:.01em; margin-right:2px}
+  .firmlink{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--petrol); text-decoration:none; padding:1px 6px; border:1px solid var(--line); border-radius:4px; background:var(--surface-2); transition:.12s}
+  .firmlink:hover{border-color:var(--petrol); background:rgba(14,110,108,.08)}
+  .firmlink:focus-visible{outline:2px solid var(--petrol); outline-offset:1px}
   .flag{display:inline-block; font-size:10.5px; padding:2px 8px; border-radius:5px; margin-top:9px; font-weight:500}
   .flag.warn{background:var(--thin-bg); color:var(--thin)}
   .flag.note{background:var(--mid-bg); color:var(--mid)}
@@ -153,12 +189,6 @@
   .brfig span{font-size:12px; color:var(--ink-faint)}
   .warum{margin-top:20px; padding-top:16px; border-top:1px solid var(--line)}
   .warum h3{font-family:'Space Grotesk',sans-serif; font-size:15px; margin:0 0 9px}
-  .computeline{display:flex; align-items:center; gap:7px; margin-top:7px}
-  .cpill{font-family:'JetBrains Mono',monospace; font-size:9.5px; letter-spacing:.09em;
-         text-transform:uppercase; padding:2px 6px; border:1px solid currentColor}
-  .cpill.ci3{color:#B4451F} .cpill.ci2{color:#8A6A1F} .cpill.ci1{color:var(--ink-faint)}
-  .cpill.ci0{color:var(--petrol)}
-  .cknd{font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--ink-faint)}
   .chip.c[aria-pressed="true"]{border-color:#B4451F; color:#B4451F}
   @media(max-width:820px){ .bridge .wrap{grid-template-columns:1fr} }
 
@@ -206,20 +236,24 @@
 <section class="bridge">
   <div class="wrap">
     <div>
-      <h2 id="brTitle"></h2>
-      <p id="brP1"></p>
-      <p id="brP2"></p>
-      <div class="brfig">
-        <div><b id="brF1v"></b><span id="brF1l"></span></div>
-        <div><b id="brF2v"></b><span id="brF2l"></span></div>
-        <div><b id="brF3v"></b><span id="brF3l"></span></div>
-      </div>
-      <p class="brnote" id="brNote"></p>
-      <div class="warum">
-        <h3 id="cdTitle"></h3>
-        <p id="cdP1"></p>
-        <p id="cdP2"></p>
-        <p class="brnote" id="cdNote"></p>
+      <button class="disclose brtoggle" id="bridgeToggle" aria-expanded="false" aria-controls="bridgeBody"><span class="chev">▸</span><span id="brTitle"></span></button>
+      <div id="bridgeBody" hidden>
+        <div class="brfig">
+          <div><b id="brF1v"></b><span id="brF1l"></span></div>
+          <div><b id="brF2v"></b><span id="brF2l"></span></div>
+          <div><b id="brF3v"></b><span id="brF3l"></span></div>
+        </div>
+        <p id="brP1"></p>
+        <p id="brP2"></p>
+        <p class="brnote" id="brNote"></p>
+        <div class="warum">
+          <button class="disclose" id="warumToggle" aria-expanded="false" aria-controls="warumBody"><span class="chev">▸</span><span id="cdTitle"></span></button>
+          <div id="warumBody" hidden>
+            <p id="cdP1"></p>
+            <p id="cdP2"></p>
+            <p class="brnote" id="cdNote"></p>
+          </div>
+        </div>
       </div>
     </div>
     <a class="brcard" href="https://mendeltem.github.io/AI_Companys/nvidia-oekosystem.html" target="_blank" rel="noopener">
@@ -233,25 +267,28 @@
 
 <section class="legend">
   <div class="wrap">
-    <div class="lg-group">
-      <h3 id="legDataH"></h3>
-      <span class="lg"><span class="meter q3"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legSolid"></span></span>
-      <span class="lg"><span class="meter q2"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legMid"></span></span>
-      <span class="lg"><span class="meter q1"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legThin"></span></span>
-    </div>
-    <div class="lg-group">
-      <h3 id="legMatH"></h3>
-      <span class="lg"><span class="mpill m-prod" id="legProd"></span></span>
-      <span class="lg"><span class="mpill m-early" id="legEarly"></span></span>
-      <span class="lg"><span class="mpill m-pilot" id="legPilot"></span></span>
-      <span class="lg"><span class="mpill m-research" id="legRes"></span></span>
-    </div>
-    <div class="lg-group">
-      <h3 id="legGrowH"></h3>
-      <span class="lg"><span class="garrow g-explosive">⇈</span><span id="legGExp"></span></span>
-      <span class="lg"><span class="garrow g-strong">↑</span><span id="legGStr"></span></span>
-      <span class="lg"><span class="garrow g-steady">↗</span><span id="legGSte"></span></span>
-      <span class="lg"><span class="garrow g-nascent">◦</span><span id="legGNas"></span></span>
+    <button class="disclose" id="legendToggle" aria-expanded="false" aria-controls="legendBody"><span class="chev">▸</span><span id="legendToggleTxt"></span></button>
+    <div id="legendBody" hidden>
+      <div class="lg-group">
+        <h3 id="legDataH"></h3>
+        <span class="lg"><span class="meter q3"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legSolid"></span></span>
+        <span class="lg"><span class="meter q2"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legMid"></span></span>
+        <span class="lg"><span class="meter q1"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span><span id="legThin"></span></span>
+      </div>
+      <div class="lg-group">
+        <h3 id="legMatH"></h3>
+        <span class="lg"><span class="mpill m-prod" id="legProd"></span></span>
+        <span class="lg"><span class="mpill m-early" id="legEarly"></span></span>
+        <span class="lg"><span class="mpill m-pilot" id="legPilot"></span></span>
+        <span class="lg"><span class="mpill m-research" id="legRes"></span></span>
+      </div>
+      <div class="lg-group">
+        <h3 id="legGrowH"></h3>
+        <span class="lg"><span class="garrow g-explosive">⇈</span><span id="legGExp"></span></span>
+        <span class="lg"><span class="garrow g-strong">↑</span><span id="legGStr"></span></span>
+        <span class="lg"><span class="garrow g-steady">↗</span><span id="legGSte"></span></span>
+        <span class="lg"><span class="garrow g-nascent">◦</span><span id="legGNas"></span></span>
+      </div>
     </div>
   </div>
 </section>
@@ -259,14 +296,16 @@
 <section class="controls">
   <div class="wrap">
     <div class="ctrl-row" id="clusterChips"><span class="ctrl-label" id="lblCluster"></span></div>
-    <div class="ctrl-row"><span class="ctrl-label" id="lblMat"></span><div id="matChips" style="display:contents"></div>
-      <span class="ctrl-label" id="lblGrow" style="min-width:auto; margin-left:8px"></span><div id="growChips" style="display:contents"></div></div>
-    <div class="ctrl-row"><span class="ctrl-label" id="lblComp"></span><div id="compChips" style="display:contents"></div></div>
     <div class="ctrl-row">
-      <span class="ctrl-label" id="lblQual"></span>
-      <div id="qualChips" style="display:contents"></div>
+      <button class="disclose" id="filtToggle" aria-expanded="false" aria-controls="moreFilters"><span class="chev">▸</span><span id="filtToggleTxt"></span><span class="cnt" id="filtCount"></span></button>
       <input class="search" id="search" type="search" aria-label="Search use cases">
       <span class="count-out" id="countOut"></span>
+    </div>
+    <div id="moreFilters" hidden>
+      <div class="ctrl-row"><span class="ctrl-label" id="lblMat"></span><div id="matChips" style="display:contents"></div>
+        <span class="ctrl-label" id="lblGrow" style="min-width:auto; margin-left:8px"></span><div id="growChips" style="display:contents"></div></div>
+      <div class="ctrl-row"><span class="ctrl-label" id="lblComp"></span><div id="compChips" style="display:contents"></div></div>
+      <div class="ctrl-row"><span class="ctrl-label" id="lblQual"></span><div id="qualChips" style="display:contents"></div></div>
     </div>
   </div>
 </section>
@@ -324,7 +363,7 @@ const UI = {
     legGrow:"Growth", gExp:"Explosive · multiplies yearly", gStr:"Strong · double-digit+ YoY", gSte:"Steady · moderate/linear", gNas:"Nascent · too new to trend",
     lblCluster:"Cluster", lblMat:"Maturity", lblGrow:"Growth", lblQual:"Evidence",
     all:"All", searchPh:"Search: provider, metric, term…", countSuffix:"use cases",
-    empty:"No matches for these filters.", srcLabel:"Source:", growLabel:"Growth:", detailsHint:"Details & source",
+    empty:"No matches for these filters.", srcLabel:"Source:", firmsLabel:"Companies:", legendLbl:"Legend", filtersLbl:"More filters", growLabel:"Growth:", detailsHint:"Details & source",
     physical:"Physical", software:"Software / agentic", infra:"Infrastructure",
     footer:"<b>Source base:</b> project knowledge plus web verification, August 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Cluster 13 (compute & energy substrate) adds the hardware layer the whole board runs on — HBM and NAND (SK Hynix Q2'26, Sandisk Q4 FY26), accelerators (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), power/turbines, LiDAR (RoboSense Q1'26) — verified against company earnings. Click a card for detail, source and caveat."
   },
@@ -359,7 +398,7 @@ const UI = {
     legGrow:"Wachstum", gExp:"Explosiv · vervielfacht sich jährlich", gStr:"Stark · zweistellig+ p.a.", gSte:"Stetig · moderat/linear", gNas:"Anlaufend · zu neu für Trend",
     lblCluster:"Cluster", lblMat:"Reifegrad", lblGrow:"Wachstum", lblQual:"Datenlage",
     all:"Alle", searchPh:"Suche: Anbieter, Kennzahl, Begriff…", countSuffix:"Use Cases",
-    empty:"Keine Treffer für diese Filter.", srcLabel:"Quelle:", growLabel:"Wachstum:", detailsHint:"Details & Quelle",
+    empty:"Keine Treffer für diese Filter.", srcLabel:"Quelle:", firmsLabel:"Firmen:", legendLbl:"Legende", filtersLbl:"Weitere Filter", growLabel:"Wachstum:", detailsHint:"Details & Quelle",
     physical:"Physisch", software:"Software / Agentic", infra:"Infrastruktur",
     footer:"<b>Quellenbasis:</b> Projektwissen plus Web-Verifikation August 2026. Solide-Anker u.a.: Intuitive Surgical SEC-10-K, Lemonade 10-K, Aurora SEC-8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operativ), John Deere See & Spray (Peer-Review), IFR World Robotics 2025 (4,66 Mio. Industrieroboter, +9 % YoY). Wachstums-Signale zeigen die beste aktuelle Kennzahl je Fall; wo Wachstum ein Firmenziel statt realisiert ist, steht das auf der Karte. Effizienz-Prozente ohne „solide\"-Kennzeichnung sind überwiegend Firmenangaben — richtungssicher, nicht punktgenau. Cluster 13 (Compute- & Energie-Substrat) ergänzt die Hardware-Ebene, auf der das ganze Board läuft — HBM und NAND (SK Hynix Q2'26, Sandisk Q4 FY26), Beschleuniger (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), Strom/Turbinen, LiDAR (RoboSense Q1'26) — gegen Firmen-Earnings verifiziert. Klick auf eine Karte öffnet Detail, Quelle und Vorbehalt."
   }
@@ -450,13 +489,13 @@ const E=(en,de)=>({en,de});
 
 const UC = [
   // ---- Cluster 1: Mobility ----
-  U(1,"Waymo, Baidu Apollo Go","prod",3,"explosive",
+  U(1,"Waymo, Baidu Apollo Go, Pony.ai, WeRide, Zoox, Tesla","prod",3,"explosive",
     E("Robotaxis / autonomous driving","Robotaxis / autonomes Fahren"),
-    E("50k→500k rides/wk in 2 yrs (10×)","50k→500k Fahrten/Wo in 2 J. (10×)"),
-    E("<b>~500k paid rides/week</b>, 20M+ lifetime; expanding to 14+ US cities","<b>~500k bezahlte Fahrten/Woche</b>, 20 Mio+ gesamt; Ausbau auf 14+ US-Städte"),
-    E("Waymo runs ~500k paid rides/week (mid-2026), up from ~50k two years earlier. On 8 Jul 2026 it added four US cities (14+ total); target 1M/week by year-end (independent forecast ~775k). Baidu Apollo Go leads globally at 350k+/week.","Waymo fährt ~500k bezahlte Fahrten/Woche (Mitte 2026), von ~50k zwei Jahre zuvor. Am 8.7.2026 vier neue US-Städte (14+ gesamt); Ziel 1 Mio/Woche zum Jahresende (unabh. Prognose ~775k). Baidu Apollo Go global vorn: 350k+/Woche."),
-    E("Waymo / CNBC (8 Jul 2026); Alphabet Q1-2026","Waymo / CNBC (8.7.2026); Alphabet Q1-2026"),
-    "good", E("ride volume regulated-tracked","Fahrtvolumen reguliert erfasst")),
+    E("50k→500k rides/wk in 2 yrs; challengers doubling fleets","50k→500k Fahrten/Wo in 2 J.; Herausforderer verdoppeln Flotten"),
+    E("<b>~500k paid rides/week</b> at Waymo — and five more operators now running commercially","<b>~500k bezahlte Fahrten/Woche</b> bei Waymo — und fünf weitere Betreiber im kommerziellen Betrieb"),
+    E("Waymo is the volume leader at ~500k paid rides/week (mid-2026), up from ~50k two years earlier, across 14+ US cities, with a stated target of 1M/week by year-end. But it is no longer the field. Baidu's Apollo Go leads Chinese volume. Pony.ai reported robotaxi service revenue up 691% year on year to $12.1M in Q2 2026, a fleet of 1,975 vehicles against a year-end target above 3,500, and a contracted Uber deployment of more than 2,000 robotaxis in Europe. WeRide (Nasdaq: WRD) states a footprint of more than 60 cities in 13 countries. Amazon's Zoox runs its purpose-built vehicle in six US cities. Tesla operates a small fleet across a handful of metros. Read the numbers carefully: rides, fleet size and revenue are three different measures, and only Waymo's ride volume is tracked by a regulator. Cruise, the one-time number two, no longer exists.","Waymo führt beim Volumen mit ~500k bezahlten Fahrten/Woche (Mitte 2026), von ~50k zwei Jahre zuvor, in 14+ US-Städten, mit erklärtem Ziel 1 Mio./Woche zum Jahresende. Aber Waymo ist nicht mehr das Feld. Baidus Apollo Go führt das chinesische Volumen. Pony.ai meldete für Q2 2026 einen Robotaxi-Umsatz von 12,1 Mio. $, +691 % ggü. Vorjahr, eine Flotte von 1.975 Fahrzeugen gegen ein Jahresendziel über 3.500 und einen vertraglich vereinbarten Uber-Einsatz von über 2.000 Robotaxis in Europa. WeRide (Nasdaq: WRD) nennt über 60 Städte in 13 Ländern. Amazons Zoox fährt sein eigens gebautes Fahrzeug in sechs US-Städten. Tesla betreibt eine kleine Flotte in wenigen Metropolen. Die Zahlen genau lesen: Fahrten, Flottengröße und Umsatz sind drei verschiedene Maße, und nur Waymos Fahrtvolumen wird von einer Behörde erfasst. Cruise, einst die Nummer zwei, existiert nicht mehr."),
+    E("Waymo / TechCrunch (Mar 2026); Pony.ai Q2 2026 IR (18 Aug 2026)","Waymo / TechCrunch (März 2026); Pony.ai Q2-2026-IR (18.8.2026)"),
+    "good", E("Waymo ride volume regulated-tracked; challenger figures are company-reported","Waymo-Fahrtvolumen behördlich erfasst; Zahlen der Herausforderer sind Firmenangaben")),
   U(1,"Aurora, Kodiak, Waabi, Gatik","early",3,"strong",
     E("Autonomous trucks","Autonome Trucks"),
     E("0→100k+ driverless miles since Apr 2025","0→100k+ fahrerlose Meilen seit Apr 2025"),
@@ -627,6 +666,13 @@ const UC = [
     E("Insilico's Rentosertib (AI-identified target, generatively designed) entered Phase III in July 2026 (320 patients). Phase IIa efficacy in Nature Medicine (Jun 2025). BUT: still no approved AI drug, and the claimed time/cost advantage is not independently quantified.","Insilicos Rentosertib (KI-Target, generativ entworfen) startete Juli 2026 Phase III (320 Patienten). Phase-IIa-Wirksamkeit in Nature Medicine (Juni 2025). ABER: noch kein zugelassener KI-Wirkstoff, Zeit-/Kostenvorteil nicht unabhängig quantifiziert."),
     E("Insilico Medicine; Nature Medicine (Jun 2025)","Insilico Medicine; Nature Medicine (Juni 2025)"),
     "note", E("time advantage unproven","Zeitvorteil unbewiesen")),
+  U(5,"Merck/Moderna intismeran, BioNTech/Genentech","early",2,"strong",
+    E("Personalised cancer vaccines (neoantigen)","Personalisierte Krebsvakzine (Neoantigen)"),
+    E("first positive Phase 3 of an individualised therapy","erste positive Phase 3 einer individualisierten Therapie"),
+    E("<b>First positive Phase 3</b> (INTerpath-001, n=1,137); Phase 2b 5-yr HR 0.51 RFS / 0.411 DMFS","<b>Erste positive Phase 3</b> (INTerpath-001, n=1.137); Phase 2b 5-J. HR 0,51 RFS / 0,411 DMFS"),
+    E("On 19 Aug 2026 Merck and Moderna reported that a pre-specified interim analysis of INTerpath-001 met RFS and DMFS in resected stage IIB-IV melanoma — the first positive Phase 3 for any individualised neoantigen or mRNA cancer therapy. Nine Phase 2/3 trials are running. Caveat: topline release only, no effect sizes, no peer review; the peer-reviewed base is Phase 2b KEYNOTE-942 (n=157, open-label). The compute is per-patient bioinformatics (WES + RNA-seq, NetMHCpan/MHCflurry, LinearDesign codon optimisation), not GPU training. Weakest link: TESLA validated only 37 of 608 predicted epitopes (~6%) as immunogenic.","Am 19.8.2026 meldeten Merck und Moderna, dass eine vorab spezifizierte Interimsanalyse von INTerpath-001 RFS und DMFS im resezierten Melanom Stadium IIB-IV erreichte — die erste positive Phase 3 einer individualisierten Neoantigen- oder mRNA-Krebstherapie überhaupt. Neun Phase-2/3-Studien laufen. Vorbehalt: nur Topline-Meldung, keine Effektgrößen, kein Peer-Review; die peer-reviewte Basis ist Phase 2b KEYNOTE-942 (n=157, open-label). Der Rechenaufwand ist Bioinformatik pro Patient (WES + RNA-seq, NetMHCpan/MHCflurry, LinearDesign-Codon-Optimierung), kein GPU-Training. Schwächstes Glied: TESLA validierte nur 37 von 608 vorhergesagten Epitopen (~6 %) als immunogen."),
+    E("Merck/Moderna release (19 Aug 2026); KEYNOTE-942 5-yr, JCO 2026; TESLA, Cell 2020","Merck/Moderna-Meldung (19.8.2026); KEYNOTE-942 5-J., JCO 2026; TESLA, Cell 2020"),
+    "note", E("Phase 3 topline only; epitope prediction ~6% hit rate","Phase 3 nur Topline; Epitop-Vorhersage ~6 % Trefferquote")),
   U(5,"Johns Hopkins SRT-H","research",3,"nascent",
     E("Autonomous surgery steps","Autonome Chirurgie-Schritte"),
     E("research stage, first proof-of-concept","Forschungsstadium, erster Proof-of-Concept"),
@@ -1010,6 +1056,13 @@ const UC = [
     E("Beyond AlphaFold's structure prediction, a stack of biology foundation models is now real infrastructure: AlphaFold 3 (protein-ligand complexes), open-source Boltz used by all 20 largest pharma, Evo 2 (Arc + NVIDIA, 40B params on 100k+ species' genomes), AlphaGenome for non-coding DNA. Roughly one in three new drugs is AI-assisted by 2025. Honest caveat: virtual-cell models haven't yet beaten classical statistics, and no purely AI-designed drug has FDA approval.","Über AlphaFolds Strukturvorhersage hinaus ist ein ganzer Stack an Biologie-Foundation-Models echte Infrastruktur geworden: AlphaFold 3 (Protein-Ligand-Komplexe), Open-Source-Boltz bei allen 20 größten Pharma, Evo 2 (Arc + NVIDIA, 40 Mrd Params auf Genomen von 100k+ Arten), AlphaGenome für nicht-kodierende DNA. Rund jeder dritte neue Wirkstoff ist 2025 KI-gestützt. Ehrlicher Vorbehalt: Virtual-Cell-Modelle schlagen die klassische Statistik noch nicht, und kein rein KI-entworfener Wirkstoff hat FDA-Zulassung."),
     E("Nature; DeepMind; Arc Institute; project overview","Nature; DeepMind; Arc Institute; Projekt-Überblick"),
     "good", E("peer-reviewed models, broad adoption","peer-reviewed, breite Adoption")),
+  U(7,"Roche/Genentech, Eli Lilly, GSK","prod",3,"strong",
+    E("Pharma in-house AI factories","Pharma-eigene AI-Factories"),
+    E("0 → ~3,200 on-prem Blackwell GPUs in 12 months","0 → ~3.200 On-Prem-Blackwell-GPUs in 12 Monaten"),
+    E("Roche <b>2,176 Blackwell on-prem</b> (>3,500 incl. cloud); Lilly LillyPod <b>1,016 B300</b>, ~9 EF","Roche <b>2.176 Blackwell on-prem</b> (>3.500 inkl. Cloud); Lilly LillyPod <b>1.016 B300</b>, ~9 EF"),
+    E("Incumbent pharma stopped renting and started owning. Lilly announced LillyPod on 28 Oct 2025 (DGX SuperPOD, 1,016 Blackwell B300, ~9 exaflops mixed precision), live 27 Feb 2026, plus up to $1B over five years with NVIDIA. Roche added 2,176 Blackwell on-prem across the US and Europe on 16 Mar 2026, total above 3,500 including cloud. Scale check: ~3,200 GPUs is roughly 44 NVL72-rack equivalents and well under 0.1% of hyperscaler capex — an adoption signal from a regulated, conservative industry, not a demand driver for the memory cycle.","Die etablierte Pharma mietet nicht mehr, sie besitzt. Lilly kündigte LillyPod am 28.10.2025 an (DGX SuperPOD, 1.016 Blackwell B300, ~9 Exaflops mixed precision), live seit 27.2.2026, dazu bis zu $1 Mrd über fünf Jahre mit NVIDIA. Roche ergänzte am 16.3.2026 2.176 Blackwell on-prem in den USA und Europa, gesamt über 3.500 inkl. Cloud. Größenprüfung: ~3.200 GPUs sind rund 44 NVL72-Rack-Äquivalente und deutlich unter 0,1 % der Hyperscaler-Capex — ein Adoptionssignal aus einer regulierten, konservativen Branche, kein Nachfragetreiber für den Speicherzyklus."),
+    E("Lilly IR (28 Oct 2025); Roche media release (16 Mar 2026)","Lilly IR (28.10.2025); Roche-Medienmitteilung (16.3.2026)"),
+    "good", E("primary IR releases with hard GPU counts","Primär-IR-Meldungen mit harten GPU-Zahlen")),
   U(7,"Recursion, Insilico, Emerald Cloud Lab","prod",2,"steady",
     E("Self-driving labs","Selbstfahrende Labore"),
     E("claimed 15→2–3 yrs discovery time","behauptet 15→2–3 J. Entwicklungszeit"),
@@ -1059,6 +1112,49 @@ const UC = [
     E("The newer wave: wire-free robotic mowers (Husqvarna, Segway Navimow, Mammotion) using RTK-GPS, vision and LiDAR. Per RoboSense, lawn mowers are the robotics 'killer app' first to reach scaled volume — a major driver of its 2026 LiDAR surge (it supplies 9 of the top 10 makers). Early production, growing fast on a low-price sensor base.","Die neuere Welle: kabellose Mähroboter (Husqvarna, Segway Navimow, Mammotion) mit RTK-GPS, Vision und LiDAR. Laut RoboSense sind Mähroboter die Robotik-'Killer-App', die als erste Volumen erreicht — ein Haupttreiber seines LiDAR-Sprungs 2026 (beliefert 9 der Top-10-Hersteller). Frühe Produktion, schnelles Wachstum auf günstiger Sensorbasis."),
     E("RoboSense Q1 2026; company figures","RoboSense Q1 2026; Firmenangaben"),
     "note", E("young category, vendor figures","junge Kategorie, Vendor-Zahlen")),
+  // ---- Neu, August 2026: Quellen einzeln abgerufen und gegen die Kennzahl geprueft ----
+  U(2,"Equinor, Shell/C3 AI, TotalEnergies/Google","prod",2,"strong",
+    E("Seismic interpretation (subsurface AI)","Seismische Interpretation (Untergrund-KI)"),
+    E("interpretation capacity 10× in one year","Interpretationskapazität 10× in einem Jahr"),
+    E("<b>2M km² of seismic data</b> interpreted by AI in 2025; capacity up tenfold","<b>2 Mio. km² Seismikdaten</b> 2025 per KI ausgewertet; Kapazität verzehnfacht"),
+    E("Equinor reports that around 2 million km² of seismic data were interpreted with its own machine-learning tools in 2025, raising geoscientists' interpretation capacity tenfold. Shell runs seismic agents with C3 AI, TotalEnergies works with Google on image interpretation. Seismic archives at major operators run past a petabyte, so this is one of the few workloads where a domain foundation model is trained on proprietary 3D volumes rather than fine-tuned. The caveat is attribution: Equinor links new discoveries on the Norwegian shelf to the tooling, but no independent party has audited how much of that is the model and how much is where they chose to drill.","Equinor meldet, dass 2025 rund 2 Mio. km² Seismikdaten mit eigenen ML-Werkzeugen interpretiert wurden und die Interpretationskapazität der Geowissenschaftler damit verzehnfacht wurde. Shell betreibt seismische Agenten mit C3 AI, TotalEnergies arbeitet mit Google an der Bildinterpretation. Die Seismik-Archive großer Betreiber gehen über ein Petabyte hinaus — einer der wenigen Fälle, in denen ein Domänen-Foundation-Model auf proprietären 3D-Volumina trainiert und nicht nur feinjustiert wird. Vorbehalt Zuordnung: Equinor führt neue Funde auf dem norwegischen Schelf auf die Werkzeuge zurück, aber niemand hat unabhängig geprüft, welcher Anteil aufs Modell und welcher auf die Wahl der Bohrpunkte entfällt."),
+    E("Equinor media release, 7 Jan 2026","Equinor-Medienmitteilung, 7.1.2026"),
+    "note", E("company-reported; discovery attribution not independently audited","Firmenangabe; Zuordnung der Funde nicht unabhängig geprüft")),
+  U(2,"Equinor, Shell, C3 AI","prod",2,"steady",
+    E("Offshore asset integrity","Offshore-Anlagenintegrität"),
+    E("$330M cumulative value since 2020","330 Mio. $ kumulierter Wert seit 2020"),
+    E("<b>$130M of AI value in 2025</b>; 700+ rotating machines on ~24,000 sensors","<b>130 Mio. $ KI-Wert in 2025</b>; 700+ rotierende Maschinen an ~24.000 Sensoren"),
+    E("Equinor puts AI value at $130M for 2025 and $330M cumulatively since 2020, of which $120M since 2020 comes from predictive maintenance alone — more than 700 rotating machines watched by around 24,000 sensors across its facilities. The second-order effect is emissions: a predicted failure avoids the abrupt shutdown that forces flaring. Shell has scaled the same pattern to over 10,000 pieces of equipment with C3 AI. Caveat: these are self-declared savings with no external audit, and the $120M figure is a six-year cumulative total, not an annual run rate — a distinction the press coverage regularly loses.","Equinor beziffert den KI-Wert für 2025 auf 130 Mio. $ und kumuliert seit 2020 auf 330 Mio. $, davon 120 Mio. $ seit 2020 allein aus vorausschauender Wartung — über 700 rotierende Maschinen, überwacht von rund 24.000 Sensoren. Der Zweitrundeneffekt sind Emissionen: ein vorhergesagter Ausfall vermeidet die abrupte Abschaltung, die Abfackeln erzwingt. Shell hat dasselbe Muster mit C3 AI auf über 10.000 Ausrüstungsgegenstände skaliert. Vorbehalt: selbst erklärte Einsparungen ohne externe Prüfung, und die 120 Mio. $ sind eine Sechsjahressumme, keine Jahresrate — ein Unterschied, den die Berichterstattung regelmäßig verliert."),
+    E("Equinor media release, 7 Jan 2026","Equinor-Medienmitteilung, 7.1.2026"),
+    "note", E("self-declared savings; $120M is cumulative since 2020, not annual","selbst erklärte Einsparung; 120 Mio. $ kumuliert seit 2020, nicht jährlich")),
+  U(13,"Cadence ChipStack, Synopsys DSO.ai, Altera, Tenstorrent","early",2,"strong",
+    E("Agentic chip verification (EDA)","Agentische Chip-Verifikation (EDA)"),
+    E("verification effort down 4–10× at lead customers","Verifikationsaufwand bei Erstkunden 4–10× geringer"),
+    E("<b>4× faster verification</b> at Tenstorrent over 3 months; Altera reports ~<b>10×</b> on some blocks","<b>4× schnellere Verifikation</b> bei Tenstorrent in 3 Monaten; Altera meldet ~<b>10×</b> bei einzelnen Blöcken"),
+    E("Verification, not design, is the bottleneck in silicon — it absorbs the majority of a project's engineering time. Cadence launched the ChipStack AI Super Agent on 10 Feb 2026, built on IP it acquired from ChipStack in Nov 2025: an orchestra of agents that writes test plans, runs regressions and fixes bugs against Cadence's own tools. Tenstorrent measured up to 4× less verification time on three critical blocks over a three-month evaluation; Altera reports roughly 10× on certain efforts. Synopsys DSO.ai and Cadence Cerebrus cover the physical-design half with reported 7-12% PPA gains. This is the recursive layer: AI designing the chips that train AI. Caveat: every number here is vendor-reported from early deployments at three named customers, and PPA percentages are not comparable across designs.","Der Engpass im Chipbau ist die Verifikation, nicht der Entwurf — sie frisst den Großteil der Ingenieurszeit. Cadence brachte am 10.2.2026 den ChipStack AI Super Agent, aufgebaut auf im Nov. 2025 von ChipStack übernommener IP: ein Verbund von Agenten, der Testpläne schreibt, Regressionen fährt und Fehler gegen die Cadence-Werkzeuge behebt. Tenstorrent maß in einer dreimonatigen Evaluierung bis zu 4× weniger Verifikationszeit auf drei kritischen Blöcken; Altera meldet bei einzelnen Aufgaben rund 10×. Synopsys DSO.ai und Cadence Cerebrus decken die physische Entwurfsseite mit gemeldeten 7-12 % PPA-Gewinn ab. Das ist die rekursive Ebene: KI entwirft die Chips, auf denen KI trainiert. Vorbehalt: alle Zahlen sind Herstellerangaben aus frühen Einführungen bei drei genannten Kunden, PPA-Prozente sind zwischen Designs nicht vergleichbar."),
+    E("Cadence press release, 10 Feb 2026","Cadence-Pressemitteilung, 10.2.2026"),
+    "note", E("vendor-reported, early deployment at three named customers","Herstellerangabe, frühe Einführung bei drei genannten Kunden")),
+  U(8,"Duolingo, OpenAI","prod",3,"strong",
+    E("AI language learning","KI-Sprachenlernen"),
+    E("12.2M paying subscribers, +34% YoY","12,2 Mio. zahlende Abos, +34 % ggü. Vorjahr"),
+    E("<b>12.2M paying subscribers</b> and 52.7M daily actives at end-2025","<b>12,2 Mio. zahlende Abonnenten</b> und 52,7 Mio. Tagesnutzer Ende 2025"),
+    E("The clearest evidence on the board that consumers pay for generative AI directly. Duolingo closed 2025 with 12.2M paying subscribers, up 34% year on year, and 52.7M daily active users, filed with the SEC. The premium tier, Duolingo Max, puts an OpenAI model behind Roleplay conversations and Explain My Answer error analysis; generative tooling also multiplied the rate at which the company produces course content. Caveat: the subscriber and DAU numbers are audited-grade, but the share of revenue attributable to the AI tier specifically is not broken out, and the stock fell on these same results — growth in users has not settled whether the AI tier changes the economics.","Der klarste Beleg auf dem Board, dass Endkunden direkt für generative KI zahlen. Duolingo schloss 2025 mit 12,2 Mio. zahlenden Abonnenten (+34 % ggü. Vorjahr) und 52,7 Mio. täglich aktiven Nutzern ab, bei der SEC eingereicht. Die Premium-Stufe Duolingo Max legt ein OpenAI-Modell hinter Roleplay-Dialoge und die Fehleranalyse Explain My Answer; generative Werkzeuge vervielfachten zudem das Tempo der Kursproduktion. Vorbehalt: Abo- und DAU-Zahlen haben Prüfungsqualität, aber der Umsatzanteil der KI-Stufe wird nicht separat ausgewiesen — und die Aktie fiel auf ebendiese Zahlen. Nutzerwachstum beantwortet die Frage nach der Ökonomie der KI-Stufe nicht."),
+    E("Duolingo Q4/FY2025 shareholder letter (SEC 8-K)","Duolingo Q4/GJ2025 Aktionärsbrief (SEC-8-K)"),
+    "good", E("SEC-filed subscriber and usage numbers","SEC-eingereichte Abo- und Nutzungszahlen")),
+  U(1,"Deutsche Bahn (DIANA, Weichen-EKG)","prod",2,"steady",
+    E("Rail predictive maintenance","Vorausschauende Wartung im Bahnnetz"),
+    E("sensors on tens of thousands of switches","Sensorik an Zehntausenden Weichen"),
+    E("<b>~3,600 faults prevented</b> in a year by monitoring switch-motor current draw","<b>~3.600 Störungen verhindert</b> in einem Jahr per Stromaufnahme-Überwachung der Weichenantriebe"),
+    E("A sensor clamps inductively onto the power cable of a switch motor and measures the current it draws. A motor going stiff from wear or lost lubrication pulls marginally more current weeks before it fails, and the model reads that drift. Deutsche Bahn feeds this into its DIANA diagnostic platform across the network; infrastructure faults account for roughly a third of all delays. Caveat, and it matters: the figure of about 3,600 prevented faults is DB's own and refers to 2019 — there is no newer audited number, and the widely repeated pairing of that figure with a 2023 switch count does not come from DB.","Ein Sensor sitzt induktiv am Stromkabel des Weichenantriebs und misst dessen Stromaufnahme. Ein Antrieb, der durch Verschleiß oder fehlendes Schmiermittel schwergängig wird, zieht Wochen vor dem Ausfall minimal mehr Strom, und das Modell liest diese Drift. Die Deutsche Bahn führt das netzweit in ihrer Diagnoseplattform DIANA zusammen; Infrastrukturstörungen verursachen rund ein Drittel aller Verspätungen. Vorbehalt, und er ist erheblich: die Zahl von rund 3.600 verhinderten Störungen stammt von der DB selbst und bezieht sich auf 2019 — eine neuere geprüfte Angabe gibt es nicht, und die vielfach wiederholte Kombination dieser Zahl mit einem Weichenbestand von 2023 stammt nicht von der DB."),
+    E("Deutsche Bahn, smart infrastructure","Deutsche Bahn, Smarte Infrastruktur"),
+    "note", E("DB's own figure, and it dates from 2019","DB-eigene Zahl — und sie stammt aus 2019")),
+  U(3,"Sweetgreen/Spyce, Wonder","early",3,"nascent",
+    E("Restaurant kitchen automation","Küchenautomation in der Gastronomie"),
+    E("unit economics improved — then the chain sold the technology","Stückkosten besser — dann verkaufte die Kette die Technik"),
+    E("<b>700bp labour savings</b> per automated store; Sweetgreen then sold the business for <b>$186.4M</b>","<b>700 Basispunkte Personalersparnis</b> je automatisierter Filiale; Sweetgreen verkaufte das Geschäft dann für <b>186,4 Mio. $</b>"),
+    E("A calibration card. Sweetgreen's Infinite Kitchen — an automated assembly line for salads — measurably worked: stores running it showed about 700 basis points of labour savings and nearly 100bp of COGS improvement against comparable units. And in November 2025 Sweetgreen sold the underlying technology company, Spyce, to Wonder for $186.4M and stepped back from full automation, after three consecutive quarters of falling same-store sales (-9.5% in Q3 2025, with traffic down 11.7%). The lesson the board should carry: unit-level automation gains do not rescue a demand problem, and a working robot is not the same as a working business. Caveat: the labour-saving figures are company-reported; the transaction value is not.","Eine Kalibrierungskarte. Sweetgreens Infinite Kitchen — eine automatisierte Montagelinie für Salate — funktionierte messbar: Filialen mit dem System zeigten rund 700 Basispunkte Personalersparnis und knapp 100 Basispunkte bessere Wareneinsatzquote gegenüber vergleichbaren Standorten. Und im November 2025 verkaufte Sweetgreen die zugrundeliegende Technologiefirma Spyce für 186,4 Mio. $ an Wonder und rückte von der Vollautomatisierung ab — nach drei Quartalen in Folge mit rückläufigem Flächenumsatz (−9,5 % in Q3 2025, Frequenz −11,7 %). Die Lehre fürs Board: Automatisierungsgewinne auf Filialebene retten kein Nachfrageproblem, und ein funktionierender Roboter ist kein funktionierendes Geschäft. Vorbehalt: die Personalzahlen sind Firmenangaben, der Transaktionswert nicht."),
+    E("Sweetgreen Q3 2025 results; Wonder acquisition, Nov 2025","Sweetgreen Q3-2025-Zahlen; Wonder-Übernahme, Nov. 2025"),
+    "warn", E("the operator divested the technology despite positive unit economics","Betreiber trennte sich trotz positiver Stückkosten von der Technik")),
 ];
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
@@ -1082,6 +1178,8 @@ const URLS = {
   "Harvest pickers & laser weeding":"https://carbonrobotics.com/",
   "Aquaculture robots":"https://www.stingray.no/",
   "Surgical robots (assisted)":"https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm",
+  "Personalised cancer vaccines (neoantigen)":"https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+  "Pharma in-house AI factories":"https://www.roche.com/media/releases/med-cor-2026-03-16",
   "AI drug discovery":"https://www.prnewswire.com/news-releases/insilico-initiates-phase-iii-clinical-trial-for-rentosertib-its-ai-empowered-tnik-inhibitor-for-idiopathic-pulmonary-fibrosis-302819553.html",
   "Autonomous surgery steps":"https://www.therobotreport.com/johns-hopkins-teaches-robot-to-perform-a-gallbladder-removal-on-a-realistic-patient/",
   "Diagnostic AI (radiology)":"https://theimagingwire.com/2026/03/11/numbers-from-the-fda-show-radiology-is-maintaining-its-lead/",
@@ -1115,7 +1213,49 @@ const URLS = {
   "HBM memory (the supercycle)":"https://www.prnewswire.com/news-releases/sk-hynix-announces-1q26-financial-results-302750959.html",
   "AI accelerators & custom silicon":"https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
   "LiDAR for physical AI":"https://www.prnewswire.com/news-releases/robosense-announced-q1-2026-lidar-sales-robotics-segment-grows-1-458-8-yoy-to-over-185-500-units-302737619.html",
-  "Defense & ISR drones":"https://defensescoop.com/2026/03/14/anduril-20-billion-dollar-army-contract/"
+  "Defense & ISR drones":"https://defensescoop.com/2026/03/14/anduril-20-billion-dollar-army-contract/",
+  "Seismic interpretation (subsurface AI)":"https://www.equinor.com/news/20260107-artificial-intelligence-saved-equinor-usd-130-million",
+  "Offshore asset integrity":"https://www.equinor.com/news/20260107-artificial-intelligence-saved-equinor-usd-130-million",
+  "Agentic chip verification (EDA)":"https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unleashes-chipstack-ai-super-agent-pioneering-a-new.html",
+  "AI language learning":"https://investors.duolingo.com/static-files/961ce633-3cee-49d0-bd7a-2c63731d45fb",
+  "Rail predictive maintenance":"https://www.deutschebahn.com/de/smarteinfrastruktur-6898504",
+  "Restaurant kitchen automation":"https://www.restaurantbusinessonline.com/technology/sweetgreen-sell-spyce-technology-company-wonder-1864m",
+};
+
+/* ---------- Firmenseiten je Anwendung ----------
+   n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
+   Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
+const COMPANIES = {
+  "Robotaxis / autonomous driving":[
+    {n:"Waymo", u:"https://waymo.com/"},
+    {n:"Apollo Go", u:"https://www.apollogo.com/"},
+    {n:"Pony.ai IR", u:"https://ir.pony.ai/"},
+    {n:"WeRide", u:"https://www.weride.ai/"},
+    {n:"Zoox", u:"https://zoox.com/"},
+    {n:"Tesla", u:"https://www.tesla.com/"},
+    {n:"Uber", u:"https://www.uber.com/"}],
+  "Seismic interpretation (subsurface AI)":[
+    {n:"Equinor", u:"https://www.equinor.com/"},
+    {n:"Shell", u:"https://www.shell.com/"},
+    {n:"C3 AI", u:"https://c3.ai/"},
+    {n:"TotalEnergies", u:"https://totalenergies.com/"}],
+  "Offshore asset integrity":[
+    {n:"Equinor", u:"https://www.equinor.com/"},
+    {n:"Shell", u:"https://www.shell.com/"},
+    {n:"C3 AI", u:"https://c3.ai/"}],
+  "Agentic chip verification (EDA)":[
+    {n:"Cadence", u:"https://www.cadence.com/"},
+    {n:"Synopsys", u:"https://www.synopsys.com/"},
+    {n:"Altera", u:"https://www.altera.com/"},
+    {n:"Tenstorrent", u:"https://tenstorrent.com/"}],
+  "AI language learning":[
+    {n:"Duolingo IR", u:"https://investors.duolingo.com/"},
+    {n:"OpenAI", u:"https://openai.com/"}],
+  "Rail predictive maintenance":[
+    {n:"Deutsche Bahn", u:"https://www.deutschebahn.com/"}],
+  "Restaurant kitchen automation":[
+    {n:"Sweetgreen IR", u:"https://investor.sweetgreen.com/"},
+    {n:"Wonder", u:"https://www.wonder.com/"}],
 };
 
 // ---------- Mongolian (Cyrillic) overlay ----------
@@ -1126,6 +1266,7 @@ const URLS = {
 // value falls back to English via T().
 
 UI.mn = {
+  ciHigh:"GPU их", ciMid:"GPU дунд", ciLow:"GPU бага", ciSub:"суурь", lblComp:"Тооцооллын ачаалал",
   eyebrow:"Хиймэл оюуны хэрэглээ · 2026 оны 8-р сарын байдлаар · Төлөвшил · Нотолгоо · Өсөлт",
   h1a:"Хиймэл оюун бодит ертөнцөд ", h1accent:"үнэхээр", h1b:" юу хийж байна вэ",
   thesis:"Үйлдвэрийн шалан дээрх роботоос эхлээд ар талын оффисын агент хүртэл — аль хэдийн ажиллаж буй бодит хиймэл оюуны хэрэглээ. Тус бүрийг гурван тэнхлэгээр үнэлэв: <strong>хэр өргөн ажиллаж байгаа</strong>, <strong>тоо баримт хэр бат</strong>, <strong>хэр хурдан өсөж буй</strong>.",
@@ -1135,7 +1276,7 @@ UI.mn = {
   legGrow:"Өсөлт", gExp:"Тэсрэлт · жил бүр хэдэн дахин", gStr:"Хүчтэй · жилд хоёр оронтой+ хувь", gSte:"Тогтвортой · дунд зэрэг/шугаман", gNas:"Эхлэл · чиг хандлага гаргахад дэндүү шинэ",
   lblCluster:"Бүлэг", lblMat:"Төлөвшил", lblGrow:"Өсөлт", lblQual:"Нотолгоо",
   all:"Бүгд", searchPh:"Хайх: нийлүүлэгч, үзүүлэлт, нэр томьёо…", countSuffix:"хэрэглээ",
-  empty:"Энэ шүүлтүүрт тохирох зүйл алга.", srcLabel:"Эх сурвалж:", growLabel:"Өсөлт:", detailsHint:"Дэлгэрэнгүй ба эх сурвалж",
+  empty:"Энэ шүүлтүүрт тохирох зүйл алга.", firmsLabel:"Компаниуд:", legendLbl:"Тайлбар", filtersLbl:"Нэмэлт шүүлтүүр", srcLabel:"Эх сурвалж:", growLabel:"Өсөлт:", detailsHint:"Дэлгэрэнгүй ба эх сурвалж",
   physical:"Физик", software:"Программ / агент", infra:"Дэд бүтэц",
   footer:"<b>Эх сурвалжийн суурь:</b> төслийн мэдлэг дээр вэб баталгаажуулалт нэмсэн, 2026 оны 7-р сар. Бат тулгуур эх сурвалжид: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (ашиглалтад), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66 сая аж үйлдвэрийн робот, +9% YoY) багтана. Өсөлтийн үзүүлэлт нь тохиолдол тус бүрийн хамгийн сүүлийн шилдэг тоог тусгасан; өсөлт нь бодит бус компанийн зорилт бол картад тэмдэглэсэн. \"Бат\" гэж тэмдэглэгдээгүй үр ашгийн хувиуд ихэвчлэн компанийн тоо — чиглэл зөв ч нарийн биш. Дэлгэрэнгүй, эх сурвалж, тайлбарыг үзэхийн тулд карт дээр дарна уу."
 };
@@ -1151,6 +1292,12 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Seismic interpretation (subsurface AI)":[3,"train"],
+  "Offshore asset integrity":[2,"inf"],
+  "Agentic chip verification (EDA)":[3,"inf"],
+  "AI language learning":[2,"inf"],
+  "Rail predictive maintenance":[1,"edge"],
+  "Restaurant kitchen automation":[1,"edge"],
   "Robotaxis / autonomous driving":[3,"train"],
   "Autonomous trucks":[3,"train"],
   "eVTOL / flying taxis":[1,"edge"],
@@ -1188,6 +1335,8 @@ const COMPUTE = {
   "Materials science":[3,"train"],
   "Climate / ocean monitoring":[1,"inf"],
   "Biology foundation models":[3,"train"],
+  "Personalised cancer vaccines (neoantigen)":[1,"inf"],
+  "Pharma in-house AI factories":[3,"train"],
   "Self-driving labs":[2,"sim"],
   "Coding agents":[3,"inf"],
   "Customer service agents":[3,"inf"],
@@ -1240,12 +1389,8 @@ const CK_LABEL = {
   en:{train:"training", inf:"DC inference", edge:"on-device", sim:"GPU simulation", sub:"substrate"},
   de:{train:"Training", inf:"Inferenz im RZ", edge:"auf dem Gerät", sim:"GPU-Simulation", sub:"Substrat"}
 };
-CK_LABEL.mn = CK_LABEL.en;
+CK_LABEL.mn = {train:"сургалт", inf:"дата төвд тооцоолол", edge:"төхөөрөмж дээр", sim:"GPU симуляц", sub:"суурь дэд бүтэц"};
 const CI_KEY = {3:"ciHigh", 2:"ciMid", 1:"ciLow", 0:"ciSub"};
-function computeHTML(x){
-  return '<div class="computeline"><span class="cpill ci'+x.ci+'">'+UI[lang][CI_KEY[x.ci]]+
-         '</span><span class="cknd">'+(CK_LABEL[lang]||CK_LABEL.en)[x.ck]+'</span></div>';
-}
 function computeStat(){
   const n=k=>UC.filter(x=>x.ci===k).length;
   const schwer=UC.filter(x=>x.ci===3);
@@ -1334,10 +1479,10 @@ CLUSTERS.forEach(function(c){
 const MN_UC = {
   "Robotaxis / autonomous driving":{
     name:"Робот такси / автономит жолоодлого",
-    glab:"2 жилд 7 хоногт 50k→500k унаа (10×)",
-    metric:"<b>~500k төлбөртэй унаа/долоо хоног</b>, нийт 20 сая+; 14+ АНУ хот руу тэлж байна",
-    detail:"Waymo 7 хоногт ~500k төлбөртэй унаа гүйцэтгэж байна (2026 дунд үе), 2 жилийн өмнөх ~50k-аас өссөн. 2026.07.08-нд АНУ-ын дөрвөн хот нэмсэн (нийт 14+); он эцэст 1 сая/долоо хоног зорилттой (бие даасан таамаг ~775k). Baidu Apollo Go дэлхийд тэргүүлж 350k+/долоо хоног.",
-    flag:"унааны тоо зохицуулалтаар бүртгэгддэг"},
+    glab:"2 жилд 50k→500k унаа/7 хоног; өрсөлдөгчид флотоо хоёр дахин нэмж байна",
+    metric:"Waymo-д <b>7 хоногт ~500k төлбөртэй унаа</b> — мөн бусад таван оператор арилжааны хэрэглээнд",
+    detail:"Waymo эзлэхүүнээр тэргүүлж, 2026 оны дунд үед 14+ АНУ хотод 7 хоногт ~500k төлбөртэй унаа гүйцэтгэж байна (хоёр жилийн өмнө ~50k байсан), жилийн эцэс гэхэд 7 хоногт 1 сая хүрэх зорилготой. Гэвч Waymo бол салбар өөрөө биш. Хятадад Baidu-гийн Apollo Go эзлэхүүнээр тэргүүлж байна. Pony.ai 2026 оны 2-р улиралд робот таксины орлого жилийн өмнөхөөс 691% өсч 12.1 сая доллар болсныг мэдээлж, флот нь 1,975 машинтай, жилийн эцсийн зорилт 3,500 гаруй, мөн Uber-тэй Европт 2,000 гаруй робот такси байршуулах гэрээтэй. WeRide (Nasdaq: WRD) 13 улсын 60 гаруй хотод үйл ажиллагаа явуулж байгаагаа мэдэгдэв. Amazon-ы Zoox тусгайлан бүтээсэн машинаа АНУ-ын зургаан хотод ажиллуулж байна. Tesla цөөн хэдэн хотод жижиг флот ажиллуулдаг. Тоог анхааралтай уншина уу: унаа, флотын хэмжээ, орлого гэсэн гурван өөр хэмжүүр бөгөөд зөвхөн Waymo-гийн унааны тоог зохицуулагч байгууллага бүртгэдэг. Нэгэн цагийн хоёрдугаарт байсан Cruise одоо байхгүй.",
+    flag:"Waymo-гийн унааны тоо зохицуулалтаар бүртгэгддэг; өрсөлдөгчдийн тоо нь компанийн мэдээлэл"},
   "Autonomous trucks":{
     name:"Автономит ачааны машин",
     glab:"2025 оны 4-р сараас хойш 0→100k+ жолоочгүй миль",
@@ -1673,7 +1818,55 @@ const MN_UC = {
     glab:"дэд бүтцийн барилгажилт",
     metric:"Бодит цагийн роботын хяналтад <b><1мс саатал</b>",
     detail:"Бага сааталтай холболт нь флот ба алсын роботын бодит цагийн хяналтын үл үзэгдэх боломжуулагч. Төлөвшсөн дэд бүтэц, тогтвортой нэвтрэлт.",
-    flag:"боломжуулагч"}
+    flag:"боломжуулагч"},
+  "Personalised cancer vaccines (neoantigen)":{
+    name:"Хувь хүнд тохирсон хорт хавдрын вакцин (неоантиген)",
+    glab:"хувь хүнд тохирсон эмчилгээний анхны эерэг 3-р шат",
+    metric:"<b>Анхны эерэг 3-р шат</b> (INTerpath-001, n=1,137); 2b шатны 5 жилийн HR 0.51 RFS / 0.411 DMFS",
+    detail:"2026.08.19-нд Merck ба Moderna INTerpath-001 судалгааны урьдчилан тогтоосон завсрын шинжилгээ нь IIB-IV үе шатны, бүрэн мэс заслаар авсан меланомд RFS ба DMFS-ийн зорилтод хүрсэн гэж мэдэгдсэн. Энэ нь хувь хүнд тохирсон неоантиген буюу мРНХ-д суурилсан хорт хавдрын эмчилгээний анхны эерэг 3-р шатны үр дүн юм. Одоо есөн 2/3-р шатны судалгаа явж байна. Болгоомжлол: зөвхөн товч мэдэгдэл, нөлөөллийн хэмжээ болон хараат бус хянан магадлагаа алга; хянан магадлагдсан суурь нь 2b шатны KEYNOTE-942 (n=157, нээлттэй). Тооцоолол нь өвчтөн тус бүрийн биоинформатик (WES + RNA-seq, NetMHCpan/MHCflurry, LinearDesign), GPU сургалт биш. Хамгийн сул холбоос: TESLA-д 608 таамагласан эпитопоос ердөө 37 нь (~6%) дархлаа өдөөсөн.",
+    flag:"3-р шат зөвхөн товч мэдэгдэл; эпитопын таамаглал ~6%"},
+  "Pharma in-house AI factories":{
+    name:"Эмийн компаниудын дотоод AI-үйлдвэрүүд",
+    glab:"12 сард 0 → ~3,200 дотоод Blackwell GPU",
+    metric:"Roche <b>2,176 Blackwell дотооддоо</b> (үүлэн дэд бүтэц оруулаад >3,500); Lilly LillyPod <b>1,016 B300</b>, ~9 EF",
+    detail:"Томоохон эмийн компаниуд түрээслэхээ больж, өөрсдөө эзэмшиж эхэлсэн. Lilly 2025.10.28-нд LillyPod-оо зарлаж (DGX SuperPOD, 1,016 Blackwell B300, ~9 экзафлопс), 2026.02.27-нд ажиллуулж эхэлсэн, мөн NVIDIA-тай таван жилийн хугацаанд $1 тэрбум хүртэлх хамтын ажиллагаа. Roche 2026.03.16-нд АНУ, Европ даяар 2,176 Blackwell нэмж, нийт 3,500 гаруй болсон. Хэмжээний шалгалт: ~3,200 GPU нь ойролцоогоор 44 NVL72 тавиуртай тэнцэх бөгөөд гипермасштабчдын хөрөнгө оруулалтын 0.1%-иас хамаагүй бага. Энэ бол зохицуулалттай, консерватив салбарын нэвтрэлтийн дохио болохоос санах ойн мөчлөгийн эрэлтийн хөдөлгүүр биш.",
+    flag:"анхдагч IR мэдэгдэл, тодорхой GPU тоотой"},
+  "Seismic interpretation (subsurface AI)":{
+    name:"Газрын гүний сейсмик тайлал (AI)",
+    glab:"тайлбарлах хүчин чадал нэг жилд 10 дахин",
+    metric:"2025 онд <b>2 сая км² сейсмик өгөгдөл</b> AI-гаар тайлсан; хүчин чадал 10 дахин өссөн",
+    detail:"Equinor 2025 онд өөрийн машин сургалтын хэрэгслээр ойролцоогоор 2 сая км² сейсмик өгөгдөл тайлж, геологичдын тайлбарлах хүчин чадлыг арав дахин нэмэгдүүлсэн гэж мэдэгдэв. Shell нь C3 AI-тай хамтран сейсмик агент ажиллуулж, TotalEnergies Google-тэй хамтран дүрс тайлалыг сайжруулж байна. Томоохон операторуудын сейсмик архив петабайтаас давсан тул энэ нь домэйн суурь загварыг өөрийн 3D эзэлхүүн дээр шууд сургадаг цөөн ажлын ачааллын нэг юм. Болгоомжлол: Equinor Норвегийн тавцан дээрх шинэ ордуудыг эдгээр хэрэгсэлтэй холбож байгаа ч, үүний хэдэн хувь нь загвар, хэдэн хувь нь өрөмдлөгийн байршлын сонголт болохыг хараат бус этгээд шалгаагүй.",
+    flag:"компанийн мэдээлэл; ордын холбоог хараат бусаар шалгаагүй"},
+  "Offshore asset integrity":{
+    name:"Далайн тавцангийн тоног төхөөрөмжийн бүрэн бүтэн байдал",
+    glab:"2020 оноос хойш нийт 330 сая доллар",
+    metric:"<b>2025 онд 130 сая долларын AI үр өгөөж</b>; ~24,000 мэдрэгчтэй 700+ эргэлтэт машин",
+    detail:"Equinor AI-ийн үр өгөөжийг 2025 онд 130 сая доллар, 2020 оноос хойш нийт 330 сая доллар гэж тооцов. Үүнээс 2020 оноос хойшхи 120 сая доллар нь зөвхөн урьдчилан таамагласан засвар үйлчилгээнээс гарсан — бүх байгууламж дээрх ойролцоогоор 24,000 мэдрэгчээр хянагдаж буй 700 гаруй эргэлтэт машин. Хоёрдогч нөлөө нь ялгарал: урьдчилан мэдсэн эвдрэл нь хийг шатаахад хүргэдэг гэнэтийн зогсолтоос сэргийлдэг. Shell мөн адил загварыг C3 AI-тай хамтран 10,000 гаруй тоног төхөөрөмжид өргөжүүлсэн. Болгоомжлол: эдгээр нь гадны аудитгүй, өөрсдийн зарласан хэмнэлт бөгөөд 120 сая доллар нь зургаан жилийн нийлбэр, жилийн түвшин биш.",
+    flag:"өөрсдийн зарласан хэмнэлт; 120 сая доллар нь 2020 оноос хойшхи нийлбэр"},
+  "Agentic chip verification (EDA)":{
+    name:"Агентат чипийн баталгаажуулалт (EDA)",
+    glab:"тэргүүлэгч хэрэглэгчдэд баталгаажуулалтын ачаа 4-10 дахин буурсан",
+    metric:"Tenstorrent-д 3 сарын хугацаанд <b>4 дахин хурдан баталгаажуулалт</b>; Altera зарим блокт ~<b>10 дахин</b> гэж мэдэгдэв",
+    detail:"Чип үйлдвэрлэлийн саад нь зураг төсөл биш, баталгаажуулалт бөгөөд төслийн инженерийн цагийн дийлэнхийг иддэг. Cadence 2026.02.10-нд ChipStack AI Super Agent-ийг гаргасан бөгөөд энэ нь 2025 оны 11-р сард ChipStack-аас худалдан авсан IP дээр суурилсан: туршилтын төлөвлөгөө бичиж, регресс ажиллуулж, алдаа засдаг агентуудын нэгдэл. Tenstorrent гурван сарын үнэлгээгээр гурван чухал блокт баталгаажуулалтын хугацааг 4 дахин хүртэл бууруулсныг хэмжсэн; Altera зарим ажилд ойролцоогоор 10 дахин гэж мэдэгдэв. Synopsys DSO.ai ба Cadence Cerebrus физик зохиомжийн талыг 7-12% PPA ашигтайгаар хамардаг. Болгоомжлол: бүх тоо нь гурван нэрлэсэн хэрэглэгчийн эрт нэвтрэлтээс гарсан үйлдвэрлэгчийн мэдээлэл.",
+    flag:"үйлдвэрлэгчийн мэдээлэл, гурван хэрэглэгчийн эрт нэвтрэлт"},
+  "AI language learning":{
+    name:"AI хэл сурах",
+    glab:"12.2 сая төлбөртэй захиалагч, жилийн өмнөхөөс +34%",
+    metric:"2025 оны эцэст <b>12.2 сая төлбөртэй захиалагч</b> ба 52.7 сая өдрийн идэвхтэй хэрэглэгч",
+    detail:"Хэрэглэгчид генератив AI-д шууд мөнгө төлдгийг харуулсан самбар дээрх хамгийн тод нотолгоо. Duolingo 2025 оныг 12.2 сая төлбөртэй захиалагч (жилийн өмнөхөөс +34%) ба 52.7 сая өдрийн идэвхтэй хэрэглэгчтэй хаасан бөгөөд эдгээр нь SEC-д бүртгэгдсэн. Duolingo Max премиум түвшин нь Roleplay яриа болон Explain My Answer алдааны шинжилгээний ард OpenAI загварыг байрлуулдаг; генератив хэрэгсэл мөн хичээлийн контент үйлдвэрлэх хурдыг олон дахин нэмэгдүүлсэн. Болгоомжлол: захиалагч ба DAU тоо аудитын чанартай боловч AI түвшний орлогын хувь тусад нь задлагдаагүй, мөн яг эдгээр үзүүлэлт дээр хувьцаа унасан.",
+    flag:"SEC-д бүртгэгдсэн захиалагч ба хэрэглээний тоо"},
+  "Rail predictive maintenance":{
+    name:"Төмөр замын урьдчилан таамагласан засвар",
+    glab:"хэдэн арван мянган зүү дээр мэдрэгч",
+    metric:"Зүүний хөдөлгүүрийн гүйдэл хянаснаар нэг жилд <b>~3,600 эвдрэл</b>-ээс сэргийлсэн",
+    detail:"Мэдрэгч нь зүүний хөдөлгүүрийн цахилгаан кабельд индукцээр бэхлэгдэж, татаж буй гүйдлийг хэмждэг. Элэгдэл эсвэл тосолгооны дутагдлаас болж хүндэрсэн хөдөлгүүр эвдрэхээс хэдэн долоо хоногийн өмнө бага зэрэг илүү гүйдэл татдаг бөгөөд загвар энэ хазайлтыг уншдаг. Deutsche Bahn үүнийг сүлжээ даяар DIANA оношилгооны платформдоо нэгтгэдэг; дэд бүтцийн эвдрэл нь бүх саатлын ойролцоогоор гуравны нэгийг эзэлдэг. Болгоомжлол, бас чухал нь: ойролцоогоор 3,600 эвдрэлээс сэргийлсэн гэсэн тоо нь DB-ийн өөрийн мэдээлэл бөгөөд 2019 оныг хэлж байгаа — үүнээс хойш аудит хийгдсэн шинэ тоо байхгүй.",
+    flag:"DB-ийн өөрийн тоо, бас 2019 оных"},
+  "Restaurant kitchen automation":{
+    name:"Ресторны гал тогооны автоматжуулалт",
+    glab:"нэгжийн эдийн засаг сайжирсан — дараа нь сүлжээ технологиэ зарсан",
+    metric:"Автоматжуулсан салбар тутамд <b>700 базис цэгийн хөдөлмөрийн хэмнэлт</b>; дараа нь Sweetgreen бизнесээ <b>186.4 сая доллар</b>-аар зарсан",
+    detail:"Тохируулгын карт. Sweetgreen-ий Infinite Kitchen — салат бэлтгэх автомат шугам — хэмжигдэхүйц ажилласан: түүнийг ажиллуулсан салбарууд харьцуулж болох нэгжүүдийн эсрэг ойролцоогоор 700 базис цэгийн хөдөлмөрийн хэмнэлт, бараг 100 базис цэгийн COGS сайжралт үзүүлсэн. Гэвч 2025 оны 11-р сард Sweetgreen үндсэн технологийн компани Spyce-ээ Wonder-т 186.4 сая доллараар зарж, бүрэн автоматжуулалтаас ухарсан — гурван улирал дараалан салбарын борлуулалт буурсны дараа (2025 оны 3-р улиралд −9.5%, зочдын урсгал −11.7%). Самбарын авах сургамж: нэгжийн түвшний автоматжуулалтын ашиг эрэлтийн асуудлыг аврахгүй, ажиллаж буй робот нь ажиллаж буй бизнестэй ижил зүйл биш.",
+    flag:"эерэг нэгжийн эдийн засгийн хэрнээ оператор технологиэ зарсан"},
 };
 UC.forEach(function(x){
   var m = MN_UC[x.name.en];
@@ -1725,6 +1918,8 @@ function renderStatic(){
   document.getElementById('lblMat').textContent = u.lblMat;
   document.getElementById('lblGrow').textContent = u.lblGrow;
   document.getElementById('lblQual').textContent = u.lblQual;
+  document.getElementById('legendToggleTxt').textContent = u.legendLbl;
+  document.getElementById('filtToggleTxt').textContent = u.filtersLbl;
   for(const id of ['brTitle','brP1','brP2','brNote','brF1v','brF1l','brF2v','brF2l',
                    'brF3v','brF3l','brCardK','brCardT','brCardS','brCardG','cdTitle','cdNote']){
     const el = document.getElementById(id); if(el) el.innerHTML = u[id];
@@ -1802,9 +1997,14 @@ function syncCluster(){
 
 function meterHTML(q){ return '<span class="meter q'+q+'" title="'+QUAL_LABELS[lang][q]+'"><i class="seg"></i><i class="seg"></i><i class="seg"></i></span>'; }
 function matHTML(mat){ const m = MATS.find(x=>x.k===mat); return '<span class="mpill '+m.cls+'">'+UI[lang][m.uiKey]+'</span>'; }
-function growHTML(x){
+function metaHTML(x){
   const g = GROW[x.g];
-  return '<div class="growthline"><span class="garrow '+g.cls+'">'+g.glyph+'</span><span class="glabel">'+T(x.glab)+'</span></div>';
+  return '<div class="metaline">'+
+           '<span class="gpart"><span class="garrow '+g.cls+'">'+g.glyph+'</span> '+T(x.glab)+'</span>'+
+           '<span class="mdot">·</span>'+
+           '<span class="cpart"><span class="ci ci'+x.ci+'">'+UI[lang][CI_KEY[x.ci]]+'</span> '+
+             (CK_LABEL[lang]||CK_LABEL.en)[x.ck]+'</span>'+
+         '</div>';
 }
 function srcHTML(x){
   const url = URLS[x.name.en];
@@ -1813,6 +2013,13 @@ function srcHTML(x){
     return '<a class="srclink" href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+' ↗</a>';
   }
   return label;
+}
+function firmsHTML(x){
+  const list = COMPANIES[x.name.en];
+  if(!list || !list.length) return '';
+  return '<div class="firms"><b>'+UI[lang].firmsLabel+'</b>'+list.map(function(f){
+    return '<a class="firmlink" href="'+f.u+'" target="_blank" rel="noopener noreferrer">'+f.n+' \u2197</a>';
+  }).join('')+'</div>';
 }
 
 function buildBoard(){
@@ -1829,13 +2036,13 @@ function buildBoard(){
             '<div class="uc-prov">'+x.prov+'</div>'+
           '</div>'+matHTML(x.mat)+'</div>'+
           '<div class="card-mid">'+meterHTML(x.q)+'<span class="metric">'+T(x.metric)+'</span></div>'+
-          growHTML(x)+ computeHTML(x)+
+          metaHTML(x)+
           '<div class="expand-hint"><span class="chev">▸</span> '+u.detailsHint+'</div>'+
         '</button>'+
         '<div class="detail"><div class="detail-in">'+
           T(x.detail)+
           '<div class="flag '+x.flag.t+'">'+T(x.flag.x)+'</div>'+
-          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+
+          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+
         '</div></div>'+
       '</div>';
     }).join('');
@@ -1876,12 +2083,41 @@ function apply(){
   });
   document.getElementById('empty').style.display = shown===0 ? 'block':'none';
   document.getElementById('countOut').textContent = shown + ' / ' + UC.length + ' ' + u.countSuffix;
+  syncFilterCount();
 }
 
 document.getElementById('search').addEventListener('input', function(e){
   fText = e.target.value.trim().toLowerCase(); apply();
 });
 
+
+/* ---------- Aufklappbare Bloecke ----------
+   Legende, Zusatzfilter und das Rechenbedarf-Argument starten eingeklappt.
+   Ein aktiver Zusatzfilter waere sonst unsichtbar, deshalb steht die Anzahl
+   am Schalter und der Block klappt automatisch auf, sobald einer gesetzt ist. */
+function wireDisclosure(btnId, bodyId){
+  const btn = document.getElementById(btnId), body = document.getElementById(bodyId);
+  if(!btn || !body) return;
+  btn.addEventListener('click', function(){
+    const open = body.hasAttribute('hidden');
+    if(open){ body.removeAttribute('hidden'); } else { body.setAttribute('hidden',''); }
+    btn.setAttribute('aria-expanded', String(open));
+  });
+}
+wireDisclosure('legendToggle','legendBody');
+wireDisclosure('filtToggle','moreFilters');
+wireDisclosure('warumToggle','warumBody');
+wireDisclosure('bridgeToggle','bridgeBody');
+
+function syncFilterCount(){
+  const n = fMat.size + fGrow.size + fComp.size + fQual.size;
+  const el = document.getElementById('filtCount');
+  if(el) el.textContent = n ? '('+n+')' : '';
+  if(n){
+    const body = document.getElementById('moreFilters'), btn = document.getElementById('filtToggle');
+    if(body && body.hasAttribute('hidden')){ body.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); }
+  }
+}
 setLang('en');
 </script>
 </body>

@@ -1,12 +1,12 @@
 # AI Use Cases Overview
 
-An interactive, single-page dashboard cataloguing concrete AI deployments running in the real world, current as of **July 2026**. Every use case is rated on three axes: how far it has scaled, how solid the evidence is, and how fast it is growing.
+An interactive, single-page dashboard cataloguing concrete AI deployments running in the real world, current as of **August 2026**. Every use case is rated on three axes: how far it has scaled, how solid the evidence is, and how fast it is growing.
 
 **Live demo:** https://mendeltem.github.io/ai_use_cases_overview/
 
 ## What's in it
 
-57 use cases across 12 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is bilingual (English / German).
+91 use cases across 15 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
 
 ## Rating axes
 
@@ -16,13 +16,14 @@ An interactive, single-page dashboard cataloguing concrete AI deployments runnin
 
 ## Clusters
 
-Mobility & transport · Warehouse & energy · Industry & humanoids · Agriculture · Medicine & the body · Hazardous zones · Science & forecasting · Knowledge-work agents · Security & fraud · Back office & bureaucracy · The city in the background · Enablers
+Mobility & transport · Warehouse & energy · Industry & humanoids · Agriculture · Medicine & the body · Hazardous zones · Science & forecasting · Knowledge-work agents · Security & fraud · Back office & bureaucracy · The city in the background · Enablers · The compute & energy substrate · Consumer & home robots · Media & entertainment
 
 ## Features
 
 - Filter by cluster, maturity, growth, and evidence
+- Source link and official company pages on every card that has them
 - Free-text search across provider, metric, and term
-- EN/DE language toggle
+- EN/DE/MN language toggle
 - No build step, no dependencies (one `index.html`; only Google Fonts loaded from CDN)
 
 ## Run locally
