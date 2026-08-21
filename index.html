@@ -28,17 +28,17 @@
 
   header.top{background:linear-gradient(180deg,#12242C 0%,#132A31 100%); color:#EAF0EE; position:relative; overflow:hidden; border-bottom:3px solid var(--petrol);}
   header.top::before{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--petrol-dark) 1px,transparent 1px),linear-gradient(90deg,var(--petrol-dark) 1px,transparent 1px); background-size:34px 34px; opacity:.14; pointer-events:none;}
-  .top .wrap{position:relative; padding-top:34px; padding-bottom:30px}
+  .top .wrap{position:relative; padding-top:18px; padding-bottom:14px}
   .topbar{display:flex; justify-content:space-between; align-items:flex-start; gap:16px}
-  .eyebrow{font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase; color:#7FD0C4; margin:0 0 12px;}
-  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(28px,5vw,46px); line-height:1.04; margin:0 0 14px; letter-spacing:-.01em;}
+  .eyebrow{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#7FD0C4; margin:0 0 7px;}
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(23px,3.1vw,32px); line-height:1.04; margin:0 0 9px; letter-spacing:-.01em;}
   h1 .accent{color:#7FD0C4}
-  .thesis{max-width:680px; color:#C4D3CF; font-size:16px; margin:0 0 22px}
+  .thesis{max-width:680px; color:#C4D3CF; font-size:14px; line-height:1.5; margin:0 0 13px}
   .thesis strong{color:#EAF0EE; font-weight:600}
-  .dist{display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; margin-top:6px}
-  .dist-item{min-width:90px}
-  .dist-num{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px; line-height:1}
-  .dist-label{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:#9FB4AF; margin-top:4px}
+  .dist{display:flex; flex-wrap:wrap; gap:8px 22px; align-items:flex-end; margin-top:0}
+  .dist-item{min-width:76px}
+  .dist-num{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:23px; line-height:1}
+  .dist-label{font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:#9FB4AF; margin-top:2px}
   .dist-num.s{color:#7ED09A}.dist-num.m{color:#E7C877}.dist-num.t{color:#E39A87}.dist-num.g{color:#7BB6E6}
   .dist-total .dist-num{color:#EAF0EE}
 
@@ -1148,11 +1148,11 @@ const UC = [
     "note", E("vendor-reported, early deployment at three named customers","Herstellerangabe, frühe Einführung bei drei genannten Kunden")),
   U(8,"Duolingo, OpenAI","prod",3,"strong",
     E("AI language learning","KI-Sprachenlernen"),
-    E("12.2M paying subscribers, +34% YoY","12,2 Mio. zahlende Abos, +34 % ggü. Vorjahr"),
-    E("<b>12.2M paying subscribers</b> and 52.7M daily actives at end-2025","<b>12,2 Mio. zahlende Abonnenten</b> und 52,7 Mio. Tagesnutzer Ende 2025"),
-    E("The clearest evidence on the board that consumers pay for generative AI directly. Duolingo closed 2025 with 12.2M paying subscribers, up 34% year on year, and 52.7M daily active users, filed with the SEC. The premium tier, Duolingo Max, puts an OpenAI model behind Roleplay conversations and Explain My Answer error analysis; generative tooling also multiplied the rate at which the company produces course content. Caveat: the subscriber and DAU numbers are audited-grade, but the share of revenue attributable to the AI tier specifically is not broken out, and the stock fell on these same results — growth in users has not settled whether the AI tier changes the economics.","Der klarste Beleg auf dem Board, dass Endkunden direkt für generative KI zahlen. Duolingo schloss 2025 mit 12,2 Mio. zahlenden Abonnenten (+34 % ggü. Vorjahr) und 52,7 Mio. täglich aktiven Nutzern ab, bei der SEC eingereicht. Die Premium-Stufe Duolingo Max legt ein OpenAI-Modell hinter Roleplay-Dialoge und die Fehleranalyse Explain My Answer; generative Werkzeuge vervielfachten zudem das Tempo der Kursproduktion. Vorbehalt: Abo- und DAU-Zahlen haben Prüfungsqualität, aber der Umsatzanteil der KI-Stufe wird nicht separat ausgewiesen — und die Aktie fiel auf ebendiese Zahlen. Nutzerwachstum beantwortet die Frage nach der Ökonomie der KI-Stufe nicht."),
-    E("Duolingo Q4/FY2025 shareholder letter (SEC 8-K)","Duolingo Q4/GJ2025 Aktionärsbrief (SEC-8-K)"),
-    "good", E("SEC-filed subscriber and usage numbers","SEC-eingereichte Abo- und Nutzungszahlen")),
+    E("12.7M paying subscribers, +17% YoY","12,7 Mio. zahlende Abos, +17 % ggü. Vorjahr"),
+    E("<b>12.7M paying subscribers</b> and 58.7M daily actives, Q2 2026","<b>12,7 Mio. zahlende Abonnenten</b> und 58,7 Mio. Tagesnutzer, Q2 2026"),
+    E("The clearest evidence on the board that consumers pay for generative AI directly. Duolingo's Q2 2026 10-Q reports 58.7M daily active users (+23% year on year), 140.6M monthly actives, 12.7M paying subscribers (+17%) and $298.5M of revenue (+18%), at a gross margin around 72.6% that the filing explicitly attributes in part to lower per-unit third-party AI costs. The premium tier, Duolingo Max, puts an OpenAI model behind Roleplay conversations and Explain My Answer error analysis. The caveat is the important one: none of these numbers measures learning. Duolingo publishes engagement and revenue, not third-party-validated competence gains attributable to the AI features, and the share of revenue from the AI tier specifically is not broken out.","Der klarste Beleg auf dem Board, dass Endkunden direkt für generative KI zahlen. Duolingos 10-Q für Q2 2026 weist 58,7 Mio. täglich aktive Nutzer aus (+23 % ggü. Vorjahr), 140,6 Mio. monatlich aktive, 12,7 Mio. zahlende Abonnenten (+17 %) und 298,5 Mio. $ Umsatz (+18 %), bei rund 72,6 % Bruttomarge, die das Filing ausdrücklich auch mit niedrigeren KI-Stückkosten Dritter begründet. Die Premium-Stufe Duolingo Max legt ein OpenAI-Modell hinter Roleplay-Dialoge und die Fehleranalyse Explain My Answer. Der entscheidende Vorbehalt: keine dieser Zahlen misst Lernen. Duolingo veröffentlicht Engagement und Umsatz, keine drittvalidierten Kompetenzgewinne aus den KI-Funktionen, und der Umsatzanteil der KI-Stufe wird nicht separat ausgewiesen."),
+    E("Duolingo Q2 2026 Form 10-Q","Duolingo Q2 2026 Form 10-Q"),
+    "good", E("SEC-filed numbers — but none of them measures learning","SEC-eingereichte Zahlen — von denen keine Lernen misst")),
   U(1,"Deutsche Bahn (DIANA, Weichen-EKG)","prod",2,"steady",
     E("Rail predictive maintenance","Vorausschauende Wartung im Bahnnetz"),
     E("sensors on tens of thousands of switches","Sensorik an Zehntausenden Weichen"),
@@ -1171,79 +1171,424 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
-  "Robotaxis / autonomous driving":"https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
+  "5G / connectivity for robotics":"https://www.ericsson.com/en/press-releases/2026/6/ericsson-mobility-report-5g-subscriptions-top-three-billion-as-uplink-gains-momentum",
+  "800-VDC rack power":"https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/",
+  "AI accelerators & custom silicon":"https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+  "AI drug discovery":"https://www.prnewswire.com/news-releases/insilico-initiates-phase-iii-clinical-trial-for-rentosertib-its-ai-empowered-tnik-inhibitor-for-idiopathic-pulmonary-fibrosis-302819553.html",
+  "AI weather forecasting":"https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
+  "AI-RAN & network operation":"https://www.ericsson.com/en/press-releases/6/2026/t-mobile-ericsson-ai-ran",
+  "Adaptive traffic signals":"https://blog.google/company-news/outreach-and-initiatives/sustainability/project-green-light-boston-expansion/",
+  "Agricultural drones":"https://www.dji.com/media-center/announcements/dji-global-adoption-51mt-saves-410mts-farmers",
+  "Ambient clinical documentation":"https://jamanetwork.com/journals/jama/fullarticle/2847319",
+  "Aquaculture robots":"https://doi.org/10.1016/j.aquaculture.2025.742910",
+  "Autonomous SOC agents (AI vs AI)":"https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027",
+  "Autonomous mine fleets":"https://computerworld.com/article/3461688/rio-tinto-reaches-autonomous-truck-milestone.html",
+  "Autonomous ships":"https://www.yara.com/corporate-releases/yara-to-start-operating-the-worlds-first-fully-emission-free-container-ship/",
+  "Autonomous street cleaning":"https://gausium.com/news/gausium-introduces-two-new-outdoor-sweepers-and-industrys-largest-cleaning-robot-lineup-at-interclean-amsterdam-2026/",
+  "Autonomous surgery steps":"https://doi.org/10.1126/scirobotics.adt5254",
   "Autonomous trucks":"https://www.sec.gov/Archives/edgar/data/1828108/000182810825000155/a25q3shareholderletter_f.htm",
-  "eVTOL / flying taxis":"https://ir.jobyaviation.com/news-events/press-releases/detail/176/jobys-first-faa-conforming-aircraft-takes-flight",
-  "Autonomous ships":"https://www.kongsberg.com/maritime/",
-  "Delivery & medical drones":"https://www.flyzipline.com/",
-  "Sidewalk delivery robots":"https://www.starship.xyz/",
-  "Warehouse robots":"https://www.aboutamazon.com/news/operations/amazon-million-robots-ai-foundation-model",
-  "Autonomous mine fleets":"https://www.railjournal.com/in_depth/autohaul-drives-efficiencies-at-rio-tinto/",
+  "Biology foundation models":"https://doi.org/10.1038/s41586-026-10176-5",
+  "Climate / ocean monitoring":"https://argo.ucsd.edu/about/status/",
+  "Co-packaged optics (CPO)":"https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-tomahawkr-6-davisson-industrys-first-1024",
+  "CoWoS / advanced packaging":"https://www.trendforce.com/news/2026/06/15/news-tsmc-cowos-supply-demand-gap-reportedly-seen-narrowing-from-20-to-10-by-end-2026-as-capacity-expands/",
+  "Coding agents":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+  "Construction robots":"https://www.nasa.gov/centers-and-facilities/marshall/nasa-icon-advance-lunar-construction-technology-for-moon-missions",
+  "Customer service agents":"https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/",
+  "Data-center cooling":"https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/",
+  "Data-center power & the grid":"https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm",
+  "Deep research / knowledge":"https://arxiv.org/abs/2601.22984",
+  "Defense & ISR drones":"https://defensescoop.com/2026/03/14/anduril-20-billion-dollar-army-contract/",
+  "Delivery & medical drones":"https://www.zipline.com/newsroom/zipline-surpasses-2-million-deliveries-raises-more-than-600m-to-power-next-phase-of-growth-and-expands-operations-to-houston-and-phoenix",
+  "Dental / implant robots":"https://www.neocis.com/news/neocis-yomi-robotic-system-receives-fda-510k-clearance-for-bone-reduction/",
+  "Diagnostic AI (radiology)":"https://theimagingwire.com/2026/03/11/numbers-from-the-fda-show-radiology-is-maintaining-its-lead/",
+  "Digital twins":"https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Global-Robotics-Leaders-Take-Physical-AI-to-the-Real-World/default.aspx",
+  "Disaster / search robotics":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12986560/",
+  "Disaster early warning":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10954541/",
+  "Edge-AI perception chips":"https://www.stocktitan.net/news/AMBA/ambarella-inc-announces-first-quarter-fiscal-year-2027-financial-v1whsjf27nu6.html",
+  "Email / BEC security":"https://abnormal.ai/about/news/series-d-5b-valuation",
+  "Emissions satellites":"https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite",
+  "Finance / accounting":"https://ramp.com/blog/ramp-policy-agent-ga-launch",
+  "Firefighting robots":"https://lafd.org/news/lafd-debuts-rs3-first-robotic-firefighting-vehicle-united-states",
+  "Foundation models for robotics":"https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world",
+  "Fraud / AML (banking)":"https://verafin.com/news/nasdaq-verafin-announces-expansion-of-its-agentic-ai-workforce/",
+  "Game development":"https://www.totallyhuman.io/blog/the-surprising-new-number-of-genai-games-on-steam",
   "Grid energy trading":"https://reneweconomy.com.au/tesla-big-battery-paves-way-for-artificial-intelligence-to-dominate-energy-trades-31949/",
+  "Grid operation & load forecasting":"https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/",
+  "HBM memory (the supercycle)":"https://news.skhynix.com/en/q2-2026-business-results/",
+  "HR / recruiting agents":"https://www.shrm.org/topics-tools/research/2025-talent-trends",
+  "Harvest pickers & laser weeding":"https://www.therobotreport.com/carbon-robotics-laserweeder-g2-destroys-weeds-even-faster/",
+  "Hospital & care robots":"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1398140/full",
+  "Humanoid robots":"https://www.forbes.com/sites/johnkoetsier/2026/08/19/unitree-ipos-massive-629-pop-makes-agility-robotics-look-super-cheap/",
+  "Identity & access security":"https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2024",
+  "Industrial exoskeletons":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12108747/",
   "Industrial robots":"https://www.therobotreport.com/ifr-industrial-robot-deployments-have-doubled-in-10-years/",
-  "Humanoid robots":"https://www.unitree.com/",
-  "Construction robots":"https://www.iconbuild.com/",
-  "Semiconductor fab automation":"https://www.asml.com/",
-  "Precision spraying (See & Spray)":"https://acsess.onlinelibrary.wiley.com/doi/10.1002/agg2.70324",
-  "Milking robots":"https://www.lely.com/solutions/milking/astronaut/",
-  "Agricultural drones":"https://ag.dji.com/",
-  "Harvest pickers & laser weeding":"https://carbonrobotics.com/",
-  "Aquaculture robots":"https://www.stingray.no/",
-  "Surgical robots (assisted)":"https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm",
+  "Infrastructure / underwater inspection":"https://www.fhwa.dot.gov/innovation/everydaycounts/edcnews/20190808.cfm",
+  "Insurance claims":"https://www.sec.gov/Archives/edgar/data/1691421/000169142126000016/lmnd-20251231.htm",
+  "Legal agents":"https://techstartups.com/2026/08/07/legal-ai-startup-harvey-in-talks-to-raise-500-million-at-15-5-billion-valuation-after-revenue-surge/",
+  "LiDAR for physical AI":"https://www.prnewswire.com/news-releases/robosense-announced-q1-2026-lidar-sales-robotics-segment-grows-1-458-8-yoy-to-over-185-500-units-302737619.html",
+  "Logistics orchestration":"https://www.supplychaindive.com/news/walmart-automation-supply-chain-cost-savings/747377/",
+  "Machine translation":"https://www.prnewswire.com/news-releases/deepl-bolsters-executive-team-with-former-salesforce-and-servicenow-leaders-as-new-coo-and-cro-to-drive-global-growth-302659373.html",
+  "Materials science":"https://www.nature.com/articles/s41586-023-06735-9",
+  "Milking robots":"https://www.lely.com/global/news/lely-celebrates-50000th-astronaut/",
+  "Mine / ordnance clearance":"https://phys.org/news/2026-04-drones-geophysics-artificial-intelligence.html",
+  "NAND flash & enterprise SSD":"https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+  "OT / ICS security":"https://www.dragos.com/blog/dragos-2026-ot-cybersecurity-year-in-review",
   "Personalised cancer vaccines (neoantigen)":"https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
   "Pharma in-house AI factories":"https://www.roche.com/media/releases/med-cor-2026-03-16",
-  "AI drug discovery":"https://www.prnewswire.com/news-releases/insilico-initiates-phase-iii-clinical-trial-for-rentosertib-its-ai-empowered-tnik-inhibitor-for-idiopathic-pulmonary-fibrosis-302819553.html",
-  "Autonomous surgery steps":"https://www.therobotreport.com/johns-hopkins-teaches-robot-to-perform-a-gallbladder-removal-on-a-realistic-patient/",
-  "Diagnostic AI (radiology)":"https://theimagingwire.com/2026/03/11/numbers-from-the-fda-show-radiology-is-maintaining-its-lead/",
-  "Dental / implant robots":"https://www.neocis.com/",
-  "Infrastructure / underwater inspection":"https://percepto.co/",
-  "Disaster / search robotics":"https://bostondynamics.com/products/spot/",
-  "Firefighting robots":"https://www.howeandhowe.com/",
-  "AI weather forecasting":"https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
-  "Protein folding / biology":"https://www.nobelprize.org/prizes/chemistry/2024/",
-  "Emissions satellites":"https://www.science.org/content/article/methane-tracker-lost-space",
-  "Materials science":"https://www.nature.com/articles/s41586-023-06735-9",
-  "Climate / ocean monitoring":"https://argo.ucsd.edu/",
-  "Coding agents":"https://en.wikipedia.org/wiki/Cursor_(company)",
-  "Customer service agents":"https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html",
-  "Legal agents":"https://sacra.com/c/harvey/",
-  "Machine translation":"https://www.deepl.com/",
-  "Email / BEC security":"https://abnormal.ai/about/news/series-d-5b-valuation",
-  "Fraud / AML (banking)":"https://www.leaprate.com/financial-services/fintech/nasdaq-verafin-expands-agentic-ai-workforce-aml-fraud-detection/",
-  "OT / ICS security":"https://claroty.com/",
-  "Identity & access security":"https://www.microsoft.com/en-us/security",
-  "Insurance claims":"https://www.sec.gov/Archives/edgar/data/1691421/000169142126000016/lmnd-20251231.htm",
-  "Ambient clinical documentation":"https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/ai-scribes-linked-to-modest-reductions-in-ehr-documentation-time",
-  "Finance / accounting":"https://ramp.com/",
-  "Adaptive traffic signals":"https://blog.google/company-news/outreach-and-initiatives/sustainability/project-green-light-boston-expansion/",
+  "Precision spraying (See & Spray)":"https://acsess.onlinelibrary.wiley.com/doi/10.1002/agg2.70324",
+  "Process industry: metallurgy & chemicals":"https://gmk.center/en/posts/robots-near-the-blast-furnace-artificial-intelligence-in-steel-industry/",
+  "Protein folding / biology":"https://www.embl.org/news/science-technology/alphafold-wins-nobel-prize-chemistry-2024/",
+  "Public administration / government":"https://www.gov.uk/government/news/ground-breaking-use-of-ai-saves-taxpayers-money-and-delivers-greater-government-efficiency",
   "Recycling sortation":"https://ampsortation.com/articles/amp-robotics-achieves-data-milestones-and-recycling-automation-breakthrough",
-  "Data-center cooling":"https://deepmind.google/",
-  "Autonomous street cleaning":"https://www.gaussianrobotics.com/",
-  "Foundation models for robotics":"https://developer.nvidia.com/isaac",
-  "Digital twins":"https://www.nvidia.com/en-us/omniverse/",
-  "5G / connectivity for robotics":"https://www.ericsson.com/en/5g",
-  "HBM memory (the supercycle)":"https://www.prnewswire.com/news-releases/sk-hynix-announces-1q26-financial-results-302750959.html",
-  "AI accelerators & custom silicon":"https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
-  "LiDAR for physical AI":"https://www.prnewswire.com/news-releases/robosense-announced-q1-2026-lidar-sales-robotics-segment-grows-1-458-8-yoy-to-over-185-500-units-302737619.html",
-  "Defense & ISR drones":"https://defensescoop.com/2026/03/14/anduril-20-billion-dollar-army-contract/",
+  "Revenue cycle & prior authorization":"https://www.abridge.com/press-release/abridge-availity-collaboration-announcement",
+  "Robo-advisory & wealth":"https://www.condorcapital.com/the-robo-report/reports/the-future-of-robo-advisors-q2-2025/",
+  "Robot vacuums":"https://newsroom.roborock.com/gl/news/roborock-becomes-the-world-s-no-1-smart-cleaning-robot-brand-according-to-idc",
+  "Robotaxis / autonomous driving":"https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
+  "Robotic lawn mowers":"https://www.prnewswire.com/news-releases/robosense-asserts-global-dominance-in-lidar-for-robotics-with-1-458-8-yoy-shipment-surge-in-q1-2026--302783148.html",
+  "Sales & marketing agents":"https://www.prnewswire.com/news-releases/ai-for-sales-and-marketing-market-worth-240-58-billion-by-2030---exclusive-report-by-marketsandmarkets-302385672.html",
+  "Self-driving labs":"https://www.oaepublish.com/articles/cs.2025.66",
+  "Semiconductor fab automation":"https://www.electronicdesign.com/markets/automation/article/21158320/electronic-design-applied-materials-tools-integrate-ai-to-identify-defects-in-chips",
+  "Sidewalk delivery robots":"https://www.starship.xyz/press/autonomous-delivery-moves-into-the-mainstream-as-starship-technologies-passes-10-million-deliveries/",
+  "Space robotics":"https://www.eoportal.org/satellite-missions/mev-1",
+  "Surgical robots (assisted)":"https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm",
+  "Video & avatar generation":"https://www.heygen.com/blog/heygen-surpasses-200m-arr",
+  "Visual inspection & predictive maintenance":"https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/",
+  "Warehouse robots":"https://techcrunch.com/2025/07/01/amazon-deploys-its-1-millionth-robot-releases-generative-ai-model/",
+  "World models & 3D generation":"https://www.nature.com/articles/s41586-025-08600-3",
+  "eVTOL / flying taxis":"https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
   "Seismic interpretation (subsurface AI)":"https://www.equinor.com/news/20260107-artificial-intelligence-saved-equinor-usd-130-million",
   "Offshore asset integrity":"https://www.equinor.com/news/20260107-artificial-intelligence-saved-equinor-usd-130-million",
   "Agentic chip verification (EDA)":"https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unleashes-chipstack-ai-super-agent-pioneering-a-new.html",
-  "AI language learning":"https://investors.duolingo.com/static-files/961ce633-3cee-49d0-bd7a-2c63731d45fb",
+  "AI language learning":"https://www.stocktitan.net/sec-filings/DUOL/10-q-duolingo-inc-quarterly-earnings-report-cbc1823a49c0.html",
   "Rail predictive maintenance":"https://www.deutschebahn.com/de/smarteinfrastruktur-6898504",
   "Restaurant kitchen automation":"https://www.restaurantbusinessonline.com/technology/sweetgreen-sell-spyce-technology-company-wonder-1864m",
-  "Visual inspection & predictive maintenance":"https://www.prnewswire.com/apac/news-releases/rockwell-automation-singapore-site-named-a-world-economic-forum-global-lighthouse-302809129.html",
-  "World models & 3D generation":"https://arxiv.org/abs/2501.03575",
 };
 
 /* ---------- Firmenseiten je Anwendung ----------
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "5G / connectivity for robotics":[
+    {n:"Ericsson", u:"https://www.ericsson.com/en"},
+    {n:"Qualcomm", u:"https://www.qualcomm.com/"}],
+  "800-VDC rack power":[
+    {n:"Vicor", u:"https://www.vicorpower.com/"},
+    {n:"MPS", u:"https://www.monolithicpower.com/"},
+    {n:"Infineon", u:"https://www.infineon.com/"},
+    {n:"Delta", u:"https://www.deltaww.com/"}],
+  "AI accelerators & custom silicon":[
+    {n:"NVIDIA Rubin", u:"https://www.nvidia.com/en-us/data-center/"},
+    {n:"TPU v7", u:"https://docs.cloud.google.com/tpu/docs/intro-to-tpu"},
+    {n:"Trainium3", u:"https://aws.amazon.com/ai/machine-learning/trainium/"},
+    {n:"MTIA", u:"https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/"}],
+  "AI drug discovery":[
+    {n:"Insilico", u:"https://insilico.com/"},
+    {n:"Recursion", u:"https://www.recursion.com/"},
+    {n:"Isomorphic Labs", u:"https://www.isomorphiclabs.com/"}],
+  "AI weather forecasting":[
+    {n:"ECMWF AIFS", u:"https://www.ecmwf.int/"},
+    {n:"GraphCast", u:"https://deepmind.google/science/weathernext/"},
+    {n:"GenCast", u:"https://deepmind.google/science/weathernext/"}],
+  "AI-RAN & network operation":[
+    {n:"NVIDIA Aerial/ARC", u:"https://developer.nvidia.com/aerial"},
+    {n:"Nokia", u:"https://www.nokia.com/"},
+    {n:"Ericsson", u:"https://www.ericsson.com/en"},
+    {n:"T-Mobile", u:"https://www.t-mobile.com/"}],
+  "Adaptive traffic signals":[
+    {n:"CMU Surtrac", u:"https://www.ri.cmu.edu/"},
+    {n:"Google Green Light", u:"https://sites.research.google/gr/greenlight/"},
+    {n:"Siemens", u:"https://www.mobility.siemens.com/global/en.html"}],
+  "Agricultural drones":[
+    {n:"DJI Agras", u:"https://ag.dji.com/"},
+    {n:"XAG", u:"https://www.xa.com/en"},
+    {n:"John Deere", u:"https://www.deere.com/en/"}],
+  "Ambient clinical documentation":[
+    {n:"Abridge", u:"https://www.abridge.com/"},
+    {n:"Nuance DAX", u:"https://www.microsoft.com/en-us/health-solutions/clinical-workflow/dragon-copilot"},
+    {n:"Ambience", u:"https://www.ambiencehealthcare.com/"},
+    {n:"Suki", u:"https://www.suki.ai/"}],
+  "Aquaculture robots":[
+    {n:"Stingray Marine", u:"https://www.stingray.no/"},
+    {n:"XpertSea", u:"https://www.xpertsea.com/"},
+    {n:"ReelData", u:"https://www.reeldata.ai/"}],
+  "Autonomous mine fleets":[
+    {n:"Rio Tinto", u:"https://www.riotinto.com/"},
+    {n:"BHP", u:"https://www.bhp.com/"},
+    {n:"Caterpillar", u:"https://investors.caterpillar.com/overview/default.aspx"},
+    {n:"Komatsu", u:"https://www.komatsu.jp/en"}],
+  "Autonomous ships":[
+    {n:"Yara Birkeland", u:"https://www.yara.com/news-and-media/media-library/press-kits/yara-birkeland-press-kit/"},
+    {n:"Kongsberg", u:"https://www.kongsbergmaritime.com/"}],
+  "Autonomous street cleaning":[
+    {n:"Gaussian Robotics", u:"https://gausium.com/"},
+    {n:"Trombia", u:"https://trombia.com/"}],
+  "Autonomous surgery steps":[
+    {n:"Johns Hopkins SRT-H", u:"https://www.jhu.edu/"}],
+  "Autonomous trucks":[
+    {n:"Aurora", u:"https://aurora.tech/"},
+    {n:"Kodiak", u:"https://kodiak.ai/"},
+    {n:"Waabi", u:"https://waabi.ai/"},
+    {n:"Gatik", u:"https://gatik.ai/"}],
+  "Biology foundation models":[
+    {n:"AlphaFold3", u:"https://deepmind.google/science/alphafold/"},
+    {n:"ESM", u:"https://www.evolutionaryscale.ai/"},
+    {n:"Evo 2", u:"https://arcinstitute.org/tools/evo"},
+    {n:"Boltz", u:"https://github.com/jwohlwend/boltz"}],
+  "Climate / ocean monitoring":[
+    {n:"Argo program", u:"https://argo.ucsd.edu/"},
+    {n:"Saildrone", u:"https://www.saildrone.com/"}],
+  "Co-packaged optics (CPO)":[
+    {n:"Broadcom", u:"https://www.broadcom.com/"},
+    {n:"NVIDIA", u:"https://www.nvidia.com/"},
+    {n:"TSMC COUPE", u:"https://research.tsmc.com/page/on-chip-interconnect/14.html"},
+    {n:"Ayar Labs", u:"https://ayarlabs.com/"}],
+  "CoWoS / advanced packaging":[
+    {n:"TSMC", u:"https://www.tsmc.com/english"},
+    {n:"Amkor", u:"https://www.amkor.com/"},
+    {n:"SPIL", u:"https://www.spilglobal.com/"},
+    {n:"ASE", u:"https://www.aseglobal.com/"}],
+  "Coding agents":[
+    {n:"Claude Code", u:"https://claude.com/product/claude-code"},
+    {n:"Cursor", u:"https://cursor.com/"},
+    {n:"OpenAI Codex", u:"https://openai.com/codex/"}],
+  "Construction robots":[
+    {n:"ICON", u:"https://www.iconbuild.com/"},
+    {n:"FBR", u:"https://www.fbr.com.au/"},
+    {n:"Built Robotics", u:"https://www.builtrobotics.com/"}],
+  "Customer service agents":[
+    {n:"Sierra", u:"https://sierra.ai/"},
+    {n:"Salesforce Agentforce", u:"https://www.salesforce.com/agentforce/"},
+    {n:"Decagon", u:"https://decagon.ai/"}],
+  "Data-center cooling":[
+    {n:"Google DeepMind", u:"https://deepmind.google/"},
+    {n:"BrainBox AI", u:"https://brainboxai.com/"}],
+  "Data-center power & the grid":[
+    {n:"GE Vernova", u:"https://www.gevernova.com/"},
+    {n:"Siemens Energy", u:"https://www.siemens-energy.com/global/en.html"},
+    {n:"MHI", u:"https://www.mhi.com/"}],
+  "Deep research / knowledge":[
+    {n:"OpenAI Deep Research", u:"https://openai.com/index/introducing-deep-research/"},
+    {n:"Perplexity", u:"https://www.perplexity.ai/"},
+    {n:"Claude", u:"https://claude.com/"}],
+  "Defense & ISR drones":[
+    {n:"Anduril", u:"https://www.anduril.com/"},
+    {n:"Shield AI", u:"https://shield.ai/"},
+    {n:"AeroVironment", u:"https://www.avinc.com/"}],
+  "Delivery & medical drones":[
+    {n:"Zipline", u:"https://www.zipline.com/"},
+    {n:"Wing", u:"https://wing.com/"},
+    {n:"Meituan", u:"https://www.meituan.com/"}],
+  "Dental / implant robots":[
+    {n:"Neocis Yomi", u:"https://www.neocis.com/"},
+    {n:"Dentsply Sirona", u:"https://www.dentsplysirona.com/"}],
+  "Digital twins":[
+    {n:"NVIDIA Omniverse", u:"https://www.nvidia.com/en-us/omniverse/"},
+    {n:"Siemens", u:"https://www.siemens.com/global/en/products/automation/topic-areas/digital-twin.html"},
+    {n:"GE Digital", u:"https://www.gevernova.com/software"}],
+  "Disaster / search robotics":[
+    {n:"Boston Dynamics Spot", u:"https://bostondynamics.com/products/spot/"},
+    {n:"DARPA", u:"https://www.darpa.mil/"}],
+  "Disaster early warning":[
+    {n:"Google Flood Hub", u:"https://sites.research.google/gr/floodforecasting/"},
+    {n:"FireSat/Earth Fire Alliance", u:"https://www.earthfirealliance.org/"},
+    {n:"Android Earthquake Alerts", u:"https://research.google/blog/android-earthquake-alerts-a-global-system-for-early-warning/"}],
+  "Edge-AI perception chips":[
+    {n:"NVIDIA Jetson Thor", u:"https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/"},
+    {n:"Ambarella", u:"https://www.ambarella.com/"},
+    {n:"Mobileye", u:"https://www.mobileye.com/"}],
+  "Email / BEC security":[
+    {n:"Abnormal Security", u:"https://abnormal.ai/"},
+    {n:"Material Security", u:"https://material.security/"}],
+  "Emissions satellites":[
+    {n:"MethaneSAT/EDF", u:"https://www.edf.org/methanesat"},
+    {n:"Carbon Mapper", u:"https://carbonmapper.org/"},
+    {n:"Kayrros", u:"https://www.kayrros.com/"}],
+  "Finance / accounting":[
+    {n:"Ramp", u:"https://ramp.com/"},
+    {n:"Basware", u:"https://www.basware.com/"}],
+  "Firefighting robots":[
+    {n:"Howe & Howe Thermite", u:"https://www.howeandhowe.com/"},
+    {n:"DOK-ING", u:"https://www.dok-ing.hr/"}],
+  "Foundation models for robotics":[
+    {n:"NVIDIA GR00T", u:"https://developer.nvidia.com/isaac/gr00t"},
+    {n:"Physical Intelligence", u:"https://www.pi.website/"},
+    {n:"Gemini Robotics", u:"https://deepmind.google/models/gemini-robotics/"}],
+  "Fraud / AML (banking)":[
+    {n:"Nasdaq Verafin", u:"https://verafin.com/"},
+    {n:"Feedzai", u:"https://www.feedzai.com/"},
+    {n:"Sardine", u:"https://www.sardine.ai/"}],
+  "Game development":[
+    {n:"Steam/Valve disclosure", u:"https://www.valvesoftware.com/"},
+    {n:"NetEase", u:"https://www.neteasegames.com/"},
+    {n:"NVIDIA ACE", u:"https://developer.nvidia.com/ace"}],
+  "Grid energy trading":[
+    {n:"Tesla Autobidder", u:"https://www.tesla.com/autobidder"},
+    {n:"Fluence", u:"https://fluenceenergy.com/"},
+    {n:"AutoGrid", u:"https://uplight.com/uplight-acquires-autogrid/"}],
+  "Grid operation & load forecasting":[
+    {n:"PJM", u:"https://www.pjm.com/"},
+    {n:"Google Tapestry", u:"https://x.company/projects/tapestry/"}],
+  "HBM memory (the supercycle)":[
+    {n:"SK Hynix", u:"https://www.skhynix.com/"},
+    {n:"Samsung", u:"https://semiconductor.samsung.com/dram/hbm/"},
+    {n:"Micron", u:"https://investors.micron.com/"}],
+  "HR / recruiting agents":[
+    {n:"Workday", u:"https://www.workday.com/"},
+    {n:"Paradox", u:"https://www.paradox.ai/"},
+    {n:"LinkedIn", u:"https://business.linkedin.com/talent-solutions"},
+    {n:"HeyMilo", u:"https://www.heymilo.ai/"}],
+  "Harvest pickers & laser weeding":[
+    {n:"Carbon Robotics", u:"https://carbonrobotics.com/"},
+    {n:"Tortuga", u:"https://www.oishii.com/"},
+    {n:"Agrobot", u:"https://www.agrobot.com/"}],
+  "Hospital & care robots":[
+    {n:"Diligent Moxi", u:"https://www.diligentrobots.com/"},
+    {n:"Aethon TUG", u:"https://aethon.com/"},
+    {n:"Panasonic HOSPI", u:"https://news.panasonic.com/global/stories/15082"}],
+  "Humanoid robots":[
+    {n:"Figure", u:"https://www.figure.ai/"},
+    {n:"Tesla Optimus", u:"https://www.tesla.com/AI"},
+    {n:"Unitree", u:"https://www.unitree.com/"},
+    {n:"AgiBot", u:"https://www.agibot.com/"}],
+  "Identity & access security":[
+    {n:"Microsoft Entra", u:"https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id"},
+    {n:"Okta", u:"https://www.okta.com/"},
+    {n:"CrowdStrike", u:"https://www.crowdstrike.com/"}],
+  "Industrial exoskeletons":[
+    {n:"German Bionic", u:"https://www.germanbionic.com/"},
+    {n:"Ottobock", u:"https://corporate.ottobock.com/en"},
+    {n:"Sarcos", u:"https://www.palladyneai.com/"}],
+  "Industrial robots":[
+    {n:"FANUC", u:"https://www.fanuc.co.jp/eindex.html"},
+    {n:"ABB", u:"https://new.abb.com/products/robotics"},
+    {n:"KUKA", u:"https://www.kuka.com/"},
+    {n:"Universal Robots", u:"https://www.universal-robots.com/"}],
+  "Infrastructure / underwater inspection":[
+    {n:"Percepto", u:"https://percepto.co/"},
+    {n:"Saab", u:"https://www.saabseaeye.com/"},
+    {n:"Skydio", u:"https://www.skydio.com/"}],
+  "Insurance claims":[
+    {n:"Lemonade", u:"https://www.lemonade.com/"},
+    {n:"Tractable", u:"https://tractable.ai/"},
+    {n:"EvolutionIQ", u:"https://www.evolutioniq.com/"}],
+  "Legal agents":[
+    {n:"Harvey", u:"https://www.harvey.ai/"},
+    {n:"Legora", u:"https://legora.com/"},
+    {n:"Thomson Reuters", u:"https://www.thomsonreuters.com/en.html"}],
+  "LiDAR for physical AI":[
+    {n:"Hesai", u:"https://www.hesaitech.com/"},
+    {n:"RoboSense", u:"https://www.robosense.ai/"},
+    {n:"Sony", u:"https://www.sony-semicon.com/en/"},
+    {n:"Valeo", u:"https://www.valeo.com/en/"}],
+  "Logistics orchestration":[
+    {n:"Walmart", u:"https://corporate.walmart.com/"},
+    {n:"DHL", u:"https://group.dhl.com/en.html"},
+    {n:"Locus", u:"https://locus.sh/"},
+    {n:"RTS Labs", u:"https://rtslabs.com/"}],
+  "Machine translation":[
+    {n:"DeepL", u:"https://www.deepl.com/"},
+    {n:"Google Translate", u:"https://translate.google.com/intl/en/about/"},
+    {n:"Microsoft Translate", u:"https://www.microsoft.com/en-us/translator/"}],
+  "Materials science":[
+    {n:"Google DeepMind GNoME", u:"https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/"}],
+  "Milking robots":[
+    {n:"Lely Astronaut", u:"https://www.lely.com/solutions/milking/astronaut/"},
+    {n:"DeLaval", u:"https://corporate.delaval.com/"},
+    {n:"GEA", u:"https://www.gea.com/en/products/milking-farming-barn/milking-solutions/automatic-milking/dairyrobot-r9500/"}],
+  "NAND flash & enterprise SSD":[
+    {n:"Sandisk", u:"https://www.sandisk.com/"},
+    {n:"Kioxia", u:"https://www.kioxia.com/en-jp/top.html"},
+    {n:"Micron", u:"https://investors.micron.com/"},
+    {n:"Samsung", u:"https://semiconductor.samsung.com/"}],
+  "OT / ICS security":[
+    {n:"Claroty", u:"https://claroty.com/"},
+    {n:"Dragos", u:"https://www.dragos.com/"},
+    {n:"Nozomi", u:"https://www.nozominetworks.com/"},
+    {n:"Armis", u:"https://www.armis.com/"}],
+  "Personalised cancer vaccines (neoantigen)":[
+    {n:"Merck", u:"https://www.merck.com/"},
+    {n:"Moderna", u:"https://www.modernatx.com/"},
+    {n:"BioNTech", u:"https://www.biontech.com/"},
+    {n:"Genentech", u:"https://www.gene.com/"}],
+  "Pharma in-house AI factories":[
+    {n:"Roche", u:"https://www.roche.com/"},
+    {n:"Genentech", u:"https://www.gene.com/"},
+    {n:"Eli Lilly", u:"https://www.lilly.com/"},
+    {n:"GSK", u:"https://www.gsk.com/"}],
+  "Precision spraying (See & Spray)":[
+    {n:"John Deere", u:"https://www.deere.com/en/sprayers/see-spray/"}],
+  "Process industry: metallurgy & chemicals":[
+    {n:"Tata Steel Kalinganagar", u:"https://www.tatasteel.com/"},
+    {n:"POSCO", u:"https://www.posco.co.kr/"},
+    {n:"ArcelorMittal", u:"https://corporate.arcelormittal.com/"},
+    {n:"BASF", u:"https://www.basf.com/global/en"}],
+  "Protein folding / biology":[
+    {n:"AlphaFold (DeepMind)", u:"https://deepmind.google/science/alphafold/"},
+    {n:"ESM", u:"https://www.evolutionaryscale.ai/"}],
+  "Public administration / government":[
+    {n:"UK i.AI Humphrey/Consult", u:"https://ai.gov.uk/"},
+    {n:"DSIT", u:"https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology"}],
+  "Recycling sortation":[
+    {n:"AMP Robotics", u:"https://ampsortation.com/"},
+    {n:"Greyparrot", u:"https://www.greyparrot.ai/"}],
+  "Revenue cycle & prior authorization":[
+    {n:"Adonis", u:"https://adonis.io/"},
+    {n:"Cohere Health", u:"https://www.coherehealth.com/"},
+    {n:"Tennr", u:"https://www.tennr.com/"},
+    {n:"R1", u:"https://www.r1rcm.com/"}],
+  "Robo-advisory & wealth":[
+    {n:"BlackRock Aladdin", u:"https://ir.blackrock.com/"},
+    {n:"Betterment", u:"https://www.betterment.com/"},
+    {n:"Wealthfront", u:"https://www.wealthfront.com/"}],
+  "Robot vacuums":[
+    {n:"iRobot", u:"https://www.irobot.com/"},
+    {n:"Roborock", u:"https://global.roborock.com/"},
+    {n:"Ecovacs", u:"https://www.ecovacs.com/global"}],
+  "Robotaxis / autonomous driving":[
+    {n:"Waymo", u:"https://waymo.com/"},
+    {n:"Baidu Apollo Go", u:"https://www.apollo.auto/"},
+    {n:"Pony.ai", u:"https://www.pony.ai/"},
+    {n:"WeRide", u:"https://www.weride.ai/"},
+    {n:"Zoox", u:"https://zoox.com/"},
+    {n:"Tesla", u:"https://www.tesla.com/"}],
+  "Robotic lawn mowers":[
+    {n:"Husqvarna", u:"https://www.husqvarnagroup.com/en"},
+    {n:"Segway", u:"https://navimow.segway.com/"},
+    {n:"Mammotion", u:"https://mammotion.com/"}],
+  "Sales & marketing agents":[
+    {n:"11x", u:"https://www.11x.ai/"},
+    {n:"Clay", u:"https://www.clay.com/"},
+    {n:"6sense", u:"https://6sense.com/"},
+    {n:"Agentforce", u:"https://investor.salesforce.com/"}],
+  "Self-driving labs":[
+    {n:"Recursion", u:"https://www.recursion.com/"},
+    {n:"Insilico", u:"https://www.insilico.com/"},
+    {n:"Emerald Cloud Lab", u:"https://www.emeraldcloudlab.com/"}],
+  "Semiconductor fab automation":[
+    {n:"ASML", u:"https://www.asml.com/"},
+    {n:"Applied Materials", u:"https://www.appliedmaterials.com/"},
+    {n:"TSMC", u:"https://www.tsmc.com/english"}],
+  "Sidewalk delivery robots":[
+    {n:"Starship", u:"https://www.starship.xyz/"},
+    {n:"Nuro", u:"https://www.nuro.ai/"}],
+  "Space robotics":[
+    {n:"Northrop MEV", u:"https://www.northropgrumman.com/what-we-do/space/space-logistics-services"},
+    {n:"NASA", u:"https://science.nasa.gov/mission/mars-2020-perseverance/"},
+    {n:"ClearSpace", u:"https://clearspace.today/"}],
+  "Surgical robots (assisted)":[
+    {n:"Intuitive da Vinci", u:"https://www.intuitive.com/"},
+    {n:"Medtronic Hugo", u:"https://news.medtronic.com/2025-12-03-Medtronic-announces-FDA-clearance-of-Hugo-TM-robotic-assisted-surgery-system-for-urologic-surgical-procedures"}],
+  "Video & avatar generation":[
+    {n:"Veo", u:"https://deepmind.google/models/veo/"},
+    {n:"Kling", u:"https://app.klingai.com/"},
+    {n:"Seedance", u:"https://seed.bytedance.com/en/seedance"},
+    {n:"Runway", u:"https://runway.com/"},
+    {n:"HeyGen", u:"https://www.heygen.com/"}],
   "Visual inspection & predictive maintenance":[
+    {n:"WEF Lighthouse sites", u:"https://initiatives.weforum.org/global-lighthouse-network/home"},
     {n:"Rockwell", u:"https://www.rockwellautomation.com/en-us.html"},
-    {n:"Cognex", u:"https://investor.cognex.com/overview/default.aspx"},
-    {n:"Landing AI", u:"https://landing.ai/"}],
+    {n:"Cognex", u:"https://www.cognex.com/"},
+    {n:"Landing AI", u:"https://landing.ai/landinglens"}],
   "Warehouse robots":[
     {n:"Amazon Robotics", u:"https://www.aboutamazon.com/news/tag/robotics"},
     {n:"Ocado", u:"https://www.ocadogroup.com/"},
@@ -1255,15 +1600,7 @@ const COMPANIES = {
   "eVTOL / flying taxis":[
     {n:"Joby", u:"https://www.jobyaviation.com/"},
     {n:"EHang", u:"https://www.ehang.com/"},
-    {n:"Archer", u:"https://investors.archer.com/"}],
-  "Robotaxis / autonomous driving":[
-    {n:"Waymo", u:"https://waymo.com/"},
-    {n:"Apollo Go", u:"https://www.apollogo.com/"},
-    {n:"Pony.ai IR", u:"https://ir.pony.ai/"},
-    {n:"WeRide", u:"https://www.weride.ai/"},
-    {n:"Zoox", u:"https://zoox.com/"},
-    {n:"Tesla", u:"https://www.tesla.com/"},
-    {n:"Uber", u:"https://www.uber.com/"}],
+    {n:"Archer", u:"https://www.archer.com/"}],
   "Seismic interpretation (subsurface AI)":[
     {n:"Equinor", u:"https://www.equinor.com/"},
     {n:"Shell", u:"https://www.shell.com/"},
