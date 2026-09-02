@@ -1,12 +1,12 @@
 # AI Use Cases Overview
 
-An interactive, single-page dashboard cataloguing concrete AI deployments running in the real world, current as of **August 2026**. Every use case is rated on three axes: how far it has scaled, how solid the evidence is, and how fast it is growing.
+An interactive, single-page dashboard cataloguing concrete AI deployments running in the real world, current as of **September 2026**. Every use case is rated on three axes: how far it has scaled, how solid the evidence is, and how fast it is growing.
 
 **Live demo:** https://mendeltem.github.io/ai_use_cases_overview/
 
 ## What's in it
 
-91 use cases across 15 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
+97 use cases across 15 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
 
 ## Rating axes
 

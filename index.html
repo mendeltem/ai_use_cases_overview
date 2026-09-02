@@ -544,6 +544,16 @@ const UC = [
     E("Starship; Nuro","Starship; Nuro"),
     "note", E("expanding by city","stadtweiser Ausbau")),
 
+  U(1,"Wabtec","prod",2,"steady",
+    E("Autonomous rail yards","Autonome Rangierbahnhoefe"),
+    E("~1M cars/yr moved autonomously across 50 sites","~1 Mio. Waggons/Jahr autonom an 50 Standorten"),
+    E("<b>50 sites, ~1M cars per year</b> shunted without a driver","<b>50 Standorte, ~1 Mio. Waggons pro Jahr</b> ohne Fahrer rangiert"),
+    E("Rail yards are the least visible part of freight automation and among the furthest along: shunting is repetitive, runs on private track at low speed, and needs no public-road approval. Wabtec reports its Autonomous Yard Operations running at 50 sites, moving on the order of a million cars a year. That is a production deployment, not a pilot - but every figure here is the vendor's own, and no regulator publishes yard-level counts to check it against.",
+      "Rangierbahnhoefe sind der unsichtbarste Teil der Gueterautomatisierung und einer der weitesten: Rangieren ist repetitiv, laeuft auf eigenem Gleis bei niedriger Geschwindigkeit und braucht keine Strassenzulassung. Wabtec nennt fuer seine Autonomous Yard Operations 50 Standorte und rund eine Million Waggons im Jahr. Das ist Produktivbetrieb, kein Pilot - aber jede Zahl stammt vom Anbieter, und keine Behoerde veroeffentlicht Rangierzahlen, an denen sich das pruefen liesse."),
+    E("Wabtec / industry reporting (2026)","Wabtec / Branchenberichte (2026)"),
+    "medium", E("Vendor-reported; no independent count of autonomous yard moves exists",
+      "Anbieterangabe; eine unabhaengige Zaehlung autonomer Rangierfahrten gibt es nicht")),
+
   // ---- Cluster 2: warehouse & energy ----
   U(2,"Amazon Robotics, Ocado, Geek+","prod",2,"strong",
     E("Warehouse robots","Lagerroboter"),
@@ -663,6 +673,16 @@ const UC = [
     E("Company figures","Herstellerangaben"),
     "warn", E("impact figures thin","Wirkungszahlen dünn")),
 
+  U(4,"Marks & Spencer, CattleEye","prod",2,"nascent",
+    E("Livestock welfare monitoring","Tierwohl-Ueberwachung im Stall"),
+    E("46 dairy farms, whole supply chain, cameras score cows continuously","46 Milchviehbetriebe, ganze Lieferkette, Kameras bewerten Kuehe laufend"),
+    E("<b>46 farms</b> - an entire retail supply chain monitored, not a pilot herd","<b>46 Betriebe</b> - eine ganze Handelslieferkette ueberwacht, keine Pilotherde"),
+    E("Cameras above the stalls score gait, body condition and behaviour, on an algorithm trained with veterinarians. What makes this notable is not the technique but the scope: welfare monitoring rolled out across every farm supplying one retailer, announced 27 August 2026, rather than a trial at one site. The claim of a first is the retailer's own, and no outcome figures - fewer lameness cases, better condition scores - have been published yet.",
+      "Kameras ueber den Staenden bewerten Gang, Koerperkondition und Verhalten, mit einem Algorithmus, der zusammen mit Tieraerzten trainiert wurde. Bemerkenswert ist nicht die Technik, sondern der Umfang: Tierwohl-Ueberwachung ueber jeden Betrieb einer Handelslieferkette hinweg, angekuendigt am 27. August 2026, statt eines Versuchs an einem Standort. Der Anspruch, der Erste zu sein, stammt vom Haendler selbst, und Ergebniszahlen - weniger Lahmheit, bessere Konditionswerte - liegen noch nicht vor."),
+    E("M&S / CattleEye (27 Aug 2026)","M&S / CattleEye (27.8.2026)"),
+    "medium", E("Deployment size confirmed by the retailer; welfare outcomes not yet measured publicly",
+      "Umfang vom Haendler bestaetigt; Wirkung auf das Tierwohl oeffentlich noch nicht gemessen")),
+
   // ---- Cluster 5: medicine ----
   U(5,"Intuitive da Vinci, Medtronic Hugo","prod",3,"strong",
     E("Surgical robots (assisted)","OP-Roboter (assistiert)"),
@@ -752,6 +772,16 @@ const UC = [
     E("Nearing et al., Nature 627, 559–563 (2024); Google Research (2026)","Nearing et al., Nature 627, 559–563 (2024); Google Research (2026)"),
     "good", E("Nature paper plus operational deployment","Nature-Arbeit plus operativer Einsatz")),
 
+  U(6,"Pano AI, Xcel Energy, APS","prod",2,"strong",
+    E("Wildfire detection camera networks","Kameranetze zur Waldbranderkennung"),
+    E(">50M acres watched; utilities adding cameras along their own lines",">50 Mio. Acre ueberwacht; Versorger ruesten entlang eigener Leitungen nach"),
+    E("<b>&gt;50 million acres</b> under continuous camera watch; detection in minutes, not hours","<b>&gt;50 Mio. Acre</b> unter staendiger Kamerabeobachtung; Erkennung in Minuten statt Stunden"),
+    E("Mast-mounted cameras scan the horizon and a model flags smoke plumes before anyone calls them in. The economics come from the utilities: a power line that starts a fire is a liability event, so Xcel installed 81 cameras in Colorado in 2025 and is extending into Wisconsin, while APS plans at least 65 by end-2026. The acreage figure is the vendor's; the camera counts come from the utilities' own announcements, which makes them the harder number.",
+      "Kameras auf Masten tasten den Horizont ab, ein Modell meldet Rauchfahnen, bevor jemand anruft. Die Wirtschaftlichkeit kommt von den Versorgern: Eine Leitung, die ein Feuer ausloest, ist ein Haftungsfall - Xcel installierte 2025 in Colorado 81 Kameras und weitet nach Wisconsin aus, APS plant bis Ende 2026 mindestens 65. Die Flaechenangabe stammt vom Anbieter; die Kamerazahlen aus den Mitteilungen der Versorger und sind damit die haertere Zahl."),
+    E("Pano AI; Xcel Energy newsroom (May 2026); APS wildfire plan","Pano AI; Xcel Energy Newsroom (Mai 2026); APS-Waldbrandplan"),
+    "medium", E("Coverage figure is vendor-stated; no published count of fires caught earlier because of it",
+      "Flaechenangabe vom Anbieter; keine veroeffentlichte Zahl frueher entdeckter Braende dadurch")),
+
   // ---- Cluster 7: science ----
   U(7,"ECMWF AIFS, GraphCast, GenCast","prod",3,"strong",
     E("AI weather forecasting","KI-Wettervorhersage"),
@@ -788,6 +818,36 @@ const UC = [
     E("The Argo program runs nearly 4,000 active floats from 30+ nations; three-millionth profile in July 2024. Solid, but less \"AI\" in the narrow sense.","Argo betreibt ~4.000 aktive Bojen aus 30+ Nationen; drei-millionstes Profil Juli 2024. Solide, aber weniger „KI\" im engeren Sinn."),
     E("Argo / UCSD","Argo / UCSD"),
     "note", E("more sensing than AI","eher Sensorik als KI")),
+
+  U(7,"Synopsys, Cadence, Siemens","prod",2,"strong",
+    E("AI in chip design (EDA)","KI im Chipentwurf (EDA)"),
+    E(">1,000 AI-assisted tapeouts in one year; verification agents shipping",">1.000 KI-gestuetzte Tapeouts in einem Jahr; Verifikationsagenten im Einsatz"),
+    E("<b>&gt;1,000 AI-assisted tapeouts</b> in 2025 - the design tools themselves are now the deployment","<b>&gt;1.000 KI-gestuetzte Tapeouts</b> 2025 - die Entwurfswerkzeuge selbst sind der Einsatzfall"),
+    E("The chips at the centre of this whole list are increasingly laid out by software that optimises placement and routing beyond what a team can search by hand. Cadence reports well over a thousand AI-assisted tapeouts in 2025 - finished designs sent to a fab, which is a harder milestone than a benchmark. The agentic tools shown at DAC 2026 promise far more (one claim: 50x faster to validated RTL), but those are vendor demonstrations without independent replication.",
+      "Die Chips im Zentrum dieser ganzen Liste werden zunehmend von Software platziert und verdrahtet, die mehr Varianten durchsucht, als ein Team von Hand pruefen kann. Cadence nennt fuer 2025 deutlich ueber tausend KI-gestuetzte Tapeouts - fertige Entwuerfe, die in die Fabrik gehen, und damit eine haertere Marke als ein Benchmark. Die agentischen Werkzeuge der DAC 2026 versprechen weit mehr (eine Angabe: 50-fach schneller zu verifiziertem RTL), sind aber Herstellervorfuehrungen ohne unabhaengige Nachpruefung."),
+    E("Cadence; Synopsys / DAC 2026 coverage","Cadence; Synopsys / DAC-2026-Berichte"),
+    "medium", E("Tapeout count is company-reported; the speed multiples are vendor demos, not measured in the field",
+      "Tapeout-Zahl ist Firmenangabe; die Geschwindigkeitsfaktoren sind Herstellervorfuehrungen, nicht im Feld gemessen")),
+
+  U(7,"University of Liverpool, A-Lab, academic consortia","early",3,"steady",
+    E("Self-driving laboratories","Selbstfahrende Labore"),
+    E("Robot chemist: 688 experiments in 8 days, unattended","Roboterchemiker: 688 Experimente in 8 Tagen, unbeaufsichtigt"),
+    E("<b>688 experiments in 8 days</b> around the clock - catalysts 6x more active than the starting mix","<b>688 Experimente in 8 Tagen</b> rund um die Uhr - Katalysatoren 6-mal aktiver als die Ausgangsmischung"),
+    E("A mobile robot proposes, runs and interprets its own experiments. The landmark result - 688 experiments over eight unattended days, ending with photocatalyst mixtures six times more active than the starting point - dates from the Liverpool robot chemist and is peer-reviewed, which is why the evidence here counts as solid. What is new in 2026 is the review literature treating these as a field rather than single machines, and the open problem it names: results do not yet transfer between labs.",
+      "Ein mobiler Roboter schlaegt Experimente vor, fuehrt sie aus und wertet sie aus. Das Referenzergebnis - 688 Experimente in acht unbeaufsichtigten Tagen, am Ende Photokatalysator-Mischungen mit sechsfacher Aktivitaet gegenueber dem Ausgangspunkt - stammt vom Liverpooler Roboterchemiker und ist begutachtet; deshalb gilt der Beleg hier als solide. Neu ist 2026 die Uebersichtsliteratur, die daraus ein Feld macht statt einzelner Maschinen - und das offene Problem, das sie benennt: Ergebnisse lassen sich zwischen Laboren noch nicht uebertragen."),
+    E("Nature Reviews Chemistry (2026), review of self-driving laboratories","Nature Reviews Chemistry (2026), Uebersicht zu selbstfahrenden Laboren"),
+    "good", E("Headline result is peer-reviewed but dates from the original robot-chemist work, not 2026; transfer between labs remains unsolved",
+      "Das Referenzergebnis ist begutachtet, stammt aber aus der urspruenglichen Roboterchemiker-Arbeit, nicht aus 2026; die Uebertragbarkeit zwischen Laboren ist ungeloest")),
+
+  U(7,"Google DeepMind, Commonwealth Fusion Systems","research",1,"nascent",
+    E("Fusion plasma control","Plasmasteuerung in der Fusion"),
+    E("RL control of plasma shape, trained in simulation, run on a live tokamak","RL-Steuerung der Plasmaform, in Simulation trainiert, am laufenden Tokamak"),
+    E("Learned control holds plasma shape on a live tokamak - <b>no net-energy result</b>","Gelernte Steuerung haelt die Plasmaform am laufenden Tokamak - <b>kein Netto-Energieergebnis</b>"),
+    E("A reinforcement-learning agent trained entirely in simulation was put on the TCV tokamak and held plasma shape and position with millisecond adjustments - a genuine control result, published in 2022. In 2026 DeepMind announced a partnership with Commonwealth Fusion Systems around the SPARC machine. That is a partnership announcement, not an outcome: as of mid-2026 no peer-reviewed demonstration of AI-assisted net energy gain exists. This entry is here as research, and the honest headline is what has not happened yet.",
+      "Ein Reinforcement-Learning-Agent, vollstaendig in Simulation trainiert, wurde auf den TCV-Tokamak gesetzt und hielt Form und Lage des Plasmas mit Anpassungen im Millisekundentakt - ein echtes Steuerungsergebnis, veroeffentlicht 2022. 2026 kuendigte DeepMind eine Partnerschaft mit Commonwealth Fusion Systems rund um die SPARC-Maschine an. Das ist eine Ankuendigung, kein Ergebnis: Bis Mitte 2026 gibt es keine begutachtete Demonstration eines KI-gestuetzten Netto-Energiegewinns. Der Eintrag steht hier als Forschung, und die ehrliche Schlagzeile ist das, was noch nicht passiert ist."),
+    E("Google DeepMind / EPFL Swiss Plasma Center (2022); DeepMind-CFS partnership (2026)","Google DeepMind / EPFL Swiss Plasma Center (2022); Partnerschaft DeepMind-CFS (2026)"),
+    "thin", E("Control result is real and peer-reviewed; everything about energy gain is announcement, not demonstration",
+      "Das Steuerungsergebnis ist real und begutachtet; alles zum Energiegewinn ist Ankuendigung, keine Demonstration")),
 
   // ---- Cluster 8: knowledge-work agents (software) ----
   U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
