@@ -936,6 +936,13 @@ const UC = [
     E("The threat side (phishing, deepfakes, automated exploits) drives defense. Autonomous SOC agents are early; unsupervised reliability not yet proven.","Die Bedrohungsseite (Phishing, Deepfakes, Auto-Exploits) treibt die Abwehr. Autonome SOC-Agenten sind früh; unbeaufsichtigte Zuverlässigkeit unbelegt."),
     E("Industry landscape 2026","Branchenlage 2026"),
     "note", E("young category","junge Kategorie")),
+  U(9,"SITA, IDEMIA, NEC, Thales; TSA/CBP, EU EES, ICA Singapore","prod",3,"strong",
+    E("Biometric airport check-in & border","Biometrischer Check-in & Grenze am Flughafen"),
+    E("EU EES fully live since Apr 2026; TSA Touchless ID to 65 US airports","EU-EES seit Apr. 2026 voll in Betrieb; TSA Touchless ID an 65 US-Flughäfen"),
+    E("Changi: <b>25 s → 10 s</b> per traveller; EU EES <b>145M+</b> biometric entries/exits","Changi: <b>25 s → 10 s</b> je Reisendem; EU-EES <b>145 Mio+</b> biometrische Ein- und Ausreisen"),
+    E("Face matching replaces passport and boarding pass at check-in, bag drop, security, boarding and the border. The border side is government-run and the best documented: Singapore's ICA moved to passport-free automated lanes (~93M clearances by mid-2025, average 25 s down to 10 s, target 95% of travellers automated); CBP runs facial comparison at all US airports for international arrivals (>98% match rate); the EU Entry/Exit System registers face and fingerprints at every Schengen external border, fully operational since 10 Apr 2026, 145M+ entries and exits recorded, with long queues at some crossings after go-live. The airline side is opt-in and company-reported: Delta/TSA Touchless ID (bag drop up to 75% faster, security up to 60% faster than PreCheck) at ~11 hubs, TSA expanding to 65 airports; Hamad Doha with Qatar Airways and SITA links 700+ touchpoints (July 2026). SITA reports biometric border control at 54% of airports. Read carefully: border throughput is government data, airline speed-ups are company figures, and adoption counts lanes, not the share of passengers. For the compute question this card is light: matching runs on small models at the gate.","Gesichtsabgleich ersetzt Pass und Bordkarte bei Check-in, Gepäckabgabe, Sicherheitskontrolle, Boarding und Grenze. Die Grenzseite ist staatlich und am besten belegt: Singapurs ICA stellte auf passlose automatische Spuren um (~93 Mio Abfertigungen bis Mitte 2025, im Schnitt 25 s auf 10 s, Ziel 95 % automatisiert); CBP nutzt Gesichtsabgleich an allen US-Flughäfen bei internationaler Ankunft (>98 % Trefferquote); das EU Entry/Exit System erfasst Gesicht und Fingerabdrücke an jeder Schengen-Außengrenze, seit 10.4.2026 voll in Betrieb, über 145 Mio Ein- und Ausreisen erfasst, nach dem Start mit langen Schlangen an einzelnen Übergängen. Die Airline-Seite ist freiwillig und firmenberichtet: Delta/TSA Touchless ID (Gepäckabgabe bis 75 % schneller, Sicherheitskontrolle bis 60 % schneller als PreCheck) an ~11 Drehkreuzen, TSA-Ausbau auf 65 Flughäfen; Hamad Doha mit Qatar Airways und SITA verbindet über 700 Kontaktpunkte (Juli 2026). Laut SITA ist biometrische Grenzkontrolle an 54 % der Flughäfen in Betrieb. Genau lesen: Grenzdurchsatz sind Behördendaten, Airline-Beschleunigungen Firmenangaben, und Verbreitung zählt Spuren, nicht den Anteil der Passagiere. Für die Rechenfrage ist die Karte leicht: der Abgleich läuft auf kleinen Modellen am Gate."),
+    E("ICA Singapore; CBP; European Commission (Apr/Jul 2026); TSA; Delta; SITA","ICA Singapur; CBP; EU-Kommission (Apr./Jul. 2026); TSA; Delta; SITA"),
+    "good", E("border figures government-reported; airline speed-ups company figures","Grenzzahlen behördlich; Airline-Beschleunigung Firmenangaben")),
 
   // ---- Cluster 10: back office ----
   U(10,"Lemonade, Tractable, EvolutionIQ","prod",3,"strong",
@@ -1242,6 +1249,7 @@ const URLS = {
   "Ambient clinical documentation":"https://jamanetwork.com/journals/jama/fullarticle/2847319",
   "Aquaculture robots":"https://doi.org/10.1016/j.aquaculture.2025.742910",
   "Autonomous SOC agents (AI vs AI)":"https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027",
+  "Biometric airport check-in & border":"https://home-affairs.ec.europa.eu/news/entryexit-system-ees-fully-operational-2026-04-10_en",
   "Autonomous mine fleets":"https://computerworld.com/article/3461688/rio-tinto-reaches-autonomous-truck-milestone.html",
   "Autonomous ships":"https://www.yara.com/corporate-releases/yara-to-start-operating-the-worlds-first-fully-emission-free-container-ship/",
   "Autonomous street cleaning":"https://gausium.com/news/gausium-introduces-two-new-outdoor-sweepers-and-industrys-largest-cleaning-robot-lineup-at-interclean-amsterdam-2026/",
@@ -1328,6 +1336,11 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Biometric airport check-in & border":[
+    {n:"SITA", u:"https://www.sita.aero/"},
+    {n:"IDEMIA", u:"https://www.idemia.com/"},
+    {n:"NEC", u:"https://www.nec.com/"},
+    {n:"Thales", u:"https://www.thalesgroup.com/"}],
   "5G / connectivity for robotics":[
     {n:"Ericsson", u:"https://www.ericsson.com/en"},
     {n:"Qualcomm", u:"https://www.qualcomm.com/"}],
@@ -1778,6 +1791,7 @@ const COMPUTE = {
   "OT / ICS security":[1,"inf"],
   "Identity & access security":[1,"inf"],
   "Autonomous SOC agents (AI vs AI)":[2,"inf"],
+  "Biometric airport check-in & border":[1,"edge"],
   "Insurance claims":[2,"inf"],
   "Ambient clinical documentation":[3,"inf"],
   "Revenue cycle & prior authorization":[2,"inf"],
@@ -1905,6 +1919,12 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Biometric airport check-in & border":{
+    name:"Нисэх буудлын биометрик бүртгэл ба хилийн хяналт",
+    glab:"ЕХ-ны EES 2026 оны 4-р сараас бүрэн ажиллаж байна; TSA Touchless ID АНУ-ын 65 нисэх буудалд",
+    metric:"Чанги: нэг зорчигчид <b>25 сек → 10 сек</b>; ЕХ-ны EES <b>145 сая+</b> биометрик нэвтрэлт ба гаралт",
+    detail:"Нүүр царай тулгах технологи бүртгэл, ачаа тушаалт, аюулгүй байдлын шалгалт, онгоцонд суух болон хил дээр паспорт, суух тасалбарыг орлож байна. Хилийн тал нь төрийн мэдээлэлтэй тул хамгийн сайн баримтжсан: Сингапурын ICA паспортгүй автомат эгнээ нэвтрүүлж (2025 оны дунд гэхэд ~93 сая удаа), дундаж хугацааг 25-аас 10 секунд болгосон; CBP АНУ-ын бүх нисэх буудалд олон улсын ирэлтэд нүүр тулгалт ашигладаг (>98% таарц); ЕХ-ны Entry/Exit System 2026.4.10-наас Шенгений гадаад хил бүрт бүрэн ажиллаж, 145 сая гаруй нэвтрэлт, гаралт бүртгэсэн, эхлэх үед зарим хилийн боомтод урт дараалал үүссэн. Агаарын тээврийн компанийн тал нь сайн дурын бөгөөд компанийн мэдээлэл: Delta/TSA Touchless ID (ачаа тушаалт 75% хүртэл, шалгалт 60% хүртэл хурдан), Доха Хамад нисэх буудал Qatar Airways, SITA-тай 700 гаруй цэгийг холбосон (2026.7). SITA-гийн мэдээгээр нисэх буудлуудын 54%-д биометрик хилийн хяналт ажиллаж байна. Анхааралтай унших: хилийн тоо төрийн мэдээлэл, хурдасгалт компанийн тоо, тархалт нь зорчигчийн хувь биш эгнээг тоолдог. Тооцооллын хувьд энэ карт хөнгөн: тулгалт хаалган дээр жижиг загвараар ажилладаг.",
+    flag:"хилийн тоо төрийн мэдээлэл; агаарын тээврийн хурдасгалт компанийн тоо"},
   "Robotaxis / autonomous driving":{
     name:"Робот такси / автономит жолоодлого",
     glab:"2 жилд 50k→500k унаа/7 хоног; өрсөлдөгчид флотоо хоёр дахин нэмж байна",
