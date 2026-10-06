@@ -28,7 +28,11 @@
 
   header.top{background:linear-gradient(180deg,#12242C 0%,#132A31 100%); color:#EAF0EE; position:relative; overflow:hidden; border-bottom:3px solid var(--petrol);}
   header.top::before{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--petrol-dark) 1px,transparent 1px),linear-gradient(90deg,var(--petrol-dark) 1px,transparent 1px); background-size:34px 34px; opacity:.14; pointer-events:none;}
-  .top .wrap{position:relative; padding-top:18px; padding-bottom:14px}
+  .hero-mosaic{position:absolute; top:-40px; bottom:-40px; right:-60px; width:min(880px,78%); display:grid; grid-template-columns:repeat(8,1fr); gap:6px; transform:rotate(-6deg); opacity:.62; filter:saturate(.9); pointer-events:none}
+  .hero-mosaic img{width:100%; aspect-ratio:1; object-fit:cover; border-radius:6px; display:block}
+  header.top::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg,#12242C 0%,rgba(18,36,44,.9) 34%,rgba(18,36,44,.45) 62%,rgba(18,36,44,.12) 100%); pointer-events:none}
+  @media (max-width:640px){ .hero-mosaic{width:120%; right:-30%; opacity:.18} header.top::after{background:rgba(18,36,44,.78)} }
+  .top .wrap{position:relative; z-index:1; padding-top:18px; padding-bottom:14px}
   .topbar{display:flex; justify-content:space-between; align-items:flex-start; gap:16px}
   .eyebrow{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#7FD0C4; margin:0 0 7px;}
   h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(23px,3.1vw,32px); line-height:1.04; margin:0 0 9px; letter-spacing:-.01em;}
@@ -236,6 +240,7 @@
 <body>
 
 <header class="top">
+  <div class="hero-mosaic" id="heroMosaic" aria-hidden="true"></div>
   <div class="wrap">
     <div class="topbar">
       <div>
@@ -559,6 +564,13 @@ const CARD_IMG = {
   "Autonomous street cleaning":"images/uc/16_maintenance__autonomous-street-cleaning.webp",
   "Rail predictive maintenance":"images/uc/16_maintenance__rail-predictive-maintenance.webp",
 };
+(function(){
+  const box = document.getElementById('heroMosaic'); if(!box) return;
+  const src = Object.values(CARD_IMG);
+  /* feste Mischung, damit benachbarte Kacheln aus verschiedenen Sektoren kommen */
+  const pick = []; for(let i=0; pick.length<48 && i<src.length*7; i++){ const p = src[(i*37)%src.length]; if(!pick.includes(p)) pick.push(p); }
+  box.innerHTML = pick.map(p=>'<img src="'+p+'" alt="" decoding="async">').join('');
+})();
 const CLUSTERS = [
   {n:1, cat:"phys", short:{en:"mobility & transport",de:"Mobilität & Transport"},
     title:{en:"Mobility & transport",de:"Mobilität & Transport"},
