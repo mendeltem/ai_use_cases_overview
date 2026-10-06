@@ -755,6 +755,66 @@
         "en": "AI smart glasses",
         "de": "KI-Brillen"
       }
-    }
+    },
+    "roles": {
+      "operates": {
+        "en": "Operates",
+        "de": "Betreibt"
+      },
+      "makes": {
+        "en": "Makes its chips",
+        "de": "Fertigt die Chips"
+      },
+      "memory": {
+        "en": "Supplies HBM memory",
+        "de": "Liefert HBM-Speicher"
+      },
+      "assembles": {
+        "en": "Assembles its servers",
+        "de": "Montiert die Server"
+      },
+      "uses": {
+        "en": "Runs its GPUs",
+        "de": "Nutzt die GPUs"
+      }
+    },
+    "relations": {
+      "NVDA": [
+        {
+          "role": "makes",
+          "sites": [
+            "TSMC Fab 18 (Tainan)",
+            "TSMC AP6 Zhunan",
+            "TSMC AP7 Chiayi"
+          ]
+        },
+        {
+          "role": "memory",
+          "sites": [
+            "SK Hynix Icheon M16",
+            "SK Hynix Cheongju M15X",
+            "Samsung Pyeongtaek",
+            "Micron Taichung Fab 16"
+          ]
+        },
+        {
+          "role": "assembles",
+          "sites": [
+            "Foxconn Houston"
+          ]
+        },
+        {
+          "role": "uses",
+          "sites": [
+            "Fairwater Mount Pleasant",
+            "Humain Riyadh",
+            "Stargate UAE",
+            "Colossus 2",
+            "Stargate Abilene"
+          ]
+        }
+      ]
+    },
+    "_relations_about": "Roles beyond ownership. Evidence: Supply Atlas site notes (Fab 18 'main source of Nvidia silicon', AP6 'CoWoS bottleneck for Nvidia accelerators', Fairwater Mount Pleasant 'Blackwell GPUs', Humain 'GB300'); Colossus 2 and Stargate Abilene run Nvidia GB200 systems per wide press coverage."
   }
 }
