@@ -749,6 +749,16 @@ const UC = [
     "warn", E("Peer-reviewed, but the biomarker's clinical meaning is disputed in the literature itself",
       "Begutachtet, aber die klinische Bedeutung des Biomarkers ist in der Literatur selbst umstritten")),
 
+  U(5,"AppliedVR (RelieVRx)","early",3,"steady",
+    E("VR pain therapy","VR-Schmerztherapie"),
+    E("First FDA-authorised at-home VR therapy; own Medicare device code since 2023","Erste FDA-zugelassene VR-Therapie für zu Hause; eigener Medicare-Gerätecode seit 2023"),
+    E("Pain intensity <b>−31%</b> vs <b>−16%</b> with sham VR, six months after treatment","Schmerzintensität <b>−31 %</b> gegenüber <b>−16 %</b> mit Schein-VR, sechs Monate nach der Behandlung"),
+    E("A headset prescribed for chronic lower back pain: 56 days of short daily sessions that teach cognitive-behavioural pain skills, breathing and mindfulness inside immersive scenes. RelieVRx received FDA De Novo authorisation in November 2021 as an adjunct treatment, the first for at-home VR, and a further clearance for a Pico G3 version in August 2025. The evidence is unusually clean for digital health: a randomised trial against a sham VR programme found pain intensity down 31.3% versus 15.9% six months after treatment, with more than half of the VR group reaching moderate clinical meaningfulness against a quarter with sham (JMIR, 2022). CMS created a dedicated HCPCS code, E1905, in April 2023, and Veterans Affairs clinicians prescribe it. Read carefully: there is little AI inside - this is a VR therapeutic, here because it marks where immersive hardware already has a regulatory and reimbursement path; the trial was run by the manufacturer; and a Medicare code is not yet a payment rate.",
+      "Ein verschriebenes Headset gegen chronische Rückenschmerzen: 56 Tage kurze tägliche Sitzungen, die in immersiven Szenen kognitiv-verhaltenstherapeutische Schmerzbewältigung, Atmung und Achtsamkeit üben. RelieVRx erhielt im November 2021 die FDA-De-Novo-Zulassung als Zusatzbehandlung, die erste für VR zu Hause, und im August 2025 eine weitere Freigabe für eine Pico-G3-Version. Die Beleglage ist für Digital Health ungewöhnlich sauber: Eine randomisierte Studie gegen ein Schein-VR-Programm fand sechs Monate nach der Behandlung eine um 31,3 % gesunkene Schmerzintensität gegenüber 15,9 %, und mehr als die Hälfte der VR-Gruppe erreichte eine moderat klinisch bedeutsame Besserung, gegenüber einem Viertel mit Schein-VR (JMIR, 2022). CMS schuf im April 2023 einen eigenen HCPCS-Code, E1905, und Ärztinnen und Ärzte der Veterans Affairs verschreiben es. Genau lesen: Viel KI steckt nicht darin - das ist ein VR-Therapeutikum und steht hier, weil es zeigt, wo immersive Hardware schon einen Weg durch Zulassung und Erstattung hat; die Studie lief beim Hersteller; und ein Medicare-Code ist noch kein Erstattungsbetrag."),
+    E("Garcia et al., JMIR (2022), sham-controlled RCT; FDA De Novo (Nov 2021); CMS HCPCS E1905 (Apr 2023)","Garcia et al., JMIR (2022), scheinkontrollierte RCT; FDA De Novo (Nov. 2021); CMS HCPCS E1905 (Apr. 2023)"),
+    "note", E("Sham-controlled RCT, but manufacturer-run; VR therapy with little AI inside",
+      "Scheinkontrollierte RCT, aber vom Hersteller durchgeführt; VR-Therapie mit wenig KI darin")),
+
   U(5,"Neocis Yomi, Dentsply Sirona","early",2,"steady",
     E("Dental / implant robots","Zahn- / Implantat-Roboter"),
     E("early production, steady","frühe Produktion, stetig"),
@@ -1308,6 +1318,7 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "VR pain therapy":"https://www.jmir.org/2022/5/e37480/PDF",
   "AI smart glasses":"https://9to5google.com/2026/09/22/smart-glasses-growth-h1-2026/",
   "Visual assistance for blind users":"https://www.bemyeyes.com/news/be-my-eyes-reaches-1-million-blind-and-low-vision-users-and-10-million-volunteers/",
   "Stroke triage AI":"https://neuronewsinternational.com/report-finds-improved-thrombectomy-access-at-nhs-hospitals-using-brainomixs-ai-technology/",
@@ -1414,6 +1425,8 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "VR pain therapy":[
+    {n:"AppliedVR", u:"https://appliedvr.io/"}],
   "AI smart glasses":[
     {n:"Meta", u:"https://www.meta.com/ai-glasses/"},
     {n:"Android XR", u:"https://www.android.com/xr/"}],
@@ -1834,6 +1847,7 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "VR pain therapy":[1,"edge"],
   "AI smart glasses":[2,"inf"],
   "Visual assistance for blind users":[1,"inf"],
   "Stroke triage AI":[1,"inf"],
@@ -2028,6 +2042,12 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "VR pain therapy":{
+    name:"VR өвдөлтийн эмчилгээ",
+    glab:"FDA-ийн зөвшөөрөлтэй гэрийн анхны VR эмчилгээ; 2023 оноос Medicare-ийн тусгай төхөөрөмжийн кодтой",
+    metric:"Эмчилгээнээс зургаан сарын дараа өвдөлтийн эрчим <b>−31%</b>, хуурамч VR-тэй <b>−16%</b>",
+    detail:"Нурууны доод хэсгийн архаг өвдөлтөд зориулан бичигддэг толгойн төхөөрөмж: 56 хоногийн турш өдөр бүр богино хичээлээр иммерсив орчинд танин мэдэхүйн зан үйлийн өвдөлт даван туулах арга, амьсгал, анхаарал төвлөрөлтийг сургадаг. RelieVRx 2021 оны 11-р сард FDA-ийн De Novo зөвшөөрлийг нэмэлт эмчилгээ болгон авсан нь гэрийн VR-д анхных байсан, 2025 оны 8-р сард Pico G3 хувилбарт нэмэлт зөвшөөрөл авсан. Дижитал эрүүл мэндийн хувьд нотолгоо ер бусын цэвэр: хуурамч VR хөтөлбөртэй харьцуулсан санамсаргүй туршилтаар эмчилгээнээс зургаан сарын дараа өвдөлтийн эрчим 31.3% буурсан бол хуурамчид 15.9%, VR бүлгийн талаас илүү нь эмнэлзүйн дунд зэргийн ач холбогдолтой сайжралтад хүрсэн бол хуурамчид дөрөвний нэг (JMIR, 2022). CMS 2023 оны 4-р сард тусгай HCPCS код E1905 үүсгэсэн, ахмад дайчдын (VA) эмч нар бичиж өгдөг. Анхааралтай унших: дотор нь хиймэл оюун бага - энэ бол VR эмчилгээ бөгөөд иммерсив тоног төхөөрөмж зөвшөөрөл, нөхөн төлбөрийн замтай болсныг харуулах учир энд байна; туршилтыг үйлдвэрлэгч явуулсан; Medicare-ийн код нь төлбөрийн хэмжээ биш.",
+    flag:"хуурамч хяналттай RCT, гэхдээ үйлдвэрлэгч явуулсан; хиймэл оюун багатай VR эмчилгээ"},
   "AI smart glasses":{
     name:"Хиймэл оюунтай ухаалаг нүдний шил",
     glab:"2026 оны эхний хагаст нийлүүлэлт +263%; Meta зах зээлийн 94%-ийг эзэлдэг",
