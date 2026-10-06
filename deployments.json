@@ -637,6 +637,124 @@
         "META",
         "QCOM"
       ]
+    },
+    "cards": {
+      "ai-accelerators-custom-silicon": {
+        "en": "AI accelerators & custom silicon",
+        "de": "KI-Beschleuniger & Custom-Silizium"
+      },
+      "hbm-memory-the-supercycle": {
+        "en": "HBM memory (the supercycle)",
+        "de": "HBM-Speicher (der Supercycle)"
+      },
+      "nand-flash-enterprise-ssd": {
+        "en": "NAND flash & enterprise SSD",
+        "de": "NAND-Flash & Enterprise-SSD"
+      },
+      "cowos-advanced-packaging": {
+        "en": "CoWoS / advanced packaging",
+        "de": "CoWoS / Advanced Packaging"
+      },
+      "semiconductor-fab-automation": {
+        "en": "Semiconductor fab automation",
+        "de": "Halbleiter-Fertigung"
+      },
+      "co-packaged-optics-cpo": {
+        "en": "Co-packaged optics (CPO)",
+        "de": "Co-Packaged Optics (CPO)"
+      },
+      "800-vdc-rack-power": {
+        "en": "800-VDC rack power",
+        "de": "800-VDC-Rack-Strom"
+      },
+      "data-center-power-the-grid": {
+        "en": "Data-center power & the grid",
+        "de": "Rechenzentrums-Strom & Netz"
+      },
+      "data-center-cooling": {
+        "en": "Data-center cooling",
+        "de": "Rechenzentrum-Kühlung"
+      },
+      "edge-ai-perception-chips": {
+        "en": "Edge-AI perception chips",
+        "de": "Edge-KI-Wahrnehmungschips"
+      },
+      "lidar-for-physical-ai": {
+        "en": "LiDAR for physical AI",
+        "de": "LiDAR für Physical AI"
+      },
+      "robotaxis-autonomous-driving": {
+        "en": "Robotaxis / autonomous driving",
+        "de": "Robotaxis / autonomes Fahren"
+      },
+      "industrial-robots": {
+        "en": "Industrial robots",
+        "de": "Industrieroboter"
+      },
+      "surgical-robots-assisted": {
+        "en": "Surgical robots (assisted)",
+        "de": "OP-Roboter (assistiert)"
+      },
+      "ai-drug-discovery": {
+        "en": "AI drug discovery",
+        "de": "KI-Wirkstoffentwicklung"
+      },
+      "pharma-in-house-ai-factories": {
+        "en": "Pharma in-house AI factories",
+        "de": "Pharma-eigene AI-Factories"
+      },
+      "protein-folding-biology": {
+        "en": "Protein folding / biology",
+        "de": "Proteinfaltung / Biologie"
+      },
+      "ai-language-learning": {
+        "en": "AI language learning",
+        "de": "KI-Sprachenlernen"
+      },
+      "customer-service-agents": {
+        "en": "Customer service agents",
+        "de": "Kundenservice-Agenten"
+      },
+      "sales-marketing-agents": {
+        "en": "Sales & marketing agents",
+        "de": "Sales- & Marketing-Agenten"
+      },
+      "finance-accounting": {
+        "en": "Finance / accounting",
+        "de": "Finance / Accounting"
+      },
+      "public-administration-government": {
+        "en": "Public administration / government",
+        "de": "Öffentliche Verwaltung / Behörden"
+      },
+      "foundation-models-for-robotics": {
+        "en": "Foundation models for robotics",
+        "de": "Foundation Models für Robotik"
+      },
+      "digital-twins": {
+        "en": "Digital twins",
+        "de": "Digital Twins"
+      },
+      "world-models-3d-generation": {
+        "en": "World models & 3D generation",
+        "de": "Weltmodelle & 3D-Generierung"
+      },
+      "ai-weather-forecasting": {
+        "en": "AI weather forecasting",
+        "de": "KI-Wettervorhersage"
+      },
+      "video-avatar-generation": {
+        "en": "Video & avatar generation",
+        "de": "Video- & Avatar-Generierung"
+      },
+      "game-development": {
+        "en": "Game development",
+        "de": "Spieleentwicklung"
+      },
+      "ai-smart-glasses": {
+        "en": "AI smart glasses",
+        "de": "KI-Brillen"
+      }
     }
   }
 }
