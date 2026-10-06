@@ -83,6 +83,7 @@
   .ctrl-label{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); margin-right:6px; min-width:78px}
   .chip{font-family:'Inter',sans-serif; font-size:12px; font-weight:500; padding:5px 11px; border-radius:20px; border:1px solid var(--line-strong); background:var(--surface); color:var(--ink-soft); cursor:pointer; transition:.12s;}
   .chip:hover{border-color:var(--petrol); color:var(--petrol)}
+  .chip-ic{width:20px; height:20px; border-radius:50%; object-fit:cover; vertical-align:-5px; margin:-2px 6px -2px -5px; display:inline-block}
   .chip[aria-pressed="true"]{background:var(--ink); color:#fff; border-color:var(--ink)}
   .chip.q[aria-pressed="true"]{background:var(--petrol); border-color:var(--petrol)}
   .chip.g[aria-pressed="true"]{background:var(--g-exp); border-color:var(--g-exp)}
@@ -436,6 +437,8 @@ const GROW_LABELS = {en:{explosive:"Explosive",strong:"Strong",steady:"Steady",n
 // cat: phys | soft | infra
 /* Bilder je Use Case (Schluessel = englischer Name), generiert mit offenem Bildmodell im
    einheitlichen Seitenstil. Fehlt ein Eintrag, zeigt die Karte kein Bild. */
+/* Sinnbild je Sektor fuer den Filter-Knopf (Schluessel = Sektornummer). */
+const CLUSTER_ICON = {};
 const CARD_IMG = {
   "Robotaxis / autonomous driving":"images/uc/robotaxis-autonomous-driving.webp",
   "Autonomous trucks":"images/uc/autonomous-trucks.webp",
@@ -3079,6 +3082,7 @@ function buildChips(){
   allBtn.dataset.cl="0"; cc.appendChild(allBtn);
   CLUSTERS.forEach(function(c){
     const b = mkChip(c.n+" · "+T(c.short), fCluster===c.n, function(){fCluster=c.n; syncCluster(); apply();});
+    if(CLUSTER_ICON[c.n]){ const ic=document.createElement('img'); ic.className='chip-ic'; ic.src=CLUSTER_ICON[c.n]; ic.alt=''; ic.width=20; ic.height=20; b.prepend(ic); }
     b.dataset.cl=c.n; cc.appendChild(b);
   });
   const mc = document.getElementById('matChips'); mc.innerHTML='';
