@@ -1008,6 +1008,56 @@ const UC = [
     "note", E("Parser quality is corpus-dependent; F13 is central hosting; inventory use unmeasured",
       "Parserqualität hängt vom Korpus ab; F13 ist zentrales Hosting; Inventarnutzung ungemessen")),
 
+  U(17,"OpenAI Whisper (open weights), whisper.cpp, faster-whisper","prod",2,"strong",
+    E("Local speech transcription","Lokale Spracherkennung"),
+    E("Interviews, consultations and meetings transcribed on the machine; audio never uploaded","Interviews, Gespräche und Besprechungen auf dem Rechner verschriftet; kein Audio-Upload"),
+    E("Whisper large-v3 at <b>~12x real time</b> on a consumer GPU using <b>2.5 GB</b> VRAM (faster-whisper, int8)","Whisper large-v3 mit <b>~12-facher Echtzeit</b> auf einer Consumer-GPU bei <b>2,5 GB</b> VRAM (faster-whisper, int8)"),
+    E("Audio is often the most sensitive record of all - a patient consultation, a job interview, a legal deposition, an internal meeting. OpenAI released Whisper with open weights, and two ports made it a local standard: whisper.cpp, a C/C++ version that runs on CUDA, Apple Metal, Vulkan or plain CPU, and faster-whisper, a Python library on CTranslate2 that is about four times faster than the original on NVIDIA cards. A 2026 comparison measures the large-v3 model at roughly twelve times real time on an RTX 4070 using 2.5 GB of VRAM, so an hour of recording is text in about five minutes while the GPU still has room for a language model that summarises it. Read carefully: the speed figures come from blog benchmarks, accuracy drops on dialects, crosstalk and medical vocabulary, and a transcript of a clinical conversation is still health data that needs a legal basis wherever it is stored.",
+      "Audio ist oft die empfindlichste Aufzeichnung überhaupt - ein Arztgespräch, ein Bewerbungsgespräch, eine Zeugenaussage, eine interne Besprechung. OpenAI hat Whisper mit offenen Gewichten veröffentlicht, und zwei Portierungen haben es zum lokalen Standard gemacht: whisper.cpp, eine C/C++-Fassung für CUDA, Apple Metal, Vulkan oder reine CPU, und faster-whisper, eine Python-Bibliothek auf CTranslate2, die auf NVIDIA-Karten etwa viermal schneller ist als das Original. Ein Vergleich von 2026 misst das Modell large-v3 mit rund zwölffacher Echtzeit auf einer RTX 4070 bei 2,5 GB VRAM; eine Stunde Aufnahme ist damit in etwa fünf Minuten Text, und auf der GPU bleibt Platz für ein Sprachmodell, das zusammenfasst. Genau lesen: Die Geschwindigkeiten stammen aus Blog-Benchmarks, die Genauigkeit sinkt bei Dialekt, Durcheinanderreden und medizinischem Fachwortschatz, und das Transkript eines Arztgesprächs bleibt Gesundheitsdatum, das überall eine Rechtsgrundlage braucht."),
+    E("PromptQuorum local Whisper STT comparison (2026); faster-whisper and whisper.cpp repositories","PromptQuorum, Vergleich lokaler Whisper-Spracherkennung (2026); Repositories faster-whisper und whisper.cpp"),
+    "note", E("Speed figures are blog benchmarks; accuracy varies with dialect and jargon",
+      "Geschwindigkeiten aus Blog-Benchmarks; Genauigkeit schwankt mit Dialekt und Fachsprache")),
+
+  U(17,"Open WebUI, AnythingLLM, local LLMs","prod",1,"strong",
+    E("Private knowledge base over your own files","Private Wissensbasis über eigene Dateien"),
+    E("Chat with your own PDFs, notes and manuals; documents and vector index stay on the disk","Mit eigenen PDFs, Notizen und Handbüchern chatten; Dokumente und Vektorindex bleiben auf der Platte"),
+    E("Open WebUI <b>134,000</b> GitHub stars (Apr 2026); AnythingLLM <b>~61,000</b> (May 2026)","Open WebUI <b>134.000</b> GitHub-Sterne (Apr. 2026); AnythingLLM <b>~61.000</b> (Mai 2026)"),
+    E("Retrieval-augmented generation on the desk: a local tool splits your documents into chunks, stores them as vectors in a database on your own disk, and lets a local language model answer questions with citations to the pages it used. Lab protocols, device manuals, guidelines, old project folders and email archives become searchable by question rather than by keyword, without a byte leaving the machine. Open WebUI, a self-hosted chat interface with document upload and RAG, reached about 134,000 GitHub stars and a 355,000-member community by April 2026; AnythingLLM, which treats every workspace as an isolated RAG environment with its own documents and model, had about 61,000 stars by the end of May 2026. Read carefully: GitHub stars measure attention, not deployments; answer quality depends on how documents are parsed and chunked, and a small local model will confidently cite the wrong passage if retrieval misses.",
+      "Retrieval-Augmented Generation am Schreibtisch: Ein lokales Werkzeug zerlegt die eigenen Dokumente in Abschnitte, speichert sie als Vektoren in einer Datenbank auf der eigenen Platte und lässt ein lokales Sprachmodell Fragen beantworten, mit Verweis auf die benutzten Seiten. Laborprotokolle, Gerätehandbücher, Leitlinien, alte Projektordner und Mail-Archive werden per Frage statt per Stichwort durchsuchbar, ohne dass ein Byte den Rechner verlässt. Open WebUI, eine selbst gehostete Chat-Oberfläche mit Dokument-Upload und RAG, kam bis April 2026 auf rund 134.000 GitHub-Sterne und eine Community von 355.000 Mitgliedern; AnythingLLM, das jeden Arbeitsbereich als abgeschlossene RAG-Umgebung mit eigenen Dokumenten und eigenem Modell führt, hatte Ende Mai 2026 rund 61.000 Sterne. Genau lesen: GitHub-Sterne messen Aufmerksamkeit, keine Einsätze; die Antwortqualität hängt davon ab, wie Dokumente zerlegt werden, und ein kleines lokales Modell zitiert überzeugt die falsche Stelle, wenn die Suche danebengreift."),
+    E("Toolhalla comparison of Open WebUI, AnythingLLM and LibreChat (2026); project repositories","Toolhalla, Vergleich Open WebUI, AnythingLLM und LibreChat (2026); Projekt-Repositories"),
+    "warn", E("Stars measure attention, not deployments; retrieval quality decides answers",
+      "Sterne messen Aufmerksamkeit, keine Einsätze; die Suchqualität entscheidet über Antworten")),
+
+  U(17,"Cellpose (HHMI Janelia), Cellpose-SAM","prod",3,"steady",
+    E("Local microscopy segmentation","Lokale Mikroskopie-Segmentierung"),
+    E("One generalist model segments cells and nuclei across microscope types on a lab workstation","Ein Generalistenmodell segmentiert Zellen und Kerne über Mikroskoptypen hinweg auf der Labor-Workstation"),
+    E("Generalist cell segmentation without retraining (Nature Methods); Cellpose-SAM adds <b>SAM</b> weights, DINOv3 models since <b>Jun 2026</b>","Generalistische Zellsegmentierung ohne Nachtraining (Nature Methods); Cellpose-SAM ergänzt <b>SAM</b>-Gewichte, DINOv3-Modelle seit <b>Juni 2026</b>"),
+    E("Counting and outlining cells by hand is the oldest bottleneck in biology imaging, and the image files - large, unpublished, sometimes from patient tissue - usually live on the microscope PC. Cellpose from HHMI Janelia, published in Nature Methods as a generalist algorithm, segments cells and nuclei across very different microscopy types without being retrained for each one, and runs locally on a single GPU or even a CPU; Cellpose3 added one-click image restoration. Cellpose-SAM (preprint, 2025) combines the framework with pretrained Segment Anything weights and is described by its authors as reaching superhuman generalisation; it works in 3D and tolerates noise, blur and odd channel orders. New models based on DINOv3 and an updated cpsam_v2 followed in June 2026. Read carefully: the 'superhuman' claim is from a preprint by the developers, and every lab should check masks on its own stains before using counts in a paper.",
+      "Zellen von Hand zu zählen und zu umranden ist der älteste Engpass in der biologischen Bildgebung, und die Bilddateien - groß, unveröffentlicht, manchmal aus Patientengewebe - liegen meist auf dem Mikroskop-PC. Cellpose von HHMI Janelia, in Nature Methods als Generalistenalgorithmus veröffentlicht, segmentiert Zellen und Kerne über sehr unterschiedliche Mikroskopietypen, ohne je neu trainiert zu werden, und läuft lokal auf einer GPU oder sogar auf der CPU; Cellpose3 ergänzte Bildrestaurierung per Klick. Cellpose-SAM (Preprint, 2025) verbindet das Framework mit vortrainierten Segment-Anything-Gewichten und erreicht nach Angabe der Autoren übermenschliche Generalisierung; es arbeitet in 3D und verträgt Rauschen, Unschärfe und vertauschte Kanäle. Neue Modelle auf DINOv3-Basis und ein aktualisiertes cpsam_v2 folgten im Juni 2026. Genau lesen: Die Aussage 'übermenschlich' stammt aus einem Preprint der Entwickler, und jedes Labor sollte die Masken auf eigenen Färbungen prüfen, bevor Zählungen in ein Paper gehen."),
+    E("Stringer et al., Nature Methods (2021); Cellpose3, Nature Methods; Pachitariu et al., Cellpose-SAM, bioRxiv (2025)","Stringer et al., Nature Methods (2021); Cellpose3, Nature Methods; Pachitariu et al., Cellpose-SAM, bioRxiv (2025)"),
+    "good", E("Core method peer-reviewed; the newest generalisation claim is a preprint",
+      "Kernmethode begutachtet; die neueste Generalisierungsaussage ist ein Preprint")),
+
+  U(17,"Unsloth, Hugging Face PEFT / TRL","early",1,"strong",
+    E("Local fine-tuning of open models","Lokales Nachtrainieren offener Modelle"),
+    E("LoRA and QLoRA adapt a language model to your own data on one 24 GB card","LoRA und QLoRA passen ein Sprachmodell auf einer 24-GB-Karte an eigene Daten an"),
+    E("Unsloth: <b>~2x</b> faster with <b>up to 70%</b> less VRAM (vendor); a 30B MoE trains in <b>17.5 GB</b>","Unsloth: <b>~2-fach</b> schneller mit <b>bis zu 70 %</b> weniger VRAM (Herstellerangabe); ein 30B-MoE trainiert in <b>17,5 GB</b>"),
+    E("Fine-tuning used to mean renting an A100; low-rank adapters (LoRA, and QLoRA on a 4-bit base) change only a small set of extra weights, so an open model can be taught a house style, a report format or a domain vocabulary on a single workstation card - with training data that never leaves the building. Unsloth rewrites the training kernels in Triton and reports about twice the speed and up to 70% less memory than the standard Hugging Face TRL path; guides show a 20B model fine-tuned with QLoRA on 24 GB and Qwen3 30B-A3B training in about 17.5 GB. The project had about 65,000 GitHub stars in 2026 and is dual-licensed Apache 2.0 / AGPL-3.0; the result can be exported straight to Ollama or llama.cpp for local use. Read carefully: the speed and memory figures are the vendor's, a small adapter teaches format and style far more reliably than new facts, and a model tuned on sensitive records can leak them in its answers.",
+      "Nachtrainieren hieß früher, eine A100 zu mieten; Low-Rank-Adapter (LoRA, und QLoRA auf einer 4-Bit-Basis) ändern nur einen kleinen Satz zusätzlicher Gewichte, sodass ein offenes Modell auf einer einzigen Workstation-Karte einen Hausstil, ein Berichtsformat oder einen Fachwortschatz lernen kann - mit Trainingsdaten, die das Haus nie verlassen. Unsloth schreibt die Trainingskerne in Triton neu und meldet etwa doppelte Geschwindigkeit und bis zu 70 % weniger Speicher als der Standardweg über Hugging Face TRL; Anleitungen zeigen ein 20B-Modell, das mit QLoRA auf 24 GB nachtrainiert wird, und Qwen3 30B-A3B, das in rund 17,5 GB trainiert. Das Projekt hatte 2026 rund 65.000 GitHub-Sterne und steht unter Apache 2.0 / AGPL-3.0; das Ergebnis lässt sich direkt nach Ollama oder llama.cpp exportieren. Genau lesen: Geschwindigkeits- und Speicherzahlen sind Herstellerangaben, ein kleiner Adapter lernt Format und Stil weit zuverlässiger als neue Fakten, und ein auf sensiblen Akten trainiertes Modell kann sie in Antworten preisgeben."),
+    E("Unsloth documentation and benchmarks; ComputingForGeeks QLoRA guide (RTX 4090, Jun 2026)","Unsloth-Dokumentation und Benchmarks; ComputingForGeeks, QLoRA-Anleitung (RTX 4090, Juni 2026)"),
+    "warn", E("Speed and memory gains are vendor figures; tuned models can leak training data",
+      "Geschwindigkeit und Speichergewinn sind Herstellerangaben; nachtrainierte Modelle können Trainingsdaten preisgeben")),
+
+  U(17,"Brush, gsplat, COLMAP, Postshot","early",1,"strong",
+    E("Local 3D scanning with Gaussian splatting","Lokales 3D-Scannen mit Gaussian Splatting"),
+    E("A phone video of an object or room becomes a photoreal 3D scene on the workstation GPU","Ein Handyvideo eines Objekts oder Raums wird auf der Workstation-GPU zur fotorealistischen 3D-Szene"),
+    E("Open-source pipelines (COLMAP → gsplat / Brush) run fully local; a <b>50-second</b> video took about <b>20 minutes</b> in Postshot","Quelloffene Ketten (COLMAP → gsplat / Brush) laufen vollständig lokal; ein <b>50-Sekunden</b>-Video brauchte in Postshot rund <b>20 Minuten</b>"),
+    E("Gaussian splatting turns ordinary photos or a short video into a 3D scene of millions of small coloured blobs that renders in real time and looks like the photo from any angle. It is the cheap way to document a lab set-up, a museum object, a building for maintenance, or an item for a 3D print, and on a workstation the images of private rooms or prototypes never go to a scanning service. The local chain is open source: COLMAP aligns the cameras, gsplat (CUDA kernels) or Brush (WebGPU, also on Linux, Windows and macOS without CUDA) trains the splat; Postshot is a desktop app for NVIDIA cards, where a 50-second video took about 20 minutes to process. Read carefully: the timing is a single report from a university guide, splats are not watertight meshes and need conversion before printing or CAD, and Postshot's free tier stopped exporting .ply files in March 2026.",
+      "Gaussian Splatting macht aus gewöhnlichen Fotos oder einem kurzen Video eine 3D-Szene aus Millionen kleiner farbiger Flecken, die in Echtzeit rendert und aus jedem Winkel wie das Foto aussieht. Das ist der günstige Weg, einen Laboraufbau, ein Museumsobjekt, ein Gebäude für die Instandhaltung oder ein Teil für den 3D-Druck zu dokumentieren, und auf der Workstation gehen Bilder privater Räume oder Prototypen nie an einen Scandienst. Die lokale Kette ist quelloffen: COLMAP richtet die Kameras aus, gsplat (CUDA-Kerne) oder Brush (WebGPU, auch unter Linux, Windows und macOS ohne CUDA) trainiert den Splat; Postshot ist eine Desktop-App für NVIDIA-Karten, in der ein 50-Sekunden-Video rund 20 Minuten Verarbeitung brauchte. Genau lesen: Die Zeitangabe ist ein einzelner Bericht aus einem Hochschul-Leitfaden, Splats sind keine geschlossenen Netze und müssen vor Druck oder CAD umgewandelt werden, und die kostenlose Postshot-Stufe exportiert seit März 2026 keine .ply-Dateien mehr."),
+    E("HKU 3D-scan guide (Gaussian splatting online and local); PlayCanvas recommended tools","HKU-Leitfaden 3D-Scan (Gaussian Splatting online und lokal); PlayCanvas, empfohlene Werkzeuge"),
+    "note", E("Single timing report; splats need conversion before printing or CAD",
+      "Einzelne Zeitangabe; Splats brauchen vor Druck oder CAD eine Umwandlung")),
+
   // ---- Cluster 8: knowledge-work agents (software) ----
   U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
     E("Coding agents","Coding-Agenten"),
@@ -1500,6 +1550,11 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Local speech transcription":"https://www.promptquorum.com/power-local-llm/local-whisper-stt-comparison-2026",
+  "Private knowledge base over your own files":"https://toolhalla.ai/blog/open-webui-vs-anythingllm-vs-librechat-2026",
+  "Local microscopy segmentation":"https://pubmed.ncbi.nlm.nih.gov/33318659/",
+  "Local fine-tuning of open models":"https://computingforgeeks.com/fine-tune-llm-unsloth-qlora/",
+  "Local 3D scanning with Gaussian splatting":"https://bookstack.hku.nl/books/3d-scan/page/gaussian-splatting-online-and-local",
   "Local image editing & design":"https://huggingface.co/Qwen/Qwen-Image-Edit",
   "Offline coding & website building":"https://blog.kilo.ai/p/the-best-local-coding-models-for",
   "Local document AI for sensitive records":"https://arxiv.org/abs/2501.17887",
@@ -1624,6 +1679,19 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Local speech transcription":[
+    {n:"whisper.cpp", u:"https://github.com/ggml-org/whisper.cpp"},
+    {n:"faster-whisper", u:"https://github.com/SYSTRAN/faster-whisper"}],
+  "Private knowledge base over your own files":[
+    {n:"Open WebUI", u:"https://github.com/open-webui/open-webui"},
+    {n:"AnythingLLM", u:"https://anythingllm.com/"}],
+  "Local microscopy segmentation":[
+    {n:"Cellpose", u:"https://github.com/mouseland/cellpose"}],
+  "Local fine-tuning of open models":[
+    {n:"Unsloth", u:"https://unsloth.ai/"}],
+  "Local 3D scanning with Gaussian splatting":[
+    {n:"Brush", u:"https://github.com/ArthurBrussee/brush"},
+    {n:"gsplat", u:"https://github.com/nerfstudio-project/gsplat"}],
   "Local image editing & design":[
     {n:"Qwen-Image-Edit", u:"https://huggingface.co/Qwen/Qwen-Image-Edit"},
     {n:"Black Forest Labs", u:"https://bfl.ai/"}],
@@ -2094,6 +2162,11 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Local speech transcription":[1,"edge"],
+  "Private knowledge base over your own files":[1,"edge"],
+  "Local microscopy segmentation":[1,"edge"],
+  "Local fine-tuning of open models":[2,"train"],
+  "Local 3D scanning with Gaussian splatting":[1,"edge"],
   "Local image editing & design":[2,"edge"],
   "Offline coding & website building":[2,"edge"],
   "Local document AI for sensitive records":[1,"edge"],
@@ -2312,6 +2385,36 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Local speech transcription":{
+    name:"Дотоод яриа таних",
+    glab:"Ярилцлага, зөвлөгөө, хурлыг машин дээр бичвэр болгоно; аудио байршуулагдахгүй",
+    metric:"Whisper large-v3 хэрэглэгчийн GPU дээр <b>~12 дахин бодит хугацаанаас хурдан</b>, <b>2.5 GB</b> VRAM (faster-whisper, int8)",
+    detail:"Аудио бол ихэвчлэн хамгийн эмзэг бичлэг - эмчийн зөвлөгөө, ажлын ярилцлага, хуулийн мэдүүлэг, дотоод хурал. OpenAI Whisper-г нээлттэй жинтэй гаргасан бөгөөд хоёр порт үүнийг дотоод стандарт болгосон: CUDA, Apple Metal, Vulkan эсвэл CPU дээр ажилладаг C/C++ хувилбар whisper.cpp, NVIDIA карт дээр эхийнхээс дөрөв дахин хурдан CTranslate2 дээрх Python сан faster-whisper. 2026 оны харьцуулалтаар large-v3 загвар RTX 4070 дээр 2.5 GB VRAM-аар бодит хугацаанаас 12 дахин хурдан ажилладаг тул нэг цагийн бичлэг таван минут орчимд текст болж, GPU дээр хураангуйлах хэлний загварт зай үлддэг. Анхааралтай унших: хурдны тоо блогийн жишгээс, аялга, давхцсан яриа, эмнэлгийн нэр томьёонд нарийвчлал буурдаг, эмнэлзүйн ярианы бичвэр хаана ч хадгалагдсан эрүүл мэндийн өгөгдөл хэвээр.",
+    flag:"хурдны тоо блогийн жишиг; нарийвчлал аялга, нэр томьёоноос хамаарна"},
+  "Private knowledge base over your own files":{
+    name:"Өөрийн файл дээрх хувийн мэдлэгийн сан",
+    glab:"Өөрийн PDF, тэмдэглэл, гарын авлагатай чатлах; баримт, вектор индекс диск дээр үлдэнэ",
+    metric:"Open WebUI GitHub-д <b>134,000</b> од (2026.4); AnythingLLM <b>~61,000</b> (2026.5)",
+    detail:"Ширээн дээрх retrieval-augmented generation: дотоод хэрэгсэл баримтуудыг хэсэглэн өөрийн диск дээрх өгөгдлийн санд вектор болгон хадгалж, дотоод хэлний загвараар ашигласан хуудсаа иш татан асуултад хариулуулдаг. Лабораторийн протокол, төхөөрөмжийн гарын авлага, удирдамж, хуучин төслийн хавтас, имэйлийн архивыг түлхүүр үгээр биш асуултаар хайж болох бөгөөд нэг ч байт машинаас гардаггүй. Баримт байршуулах, RAG бүхий өөрөө хостлодог чатын интерфэйс Open WebUI 2026 оны 4-р сар гэхэд GitHub-д 134,000 орчим од, 355,000 гишүүнтэй нийгэмлэгтэй болсон; ажлын талбар бүрийг өөрийн баримт, загвартай тусгаар RAG орчин гэж үздэг AnythingLLM 2026 оны 5-р сарын сүүлээр 61,000 орчим одтой байв. Анхааралтай унших: GitHub-ийн од нь анхаарлыг хэмждэг, хэрэглээг биш; хариултын чанар баримтыг хэрхэн задалж, хэсэглэхээс хамаардаг, хайлт алдвал жижиг дотоод загвар буруу хэсгийг итгэлтэйгээр иш татна.",
+    flag:"од нь анхаарал, хэрэглээ биш; хайлтын чанар хариултыг шийднэ"},
+  "Local microscopy segmentation":{
+    name:"Дотоод микроскопын сегментчлэл",
+    glab:"Нэг ерөнхий загвар лабораторийн ажлын станц дээр олон төрлийн микроскопын эс, цөмийг сегментчилнэ",
+    metric:"Дахин сургалтгүй ерөнхий эсийн сегментчлэл (Nature Methods); Cellpose-SAM <b>SAM</b> жин нэмсэн, <b>2026.6</b>-аас DINOv3 загварууд",
+    detail:"Эсийг гараар тоолж, хүрээлэх нь биологийн дүрслэлийн хамгийн эртний гацаа бөгөөд зургийн файлууд - том, нийтлэгдээгүй, заримдаа өвчтөний эдээс - ихэвчлэн микроскопын компьютер дээр байдаг. Nature Methods-д ерөнхий алгоритм болгон нийтлэгдсэн HHMI Janelia-гийн Cellpose нь маш өөр микроскопын төрлүүдийн эс, цөмийг тус бүрд нь дахин сургахгүйгээр сегментчилж, нэг GPU эсвэл бүр CPU дээр дотооддоо ажилладаг; Cellpose3 нэг товшилтоор зураг сэргээх боломж нэмсэн. Cellpose-SAM (препринт, 2025) нь урьдчилан сургасан Segment Anything жинтэй хослуулж, зохиогчдын хэлснээр хүнээс давсан ерөнхийлөлтөд хүрдэг; 3D-д ажиллаж, шуугиан, бүдэгрэл, сувгийн дарааллыг тэсвэрлэдэг. 2026 оны 6-р сард DINOv3 дээр суурилсан шинэ загварууд, шинэчилсэн cpsam_v2 гарсан. Анхааралтай унших: 'хүнээс давсан' гэсэн мэдэгдэл хөгжүүлэгчдийн препринтээс, лаборатори бүр тоог өгүүлэлд оруулахаасаа өмнө өөрийн будгаар маскыг шалгах ёстой.",
+    flag:"үндсэн арга хянан магадлагдсан; хамгийн шинэ ерөнхийлөлтийн мэдэгдэл препринт"},
+  "Local fine-tuning of open models":{
+    name:"Нээлттэй загварыг дотооддоо нэмж сургах",
+    glab:"LoRA, QLoRA нь хэлний загварыг нэг 24 GB карт дээр өөрийн өгөгдөлд тохируулна",
+    metric:"Unsloth: <b>~2 дахин</b> хурдан, <b>70% хүртэл</b> бага VRAM (нийлүүлэгч); 30B MoE <b>17.5 GB</b>-д сургагдана",
+    detail:"Нэмж сургах гэдэг өмнө нь A100 түрээслэх гэсэн үг байсан; бага зэрэглэлийн адаптерууд (LoRA, 4 битийн суурь дээрх QLoRA) зөвхөн цөөн нэмэлт жинг өөрчилдөг тул нээлттэй загварт байгууллагын хэв маяг, тайлангийн формат, салбарын нэр томьёог нэг ажлын станцын карт дээр - барилгаас гарахгүй сургалтын өгөгдлөөр - зааж болно. Unsloth сургалтын цөмүүдийг Triton дээр дахин бичиж, Hugging Face TRL-ийн стандарт замаас хоёр дахин хурдан, 70% хүртэл бага санах ой зарцуулдаг гэж мэдээлдэг; гарын авлагууд 20B загварыг 24 GB дээр QLoRA-аар, Qwen3 30B-A3B-г 17.5 GB орчимд сургаж буйг харуулдаг. Төсөл 2026 онд GitHub-д 65,000 орчим одтой, Apache 2.0 / AGPL-3.0 давхар лицензтэй; үр дүнг шууд Ollama эсвэл llama.cpp руу экспортолж болно. Анхааралтай унших: хурд, санах ойн тоо нийлүүлэгчийнх, жижиг адаптер шинэ баримтаас илүү формат, хэв маягийг найдвартай заадаг, эмзэг бичиг баримт дээр сургасан загвар тэдгээрийг хариултдаа задруулж болзошгүй.",
+    flag:"хурд, санах ойн ашиг нийлүүлэгчийн тоо; сургасан загвар өгөгдлөө задруулж болно"},
+  "Local 3D scanning with Gaussian splatting":{
+    name:"Gaussian splatting-аар дотоод 3D скан",
+    glab:"Объект эсвэл өрөөний утасны бичлэг ажлын станцын GPU дээр фото бодит 3D орчин болно",
+    metric:"Нээлттэй эхийн дамжлага (COLMAP → gsplat / Brush) бүрэн дотооддоо ажилладаг; Postshot-д <b>50 секундын</b> бичлэг <b>20 минут</b> орчим",
+    detail:"Gaussian splatting нь энгийн зураг эсвэл богино бичлэгийг сая сая жижиг өнгөт толбоос бүрдсэн, бодит хугацаанд дүрслэгдэж, аль ч өнцгөөс зураг шиг харагддаг 3D орчин болгодог. Лабораторийн тохиргоо, музейн эд зүйл, засвар үйлчилгээний барилга эсвэл 3D хэвлэлийн эд ангийг баримтжуулах хямд арга бөгөөд ажлын станц дээр хувийн өрөө, прототипийн зураг скан үйлчилгээ рүү хэзээ ч явдаггүй. Дотоод дамжлага нээлттэй эх: COLMAP камеруудыг тэгшилж, gsplat (CUDA цөм) эсвэл Brush (WebGPU, CUDA-гүйгээр Linux, Windows, macOS дээр) splat-ыг сургадаг; Postshot нь NVIDIA картад зориулсан ширээний апп бөгөөд 50 секундын бичлэг боловсруулахад 20 минут орчим зарцуулсан. Анхааралтай унших: хугацааны тоо их сургуулийн гарын авлагын ганц мэдээлэл, splat нь битүү тор биш тул хэвлэх эсвэл CAD-аас өмнө хөрвүүлэх шаардлагатай, Postshot-ийн үнэгүй түвшин 2026 оны 3-р сараас .ply файл экспортлохоо больсон.",
+    flag:"ганц хугацааны мэдээлэл; splat-ыг хэвлэх, CAD-аас өмнө хөрвүүлэх шаардлагатай"},
   "Local image editing & design":{
     name:"Дотоод зураг засвар ба дизайн",
     glab:"Зураг, постерыг байршуулахгүйгээр зааврын дагуу засна; зураг дээрх текст фонтоо хадгалдаг",
