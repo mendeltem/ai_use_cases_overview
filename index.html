@@ -684,7 +684,11 @@ const CLUSTERS = [
   {n:17, cat:"infra", short:{en:"local workstation",de:"lokale Workstation"},
     title:{en:"AI on the local workstation",de:"KI auf der lokalen Workstation"},
     kern:{en:"Language, image, document and segmentation models on one GPU under the desk: images, files and records never leave the room, it works without internet, and there is no queue and no price per token or image.",de:"Sprach-, Bild-, Dokument- und Segmentierungsmodelle auf einer GPU unter dem Schreibtisch: Bilder, Dateien und Akten verlassen den Raum nicht, es geht ohne Internet, und es gibt keine Warteschlange und keinen Preis pro Token oder Bild."},
-    verdict:{en:"Open models now fit in 16–24 GB. The gain is privacy and zero marginal cost; the limit is one GPU — training and large batches still belong on HPC or in the cloud.",de:"Offene Modelle passen inzwischen in 16–24 GB. Der Gewinn ist Datenschutz und null Grenzkosten; die Grenze ist eine GPU — Training und große Serien gehören weiter auf HPC oder in die Cloud."}}
+    verdict:{en:"Open models now fit in 16–24 GB. The gain is privacy and zero marginal cost; the limit is one GPU — training and large batches still belong on HPC or in the cloud.",de:"Offene Modelle passen inzwischen in 16–24 GB. Der Gewinn ist Datenschutz und null Grenzkosten; die Grenze ist eine GPU — Training und große Serien gehören weiter auf HPC oder in die Cloud."}},
+  {n:18, cat:"infra", short:{en:"communication",de:"Kommunikation"},
+    title:{en:"How machines, firms and freight talk",de:"Wie Maschinen, Firmen und Fracht miteinander sprechen"},
+    kern:{en:"The channels the rest of the board talks through: AI agents negotiating across companies, shared data spaces, digital product passports, paperless freight papers, machine and vehicle radio.",de:"Die Kanäle, über die der Rest des Boards spricht: KI-Agenten, die firmenübergreifend verhandeln, gemeinsame Datenräume, digitale Produktpässe, papierlose Frachtpapiere, Maschinen- und Fahrzeugfunk."},
+    verdict:{en:"Mostly standards and law, not AI; the AI sits in the agents and models that use these channels. Dates are fixed, adoption figures thin.",de:"Überwiegend Standards und Gesetze, keine KI; die KI steckt in den Agenten und Modellen, die diese Kanäle nutzen. Termine stehen fest, Verbreitungszahlen sind dünn."}}
 ];
 
 // helper to keep entries compact: [cluster, prov, mat, q, growthTier, name{}, growLabel{}, metric{}, detail{}, src{}, flagT, flagX{}]
@@ -1769,10 +1773,98 @@ const UC = [
     E("A calibration card. Sweetgreen's Infinite Kitchen — an automated assembly line for salads — measurably worked: stores running it showed about 700 basis points of labour savings and nearly 100bp of COGS improvement against comparable units. And in November 2025 Sweetgreen sold the underlying technology company, Spyce, to Wonder for $186.4M and stepped back from full automation, after three consecutive quarters of falling same-store sales (-9.5% in Q3 2025, with traffic down 11.7%). The lesson the board should carry: unit-level automation gains do not rescue a demand problem, and a working robot is not the same as a working business. Caveat: the labour-saving figures are company-reported; the transaction value is not.","Eine Kalibrierungskarte. Sweetgreens Infinite Kitchen — eine automatisierte Montagelinie für Salate — funktionierte messbar: Filialen mit dem System zeigten rund 700 Basispunkte Personalersparnis und knapp 100 Basispunkte bessere Wareneinsatzquote gegenüber vergleichbaren Standorten. Und im November 2025 verkaufte Sweetgreen die zugrundeliegende Technologiefirma Spyce für 186,4 Mio. $ an Wonder und rückte von der Vollautomatisierung ab — nach drei Quartalen in Folge mit rückläufigem Flächenumsatz (−9,5 % in Q3 2025, Frequenz −11,7 %). Die Lehre fürs Board: Automatisierungsgewinne auf Filialebene retten kein Nachfrageproblem, und ein funktionierender Roboter ist kein funktionierendes Geschäft. Vorbehalt: die Personalzahlen sind Firmenangaben, der Transaktionswert nicht."),
     E("Sweetgreen Q3 2025 results; Wonder acquisition, Nov 2025","Sweetgreen Q3-2025-Zahlen; Wonder-Übernahme, Nov. 2025"),
     "warn", E("the operator divested the technology despite positive unit economics","Betreiber trennte sich trotz positiver Stückkosten von der Technik")),
+  U(18,"Google, Linux Foundation; AWS, Cisco, Microsoft, Salesforce, SAP, ServiceNow","pilot",2,"strong",
+    E("Agent-to-agent protocol (A2A)","Agenten-Protokoll zwischen Firmen (A2A)"),
+    E("from Google project to Linux Foundation standard in 2025","2025 vom Google-Projekt zum Standard der Linux Foundation"),
+    E("<b>100+</b> technology companies back the protocol","<b>über 100</b> Technologieunternehmen unterstützen das Protokoll"),
+    E("A2A is an open protocol that lets AI agents from different vendors find each other, exchange information securely and coordinate tasks. The protocol itself is plumbing, a message standard; the AI sits in the agents that use it. Google created it in April 2025, and the Linux Foundation took it over on 23 June 2025, with AWS, Cisco, Microsoft, Salesforce, SAP and ServiceNow among the founding contributors. Support is announced widely, but the source gives no numbers on live cross-company deployments.","A2A ist ein offenes Protokoll, mit dem KI-Agenten verschiedener Anbieter einander finden, sicher Daten austauschen und Aufgaben abstimmen. Das Protokoll selbst ist nur ein Nachrichtenstandard; die KI steckt in den Agenten, die es nutzen. Google hat es im April 2025 geschaffen, am 23. Juni 2025 übernahm es die Linux Foundation, mit AWS, Cisco, Microsoft, Salesforce, SAP und ServiceNow unter den Gründungsbeteiligten. Die Unterstützung ist breit angekündigt, Zahlen zu tatsächlich laufenden firmenübergreifenden Einsätzen nennt die Quelle nicht."),
+    E("Linux Foundation press release, Jun 2025","Pressemitteilung Linux Foundation, Juni 2025"),
+    "note", E("supporters ≠ deployments","Unterstützer ≠ Einsätze")),
+  U(18,"Anthropic, Agentic AI Foundation (Linux Foundation); OpenAI, Google DeepMind","prod",1,"explosive",
+    E("Model Context Protocol (MCP)","Model Context Protocol (MCP)"),
+    E("adopted by OpenAI and Google within five months","binnen fünf Monaten von OpenAI und Google übernommen"),
+    E("SDKs downloaded <b>97 million times per month</b> by mid-2026 (reported)","Programmbibliotheken bis Mitte 2026 <b>97 Mio. Mal pro Monat</b> heruntergeladen (berichtet)"),
+    E("MCP is an open standard that lets AI models call tools and data sources in a uniform way, so one connector works across many AI products and business systems. Anthropic introduced it in November 2024; OpenAI adopted it in March 2025 and Google DeepMind in April 2025. In December 2025 it was donated to the Agentic AI Foundation under the Linux Foundation. By mid-2026 more than 10,000 MCP servers were reportedly in production, and Salesforce reported 4.5 million MCP calls by late May 2026. These usage figures are second-hand.","MCP ist ein offener Standard, über den KI-Modelle Werkzeuge und Datenquellen einheitlich ansprechen; ein Anschluss funktioniert so in vielen KI-Produkten und Firmensystemen. Anthropic stellte ihn im November 2024 vor, OpenAI übernahm ihn im März 2025, Google DeepMind im April 2025. Im Dezember 2025 ging er an die Agentic AI Foundation unter dem Dach der Linux Foundation. Bis Mitte 2026 liefen Berichten zufolge über 10.000 MCP-Server im Echtbetrieb, Salesforce meldete bis Ende Mai 2026 4,5 Millionen MCP-Aufrufe. Diese Nutzungszahlen stammen aus zweiter Hand."),
+    E("Wikipedia: Model Context Protocol","Wikipedia: Model Context Protocol"),
+    "note", E("usage figures second-hand","Nutzungszahlen aus zweiter Hand")),
+  U(18,"Google (AP2, FIDO Alliance); OpenAI, Stripe (ACP)","pilot",2,"nascent",
+    E("Agent payments (AP2, ACP)","Bezahlen durch KI-Agenten (AP2, ACP)"),
+    E("two open checkout standards since Sept 2025","seit Sept. 2025 zwei offene Bezahlstandards"),
+    E("AP2 announced <b>16 Sep 2025</b>; ChatGPT is the first platform running ACP","AP2 vorgestellt am <b>16.09.2025</b>; ChatGPT ist die erste Plattform mit ACP"),
+    E("When an AI agent buys on someone's behalf, the shop and the bank need proof of what the person approved. Google's Agent Payments Protocol (AP2) does this with signed digital mandates, one for the basket and one for the payment method; it extends A2A, works with MCP and has been handed to the FIDO Alliance for standardisation. OpenAI and Stripe built the Agentic Commerce Protocol (ACP), an open standard that makes a shop's checkout usable by agents; ChatGPT is the first platform and Stripe the first payment provider. Both are protocols, not AI, and neither source gives transaction or merchant numbers.","Kauft ein KI-Agent im Auftrag eines Menschen ein, brauchen Shop und Bank einen Nachweis, was dieser freigegeben hat. Googles Agent Payments Protocol (AP2) leistet das mit signierten digitalen Vollmachten, eine für den Warenkorb, eine für das Zahlungsmittel; es erweitert A2A, arbeitet mit MCP und liegt zur Normung bei der FIDO Alliance. OpenAI und Stripe haben das Agentic Commerce Protocol (ACP) entwickelt, einen offenen Standard, der den Bezahlvorgang eines Shops für Agenten nutzbar macht; ChatGPT ist die erste Plattform, Stripe der erste Zahlungsdienstleister. Beides sind Protokolle, keine KI, und keine Quelle nennt Umsätze oder Händlerzahlen."),
+    E("ap2-protocol.org; agenticcommerce.dev","ap2-protocol.org; agenticcommerce.dev"),
+    "warn", E("early; no volume data; competing standards","früh; keine Mengen; konkurrierende Standards")),
+  U(18,"Catena-X, Cofinity-X; BMW, Mercedes-Benz, VW, Ford, Bosch, SAP, Siemens","prod",2,"strong",
+    E("Catena-X automotive data space","Catena-X: Datenraum der Autoindustrie"),
+    E("membership up more than fivefold since founding","Mitglieder seit Gründung mehr als verfünffacht"),
+    E("<b>1,000+</b> companies in the network (Sept 2026)","<b>über 1.000</b> Unternehmen im Netzwerk (Sept. 2026)"),
+    E("Catena-X lets carmakers and suppliers exchange data under common open-source standards while each company keeps control of its own data. The network calls itself fully operational; Cofinity-X runs onboarding and the marketplace. Use cases include carbon footprints, quality management, digital product passports and demand and capacity planning. In one quality case BMW, Bosch and Denso detected faults four months earlier. This is data-exchange infrastructure; AI comes in where models run on the shared quality and demand data, and the case results are the operator's own.","Catena-X ermöglicht Autobauern und Zulieferern den Datenaustausch nach gemeinsamen quelloffenen Standards, wobei jedes Unternehmen die Hoheit über seine Daten behält. Das Netzwerk bezeichnet sich als voll in Betrieb; Cofinity-X betreibt Aufnahme und Marktplatz. Anwendungsfälle sind CO₂-Fußabdruck, Qualitätsmanagement, digitaler Produktpass sowie Bedarfs- und Kapazitätsplanung. In einem Qualitätsfall erkannten BMW, Bosch und Denso Fehler vier Monate früher. Es ist Infrastruktur für Datenaustausch; KI kommt dort hinzu, wo Modelle auf den geteilten Qualitäts- und Bedarfsdaten laufen, und die Fallergebnisse stammen vom Betreiber selbst."),
+    E("catena-x.net","catena-x.net"),
+    "good", E("live network; case results self-reported","laufendes Netz; Fallergebnisse vom Betreiber")),
+  U(18,"European Union (Battery Regulation, ESPR); Battery Pass consortium","pilot",3,"nascent",
+    E("EU digital battery passport","EU-Batteriepass"),
+    E("mandatory from Feb 2027; more product groups follow","Pflicht ab Feb. 2027; weitere Produktgruppen folgen"),
+    E("Mandatory from <b>18 Feb 2027</b> for EV, light-vehicle and industrial batteries over 2 kWh","Pflicht ab <b>18.02.2027</b> für Batterien von E-Autos, leichten Verkehrsmitteln und Industriebatterien über 2 kWh"),
+    E("From 18 February 2027 every battery for electric vehicles and light means of transport, and every industrial battery over 2 kWh, needs a machine-readable digital passport under the EU Battery Regulation. It holds fixed data (identity, chemistry, manufacturing) and changing data (state of health, operating history from the battery management system). It is the first case of the wider Digital Product Passport under the Ecodesign Regulation (ESPR), in force since 18 July 2024, which also lets customs check imports automatically. It is a legal data standard; AI is not required, but the state-of-health data is what diagnosis and second-life models need.","Ab dem 18. Februar 2027 braucht nach der EU-Batterieverordnung jede Batterie von Elektroautos und leichten Verkehrsmitteln sowie jede Industriebatterie über 2 kWh einen maschinenlesbaren digitalen Pass. Er enthält feste Angaben (Kennung, Zellchemie, Herstellung) und veränderliche (Alterungszustand, Betriebsverlauf aus dem Batteriemanagement). Er ist der erste Fall des allgemeinen digitalen Produktpasses nach der Ökodesign-Verordnung (ESPR), die seit dem 18. Juli 2024 gilt und dem Zoll auch die automatische Prüfung von Einfuhren erlaubt. Es ist ein gesetzlicher Datenstandard; KI ist nicht vorgeschrieben, aber die Daten zum Alterungszustand sind genau das, was Diagnose- und Zweitnutzungsmodelle brauchen."),
+    E("EU Battery Regulation 2023/1542; Wikipedia: Battery passport","EU-Batterieverordnung 2023/1542; Wikipedia: Battery passport"),
+    "good", E("date fixed in law","Termin gesetzlich festgelegt")),
+  U(18,"European Union (eFTI Regulation 2020/1056), certified eFTI platforms","pilot",2,"nascent",
+    E("Paperless freight documents (eFTI)","Papierlose Frachtdokumente (eFTI)"),
+    E("authorities must accept electronic data from July 2027","Behörden müssen ab Juli 2027 elektronische Daten annehmen"),
+    E("About <b>€1 billion</b> expected annual savings for EU transport and logistics","Rund <b>1 Mrd. €</b> erwartete jährliche Einsparung für Verkehr und Logistik in der EU"),
+    E("The eFTI Regulation replaces paper freight documents with electronic data for road, rail, inland waterway and air transport. Companies keep the data on certified eFTI platforms and show it to inspectors on request in machine-readable form, for example via a QR code. From 9 July 2027 Member State authorities must accept this electronic information. The Commission expects about €1 billion in annual savings and fewer roadside checks. It is a legal and data standard, not AI; it matters for AI because freight data becomes machine-readable across borders.","Die eFTI-Verordnung ersetzt Frachtpapiere durch elektronische Daten auf Straße, Schiene, Binnenwasserstraße und in der Luftfracht. Unternehmen halten die Daten auf zertifizierten eFTI-Plattformen und zeigen sie Kontrolleuren auf Anfrage maschinenlesbar, etwa über einen QR-Code. Ab dem 9. Juli 2027 müssen die Behörden der Mitgliedstaaten diese Angaben annehmen. Die Kommission erwartet rund 1 Mrd. € jährliche Einsparungen und weniger Kontrollen am Straßenrand. Es ist eine Rechts- und Datenvorgabe, keine KI; für KI zählt, dass Frachtdaten grenzüberschreitend maschinenlesbar werden."),
+    E("European Commission, DG MOVE","EU-Kommission, GD MOVE"),
+    "note", E("savings are a Commission forecast","Einsparung ist Prognose der Kommission")),
+  U(18,"DCSA; MSC, Maersk, CMA CGM, Hapag-Lloyd, ONE, Evergreen, HMM, ZIM","pilot",2,"steady",
+    E("Electronic bill of lading (eBL)","Elektronisches Konnossement (eBL)"),
+    E("common standard of carriers with ~75% of container trade","gemeinsamer Standard von Reedereien mit ~75 % des Containerhandels"),
+    E("Full eBL adoption could unlock about <b>$18bn</b> (McKinsey estimate)","Vollständige Umstellung könnte rund <b>18 Mrd. $</b> bringen (Schätzung McKinsey)"),
+    E("The bill of lading is the title document for goods at sea, and it still mostly travels on paper. The Digital Container Shipping Association (DCSA) publishes open standards so carriers, shippers and banks can exchange it as data. Its ten carrier members represent about 75% of global container trade; pilots include HMM with Samsung SDS. DCSA cites a McKinsey estimate of about $18bn in gains at full adoption. This is a data standard, not AI, and the page gives no current adoption rate.","Das Konnossement ist das Wertpapier für Ware auf See und reist noch meist auf Papier. Die Digital Container Shipping Association (DCSA) veröffentlicht offene Standards, damit Reedereien, Verlader und Banken es als Datensatz austauschen. Ihre zehn Mitgliedsreedereien stehen für rund 75 % des weltweiten Containerhandels; Pilotprojekte gibt es etwa bei HMM mit Samsung SDS. DCSA nennt eine McKinsey-Schätzung von rund 18 Mrd. $ Nutzen bei vollständiger Umstellung. Es ist ein Datenstandard, keine KI, und die Seite nennt keine aktuelle Nutzungsquote."),
+    E("DCSA Bill of Lading standard","DCSA-Standard Konnossement"),
+    "note", E("no adoption rate; gains estimated","keine Nutzungsquote; Nutzen geschätzt")),
+  U(18,"GS1","prod",2,"steady",
+    E("Supply-chain event data (GS1 EPCIS 2.0)","Ereignisdaten der Lieferkette (GS1 EPCIS 2.0)"),
+    E("from RFID standard (2007) to general visibility standard","vom RFID-Standard (2007) zum allgemeinen Transparenzstandard"),
+    E("EPCIS 2.0 and CBV 2.0 ratified in <b>June 2022</b>","EPCIS 2.0 und CBV 2.0 im <b>Juni 2022</b> verabschiedet"),
+    E("EPCIS lets trading partners share events about goods in one format: shipped, received, packed, transformed, with what, where and when. Version 2.0 and the Core Business Vocabulary 2.0 were ratified in June 2022; the first version dates from April 2007 and grew out of MIT's Auto-ID Center, and it now covers barcodes as well as RFID. It is a data standard, not AI, but its event streams are the input that forecasting and track-and-trace models need. No current adoption figures were found.","EPCIS erlaubt Handelspartnern, Ereignisse zu Waren in einem Format zu teilen: versandt, empfangen, verpackt, verarbeitet, womit, wo und wann. Version 2.0 und das Grundvokabular CBV 2.0 wurden im Juni 2022 verabschiedet; die erste Fassung stammt vom April 2007 und geht auf das Auto-ID Center am MIT zurück, heute deckt sie neben RFID auch Strichcodes ab. Es ist ein Datenstandard, keine KI, aber seine Ereignisströme sind genau die Eingabe, die Prognose- und Rückverfolgungsmodelle brauchen. Aktuelle Verbreitungszahlen wurden nicht gefunden."),
+    E("Wikipedia: EPCIS","Wikipedia: EPCIS"),
+    "note", E("no current adoption figures","keine aktuellen Verbreitungszahlen")),
+  U(18,"OPC Foundation; IEC 62541","prod",2,"steady",
+    E("Machine-to-machine language (OPC UA)","Gemeinsame Maschinensprache (OPC UA)"),
+    E("data models for 60+ equipment types","Datenmodelle für über 60 Gerätearten"),
+    E("Freely available data models for <b>60+</b> equipment types","Frei verfügbare Datenmodelle für <b>über 60</b> Gerätearten"),
+    E("OPC UA (IEC 62541) lets machines, sensors and IT systems from different makers exchange data with a shared meaning, not just raw numbers. It supports client-server and publish-subscribe over TCP, UDP, Ethernet, HTTPS, WebSockets, AMQP and MQTT; the latest release is 1.05.06 (22 October 2025), and it runs on devices with as little as 15 kB of RAM. It is an established interoperability standard, not AI. For AI it is the typical way factory data reaches a model, and the way a model's set-points get back to the machine.","OPC UA (IEC 62541) erlaubt Maschinen, Sensoren und IT-Systemen verschiedener Hersteller, Daten mit einheitlicher Bedeutung auszutauschen, nicht nur rohe Zahlen. Es unterstützt Client-Server und Veröffentlichen-Abonnieren über TCP, UDP, Ethernet, HTTPS, WebSockets, AMQP und MQTT; die neueste Fassung ist 1.05.06 vom 22. Oktober 2025, und es läuft schon auf Geräten mit 15 kB Arbeitsspeicher. Es ist ein etablierter Standard, keine KI. Für KI ist es der übliche Weg, auf dem Fabrikdaten zum Modell kommen und Sollwerte des Modells zurück zur Maschine."),
+    E("Wikipedia: OPC Unified Architecture","Wikipedia: OPC Unified Architecture"),
+    "note", E("enabler, not AI","Wegbereiter, keine KI")),
+  U(18,"3GPP; FCC (US); European Commission (C-ITS)","pilot",2,"steady",
+    E("Vehicle-to-everything radio (C-V2X)","Fahrzeugfunk zu allem (C-V2X)"),
+    E("US gave it dedicated spectrum in 2020","USA wiesen 2020 eigene Frequenzen zu"),
+    E("<b>50+</b> C-V2X devices on the market by mid-2024","<b>über 50</b> C-V2X-Geräte am Markt bis Mitte 2024"),
+    E("C-V2X covers the 3GPP standards for direct messages between vehicles, roadside infrastructure and pedestrians over the PC5 sidelink, with no mobile network needed. The first LTE-based version was finalised in Release 14 in 2017. In November 2020 the US FCC assigned the upper 30 MHz of the 5.9 GHz band (5.895–5.925 GHz) primarily to C-V2X; the EU chose a technology-neutral approach for cooperative transport systems (C-ITS) in July 2019. It is a radio standard, not AI; it lets a car's perception be shared beyond its own sensors.","C-V2X umfasst die 3GPP-Standards für direkte Nachrichten zwischen Fahrzeugen, Verkehrsinfrastruktur und Fußgängern über die Direktverbindung PC5, ohne Mobilfunknetz. Die erste LTE-Fassung wurde 2017 in Release 14 fertig. Im November 2020 wies die US-Behörde FCC die oberen 30 MHz des 5,9-GHz-Bands (5,895–5,925 GHz) vorrangig C-V2X zu; die EU entschied sich im Juli 2019 für einen technologieneutralen Weg bei kooperativen Verkehrssystemen (C-ITS). Es ist ein Funkstandard, keine KI; er lässt die Wahrnehmung eines Autos über die eigenen Sensoren hinaus teilen."),
+    E("Wikipedia: Cellular V2X","Wikipedia: Cellular V2X"),
+    "note", E("no deployment figures for China","keine Ausbauzahlen für China")),
+  U(18,"SpaceX Starlink; T-Mobile US, Rogers, One NZ, Optus, Kyivstar","prod",1,"strong",
+    E("Satellite direct-to-device link","Satellit direkt zum Gerät"),
+    E("from SMS test (Jan 2024) to commercial service with several carriers","vom SMS-Test (Jan. 2024) zum Dienst bei mehreren Netzbetreibern"),
+    E("First SMS over Starlink direct-to-cell on <b>8 Jan 2024</b>","Erste SMS über Starlink direkt zum Handy am <b>08.01.2024</b>"),
+    E("Starlink direct-to-cell connects ordinary LTE phones to satellites without extra hardware. SpaceX reported the first successful SMS test on T-Mobile's network on 8 January 2024, and T-Mobile US launched the first commercial service on its own mid-band spectrum; partners include Rogers, One NZ, Optus and Kyivstar. Text comes first, voice and limited data are planned. For machines and logistics this is the promise of coverage where no mast stands, but capacity is far below ground networks and the source gives no figures for machine (IoT) traffic. It is connectivity, not AI.","Starlink direkt zum Handy verbindet gewöhnliche LTE-Telefone ohne Zusatzgerät mit Satelliten. SpaceX meldete am 8. Januar 2024 den ersten erfolgreichen SMS-Test im Netz von T-Mobile, T-Mobile US startete den ersten kommerziellen Dienst auf eigenen Frequenzen; Partner sind unter anderem Rogers, One NZ, Optus und Kyivstar. Zuerst kommen Textnachrichten, Sprache und begrenzte Daten sind geplant. Für Maschinen und Logistik ist das das Versprechen von Empfang dort, wo kein Mast steht, aber die Kapazität liegt weit unter der von Netzen am Boden, und Zahlen zum Maschinenverkehr (IoT) nennt die Quelle nicht. Es ist Anbindung, keine KI."),
+    E("Wikipedia: Starlink (Direct to Cell)","Wikipedia: Starlink (Direct to Cell)"),
+    "note", E("IoT use not documented","IoT-Nutzung nicht belegt"))
 ];
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Agent-to-agent protocol (A2A)":"https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents",
+  "Model Context Protocol (MCP)":"https://en.wikipedia.org/wiki/Model_Context_Protocol",
+  "Agent payments (AP2, ACP)":"https://ap2-protocol.org",
+  "Catena-X automotive data space":"https://catena-x.net/en/",
+  "EU digital battery passport":"https://en.wikipedia.org/wiki/Battery_passport",
+  "Paperless freight documents (eFTI)":"https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/efti-regulation_en",
+  "Electronic bill of lading (eBL)":"https://dcsa.org/standards/bill-of-lading",
+  "Supply-chain event data (GS1 EPCIS 2.0)":"https://en.wikipedia.org/wiki/EPCIS",
+  "Machine-to-machine language (OPC UA)":"https://en.wikipedia.org/wiki/OPC_Unified_Architecture",
+  "Vehicle-to-everything radio (C-V2X)":"https://en.wikipedia.org/wiki/Cellular_V2X",
+  "Satellite direct-to-device link":"https://en.wikipedia.org/wiki/Starlink",
   "AI container terminals":"https://www.chinadaily.com.cn/a/202512/12/WS693b6f4ba310d6866eb2e434.html",
   "Federated learning across hospitals":"https://www.bio-itworld.com/news/2023/01/17/global-federated-machine-learning-model-detects-glioblastoma-borders",
   "Distributed inference across local machines":"https://ar5iv.labs.arxiv.org/html/2209.01188",
@@ -1906,6 +1998,32 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Agent-to-agent protocol (A2A)":[
+    {n:"Google", u:"https://a2a-protocol.org"},
+    {n:"Linux Foundation", u:"https://www.linuxfoundation.org/"}],
+  "Model Context Protocol (MCP)":[
+    {n:"Anthropic", u:"https://modelcontextprotocol.io"},
+    {n:"Linux Foundation", u:"https://www.linuxfoundation.org/"}],
+  "Agent payments (AP2, ACP)":[
+    {n:"Google AP2", u:"https://ap2-protocol.org"},
+    {n:"OpenAI / Stripe ACP", u:"https://agenticcommerce.dev"}],
+  "Catena-X automotive data space":[
+    {n:"Catena-X", u:"https://catena-x.net/en/"}],
+  "EU digital battery passport":[
+    {n:"European Commission (ESPR)", u:"https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"}],
+  "Paperless freight documents (eFTI)":[
+    {n:"European Commission", u:"https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/efti-regulation_en"}],
+  "Electronic bill of lading (eBL)":[
+    {n:"DCSA", u:"https://dcsa.org"}],
+  "Supply-chain event data (GS1 EPCIS 2.0)":[
+    {n:"GS1", u:"https://www.gs1.org/standards/epcis"}],
+  "Machine-to-machine language (OPC UA)":[
+    {n:"OPC Foundation", u:"https://opcfoundation.org"}],
+  "Vehicle-to-everything radio (C-V2X)":[
+    {n:"3GPP", u:"https://www.3gpp.org"}],
+  "Satellite direct-to-device link":[
+    {n:"SpaceX Starlink", u:"https://www.starlink.com/business/direct-to-cell"},
+    {n:"T-Mobile US", u:"https://www.t-mobile.com/"}],
   "AI container terminals":[
     {n:"PSA", u:"https://www.globalpsa.com/"},
     {n:"SIPG", u:"https://www.portshanghai.com.cn/en/"}],
@@ -2578,6 +2696,9 @@ function zeichneLuecken(){
 
 // ---- cluster translations (keyed by cluster number n) ----
 const MN_CL = {
+  18:{short:"харилцаа холбоо", title:"Машин, компани, ачаа хэрхэн харилцдаг вэ",
+     kern:"Самбарын бусад хэсэг харилцдаг суваг: компани хооронд хэлэлцдэг хиймэл оюуны агент, нэгдсэн өгөгдлийн орон зай, дижитал бүтээгдэхүүний паспорт, цаасгүй ачааны баримт, машин ба тээврийн хэрэгслийн радио.",
+     verdict:"Ихэвчлэн стандарт ба хууль, хиймэл оюун биш; хиймэл оюун нь эдгээр сувгийг ашигладаг агент ба загварт байдаг. Огноо тодорхой, тархалтын тоо сул."},
   17:{short:"дотоод ажлын станц", title:"Дотоод ажлын станц дээрх хиймэл оюун",
      kern:"Хэл, зураг, баримт бичиг, сегментчлэлийн загварууд ширээн доорх нэг GPU дээр: зураг, файл, бичиг баримт өрөөнөөс гардаггүй, интернэтгүй ажилладаг, дараалал байхгүй, токен эсвэл зураг тутамд үнэ байхгүй.",
      verdict:"Нээлттэй загварууд одоо 16–24 GB-д багтдаг. Давуу тал нь нууцлал ба нэмэлт зардалгүй байдал; хязгаар нь нэг GPU — сургалт, том цувралыг HPC эсвэл үүлэнд хийсээр байна."},
@@ -2628,6 +2749,72 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Agent-to-agent protocol (A2A)":{
+    name:"Компаниуд хоорондын агентын протокол (A2A)",
+    glab:"2025 онд Google-ийн төслөөс Linux Foundation-ийн стандарт болсон",
+    metric:"<b>100 гаруй</b> технологийн компани дэмждэг",
+    detail:"A2A нь өөр өөр үйлдвэрлэгчийн хиймэл оюуны агентуудыг бие биенээ олж, мэдээллээ аюулгүй солилцох боломжийг олгодог нээлттэй протокол юм. Протокол өөрөө зөвхөн мессежийн стандарт; хиймэл оюун нь түүнийг ашигладаг агентуудад байдаг. 2025 оны 6-р сард Linux Foundation-д шилжсэн. Бодит ашиглалтын тоо эх сурвалжид байхгүй.",
+    flag:"дэмжигч ≠ ашиглалт"},
+  "Model Context Protocol (MCP)":{
+    name:"Model Context Protocol (MCP)",
+    glab:"таван сарын дотор OpenAI, Google хүлээн авсан",
+    metric:"2026 оны дунд гэхэд сард <b>97 сая</b> удаа татагдсан (мэдээллээр)",
+    detail:"MCP нь хиймэл оюуны загваруудыг хэрэгсэл, өгөгдлийн эх үүсвэр, байгууллагын системтэй нэг маягаар холбодог нээлттэй стандарт юм. 2024 оны 11-р сард Anthropic танилцуулж, 2025 онд OpenAI, Google хүлээн авсан. 2026 оны дунд гэхэд 10,000 гаруй MCP сервер ажиллаж байгаа гэж мэдээлэгдсэн; эдгээр тоо хоёрдогч эх сурвалжийнх.",
+    flag:"ашиглалтын тоо хоёрдогч"},
+  "Agent payments (AP2, ACP)":{
+    name:"Хиймэл оюуны агентын төлбөр (AP2, ACP)",
+    glab:"2025 оны 9-р сараас хоёр нээлттэй стандарт",
+    metric:"AP2 <b>2025.09.16</b>-нд танилцуулагдсан; ChatGPT анх ACP ашигласан",
+    detail:"Google-ийн AP2 болон OpenAI–Stripe-ийн ACP нь хиймэл оюуны агентуудад хэрэглэгчийн зөвшөөрлөөр худалдан авалт хийх боломж олгох нээлттэй стандартууд юм. Хоёулаа протокол, хиймэл оюун биш; гүйлгээний тоо эх сурвалжид байхгүй.",
+    flag:"эрт шат; тоо байхгүй"},
+  "Catena-X automotive data space":{
+    name:"Catena-X: автомашины салбарын өгөгдлийн орон зай",
+    glab:"үүсгэн байгуулагдсанаас хойш гишүүд 5 дахин өссөн",
+    metric:"Сүлжээнд <b>1,000 гаруй</b> компани (2026 оны 9-р сар)",
+    detail:"Catena-X нь автомашин үйлдвэрлэгч болон нийлүүлэгчдэд өгөгдлөө өөрийн хяналтад байлгангаа нэгдсэн стандартаар солилцох боломж олгодог. Нэг чанарын жишээнд BMW, Bosch, Denso алдааг дөрвөн сарын өмнө илрүүлсэн.",
+    flag:"ажиллаж буй сүлжээ; үр дүнг оператор өөрөө мэдээлсэн"},
+  "EU digital battery passport":{
+    name:"ЕХ-ны дижитал батарейн паспорт",
+    glab:"2027 оны 2-р сараас заавал; бусад бүтээгдэхүүн дараа нь",
+    metric:"<b>2027.02.18</b>-аас цахилгаан машин болон 2 кВт.ц-аас дээш үйлдвэрийн батарейд заавал",
+    detail:"2027 оны 2-р сарын 18-аас цахилгаан машин болон 2 кВт.ц-аас дээш багтаамжтай үйлдвэрийн батарей бүр машин уншиж болох дижитал паспорттой байх ёстой. Энэ нь бусад бүтээгдэхүүнд хэрэгжих дижитал паспортын эхний тохиолдол юм; хиймэл оюун заавал биш.",
+    flag:"хуулиар тогтоосон огноо"},
+  "Paperless freight documents (eFTI)":{
+    name:"Цаасгүй ачааны баримт (eFTI)",
+    glab:"2027 оны 7-р сараас эрх бүхий байгууллага цахим өгөгдлийг хүлээн авах үүрэгтэй",
+    metric:"ЕХ-ны тээвэр, логистикт жилд ойролцоогоор <b>1 тэрбум евро</b> хэмнэлт хүлээгдэж байна",
+    detail:"eFTI журам нь ачааны цаасан баримтыг цахим өгөгдлөөр орлуулдаг. 2027 оны 7-р сарын 9-өөс ЕХ-ны гишүүн орнуудын эрх бүхий байгууллагууд баталгаажсан платформоор ирсэн цахим мэдээллийг хүлээн авах ёстой. Энэ нь хууль ба өгөгдлийн стандарт, хиймэл оюун биш.",
+    flag:"хэмнэлт нь Комиссын таамаг"},
+  "Electronic bill of lading (eBL)":{
+    name:"Цахим ачааны тасалбар (eBL)",
+    glab:"чингэлэг худалдааны ~75%-ийг эзэлдэг тээвэрлэгчдийн нэгдсэн стандарт",
+    metric:"Бүрэн шилжвэл ойролцоогоор <b>18 тэрбум доллар</b>-ын үр ашиг (McKinsey тооцоо)",
+    detail:"DCSA нь ачааны тасалбарыг цаасан бус өгөгдлөөр солилцох нээлттэй стандарт гаргадаг; гишүүн 10 тээвэрлэгч нь дэлхийн чингэлэг худалдааны 75 орчим хувийг эзэлдэг. Энэ нь өгөгдлийн стандарт, хиймэл оюун биш.",
+    flag:"ашиглалтын хувь байхгүй; үр ашиг тооцоо"},
+  "Supply-chain event data (GS1 EPCIS 2.0)":{
+    name:"Нийлүүлэлтийн сүлжээний үйл явдлын өгөгдөл (GS1 EPCIS 2.0)",
+    glab:"RFID стандартаас (2007) ерөнхий ил тод байдлын стандарт болсон",
+    metric:"EPCIS 2.0, CBV 2.0 <b>2022 оны 6-р сард</b> батлагдсан",
+    detail:"EPCIS нь худалдааны түншүүдэд барааны тээвэрлэлт, хүлээн авалт зэрэг үйл явдлыг нэг форматаар солилцох боломж олгодог GS1 стандарт юм. Энэ нь өгөгдлийн стандарт боловч таамаглалын загварт оролт болдог.",
+    flag:"одоогийн тархалтын тоо байхгүй"},
+  "Machine-to-machine language (OPC UA)":{
+    name:"Машин хоорондын нийтлэг хэл (OPC UA)",
+    glab:"60 гаруй төрлийн төхөөрөмжийн өгөгдлийн загвар",
+    metric:"<b>60 гаруй</b> төрлийн төхөөрөмжид үнэгүй өгөгдлийн загвар",
+    detail:"OPC UA (IEC 62541) нь өөр өөр үйлдвэрлэгчийн машин, мэдрэгч, IT системүүдэд өгөгдлөө нэг утгаар солилцох боломж олгодог нээлттэй стандарт юм. Хиймэл оюуны хувьд үйлдвэрийн өгөгдөл загварт хүрэх ердийн зам.",
+    flag:"боломжуулагч, хиймэл оюун биш"},
+  "Vehicle-to-everything radio (C-V2X)":{
+    name:"Машины бүх зүйлтэй холбогдох радио (C-V2X)",
+    glab:"АНУ 2020 онд тусгай давтамж олгосон",
+    metric:"2024 оны дунд гэхэд зах зээлд <b>50 гаруй</b> C-V2X төхөөрөмж",
+    detail:"C-V2X нь машин, замын дэд бүтэц, явган зорчигчийн хооронд сүлжээгүйгээр шууд мессеж дамжуулах 3GPP стандарт юм. Энэ нь радио стандарт, хиймэл оюун биш.",
+    flag:"Хятадын тоо байхгүй"},
+  "Satellite direct-to-device link":{
+    name:"Хиймэл дагуулаас төхөөрөмж рүү шууд холболт",
+    glab:"SMS туршилтаас (2024.01) олон операторын үйлчилгээ болсон",
+    metric:"Starlink-ээр анхны SMS <b>2024.01.08</b>-нд",
+    detail:"Starlink-ийн энэ үйлчилгээ нь энгийн LTE утсыг тусгай төхөөрөмжгүйгээр хиймэл дагуултай холбодог. Машин, логистикийн хувьд цамхаггүй газарт холболт өгөх боломж, гэхдээ багтаамж бага, IoT-ийн тоо эх сурвалжид байхгүй.",
+    flag:"IoT хэрэглээ нотлогдоогүй"},
   "AI container terminals":{
     name:"Контейнер терминал дахь хиймэл оюун",
     glab:"Хиймэл оюун хөлөг ачих, овоолохыг төлөвлөдөг; хамгийн том боомтуудад автомат ачааны машин контейнер зөөдөг",
