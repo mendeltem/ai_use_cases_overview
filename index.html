@@ -96,6 +96,7 @@
   .cl-head{display:flex; gap:15px; align-items:baseline; padding:20px 0 11px; border-top:1px solid var(--line); margin-top:10px}
   .cl-num{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:24px; color:var(--petrol); line-height:1; min-width:34px}
   .cl-meta{flex:1}
+  .cl-img{margin:4px 0 14px; max-width:440px} .cl-img a{display:block} .cl-img img{width:100%; height:auto; display:block; border-radius:8px; border:1px solid var(--line)}
   .cl-title{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin:0 0 3px; letter-spacing:-.01em}
   .cl-kern{font-size:13px; color:var(--ink-soft); margin:0}
   .cl-verdict{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.02em; color:var(--ink-faint); background:var(--surface-2); border:1px solid var(--line); padding:6px 11px; border-radius:7px; max-width:230px; line-height:1.4}
@@ -432,6 +433,9 @@ const GROW = {
 const GROW_LABELS = {en:{explosive:"Explosive",strong:"Strong",steady:"Steady",nascent:"Nascent"}, de:{explosive:"Explosiv",strong:"Stark",steady:"Stetig",nascent:"Anlaufend"}, mn:{explosive:"Тэсрэлт",strong:"Хүчтэй",steady:"Тогтвортой",nascent:"Эхлэл"}};
 
 // cat: phys | soft | infra
+/* Sektor-Bilder: je Sektor ein 5x5-Raster, generiert mit offenem Bildmodell (Apache 2.0).
+   Fehlt ein Eintrag, zeigt der Sektor kein Bild. */
+const CLUSTER_IMG = {1:"images/sector_01.webp"};
 const CLUSTERS = [
   {n:1, cat:"phys", short:{en:"mobility & transport",de:"Mobilität & Transport"},
     title:{en:"Mobility & transport",de:"Mobilität & Transport"},
@@ -3157,7 +3161,7 @@ function buildBoard(){
         '<div class="cl-num">'+String(c.n).padStart(2,'0')+'</div>'+
         '<div class="cl-meta"><h2 class="cl-title">'+T(c.title)+'<span class="cl-tag '+c.cat+'">'+catLabel+'</span></h2><p class="cl-kern">'+T(c.kern)+'</p></div>'+
         '<div class="cl-verdict">'+T(c.verdict)+'</div>'+
-      '</div><div class="grid">'+cards+'</div></section>';
+      '</div>'+(CLUSTER_IMG[c.n]?'<figure class="cl-img"><a href="'+CLUSTER_IMG[c.n]+'" target="_blank" rel="noopener"><img src="'+CLUSTER_IMG[c.n]+'" alt="'+T(c.title)+'" loading="lazy" width="1024" height="1024"></a></figure>':'')+'<div class="grid">'+cards+'</div></section>';
   }).join('');
 
   board.querySelectorAll('.card-btn').forEach(function(btn){
