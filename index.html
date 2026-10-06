@@ -1254,15 +1254,25 @@ const UC = [
     "note", E("Analyst growth rates without unit counts; privacy backlash unresolved",
       "Analysten-Wachstumsraten ohne Stückzahlen; Datenschutzkritik ungelöst")),
 
-  U(14,"Be My Eyes / Be My AI, Meta glasses","early",2,"steady",
-    E("Visual assistance for blind users","Sehassistenz für blinde Menschen"),
-    E("1M+ blind and low-vision users, 10M+ volunteers; hands-free via glasses","Über 1 Mio. blinde und sehbehinderte Nutzer, über 10 Mio. Freiwillige; freihändig über die Brille"),
+  U(14,"Be My Eyes, Meta glasses","prod",2,"steady",
+    E("Be My Eyes","Be My Eyes"),
+    E("Volunteer sees through the user's glasses; 1M+ blind users, 10M+ volunteers","Freiwillige sehen durch die Brille der Nutzer; über 1 Mio. blinde Nutzer, über 10 Mio. Freiwillige"),
     E("<b>1M+</b> blind and low-vision users, <b>10M+</b> volunteers in 150+ countries (Mar 2026)","<b>&gt;1 Mio.</b> blinde und sehbehinderte Nutzer, <b>&gt;10 Mio.</b> Freiwillige in über 150 Ländern (März 2026)"),
-    E("Probably the use case where AI glasses help most. Be My Eyes began as a video call to a sighted volunteer; Be My AI added a vision model that describes a photo or a scene on demand, and since late 2024 the call can be started by voice from Ray-Ban Meta glasses, later Oakley Meta too, so the volunteer sees through the wearer's eyes while both hands stay free for a cane, a guide dog or the shopping. Reading post, checking an expiry date, finding a door - tasks that used to need another person present. In March 2026 the service reported more than one million blind and low-vision users and over ten million volunteers across 150+ countries and 180 languages. Read carefully: these are the company's own registration counts, not active users, and there is no published outcome study measuring independence or safety; vision models can also describe confidently and wrongly, which matters more for a user who cannot check.",
-      "Wohl der Einsatz, bei dem KI-Brillen am meisten helfen. Be My Eyes begann als Videoanruf bei einer sehenden freiwilligen Person; Be My AI ergänzte ein Bildmodell, das ein Foto oder eine Szene auf Zuruf beschreibt, und seit Ende 2024 lässt sich der Anruf per Sprache aus der Ray-Ban-Meta-Brille starten, später auch aus Oakley Meta - die freiwillige Person sieht durch die Augen der Trägerin oder des Trägers, beide Hände bleiben frei für Stock, Blindenhund oder Einkauf. Post lesen, ein Haltbarkeitsdatum prüfen, eine Tür finden - Aufgaben, für die früher jemand daneben stehen musste. Im März 2026 meldete der Dienst über eine Million blinde und sehbehinderte Nutzer und über zehn Millionen Freiwillige in mehr als 150 Ländern und 180 Sprachen. Genau lesen: Das sind Registrierungszahlen des Unternehmens, keine aktiven Nutzer, und es gibt keine veröffentlichte Ergebnisstudie zu Selbstständigkeit oder Sicherheit; Bildmodelle können zudem überzeugt und falsch beschreiben, was für jemanden, der nicht nachprüfen kann, schwerer wiegt."),
-    E("Be My Eyes press release (12 Mar 2026); Be My Eyes on Ray-Ban Meta","Be-My-Eyes-Pressemitteilung (12.3.2026); Be My Eyes auf Ray-Ban Meta"),
+    E("The human half of the service, and the reason it has a network to build AI on. A blind or low-vision user starts a video call and a sighted volunteer, matched by language, looks through the camera and talks them through the task: reading post, checking an expiry date, finding a door. Since late 2024 the call can be started by voice from Ray-Ban Meta glasses, later Oakley Meta too, so the volunteer sees through the wearer's eyes while both hands stay free for a cane, a guide dog or the shopping. In March 2026 the service reported more than one million blind and low-vision users and over ten million volunteers across 150+ countries and 180 languages; in January 2025 it put combined AI and video requests at more than 43 million a year. Read carefully: these are the company's own registration counts, not active users - volunteers far outnumber callers, and many never get a call - and there is no published outcome study on independence or safety.",
+      "Die menschliche Hälfte des Dienstes und der Grund, warum es ein Netzwerk gibt, auf dem KI aufbauen kann. Eine blinde oder sehbehinderte Person startet einen Videoanruf, eine sehende freiwillige Person, nach Sprache vermittelt, schaut durch die Kamera und führt durch die Aufgabe: Post lesen, ein Haltbarkeitsdatum prüfen, eine Tür finden. Seit Ende 2024 lässt sich der Anruf per Sprache aus der Ray-Ban-Meta-Brille starten, später auch aus Oakley Meta - die freiwillige Person sieht durch die Augen der Trägerin oder des Trägers, beide Hände bleiben frei für Stock, Blindenhund oder Einkauf. Im März 2026 meldete der Dienst über eine Million blinde und sehbehinderte Nutzer und über zehn Millionen Freiwillige in mehr als 150 Ländern und 180 Sprachen; im Januar 2025 bezifferte er KI- und Videoanfragen zusammen auf über 43 Mio. im Jahr. Genau lesen: Das sind Registrierungszahlen des Unternehmens, keine aktiven Nutzer - Freiwillige gibt es weit mehr als Anrufende, viele bekommen nie einen Anruf - und es gibt keine veröffentlichte Ergebnisstudie zu Selbstständigkeit oder Sicherheit."),
+    E("Be My Eyes press releases (15 Jan 2025, 12 Mar 2026); Be My Eyes on Ray-Ban Meta","Be-My-Eyes-Pressemitteilungen (15.1.2025, 12.3.2026); Be My Eyes auf Ray-Ban Meta"),
     "note", E("Company registration counts, not active users; no outcome study",
       "Registrierungszahlen des Unternehmens, keine aktiven Nutzer; keine Ergebnisstudie")),
+
+  U(14,"Be My Eyes (Be My AI), OpenAI","prod",2,"strong",
+    E("Be My AI","Be My AI"),
+    E("Vision-language model describes photos for blind users; 1M sessions within weeks of launch","Bild-Sprach-Modell beschreibt Fotos für blinde Nutzer; 1 Mio. Sitzungen wenige Wochen nach Start"),
+    E("<b>1M sessions</b> within weeks of the 2023 open beta; now <b>millions of requests a month</b>","<b>1 Mio. Sitzungen</b> wenige Wochen nach der offenen Beta 2023; heute <b>Millionen Anfragen im Monat</b>"),
+    E("The AI half: instead of waiting for a volunteer, the user takes a photo and a multimodal model built with OpenAI describes it in detail and answers follow-up questions - what does this label say, which button is the dryer, is the stain still there. Be My AI went into open beta on iOS in 2023 on GPT-4's vision capability and passed one million sessions within a few weeks; by January 2025 the company said it serves millions of requests a month. It was the first visual assistant of this kind built for blind users and is the reference case for what multimodal models change in daily accessibility. Read carefully: usage figures are the company's own; research on how blind people use it, including a CMU study at the VizWiz workshop (CVPR 2024), shows that the photos they take are often blurred or off-centre, and the model can describe confidently what is not there - a user who cannot see has no way to check, which is why the app keeps the human volunteer one tap away.",
+      "Die KI-Hälfte: Statt auf eine freiwillige Person zu warten, macht die Nutzerin oder der Nutzer ein Foto, und ein mit OpenAI gebautes multimodales Modell beschreibt es ausführlich und beantwortet Rückfragen - was steht auf diesem Etikett, welcher Knopf ist der Trockner, ist der Fleck noch da. Be My AI startete 2023 als offene Beta auf iOS auf Basis der Bildfähigkeit von GPT-4 und überschritt binnen weniger Wochen eine Million Sitzungen; im Januar 2025 sprach das Unternehmen von Millionen Anfragen im Monat. Es war der erste visuelle Assistent dieser Art für blinde Menschen und ist der Referenzfall dafür, was multimodale Modelle im Alltag der Barrierefreiheit ändern. Genau lesen: Die Nutzungszahlen stammen vom Unternehmen; Forschung dazu, wie blinde Menschen es nutzen, darunter eine CMU-Studie beim VizWiz-Workshop (CVPR 2024), zeigt, dass ihre Fotos oft unscharf oder verrutscht sind, und das Modell kann überzeugt beschreiben, was nicht da ist - wer nicht sieht, kann das nicht prüfen; deshalb bleibt die freiwillige Person in der App nur einen Tipp entfernt."),
+    E("Be My Eyes: one million Be My AI sessions (2023), 10-year release (15 Jan 2025); CMU, VizWiz @ CVPR 2024","Be My Eyes: eine Million Be-My-AI-Sitzungen (2023), Mitteilung zum 10-Jährigen (15.1.2025); CMU, VizWiz @ CVPR 2024"),
+    "note", E("Usage is company-reported; confident wrong descriptions are the known failure mode",
+      "Nutzung ist Firmenangabe; überzeugt falsche Beschreibungen sind die bekannte Fehlerart")),
 
   U(14,"Husqvarna, Segway, Mammotion","early",2,"strong",
     E("Robotic lawn mowers","Mähroboter"),
@@ -1320,7 +1330,8 @@ const UC = [
 const URLS = {
   "VR pain therapy":"https://www.jmir.org/2022/5/e37480/PDF",
   "AI smart glasses":"https://9to5google.com/2026/09/22/smart-glasses-growth-h1-2026/",
-  "Visual assistance for blind users":"https://www.bemyeyes.com/news/be-my-eyes-reaches-1-million-blind-and-low-vision-users-and-10-million-volunteers/",
+  "Be My Eyes":"https://www.bemyeyes.com/news/be-my-eyes-reaches-1-million-blind-and-low-vision-users-and-10-million-volunteers/",
+  "Be My AI":"https://bemyeyes.com/blog/one-million-sessions-be-my-ai",
   "Stroke triage AI":"https://neuronewsinternational.com/report-finds-improved-thrombectomy-access-at-nhs-hospitals-using-brainomixs-ai-technology/",
   "Brain MRI lesion segmentation & volumetry":"https://appliedradiology.com/articles/icometrix-nets-fda-clearance-for-ai-based-aria-diagnosis-and-monitoring-solution",
   "Brain age estimation":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12633945/",
@@ -1430,7 +1441,9 @@ const COMPANIES = {
   "AI smart glasses":[
     {n:"Meta", u:"https://www.meta.com/ai-glasses/"},
     {n:"Android XR", u:"https://www.android.com/xr/"}],
-  "Visual assistance for blind users":[
+  "Be My Eyes":[
+    {n:"Be My Eyes", u:"https://www.bemyeyes.com/"}],
+  "Be My AI":[
     {n:"Be My Eyes", u:"https://www.bemyeyes.com/"}],
   "Stroke triage AI":[
     {n:"Viz.ai", u:"https://www.viz.ai/"},
@@ -1849,7 +1862,8 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
 const COMPUTE = {
   "VR pain therapy":[1,"edge"],
   "AI smart glasses":[2,"inf"],
-  "Visual assistance for blind users":[1,"inf"],
+  "Be My Eyes":[1,"inf"],
+  "Be My AI":[2,"inf"],
   "Stroke triage AI":[1,"inf"],
   "Brain MRI lesion segmentation & volumetry":[1,"inf"],
   "Brain age estimation":[1,"train"],
@@ -2054,12 +2068,18 @@ const MN_UC = {
     metric:"Хиймэл оюунтай нүдний шилний нийлүүлэлт <b>+263%</b> (2026 оны 1-р хагас); Meta <b>94%</b> хувьтай",
     detail:"Энгийн харагдах хүрээнд камер, микрофон, нээлттэй чанга яригч суулгаж, олон модалын туслахтай холбосон: юу харж байгаагаа асуух, цэсийг уншуулах, чихэндээ шууд орчуулга сонсох (Meta англи, франц, герман, итали, испани, португал хэлийг дэмждэг), гар чөлөөтэй зураг авах, ярих, машинаа хаана тавьснаа санууллах. Хиймэл оюуны тоног төхөөрөмж хэрэглэгчдэд бодитоор хүрч байгаа газар нь энэ, VR толгойн төхөөрөмж биш: Counterpoint-ийн тооцоогоор 2026 оны эхний хагаст нийлүүлэлт өмнөх оноос 263% өссөн, 96% нь дэлгэцгүй, Meta 94%, Xiaomi, Alibaba тус бүр 1%. Meta-ийн дэлгэцтэй Ray-Ban Display 2025.9.30-наас АНУ-д худалдаалагдаж байгаа, 2026 оны 6-р сард 299 доллараас эхэлсэн Meta Glasses гарсан. Samsung, Google нар Gemini-тэй Android XR нүдний шил гаргаж байна; Galaxy XR толгойн төхөөрөмж (1,799 доллар) хүнд талыг харуулдаг бөгөөд үнэ нь хэрэглээнээс давдаг тул толгойн төхөөрөмж явцуу зах зээл хэвээр байна. Анхааралтай унших: Counterpoint зөвхөн өсөлтийн хувийг нийтэлдэг, тоо ширхэгийг биш, тиймээс суурь нь тодорхойгүй; нүүрэн дээрх камер зөвшөөрөлгүйгээр бусдыг бичдэг тул хувийн нууцын шүүмжлэлийг тасралтгүй дагуулдаг.",
     flag:"шинжээчийн өсөлтийн хувь, тоо ширхэггүй; хувийн нууцын шүүмжлэл шийдэгдээгүй"},
-  "Visual assistance for blind users":{
-    name:"Хараагүй хүмүүст зориулсан харааны туслалцаа",
-    glab:"1 сая гаруй хараагүй, сул хараатай хэрэглэгч, 10 сая гаруй сайн дурынхан; нүдний шилээр гар чөлөөтэй",
+  "Be My Eyes":{
+    name:"Be My Eyes",
+    glab:"Сайн дурын хүн хэрэглэгчийн нүдний шилээр хардаг; 1 сая+ хараагүй хэрэглэгч, 10 сая+ сайн дурынхан",
     metric:"<b>1 сая+</b> хараагүй, сул хараатай хэрэглэгч, 150+ улсад <b>10 сая+</b> сайн дурынхан (2026.3)",
-    detail:"Хиймэл оюунтай нүдний шил хамгийн их тус болдог тохиолдол байж магадгүй. Be My Eyes нь хараатай сайн дурын хүнтэй видео дуудлагаар эхэлсэн; Be My AI нь зураг эсвэл орчныг хүссэн үед тайлбарладаг харааны загвар нэмсэн, 2024 оны сүүлээс дуудлагыг Ray-Ban Meta, дараа нь Oakley Meta нүдний шилнээс дуугаар эхлүүлж болдог болсон - сайн дурын хүн зүүсэн хүний нүдээр хардаг, хоёр гар нь таяг, хөтөч нохой эсвэл худалдан авалтад чөлөөтэй үлддэг. Шуудан унших, хүчинтэй хугацаа шалгах, хаалга олох - урьд нь хажууд нь хүн байх шаардлагатай байсан ажлууд. 2026 оны 3-р сард үйлчилгээ 150 гаруй улс, 180 хэлээр нэг сая гаруй хараагүй, сул хараатай хэрэглэгч, арван сая гаруй сайн дурынхантай болсноо мэдээлсэн. Анхааралтай унших: эдгээр нь компанийн бүртгэлийн тоо, идэвхтэй хэрэглэгч биш, бие даасан байдал, аюулгүй байдлыг хэмжсэн нийтлэгдсэн үр дүнгийн судалгаа байхгүй; харааны загвар итгэлтэйгээр буруу тайлбарлаж болох бөгөөд энэ нь шалгаж чадахгүй хэрэглэгчид илүү чухал.",
+    detail:"Үйлчилгээний хүний хагас бөгөөд хиймэл оюуныг дээр нь бүтээх сүлжээтэй болсны шалтгаан. Хараагүй эсвэл сул хараатай хэрэглэгч видео дуудлага эхлүүлж, хэлээр нь тохируулсан хараатай сайн дурын хүн камераар харж ажлыг нь хийхэд тусалдаг: шуудан унших, хүчинтэй хугацаа шалгах, хаалга олох. 2024 оны сүүлээс дуудлагыг Ray-Ban Meta, дараа нь Oakley Meta нүдний шилнээс дуугаар эхлүүлж болдог болсон - сайн дурын хүн зүүсэн хүний нүдээр хардаг, хоёр гар нь таяг, хөтөч нохой эсвэл худалдан авалтад чөлөөтэй үлддэг. 2026 оны 3-р сард үйлчилгээ 150 гаруй улс, 180 хэлээр нэг сая гаруй хараагүй, сул хараатай хэрэглэгч, арван сая гаруй сайн дурынхантай болсноо мэдээлсэн; 2025 оны 1-р сард хиймэл оюун ба видео хүсэлтийг нийлээд жилд 43 саяас дээш гэж тооцсон. Анхааралтай унших: эдгээр нь компанийн бүртгэлийн тоо, идэвхтэй хэрэглэгч биш - сайн дурынхан дуудлага хийгчдээс хамаагүй олон, ихэнх нь хэзээ ч дуудлага авдаггүй - бие даасан байдал, аюулгүй байдлын нийтлэгдсэн үр дүнгийн судалгаа байхгүй.",
     flag:"компанийн бүртгэлийн тоо, идэвхтэй хэрэглэгч биш; үр дүнгийн судалгаа байхгүй"},
+  "Be My AI":{
+    name:"Be My AI",
+    glab:"Зураг-хэлний загвар хараагүй хэрэглэгчдэд зураг тайлбарладаг; гарснаас хэдхэн долоо хоногт 1 сая сесс",
+    metric:"2023 оны нээлттэй бета гарснаас хэдэн долоо хоногт <b>1 сая сесс</b>; одоо <b>сард сая сая хүсэлт</b>",
+    detail:"Хиймэл оюуны хагас: сайн дурын хүнийг хүлээхийн оронд хэрэглэгч зураг авч, OpenAI-тай хамтран бүтээсэн олон модалын загвар түүнийг дэлгэрэнгүй тайлбарлаж, нэмэлт асуултад хариулдаг - энэ шошгон дээр юу бичсэн бэ, аль товч нь хатаагч вэ, толбо арилсан уу. Be My AI 2023 онд GPT-4-ийн харааны чадвар дээр iOS-д нээлттэй бета хэлбэрээр гарч, хэдхэн долоо хоногт нэг сая сесс давсан; 2025 оны 1-р сард компани сард сая сая хүсэлтэд үйлчилж байна гэсэн. Энэ нь хараагүй хүмүүст зориулсан ийм төрлийн анхны харааны туслах бөгөөд олон модалын загвар хүртээмжийн өдөр тутмын амьдралд юуг өөрчилдгийн жишиг тохиолдол юм. Анхааралтай унших: хэрэглээний тоо компанийнх; хараагүй хүмүүс үүнийг хэрхэн ашигладаг талаарх судалгаа, тэр дундаа CMU-ийн VizWiz (CVPR 2024) судалгаа нь тэдний авсан зураг ихэвчлэн бүдэг эсвэл хазайсан байдгийг, загвар байхгүй зүйлийг итгэлтэйгээр тайлбарлаж болохыг харуулсан - харж чадахгүй хэрэглэгч шалгах боломжгүй тул апп сайн дурын хүнийг нэг товшилтын зайд байлгадаг.",
+    flag:"хэрэглээ компанийн мэдээлэл; итгэлтэйгээр буруу тайлбарлах нь мэдэгдэж буй алдаа"},
   "Stroke triage AI":{
     name:"Тархины харвалтын ангилалтын хиймэл оюун",
     glab:"NHS: 70 гаруй эмнэлэгт хиймэл оюун CT уншдаг; эдгээр газарт тромбэктомийн түвшин хоёр дахин өссөн",
