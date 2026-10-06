@@ -496,7 +496,11 @@ const CLUSTERS = [
   {n:16, cat:"phys", short:{en:"maintenance",de:"Instandhaltung"},
     title:{en:"Maintenance & upkeep",de:"Instandhaltung & Pflege"},
     kern:{en:"Cleaning, inspecting and repairing what already exists — roads, sewers, rails, solar parks, facades, rivers. Cheap cameras on vehicles that drive anyway, robots on fixed rails.",de:"Reinigen, prüfen und reparieren, was schon da ist — Straßen, Kanäle, Gleise, Solarparks, Fassaden, Flüsse. Günstige Kameras auf Fahrzeugen, die ohnehin fahren, Roboter auf festen Schienen."},
-    verdict:{en:"Detection is cheap and widely deployed; robots that repair are still pilots. Most figures vendor-reported.",de:"Erkennen ist günstig und verbreitet; Roboter, die reparieren, sind noch Piloten. Die meisten Zahlen vom Anbieter."}}
+    verdict:{en:"Detection is cheap and widely deployed; robots that repair are still pilots. Most figures vendor-reported.",de:"Erkennen ist günstig und verbreitet; Roboter, die reparieren, sind noch Piloten. Die meisten Zahlen vom Anbieter."}},
+  {n:17, cat:"infra", short:{en:"local workstation",de:"lokale Workstation"},
+    title:{en:"AI on the local workstation",de:"KI auf der lokalen Workstation"},
+    kern:{en:"Language, image and segmentation models on one GPU under the desk: the data never leaves the room, there is no queue and no price per token or image.",de:"Sprach-, Bild- und Segmentierungsmodelle auf einer GPU unter dem Schreibtisch: Die Daten verlassen den Raum nicht, es gibt keine Warteschlange und keinen Preis pro Token oder Bild."},
+    verdict:{en:"Open models now fit in 16–24 GB. The gain is privacy and zero marginal cost; the limit is one GPU — training and large batches still belong on HPC or in the cloud.",de:"Offene Modelle passen inzwischen in 16–24 GB. Der Gewinn ist Datenschutz und null Grenzkosten; die Grenze ist eine GPU — Training und große Serien gehören weiter auf HPC oder in die Cloud."}}
 ];
 
 // helper to keep entries compact: [cluster, prov, mat, q, growthTier, name{}, growLabel{}, metric{}, detail{}, src{}, flagT, flagX{}]
@@ -942,6 +946,37 @@ const UC = [
     E("Spears et al., Science (2025); van de Plassche et al., Phys. Plasmas (2020); Google DeepMind TORAX","Spears et al., Science (2025); van de Plassche et al., Phys. Plasmas (2020); Google DeepMind TORAX"),
     "good", E("NIF forecast and QLKNN speed-up are peer-reviewed; surrogates are only valid inside their training range",
       "NIF-Prognose und QLKNN-Beschleunigung sind begutachtet; Surrogate gelten nur innerhalb ihres Trainingsbereichs")),
+
+  // ---- Cluster 17: AI on the local workstation ----
+  U(17,"Ollama, llama.cpp; open models (gpt-oss, Qwen, Llama, Mistral)","prod",1,"explosive",
+    E("Local language models","Lokale Sprachmodelle"),
+    E("Chat and coding models run offline on one GPU; OpenAI's gpt-oss-20b fits in 16 GB","Chat- und Coding-Modelle laufen offline auf einer GPU; OpenAIs gpt-oss-20b passt in 16 GB"),
+    E("OpenAI <b>gpt-oss-20b</b> runs in <b>16 GB</b> (Apache 2.0); Ollama reported at <b>~52M</b> downloads a month (Q1 2026)","OpenAI <b>gpt-oss-20b</b> läuft in <b>16 GB</b> (Apache 2.0); Ollama laut Berichten bei <b>~52 Mio.</b> Downloads im Monat (Q1 2026)"),
+    E("A language model that runs on the machine under the desk: no data leaves the building, there is no bill per token and no queue. Tools such as Ollama and llama.cpp download a quantised model and serve it through an OpenAI-compatible API, so the same scripts work locally and in the cloud. The models have become good enough to matter: OpenAI's gpt-oss-20b (August 2025, Apache 2.0) is a mixture-of-experts model with 21B parameters, about 3.6B active per token, quantised to fit in 16 GB of memory; Qwen, Llama and Mistral families fill the range up to the 24-48 GB of a workstation card. Ollama raised a $65M Series B in July 2026; secondary reports put it at around 52 million downloads a month in Q1 2026. For a hospital or a lab this is the cleanest way to put a language model near patient data. Read carefully: local models are still below frontier cloud models on hard reasoning and long context, the adoption figures come from blog compilations rather than audited data, and the operator now owns updates, security and the GPU.",
+      "Ein Sprachmodell, das auf dem Rechner unter dem Schreibtisch läuft: Keine Daten verlassen das Gebäude, es gibt keine Rechnung pro Token und keine Warteschlange. Werkzeuge wie Ollama und llama.cpp laden ein quantisiertes Modell und stellen es über eine OpenAI-kompatible API bereit, sodass dieselben Skripte lokal und in der Cloud laufen. Die Modelle sind gut genug geworden, um zu zählen: OpenAIs gpt-oss-20b (August 2025, Apache 2.0) ist ein Mixture-of-Experts-Modell mit 21 Mrd. Parametern, davon rund 3,6 Mrd. aktiv pro Token, so quantisiert, dass es in 16 GB Speicher passt; Qwen-, Llama- und Mistral-Familien füllen den Bereich bis zu den 24-48 GB einer Workstation-Karte. Ollama sammelte im Juli 2026 65 Mio. $ in einer Series B ein; Sekundärberichte nennen für Q1 2026 rund 52 Mio. Downloads im Monat. Für eine Klinik oder ein Labor ist das der sauberste Weg, ein Sprachmodell nah an Patientendaten zu bringen. Genau lesen: Lokale Modelle liegen bei schwerem Schlussfolgern und langem Kontext weiter unter den besten Cloud-Modellen, die Verbreitungszahlen stammen aus Blog-Zusammenstellungen statt aus geprüften Daten, und Updates, Sicherheit und GPU liegen jetzt beim Betreiber."),
+    E("OpenAI gpt-oss model card (Aug 2025); Ollama Series B (Jul 2026); secondary download estimates","OpenAI-gpt-oss-Modellkarte (Aug. 2025); Ollama Series B (Juli 2026); Download-Schätzungen aus Sekundärquellen"),
+    "warn", E("Model facts are solid; adoption numbers come from secondary blog sources",
+      "Modelldaten sind solide; Verbreitungszahlen stammen aus Sekundärquellen")),
+
+  U(17,"Black Forest Labs (FLUX.2), Alibaba (Qwen-Image), ComfyUI","prod",2,"strong",
+    E("Local image generation","Lokale Bildgenerierung"),
+    E("Best open image model fits a 24 GB card at FP8; unlimited images for the cost of power","Bestes offenes Bildmodell passt in FP8 auf eine 24-GB-Karte; unbegrenzt Bilder zum Strompreis"),
+    E("FLUX.2 [dev] runs in <b>~24 GB</b> at FP8; Apache-2.0 alternatives from <b>12-16 GB</b>","FLUX.2 [dev] läuft in FP8 in <b>~24 GB</b>; Apache-2.0-Alternativen ab <b>12-16 GB</b>"),
+    E("Open image models now rival paid services on photorealism, text in the image and editing, and they run on one workstation GPU. FLUX.2 [dev] from Black Forest Labs, widely rated the strongest open model in 2026, fits a 24 GB card such as an RTX A5000 or 4090 at FP8 but carries a non-commercial licence; FLUX.2 [klein] 4B and Alibaba's Qwen-Image, both Apache 2.0, run from 12-16 GB and may be used commercially, Qwen-Image being the stronger at multilingual text. ComfyUI is the common front end: a node editor in the browser plus an HTTP API, so a script or an agent can submit a prompt and fetch the PNG. Against a paid API at roughly $0.04-0.24 per image, a local card pays off at volume and keeps unpublished material in-house. Read carefully: 'best open model' rankings come from guides and community comparisons, not a controlled benchmark; downloads are 10-30 GB per model; and the licence decides what the pictures may be used for.",
+      "Offene Bildmodelle reichen inzwischen bei Fotorealismus, Text im Bild und Bearbeitung an bezahlte Dienste heran und laufen auf einer Workstation-GPU. FLUX.2 [dev] von Black Forest Labs, 2026 weithin als stärkstes offenes Modell eingestuft, passt in FP8 auf eine 24-GB-Karte wie RTX A5000 oder 4090, hat aber eine nicht-kommerzielle Lizenz; FLUX.2 [klein] 4B und Alibabas Qwen-Image, beide Apache 2.0, laufen ab 12-16 GB und dürfen kommerziell genutzt werden, Qwen-Image ist bei mehrsprachigem Text stärker. ComfyUI ist die übliche Oberfläche: ein Knoten-Editor im Browser plus HTTP-API, sodass ein Skript oder Agent einen Prompt abschicken und das PNG abholen kann. Gegenüber einer bezahlten API mit grob 0,04-0,24 $ pro Bild rechnet sich eine lokale Karte bei Menge und hält unveröffentlichtes Material im Haus. Genau lesen: Ranglisten des 'besten offenen Modells' stammen aus Ratgebern und Community-Vergleichen, nicht aus einem kontrollierten Benchmark; Downloads sind 10-30 GB pro Modell; und die Lizenz entscheidet, wofür die Bilder verwendet werden dürfen."),
+    E("InsiderLLM and Digital Applied local-generation guides (2026); model licences on Hugging Face","Ratgeber InsiderLLM und Digital Applied zur lokalen Generierung (2026); Modelllizenzen auf Hugging Face"),
+    "note", E("VRAM and licence facts are firm; quality rankings are community judgement",
+      "VRAM- und Lizenzangaben sind fest; Qualitätsranglisten sind Community-Urteil")),
+
+  U(17,"TotalSegmentator (University Hospital Basel), nnU-Net (DKFZ)","prod",3,"steady",
+    E("Local medical image segmentation","Lokale Segmentierung medizinischer Bilder"),
+    E("Open models segment whole-body CT and MRI on a hospital workstation; no image leaves the clinic","Offene Modelle segmentieren Ganzkörper-CT und -MRT auf einer Klinik-Workstation; kein Bild verlässt die Klinik"),
+    E("TotalSegmentator: <b>80</b> structures on MRI at mean Dice <b>0.84</b>; CT version used by <b>300,000+</b>","TotalSegmentator: <b>80</b> Strukturen im MRT bei mittlerem Dice <b>0,84</b>; CT-Version mit <b>&gt;300.000</b> Nutzern"),
+    E("The clearest case for a local GPU in medicine: patient images may not leave the hospital, and segmentation models are small enough not to need a cluster. TotalSegmentator from University Hospital Basel, built on nnU-Net, is installed with pip and segments the major organs, bones and vessels of a whole-body scan in minutes on one card. The MRI version labels 80 anatomical structures across sequences with a mean Dice of 0.84 on its internal test set, significantly ahead of two other public models (Radiology, 2025); the CT version counts more than 300,000 users worldwide. Both are Apache 2.0 with public weights, so volumes for research - organ size, body composition, opportunistic screening - can be measured on the workstation next to the PACS export. Training a new nnU-Net on many cases is where the HPC comes back in. Read carefully: these are research tools, not certified medical devices, and accuracy drops on scanners and pathologies outside the training data.",
+      "Der klarste Fall für eine lokale GPU in der Medizin: Patientenbilder dürfen die Klinik nicht verlassen, und Segmentierungsmodelle sind klein genug, um keinen Cluster zu brauchen. TotalSegmentator vom Universitätsspital Basel, gebaut auf nnU-Net, wird per pip installiert und segmentiert Organe, Knochen und Gefäße eines Ganzkörperscans in Minuten auf einer Karte. Die MRT-Version erkennt 80 anatomische Strukturen über verschiedene Sequenzen mit einem mittleren Dice von 0,84 im internen Testset, deutlich vor zwei anderen öffentlichen Modellen (Radiology, 2025); die CT-Version zählt über 300.000 Nutzer weltweit. Beide stehen unter Apache 2.0 mit öffentlichen Gewichten, sodass Volumina für die Forschung - Organgröße, Körperzusammensetzung, opportunistisches Screening - auf der Workstation neben dem PACS-Export gemessen werden können. Ein neues nnU-Net auf vielen Fällen zu trainieren ist der Punkt, an dem der HPC wieder ins Spiel kommt. Genau lesen: Das sind Forschungswerkzeuge, keine zertifizierten Medizinprodukte, und die Genauigkeit sinkt bei Scannern und Pathologien außerhalb der Trainingsdaten."),
+    E("TotalSegmentator MRI, Radiology (2025), RSNA press release","TotalSegmentator MRI, Radiology (2025), RSNA-Pressemitteilung"),
+    "good", E("Peer-reviewed; research tool, not a certified medical device",
+      "Begutachtet; Forschungswerkzeug, kein zertifiziertes Medizinprodukt")),
 
   // ---- Cluster 8: knowledge-work agents (software) ----
   U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
@@ -1435,6 +1470,9 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Local language models":"https://huggingface.co/openai/gpt-oss-20b",
+  "Local image generation":"https://insiderllm.com/guides/flux-locally-complete-guide/",
+  "Local medical image segmentation":"https://www.rsna.org/media/press/i/2568",
   "Window & pool cleaning robots":"https://www.idc.com/?p=110440",
   "Road damage detection & repair":"https://www.motor1.com/news/712332/worlds-first-ai-powered-pothole-robot/",
   "River & ocean plastic cleanup":"https://en.wikipedia.org/wiki/The_Ocean_Cleanup",
@@ -1553,6 +1591,15 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Local language models":[
+    {n:"Ollama", u:"https://ollama.com/"},
+    {n:"llama.cpp", u:"https://github.com/ggml-org/llama.cpp"}],
+  "Local image generation":[
+    {n:"Black Forest Labs", u:"https://bfl.ai/"},
+    {n:"ComfyUI", u:"https://github.com/comfyanonymous/ComfyUI"}],
+  "Local medical image segmentation":[
+    {n:"TotalSegmentator", u:"https://github.com/wasserth/TotalSegmentator"},
+    {n:"nnU-Net", u:"https://github.com/MIC-DKFZ/nnUNet"}],
   "Window & pool cleaning robots":[
     {n:"Ecovacs", u:"https://www.ecovacs.com/"},
     {n:"Beatbot", u:"https://www.beatbot.com/"},
@@ -2005,6 +2052,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Local language models":[2,"edge"],
+  "Local image generation":[2,"edge"],
+  "Local medical image segmentation":[1,"edge"],
   "Window & pool cleaning robots":[1,"edge"],
   "Road damage detection & repair":[1,"inf"],
   "River & ocean plastic cleanup":[1,"inf"],
@@ -2167,6 +2217,9 @@ function zeichneLuecken(){
 
 // ---- cluster translations (keyed by cluster number n) ----
 const MN_CL = {
+  17:{short:"дотоод ажлын станц", title:"Дотоод ажлын станц дээрх хиймэл оюун",
+     kern:"Хэл, зураг, сегментчлэлийн загварууд ширээн доорх нэг GPU дээр: өгөгдөл өрөөнөөс гардаггүй, дараалал байхгүй, токен эсвэл зураг тутамд үнэ байхгүй.",
+     verdict:"Нээлттэй загварууд одоо 16–24 GB-д багтдаг. Давуу тал нь нууцлал ба нэмэлт зардалгүй байдал; хязгаар нь нэг GPU — сургалт, том цувралыг HPC эсвэл үүлэнд хийсээр байна."},
   16:{short:"засвар үйлчилгээ", title:"Засвар үйлчилгээ ба арчилгаа",
      kern:"Байгаа зүйлийг цэвэрлэх, шалгах, засах — зам, бохирын шугам, төмөр зам, нарны парк, фасад, гол мөрөн. Ямар ч байсан явдаг машин дээрх хямд камер, тогтмол төмөр зам дээрх робот.",
      verdict:"Илрүүлэлт хямд бөгөөд өргөн тархсан; засварын робот туршилтын шатанд. Ихэнх тоо нийлүүлэгчийнх."},
@@ -2214,6 +2267,24 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Local language models":{
+    name:"Дотоод хэлний загварууд",
+    glab:"Чат, код бичих загварууд нэг GPU дээр офлайн ажилладаг; OpenAI-ийн gpt-oss-20b 16 GB-д багтдаг",
+    metric:"OpenAI <b>gpt-oss-20b</b> <b>16 GB</b>-д ажилладаг (Apache 2.0); Ollama сард <b>~52 сая</b> татагдсан гэж мэдээлэгдсэн (2026 Q1)",
+    detail:"Ширээн доорх машин дээр ажилладаг хэлний загвар: өгөгдөл барилгаас гардаггүй, токен тутамд төлбөр, дараалал байхгүй. Ollama, llama.cpp зэрэг хэрэгсэл квантчилсан загварыг татаж, OpenAI-тэй нийцтэй API-аар үйлчилдэг тул ижил скрипт дотоод болон үүлэнд ажилладаг. Загварууд хангалттай сайн болсон: OpenAI-ийн gpt-oss-20b (2025.8, Apache 2.0) нь 21 тэрбум параметртэй, токен тутамд 3.6 тэрбум орчим идэвхтэй mixture-of-experts загвар бөгөөд 16 GB санах ойд багтахаар квантчилагдсан; Qwen, Llama, Mistral гэр бүлүүд ажлын станцын картын 24-48 GB хүртэлх мужийг дүүргэдэг. Ollama 2026 оны 7-р сард 65 сая долларын Series B босгосон; хоёрдогч эх сурвалжууд 2026 оны Q1-д сард 52 сая орчим татагдсан гэж мэдээлдэг. Эмнэлэг, лабораторийн хувьд энэ нь хэлний загварыг өвчтөний өгөгдөлд ойртуулах хамгийн цэвэр арга. Анхааралтай унших: дотоод загварууд хүнд сэтгэлгээ, урт контекст дээр шилдэг үүлэн загваруудаас доогуур хэвээр, тархалтын тоо баталгаажсан өгөгдөл биш блогийн нэгтгэлээс, шинэчлэл, аюулгүй байдал, GPU нь одоо операторын хариуцлага.",
+    flag:"загварын мэдээлэл бат; тархалтын тоо хоёрдогч блогийн эх сурвалжаас"},
+  "Local image generation":{
+    name:"Дотоод зураг үүсгэлт",
+    glab:"Шилдэг нээлттэй зургийн загвар FP8-аар 24 GB картад багтдаг; цахилгааны үнээр хязгааргүй зураг",
+    metric:"FLUX.2 [dev] FP8-аар <b>~24 GB</b>-д ажилладаг; Apache-2.0 хувилбарууд <b>12-16 GB</b>-аас",
+    detail:"Нээлттэй зургийн загварууд одоо фото бодит байдал, зураг дээрх текст, засварлалтаар төлбөртэй үйлчилгээтэй өрсөлдөж, нэг ажлын станцын GPU дээр ажилладаг. Black Forest Labs-ийн FLUX.2 [dev] нь 2026 онд хамгийн хүчтэй нээлттэй загвар гэж үнэлэгдсэн бөгөөд RTX A5000, 4090 зэрэг 24 GB картад FP8-аар багтдаг ч арилжааны бус лицензтэй; FLUX.2 [klein] 4B, Alibaba-гийн Qwen-Image хоёулаа Apache 2.0, 12-16 GB-аас ажиллаж арилжааны зориулалтаар ашиглаж болно, Qwen-Image олон хэлний текстэд илүү хүчтэй. ComfyUI нь түгээмэл интерфэйс: хөтөч дэх зангилааны засварлагч ба HTTP API, тиймээс скрипт эсвэл агент prompt илгээж PNG татаж авч чадна. Зураг тутамд 0.04-0.24 доллартай төлбөртэй API-тай харьцуулахад дотоод карт их хэмжээнд өөрийгөө нөхөж, нийтлэгдээгүй материалыг дотооддоо хадгалдаг. Анхааралтай унших: 'шилдэг нээлттэй загвар'-ын жагсаалт хяналттай жишиг биш гарын авлага, нийгэмлэгийн харьцуулалтаас; загвар бүр 10-30 GB; зургийг юунд ашиглаж болохыг лиценз шийддэг.",
+    flag:"VRAM, лицензийн мэдээлэл бат; чанарын жагсаалт нийгэмлэгийн дүгнэлт"},
+  "Local medical image segmentation":{
+    name:"Эмнэлгийн зургийн дотоод сегментчлэл",
+    glab:"Нээлттэй загварууд эмнэлгийн ажлын станц дээр бүтэн биеийн CT, MRI-г сегментчилдэг; ямар ч зураг эмнэлгээс гардаггүй",
+    metric:"TotalSegmentator: MRI дээр <b>80</b> бүтэц, дундаж Dice <b>0.84</b>; CT хувилбарыг <b>300,000+</b> хэрэглэгч ашигладаг",
+    detail:"Анагаах ухаанд дотоод GPU-ийн хамгийн тод жишээ: өвчтөний зураг эмнэлгээс гарах ёсгүй, сегментчлэлийн загвар кластер шаардахгүй хэмжээнд жижиг. Базелийн их сургуулийн эмнэлгийн nnU-Net дээр бүтээсэн TotalSegmentator нь pip-ээр суулгагдаж, бүтэн биеийн сканы эрхтэн, яс, судсыг нэг карт дээр хэдэн минутад сегментчилдэг. MRI хувилбар нь янз бүрийн дарааллын 80 анатомийн бүтцийг дотоод тестэд дундаж Dice 0.84-тэй таньдаг нь хоёр өөр нийтийн загвараас мэдэгдэхүйц өндөр (Radiology, 2025); CT хувилбар дэлхийд 300,000 гаруй хэрэглэгчтэй. Хоёулаа нийтийн жинтэй Apache 2.0 тул судалгааны эзэлхүүн - эрхтний хэмжээ, биеийн бүтэц, санамсаргүй скрининг - PACS-аас экспортолсон өгөгдлийн хажууд ажлын станц дээр хэмжиж болно. Олон тохиолдол дээр шинэ nnU-Net сургах нь HPC дахин хэрэгтэй болох цэг. Анхааралтай унших: эдгээр нь судалгааны хэрэгсэл, баталгаажсан эмнэлгийн хэрэгсэл биш, сургалтын өгөгдлөөс гадуурх сканер, эмгэг дээр нарийвчлал буурдаг.",
+    flag:"хянан магадлагдсан; судалгааны хэрэгсэл, баталгаажсан эмнэлгийн хэрэгсэл биш"},
   "Robot vacuums":{
     name:"Тоос сорогч робот",
     glab:"2025 онд 24 сая ухаалаг тоос сорогч нийлүүлсэн; эхний таван байрыг Хятадын брэндүүд эзэлж, iRobot нийлүүлэгчдээ зарагдсан",
