@@ -215,6 +215,7 @@
   .brcard .brs{font-size:13px; color:var(--ink-soft); display:block}
   .brcard .brgo{font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--petrol);
                 display:block; margin-top:11px}
+  .brimg{width:100%; height:auto; display:block; border-radius:10px; margin:6px 0 16px; border:1px solid var(--line)}
   .brfig{display:flex; flex-wrap:wrap; gap:18px 26px; margin:14px 0 0; padding:13px 0 0; border-top:1px solid var(--line)}
   .brfig div{min-width:132px}
   .brfig b{font-family:'JetBrains Mono',monospace; font-size:17px; display:block; color:var(--petrol-dark)}
@@ -277,6 +278,7 @@
     <div>
       <button class="disclose brtoggle" id="bridgeToggle" aria-expanded="false" aria-controls="bridgeBody"><span class="chev">▸</span><span id="brTitle"></span></button>
       <div id="bridgeBody" hidden>
+        <img class="brimg" src="images/header/money_flow.webp" alt="" loading="lazy" width="1600" height="679">
         <div class="brfig">
           <div><b id="brF1v"></b><span id="brF1l"></span></div>
           <div><b id="brF2v"></b><span id="brF2l"></span></div>
