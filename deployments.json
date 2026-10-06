@@ -2,43 +2,297 @@
   "_about": "Where each use case is deployed. Shared by the use-case board and the Supply Atlas globe. 'site' = name of a site in the Supply Atlas (its coordinates and AI evidence come from there); otherwise la/lo are given. Researched 2026-10-06.",
   "use_cases": {
     "robotaxis-autonomous-driving": {
-      "name": {"en": "Robotaxis / autonomous driving", "de": "Robotaxis / autonomes Fahren"},
+      "name": {
+        "en": "Robotaxis / autonomous driving",
+        "de": "Robotaxis / autonomes Fahren"
+      },
       "places": [
-        {"n": "Phoenix", "c": "USA", "la": 33.448, "lo": -112.074, "en": "Waymo fully driverless paid rides; its first and largest market.", "de": "Waymo, vollständig fahrerlose bezahlte Fahrten; erster und größter Markt.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "San Francisco", "c": "USA", "la": 37.775, "lo": -122.419, "en": "Waymo fully driverless paid rides.", "de": "Waymo, vollständig fahrerlose bezahlte Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Los Angeles", "c": "USA", "la": 34.052, "lo": -118.244, "en": "Waymo fully driverless paid rides.", "de": "Waymo, vollständig fahrerlose bezahlte Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Austin", "c": "USA", "la": 30.267, "lo": -97.743, "en": "Waymo driverless rides (via Uber); Tesla started a robotaxi service here in 2025 with a safety monitor on board.", "de": "Waymo, fahrerlose Fahrten (über Uber); Tesla startete hier 2025 einen Robotaxi-Dienst mit Sicherheitsbegleiter an Bord.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Atlanta", "c": "USA", "la": 33.749, "lo": -84.388, "en": "Waymo driverless rides (via Uber).", "de": "Waymo, fahrerlose Fahrten (über Uber).", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Miami", "c": "USA", "la": 25.762, "lo": -80.192, "en": "Waymo driverless rides.", "de": "Waymo, fahrerlose Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Dallas", "c": "USA", "la": 32.777, "lo": -96.797, "en": "Waymo driverless rides.", "de": "Waymo, fahrerlose Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Houston", "c": "USA", "la": 29.760, "lo": -95.370, "en": "Waymo driverless rides.", "de": "Waymo, fahrerlose Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "San Antonio", "c": "USA", "la": 29.424, "lo": -98.494, "en": "Waymo driverless rides.", "de": "Waymo, fahrerlose Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Orlando", "c": "USA", "la": 28.538, "lo": -81.379, "en": "Waymo driverless rides.", "de": "Waymo, fahrerlose Fahrten.", "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/", "yr": "2026"},
-        {"n": "Las Vegas", "c": "USA", "la": 36.170, "lo": -115.140, "en": "Zoox runs public rides in purpose-built vehicles without a steering wheel since September 2025.", "de": "Zoox bietet seit September 2025 öffentliche Fahrten in eigens gebauten Fahrzeugen ohne Lenkrad an.", "src": "https://abc7news.com/post/amazons-zoox-launches-robotaxi-service-las-vegas-free-rides/17830057/", "yr": "2025"},
-        {"n": "Wuhan", "c": "CHN", "la": 30.593, "lo": 114.305, "en": "Baidu Apollo Go holds fully driverless commercial permits since 2022; its largest fleet.", "de": "Baidu Apollo Go hat seit 2022 Genehmigungen für vollständig fahrerlosen kommerziellen Betrieb; größte Flotte.", "src": "https://www.nasdaq.com/articles/chinas-av-push-bidu-pony-wrd-lead-robotaxi-revolution", "yr": "2025"},
-        {"n": "Chongqing", "c": "CHN", "la": 29.563, "lo": 106.551, "en": "Baidu Apollo Go fully driverless commercial service since 2022.", "de": "Baidu Apollo Go, vollständig fahrerloser kommerzieller Dienst seit 2022.", "src": "https://www.nasdaq.com/articles/chinas-av-push-bidu-pony-wrd-lead-robotaxi-revolution", "yr": "2025"},
-        {"n": "Abu Dhabi", "c": "ARE", "la": 24.454, "lo": 54.377, "en": "WeRide and Uber run Level 4 fully driverless robotaxis.", "de": "WeRide und Uber betreiben vollständig fahrerlose Robotaxis der Stufe 4.", "src": "https://www.just-auto.com/news/dubai-pony-ai-weride/", "yr": "2025"},
-        {"n": "Dubai", "c": "ARE", "la": 25.205, "lo": 55.271, "en": "WeRide passenger rides on Uber; Pony.ai pilots; fully driverless rollout planned for 2026.", "de": "WeRide-Fahrgastfahrten über Uber; Pony.ai testet; vollständig fahrerloser Betrieb für 2026 geplant.", "src": "https://www.just-auto.com/news/dubai-pony-ai-weride/", "yr": "2025"}
+        {
+          "n": "Phoenix",
+          "c": "USA",
+          "la": 33.448,
+          "lo": -112.074,
+          "en": "Waymo fully driverless paid rides; its first and largest market.",
+          "de": "Waymo, vollständig fahrerlose bezahlte Fahrten; erster und größter Markt.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "San Francisco",
+          "c": "USA",
+          "la": 37.775,
+          "lo": -122.419,
+          "en": "Waymo fully driverless paid rides.",
+          "de": "Waymo, vollständig fahrerlose bezahlte Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Los Angeles",
+          "c": "USA",
+          "la": 34.052,
+          "lo": -118.244,
+          "en": "Waymo fully driverless paid rides.",
+          "de": "Waymo, vollständig fahrerlose bezahlte Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Austin",
+          "c": "USA",
+          "la": 30.267,
+          "lo": -97.743,
+          "en": "Waymo driverless rides (via Uber); Tesla started a robotaxi service here in 2025 with a safety monitor on board.",
+          "de": "Waymo, fahrerlose Fahrten (über Uber); Tesla startete hier 2025 einen Robotaxi-Dienst mit Sicherheitsbegleiter an Bord.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Atlanta",
+          "c": "USA",
+          "la": 33.749,
+          "lo": -84.388,
+          "en": "Waymo driverless rides (via Uber).",
+          "de": "Waymo, fahrerlose Fahrten (über Uber).",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Miami",
+          "c": "USA",
+          "la": 25.762,
+          "lo": -80.192,
+          "en": "Waymo driverless rides.",
+          "de": "Waymo, fahrerlose Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Dallas",
+          "c": "USA",
+          "la": 32.777,
+          "lo": -96.797,
+          "en": "Waymo driverless rides.",
+          "de": "Waymo, fahrerlose Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Houston",
+          "c": "USA",
+          "la": 29.76,
+          "lo": -95.37,
+          "en": "Waymo driverless rides.",
+          "de": "Waymo, fahrerlose Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "San Antonio",
+          "c": "USA",
+          "la": 29.424,
+          "lo": -98.494,
+          "en": "Waymo driverless rides.",
+          "de": "Waymo, fahrerlose Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Orlando",
+          "c": "USA",
+          "la": 28.538,
+          "lo": -81.379,
+          "en": "Waymo driverless rides.",
+          "de": "Waymo, fahrerlose Fahrten.",
+          "src": "https://driveteslacanada.ca/news/waymo-adds-minneapolis-tampa-and-new-orleans-expansion/",
+          "yr": "2026"
+        },
+        {
+          "n": "Las Vegas",
+          "c": "USA",
+          "la": 36.17,
+          "lo": -115.14,
+          "en": "Zoox runs public rides in purpose-built vehicles without a steering wheel since September 2025.",
+          "de": "Zoox bietet seit September 2025 öffentliche Fahrten in eigens gebauten Fahrzeugen ohne Lenkrad an.",
+          "src": "https://abc7news.com/post/amazons-zoox-launches-robotaxi-service-las-vegas-free-rides/17830057/",
+          "yr": "2025"
+        },
+        {
+          "n": "Wuhan",
+          "c": "CHN",
+          "la": 30.593,
+          "lo": 114.305,
+          "en": "Baidu Apollo Go holds fully driverless commercial permits since 2022; its largest fleet.",
+          "de": "Baidu Apollo Go hat seit 2022 Genehmigungen für vollständig fahrerlosen kommerziellen Betrieb; größte Flotte.",
+          "src": "https://www.nasdaq.com/articles/chinas-av-push-bidu-pony-wrd-lead-robotaxi-revolution",
+          "yr": "2025"
+        },
+        {
+          "n": "Chongqing",
+          "c": "CHN",
+          "la": 29.563,
+          "lo": 106.551,
+          "en": "Baidu Apollo Go fully driverless commercial service since 2022.",
+          "de": "Baidu Apollo Go, vollständig fahrerloser kommerzieller Dienst seit 2022.",
+          "src": "https://www.nasdaq.com/articles/chinas-av-push-bidu-pony-wrd-lead-robotaxi-revolution",
+          "yr": "2025"
+        },
+        {
+          "n": "Abu Dhabi",
+          "c": "ARE",
+          "la": 24.454,
+          "lo": 54.377,
+          "en": "WeRide and Uber run Level 4 fully driverless robotaxis.",
+          "de": "WeRide und Uber betreiben vollständig fahrerlose Robotaxis der Stufe 4.",
+          "src": "https://www.just-auto.com/news/dubai-pony-ai-weride/",
+          "yr": "2025"
+        },
+        {
+          "n": "Dubai",
+          "c": "ARE",
+          "la": 25.205,
+          "lo": 55.271,
+          "en": "WeRide passenger rides on Uber; Pony.ai pilots; fully driverless rollout planned for 2026.",
+          "de": "WeRide-Fahrgastfahrten über Uber; Pony.ai testet; vollständig fahrerloser Betrieb für 2026 geplant.",
+          "src": "https://www.just-auto.com/news/dubai-pony-ai-weride/",
+          "yr": "2025"
+        }
       ]
     },
     "autonomous-mine-fleets": {
-      "name": {"en": "Autonomous mine fleets", "de": "Autonome Minenflotten"},
+      "name": {
+        "en": "Autonomous mine fleets",
+        "de": "Autonome Minenflotten"
+      },
       "places": [
-        {"site": "Chichester Hub"},
-        {"site": "Mount Whaleback"},
-        {"site": "Nevada Gold Mines"},
-        {"site": "Bayan Obo"},
-        {"site": "Grasberg"}
+        {
+          "site": "Chichester Hub"
+        },
+        {
+          "site": "Mount Whaleback"
+        },
+        {
+          "site": "Nevada Gold Mines"
+        },
+        {
+          "site": "Bayan Obo"
+        },
+        {
+          "site": "Grasberg"
+        }
       ]
     },
     "ai-container-terminals": {
-      "name": {"en": "AI container terminals", "de": "KI in Containerterminals"},
+      "name": {
+        "en": "AI container terminals",
+        "de": "KI in Containerterminals"
+      },
       "places": [
-        {"site": "Shanghai · Yangshan"},
-        {"site": "Singapur Hafen"},
-        {"site": "Ningbo-Zhoushan"},
-        {"site": "Shenzhen"},
-        {"site": "Qingdao"}
+        {
+          "site": "Shanghai · Yangshan"
+        },
+        {
+          "site": "Singapur Hafen"
+        },
+        {
+          "site": "Ningbo-Zhoushan"
+        },
+        {
+          "site": "Shenzhen"
+        },
+        {
+          "site": "Qingdao"
+        }
+      ]
+    },
+    "semiconductor-fab-automation": {
+      "name": {
+        "en": "Semiconductor fab automation",
+        "de": "Halbleiterfabrik-Automatisierung"
+      },
+      "places": [
+        {
+          "site": "TSMC AP6 Zhunan"
+        },
+        {
+          "site": "ASE Kaohsiung"
+        },
+        {
+          "site": "Kioxia Yokkaichi"
+        }
+      ]
+    },
+    "process-industry-metallurgy-chemicals": {
+      "name": {
+        "en": "Process industry: metallurgy & chemicals",
+        "de": "Prozessindustrie: Metallurgie & Chemie"
+      },
+      "places": [
+        {
+          "site": "POSCO Pohang"
+        },
+        {
+          "site": "POSCO Gwangyang"
+        },
+        {
+          "site": "Baowu Baoshan"
+        },
+        {
+          "site": "Baowu Zhanjiang"
+        },
+        {
+          "site": "Jamnagar"
+        },
+        {
+          "site": "QAFCO Mesaieed"
+        },
+        {
+          "site": "Alunorte Barcarena"
+        },
+        {
+          "site": "Chalco Pingguo"
+        },
+        {
+          "site": "Yunnan Tin Gejiu"
+        },
+        {
+          "site": "Baotou Trennanlage"
+        }
+      ]
+    },
+    "data-center-power-the-grid": {
+      "name": {
+        "en": "Data-center power & the grid",
+        "de": "Rechenzentrums-Strom & Netz"
+      },
+      "places": [
+        {
+          "site": "Colossus 2"
+        },
+        {
+          "site": "New Carlisle (Project Rainier)"
+        },
+        {
+          "site": "Fairwater Atlanta"
+        },
+        {
+          "site": "Prometheus"
+        },
+        {
+          "site": "Stargate Abilene"
+        },
+        {
+          "site": "Hyperion"
+        },
+        {
+          "site": "Stargate Doña Ana"
+        },
+        {
+          "site": "Stargate Shackelford"
+        },
+        {
+          "site": "Stargate UAE"
+        }
       ]
     }
   }
