@@ -499,7 +499,7 @@ const CLUSTERS = [
     verdict:{en:"Detection is cheap and widely deployed; robots that repair are still pilots. Most figures vendor-reported.",de:"Erkennen ist günstig und verbreitet; Roboter, die reparieren, sind noch Piloten. Die meisten Zahlen vom Anbieter."}},
   {n:17, cat:"infra", short:{en:"local workstation",de:"lokale Workstation"},
     title:{en:"AI on the local workstation",de:"KI auf der lokalen Workstation"},
-    kern:{en:"Language, image and segmentation models on one GPU under the desk: the data never leaves the room, there is no queue and no price per token or image.",de:"Sprach-, Bild- und Segmentierungsmodelle auf einer GPU unter dem Schreibtisch: Die Daten verlassen den Raum nicht, es gibt keine Warteschlange und keinen Preis pro Token oder Bild."},
+    kern:{en:"Language, image, document and segmentation models on one GPU under the desk: images, files and records never leave the room, it works without internet, and there is no queue and no price per token or image.",de:"Sprach-, Bild-, Dokument- und Segmentierungsmodelle auf einer GPU unter dem Schreibtisch: Bilder, Dateien und Akten verlassen den Raum nicht, es geht ohne Internet, und es gibt keine Warteschlange und keinen Preis pro Token oder Bild."},
     verdict:{en:"Open models now fit in 16–24 GB. The gain is privacy and zero marginal cost; the limit is one GPU — training and large batches still belong on HPC or in the cloud.",de:"Offene Modelle passen inzwischen in 16–24 GB. Der Gewinn ist Datenschutz und null Grenzkosten; die Grenze ist eine GPU — Training und große Serien gehören weiter auf HPC oder in die Cloud."}}
 ];
 
@@ -977,6 +977,36 @@ const UC = [
     E("TotalSegmentator MRI, Radiology (2025), RSNA press release","TotalSegmentator MRI, Radiology (2025), RSNA-Pressemitteilung"),
     "good", E("Peer-reviewed; research tool, not a certified medical device",
       "Begutachtet; Forschungswerkzeug, kein zertifiziertes Medizinprodukt")),
+
+  U(17,"Alibaba (Qwen-Image-Edit), Black Forest Labs (FLUX.1 Kontext), ComfyUI","prod",2,"strong",
+    E("Local image editing & design","Lokale Bildbearbeitung & Gestaltung"),
+    E("Edit photos and posters by instruction without uploading them; text in the image keeps its font","Fotos und Poster per Anweisung bearbeiten, ohne sie hochzuladen; Text im Bild behält seine Schrift"),
+    E("Qwen-Image-Edit: <b>20B</b>, <b>Apache 2.0</b>, rewrites text inside images keeping font and layout","Qwen-Image-Edit: <b>20 Mrd.</b> Parameter, <b>Apache 2.0</b>, ändert Text im Bild und behält Schrift und Layout"),
+    E("Photos are among the most sensitive data there is - faces, children, patients, the inside of a home or a lab - and every cloud editor means an upload. Open editing models now do on a workstation what needed a design service a year ago: change a background, remove an object, restyle a picture, or correct the wording on a poster while keeping the typeface. Alibaba's Qwen-Image-Edit, built on the 20B Qwen-Image model and released under Apache 2.0, edits English and Chinese text inside images and handles both broad style changes and precise local edits; Black Forest Labs' FLUX.1 Kontext [dev], a 12B editing model, runs on consumer GPUs but is licensed for non-commercial use only. Both load in ComfyUI next to the generation models, so a poster can be drafted, generated and corrected in one local pipeline. Read carefully: the 20B model needs quantisation to fit comfortably in 24 GB, quality claims come from the developers, and edited photos of real people still raise consent questions that running locally does not solve.",
+      "Fotos gehören zu den empfindlichsten Daten überhaupt - Gesichter, Kinder, Patienten, das Innere einer Wohnung oder eines Labors -, und jeder Cloud-Editor bedeutet einen Upload. Offene Bearbeitungsmodelle leisten heute auf einer Workstation, wofür vor einem Jahr ein Designdienst nötig war: Hintergrund tauschen, ein Objekt entfernen, ein Bild umstilisieren oder den Text auf einem Poster korrigieren, ohne die Schrift zu verlieren. Alibabas Qwen-Image-Edit, aufgebaut auf dem 20-Mrd.-Modell Qwen-Image und unter Apache 2.0 veröffentlicht, bearbeitet englischen und chinesischen Text in Bildern und beherrscht großflächige Stiländerungen ebenso wie präzise lokale Eingriffe; FLUX.1 Kontext [dev] von Black Forest Labs, ein 12-Mrd.-Bearbeitungsmodell, läuft auf Consumer-GPUs, ist aber nur für nicht-kommerzielle Nutzung lizenziert. Beide laufen in ComfyUI neben den Generierungsmodellen, sodass ein Poster in einer lokalen Kette entworfen, erzeugt und korrigiert werden kann. Genau lesen: Das 20-Mrd.-Modell braucht Quantisierung, um bequem in 24 GB zu passen, Qualitätsangaben stammen von den Entwicklern, und bearbeitete Fotos echter Menschen werfen Einwilligungsfragen auf, die lokaler Betrieb nicht löst."),
+    E("Qwen-Image-Edit model card (Hugging Face); Black Forest Labs FLUX.1 Kontext [dev] release","Qwen-Image-Edit-Modellkarte (Hugging Face); Black Forest Labs, Veröffentlichung FLUX.1 Kontext [dev]"),
+    "note", E("Licences and sizes are firm; quality is developer-reported",
+      "Lizenzen und Größen sind fest; Qualität ist Entwicklerangabe")),
+
+  U(17,"Qwen coder models, OpenCode, Continue, llama.cpp","early",1,"strong",
+    E("Offline coding & website building","Offline programmieren & Webseiten bauen"),
+    E("Coding agents with an open model on one 24 GB card build sites and scripts without internet","Coding-Agenten mit offenem Modell auf einer 24-GB-Karte bauen Seiten und Skripte ohne Internet"),
+    E("Open coder models that fit <b>24 GB</b> at Q4 reported around <b>70%</b> on SWE-bench Verified (blog figures)","Offene Coder-Modelle, die in Q4 in <b>24 GB</b> passen, laut Blogs um <b>70 %</b> auf SWE-bench Verified"),
+    E("The same agent loop as the cloud coding tools on this board - read the repository, plan, edit files, run tests - but with an open model served locally through llama.cpp or Ollama and an open harness such as OpenCode or Continue. A static website, an internal dashboard, a data-cleaning script or a poster layout in HTML can be built on a train, behind a hospital firewall or with code that must not leave the building. 2026 guides name Qwen coder and Qwen 3.6 27B models as the strongest that fit a 24 GB card at 4-bit quantisation and report SWE-bench Verified scores around 70%, close to the open-weight leaders that need far more memory. Read carefully: those scores come from blog compilations and model cards rather than a controlled comparison on the same harness, local models still trail the best cloud agents on long multi-file tasks, and a 4-bit model on one GPU is slow on large repositories.",
+      "Dieselbe Agentenschleife wie bei den Cloud-Coding-Werkzeugen auf diesem Board - Repository lesen, planen, Dateien ändern, Tests laufen lassen -, aber mit einem offenen Modell, das lokal über llama.cpp oder Ollama läuft, und einer offenen Umgebung wie OpenCode oder Continue. Eine statische Webseite, ein internes Dashboard, ein Skript zur Datenbereinigung oder ein Poster-Layout in HTML entsteht so im Zug, hinter der Klinik-Firewall oder mit Code, der das Haus nicht verlassen darf. Ratgeber von 2026 nennen Qwen-Coder- und Qwen-3.6-27B-Modelle als die stärksten, die in 4-Bit-Quantisierung auf eine 24-GB-Karte passen, und berichten SWE-bench-Verified-Werte um 70 %, nahe an den Spitzenreitern unter den offenen Modellen, die weit mehr Speicher brauchen. Genau lesen: Die Werte stammen aus Blog-Zusammenstellungen und Modellkarten, nicht aus einem kontrollierten Vergleich mit derselben Umgebung, lokale Modelle liegen bei langen Aufgaben über viele Dateien weiter hinter den besten Cloud-Agenten, und ein 4-Bit-Modell auf einer GPU ist bei großen Repositories langsam."),
+    E("Local coding-model guides 2026 (Kilo, LocalAIMaster, Tembo); SWE-bench Verified leaderboard","Ratgeber zu lokalen Coding-Modellen 2026 (Kilo, LocalAIMaster, Tembo); SWE-bench-Verified-Rangliste"),
+    "warn", E("Benchmark scores from blog compilations, not a controlled comparison",
+      "Benchmarkwerte aus Blog-Zusammenstellungen, kein kontrollierter Vergleich")),
+
+  U(17,"Docling (IBM, MIT licence), F13 (Baden-Württemberg), local LLMs","early",2,"strong",
+    E("Local document AI for sensitive records","Lokale Dokumenten-KI für sensible Akten"),
+    E("Forms, invoices, delivery notes and files parsed and summarised on site; administrations build sovereign assistants","Formulare, Rechnungen, Lieferscheine und Akten vor Ort auslesen und zusammenfassen; Verwaltungen bauen souveräne Assistenten"),
+    E("Docling: MIT, runs fully local, <b>53,700</b> GitHub stars; F13 aims at <b>100,000</b> state employees by end-2026","Docling: MIT, läuft vollständig lokal, <b>53.700</b> GitHub-Sterne; F13 zielt auf <b>100.000</b> Landesbeschäftigte bis Ende 2026"),
+    E("Bureaucratic data - personnel files, applications, invoices, inventory lists, delivery notes - is exactly what may not be pasted into a public chatbot. The local stack has two layers. First, a document parser turns scanned or born-digital PDFs, Word and Excel files into structured text and tables: IBM's Docling, MIT-licensed and running entirely on ordinary hardware, has become the common choice, with about 53,700 GitHub stars in 2026. Second, a local language model answers questions about those documents, fills a form, reconciles a delivery note against the inventory list or drafts a reply. At state scale the same idea is run as sovereign hosting rather than on a desk: Baden-Württemberg's F13, open-sourced on Open CoDE and built with Aleph Alpha, has been open to all state employees since 2024 and expects more than 100,000 users by the end of 2026, processed in German data centres. Read carefully: parser quality depends heavily on the documents, so tables, scans and forms must be tested before relying on it; F13 is a central service, not a workstation; and no audited figures exist for local inventory or logistics use - that application is plausible, not yet measured.",
+      "Bürokratische Daten - Personalakten, Anträge, Rechnungen, Inventarlisten, Lieferscheine - sind genau das, was nicht in einen öffentlichen Chatbot kopiert werden darf. Der lokale Aufbau hat zwei Ebenen. Erstens macht ein Dokumentparser aus gescannten oder digitalen PDFs, Word- und Excel-Dateien strukturierten Text und Tabellen: IBMs Docling, MIT-lizenziert und vollständig auf gewöhnlicher Hardware lauffähig, ist zur üblichen Wahl geworden, mit rund 53.700 GitHub-Sternen 2026. Zweitens beantwortet ein lokales Sprachmodell Fragen zu diesen Dokumenten, füllt ein Formular, gleicht einen Lieferschein mit der Inventarliste ab oder entwirft eine Antwort. Im Landesmaßstab läuft dieselbe Idee als souveränes Hosting statt am Schreibtisch: Baden-Württembergs F13, quelloffen auf Open CoDE und mit Aleph Alpha gebaut, steht seit 2024 allen Landesbeschäftigten offen und erwartet bis Ende 2026 über 100.000 Nutzer, verarbeitet in deutschen Rechenzentren. Genau lesen: Die Parserqualität hängt stark von den Dokumenten ab, Tabellen, Scans und Formulare müssen vorher getestet werden; F13 ist ein zentraler Dienst, keine Workstation; und für lokale Inventar- oder Logistiknutzung gibt es keine geprüften Zahlen - die Anwendung ist plausibel, aber noch nicht gemessen."),
+    E("Docling paper (arXiv 2501.17887) and GitHub; Ministry of the Interior Baden-Württemberg on F13","Docling-Paper (arXiv 2501.17887) und GitHub; Innenministerium Baden-Württemberg zu F13"),
+    "note", E("Parser quality is corpus-dependent; F13 is central hosting; inventory use unmeasured",
+      "Parserqualität hängt vom Korpus ab; F13 ist zentrales Hosting; Inventarnutzung ungemessen")),
 
   // ---- Cluster 8: knowledge-work agents (software) ----
   U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
@@ -1470,6 +1500,9 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Local image editing & design":"https://huggingface.co/Qwen/Qwen-Image-Edit",
+  "Offline coding & website building":"https://blog.kilo.ai/p/the-best-local-coding-models-for",
+  "Local document AI for sensitive records":"https://arxiv.org/abs/2501.17887",
   "Local language models":"https://huggingface.co/openai/gpt-oss-20b",
   "Local image generation":"https://insiderllm.com/guides/flux-locally-complete-guide/",
   "Local medical image segmentation":"https://www.rsna.org/media/press/i/2568",
@@ -1591,6 +1624,15 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Local image editing & design":[
+    {n:"Qwen-Image-Edit", u:"https://huggingface.co/Qwen/Qwen-Image-Edit"},
+    {n:"Black Forest Labs", u:"https://bfl.ai/"}],
+  "Offline coding & website building":[
+    {n:"OpenCode", u:"https://opencode.ai/"},
+    {n:"Continue", u:"https://www.continue.dev/"}],
+  "Local document AI for sensitive records":[
+    {n:"Docling", u:"https://github.com/docling-project/docling"},
+    {n:"F13", u:"https://im.baden-wuerttemberg.de/de/service/media/mid/mit-dem-neuen-f13-in-die-verwaltung-der-zukunft"}],
   "Local language models":[
     {n:"Ollama", u:"https://ollama.com/"},
     {n:"llama.cpp", u:"https://github.com/ggml-org/llama.cpp"}],
@@ -2052,6 +2094,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Local image editing & design":[2,"edge"],
+  "Offline coding & website building":[2,"edge"],
+  "Local document AI for sensitive records":[1,"edge"],
   "Local language models":[2,"edge"],
   "Local image generation":[2,"edge"],
   "Local medical image segmentation":[1,"edge"],
@@ -2218,7 +2263,7 @@ function zeichneLuecken(){
 // ---- cluster translations (keyed by cluster number n) ----
 const MN_CL = {
   17:{short:"дотоод ажлын станц", title:"Дотоод ажлын станц дээрх хиймэл оюун",
-     kern:"Хэл, зураг, сегментчлэлийн загварууд ширээн доорх нэг GPU дээр: өгөгдөл өрөөнөөс гардаггүй, дараалал байхгүй, токен эсвэл зураг тутамд үнэ байхгүй.",
+     kern:"Хэл, зураг, баримт бичиг, сегментчлэлийн загварууд ширээн доорх нэг GPU дээр: зураг, файл, бичиг баримт өрөөнөөс гардаггүй, интернэтгүй ажилладаг, дараалал байхгүй, токен эсвэл зураг тутамд үнэ байхгүй.",
      verdict:"Нээлттэй загварууд одоо 16–24 GB-д багтдаг. Давуу тал нь нууцлал ба нэмэлт зардалгүй байдал; хязгаар нь нэг GPU — сургалт, том цувралыг HPC эсвэл үүлэнд хийсээр байна."},
   16:{short:"засвар үйлчилгээ", title:"Засвар үйлчилгээ ба арчилгаа",
      kern:"Байгаа зүйлийг цэвэрлэх, шалгах, засах — зам, бохирын шугам, төмөр зам, нарны парк, фасад, гол мөрөн. Ямар ч байсан явдаг машин дээрх хямд камер, тогтмол төмөр зам дээрх робот.",
@@ -2267,6 +2312,24 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Local image editing & design":{
+    name:"Дотоод зураг засвар ба дизайн",
+    glab:"Зураг, постерыг байршуулахгүйгээр зааврын дагуу засна; зураг дээрх текст фонтоо хадгалдаг",
+    metric:"Qwen-Image-Edit: <b>20 тэрбум</b> параметр, <b>Apache 2.0</b>, зураг доторх текстийг фонт, байрлалыг хадгалан өөрчилдөг",
+    detail:"Зураг бол хамгийн эмзэг өгөгдлийн нэг - нүүр царай, хүүхэд, өвчтөн, гэр эсвэл лабораторийн дотор тал - үүлэн засварлагч бүр байршуулалт гэсэн үг. Нээлттэй засварын загварууд одоо ажлын станц дээр жилийн өмнө дизайны үйлчилгээ шаардагдаж байсан ажлыг хийдэг: дэвсгэр солих, объект арилгах, зургийн хэв маягийг өөрчлөх, постер дээрх текстийг фонтыг нь алдалгүй засах. Alibaba-гийн 20 тэрбум параметртэй Qwen-Image дээр суурилсан, Apache 2.0-оор гаргасан Qwen-Image-Edit нь зураг доторх англи, хятад текстийг засварлаж, өргөн хэв маягийн өөрчлөлт, нарийн орон нутгийн засварыг хоёуланг нь хийдэг; Black Forest Labs-ийн 12 тэрбум параметртэй FLUX.1 Kontext [dev] хэрэглэгчийн GPU дээр ажилладаг ч зөвхөн арилжааны бус лицензтэй. Хоёулаа үүсгэх загваруудын хажууд ComfyUI-д ажилладаг тул постерыг нэг дотоод дамжлагад төлөвлөж, үүсгэж, засаж болно. Анхааралтай унших: 20 тэрбумын загварыг 24 GB-д тав тухтай багтаахын тулд квантчилах шаардлагатай, чанарын мэдэгдэл хөгжүүлэгчийнх, бодит хүмүүсийн засварласан зураг дотоод ажиллагаагаар шийдэгдэхгүй зөвшөөрлийн асуудал үүсгэдэг.",
+    flag:"лиценз, хэмжээ бат; чанар хөгжүүлэгчийн мэдээлэл"},
+  "Offline coding & website building":{
+    name:"Офлайн програмчлал ба вэб сайт бүтээх",
+    glab:"Нээлттэй загвартай код бичих агентууд нэг 24 GB карт дээр интернэтгүйгээр сайт, скрипт бүтээдэг",
+    metric:"Q4-өөр <b>24 GB</b>-д багтдаг нээлттэй код загварууд SWE-bench Verified дээр <b>70%</b> орчим (блогийн тоо)",
+    detail:"Энэ самбар дээрх үүлэн код бичих хэрэгслүүдтэй ижил агентын давталт - репозитор унших, төлөвлөх, файл засах, тест ажиллуулах - гэхдээ llama.cpp эсвэл Ollama-аар дотооддоо үйлчилдэг нээлттэй загвар, OpenCode эсвэл Continue зэрэг нээлттэй орчинтой. Статик вэб сайт, дотоод хяналтын самбар, өгөгдөл цэвэрлэх скрипт эсвэл HTML дээрх постерын загварыг галт тэргэнд, эмнэлгийн галт ханын цаана эсвэл барилгаас гарах ёсгүй кодтой бүтээж болно. 2026 оны гарын авлагууд 4 битийн квантчлалаар 24 GB картад багтдаг хамгийн хүчтэй загвар гэж Qwen coder, Qwen 3.6 27B-г нэрлэж, SWE-bench Verified дээр 70% орчим оноо мэдээлдэг нь хамаагүй их санах ой шаарддаг нээлттэй тэргүүлэгчдэд ойрхон. Анхааралтай унших: эдгээр оноо ижил орчин дахь хяналттай харьцуулалт биш блогийн нэгтгэл, загварын картаас, дотоод загварууд олон файлтай урт ажилд шилдэг үүлэн агентуудаас хоцорсоор, нэг GPU дээрх 4 битийн загвар том репозитор дээр удаан.",
+    flag:"жишгийн оноо блогийн нэгтгэлээс, хяналттай харьцуулалт биш"},
+  "Local document AI for sensitive records":{
+    name:"Эмзэг бичиг баримтад зориулсан дотоод баримтын хиймэл оюун",
+    glab:"Маягт, нэхэмжлэх, хүргэлтийн бичиг, хавтас газар дээр нь уншиж, хураангуйлна; засаг захиргаа бие даасан туслах бүтээж байна",
+    metric:"Docling: MIT, бүрэн дотооддоо ажилладаг, GitHub-д <b>53,700</b> од; F13 2026 оны эцэс гэхэд <b>100,000</b> мужийн ажилтанд хүрэхээр зорьж байна",
+    detail:"Хүнд суртлын өгөгдөл - хувийн хэрэг, өргөдөл, нэхэмжлэх, бараа материалын жагсаалт, хүргэлтийн бичиг - бол нийтийн чатбот руу хуулж болохгүй зүйл. Дотоод бүтэц хоёр давхаргатай. Нэгдүгээрт, баримт задлагч скан хийсэн эсвэл дижитал PDF, Word, Excel файлыг бүтэцтэй текст, хүснэгт болгодог: IBM-ийн MIT лицензтэй, энгийн тоног төхөөрөмж дээр бүрэн ажилладаг Docling түгээмэл сонголт болж, 2026 онд GitHub-д 53,700 орчим одтой. Хоёрдугаарт, дотоод хэлний загвар эдгээр баримтын талаар асуултад хариулж, маягт бөглөж, хүргэлтийн бичгийг бараа материалын жагсаалттай тулгаж, хариу бичдэг. Мужийн хэмжээнд ижил санааг ширээн дээр биш бие даасан хостингоор ажиллуулдаг: Баден-Вюртембергийн Open CoDE дээр нээлттэй эх болгосон, Aleph Alpha-тай бүтээсэн F13 нь 2024 оноос мужийн бүх ажилтанд нээлттэй бөгөөд 2026 оны эцэс гэхэд 100,000 гаруй хэрэглэгчтэй болохыг хүлээж байгаа, Германы дата төвүүдэд боловсруулагддаг. Анхааралтай унших: задлагчийн чанар баримтаас ихээхэн хамаардаг тул хүснэгт, скан, маягтыг найдахаас өмнө турших шаардлагатай; F13 нь ажлын станц биш төвлөрсөн үйлчилгээ; дотоод бараа материал, логистикийн хэрэглээний баталгаажсан тоо байхгүй - хэрэглээ үнэмшилтэй ч хараахан хэмжигдээгүй.",
+    flag:"задлагчийн чанар корпусаас хамаарна; F13 төвлөрсөн хостинг; бараа материалын хэрэглээ хэмжигдээгүй"},
   "Local language models":{
     name:"Дотоод хэлний загварууд",
     glab:"Чат, код бичих загварууд нэг GPU дээр офлайн ажилладаг; OpenAI-ийн gpt-oss-20b 16 GB-д багтдаг",
