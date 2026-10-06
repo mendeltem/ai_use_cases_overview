@@ -205,6 +205,7 @@
   .detail-in .firms > b{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink-soft); font-weight:500; letter-spacing:.01em; margin-right:2px}
   .globelink{display:inline-block; margin-top:10px; font-size:12.5px; font-weight:600; color:var(--petrol); text-decoration:none; padding:5px 10px; border:1px solid var(--petrol); border-radius:7px; background:var(--surface)}
   .globelink:hover{background:var(--petrol); color:#fff}
+  .complinks{margin-top:9px; font-size:12px; color:var(--ink-soft)} .complinks a{color:var(--petrol); font-weight:600; text-decoration:none; margin-right:8px} .complinks a:hover{text-decoration:underline}
   .firmlink{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--petrol); text-decoration:none; padding:1px 6px; border:1px solid var(--line); border-radius:4px; background:var(--surface-2); transition:.12s}
   .firmlink:hover{border-color:var(--petrol); background:rgba(14,110,108,.08)}
   .firmlink:focus-visible{outline:2px solid var(--petrol); outline-offset:1px}
@@ -3265,7 +3266,7 @@ function setLang(l){
   document.getElementById('btnMN').setAttribute('aria-pressed', l==='mn');
   renderStatic(); buildChips(); buildBoard(); apply(); zeichneLuecken();
   fetch('deployments.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
-    if(!d) return; DEPLOY = d.use_cases; buildBoard(); apply(); openFromHash();
+    if(!d) return; DEPLOY = d.use_cases; COMP = d.companies || null; buildBoard(); apply(); openFromHash();
   }).catch(function(){});
   window.addEventListener('hashchange', openFromHash);
 }
@@ -3418,6 +3419,15 @@ function globeHTML(x){
   const t = lang==='de' ? 'Auf dem Globus zeigen ('+n+' Orte)' : lang==='mn' ? 'Бөмбөрцөг дээр харах ('+n+' газар)' : 'Show on the globe ('+n+' places)';
   return '<a class="globelink" href="'+ATLAS_URL+'?uc='+ucSlug(x.name.en)+'" target="_blank" rel="noopener">🌍 '+t+'</a>';
 }
+let COMP = null;
+function compHTML(x){
+  if(!COMP) return '';
+  const t = COMP.use_cases[ucSlug(x.name.en)]; if(!t || !t.length) return '';
+  const lab = lang==='de' ? 'Börsen-Kennzahlen' : lang==='mn' ? 'Хувьцааны үзүүлэлт' : 'Market figures';
+  return '<div class="complinks">\u{1F4C8} '+lab+': '+t.map(function(k){
+    return '<a href="'+COMP.page+'#/'+lang+'/'+k+'" target="_blank" rel="noopener">'+(COMP.names[k]||k)+' \u2197</a>';
+  }).join(' ')+'</div>';
+}
 function openFromHash(){
   const m = location.hash.match(/^#uc=([a-z0-9-]+)/); if(!m) return;
   const card = document.getElementById('uc-'+m[1]); if(!card) return;
@@ -3445,7 +3455,7 @@ function buildBoard(){
         '<div class="detail"><div class="detail-in">'+
           T(x.detail)+
           '<div class="flag '+x.flag.t+'">'+T(x.flag.x)+'</div>'+
-          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+globeHTML(x)+
+          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+globeHTML(x)+compHTML(x)+
         '</div></div>'+
       '</div>';
     }).join('');

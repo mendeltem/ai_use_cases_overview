@@ -295,5 +295,348 @@
         }
       ]
     }
+  },
+  "companies": {
+    "_about": "Links to the company valuation page (AI_Companys). operators = text fragments matched against the Supply Atlas operator field; use_cases = card slug -> tickers.",
+    "page": "https://mendeltem.github.io/AI_Companys/nvidia-oekosystem.html",
+    "names": {
+      "NVDA": "NVIDIA",
+      "AVGO": "Broadcom",
+      "AMD": "AMD",
+      "ARM": "Arm Holdings",
+      "MRVL": "Marvell",
+      "TSM": "TSMC",
+      "INTC": "Intel",
+      "UMC": "UMC",
+      "GFS": "GlobalFoundries",
+      "ASML": "ASML",
+      "LRCX": "Lam Research",
+      "AMAT": "Applied Materials",
+      "KLAC": "KLA",
+      "MU": "Micron",
+      "SAMSUNG": "Samsung Electronics",
+      "SKHYNIX": "SK hynix",
+      "SNDK": "SanDisk",
+      "KIOXIA": "Kioxia",
+      "ASE": "ASE Technology",
+      "AMKR": "Amkor",
+      "ANET": "Arista Networks",
+      "COHR": "Coherent",
+      "ALAB": "Astera Labs",
+      "CRDO": "Credo",
+      "DELL": "Dell Technologies",
+      "HONHAI": "Hon Hai (Foxconn)",
+      "HPE": "Hewlett Packard Enterprise",
+      "SMCI": "Super Micro",
+      "GEV": "GE Vernova",
+      "VRT": "Vertiv",
+      "MPWR": "Monolithic Power",
+      "MSFT": "Microsoft",
+      "AMZN": "Amazon",
+      "GOOGL": "Alphabet",
+      "META": "Meta Platforms",
+      "ORCL": "Oracle",
+      "NBIS": "Nebius",
+      "CRWV": "CoreWeave",
+      "PLTR": "Palantir",
+      "CRM": "Salesforce",
+      "NOW": "ServiceNow",
+      "APP": "AppLovin",
+      "INTU": "Intuit",
+      "DUOL": "Duolingo",
+      "LLY": "Eli Lilly",
+      "TEM": "Tempus AI",
+      "SDGR": "Schroedinger",
+      "CERT": "Certara",
+      "RXRX": "Recursion",
+      "SLP": "Simulations Plus",
+      "SONY": "Sony Group",
+      "LITE": "Lumentum",
+      "STM": "STMicroelectronics",
+      "ON": "onsemi",
+      "AMSOSR": "ams OSRAM",
+      "HSAI": "Hesai Group",
+      "OUST": "Ouster",
+      "AEVA": "Aeva Technologies",
+      "ROBOSENSE": "RoboSense",
+      "INVZ": "Innoviz",
+      "QCOM": "Qualcomm",
+      "AMBA": "Ambarella",
+      "MBLY": "Mobileye",
+      "ABB": "ABB",
+      "ISRG": "Intuitive Surgical",
+      "AAPL": "Apple"
+    },
+    "operators": {
+      "TSM": [
+        "TSMC"
+      ],
+      "SAMSUNG": [
+        "Samsung"
+      ],
+      "SKHYNIX": [
+        "SK hynix",
+        "SK Hynix"
+      ],
+      "MU": [
+        "Micron"
+      ],
+      "MSFT": [
+        "Microsoft"
+      ],
+      "META": [
+        "Meta Platforms"
+      ],
+      "ORCL": [
+        "Oracle"
+      ],
+      "AMZN": [
+        "Amazon"
+      ],
+      "GOOGL": [
+        "Google",
+        "Alphabet"
+      ],
+      "NVDA": [
+        "Nvidia",
+        "NVIDIA"
+      ],
+      "AAPL": [
+        "Apple"
+      ],
+      "SONY": [
+        "Sony"
+      ],
+      "DELL": [
+        "Dell"
+      ],
+      "CRWV": [
+        "CoreWeave"
+      ],
+      "AVGO": [
+        "Broadcom"
+      ],
+      "AMD": [
+        "AMD"
+      ],
+      "INTC": [
+        "Intel"
+      ],
+      "UMC": [
+        "UMC"
+      ],
+      "GFS": [
+        "GlobalFoundries"
+      ],
+      "ASML": [
+        "ASML"
+      ],
+      "LRCX": [
+        "Lam Research"
+      ],
+      "AMAT": [
+        "Applied Materials"
+      ],
+      "KLAC": [
+        "KLA"
+      ],
+      "SNDK": [
+        "SanDisk"
+      ],
+      "KIOXIA": [
+        "Kioxia"
+      ],
+      "ASE": [
+        "ASE Technology"
+      ],
+      "AMKR": [
+        "Amkor"
+      ],
+      "HONHAI": [
+        "Foxconn",
+        "Hon Hai"
+      ],
+      "NBIS": [
+        "Nebius"
+      ],
+      "LLY": [
+        "Lilly"
+      ],
+      "STM": [
+        "STMicro"
+      ],
+      "ON": [
+        "onsemi"
+      ],
+      "GEV": [
+        "GE Vernova"
+      ],
+      "COHR": [
+        "Coherent"
+      ],
+      "LITE": [
+        "Lumentum"
+      ],
+      "ABB": [
+        "ABB"
+      ],
+      "SMCI": [
+        "Super Micro",
+        "Supermicro"
+      ],
+      "HPE": [
+        "Hewlett Packard"
+      ]
+    },
+    "use_cases": {
+      "ai-accelerators-custom-silicon": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "MRVL",
+        "GOOGL",
+        "AMZN",
+        "DELL",
+        "SMCI",
+        "HPE",
+        "HONHAI"
+      ],
+      "hbm-memory-the-supercycle": [
+        "SKHYNIX",
+        "SAMSUNG",
+        "MU"
+      ],
+      "nand-flash-enterprise-ssd": [
+        "SAMSUNG",
+        "SKHYNIX",
+        "MU",
+        "SNDK",
+        "KIOXIA"
+      ],
+      "cowos-advanced-packaging": [
+        "TSM",
+        "ASE",
+        "AMKR"
+      ],
+      "semiconductor-fab-automation": [
+        "TSM",
+        "SAMSUNG",
+        "INTC",
+        "ASML",
+        "LRCX",
+        "AMAT",
+        "KLAC"
+      ],
+      "co-packaged-optics-cpo": [
+        "NVDA",
+        "AVGO",
+        "COHR",
+        "LITE",
+        "ANET",
+        "ALAB",
+        "CRDO"
+      ],
+      "800-vdc-rack-power": [
+        "NVDA",
+        "VRT",
+        "MPWR"
+      ],
+      "data-center-power-the-grid": [
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META",
+        "ORCL",
+        "CRWV",
+        "NBIS",
+        "GEV",
+        "VRT"
+      ],
+      "data-center-cooling": [
+        "GOOGL",
+        "VRT"
+      ],
+      "edge-ai-perception-chips": [
+        "NVDA",
+        "QCOM",
+        "AMBA",
+        "MBLY",
+        "ON",
+        "STM"
+      ],
+      "lidar-for-physical-ai": [
+        "HSAI",
+        "OUST",
+        "AEVA",
+        "ROBOSENSE",
+        "INVZ"
+      ],
+      "robotaxis-autonomous-driving": [
+        "GOOGL",
+        "AMZN",
+        "MBLY"
+      ],
+      "industrial-robots": [
+        "ABB"
+      ],
+      "surgical-robots-assisted": [
+        "ISRG"
+      ],
+      "ai-drug-discovery": [
+        "RXRX",
+        "SDGR",
+        "LLY"
+      ],
+      "pharma-in-house-ai-factories": [
+        "LLY",
+        "NVDA"
+      ],
+      "protein-folding-biology": [
+        "GOOGL"
+      ],
+      "ai-language-learning": [
+        "DUOL"
+      ],
+      "customer-service-agents": [
+        "CRM",
+        "NOW"
+      ],
+      "sales-marketing-agents": [
+        "CRM",
+        "APP"
+      ],
+      "finance-accounting": [
+        "INTU"
+      ],
+      "public-administration-government": [
+        "PLTR"
+      ],
+      "foundation-models-for-robotics": [
+        "NVDA",
+        "GOOGL"
+      ],
+      "digital-twins": [
+        "NVDA"
+      ],
+      "world-models-3d-generation": [
+        "NVDA",
+        "GOOGL",
+        "MSFT"
+      ],
+      "ai-weather-forecasting": [
+        "GOOGL"
+      ],
+      "video-avatar-generation": [
+        "GOOGL"
+      ],
+      "game-development": [
+        "NVDA",
+        "SONY"
+      ],
+      "ai-smart-glasses": [
+        "META",
+        "QCOM"
+      ]
+    }
   }
 }
