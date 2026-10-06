@@ -1201,6 +1201,36 @@ const UC = [
     "note", E("Single timing report; splats need conversion before printing or CAD",
       "Einzelne Zeitangabe; Splats brauchen vor Druck oder CAD eine Umwandlung")),
 
+  U(17,"FeTS consortium (Penn, Intel OpenFL), 71 sites on 6 continents","pilot",3,"steady",
+    E("Federated learning across hospitals","Föderiertes Lernen über Kliniken"),
+    E("Each hospital trains on its own workstation; only model weights travel","Jede Klinik trainiert auf der eigenen Workstation; nur Modellgewichte reisen"),
+    E("Glioblastoma model from <b>71 sites</b>, <b>6,314</b> patients: <b>+33%</b> better boundary of the operable tumour","Glioblastom-Modell aus <b>71 Standorten</b>, <b>6.314</b> Patienten: <b>+33 %</b> bessere Grenze des operablen Tumors"),
+    E("The answer to the problem every medical AI project runs into: the data that would make a model good sits in many hospitals that may not share it. In federated learning each site trains the model locally on its own GPU, sends only the updated weights to an aggregation server, and receives the merged model back - no image leaves the building. The largest study so far trained an automatic glioblastoma boundary detector across 71 sites on six continents, 6,314 patients and 25,256 MRI scans, and improved delineation by 33% for the surgically targetable tumour and 23% for the complete extent over a model trained on public data (Nature Communications). The FeTS challenge then benchmarked how best to merge the weights and found gains from adaptive aggregation and client sampling. Read carefully: this is one landmark study rather than routine practice, worst-case results expose sites whose data differ, and every site still needs a GPU, an IT approval and someone to run it.",
+      "Die Antwort auf das Problem, an dem jedes medizinische KI-Projekt hängt: Die Daten, die ein Modell gut machen würden, liegen in vielen Kliniken, die sie nicht weitergeben dürfen. Beim föderierten Lernen trainiert jeder Standort das Modell lokal auf seiner GPU, schickt nur die aktualisierten Gewichte an einen Aggregationsserver und bekommt das zusammengeführte Modell zurück - kein Bild verlässt das Haus. Die bisher größte Studie trainierte einen automatischen Glioblastom-Grenzdetektor über 71 Standorte auf sechs Kontinenten, 6.314 Patienten und 25.256 MRT-Scans und verbesserte die Abgrenzung des operablen Tumoranteils um 33 % und der gesamten Ausdehnung um 23 % gegenüber einem auf öffentlichen Daten trainierten Modell (Nature Communications). Die FeTS-Challenge verglich danach, wie man die Gewichte am besten zusammenführt, und fand Gewinne durch adaptive Aggregation und Auswahl der Teilnehmer. Genau lesen: Das ist eine Leitstudie, keine Routine; die schlechtesten Ergebnisse zeigen Standorte mit abweichenden Daten, und jeder Standort braucht weiterhin eine GPU, eine IT-Freigabe und jemanden, der es betreibt."),
+    E("Pati et al., Nature Communications (2022), 71-site federated glioblastoma study; FeTS Challenge, Nature Communications","Pati et al., Nature Communications (2022), föderierte Glioblastom-Studie an 71 Standorten; FeTS-Challenge, Nature Communications"),
+    "good", E("Peer-reviewed landmark study; not yet routine, site outliers remain",
+      "Begutachtete Leitstudie; noch keine Routine, Ausreißer-Standorte bleiben")),
+
+  U(17,"exo (EXO Labs), Petals","early",1,"strong",
+    E("Distributed inference across local machines","Verteilte Inferenz über lokale Rechner"),
+    E("Several Macs or workstations pool memory to run a model none could hold alone","Mehrere Macs oder Workstations bündeln Speicher für ein Modell, das keiner allein fasst"),
+    E("Reported: a <b>671B</b> model on <b>eight Mac minis</b> (exo); Petals runs <b>176B</b> models over the internet at ~1 step/s","Berichtet: ein <b>671-Mrd.</b>-Modell auf <b>acht Mac minis</b> (exo); Petals betreibt <b>176-Mrd.</b>-Modelle übers Internet mit ~1 Schritt/s"),
+    E("When one card is too small, split the model. exo, open source from EXO Labs, connects Macs and PCs on the same network into one inference cluster and pools their memory, so a lab or a small office can run open models far larger than any single machine holds, without a cloud bill and without data leaving the network; reports describe DeepSeek's 671B model on eight Mac minis on a shelf and a mixed cluster of two NVIDIA DGX Spark boxes with a Mac Studio. Petals takes the same idea onto the internet BitTorrent-style: volunteers each host a few layers, and BLOOM-176B or Llama 2 70B run at about one generation step per second, up to ten times faster than offloading on a single GPU (paper, 2023). Read carefully: the exo figures come from blog reports and the company, network speed between machines sets the pace, and on a public swarm like Petals your prompts pass through strangers' computers - fine for open data, not for patient records.",
+      "Wenn eine Karte zu klein ist, teilt man das Modell auf. exo, quelloffen von EXO Labs, verbindet Macs und PCs im selben Netz zu einem Inferenz-Verbund und bündelt ihren Speicher, sodass ein Labor oder kleines Büro offene Modelle betreiben kann, die weit größer sind als jeder einzelne Rechner fasst - ohne Cloud-Rechnung und ohne dass Daten das Netz verlassen; Berichte beschreiben DeepSeeks 671-Mrd.-Modell auf acht Mac minis im Regal und einen gemischten Verbund aus zwei NVIDIA DGX Spark mit einem Mac Studio. Petals trägt dieselbe Idee nach BitTorrent-Art ins Internet: Freiwillige stellen je einige Schichten bereit, und BLOOM-176B oder Llama 2 70B laufen mit etwa einem Generierungsschritt pro Sekunde, bis zu zehnmal schneller als Auslagern auf einer einzelnen GPU (Paper, 2023). Genau lesen: Die exo-Zahlen stammen aus Blogberichten und vom Unternehmen, die Netzgeschwindigkeit zwischen den Rechnern bestimmt das Tempo, und in einem öffentlichen Schwarm wie Petals laufen die Eingaben über fremde Rechner - gut für offene Daten, nicht für Patientenakten."),
+    E("EXO Labs; Borzunov et al., Petals (arXiv 2209.01188)","EXO Labs; Borzunov et al., Petals (arXiv 2209.01188)"),
+    "warn", E("exo figures are blog and vendor reports; public swarms are not private",
+      "exo-Zahlen aus Blogs und vom Hersteller; öffentliche Schwärme sind nicht privat")),
+
+  U(17,"Prime Intellect (INTELLECT-1, INTELLECT-2)","research",2,"nascent",
+    E("Decentralized training on contributed GPUs","Dezentrales Training auf beigesteuerten GPUs"),
+    E("A 32B reasoning model trained by reinforcement learning across a worldwide swarm of GPUs","Ein 32-Mrd.-Reasoning-Modell per Reinforcement Learning über einen weltweiten GPU-Schwarm trainiert"),
+    E("INTELLECT-2 (<b>32B</b>, May 2025): <b>78.8</b> AIME24, <b>67.8</b> LiveCodeBench, trained on permissionless contributed compute","INTELLECT-2 (<b>32 Mrd.</b>, Mai 2025): <b>78,8</b> AIME24, <b>67,8</b> LiveCodeBench, trainiert auf frei beigesteuerter Rechenleistung"),
+    E("Training, not just running, a serious model on machines spread across the world. Prime Intellect trained INTELLECT-1 (10B) across distributed GPUs and in May 2025 released INTELLECT-2, a 32B reasoning model trained by fully asynchronous reinforcement learning on a heterogeneous swarm that anyone could join with their own hardware. It works because reinforcement learning splits naturally: many inference workers generate and score answers, and a few training nodes update the weights; Prime Intellect built PRIME-RL for the loop, TOPLOC to verify that contributed rollouts were computed honestly, and SHARDCAST to broadcast new weights. Reported scores include 78.8 on AIME24, 64.9 on AIME25 and 67.8 on LiveCodeBench v5. Read carefully: the scores are the developer's own, the model started from an existing open base rather than from scratch, and decentralized training remains far less efficient than a single data-centre cluster - its point is who can take part, not cost.",
+      "Ein ernstzunehmendes Modell nicht nur betreiben, sondern trainieren - auf Rechnern, die über die Welt verteilt sind. Prime Intellect trainierte INTELLECT-1 (10 Mrd.) über verteilte GPUs und veröffentlichte im Mai 2025 INTELLECT-2, ein 32-Mrd.-Reasoning-Modell, trainiert per vollständig asynchronem Reinforcement Learning auf einem gemischten Schwarm, dem jeder mit eigener Hardware beitreten konnte. Das geht, weil sich Reinforcement Learning natürlich aufteilt: Viele Inferenz-Rechner erzeugen und bewerten Antworten, wenige Trainingsknoten aktualisieren die Gewichte; Prime Intellect baute dafür PRIME-RL für die Schleife, TOPLOC, um zu prüfen, dass beigesteuerte Ergebnisse ehrlich berechnet wurden, und SHARDCAST, um neue Gewichte zu verteilen. Gemeldet sind unter anderem 78,8 auf AIME24, 64,9 auf AIME25 und 67,8 auf LiveCodeBench v5. Genau lesen: Die Werte stammen vom Entwickler, das Modell startete von einer vorhandenen offenen Basis statt von null, und dezentrales Training bleibt weit weniger effizient als ein einzelner Rechenzentrums-Cluster - sein Punkt ist, wer mitmachen kann, nicht die Kosten."),
+    E("Prime Intellect, INTELLECT-2 release and technical report (May 2025)","Prime Intellect, Veröffentlichung und technischer Bericht INTELLECT-2 (Mai 2025)"),
+    "note", E("Developer-reported scores; less efficient than a central cluster",
+      "Werte vom Entwickler; weniger effizient als ein zentraler Cluster")),
+
   // ---- Cluster 8: knowledge-work agents (software) ----
   U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
     E("Coding agents","Coding-Agenten"),
@@ -1693,6 +1723,9 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Federated learning across hospitals":"https://www.bio-itworld.com/news/2023/01/17/global-federated-machine-learning-model-detects-glioblastoma-borders",
+  "Distributed inference across local machines":"https://ar5iv.labs.arxiv.org/html/2209.01188",
+  "Decentralized training on contributed GPUs":"https://primeintellect.ai/blog/intellect-2-release",
   "Local speech transcription":"https://www.promptquorum.com/power-local-llm/local-whisper-stt-comparison-2026",
   "Private knowledge base over your own files":"https://toolhalla.ai/blog/open-webui-vs-anythingllm-vs-librechat-2026",
   "Local microscopy segmentation":"https://pubmed.ncbi.nlm.nih.gov/33318659/",
@@ -1822,6 +1855,13 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Federated learning across hospitals":[
+    {n:"OpenFL", u:"https://github.com/securefederatedai/openfl"}],
+  "Distributed inference across local machines":[
+    {n:"exo", u:"https://www.exolabs.net/"},
+    {n:"Petals", u:"https://github.com/bigscience-workshop/petals"}],
+  "Decentralized training on contributed GPUs":[
+    {n:"Prime Intellect", u:"https://www.primeintellect.ai/"}],
   "Local speech transcription":[
     {n:"whisper.cpp", u:"https://github.com/ggml-org/whisper.cpp"},
     {n:"faster-whisper", u:"https://github.com/SYSTRAN/faster-whisper"}],
@@ -2305,6 +2345,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Federated learning across hospitals":[1,"train"],
+  "Distributed inference across local machines":[2,"edge"],
+  "Decentralized training on contributed GPUs":[2,"train"],
   "Local speech transcription":[1,"edge"],
   "Private knowledge base over your own files":[1,"edge"],
   "Local microscopy segmentation":[1,"edge"],
@@ -2528,6 +2571,24 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Federated learning across hospitals":{
+    name:"Эмнэлгүүдийн хооронд холбоот сургалт",
+    glab:"Эмнэлэг бүр өөрийн ажлын станц дээр сургадаг; зөвхөн загварын жин аялдаг",
+    metric:"<b>71 газар</b>, <b>6,314</b> өвчтөний глиобластомын загвар: мэс засал хийх боломжтой хавдрын хил <b>+33%</b> сайжирсан",
+    detail:"Эмнэлгийн хиймэл оюуны төсөл бүрд тулгардаг асуудлын хариу: загварыг сайн болгох өгөгдөл хуваалцаж болохгүй олон эмнэлэгт байдаг. Холбоот сургалтад газар бүр загварыг өөрийн GPU дээр сургаж, зөвхөн шинэчилсэн жинг нэгтгэх сервер рүү илгээж, нэгтгэсэн загварыг буцааж авдаг - ямар ч зураг барилгаас гардаггүй. Өнөөг хүртэлх хамгийн том судалгаа зургаан тивийн 71 газар, 6,314 өвчтөн, 25,256 MRI скан дээр глиобластомын хилийг автоматаар илрүүлэгчийг сургаж, нийтийн өгөгдөл дээр сургасан загвараас мэс засал хийх боломжтой хэсгийн хил тогтоолтыг 33%, бүх хэмжээг 23% сайжруулсан (Nature Communications). Дараа нь FeTS сорилт жинг хэрхэн нэгтгэх нь хамгийн сайн болохыг харьцуулж, дасан зохицох нэгтгэл, оролцогч сонголтоос ашиг олсон. Анхааралтай унших: энэ нь өдөр тутмын практик биш нэг тулгуур судалгаа, хамгийн муу үр дүн нь өгөгдөл нь өөр газруудыг илрүүлдэг, газар бүрд GPU, мэдээллийн технологийн зөвшөөрөл, ажиллуулах хүн хэрэгтэй хэвээр.",
+    flag:"хянан магадлагдсан тулгуур судалгаа; өдөр тутмын биш, гажуудсан газрууд үлддэг"},
+  "Distributed inference across local machines":{
+    name:"Дотоод компьютерууд дээр тархсан инференц",
+    glab:"Хэд хэдэн Mac эсвэл ажлын станц санах ойгоо нэгтгэж, нэг нь даахгүй загварыг ажиллуулдаг",
+    metric:"Мэдээлснээр: <b>найман Mac mini</b> дээр <b>671 тэрбум</b> параметртэй загвар (exo); Petals интернэтээр <b>176 тэрбумын</b> загварыг ~1 алхам/с-ээр ажиллуулдаг",
+    detail:"Нэг карт хангалтгүй бол загварыг хуваана. EXO Labs-ийн нээлттэй эхийн exo нь нэг сүлжээн дэх Mac, PC-г нэг инференцийн кластер болгон холбож, санах ойг нь нэгтгэдэг тул лаборатори эсвэл жижиг оффис аль ч ганц машинд багтахгүй том нээлттэй загварыг үүлний төлбөргүй, өгөгдөл сүлжээнээс гаргахгүйгээр ажиллуулж чадна; мэдээллүүдэд DeepSeek-ийн 671 тэрбумын загварыг тавиур дээрх найман Mac mini дээр, хоёр NVIDIA DGX Spark ба Mac Studio-гийн холимог кластерыг дүрсэлдэг. Petals ижил санааг BitTorrent маягаар интернэтэд гаргадаг: сайн дурынхан тус бүр хэдэн давхарга байршуулж, BLOOM-176B эсвэл Llama 2 70B секундэд нэг орчим алхмаар, нэг GPU дээр гадагшлуулахаас 10 хүртэл дахин хурдан ажилладаг (өгүүлэл, 2023). Анхааралтай унших: exo-ийн тоо блог, компанийн мэдээллээс, машин хоорондын сүлжээний хурд хурдыг тодорхойлдог, Petals зэрэг нийтийн сүлжээнд таны оролт танихгүй хүмүүсийн компьютероор дамждаг - нээлттэй өгөгдөлд тохиромжтой, өвчтөний бичиг баримтад биш.",
+    flag:"exo-ийн тоо блог, үйлдвэрлэгчийн мэдээлэл; нийтийн сүлжээ хувийн биш"},
+  "Decentralized training on contributed GPUs":{
+    name:"Хандивласан GPU дээрх төвлөрсөн бус сургалт",
+    glab:"32 тэрбумын сэтгэх загварыг дэлхий даяарх GPU сүрэг дээр reinforcement learning-ээр сургасан",
+    metric:"INTELLECT-2 (<b>32 тэрбум</b>, 2025.5): AIME24 <b>78.8</b>, LiveCodeBench <b>67.8</b>, чөлөөтэй хандивласан тооцоолол дээр сургасан",
+    detail:"Ноцтой загварыг зөвхөн ажиллуулах биш, дэлхий даяар тархсан машин дээр сургах. Prime Intellect INTELLECT-1 (10 тэрбум)-ийг тархсан GPU дээр сургаж, 2025 оны 5-р сард хэн ч өөрийн тоног төхөөрөмжөөр нэгдэж болох холимог сүрэг дээр бүрэн асинхрон reinforcement learning-ээр сургасан 32 тэрбумын сэтгэх загвар INTELLECT-2-ийг гаргасан. Энэ нь reinforcement learning байгалиасаа хуваагддаг учир боломжтой: олон инференцийн машин хариулт үүсгэж үнэлж, цөөн сургалтын зангилаа жинг шинэчилдэг; Prime Intellect давталтад PRIME-RL, хандивласан үр дүнг шударгаар тооцоолсныг шалгахад TOPLOC, шинэ жинг түгээхэд SHARDCAST бүтээсэн. Мэдээлсэн оноонд AIME24 78.8, AIME25 64.9, LiveCodeBench v5 67.8 багтана. Анхааралтай унших: оноо хөгжүүлэгчийнх, загвар тэгээс биш одоо байгаа нээлттэй суурь дээрээс эхэлсэн, төвлөрсөн бус сургалт нэг дата төвийн кластераас хамаагүй бага үр ашигтай хэвээр - гол нь зардал биш, хэн оролцож чадах явдал.",
+    flag:"оноо хөгжүүлэгчийнх; төвлөрсөн кластераас бага үр ашигтай"},
   "Local speech transcription":{
     name:"Дотоод яриа таних",
     glab:"Ярилцлага, зөвлөгөө, хурлыг машин дээр бичвэр болгоно; аудио байршуулагдахгүй",
