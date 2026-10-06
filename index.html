@@ -592,6 +592,16 @@ const UC = [
     "note", E("documents hard, the AI effect itself is not quantified","Dokumente hart, die KI-Wirkung selbst nicht quantifiziert")),
 
   // ---- Cluster 3: industry & humanoids ----
+  U(3,"TeamViewer Frontline, RealWear, Vuzix; DHL (vision picking)","early",2,"steady",
+    E("AR remote assistance & vision picking","AR-Fernassistenz & Vision Picking"),
+    E("Expert sees through a technician's glasses; HoloLens gone, market moves to light glasses","Experte sieht durch die Brille des Technikers; HoloLens eingestellt, Markt wandert zu leichten Brillen"),
+    E("Review of 80 studies: repair times <b>up to 40% shorter</b>; DHL pilot picking efficiency <b>+25%</b>","Übersicht über 80 Studien: Reparaturzeiten <b>bis zu 40 % kürzer</b>; DHL-Pilot Kommissioniereffizienz <b>+25 %</b>"),
+    E("Two workplace uses of head-worn displays. In remote assistance a field technician streams what they see from rugged, voice-controlled glasses, and an expert elsewhere talks them through the repair and draws annotations into their view; newer systems add AI that recognises parts and pulls up the matching manual. In vision picking a warehouse worker sees aisle, shelf and quantity in the glasses and confirms by scanning. A 2025 systematic review of 80 peer-reviewed studies (2017-2025) finds repair times up to 40% shorter and unplanned downtime up to 50% lower; DHL's vision-picking pilot with Ricoh and Ubimax reported 25% higher picking efficiency. The hardware is shifting: Microsoft stopped making HoloLens 2 in December 2024 and ends support for Dynamics 365 Remote Assist and Guides on 31 December 2026, and enterprise buyers are moving to lighter glasses such as RealWear's running TeamViewer Frontline. Read carefully: the figures are best cases ('up to'), the DHL number comes from a three-week pilot with ten pickers, and vendor ROI claims dominate the literature.",
+      "Zwei Einsätze von Displays am Kopf im Beruf. Bei der Fernassistenz streamt ein Servicetechniker aus robusten, sprachgesteuerten Brillen, was er sieht, und ein Experte an einem anderen Ort leitet die Reparatur an und zeichnet Markierungen in sein Sichtfeld; neuere Systeme ergänzen KI, die Bauteile erkennt und das passende Handbuch aufruft. Beim Vision Picking sieht eine Lagerkraft Gang, Fach und Menge in der Brille und bestätigt per Scan. Eine systematische Übersicht von 2025 über 80 begutachtete Studien (2017-2025) findet bis zu 40 % kürzere Reparaturzeiten und bis zu 50 % weniger ungeplante Stillstände; der Vision-Picking-Pilot von DHL mit Ricoh und Ubimax meldete 25 % höhere Kommissioniereffizienz. Die Hardware wechselt: Microsoft fertigt HoloLens 2 seit Dezember 2024 nicht mehr und beendet den Support für Dynamics 365 Remote Assist und Guides am 31.12.2026; Unternehmen wandern zu leichteren Brillen wie denen von RealWear mit TeamViewer Frontline. Genau lesen: Die Zahlen sind Bestwerte ('bis zu'), die DHL-Zahl stammt aus einem dreiwöchigen Pilot mit zehn Kommissionierern, und Hersteller-ROI-Angaben prägen die Literatur."),
+    E("Systematic review, Discover Applied Sciences (2025); DHL vision-picking pilot; Microsoft retirement notice (Dec 2025)","Systematische Übersicht, Discover Applied Sciences (2025); DHL-Vision-Picking-Pilot; Microsoft-Abkündigung (Dez. 2025)"),
+    "warn", E("Best-case 'up to' figures and small pilots; vendor ROI claims dominate",
+      "Bestwerte ('bis zu') und kleine Piloten; Hersteller-ROI-Angaben dominieren")),
+
   U(3,"FANUC, ABB, KUKA, Universal Robots","prod",3,"steady",
     E("Industrial robots","Industrieroboter"),
     E("4.66M installed, +9% YoY (IFR)","4,66 Mio installiert, +9 % YoY (IFR)"),
@@ -758,6 +768,16 @@ const UC = [
     E("Garcia et al., JMIR (2022), sham-controlled RCT; FDA De Novo (Nov 2021); CMS HCPCS E1905 (Apr 2023)","Garcia et al., JMIR (2022), scheinkontrollierte RCT; FDA De Novo (Nov. 2021); CMS HCPCS E1905 (Apr. 2023)"),
     "note", E("Sham-controlled RCT, but manufacturer-run; VR therapy with little AI inside",
       "Scheinkontrollierte RCT, aber vom Hersteller durchgeführt; VR-Therapie mit wenig KI darin")),
+
+  U(5,"Augmedics (xvision Spine)","prod",2,"steady",
+    E("AR surgical navigation","AR-Navigation in der Chirurgie"),
+    E("CT-based 3D spine overlaid on the patient in a headset; next-gen X2 headset FDA-cleared Nov 2025","CT-basierte 3D-Wirbelsäule im Headset über den Patienten gelegt; Headset der nächsten Generation X2 seit Nov. 2025 FDA-freigegeben"),
+    E("<b>12,000+ patients</b>, <b>65,000+</b> pedicle screws in 25 US states; <b>98.9%</b> placement accuracy in a Rush study","<b>&gt;12.000 Patienten</b>, <b>&gt;65.000</b> Pedikelschrauben in 25 US-Bundesstaaten; <b>98,9 %</b> Platzierungsgenauigkeit in einer Rush-Studie"),
+    E("The surgeon wears a headset that projects the patient's CT-derived spine onto the operating field, so instruments and screws are navigated while looking at the patient instead of at a monitor across the room. Augmedics' xvision Spine was the first augmented-reality guidance system cleared by the FDA for surgery (2019); by November 2025, when its purpose-built X2 headset was cleared, it had treated more than 12,000 patients and placed over 65,000 pedicle screws in 25 US states. At Rush University Medical Center two independent neuroradiologists rated screw placement 98.9% clinically accurate, and other series report 97-100%. The AI part is modest: image enhancement of the CT data was added in 2023, the rest is registration and tracking. Read carefully: accuracy comes from single-centre series rather than randomised comparisons against conventional navigation, and no outcome advantage for patients has been shown yet.",
+      "Die Chirurgin oder der Chirurg trägt ein Headset, das die aus dem CT gewonnene Wirbelsäule des Patienten auf das Operationsfeld legt; Instrumente und Schrauben werden mit Blick auf den Patienten geführt statt auf einen Monitor quer durch den Saal. xvision Spine von Augmedics war das erste von der FDA für die Chirurgie freigegebene AR-Führungssystem (2019); bis November 2025, als das eigens gebaute Headset X2 freigegeben wurde, hatte es mehr als 12.000 Patienten behandelt und über 65.000 Pedikelschrauben in 25 US-Bundesstaaten gesetzt. Am Rush University Medical Center bewerteten zwei unabhängige Neuroradiologen die Schraubenlage als zu 98,9 % klinisch genau, andere Serien berichten 97-100 %. Der KI-Anteil ist bescheiden: 2023 kam eine Bildverbesserung der CT-Daten hinzu, der Rest ist Registrierung und Tracking. Genau lesen: Die Genauigkeit stammt aus Einzelzentrums-Serien, nicht aus randomisierten Vergleichen mit konventioneller Navigation, und ein Ergebnisvorteil für Patienten ist noch nicht gezeigt."),
+    E("Augmedics X2 FDA clearance (12 Nov 2025); Rush University accuracy study","FDA-Freigabe Augmedics X2 (12.11.2025); Genauigkeitsstudie Rush University"),
+    "note", E("Company case counts and single-centre accuracy; no randomised outcome comparison; little AI inside",
+      "Fallzahlen vom Hersteller und Genauigkeit aus Einzelzentren; kein randomisierter Ergebnisvergleich; wenig KI darin")),
 
   U(5,"Neocis Yomi, Dentsply Sirona","early",2,"steady",
     E("Dental / implant robots","Zahn- / Implantat-Roboter"),
@@ -1328,6 +1348,8 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "AR surgical navigation":"https://www.massdevice.com/augmedics-fda-clearance-next-gen-ar-headset/",
+  "AR remote assistance & vision picking":"https://www.directionsonmicrosoft.com/reports/dynamics-365-retiring-guides-and-remote-assist-move-before-dec-2026/",
   "VR pain therapy":"https://www.jmir.org/2022/5/e37480/PDF",
   "AI smart glasses":"https://9to5google.com/2026/09/22/smart-glasses-growth-h1-2026/",
   "Be My Eyes":"https://www.bemyeyes.com/news/be-my-eyes-reaches-1-million-blind-and-low-vision-users-and-10-million-volunteers/",
@@ -1436,6 +1458,12 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "AR surgical navigation":[
+    {n:"Augmedics", u:"https://augmedics.com/"}],
+  "AR remote assistance & vision picking":[
+    {n:"TeamViewer", u:"https://www.teamviewer.com/"},
+    {n:"RealWear", u:"https://www.realwear.com/"},
+    {n:"Vuzix", u:"https://www.vuzix.com/"}],
   "VR pain therapy":[
     {n:"AppliedVR", u:"https://appliedvr.io/"}],
   "AI smart glasses":[
@@ -1860,6 +1888,8 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "AR surgical navigation":[1,"edge"],
+  "AR remote assistance & vision picking":[1,"edge"],
   "VR pain therapy":[1,"edge"],
   "AI smart glasses":[2,"inf"],
   "Be My Eyes":[1,"inf"],
@@ -2056,6 +2086,18 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "AR surgical navigation":{
+    name:"Мэс засалд AR навигаци",
+    glab:"CT-д суурилсан 3D нурууг толгойн төхөөрөмжөөр өвчтөн дээр давхарлана; шинэ үеийн X2 2025.11-д FDA-ийн зөвшөөрөл авсан",
+    metric:"<b>12,000+ өвчтөн</b>, АНУ-ын 25 мужид <b>65,000+</b> нурууны шураг; Rush-ийн судалгаанд <b>98.9%</b> байршлын нарийвчлал",
+    detail:"Мэс засалч өвчтөний CT-ээс гаргасан нурууг мэс заслын талбай дээр тусгадаг толгойн төхөөрөмж зүүдэг тул багаж, шурагийг танхимын нөгөө талын дэлгэц рүү биш, өвчтөн рүү харж чиглүүлдэг. Augmedics-ийн xvision Spine нь мэс засалд FDA-ийн зөвшөөрөл авсан анхны AR чиглүүлэх систем (2019); тусгайлан бүтээсэн X2 толгойн төхөөрөмж зөвшөөрөл авсан 2025 оны 11-р сар гэхэд АНУ-ын 25 мужид 12,000 гаруй өвчтөнийг эмчилж, 65,000 гаруй шураг суулгасан. Rush University Medical Center-т хоёр бие даасан нейрорадиологич шурагийн байрлалыг 98.9% эмнэлзүйн хувьд зөв гэж үнэлсэн, бусад цуврал 97-100% мэдээлдэг. Хиймэл оюуны хэсэг бага: 2023 онд CT өгөгдлийн зургийн сайжруулалт нэмэгдсэн, үлдсэн нь бүртгэл, хяналт. Анхааралтай унших: нарийвчлал нь сонгодог навигацитай санамсаргүй харьцуулалтаас биш, нэг төвийн цувралаас гарсан, өвчтөнд үр дүнгийн давуу тал хараахан батлагдаагүй.",
+    flag:"үйлдвэрлэгчийн тоо, нэг төвийн нарийвчлал; санамсаргүй үр дүнгийн харьцуулалт байхгүй; хиймэл оюун бага"},
+  "AR remote assistance & vision picking":{
+    name:"AR алсын туслалцаа ба нүдний шилээр бараа түүх",
+    glab:"Мэргэжилтэн техникчийн нүдний шилээр хардаг; HoloLens зогссон, зах зээл хөнгөн нүдний шил рүү шилжиж байна",
+    metric:"80 судалгааны тойм: засварын хугацаа <b>40% хүртэл богино</b>; DHL-ийн туршилтад бараа түүх үр ашиг <b>+25%</b>",
+    detail:"Толгойд зүүдэг дэлгэцийн ажлын байрны хоёр хэрэглээ. Алсын туслалцаанд талбайн техникч бат бөх, дуугаар удирддаг нүдний шилнээс харж буйгаа дамжуулж, өөр газар байгаа мэргэжилтэн засварыг зааварлан харах талбарт нь тэмдэглэгээ зурдаг; шинэ системүүд эд ангийг таньж, тохирох гарын авлагыг гаргадаг хиймэл оюун нэмдэг. Нүдний шилээр бараа түүхэд агуулахын ажилтан эгнээ, тавиур, тоо хэмжээг нүдний шилэндээ харж, скан хийж баталгаажуулдаг. 2025 оны 80 хянан магадлагдсан судалгааны (2017-2025) системтэй тойм засварын хугацааг 40% хүртэл богиносгож, төлөвлөгдөөгүй зогсолтыг 50% хүртэл бууруулдгийг олсон; DHL-ийн Ricoh, Ubimax-тай хийсэн туршилт бараа түүх үр ашгийг 25% нэмэгдүүлсэн. Тоног төхөөрөмж өөрчлөгдөж байна: Microsoft 2024 оны 12-р сараас HoloLens 2 үйлдвэрлэхээ зогсоож, Dynamics 365 Remote Assist, Guides-ийн дэмжлэгийг 2026.12.31-нд дуусгана; компаниуд TeamViewer Frontline ажиллуулдаг RealWear зэрэг хөнгөн нүдний шил рүү шилжиж байна. Анхааралтай унших: тоонууд нь хамгийн сайн тохиолдол ('хүртэл'), DHL-ийн тоо арван ажилтантай гурван долоо хоногийн туршилтынх, ном зохиолд үйлдвэрлэгчийн ROI мэдээлэл давамгайлдаг.",
+    flag:"хамгийн сайн тохиолдлын 'хүртэл' тоо, жижиг туршилт; үйлдвэрлэгчийн ROI давамгайлдаг"},
   "VR pain therapy":{
     name:"VR өвдөлтийн эмчилгээ",
     glab:"FDA-ийн зөвшөөрөлтэй гэрийн анхны VR эмчилгээ; 2023 оноос Medicare-ийн тусгай төхөөрөмжийн кодтой",
