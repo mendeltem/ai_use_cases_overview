@@ -839,15 +839,35 @@ const UC = [
     "good", E("Headline result is peer-reviewed but dates from the original robot-chemist work, not 2026; transfer between labs remains unsolved",
       "Das Referenzergebnis ist begutachtet, stammt aber aus der urspruenglichen Roboterchemiker-Arbeit, nicht aus 2026; die Uebertragbarkeit zwischen Laboren ist ungeloest")),
 
-  U(7,"Google DeepMind, Commonwealth Fusion Systems","research",1,"nascent",
+  U(7,"Google DeepMind, EPFL, Princeton / PPPL, Commonwealth Fusion Systems","research",2,"nascent",
     E("Fusion plasma control","Plasmasteuerung in der Fusion"),
-    E("RL control of plasma shape, trained in simulation, run on a live tokamak","RL-Steuerung der Plasmaform, in Simulation trainiert, am laufenden Tokamak"),
-    E("Learned control holds plasma shape on a live tokamak - <b>no net-energy result</b>","Gelernte Steuerung haelt die Plasmaform am laufenden Tokamak - <b>kein Netto-Energieergebnis</b>"),
-    E("A reinforcement-learning agent trained entirely in simulation was put on the TCV tokamak and held plasma shape and position with millisecond adjustments - a genuine control result, published in 2022. In 2026 DeepMind announced a partnership with Commonwealth Fusion Systems around the SPARC machine. That is a partnership announcement, not an outcome: as of mid-2026 no peer-reviewed demonstration of AI-assisted net energy gain exists. This entry is here as research, and the honest headline is what has not happened yet.",
-      "Ein Reinforcement-Learning-Agent, vollstaendig in Simulation trainiert, wurde auf den TCV-Tokamak gesetzt und hielt Form und Lage des Plasmas mit Anpassungen im Millisekundentakt - ein echtes Steuerungsergebnis, veroeffentlicht 2022. 2026 kuendigte DeepMind eine Partnerschaft mit Commonwealth Fusion Systems rund um die SPARC-Maschine an. Das ist eine Ankuendigung, kein Ergebnis: Bis Mitte 2026 gibt es keine begutachtete Demonstration eines KI-gestuetzten Netto-Energiegewinns. Der Eintrag steht hier als Forschung, und die ehrliche Schlagzeile ist das, was noch nicht passiert ist."),
-    E("Google DeepMind / EPFL Swiss Plasma Center (2022); DeepMind-CFS partnership (2026)","Google DeepMind / EPFL Swiss Plasma Center (2022); Partnerschaft DeepMind-CFS (2026)"),
-    "thin", E("Control result is real and peer-reviewed; everything about energy gain is announcement, not demonstration",
-      "Das Steuerungsergebnis ist real und begutachtet; alles zum Energiegewinn ist Ankuendigung, keine Demonstration")),
+    E("RL control on live tokamaks: TCV 2022, DIII-D 2024; SPARC partnership since Oct 2025","RL-Steuerung am laufenden Tokamak: TCV 2022, DIII-D 2024; SPARC-Partnerschaft seit Okt. 2025"),
+    E("Tearing instability forecast <b>up to 300 ms ahead</b> and avoided on DIII-D - <b>no net-energy result</b>","Tearing-Instabilität <b>bis 300 ms im Voraus</b> erkannt und am DIII-D vermieden - <b>kein Netto-Energieergebnis</b>"),
+    E("Two peer-reviewed control results. In 2022 a reinforcement-learning agent trained entirely in simulation drove all coils of the TCV tokamak and held plasma shape and position. In 2024 a Princeton/PPPL team trained a neural network on past DIII-D shots to forecast tearing instabilities up to 300 ms ahead, then trained an RL controller against it that changed beam power and plasma shape in real time to avoid the tear (Nature). In October 2025 DeepMind and Commonwealth Fusion Systems announced a partnership to develop control strategies for SPARC, which was about 75% built in early 2026 with first plasma targeted for 2027. Read carefully: these are demonstrations on research machines. Day-to-day tokamak operation still runs on classical model-based control, the 1,066-second EAST record of January 2025 came from heating and wall engineering rather than AI, and a neural controller is hard to certify for a power plant.",
+      "Zwei begutachtete Steuerungsergebnisse. 2022 steuerte ein vollständig in Simulation trainierter Reinforcement-Learning-Agent alle Spulen des TCV-Tokamaks und hielt Form und Lage des Plasmas. 2024 trainierte ein Team von Princeton/PPPL ein neuronales Netz auf früheren DIII-D-Entladungen, das Tearing-Instabilitäten bis zu 300 ms im Voraus vorhersagt, und daran einen RL-Regler, der Strahlleistung und Plasmaform in Echtzeit so änderte, dass der Riss ausblieb (Nature). Im Oktober 2025 kündigten DeepMind und Commonwealth Fusion Systems eine Partnerschaft für Regelstrategien an SPARC an; die Anlage war Anfang 2026 zu etwa 75 % gebaut, erstes Plasma ist für 2027 geplant. Genau lesen: Das sind Demonstrationen an Forschungsanlagen. Der Alltagsbetrieb von Tokamaks läuft weiter mit klassischer modellbasierter Regelung, der 1.066-Sekunden-Rekord von EAST im Januar 2025 kam aus Heizung und Wandtechnik, nicht aus KI, und ein neuronaler Regler ist für ein Kraftwerk schwer zu zertifizieren."),
+    E("Degrave et al., Nature (2022); Seo et al., Nature (2024); DeepMind-CFS partnership (Oct 2025)","Degrave et al., Nature (2022); Seo et al., Nature (2024); Partnerschaft DeepMind-CFS (Okt. 2025)"),
+    "note", E("Control results are peer-reviewed; the SPARC work is a partnership, not an outcome; energy gain is not demonstrated",
+      "Die Steuerungsergebnisse sind begutachtet; die SPARC-Arbeit ist eine Partnerschaft, kein Ergebnis; ein Energiegewinn ist nicht demonstriert")),
+
+  U(7,"General Atomics (DIII-D), Princeton FRNN, SWIP (HL-2A / HL-3), ASIPP (EAST)","pilot",2,"steady",
+    E("Fusion disruption prediction","Disruptionsvorhersage in der Fusion"),
+    E("Deep-learning predictors running inside real-time plasma control systems","Deep-Learning-Prädiktoren laufen in Echtzeit-Plasmaregelsystemen"),
+    E("<b>0.3 ms</b> per inference, <b>89%</b> accuracy in online tests in the HL-2A control system","<b>0,3 ms</b> je Vorhersage, <b>89 %</b> Genauigkeit im Online-Test im HL-2A-Regelsystem"),
+    E("A disruption dumps the plasma's energy onto the wall within milliseconds; on an ITER-class machine it has to be almost ruled out. Recurrent and convolutional networks trained on archived shots output a running disruption score that the control system can act on. At DIII-D a predictor from the FRNN line was installed in the plasma control system and ran in real time; it now also reports a sensitivity score that names which signal is driving the alarm. In China, an HL-2A predictor ran at 0.3 ms per time slice and reached 89% accuracy in online tests, and EAST trains CNN, LSTM, random-forest and XGBoost models, with cross-machine tests against Alcator C-Mod and DIII-D data together with MIT. The open problem is transfer: ITER will start with no disruption database of its own, and a predictor tuned on one machine loses accuracy on another. For the compute question this card is light: small models, sub-millisecond inference.",
+      "Eine Disruption entlädt die Energie des Plasmas binnen Millisekunden auf die Wand; bei einer Anlage der ITER-Klasse muss sie praktisch ausgeschlossen werden. Rekurrente und Faltungsnetze, trainiert auf archivierten Entladungen, geben laufend einen Disruption-Score aus, auf den das Regelsystem reagieren kann. Am DIII-D wurde ein Prädiktor aus der FRNN-Linie in das Plasmaregelsystem eingebaut und lief in Echtzeit; er meldet inzwischen auch einen Sensitivity-Score, der nennt, welches Signal den Alarm treibt. In China lief ein HL-2A-Prädiktor mit 0,3 ms je Zeitschritt und erreichte im Online-Test 89 % Genauigkeit, EAST trainiert CNN-, LSTM-, Random-Forest- und XGBoost-Modelle und testet zusammen mit dem MIT anlagenübergreifend gegen Daten von Alcator C-Mod und DIII-D. Das offene Problem ist die Übertragung: ITER startet ohne eigene Disruptionsdatenbank, und ein Prädiktor, der auf eine Anlage abgestimmt ist, verliert an einer anderen an Genauigkeit. Für die Rechenfrage ist die Karte leicht: kleine Modelle, Inferenz unter einer Millisekunde."),
+    E("FRNN plasma-control integration (arXiv 2204.01289); SWIP HL-2A (IAEA FEC); ASIPP EAST (IAEA)","FRNN-Einbindung ins Plasmaregelsystem (arXiv 2204.01289); SWIP HL-2A (IAEA FEC); ASIPP EAST (IAEA)"),
+    "note", E("Accuracy figures are preprint and conference numbers from single machines; transfer to ITER is unproven",
+      "Genauigkeitszahlen stammen aus Preprints und Konferenzbeiträgen einzelner Anlagen; die Übertragung auf ITER ist unbewiesen")),
+
+  U(7,"LLNL (NIF), DIFFER / UKAEA (QLKNN), Google DeepMind (TORAX)","early",3,"strong",
+    E("Fusion simulation surrogates","Simulations-Surrogate in der Fusion"),
+    E("Neural surrogates replace hours of physics code; NIF ignition forecast before the shot","Neuronale Surrogate ersetzen Stunden Physikcode; NIF-Zündung vor dem Schuss vorhergesagt"),
+    E("NIF ignition shot forecast at <b>&gt;70%</b> a week ahead; transport surrogates <b>10³–10⁵× faster</b>","NIF-Zündschuss eine Woche vorher mit <b>&gt;70 %</b> vorhergesagt; Transport-Surrogate <b>10³–10⁵-mal schneller</b>"),
+    E("Turbulence and implosion codes take hours to days per run, which rules out optimisation, uncertainty estimates and training controllers. Neural surrogates trained on large simulation databases close that gap. Inertial fusion: an LLNL model trained on more than 150,000 simulations plus years of NIF deuterium-tritium data gave a better than 70% probability that the shot of 5 December 2022 would pass breakeven, the week before it did (Science, 2025); since August 2025 AI agents automate target design on LLNL supercomputers. Magnetic fusion: QLKNN, trained on 300 million QuaLiKiz flux calculations, reproduces JINTRAC profiles three to five orders of magnitude faster - hours become tens of seconds - within about 1-15%. It is coupled into JINTRAC, RAPTOR and DeepMind's open-source TORAX, which CFS uses to run virtual SPARC campaigns before the machine exists. Note that TORAX itself is a differentiable physics solver, not an AI model; the learned part is the surrogate inside it.",
+      "Turbulenz- und Implosionscodes brauchen je Lauf Stunden bis Tage; Optimierung, Unsicherheitsabschätzung und das Training von Reglern sind damit ausgeschlossen. Neuronale Surrogate, trainiert auf großen Simulationsdatenbanken, schließen diese Lücke. Trägheitsfusion: Ein LLNL-Modell, trainiert auf über 150.000 Simulationen und mehrere Jahre NIF-Deuterium-Tritium-Daten, gab dem Schuss vom 5. Dezember 2022 eine Wahrscheinlichkeit von über 70 %, den Break-even zu überschreiten - eine Woche bevor es geschah (Science, 2025); seit August 2025 automatisieren KI-Agenten das Target-Design auf LLNL-Supercomputern. Magnetfusion: QLKNN, trainiert auf 300 Mio. QuaLiKiz-Flussrechnungen, reproduziert JINTRAC-Profile drei bis fünf Größenordnungen schneller - aus Stunden werden einige zehn Sekunden - mit etwa 1-15 % Abweichung. Es ist in JINTRAC, RAPTOR und DeepMinds quelloffenes TORAX eingebunden, mit dem CFS virtuelle SPARC-Kampagnen rechnet, bevor die Anlage existiert. Zu beachten: TORAX selbst ist ein differenzierbarer Physiklöser, kein KI-Modell; gelernt ist das Surrogat darin."),
+    E("Spears et al., Science (2025); van de Plassche et al., Phys. Plasmas (2020); Google DeepMind TORAX","Spears et al., Science (2025); van de Plassche et al., Phys. Plasmas (2020); Google DeepMind TORAX"),
+    "good", E("NIF forecast and QLKNN speed-up are peer-reviewed; surrogates are only valid inside their training range",
+      "NIF-Prognose und QLKNN-Beschleunigung sind begutachtet; Surrogate gelten nur innerhalb ihres Trainingsbereichs")),
 
   // ---- Cluster 8: knowledge-work agents (software) ----
   U(8,"Claude Code, Cursor, OpenAI Codex","prod",3,"explosive",
@@ -1238,6 +1258,9 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Fusion plasma control":"https://www.pppl.gov/news/2024/engineers-use-ai-wrangle-fusion-power-grid",
+  "Fusion disruption prediction":"https://arxiv.org/abs/2204.01289",
+  "Fusion simulation surrogates":"https://www.llnl.gov/article/53316/llnl-used-ai-predict-historic-fusion-ignition-shot",
   "5G / connectivity for robotics":"https://www.ericsson.com/en/press-releases/2026/6/ericsson-mobility-report-5g-subscriptions-top-three-billion-as-uplink-gains-momentum",
   "800-VDC rack power":"https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/",
   "AI accelerators & custom silicon":"https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
@@ -1336,6 +1359,16 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Fusion plasma control":[
+    {n:"Google DeepMind", u:"https://deepmind.google/"},
+    {n:"PPPL", u:"https://www.pppl.gov/"},
+    {n:"Commonwealth Fusion Systems", u:"https://cfs.energy/"}],
+  "Fusion disruption prediction":[
+    {n:"General Atomics", u:"https://www.ga.com/"},
+    {n:"ITER", u:"https://www.iter.org/"}],
+  "Fusion simulation surrogates":[
+    {n:"LLNL NIF", u:"https://lasers.llnl.gov/"},
+    {n:"TORAX", u:"https://github.com/google-deepmind/torax"}],
   "Biometric airport check-in & border":[
     {n:"SITA", u:"https://www.sita.aero/"},
     {n:"IDEMIA", u:"https://www.idemia.com/"},
@@ -1733,6 +1766,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Fusion plasma control":[1,"sim"],
+  "Fusion disruption prediction":[1,"edge"],
+  "Fusion simulation surrogates":[2,"sim"],
   "Seismic interpretation (subsurface AI)":[3,"train"],
   "Offshore asset integrity":[2,"inf"],
   "Agentic chip verification (EDA)":[3,"inf"],
@@ -1919,6 +1955,24 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Fusion plasma control":{
+    name:"Нийлэгжилтийн плазмын удирдлага",
+    glab:"Ажиллаж буй токамак дээрх RL удирдлага: TCV 2022, DIII-D 2024; 2025 оны 10-р сараас SPARC-ийн түншлэл",
+    metric:"DIII-D дээр tearing тогтворгүй байдлыг <b>300 мс хүртэл урьдчилан</b> илрүүлж, сэргийлсэн - <b>цэвэр энергийн үр дүн байхгүй</b>",
+    detail:"Хянан магадлагдсан хоёр удирдлагын үр дүн бий. 2022 онд бүхэлдээ симуляцад сургасан reinforcement learning агент TCV токамакийн бүх ороомгийг удирдаж, плазмын хэлбэр, байрлалыг барьсан. 2024 онд Princeton/PPPL-ийн баг DIII-D-ийн өмнөх туршилтын өгөгдөл дээр мэдрэлийн сүлжээ сургаж, tearing тогтворгүй байдлыг 300 мс хүртэл урьдчилан таамагласан бөгөөд үүн дээр RL удирдлага сургаж, цацрагийн хүч, плазмын хэлбэрийг бодит хугацаанд өөрчлөн урагдалтаас сэргийлсэн (Nature). 2025 оны 10-р сард DeepMind ба Commonwealth Fusion Systems SPARC-д зориулсан удирдлагын стратегийн түншлэл зарласан; 2026 оны эхээр байгууламж ойролцоогоор 75% баригдсан, анхны плазмыг 2027 онд төлөвлөж байна. Анхааралтай унших: эдгээр нь судалгааны байгууламж дээрх үзүүлэн юм. Токамакийн өдөр тутмын ажиллагаа сонгодог загварт суурилсан удирдлагаар явсаар байна, EAST-ийн 2025 оны 1-р сарын 1,066 секундын рекорд хиймэл оюунаас бус халаалт, хананы инженерчлэлээс гарсан, мэдрэлийн удирдлагыг цахилгаан станцад баталгаажуулахад хэцүү.",
+    flag:"удирдлагын үр дүн хянан магадлагдсан; SPARC-ийн ажил бол түншлэл, үр дүн биш; энергийн ашиг батлагдаагүй"},
+  "Fusion disruption prediction":{
+    name:"Нийлэгжилтийн тасалдлын урьдчилсан таамаглал",
+    glab:"Гүн сургалтын таамаглагч бодит хугацааны плазмын удирдлагын системд ажиллаж байна",
+    metric:"Нэг таамаглалд <b>0.3 мс</b>, HL-2A-ийн удирдлагын системийн онлайн туршилтад <b>89%</b> нарийвчлал",
+    detail:"Тасалдал (disruption) плазмын энергийг миллисекундэд хананд буулгадаг; ITER зэрэглэлийн байгууламжид үүнийг бараг бүрэн үгүйсгэх ёстой. Архивласан туршилтын өгөгдөл дээр сургасан рекуррент ба конволюцийн сүлжээ тасалдлын оноог тасралтгүй гаргаж, удирдлагын систем түүнд хариу үйлдэл хийдэг. DIII-D дээр FRNN шугамын таамаглагчийг плазмын удирдлагын системд суулгаж, бодит хугацаанд ажиллуулсан; одоо аль дохио түгшүүрийг өдөөж байгааг заах мэдрэмжийн оноо бас гаргадаг. Хятадад HL-2A-ийн таамаглагч нэг алхамд 0.3 мс зарцуулж, онлайн туршилтад 89% нарийвчлалд хүрсэн; EAST нь CNN, LSTM, random forest, XGBoost загвар сургаж, MIT-тэй хамтран Alcator C-Mod, DIII-D-ийн өгөгдөлтэй байгууламж хооронд туршдаг. Нээлттэй асуудал нь шилжүүлэлт: ITER өөрийн тасалдлын мэдээллийн сангүйгээр эхэлнэ, нэг байгууламжид тохируулсан таамаглагч өөр дээр нарийвчлалаа алддаг. Тооцооллын хувьд энэ карт хөнгөн: жижиг загвар, миллисекундээс бага хугацааны тооцоолол.",
+    flag:"нарийвчлалын тоо нь нэг байгууламжийн препринт, хурлын илтгэлийнх; ITER-т шилжүүлэх нь батлагдаагүй"},
+  "Fusion simulation surrogates":{
+    name:"Нийлэгжилтийн симуляцын орлуулагч загварууд",
+    glab:"Мэдрэлийн орлуулагч загвар хэдэн цагийн физикийн кодыг орлодог; NIF-ийн гал авалтыг туршилтаас өмнө таамагласан",
+    metric:"NIF-ийн гал авалтын туршилтыг долоо хоногийн өмнө <b>&gt;70%</b> магадлалтай таамагласан; тээврийн орлуулагч <b>10³–10⁵ дахин хурдан</b>",
+    detail:"Турбулент болон имплозийн код нэг удаагийн тооцоонд хэдэн цагаас хэдэн өдөр зарцуулдаг тул оновчлол, тодорхойгүй байдлын үнэлгээ, удирдлага сургах боломжгүй болдог. Том симуляцын мэдээллийн сан дээр сургасан мэдрэлийн орлуулагч загвар энэ цоорхойг нөхдөг. Инерцийн нийлэгжилт: 150,000 гаруй симуляц, NIF-ийн олон жилийн дейтери-тритийн өгөгдөл дээр сургасан LLNL-ийн загвар 2022 оны 12-р сарын 5-ны туршилт break-even-ийг давах магадлалыг 70%-иас дээш гэж долоо хоногийн өмнө тооцсон (Science, 2025); 2025 оны 8-р сараас хиймэл оюуны агентууд LLNL-ийн суперкомпьютер дээр байны загварчлалыг автоматжуулж байна. Соронзон нийлэгжилт: 300 сая QuaLiKiz урсгалын тооцоон дээр сургасан QLKNN нь JINTRAC-ийн профайлыг 3-5 эрэмбээр хурдан, ойролцоогоор 1-15% зөрүүтэй гаргадаг - хэдэн цаг хэдэн арван секунд болдог. Энэ нь JINTRAC, RAPTOR болон DeepMind-ийн нээлттэй эхийн TORAX-д холбогдсон бөгөөд CFS үүгээр SPARC баригдахаас өмнө виртуал туршилт хийдэг. Анхаарах: TORAX өөрөө хиймэл оюуны загвар биш, дифференциалчлагдах физикийн шийдэгч; сургагдсан хэсэг нь доторх орлуулагч загвар юм.",
+    flag:"NIF-ийн таамаглал ба QLKNN-ийн хурдасгалт хянан магадлагдсан; орлуулагч загвар зөвхөн сургалтын мужид хүчинтэй"},
   "Biometric airport check-in & border":{
     name:"Нисэх буудлын биометрик бүртгэл ба хилийн хяналт",
     glab:"ЕХ-ны EES 2026 оны 4-р сараас бүрэн ажиллаж байна; TSA Touchless ID АНУ-ын 65 нисэх буудалд",
