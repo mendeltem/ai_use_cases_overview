@@ -751,15 +751,15 @@ const UC = [
     E("Starship (Jun 2026); Serve Robotics / Uber Eats","Starship (Juni 2026); Serve Robotics / Uber Eats"),
     "note", E("expanding by city","stadtweiser Ausbau")),
 
-  U(1,"Wabtec","prod",2,"steady",
-    E("Autonomous rail yards","Autonome Rangierbahnhoefe"),
-    E("~1M cars/yr moved autonomously across 50 sites","~1 Mio. Waggons/Jahr autonom an 50 Standorten"),
-    E("<b>50 sites, ~1M cars per year</b> shunted without a driver","<b>50 Standorte, ~1 Mio. Waggons pro Jahr</b> ohne Fahrer rangiert"),
-    E("Rail yards are the least visible part of freight automation and among the furthest along: shunting is repetitive, runs on private track at low speed, and needs no public-road approval. Wabtec reports its Autonomous Yard Operations running at 50 sites, moving on the order of a million cars a year. That is a production deployment, not a pilot - but every figure here is the vendor's own, and no regulator publishes yard-level counts to check it against.",
-      "Rangierbahnhoefe sind der unsichtbarste Teil der Gueterautomatisierung und einer der weitesten: Rangieren ist repetitiv, laeuft auf eigenem Gleis bei niedriger Geschwindigkeit und braucht keine Strassenzulassung. Wabtec nennt fuer seine Autonomous Yard Operations 50 Standorte und rund eine Million Waggons im Jahr. Das ist Produktivbetrieb, kein Pilot - aber jede Zahl stammt vom Anbieter, und keine Behoerde veroeffentlicht Rangierzahlen, an denen sich das pruefen liesse."),
-    E("Wabtec / industry reporting (2026)","Wabtec / Branchenberichte (2026)"),
-    "medium", E("Vendor-reported; no independent count of autonomous yard moves exists",
-      "Anbieterangabe; eine unabhaengige Zaehlung autonomer Rangierfahrten gibt es nicht")),
+  U(1,"RZD/NIIAS, DB Cargo, Wabtec, Siemens Mobility","prod",2,"steady",
+    E("Autonomous rail yards","Autonome Rangierbahnhöfe"),
+    E("driverless shunting runs at one Russian yard; Germany plans it from 2028","fahrerloses Rangieren läuft an einem russischen Bahnhof; Deutschland plant es ab 2028"),
+    E("<b>3 driverless shunting locos</b> at Luzhskaya since 2017; DB Cargo's automated hump loco due on big yards <b>from 2028</b>","<b>3 fahrerlose Rangierloks</b> in Luzhskaya seit 2017; DB Cargos automatische Abdrücklok soll <b>ab 2028</b> auf große Rangierbahnhöfe"),
+    E("Rail yards are among the easier corners of freight to automate: shunting is repetitive, runs on private track at low speed and needs no public-road approval. Three different things sit under this heading. Hump yards have sorted wagons automatically for decades: retarders, points and the humping sequence run under computer control at yards such as Zhengzhou North or Basel RB2, with staff supervising. Planning software is newer: Norfolk Southern began using Wabtec's Yard Planner at Norris Yard in Birmingham in September 2023 to cut car switching. Driverless locomotives are the thin end. At RZD's Luzhskaya yard near Ust-Luga, three TEM7A shunters have run the hump cycle without a driver since 2017. DB Cargo, with Bosch Engineering and ITK Engineering, tested an automated hump loco at München Nord and aims for approval by end-2027 and use on its large yards from 2028. Off the yards, Intramotev's self-propelled TugVolt cars have moved stone on a Michigan mine's track since December 2024. Read carefully: no operator publishes how many wagons move without a driver, and most of what is called yard automation is classic control engineering, not learned models.",
+      "Rangierbahnhöfe gehören zu den leichter automatisierbaren Teilen des Güterverkehrs: Rangieren ist repetitiv, läuft auf eigenem Gleis bei niedriger Geschwindigkeit und braucht keine Straßenzulassung. Unter dieser Überschrift stecken drei verschiedene Dinge. Ablaufberge sortieren Wagen seit Jahrzehnten automatisch: Gleisbremsen, Weichen und der Ablauf laufen rechnergesteuert, etwa in Zhengzhou Nord oder Basel RB2, das Personal überwacht. Neuer ist Planungssoftware: Norfolk Southern nutzt seit September 2023 Wabtecs Yard Planner in Norris Yard (Birmingham), um Rangierbewegungen zu sparen. Fahrerlose Loks sind die dünne Spitze. Im RZD-Rangierbahnhof Luzhskaya bei Ust-Luga fahren seit 2017 drei TEM7A-Rangierloks den Ablaufzyklus ohne Triebfahrzeugführer. DB Cargo hat mit Bosch Engineering und ITK Engineering in München Nord eine automatische Abdrücklok erprobt und strebt die Zulassung bis Ende 2027 und den Einsatz auf den großen Zugbildungsanlagen ab 2028 an. Abseits der Rangierbahnhöfe fahren seit Dezember 2024 selbstfahrende TugVolt-Wagen von Intramotev Gestein auf dem Gleis einer Mine in Michigan. Genau lesen: Kein Betreiber veröffentlicht, wie viele Wagen ohne Fahrer bewegt werden, und das meiste, was Rangierautomatisierung heißt, ist klassische Steuerungstechnik, keine gelernten Modelle."),
+    E("Kommersant (2023); heise (2025); Norfolk Southern (Nov 2023); Siemens Mobility (2022)","Kommersant (2023); heise (2025); Norfolk Southern (Nov. 2023); Siemens Mobility (2022)"),
+    "note", E("Driverless shunting is one Russian yard plus a German trial; most yard automation is classic hump control",
+      "Fahrerloses Rangieren: ein russischer Bahnhof plus ein deutscher Test; der Rest ist meist klassische Ablaufsteuerung")),
 
   // ---- Cluster 2: warehouse & energy ----
   U(2,"Amazon Robotics, Ocado, Geek+","prod",2,"strong",
@@ -1925,6 +1925,7 @@ const URLS = {
   "Autonomous SOC agents (AI vs AI)":"https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027",
   "Biometric airport check-in & border":"https://home-affairs.ec.europa.eu/news/entryexit-system-ees-fully-operational-2026-04-10_en",
   "Autonomous mine fleets":"https://computerworld.com/article/3461688/rio-tinto-reaches-autonomous-truck-milestone.html",
+  "Autonomous rail yards":"https://heise.de/-10334771",
   "Autonomous ships":"https://www.yara.com/corporate-releases/yara-to-start-operating-the-worlds-first-fully-emission-free-container-ship/",
   "Autonomous street cleaning":"https://www.sec.gov/Archives/edgar/data/1867729/000117184325004513/exh_991.htm",
   "Autonomous surgery steps":"https://doi.org/10.1126/scirobotics.adt5254",
@@ -2186,6 +2187,12 @@ const COMPANIES = {
     {n:"BHP", u:"https://www.bhp.com/"},
     {n:"Caterpillar", u:"https://investors.caterpillar.com/overview/default.aspx"},
     {n:"Komatsu", u:"https://www.komatsu.jp/en"}],
+  "Autonomous rail yards":[
+    {n:"RZD (Luzhskaya)", u:"https://kommersant.ru/doc/6028522"},
+    {n:"DB Cargo", u:"https://heise.de/-10334771"},
+    {n:"Wabtec Yard Planner", u:"https://www.norfolksouthern.com/en/newsroom/story-yard/another-ns-first-yard-planner-to-further-enhance-safety-and-service"},
+    {n:"Siemens Mobility", u:"https://www.mobility.siemens.com/global/en.html"},
+    {n:"Intramotev", u:"https://www.intramotev.com/"}],
   "Autonomous ships":[
     {n:"Yara Birkeland", u:"https://www.yara.com/news-and-media/media-library/press-kits/yara-birkeland-press-kit/"},
     {n:"Kongsberg", u:"https://www.kongsbergmaritime.com/"},
@@ -3071,6 +3078,12 @@ const MN_UC = {
     metric:"Хятад: EHang гэрчилгээтэй ч <b>олон нийтэд тасалбартай нислэг хараахан эхлээгүй</b>. АНУ: Joby анх удаа <b>FAA Stage 4</b> давсан, Phase-5 нислэгийн туршилт үргэлжилж байна",
     detail:"EHang EH216-S-д Хятадын гэрчилгээ авсан ч 2026 оны 1-р улирлын тайландаа (2026.06) олон нийтэд зориулсан тасалбартай нислэг хараахан эхлээгүй гэж бичсэн. 2026.06.26-нд Бээжинд өөр үйлдвэрлэгчийн нисэх төхөөрөмж осолдсоны дараа зорчигчийн зөвшөөрөл зогсож, EHang 2026 оны орлогын таамгаа 8-р сарын 25-нд татан авсан. Joby FAA Stage 4-ийг дуусгаж (2026.03), JFK–Manhattan демо нислэг хийсэн; төрлийн гэрчилгээг 2026 он эцэст зорьж байгаа ч бие даасан шинжээчид 2027 оны дунд үе рүү (20–30% магадлал) хандаж байна. Archer Stage 3–4-т хоцорч, ОАЭ-д давхар стратегитэй.",
     flag:"Хятадад эхлэл зогссон; АНУ-ын хугацаа тодорхойгүй"},
+  "Autonomous rail yards":{
+    name:"Автономит ангилан ялгах төмөр замын өртөө",
+    glab:"жолоочгүй маневр Оросын нэг өртөөнд ажиллаж байна; Герман 2028 оноос төлөвлөж байна",
+    metric:"2017 оноос Luzhskaya-д <b>3 жолоочгүй маневрын зүтгүүр</b>; DB Cargo-гийн автомат түлхэгч зүтгүүр <b>2028 оноос</b> томоохон өртөөнд",
+    detail:"Ангилан ялгах өртөө нь ачаа тээврийн хамгийн амархан автоматжуулах хэсгийн нэг: маневр давтагддаг, хувийн замаар бага хурдтай явдаг, авто замын зөвшөөрөл шаарддаггүй. Энэ гарчгийн дор гурван өөр зүйл байна. Ангилах толгод вагоныг хэдэн арван жил автоматаар ялгаж ирсэн: тоормос, сэлгүүр, ангилах дараалал компьютерийн удирдлагаар явдаг, жишээ нь Zhengzhou North, Basel RB2-т, ажилтнууд хянадаг. Төлөвлөлтийн програм шинэ: Norfolk Southern 2023 оны 9-р сараас Birmingham-ын Norris Yard-д Wabtec-ийн Yard Planner-ийг ашиглаж, вагоны маневрыг багасгаж байна. Жолоочгүй зүтгүүр хамгийн нимгэн давхарга. Ust-Luga-гийн ойролцоох RZD-ийн Luzhskaya өртөөнд 2017 оноос гурван TEM7A маневрын зүтгүүр ангилах мөчлөгийг жолоочгүй гүйцэтгэдэг. DB Cargo Bosch Engineering, ITK Engineering-тэй хамтран München Nord-д автомат түлхэгч зүтгүүр туршиж, 2027 оны эцэс гэхэд зөвшөөрөл авч, 2028 оноос томоохон өртөөдөө ашиглахыг зорьж байна. Өртөөнөөс гадна Intramotev-ийн өөрөө явдаг TugVolt вагон 2024 оны 12-р сараас Мичиганы уурхайн замаар чулуу зөөж байна. Анхааралтай унших: аль ч оператор хэдэн вагон жолоочгүй хөдөлснийг нийтэлдэггүй, ангилах өртөөний автоматжуулалт гэгдэх ихэнх нь сургагдсан загвар бус сонгодог удирдлагын инженерчлэл.",
+    flag:"Жолоочгүй маневр нь Оросын нэг өртөө ба Германы туршилт; бусад нь ихэвчлэн сонгодог ангилах толгодын удирдлага"},
   "Autonomous ships":{
     name:"Автономит хөлөг онгоц",
     glab:"Япон: 4 хөлөг Level-4 арилжааны ажиллагаанд; Норвеги туршилтын шатанд",

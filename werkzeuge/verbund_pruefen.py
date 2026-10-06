@@ -7,7 +7,7 @@ umbenannter Kartenname oder Atlas-Standort bricht die Links still, ohne
 Fehlermeldung auf den Seiten. Dieses Skript findet solche Brueche.
 
 Geprueft wird:
-  - jeder Use-Case-Slug ist eine Karte im Board
+  - jeder Use-Case-Slug ist eine Karte im Board und traegt ihren Namen en/de
   - jeder {"site": ...}-Ort und jeder Standort in companies.relations steht im Atlas
   - eigene Orte haben Name, Land, gueltige Koordinaten, Text de/en und eine https-Quelle
   - jeder Ticker (names, operators, use_cases, relations, wiki) hat eine Firmenseite
@@ -101,6 +101,11 @@ def main():
     for s, u in d["use_cases"].items():
         if s not in k:
             fehler.append("use_cases: Slug %s ist keine Karte" % s)
+        nm = u.get("name") or {}
+        if not nm.get("en") or not nm.get("de"):
+            fehler.append("use_cases.%s: name en/de fehlt (Atlas zeigt den Use Case sonst nicht)" % s)
+        elif s in k and (nm["en"] != k[s]["en"] or nm["de"] != k[s]["de"]):
+            hinweise.append("use_cases.%s: Name weicht von der Karte ab (%s / %s)" % (s, nm["en"], nm["de"]))
         if not u.get("places"):
             fehler.append("use_cases.%s: keine Orte" % s)
         for i, p in enumerate(u.get("places", [])):

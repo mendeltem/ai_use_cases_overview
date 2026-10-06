@@ -162,7 +162,7 @@
     "autonomous-mine-fleets": {
       "name": {
         "en": "Autonomous mine fleets",
-        "de": "Autonome Minenflotten"
+        "de": "Autonome Minen-Flotten"
       },
       "places": [
         {
@@ -208,7 +208,7 @@
     "semiconductor-fab-automation": {
       "name": {
         "en": "Semiconductor fab automation",
-        "de": "Halbleiterfabrik-Automatisierung"
+        "de": "Halbleiter-Fertigung"
       },
       "places": [
         {
@@ -2282,6 +2282,152 @@
           "de": "Pilot: Der Prototyp ARRES Prevent von Robotiz3d erkannte und versiegelte im März 2024 Risse auf einer öffentlichen Straße mit dem Hertfordshire County Council.",
           "src": "https://www.highwaysmagazine.co.uk/Pothole-repair-robot-passes-first-road-test/13790",
           "yr": "2024"
+        }
+      ]
+    },
+    "milking-robots": {
+      "name": {
+        "en": "Milking robots",
+        "de": "Melkroboter"
+      },
+      "places": [
+        {
+          "n": "Agrícola Ancali, Los Ángeles",
+          "c": "CHL",
+          "la": -37.47,
+          "lo": -72.354,
+          "en": "Agrícola Ancali in Chile's Biobío region has milked with robots since 2014 and now runs 90 milking robots for about 4,000 cows in milk, out of 9,000 animals.",
+          "de": "Agrícola Ancali in Chiles Region Biobío melkt seit 2014 mit Robotern und betreibt heute 90 Melkroboter für rund 4.000 laktierende Kühe von insgesamt 9.000 Tieren.",
+          "src": "https://news.agrofy.com.ar/noticia/216560/asi-es-dentro-uno-tambos-robotizados-mas-grandes-mundo-trabajo-24-horas-todos-dias-ano-90-robots-sis",
+          "yr": "2026"
+        },
+        {
+          "n": "Homestead Dairy, Plymouth (Indiana)",
+          "c": "USA",
+          "la": 41.344,
+          "lo": -86.309,
+          "en": "Since 2017 Homestead Dairy has milked nearly 2,200 cows with 36 Lely Astronaut robots, one of the largest robotic dairies in North America.",
+          "de": "Homestead Dairy melkt seit 2017 fast 2.200 Kühe mit 36 Lely-Astronaut-Robotern, einer der größten Robotermelkbetriebe Nordamerikas.",
+          "src": "https://www.lelyna.com/us/farmer-stories/homestead-dairy-utilizes-lely-robotic-milking-systems-to-milk-nearly-2200-cows/",
+          "yr": "2024"
+        },
+        {
+          "n": "Countyline LLC, Denair (California)",
+          "c": "USA",
+          "la": 37.527,
+          "lo": -120.797,
+          "en": "Countyline started its first eight Lely Astronaut A5 robots in July 2021 and milked 1,500 cows with 24 robots by mid-2022; 32 robots for 2,150 cows are planned.",
+          "de": "Countyline nahm im Juli 2021 die ersten acht Lely-Astronaut-A5-Roboter in Betrieb und melkte Mitte 2022 mit 24 Robotern 1.500 Kühe; geplant sind 32 Roboter für 2.150 Kühe.",
+          "src": "https://www.lelylife.com/countyline-llc",
+          "yr": "2022"
+        },
+        {
+          "n": "Fortune, Cieszymowo (Pomerania)",
+          "c": "POL",
+          "la": 53.838,
+          "lo": 19.297,
+          "en": "Fortune Sp. z o.o. runs what DeLaval calls the world's largest VMS batch-milking farm: 25 VMS V300 robots milking up to 1,500 cows a day.",
+          "de": "Fortune Sp. z o.o. betreibt laut DeLaval den weltweit größten VMS-Batch-Melkbetrieb: 25 VMS-V300-Roboter melken bis zu 1.500 Kühe am Tag.",
+          "src": "https://www.tetralaval.com/annual-report/delaval/delaval-highlights",
+          "yr": "2026"
+        },
+        {
+          "n": "Lønholm Agro, Bylderup-Bov",
+          "c": "DNK",
+          "la": 54.947,
+          "lo": 9.106,
+          "en": "Since May 2023 Lønholm Agro has batch-milked about 800 Jersey cows twice a day with 24 DeLaval VMS V310 robots, with growth to 1,400 cows planned.",
+          "de": "Seit Mai 2023 melkt Lønholm Agro rund 800 Jersey-Kühe zweimal täglich im Batch-Verfahren mit 24 DeLaval-VMS-V310-Robotern; geplant ist ein Ausbau auf 1.400 Kühe.",
+          "src": "https://landbrugsavisen.dk/kvaeg/landmand-koeber-24-malkerobotter-vi-vil-have-en-arbejdsvenlig-bedrift-208622",
+          "yr": "2023"
+        },
+        {
+          "n": "Kalm Kakuyama, Ebetsu (Hokkaido)",
+          "c": "JPN",
+          "la": 43.104,
+          "lo": 141.536,
+          "en": "Kalm Kakuyama, formed by five family dairies, has milked its roughly 500 cows with 8 DeLaval VMS robots since 2015, Asia's first large robotic farm; it upgraded to VMS V300 in 2025.",
+          "de": "Kalm Kakuyama, ein Zusammenschluss von fünf Familienbetrieben, melkt seine rund 500 Kühe seit 2015 mit 8 DeLaval-VMS-Robotern, Asiens erster großer Robotermelkbetrieb; 2025 folgte der Wechsel auf VMS V300.",
+          "src": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/82905.pdf",
+          "yr": "2026"
+        },
+        {
+          "n": "Lomax dairy, Valencia Creek (Victoria)",
+          "c": "AUS",
+          "la": -37.833,
+          "lo": 146.983,
+          "en": "The Lomax family replaced a 50-unit rotary with 10 GEA DairyRobot R9500 units that started milking in April 2026 and now milk about 530 cows.",
+          "de": "Familie Lomax ersetzte ein 50er-Melkkarussell durch 10 GEA-DairyRobot-R9500-Einheiten, die seit April 2026 rund 530 Kühe melken.",
+          "src": "https://www.kyfreepress.com.au/news/robots-transform-dairy-business/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "autonomous-rail-yards": {
+      "name": {
+        "en": "Autonomous rail yards",
+        "de": "Autonome Rangierbahnhöfe"
+      },
+      "places": [
+        {
+          "n": "Luzhskaya marshalling yard (RZD), near Ust-Luga",
+          "c": "RUS",
+          "la": 59.63,
+          "lo": 28.4,
+          "en": "Since 2017 three TEM7A shunting locomotives at automation level 2 have run the hump cycle (coupling, pushing, uncoupling, return) without a driver; obstacle detection by camera, lidar and radar.",
+          "de": "Seit 2017 fahren drei TEM7A-Rangierloks auf Automatisierungsstufe 2 den Ablaufzyklus (Ankuppeln, Abdrücken, Entkuppeln, Rückfahrt) ohne Triebfahrzeugführer; Hinderniserkennung per Kamera, Lidar und Radar.",
+          "src": "https://kommersant.ru/doc/6028522",
+          "yr": "2023"
+        },
+        {
+          "n": "Rangierbahnhof München Nord (DB Cargo)",
+          "c": "DEU",
+          "la": 48.205,
+          "lo": 11.52,
+          "en": "Trial: DB Cargo, Bosch Engineering and ITK Engineering tested a prototype fully automated hump locomotive here; approval is targeted for end-2027 and use on DB's large yards from 2028.",
+          "de": "Erprobung: DB Cargo, Bosch Engineering und ITK Engineering testeten hier einen Prototyp der vollautomatischen Abdrücklok; Zulassung bis Ende 2027 geplant, Einsatz auf den großen Zugbildungsanlagen ab 2028.",
+          "src": "https://heise.de/-10334771",
+          "yr": "2025"
+        },
+        {
+          "n": "Norris Yard, Birmingham (Norfolk Southern)",
+          "c": "USA",
+          "la": 33.548,
+          "lo": -86.715,
+          "en": "Since September 2023 Norfolk Southern has used Wabtec's Yard Planner here, computer-aided planning that reduces car switching when building outbound trains; rollout to its other hump yards planned.",
+          "de": "Seit September 2023 nutzt Norfolk Southern hier Wabtecs Yard Planner, eine rechnergestützte Planung, die beim Bilden ausgehender Züge Rangierbewegungen spart; weitere Ablaufbahnhöfe sollen folgen.",
+          "src": "https://www.norfolksouthern.com/en/newsroom/story-yard/another-ns-first-yard-planner-to-further-enhance-safety-and-service",
+          "yr": "2023"
+        },
+        {
+          "n": "Zhengzhou North marshalling yard",
+          "c": "CHN",
+          "la": 34.818,
+          "lo": 113.62,
+          "en": "Asia's busiest freight marshalling yard runs two automated humps; it was China's first integrated-automation yard (1989), classic control automation rather than AI.",
+          "de": "Asiens Rangierbahnhof mit dem größten Güterwagenaufkommen betreibt zwei automatisierte Ablaufberge; er war Chinas erster integriert automatisierter Rangierbahnhof (1989), klassische Steuerungsautomatik, keine KI.",
+          "src": "https://news.qq.com/rain/a/20250213A02UM000",
+          "yr": "2025"
+        },
+        {
+          "n": "Rangierbahnhof Basel RB2, Muttenz (SBB)",
+          "c": "CHE",
+          "la": 47.53,
+          "lo": 7.64,
+          "en": "Siemens' Trackguard Cargo MSR32 runs the automatic humping, retarders and points here while hump masters supervise; modernisation finished around 2021.",
+          "de": "Siemens' Trackguard Cargo MSR32 steuert hier automatisch Ablauf, Gleisbremsen und Weichen, die Ablaufmeister überwachen; Modernisierung um 2021 abgeschlossen.",
+          "src": "https://assets.new.siemens.com/siemens/assets/api/uuid:de0cbeda-8138-4096-8b04-85f0a9190f2f/siemens-mobility-fit-fur-die-zukunft-mit-modernster-rangiertechn.pdf",
+          "yr": "2022"
+        },
+        {
+          "n": "Carmeuse mine, Cedarville (Michigan)",
+          "c": "USA",
+          "la": 45.997,
+          "lo": -84.355,
+          "en": "Since December 2024 Intramotev's self-propelled battery-electric TugVolt railcars have moved stone daily on the mine's private track without a locomotive.",
+          "de": "Seit Dezember 2024 fahren selbstfahrende, batterieelektrische TugVolt-Wagen von Intramotev täglich ohne Lok Gestein auf dem Werksgleis der Mine.",
+          "src": "https://www.ajot.com/news/innovations-gaining-traction-rail-and-port-tech-take-center-stage",
+          "yr": "2025"
         }
       ]
     }
