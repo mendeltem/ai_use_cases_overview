@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Use Cases · Overview · Evidence · Growth</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#12242C">
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32.png">
+<link rel="apple-touch-icon" href="images/app/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AI Use Cases">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="description" content="Concrete AI deployments that already run, each rated on maturity, evidence and growth.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mendeltem.github.io/ai_use_cases_overview/">
@@ -91,6 +99,12 @@
   .controls{position:sticky; top:0; z-index:20; background:rgba(238,240,236,.93); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-strong)}
   .controls .wrap{padding:11px 22px}
   .ctrl-row{display:flex; flex-wrap:wrap; gap:7px 6px; align-items:center; margin-bottom:8px}
+  @media (max-width:760px){
+    #clusterChips{flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; margin-left:-22px; margin-right:-22px; padding:2px 22px 4px; scroll-snap-type:x proximity}
+    #clusterChips::-webkit-scrollbar{display:none}
+    #clusterChips .chip{flex:0 0 auto; scroll-snap-align:start}
+    #clusterChips .ctrl-label{display:none}
+  }
   .ctrl-row:last-child{margin-bottom:0}
   .ctrl-label{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); margin-right:6px; min-width:78px}
   .chip{font-family:'Inter',sans-serif; font-size:12px; font-weight:500; padding:5px 11px; border-radius:20px; border:1px solid var(--line-strong); background:var(--surface); color:var(--ink-soft); cursor:pointer; transition:.12s;}
@@ -120,6 +134,11 @@
   .cl-kern{font-size:13px; color:var(--ink-soft); margin:0}
   .cl-verdict{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.02em; color:var(--ink-faint); background:var(--surface-2); border:1px solid var(--line); padding:6px 11px; border-radius:7px; max-width:230px; line-height:1.4}
   .cl-tag{font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:.14em; text-transform:uppercase; padding:2px 7px; border-radius:4px; margin-left:8px; vertical-align:middle}
+  [data-cat="phys"]{--cat:#0E6E6C} [data-cat="soft"]{--cat:#6B4E8E} [data-cat="infra"]{--cat:#8A7631}
+  .cluster .cl-num{color:var(--cat,var(--petrol))}
+  .cluster .cl-head{border-top:3px solid var(--cat,var(--line))}
+  .cluster .card{border-left:4px solid var(--cat,var(--line))}
+  .chip[data-cat] .chip-ic{box-shadow:0 0 0 2px var(--cat)}
   .cl-tag.phys{background:#E4EFEE; color:var(--petrol-dark)}
   .cl-tag.soft{background:#E7E2F0; color:#6B4E8E}
   .cl-tag.infra{background:#EDEBE4; color:#7A6A2E}
@@ -3293,6 +3312,7 @@ function buildChips(){
     const b = mkChip(c.n+" · "+T(c.short), fCluster===c.n, function(){fCluster=c.n; syncCluster(); apply();});
     if(CLUSTER_ICON[c.n]){ const ic=document.createElement('img'); ic.className='chip-ic'; ic.src=CLUSTER_ICON[c.n]; ic.alt=''; ic.width=20; ic.height=20; b.prepend(ic); }
     b.dataset.tip=T(c.kern).replace(/<[^>]+>/g,''); b.setAttribute('aria-description', b.dataset.tip);
+    b.dataset.cat=c.cat;
     b.dataset.cl=c.n; cc.appendChild(b);
   });
   const mc = document.getElementById('matChips'); mc.innerHTML='';
@@ -3387,7 +3407,7 @@ function buildBoard(){
         '</div></div>'+
       '</div>';
     }).join('');
-    return '<section class="cluster" data-cl="'+c.n+'">'+
+    return '<section class="cluster" data-cl="'+c.n+'" data-cat="'+c.cat+'">'+
       '<div class="cl-head">'+
         '<div class="cl-num">'+String(c.n).padStart(2,'0')+'</div>'+
         '<div class="cl-meta"><h2 class="cl-title">'+T(c.title)+'<span class="cl-tag '+c.cat+'">'+catLabel+'</span></h2><p class="cl-kern">'+T(c.kern)+'</p></div>'+
@@ -3460,6 +3480,9 @@ function syncFilterCount(){
   }
 }
 setLang('en');
+</script>
+<script>
+if('serviceWorker' in navigator){ window.addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); }); }
 </script>
 </body>
 </html>
