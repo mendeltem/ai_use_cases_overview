@@ -203,6 +203,8 @@
   .srclink:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
   .detail-in .firms{margin-top:7px; display:flex; flex-wrap:wrap; gap:6px; align-items:baseline}
   .detail-in .firms > b{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink-soft); font-weight:500; letter-spacing:.01em; margin-right:2px}
+  .globelink{display:inline-block; margin-top:10px; font-size:12.5px; font-weight:600; color:var(--petrol); text-decoration:none; padding:5px 10px; border:1px solid var(--petrol); border-radius:7px; background:var(--surface)}
+  .globelink:hover{background:var(--petrol); color:#fff}
   .firmlink{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--petrol); text-decoration:none; padding:1px 6px; border:1px solid var(--line); border-radius:4px; background:var(--surface-2); transition:.12s}
   .firmlink:hover{border-color:var(--petrol); background:rgba(14,110,108,.08)}
   .firmlink:focus-visible{outline:2px solid var(--petrol); outline-offset:1px}
@@ -775,6 +777,15 @@ const UC = [
     "note", E("Company figures through early 2025; AI is scheduling more than perception",
       "Firmenzahlen bis Anfang 2025; KI ist eher Planung als Wahrnehmung")),
 
+  U(2,"SIPG (Yangshan), PSA (Tuas), Ningbo Zhoushan Port, Qingdao Port, CMPort","prod",2,"strong",
+    E("AI container terminals","KI in Containerterminals"),
+    E("AI plans ship loading and stacking; autonomous trucks move boxes in the largest ports","KI plant Beladung und Stapelung; autonome Lkw bewegen Container in den größten Häfen"),
+    E("Yangshan Phase III: AI loading plans cut container re-handling by <b>20.6%</b> (reported)","Yangshan Phase III: KI-Ladeplanung senkt Umstaplungen um <b>20,6 %</b> (berichtet)"),
+    E("The world's busiest container ports have moved from automated cranes to AI that decides. At Shanghai's Yangshan Phase III, models calculate how to load each ship and reportedly cut re-handling of containers by 20.6%, while Phase IV runs an intelligent decision platform. Qingdao's automated terminal uses in-house AI algorithms for stacking decisions and AI with 3D point clouds on its quay cranes; Ningbo-Zhoushan's Meishan area runs self-driving trucks and AI image recognition at the gates; PSA says it uses AI at Singapore's new Tuas port for safety and traffic orchestration, and Shenzhen's Mawan smart port lists AI among its core systems. Read carefully: figures come from port operators and Chinese state media, and the line between automation and AI is drawn by the operators themselves.",
+      "Die verkehrsreichsten Containerhäfen der Welt sind von automatischen Kranen zu KI übergegangen, die entscheidet. In Shanghais Yangshan Phase III berechnen Modelle, wie jedes Schiff beladen wird, und senken Umstaplungen laut Bericht um 20,6 %; Phase IV arbeitet mit einer intelligenten Entscheidungsplattform. Qingdaos automatisiertes Terminal nutzt eigene KI-Algorithmen für Stapelentscheidungen und KI mit 3D-Punktwolken an den Kaikranen; im Hafengebiet Meishan von Ningbo-Zhoushan fahren autonome Lkw, und KI-Bilderkennung beschleunigt die Tore; PSA setzt nach eigener Angabe im neuen Hafen Tuas in Singapur KI für Sicherheit und Verkehrssteuerung ein, und Shenzhens Mawan Smart Port führt KI unter seinen Kernsystemen. Genau lesen: Die Zahlen stammen von Hafenbetreibern und chinesischen Staatsmedien, und die Grenze zwischen Automatisierung und KI ziehen die Betreiber selbst."),
+    E("China Daily (Dec 2025); PSA (2025); Shandong and Ningbo port reports (2025)","China Daily (Dez. 2025); PSA (2025); Berichte der Häfen Shandong und Ningbo (2025)"),
+    "note", E("Operator and state-media figures; AI vs automation defined by operators",
+      "Zahlen von Betreibern und Staatsmedien; KI vs. Automatisierung von Betreibern abgegrenzt")),
   U(2,"Tesla Autobidder, Fluence, AutoGrid","prod",2,"steady",
     E("Grid energy trading","Energienetz-Trading"),
     E("scales with battery build-out","skaliert mit Batterie-Ausbau"),
@@ -1761,6 +1772,7 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "AI container terminals":"https://www.chinadaily.com.cn/a/202512/12/WS693b6f4ba310d6866eb2e434.html",
   "Federated learning across hospitals":"https://www.bio-itworld.com/news/2023/01/17/global-federated-machine-learning-model-detects-glioblastoma-borders",
   "Distributed inference across local machines":"https://ar5iv.labs.arxiv.org/html/2209.01188",
   "Decentralized training on contributed GPUs":"https://primeintellect.ai/blog/intellect-2-release",
@@ -1893,6 +1905,9 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "AI container terminals":[
+    {n:"PSA", u:"https://www.globalpsa.com/"},
+    {n:"SIPG", u:"https://www.portshanghai.com.cn/en/"}],
   "Federated learning across hospitals":[
     {n:"OpenFL", u:"https://github.com/securefederatedai/openfl"}],
   "Distributed inference across local machines":[
@@ -2383,6 +2398,7 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "AI container terminals":[1,"inf"],
   "Federated learning across hospitals":[1,"train"],
   "Distributed inference across local machines":[2,"edge"],
   "Decentralized training on contributed GPUs":[2,"train"],
@@ -2611,6 +2627,12 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "AI container terminals":{
+    name:"Контейнер терминал дахь хиймэл оюун",
+    glab:"Хиймэл оюун хөлөг ачих, овоолохыг төлөвлөдөг; хамгийн том боомтуудад автомат ачааны машин контейнер зөөдөг",
+    metric:"Yangshan III үе шат: хиймэл оюуны ачилтын төлөвлөгөө контейнер дахин зөөлтийг <b>20.6%</b> бууруулсан (мэдээлснээр)",
+    detail:"Дэлхийн хамгийн ачаалалтай контейнер боомтууд автомат кранаас шийдвэр гаргадаг хиймэл оюун руу шилжсэн. Шанхайн Yangshan III үе шатад загварууд хөлөг бүрийг хэрхэн ачихыг тооцоолж, контейнер дахин зөөлтийг 20.6% бууруулсан гэж мэдээлдэг; IV үе шат ухаалаг шийдвэрийн платформтой. Чиндаогийн автомат терминал овоолгын шийдвэрт өөрийн хиймэл оюуны алгоритм, эргийн кран дээр 3D цэгийн үүлтэй хиймэл оюун ашигладаг; Нинбо-Жоушаны Мэйшань бүсэд автомат ачааны машин явж, хаалган дээр хиймэл оюуны зураг танилт ажилладаг; PSA Сингапурын шинэ Туас боомтод аюулгүй байдал, хөдөлгөөний зохицуулалтад хиймэл оюун ашигладаг гэж мэдэгддэг, Шэньжэний Мавань ухаалаг боомт хиймэл оюуныг үндсэн системдээ оруулдаг. Анхааралтай унших: тоонууд боомтын операторууд ба Хятадын төрийн хэвлэлээс, автоматжуулалт ба хиймэл оюуны хилийг операторууд өөрсдөө тогтоодог.",
+    flag:"оператор, төрийн хэвлэлийн тоо; хиймэл оюун ба автоматжуулалтыг операторууд ялгадаг"},
   "Federated learning across hospitals":{
     name:"Эмнэлгүүдийн хооронд холбоот сургалт",
     glab:"Эмнэлэг бүр өөрийн ажлын станц дээр сургадаг; зөвхөн загварын жин аялдаг",
@@ -3242,6 +3264,10 @@ function setLang(l){
   document.getElementById('btnDE').setAttribute('aria-pressed', l==='de');
   document.getElementById('btnMN').setAttribute('aria-pressed', l==='mn');
   renderStatic(); buildChips(); buildBoard(); apply(); zeichneLuecken();
+  fetch('deployments.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+    if(!d) return; DEPLOY = d.use_cases; buildBoard(); apply(); openFromHash();
+  }).catch(function(){});
+  window.addEventListener('hashchange', openFromHash);
 }
 function T(o){ return o[lang] || o.en; }
 
@@ -3382,6 +3408,22 @@ function firmsHTML(x){
   }).join('')+'</div>';
 }
 
+/* Verbindung zum Supply Atlas: Orte je Use Case aus deployments.json */
+let DEPLOY = null;
+const ATLAS_URL = "https://mendeltem.github.io/Supply_Atlas3D/";
+function ucSlug(n){ return n.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+function globeHTML(x){
+  const d = DEPLOY && DEPLOY[ucSlug(x.name.en)]; if(!d) return '';
+  const n = d.places.length;
+  const t = lang==='de' ? 'Auf dem Globus zeigen ('+n+' Orte)' : lang==='mn' ? 'Бөмбөрцөг дээр харах ('+n+' газар)' : 'Show on the globe ('+n+' places)';
+  return '<a class="globelink" href="'+ATLAS_URL+'?uc='+ucSlug(x.name.en)+'" target="_blank" rel="noopener">🌍 '+t+'</a>';
+}
+function openFromHash(){
+  const m = location.hash.match(/^#uc=([a-z0-9-]+)/); if(!m) return;
+  const card = document.getElementById('uc-'+m[1]); if(!card) return;
+  card.classList.add('open'); const b = card.querySelector('.card-btn'); if(b) b.setAttribute('aria-expanded','true');
+  setTimeout(function(){ const y = card.getBoundingClientRect().top + window.scrollY - window.innerHeight/3; window.scrollTo({top: Math.max(0,y), behavior:'instant'}); }, 350);
+}
 function buildBoard(){
   const u = UI[lang];
   const board = document.getElementById('board');
@@ -3389,7 +3431,7 @@ function buildBoard(){
     const catLabel = c.cat==='phys'?u.physical:(c.cat==='soft'?u.software:u.infra);
     const cards = UC.filter(x=>x.c===c.n).map(function(x){
       const txt = (T(x.name)+' '+x.prov+' '+T(x.metric)+' '+T(x.detail)+' '+T(x.glab)).replace(/<[^>]+>/g,'').toLowerCase().replace(/"/g,'');
-      return '<div class="card" data-c="'+x.c+'" data-mat="'+x.mat+'" data-q="'+x.q+'" data-g="'+x.g+'" data-ci="'+x.ci+'" data-txt="'+txt+'">'+
+      return '<div class="card" id="uc-'+ucSlug(x.name.en)+'" data-c="'+x.c+'" data-mat="'+x.mat+'" data-q="'+x.q+'" data-g="'+x.g+'" data-ci="'+x.ci+'" data-txt="'+txt+'">'+
         '<button class="card-btn" aria-expanded="false" data-tip="'+tipText(T(x.detail))+'">'+
           '<div class="card-top"><div class="uc-head">'+
             (CARD_IMG[x.name.en]?'<img class="uc-img" src="'+CARD_IMG[x.name.en]+'" alt="" loading="lazy" width="64" height="64">':'')+
@@ -3403,7 +3445,7 @@ function buildBoard(){
         '<div class="detail"><div class="detail-in">'+
           T(x.detail)+
           '<div class="flag '+x.flag.t+'">'+T(x.flag.x)+'</div>'+
-          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+
+          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+globeHTML(x)+
         '</div></div>'+
       '</div>';
     }).join('');
