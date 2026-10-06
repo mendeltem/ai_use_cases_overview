@@ -38,7 +38,7 @@
 
   header.top{background:url("images/header/header_a.webp") right 38%/max(68%,820px) auto no-repeat,linear-gradient(180deg,#123E4D 0%,#0E2C40 100%); color:#EAF0EE; position:relative; overflow:hidden; border-bottom:3px solid var(--petrol);}
   header.top::before{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--petrol-dark) 1px,transparent 1px),linear-gradient(90deg,var(--petrol-dark) 1px,transparent 1px); background-size:34px 34px; opacity:.14; pointer-events:none;}
-  @media (max-width:640px){ header.top{background:linear-gradient(180deg,rgba(14,36,46,.82) 0%,rgba(14,36,46,.72) 100%),url("images/header/header_a_mobile.webp") center/cover no-repeat,#0F2A36} }
+  @media (max-width:1000px){ header.top{background:linear-gradient(180deg,rgba(14,36,46,.84) 0%,rgba(14,36,46,.74) 100%),url("images/header/header_a_mobile.webp") right center/cover no-repeat,#0F2A36} }
   .top .wrap{position:relative; padding-top:18px; padding-bottom:14px}
   .topbar{display:flex; justify-content:space-between; align-items:flex-start; gap:16px}
   .eyebrow{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#7FD0C4; margin:0 0 7px;}
@@ -191,6 +191,8 @@
   .flag.warn{background:var(--thin-bg); color:var(--thin)}
   .flag.note{background:var(--mid-bg); color:var(--mid)}
   .flag.good{background:var(--solid-bg); color:var(--solid)}
+  .empty-img{display:block; margin:0 auto 14px; width:160px; height:160px; mix-blend-mode:multiply}
+  .lk-ic{width:22px; height:22px; border-radius:50%; vertical-align:-6px; margin-right:8px}
   .empty{text-align:center; padding:60px 20px; color:var(--ink-faint); font-family:'JetBrains Mono',monospace; font-size:13px; display:none}
   footer{border-top:1px solid var(--line); background:var(--surface); padding:22px 0 34px}
   footer .wrap{font-size:12px; color:var(--ink-faint); line-height:1.6}
@@ -2514,11 +2516,13 @@ function computeStat(){
    Branchenkennung sind herausgerechnet, weil sie keine Branche sind. */
 const ABDECKUNG = {"universum": 7204, "gruppen": 51, "abgedeckt": 28, "luecken": 21, "lfirmen": 1416, "lbio": 12.8};
 const LUECKEN = [{"de":"Einzelhandel","en":"Retail","n":223,"b":2400,"fde":"Nachfrageprognose, Preissetzung, Empfehlung und Ranking, Inventurdifferenz","fen":"Demand forecasting, pricing, ranking and recommendation, shrinkage"},{"de":"Öl und Gas","en":"Oil & gas","n":177,"b":2150,"fde":"Seismische Interpretation, Reservoirmodellierung, Bohroptimierung, Leckerkennung","fen":"Seismic interpretation, reservoir modelling, drilling optimisation, leak detection"},{"de":"Großhandel","en":"Wholesale","n":140,"b":667,"fde":"Bestandsdisposition, Sortimentssteuerung, Preisverhandlung","fen":"Inventory allocation, assortment, price negotiation"},{"de":"Nahrung und Genuss","en":"Food & beverage","n":125,"b":1546,"fde":"Rezeptur, Haltbarkeitsprognose, Sichtprüfung in der Abfüllung","fen":"Formulation, shelf-life prediction, inline inspection on the filling line"},{"de":"Immobilien","en":"Real estate","n":108,"b":346,"fde":"Bewertung, Vermietung, Gebäudebetrieb und Belegungssteuerung","fen":"Valuation, leasing, building operation and occupancy"},{"de":"IT-Hardware","en":"Computer hardware","n":104,"b":1105,"fde":"Chipdesign und EDA, Verifikation, Layout","fen":"Chip design and EDA, verification, layout"},{"de":"Metallwaren","en":"Fabricated metal","n":61,"b":190,"fde":"Zerspanungsparameter, Werkzeugstandzeit, Sichtprüfung","fen":"Cutting parameters, tool life, visual inspection"},{"de":"Gastronomie","en":"Restaurants","n":60,"b":249,"fde":"Bedarfsprognose, Spracherfassung am Schalter, Küchenrobotik","fen":"Demand forecasting, voice ordering, kitchen robotics"},{"de":"Bildung","en":"Education","n":58,"b":33,"fde":"Adaptives Lernen, Bewertung, Sprachlernen","fen":"Adaptive learning, assessment, language learning"},{"de":"Textil und Bekleidung","en":"Textiles & apparel","n":53,"b":150,"fde":"Entwurf, Nachfrageprognose, virtuelle Anprobe","fen":"Design, demand forecasting, virtual try-on"},{"de":"Metallerzeugung","en":"Primary metals","n":46,"b":405,"fde":"abgedeckt über Prozessindustrie, aber ohne eigene Karte","fen":"Covered by the process-industry card, but without one of its own"},{"de":"Persönliche Dienste","en":"Personal services","n":45,"b":131,"fde":"Terminplanung, Nachfrageprognose","fen":"Scheduling, demand forecasting"},{"de":"Steine und Erden","en":"Stone, clay & glass","n":41,"b":218,"fde":"Brennprozessregelung im Zementwerk, Qualitätsprognose","fen":"Kiln control in cement, quality prediction"},{"de":"Luftverkehr","en":"Air transport","n":33,"b":443,"fde":"Flottenplanung, Crew-Einsatz, Wartungsprognose, Flugsicherung","fen":"Fleet planning, crew rostering, maintenance prediction, air traffic control"},{"de":"Holz und Möbel","en":"Wood & furniture","n":32,"b":66,"fde":"Zuschnittoptimierung, Sortierung nach Holzqualitaet","fen":"Cutting optimisation, grading by timber quality"},{"de":"Gummi und Kunststoff","en":"Rubber & plastics","n":25,"b":71,"fde":"Spritzgussparameter, Ausschussprognose","fen":"Injection-moulding parameters, scrap prediction"},{"de":"Raffinerie","en":"Refining","n":23,"b":1798,"fde":"Fahrweisenoptimierung, Ausbeutesteuerung, Anlagenzustand","fen":"Operating-mode optimisation, yield control, asset health"},{"de":"Druck und Verlag","en":"Printing & publishing","n":22,"b":67,"fde":"Redaktionelle Erzeugung, Personalisierung, Rechteklärung","fen":"Editorial generation, personalisation, rights clearance"},{"de":"Papier","en":"Paper","n":21,"b":314,"fde":"Prozessregelung der Papiermaschine, Bahnrissvorhersage","fen":"Paper-machine process control, web-break prediction"},{"de":"Kohle","en":"Coal","n":10,"b":25,"fde":"Förderplanung, Anlagenzustand","fen":"Extraction planning, asset health"},{"de":"Bahn und Nahverkehr","en":"Rail & transit","n":9,"b":407,"fde":"Fahrplanoptimierung, Gleiszustand, vorausschauende Wartung","fen":"Timetable optimisation, track condition, predictive maintenance"}];
+const LUECKEN_IMG = ["images/gap/01_retail.webp","images/gap/02_oil-gas.webp","images/gap/03_wholesale.webp","images/gap/04_food-beverage.webp","images/gap/05_real-estate.webp","images/gap/06_computer-hardware.webp","images/gap/07_fabricated-metal.webp","images/gap/08_restaurants.webp","images/gap/09_education.webp","images/gap/10_textiles-apparel.webp","images/gap/11_primary-metals.webp","images/gap/12_personal-services.webp","images/gap/13_stone-clay-glass.webp","images/gap/14_air-transport.webp","images/gap/15_wood-furniture.webp","images/gap/16_rubber-plastics.webp","images/gap/17_refining.webp","images/gap/18_printing-publishing.webp","images/gap/19_paper.webp","images/gap/20_coal.webp","images/gap/21_rail-transit.webp"];
+LUECKEN.forEach(function(x,i){ x.img = LUECKEN_IMG[i]; });
 function zeichneLuecken(){
   const u = UI[lang];
   const el = document.getElementById('lueckenListe'); if(!el) return;
   el.innerHTML = LUECKEN.map(function(x){
-    return '<div class="lk"><div class="lk-n">'+(lang==='de'?x.de:x.en)+'</div>'+
+    return '<div class="lk"><div class="lk-n">'+(x.img?'<img class="lk-ic" src="'+x.img+'" alt="" loading="lazy" width="22" height="22">':'')+(lang==='de'?x.de:x.en)+'</div>'+
       '<div class="lk-z">'+x.n+'</div>'+
       '<div class="lk-b">'+x.b.toLocaleString(lang==='de'?'de-DE':'en-US')+'</div>'+
       '<div class="lk-f">'+(lang==='de'?x.fde:x.fen)+'</div></div>';
@@ -3261,7 +3265,7 @@ function renderStatic(){
   }
   document.getElementById('lblComp').textContent = u.lblComp;
   document.getElementById('search').placeholder = u.searchPh;
-  document.getElementById('empty').textContent = u.empty;
+  document.getElementById('empty').innerHTML = '<img class="empty-img" src="images/header/empty_state.webp" alt="" width="160" height="160" loading="lazy"><div>'+u.empty+'</div>';
   document.getElementById('footerTxt').innerHTML = u.footer;
   renderDist();
 }
