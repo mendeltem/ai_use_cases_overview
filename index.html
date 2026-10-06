@@ -72,6 +72,13 @@
                   white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .sisterlink .sgo{color:#7FD0C4; font-size:12px; flex-shrink:0}
   @media(max-width:640px){ .topright{align-items:flex-start} .sisterlink{max-width:none} }
+  .sisterrow{display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end}
+  .sisterrow a{font-family:'Space Grotesk',sans-serif; font-size:11.5px; font-weight:600; color:#EAF0EE; text-decoration:none;
+    padding:4px 9px; border:1px solid rgba(127,208,196,.45); border-radius:7px; background-color:rgba(12,36,50,.82); backdrop-filter:blur(6px)}
+  .sisterrow a:hover{border-color:#7FD0C4; background-color:rgba(127,208,196,.18)}
+  .sisterrow a:focus-visible{outline:2px solid #7FD0C4; outline-offset:2px}
+  @media(max-width:640px){ .sisterrow{justify-content:flex-start} }
+  .wikilinks{margin-top:7px; font-size:12px; color:var(--ink-soft)} .wikilinks a{color:var(--petrol); text-decoration:none; margin-right:10px; display:inline-block} .wikilinks a:hover{text-decoration:underline}
   .topright .sisterlink, .topright .langtoggle{background-color:rgba(12,36,50,.82); backdrop-filter:blur(6px)}
   .langtoggle{display:inline-flex; border:1px solid rgba(127,208,196,.4); border-radius:8px; overflow:hidden; flex-shrink:0}
   .langtoggle button{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.08em; padding:6px 12px; background:transparent; color:#9FB4AF; border:none; cursor:pointer; transition:.12s}
@@ -290,6 +297,10 @@
           <span class="st" id="brCardT"></span>
           <span class="sgo" aria-hidden="true">→</span>
         </a>
+        <div class="sisterrow">
+          <a href="https://mendeltem.github.io/Supply_Atlas3D/" target="_blank" rel="noopener">🌍 <span id="brAtlasT"></span></a>
+          <a href="https://github.com/mendeltem/blackbeard_wikki" target="_blank" rel="noopener">📚 <span id="brWikiT"></span></a>
+        </div>
       </div>
     </div>
     <p class="thesis" id="thesis"></p>
@@ -410,7 +421,7 @@ const UI = {
     brF2v:"+112%", brF2l:"CoreWeave, rented GPU capacity y/y",
     brF3v:"66", brF3l:"listed companies in that layer",
     brNote:"The split between rented and self-built capacity is not measured on this board. The mechanism is well established; the ratio is not. The figures above are segment revenue from the companies\' own filings, quarter ended 30 Jun 2026 (Oracle 31 May, CoreWeave 31 Mar).",
-    brCardK:"Sister page", brCardT:"The Nvidia ecosystem",
+    brCardK:"Sister page", brCardT:"The Nvidia ecosystem", brAtlasT:"Supply Atlas globe", brWikiT:"Background wiki",
     brCardS:"Valuation and quarterly figures for 66 listed companies along the supply chain: memory, foundry, packaging, power, cloud, application.",
     brCardG:"open →",
     eyebrow:"AI Use Cases · As of 6 August 2026 · Maturity · Evidence · Growth",
@@ -445,7 +456,7 @@ const UI = {
     brF2v:"+112%", brF2l:"CoreWeave, vermietete GPU-Kapazität J/J",
     brF3v:"66", brF3l:"börsennotierte Firmen dieser Ebene",
     brNote:"Die Aufteilung zwischen gemieteter und selbst gebauter Kapazität ist auf diesem Board nicht gemessen. Der Mechanismus ist belegt, das Verhältnis nicht. Die Zahlen oben sind Segmentumsätze aus den eigenen Berichten der Firmen, Quartal bis 30.6.2026 (Oracle 31.5., CoreWeave 31.3.).",
-    brCardK:"Schwesterseite", brCardT:"Das Nvidia-Ökosystem",
+    brCardK:"Schwesterseite", brCardT:"Das Nvidia-Ökosystem", brAtlasT:"Supply-Atlas-Globus", brWikiT:"Hintergrund-Wiki",
     brCardS:"Bewertung und Quartalszahlen von 66 börsennotierten Firmen entlang der Lieferkette: Speicher, Fertigung, Packaging, Strom, Cloud, Anwendung.",
     brCardG:"öffnen →",
     eyebrow:"KI-Use-Cases · Stand 6. August 2026 · Reifegrad · Datenlage · Wachstum",
@@ -2490,7 +2501,7 @@ const COMPANIES = {
 // value falls back to English via T().
 
 UI.mn = {
-  brCardK:"Холбоотой хуудас", brCardT:"Nvidia-гийн экосистем",
+  brCardK:"Холбоотой хуудас", brCardT:"Nvidia-гийн экосистем", brAtlasT:"Supply Atlas бөмбөрцөг", brWikiT:"Суурь вики",
   ciHigh:"GPU их", ciMid:"GPU дунд", ciLow:"GPU бага", ciSub:"суурь", lblComp:"Тооцооллын ачаалал",
   eyebrow:"Хиймэл оюуны хэрэглээ · 2026 оны 8-р сарын байдлаар · Төлөвшил · Нотолгоо · Өсөлт",
   h1a:"Хиймэл оюун бодит ертөнцөд ", h1accent:"үнэхээр", h1b:" юу хийж байна вэ",
@@ -3453,7 +3464,7 @@ function setLang(l){
   document.getElementById('btnMN').setAttribute('aria-pressed', l==='mn');
   renderStatic(); buildChips(); buildBoard(); apply(); zeichneLuecken();
   fetch('deployments.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
-    if(!d) return; DEPLOY = d.use_cases; COMP = d.companies || null; buildBoard(); apply(); openFromHash();
+    if(!d) return; DEPLOY = d.use_cases; COMP = d.companies || null; WIKI = d.wiki || null; buildBoard(); apply(); openFromHash();
   }).catch(function(){});
   window.addEventListener('hashchange', openFromHash);
 }
@@ -3485,7 +3496,7 @@ function renderStatic(){
   document.getElementById('legendToggleTxt').textContent = u.legendLbl;
   document.getElementById('filtToggleTxt').textContent = u.filtersLbl;
   for(const id of ['brTitle','brP1','brP2','brNote','brF1v','brF1l','brF2v','brF2l',
-                   'brF3v','brF3l','brCardK','brCardT','brCardS','brCardG','cdTitle','cdNote']){
+                   'brF3v','brF3l','brCardK','brCardT','brCardS','brCardG','brAtlasT','brWikiT','cdTitle','cdNote']){
     const el = document.getElementById(id); if(el) el.innerHTML = u[id];
   }
   const cs = computeStat();
@@ -3606,6 +3617,15 @@ function globeHTML(x){
   const t = lang==='de' ? 'Auf dem Globus zeigen ('+n+' Orte)' : lang==='mn' ? 'Бөмбөрцөг дээр харах ('+n+' газар)' : 'Show on the globe ('+n+' places)';
   return '<a class="globelink" href="'+ATLAS_URL+'?uc='+ucSlug(x.name.en)+'" target="_blank" rel="noopener">🌍 '+t+'</a>';
 }
+let WIKI = null;
+function wikiHTML(x){
+  const ps = WIKI && WIKI.use_cases && WIKI.use_cases[ucSlug(x.name.en)]; if(!ps || !ps.length) return '';
+  const lab = lang==='de' ? 'Hintergrund im Wiki' : lang==='mn' ? 'Вики дэх суурь мэдээлэл' : 'Background in the wiki';
+  const t = function(p){ const e = (WIKI.entries||{})[p]; return e ? (lang==='de' ? e.de : e.en) : p; };
+  return '<div class="wikilinks">\u{1F4DA} '+lab+': '+ps.map(function(p){
+    return '<a href="'+WIKI.base+p+'" target="_blank" rel="noopener">'+t(p)+' \u2197</a>';
+  }).join('')+'</div>';
+}
 let COMP = null;
 function compHTML(x){
   if(!COMP) return '';
@@ -3642,7 +3662,7 @@ function buildBoard(){
         '<div class="detail"><div class="detail-in">'+
           T(x.detail)+
           '<div class="flag '+x.flag.t+'">'+T(x.flag.x)+'</div>'+
-          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+globeHTML(x)+compHTML(x)+
+          '<div class="src"><b>'+u.srcLabel+'</b> '+srcHTML(x)+'</div>'+firmsHTML(x)+globeHTML(x)+compHTML(x)+wikiHTML(x)+
         '</div></div>'+
       '</div>';
     }).join('');

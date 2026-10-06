@@ -1,5 +1,5 @@
 {
-  "_about": "Where each use case is deployed. Shared by the use-case board and the Supply Atlas globe. 'site' = name of a site in the Supply Atlas (its coordinates and AI evidence come from there); otherwise la/lo are given. Researched 2026-10-06.",
+  "_about": "Where each use case is deployed. Shared by the use-case board and the Supply Atlas globe. 'site' = name of a site in the Supply Atlas (its coordinates and AI evidence come from there); otherwise la/lo are given. Researched 2026-10-06; extended 2026-10-06 (second pass, 5 research agents, sources opened).",
   "use_cases": {
     "robotaxis-autonomous-driving": {
       "name": {
@@ -257,6 +257,12 @@
         },
         {
           "site": "Baotou Trennanlage"
+        },
+        {
+          "site": "Escondida"
+        },
+        {
+          "site": "Norilsk"
         }
       ]
     },
@@ -292,6 +298,1990 @@
         },
         {
           "site": "Stargate UAE"
+        }
+      ]
+    },
+    "autonomous-trucks": {
+      "name": {
+        "en": "Autonomous trucks",
+        "de": "Autonome Trucks"
+      },
+      "places": [
+        {
+          "n": "Dallas–Houston corridor (I-45)",
+          "c": "USA",
+          "la": 31.258,
+          "lo": -95.978,
+          "en": "Aurora began driverless commercial freight between Dallas and Houston in May 2025 with Hirschbach and Uber Freight; first heavy-truck driverless lane in the US.",
+          "de": "Aurora startete im Mai 2025 fahrerlosen kommerziellen Frachtverkehr zwischen Dallas und Houston mit Hirschbach und Uber Freight; erste fahrerlose Lkw-Strecke der USA.",
+          "src": "https://techcrunch.com/2025/05/01/aurora-launches-commercial-self-driving-truck-service-in-texas",
+          "yr": "2025"
+        },
+        {
+          "n": "Fort Worth–El Paso corridor (I-20/I-10)",
+          "c": "USA",
+          "la": 31.997,
+          "lo": -102.078,
+          "en": "Aurora opened a second driverless lane, about 600 miles from Fort Worth to El Paso, in October 2025; by then over 100,000 driverless miles on Texas roads.",
+          "de": "Aurora eröffnete im Oktober 2025 eine zweite fahrerlose Strecke, rund 600 Meilen von Fort Worth nach El Paso; bis dahin über 100.000 fahrerlose Meilen in Texas.",
+          "src": "https://www.freightwaves.com/news/aurora-expands-driverless-routes-to-el-paso",
+          "yr": "2025"
+        },
+        {
+          "n": "Fort Worth/El Paso–Phoenix corridor",
+          "c": "USA",
+          "la": 32.35,
+          "lo": -108.709,
+          "en": "Aurora validated driverless runs to Phoenix (Fort Worth–Phoenix, about 1,000 miles; El Paso–Phoenix) in Feb 2026, expanding to 10 routes; an observer still rode in the cab.",
+          "de": "Aurora validierte im Februar 2026 fahrerlose Fahrten nach Phoenix (Fort Worth–Phoenix, ca. 1.000 Meilen; El Paso–Phoenix), Netz auf 10 Routen; noch mit Beobachter im Führerhaus.",
+          "src": "https://www.ttnews.com/articles/aurora-earnings-q4-2025",
+          "yr": "2026"
+        },
+        {
+          "n": "Permian Basin – Atlas Dune Express load-outs",
+          "c": "USA",
+          "la": 31.857,
+          "lo": -103.093,
+          "en": "Kodiak-driven trucks haul frac sand for Atlas from two load-out depots in Texas and New Mexico; about 7,000 loads and 450,000 t delivered, 28 trucks in March 2026.",
+          "de": "Kodiak-gesteuerte Lkw fahren Frac-Sand für Atlas von zwei Verladepunkten in Texas und New Mexico; rund 7.000 Ladungen und 450.000 t, 28 Lkw im März 2026.",
+          "src": "https://kodiak.ai/news/atlas-driverless-permian-expansion",
+          "yr": "2026"
+        },
+        {
+          "n": "Dallas–Fort Worth metro (Gatik)",
+          "c": "USA",
+          "la": 32.777,
+          "lo": -96.797,
+          "en": "Gatik runs fully driverless 26- and 30-foot box trucks for retailers in Dallas–Fort Worth; 60,000 driverless orders across its markets since mid-2025.",
+          "de": "Gatik betreibt in Dallas–Fort Worth vollständig fahrerlose 26- und 30-Fuß-Kofferlastwagen für Händler; 60.000 fahrerlose Aufträge in allen Märkten seit Mitte 2025.",
+          "src": "https://archive.gatik.ai/news/press-releases/gatik-becomes-first-us-company-to-operate-fully-driverless-trucks-at-scale-for-commercial-deliveries/",
+          "yr": "2026"
+        },
+        {
+          "n": "Phoenix metro (Gatik)",
+          "c": "USA",
+          "la": 33.448,
+          "lo": -112.074,
+          "en": "Gatik operates driverless middle-mile box trucks in the Phoenix metro area, running nearly 24 hours a day on highways and surface streets.",
+          "de": "Gatik betreibt im Großraum Phoenix fahrerlose Kofferlastwagen im Mittelstreckenverkehr, nahezu rund um die Uhr auf Autobahnen und Stadtstraßen.",
+          "src": "https://archive.gatik.ai/news/press-releases/gatik-becomes-first-us-company-to-operate-fully-driverless-trucks-at-scale-for-commercial-deliveries/",
+          "yr": "2026"
+        },
+        {
+          "n": "Northwest Arkansas (Gatik)",
+          "c": "USA",
+          "la": 36.372,
+          "lo": -94.209,
+          "en": "Gatik runs driverless box-truck deliveries for Fortune 50 retailers in Northwest Arkansas, one of its three core driverless markets.",
+          "de": "Gatik fährt in Nordwest-Arkansas fahrerlose Kofferlastwagen-Lieferungen für Fortune-50-Händler; einer von drei Kernmärkten des fahrerlosen Betriebs.",
+          "src": "https://archive.gatik.ai/news/press-releases/gatik-becomes-first-us-company-to-operate-fully-driverless-trucks-at-scale-for-commercial-deliveries/",
+          "yr": "2026"
+        },
+        {
+          "n": "Ontario (Gatik)",
+          "c": "CAN",
+          "la": 43.653,
+          "lo": -79.383,
+          "en": "Gatik lists Ontario, Canada among its commercially deployed autonomous truck markets.",
+          "de": "Gatik nennt Ontario (Kanada) als einen seiner Märkte mit kommerziell eingesetzten autonomen Lkw.",
+          "src": "https://archive.gatik.ai/news/press-releases/gatik-becomes-first-us-company-to-operate-fully-driverless-trucks-at-scale-for-commercial-deliveries/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "evtol-flying-taxis": {
+      "name": {
+        "en": "eVTOL / flying taxis",
+        "de": "eVTOL / Flugtaxis"
+      },
+      "places": [
+        {
+          "n": "Guangzhou – EHang Future City",
+          "c": "CHN",
+          "la": 23.129,
+          "lo": 113.264,
+          "en": "Pilot: EHang General Aviation holds a CAAC operator certificate for EH216-S sightseeing flights here; ticketed launch planned March 2026 with about 6–10 aircraft.",
+          "de": "Pilot: EHang General Aviation hat hier ein CAAC-Betreiberzertifikat für EH216-S-Rundflüge; Ticketstart war für März 2026 mit etwa 6–10 Fluggeräten geplant.",
+          "src": "https://finance.yahoo.com/news/ehang-q4-earnings-call-highlights-135330132.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Hefei – Luogang Park",
+          "c": "CHN",
+          "la": 31.776,
+          "lo": 117.297,
+          "en": "Pilot: Heyi Aviation (EHang JV) holds a CAAC operator certificate and prepares EH216-S sightseeing flights in Luogang Park; early-bird fare set at RMB 299.",
+          "de": "Pilot: Heyi Aviation (EHang-Joint-Venture) hat ein CAAC-Betreiberzertifikat und bereitet EH216-S-Rundflüge im Luogang-Park vor; Frühbucherpreis 299 RMB.",
+          "src": "https://finance.yahoo.com/news/ehang-q4-earnings-call-highlights-135330132.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Dubai International Airport (DXB) vertiport",
+          "c": "ARE",
+          "la": 25.253,
+          "lo": 55.365,
+          "en": "Pilot: Joby flew piloted test flights in Dubai and is building its first vertiport at DXB with Skyports; first passengers planned in 2026 under an RTA agreement.",
+          "de": "Pilot: Joby absolvierte bemannte Testflüge in Dubai und baut mit Skyports den ersten Vertiport am DXB; erste Passagiere 2026 im Rahmen eines RTA-Vertrags geplant.",
+          "src": "https://www.jobyaviation.com/news/joby-cements-global-lead-in-air-taxi-industry-with-dubai-flights-and-beginning-of-commercial-market-readiness-work",
+          "yr": "2025"
+        },
+        {
+          "n": "Abu Dhabi – Al Bateen Executive Airport",
+          "c": "ARE",
+          "la": 24.428,
+          "lo": 54.458,
+          "en": "Pilot: Archer began Midnight eVTOL test flights at Al Bateen in July 2025 to test heat, humidity and dust; Abu Dhabi is its planned first launch market.",
+          "de": "Pilot: Archer begann im Juli 2025 Testflüge des Midnight-eVTOL in Al Bateen unter Hitze, Feuchte und Staub; Abu Dhabi ist als erster Startmarkt geplant.",
+          "src": "https://gulfnews.com/business/aviation/archer-begins-test-flights-in-abu-dhabi-for-air-taxi-rollout-targeting-uae-commercial-launch-1.500185071",
+          "yr": "2025"
+        },
+        {
+          "n": "New York – JFK to Manhattan heliports",
+          "c": "USA",
+          "la": 40.641,
+          "lo": -73.778,
+          "en": "Pilot: In April 2026 Joby flew demonstration flights from JFK to Downtown Skyport and the W 30th and E 34th St heliports, each in under 10 minutes.",
+          "de": "Pilot: Im April 2026 flog Joby Demonstrationsflüge vom JFK zum Downtown Skyport sowie den Heliports W 30th und E 34th Street, jeweils unter 10 Minuten.",
+          "src": "https://ir.jobyaviation.com/news-events/press-releases/detail/181/joby-brings-electric-air-taxis-to-new-york-city-in",
+          "yr": "2026"
+        },
+        {
+          "n": "Marina, California – Joby flight test base",
+          "c": "USA",
+          "la": 36.682,
+          "lo": -121.763,
+          "en": "Pilot: Joby's base in Marina, California builds and flies its aircraft, including the first FAA-conforming aircraft for Type Inspection Authorization testing.",
+          "de": "Pilot: Joby baut und fliegt in Marina (Kalifornien) seine Fluggeräte, darunter die ersten FAA-konformen Maschinen für die Type-Inspection-Authorization-Tests.",
+          "src": "https://www.jobyaviation.com/news/joby-reports-first-quarter-2026-financial-results",
+          "yr": "2026"
+        }
+      ]
+    },
+    "autonomous-ships": {
+      "name": {
+        "en": "Autonomous ships",
+        "de": "Autonome Schiffe"
+      },
+      "places": [
+        {
+          "n": "Herøya (Porsgrunn)–Brevik",
+          "c": "NOR",
+          "la": 59.115,
+          "lo": 9.64,
+          "en": "Yara Birkeland, a battery-electric 120 TEU ship, carries fertiliser containers 11 nm to Brevik; 175 voyages by 2024, still with a crew of three on board.",
+          "de": "Die batterieelektrische Yara Birkeland (120 TEU) bringt Düngercontainer 11 sm nach Brevik; 175 Fahrten bis 2024, weiterhin mit drei Personen Besatzung an Bord.",
+          "src": "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/",
+          "yr": "2024"
+        },
+        {
+          "n": "Moss–Horten (Oslofjord)",
+          "c": "NOR",
+          "la": 59.427,
+          "lo": 10.57,
+          "en": "ASKO's electric ro-ro ferries Marit and Therese carry 16 trailers each across the Oslofjord, remotely supported by Massterly; they sailed with a 4-person crew during certification.",
+          "de": "Die elektrischen Ro-Ro-Fähren Marit und Therese von ASKO bringen je 16 Trailer über den Oslofjord, mit Fernsteuerung durch Massterly; in der Zertifizierung mit 4 Personen Besatzung.",
+          "src": "https://maritime-executive.com/article/electric-autonomous-ro-ro-freight-ferries-begin-service-in-norway",
+          "yr": "2022"
+        },
+        {
+          "n": "Stockholm – Norr Mälarstrand",
+          "c": "SWE",
+          "la": 59.326,
+          "lo": 18.043,
+          "en": "Torghatten and Zeabuz run MF Estelle, an autonomous electric passenger ferry, in regular service since June 2023, initially with an operator on board.",
+          "de": "Torghatten und Zeabuz betreiben seit Juni 2023 die autonome Elektro-Personenfähre MF Estelle im Linienverkehr, zunächst mit einem Operator an Bord.",
+          "src": "https://torghatten.no/en/about/news/16b10b48-210f-4354-a6d9-d309e1aa3b34/torghatten-og-zeabuz-skaper-historie-i-stockholm",
+          "yr": "2023"
+        },
+        {
+          "n": "Kobe–Tokyo coastal liner (Genbu)",
+          "c": "JPN",
+          "la": 34.682,
+          "lo": 135.195,
+          "en": "The 5,689 GT container ship Genbu began commercial Level 4 autonomous service on 30 Jan 2026 on a liner route Kobe–Osaka–Nagoya–Yokohama–Tokyo.",
+          "de": "Das Containerschiff Genbu (5.689 BRZ) fährt seit 30.01.2026 kommerziell mit Autonomiestufe 4 im Liniendienst Kobe–Osaka–Nagoya–Yokohama–Tokio.",
+          "src": "https://tnfsa.nippon-foundation.or.jp/news/13268558",
+          "yr": "2026"
+        },
+        {
+          "n": "Shin-Okayama–Tonosho (Shodoshima)",
+          "c": "JPN",
+          "la": 34.597,
+          "lo": 133.987,
+          "en": "Ryobi Ferry's Olympia Dream Seto, certified Dec 2025, is the first regular passenger ferry with Level 4 autonomous navigation; four round trips a day.",
+          "de": "Die Olympia Dream Seto von Ryobi Ferry, im Dezember 2025 zugelassen, ist die erste Linien-Personenfähre mit Autonomiestufe 4; vier Rundfahrten pro Tag.",
+          "src": "https://tnfsa.nippon-foundation.or.jp/news/12976936",
+          "yr": "2026"
+        },
+        {
+          "n": "Hitachi–Kushiro (Hokuren Maru No. 2)",
+          "c": "JPN",
+          "la": 36.497,
+          "lo": 140.627,
+          "en": "K Line-led ro-ro ship Hokuren Maru No. 2 (11,413 GT) runs Level 4 autonomous commercial service since 9 Mar 2026, carrying milk and farm goods ~1,600 km round trip.",
+          "de": "Das von K Line geführte Ro-Ro-Schiff Hokuren Maru No. 2 (11.413 BRZ) fährt seit 09.03.2026 kommerziell mit Stufe 4; Milch und Agrargüter, ca. 1.600 km Rundreise.",
+          "src": "https://tnfsa.nippon-foundation.or.jp/news/13268558",
+          "yr": "2026"
+        },
+        {
+          "n": "Kobe–Nagoya (Mikage)",
+          "c": "JPN",
+          "la": 35.083,
+          "lo": 136.883,
+          "en": "The coastal container ship Mikage passed inspection on 25 Mar 2026 and joined Level 4 autonomous commercial service between Kobe and Nagoya.",
+          "de": "Das Küstencontainerschiff Mikage bestand am 25.03.2026 die Abnahme und fährt kommerziell mit Autonomiestufe 4 zwischen Kobe und Nagoya.",
+          "src": "https://en.nippon-foundation.or.jp/news/articles/2026/20260327-112130.html",
+          "yr": "2026"
+        }
+      ]
+    },
+    "delivery-medical-drones": {
+      "name": {
+        "en": "Delivery & medical drones",
+        "de": "Liefer- & Medizin-Drohnen"
+      },
+      "places": [
+        {
+          "n": "Dallas–Fort Worth metro (Zipline/Walmart)",
+          "c": "USA",
+          "la": 32.777,
+          "lo": -96.797,
+          "en": "Zipline runs home drone delivery from Walmart stores and restaurants in Dallas–Fort Worth; company total passed 2 million commercial deliveries in Jan 2026.",
+          "de": "Zipline liefert im Raum Dallas–Fort Worth per Drohne aus Walmart-Filialen und Restaurants nach Hause; insgesamt über 2 Mio. kommerzielle Lieferungen (Jan. 2026).",
+          "src": "https://www.zipline.com/newsroom/zipline-surpasses-2-million-deliveries-raises-more-than-600m-to-power-next-phase-of-growth-and-expands-operations-to-houston-and-phoenix",
+          "yr": "2026"
+        },
+        {
+          "n": "Pea Ridge, Arkansas (Zipline/Walmart)",
+          "c": "USA",
+          "la": 36.454,
+          "lo": -94.116,
+          "en": "Zipline has delivered groceries and medicines by drone from Walmart in Pea Ridge since 2021, with an average flight time of 3 minutes per order.",
+          "de": "Zipline liefert seit 2021 in Pea Ridge Lebensmittel und Medikamente von Walmart per Drohne; durchschnittliche Flugzeit 3 Minuten pro Bestellung.",
+          "src": "https://www.zipline.com/newsroom/our-next-flight-with-walmart-will-reach-millions-of-americans",
+          "yr": "2024"
+        },
+        {
+          "n": "Muhanga, Rwanda (Zipline)",
+          "c": "RWA",
+          "la": -2.084,
+          "lo": 29.756,
+          "en": "Zipline's first national drone network started in Muhanga in 2016; with Kayonza it serves 900+ health facilities, 28,754 blood units delivered in 2023.",
+          "de": "Zipline startete 2016 in Muhanga sein erstes landesweites Drohnennetz; mit Kayonza versorgt es über 900 Gesundheitseinrichtungen, 2023 wurden 28.754 Blutkonserven geliefert.",
+          "src": "https://allafrica.com/stories/202609020254.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Greater Houston (Wing/Walmart)",
+          "c": "USA",
+          "la": 29.76,
+          "lo": -95.37,
+          "en": "Wing and Walmart started drone delivery from five Houston-area Walmart stores on 15 Jan 2026, delivering in as little as 30 minutes.",
+          "de": "Wing und Walmart starteten am 15.01.2026 Drohnenlieferungen aus fünf Walmart-Filialen im Raum Houston, Zustellung in bis zu 30 Minuten.",
+          "src": "https://www.click2houston.com/news/local/2026/01/15/walmart-launches-first-drone-delivery-service-in-houston",
+          "yr": "2026"
+        },
+        {
+          "n": "Shenzhen (Meituan)",
+          "c": "CHN",
+          "la": 22.543,
+          "lo": 114.058,
+          "en": "Meituan began drone food deliveries in Shenzhen in 2021 and runs 53 routes in Chinese cities; over 450,000 drone orders completed in China by end-2024.",
+          "de": "Meituan begann 2021 in Shenzhen mit Drohnen-Essenslieferungen und betreibt 53 Routen in chinesischen Städten; bis Ende 2024 über 450.000 Drohnenbestellungen.",
+          "src": "https://thelowdown.momentum.asia/meituan-launches-drone-delivery-in-hong-kong/",
+          "yr": "2025"
+        },
+        {
+          "n": "Hong Kong – Science Park (Meituan/Keeta)",
+          "c": "HKG",
+          "la": 22.427,
+          "lo": 114.21,
+          "en": "Meituan's Keeta launched drone delivery in Hong Kong on 20 Mar 2025 from Science Park in Sha Tin, its 54th commercial drone route.",
+          "de": "Meituans Keeta startete am 20.03.2025 Drohnenlieferungen in Hongkong ab dem Science Park in Sha Tin, die 54. kommerzielle Drohnenroute.",
+          "src": "https://thelowdown.momentum.asia/meituan-launches-drone-delivery-in-hong-kong/",
+          "yr": "2025"
+        },
+        {
+          "n": "Västra Götaland / Gothenburg (AED drones)",
+          "c": "SWE",
+          "la": 57.709,
+          "lo": 11.975,
+          "en": "Study: Everdrone drones delivered defibrillators to suspected cardiac arrests for ~200,000 residents; drone beat ambulance in 67% of cases, median 3 min 14 s earlier.",
+          "de": "Studie: Everdrone-Drohnen brachten Defibrillatoren zu Verdachtsfällen von Herzstillstand für ca. 200.000 Einwohner; in 67 % vor dem Rettungswagen, im Median 3 min 14 s früher.",
+          "src": "https://news.ki.se/drones-enabled-the-use-of-defibrillators-before-ambulance-arrival",
+          "yr": "2023"
+        }
+      ]
+    },
+    "sidewalk-delivery-robots": {
+      "name": {
+        "en": "Sidewalk delivery robots",
+        "de": "Gehweg-Lieferroboter"
+      },
+      "places": [
+        {
+          "n": "Espoo (Otaniemi), Finland",
+          "c": "FIN",
+          "la": 60.185,
+          "lo": 24.828,
+          "en": "Starship robots began grocery deliveries from Alepa Otaniemi in 2022, Finland's first; expanded to six Alepa stores serving about 8,000 households.",
+          "de": "Starship-Roboter liefern seit 2022 Lebensmittel von Alepa Otaniemi aus, als erste in Finnland; ausgeweitet auf sechs Alepa-Filialen für rund 8.000 Haushalte.",
+          "src": "https://aalto.fi/en/news/alepa-introduces-robotic-food-deliveries-in-otaniemi-first-in-finland",
+          "yr": "2022"
+        },
+        {
+          "n": "Tampere, Finland",
+          "c": "FIN",
+          "la": 61.498,
+          "lo": 23.761,
+          "en": "S Group extended Starship robot grocery delivery via the S-kaupat app to Tampere and five other Finnish cities from summer 2023.",
+          "de": "Die S-Gruppe weitete die Starship-Roboterlieferung über die S-kaupat-App ab Sommer 2023 auf Tampere und fünf weitere finnische Städte aus.",
+          "src": "https://www.esmmagazine.com/technology/s-group-and-starship-technologies-start-robot-deliveries-239691",
+          "yr": "2023"
+        },
+        {
+          "n": "Tallinn, Estonia",
+          "c": "EST",
+          "la": 59.437,
+          "lo": 24.754,
+          "en": "Starship and Bolt launched robot grocery delivery from three Bolt Market stores in Tallinn in Oct 2024, reaching over 180,000 residents.",
+          "de": "Starship und Bolt starteten im Oktober 2024 Roboterlieferungen aus drei Bolt-Market-Filialen in Tallinn für über 180.000 Einwohner.",
+          "src": "https://tech.eu/2024/10/15/starship-and-bolt-partner-to-launch-robot-powered-grocery-delivery/",
+          "yr": "2024"
+        },
+        {
+          "n": "North East Barnsley, UK",
+          "c": "GBR",
+          "la": 53.575,
+          "lo": -1.453,
+          "en": "Starship and Just Eat began robot takeaway delivery in Carlton, Athersley, Monk Bretton and Lundwood on 8 Apr 2026, covering 11,000 households.",
+          "de": "Starship und Just Eat starteten am 08.04.2026 Roboterlieferungen von Essen in Carlton, Athersley, Monk Bretton und Lundwood für 11.000 Haushalte.",
+          "src": "https://www.uktech.news/foodtech/just-eat-and-starship-technologies-launch-delivery-robots-in-barnsley-20260408",
+          "yr": "2026"
+        },
+        {
+          "n": "Chicago (Serve Robotics)",
+          "c": "USA",
+          "la": 41.878,
+          "lo": -87.63,
+          "en": "Serve Robotics launched sidewalk robot delivery with Uber Eats in 14 Chicago neighbourhoods in Sept 2025, from over 100 restaurants.",
+          "de": "Serve Robotics startete im September 2025 Gehweg-Roboterlieferungen mit Uber Eats in 14 Chicagoer Stadtteilen aus über 100 Restaurants.",
+          "src": "https://www.robotics247.com/article/serve_robotics_brings_autonomous_food_deliveries_to_chicago_with_uber_eats",
+          "yr": "2025"
+        },
+        {
+          "n": "Los Angeles (Serve Robotics)",
+          "c": "USA",
+          "la": 34.052,
+          "lo": -118.244,
+          "en": "Los Angeles is Serve Robotics' first market for Uber Eats sidewalk robot delivery; Serve aimed for 2,000 robots in the US by end-2025.",
+          "de": "Los Angeles ist der erste Markt von Serve Robotics für Gehweg-Roboterlieferungen mit Uber Eats; Ziel waren 2.000 Roboter in den USA bis Ende 2025.",
+          "src": "https://www.robotics247.com/article/serve_robotics_brings_autonomous_food_deliveries_to_chicago_with_uber_eats",
+          "yr": "2025"
+        },
+        {
+          "n": "Miami (Serve Robotics)",
+          "c": "USA",
+          "la": 25.762,
+          "lo": -80.192,
+          "en": "Serve Robotics operates Uber Eats sidewalk delivery robots in Miami, one of its five US markets with Los Angeles, Dallas–Fort Worth, Atlanta and Chicago.",
+          "de": "Serve Robotics betreibt in Miami Gehweg-Lieferroboter für Uber Eats, einer von fünf US-Märkten neben Los Angeles, Dallas–Fort Worth, Atlanta und Chicago.",
+          "src": "https://www.robotics247.com/article/serve_robotics_brings_autonomous_food_deliveries_to_chicago_with_uber_eats",
+          "yr": "2025"
+        }
+      ]
+    },
+    "warehouse-robots": {
+      "name": {
+        "en": "Warehouse robots",
+        "de": "Lagerroboter"
+      },
+      "places": [
+        {
+          "n": "Amazon Shreveport fulfillment center",
+          "c": "USA",
+          "la": 32.525,
+          "lo": -93.75,
+          "en": "Amazon's next-generation Shreveport, Louisiana fulfillment center (2024) runs eight robotic systems; Amazon passed 1 million robots across 300+ sites in 2025.",
+          "de": "Amazons Logistikzentrum der neuen Generation in Shreveport (Louisiana, 2024) nutzt acht Robotersysteme; Amazon überschritt 2025 1 Mio. Roboter an über 300 Standorten.",
+          "src": "https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center",
+          "yr": "2025"
+        },
+        {
+          "n": "Ocado Luton CFC",
+          "c": "GBR",
+          "la": 51.879,
+          "lo": -0.418,
+          "en": "Ocado's Luton grid-robot fulfilment centre for Ocado Retail is its most advanced Re:Imagined site, averaging 315 units picked per labour hour in H1 2026.",
+          "de": "Ocados Luton-Fulfilment-Center mit Grid-Robotern für Ocado Retail ist der am weitesten ausgebaute Re:Imagined-Standort, im Schnitt 315 Einheiten pro Arbeitsstunde (H1 2026).",
+          "src": "https://cdn.prod.website-files.com/667974bf1bf45146cf81ef1f/6a58743ae4971ec9225ff530_ocado-group-2026-half-year-results.pdf",
+          "yr": "2026"
+        },
+        {
+          "n": "Ocado Erith CFC",
+          "c": "GBR",
+          "la": 51.481,
+          "lo": 0.176,
+          "en": "Ocado Retail's Erith robotic fulfilment centre in south-east London still has spare capacity for volume growth, Ocado reported in July 2026.",
+          "de": "Ocado Retails Roboter-Fulfilment-Center in Erith (Südost-London) hat laut Ocado (Juli 2026) noch freie Kapazität für weiteres Volumenwachstum.",
+          "src": "https://cdn.prod.website-files.com/667974bf1bf45146cf81ef1f/6a58743ae4971ec9225ff530_ocado-group-2026-half-year-results.pdf",
+          "yr": "2026"
+        },
+        {
+          "n": "Auchan Poland CFC, Warsaw",
+          "c": "POL",
+          "la": 52.23,
+          "lo": 21.012,
+          "en": "Auchan Poland's Ocado robotic fulfilment centre in Warsaw went live in the second half of 2025; Ocado counts 23 CFCs worldwide.",
+          "de": "Das Ocado-Roboter-Fulfilment-Center von Auchan Polen in Warschau ging im zweiten Halbjahr 2025 in Betrieb; Ocado zählt weltweit 23 CFCs.",
+          "src": "https://cdn.prod.website-files.com/667974bf1bf45146cf81ef1f/6a58743ae4971ec9225ff530_ocado-group-2026-half-year-results.pdf",
+          "yr": "2026"
+        },
+        {
+          "n": "LPP Logistics, Gdańsk area",
+          "c": "POL",
+          "la": 54.352,
+          "lo": 18.646,
+          "en": "Geek+ runs more than 1,600 RoboShuttle and P-series robots across two LPP fashion warehouses near Gdańsk with 1.4 million storage locations.",
+          "de": "Geek+ betreibt über 1.600 RoboShuttle- und P-Serie-Roboter in zwei LPP-Modelagern bei Danzig mit 1,4 Mio. Lagerplätzen.",
+          "src": "https://www.geekplus.com/resources/news/lpp",
+          "yr": "2026"
+        }
+      ]
+    },
+    "humanoid-robots": {
+      "name": {
+        "en": "Humanoid robots",
+        "de": "Humanoide Roboter"
+      },
+      "places": [
+        {
+          "site": "BMW Spartanburg"
+        },
+        {
+          "n": "Tesla Fremont Factory (Optimus line)",
+          "c": "USA",
+          "la": 37.494,
+          "lo": -121.944,
+          "en": "Tesla replaced the Model S/X lines with first-generation Optimus humanoid lines; first units are for internal training and development.",
+          "de": "Tesla hat die Model-S/X-Linien durch erste Optimus-Humanoidenlinien ersetzt; die ersten Einheiten dienen internem Training und Entwicklung.",
+          "src": "https://www.electrive.com/2026/07/q2-financial-results-tesla-posts-record-deliveries-as-profits-come-under-pressure/",
+          "yr": "2026"
+        },
+        {
+          "n": "BMW Plant Leipzig",
+          "c": "DEU",
+          "la": 51.418,
+          "lo": 12.441,
+          "en": "Pilot: Hexagon AEON humanoids tested since Dec 2025 in HV-battery assembly and component production; pilot phase from summer 2026.",
+          "de": "Pilot: Hexagon-AEON-Humanoide seit Dez. 2025 in Hochvolt-Batteriemontage und Komponentenfertigung getestet; Pilotphase ab Sommer 2026.",
+          "src": "https://www.press.bmwgroup.com/global/article/detail/T0455864EN/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time",
+          "yr": "2026"
+        },
+        {
+          "n": "GXO / SPANX warehouse, Atlanta area",
+          "c": "USA",
+          "la": 34.186,
+          "lo": -83.925,
+          "en": "Agility Digit humanoids move totes from AMRs to conveyors in GXO's SPANX distribution centre, the first commercial RaaS humanoid deal (2024).",
+          "de": "Agility-Digit-Humanoide setzen im SPANX-Lager von GXO Behälter von AMRs auf Förderbänder um – erster kommerzieller RaaS-Humanoideneinsatz (2024).",
+          "src": "https://www.robotics247.com/article/agility_robotics_gxo_sign_multi_year_humanoid_deployment_agreement",
+          "yr": "2024"
+        },
+        {
+          "n": "Unitree Robotics, Hangzhou",
+          "c": "CHN",
+          "la": 30.209,
+          "lo": 120.211,
+          "en": "Unitree builds humanoids in Hangzhou; more than 5,500 humanoid robots shipped in 2025. STAR Market IPO in Aug 2026 raised about 6.1 bn yuan.",
+          "de": "Unitree baut Humanoide in Hangzhou; 2025 wurden über 5.500 humanoide Roboter ausgeliefert. Börsengang am STAR Market im Aug. 2026 brachte rund 6,1 Mrd. Yuan.",
+          "src": "https://news.rthk.hk/rthk/en/component/k2/1865616-20260810.htm",
+          "yr": "2026"
+        },
+        {
+          "n": "AgiBot factory, Shanghai",
+          "c": "CHN",
+          "la": 30.898,
+          "lo": 121.928,
+          "en": "AgiBot rolled out its 5,000th mass-produced humanoid robot at its Shanghai factory in Dec 2025 (A-, X- and G-series).",
+          "de": "AgiBot hat im Dez. 2025 in seinem Werk in Shanghai den 5.000. serienmäßig gefertigten humanoiden Roboter ausgeliefert (A-, X- und G-Serie).",
+          "src": "https://agibot.com/article/231/detail/31.html",
+          "yr": "2025"
+        },
+        {
+          "n": "Zeekr 5G smart factory, Ningbo",
+          "c": "CHN",
+          "la": 30.33,
+          "lo": 121.24,
+          "en": "UBTech Walker S1 humanoids sort materials, carry cargo and install components at Geely's Zeekr factory; multi-robot training run in March 2025.",
+          "de": "UBTech-Walker-S1-Humanoide sortieren Material, transportieren Teile und montieren Komponenten im Zeekr-Werk von Geely; Mehrroboter-Training im März 2025.",
+          "src": "https://ningbo.chinadaily.com.cn/2025-05/08/c_1091152.htm",
+          "yr": "2025"
+        }
+      ]
+    },
+    "industrial-robots": {
+      "name": {
+        "en": "Industrial robots",
+        "de": "Industrieroboter"
+      },
+      "places": [
+        {
+          "site": "HD Hyundai Ulsan"
+        },
+        {
+          "site": "Hyundai Metaplant Georgia"
+        },
+        {
+          "n": "FANUC headquarters factories, Oshino",
+          "c": "JPN",
+          "la": 35.462,
+          "lo": 138.807,
+          "en": "FANUC's robot factory at its Yamanashi HQ builds up to 6,000 robots per month on automated lines where FANUC robots assemble robots.",
+          "de": "FANUCs Roboterwerk am Hauptsitz in Yamanashi fertigt bis zu 6.000 Roboter pro Monat auf automatisierten Linien, in denen FANUC-Roboter Roboter montieren.",
+          "src": "https://www.fanuc.eu/al-en/node/1472",
+          "yr": "2025"
+        },
+        {
+          "n": "KUKA robot base, Shunde (Foshan)",
+          "c": "CHN",
+          "la": 22.92,
+          "lo": 113.205,
+          "en": "KUKA's Shunde base, one of China's largest robot plants (~30,000 units/yr capacity), produces one industrial robot every half hour.",
+          "de": "KUKAs Werk in Shunde, eines der größten Roboterwerke Chinas (~30.000 Einheiten/Jahr), fertigt alle halbe Stunde einen Industrieroboter.",
+          "src": "https://www2.yicaiglobal.com/news/robots-build-robots-at-kukas-guangdong-facility-producing-one-every-half-hour",
+          "yr": "2025"
+        }
+      ]
+    },
+    "construction-robots": {
+      "name": {
+        "en": "Construction robots",
+        "de": "Baurobotik"
+      },
+      "places": [
+        {
+          "n": "Fort Bliss barracks (ICON)",
+          "c": "USA",
+          "la": 31.813,
+          "lo": -106.421,
+          "en": "ICON 3D-printed ten Army barracks (78,000+ sq ft, 560 soldiers) in 58 days; delivered 4x faster and 9.3% below the USACE cost benchmark.",
+          "de": "ICON hat zehn Armee-Unterkünfte (über 7.200 m², 560 Soldaten) in 58 Tagen 3D-gedruckt; 4-mal schneller und 9,3 % unter dem USACE-Kostenrichtwert.",
+          "src": "https://www.iconbuild.com/newsroom/icon-delivers-largest-robotic-construction-deployment-in-dow-history-at-fort-bliss",
+          "yr": "2026"
+        },
+        {
+          "n": "Wolf Ranch, Georgetown (ICON/Lennar)",
+          "c": "USA",
+          "la": 30.64,
+          "lo": -97.74,
+          "en": "ICON's Vulcan printer printed nearly 100 homes for Lennar at Wolf Ranch, the largest 3D-printed neighbourhood; about three weeks per house.",
+          "de": "ICONs Vulcan-Drucker hat in Wolf Ranch fast 100 Häuser für Lennar gedruckt, die größte 3D-gedruckte Siedlung; etwa drei Wochen pro Haus.",
+          "src": "https://www.engadget.com/home/a-robotics-company-has-3d-printed-nearly-a-hundred-homes-in-texas-225830931.html",
+          "yr": "2024"
+        },
+        {
+          "n": "Community First! Village, Austin",
+          "c": "USA",
+          "la": 30.267,
+          "lo": -97.637,
+          "en": "ICON is printing 100 more homes for formerly homeless residents, adding to 17 homes and facilities it already printed at the site.",
+          "de": "ICON druckt 100 weitere Häuser für ehemals Obdachlose, zusätzlich zu 17 bereits gedruckten Häusern und Gebäuden auf dem Gelände.",
+          "src": "https://www.iconbuild.com/newsroom/icon-announces-construction-is-underway-for-more-3d-printed-homes-to-serve-the-chronically-homeless-in-texas",
+          "yr": "2024"
+        },
+        {
+          "n": "Fort Polk / JRTC (ICON)",
+          "c": "USA",
+          "la": 31.046,
+          "lo": -93.208,
+          "en": "Under construction: eight 3D-printed Army facilities under a $67.9M ICON agreement; vertical printing from Sept 2026, occupancy summer 2027.",
+          "de": "Im Bau: acht 3D-gedruckte Armeegebäude im Rahmen eines ICON-Vertrags über 67,9 Mio. $; Druck ab Sept. 2026, Bezug im Sommer 2027.",
+          "src": "https://www.iconbuild.com/newsroom/fort-polk-ground-break",
+          "yr": "2026"
+        }
+      ]
+    },
+    "digital-twins": {
+      "name": {
+        "en": "Digital twins",
+        "de": "Digital Twins"
+      },
+      "places": [
+        {
+          "n": "BMW Plant Debrecen",
+          "c": "HUN",
+          "la": 47.585,
+          "lo": 21.56,
+          "en": "Plant planned in BMW's Omniverse-based Virtual Factory; lines and ~1,000 body-shop robots were installed exactly as simulated in the digital twin.",
+          "de": "Werk in BMWs Omniverse-basierter Virtual Factory geplant; Linien und ~1.000 Karosseriebauroboter wurden exakt wie im digitalen Zwilling simuliert installiert.",
+          "src": "https://www.press.bmwgroup.com/global/article/detail/T0452702EN/efficient-sustainable-digital:-new-bmw-group-plant-debrecen-set-to-begin-series-production-of-the-bmw-ix3-in-late-october",
+          "yr": "2025"
+        },
+        {
+          "n": "Foxconn plant, Guadalajara",
+          "c": "MEX",
+          "la": 20.677,
+          "lo": -103.347,
+          "en": "Foxconn built an Omniverse/Isaac Sim digital twin of its Blackwell HGX server plant to train robots and plan lines; targets >30% lower kWh per year.",
+          "de": "Foxconn hat einen digitalen Zwilling (Omniverse/Isaac Sim) seines Blackwell-HGX-Serverwerks gebaut, um Roboter zu trainieren; Ziel: >30 % weniger kWh pro Jahr.",
+          "src": "https://blogs.nvidia.com/blog/foxconn-digital-twin-ai",
+          "yr": "2024"
+        },
+        {
+          "n": "Mercedes-Benz Plant Kecskemét",
+          "c": "HUN",
+          "la": 46.929,
+          "lo": 19.733,
+          "en": "First Mercedes plant with a full Omniverse digital twin of the factory, used to plan assembly lines; digital twins double hall conversion speed.",
+          "de": "Erstes Mercedes-Werk mit vollständigem digitalen Zwilling in Omniverse für die Planung der Montagelinien; Hallenumbauten laufen doppelt so schnell.",
+          "src": "https://blogs.nvidia.com/blog/mercedes-benz-ev-nvidia-omniverse-generative-ai/",
+          "yr": "2023"
+        },
+        {
+          "n": "Mercedes-Benz Plant Rastatt",
+          "c": "DEU",
+          "la": 48.873,
+          "lo": 8.222,
+          "en": "Pilot for digital production in the paint shop using Omniverse digital twins; AI monitoring there cut energy use by 20%.",
+          "de": "Pilot für digitale Produktion in der Lackiererei mit digitalen Zwillingen in Omniverse; KI-Überwachung senkte dort den Energieverbrauch um 20 %.",
+          "src": "https://blogs.nvidia.com/blog/mercedes-benz-ev-nvidia-omniverse-generative-ai/",
+          "yr": "2023"
+        },
+        {
+          "n": "Siemens Amberg site",
+          "c": "DEU",
+          "la": 49.44,
+          "lo": 11.875,
+          "en": "Siemens simulates its planned >EUR 200M AI-driven Amberg factory (lines, machines, logistics) as a digital twin; completion due by 2030.",
+          "de": "Siemens simuliert seine geplante KI-gestützte Fabrik in Amberg (>200 Mio. €; Linien, Maschinen, Logistik) als digitalen Zwilling; Fertigstellung bis 2030.",
+          "src": "https://evertiq.com/news/2026-03-05-siemens-to-invest-200-million-in-ai-driven-factory-in-amberg",
+          "yr": "2026"
+        }
+      ]
+    },
+    "recycling-sortation": {
+      "name": {
+        "en": "Recycling sortation",
+        "de": "Recycling-Sortierung"
+      },
+      "places": [
+        {
+          "n": "AMP Portsmouth MSW facility",
+          "c": "USA",
+          "la": 36.835,
+          "lo": -76.298,
+          "en": "AMP's AI sortation extracts recyclables and organics from bagged household waste; capacity raised to 108,000 t/yr for SPSA (1.2M residents).",
+          "de": "AMPs KI-Sortierung holt Wertstoffe und Organik aus Restmüll; Kapazität auf 108.000 t/Jahr für SPSA (1,2 Mio. Einwohner) erhöht.",
+          "src": "https://ampsortation.com/articles/portsmouth-msw-facility-expansion",
+          "yr": "2026"
+        },
+        {
+          "n": "Single Stream Recyclers, Sarasota",
+          "c": "USA",
+          "la": 27.336,
+          "lo": -82.531,
+          "en": "MRF runs 14 AMP AI-guided sorting robots on plastics, cartons, paper and metals; each picks 70–80 items per minute.",
+          "de": "Sortieranlage mit 14 KI-gesteuerten AMP-Robotern für Kunststoffe, Kartons, Papier und Metalle; je 70–80 Griffe pro Minute.",
+          "src": "https://wasterecyclingmag.ca/?p=10126",
+          "yr": "2019"
+        }
+      ]
+    },
+    "restaurant-kitchen-automation": {
+      "name": {
+        "en": "Restaurant kitchen automation",
+        "de": "Küchenautomation in der Gastronomie"
+      },
+      "places": [
+        {
+          "n": "Sweetgreen Naperville",
+          "c": "USA",
+          "la": 41.773,
+          "lo": -88.147,
+          "en": "First Sweetgreen Infinite Kitchen (May 2023), robotic bowl assembly; $2.8M first-year sales, 31.1% restaurant margin in Q2 2024.",
+          "de": "Erste Infinite Kitchen von Sweetgreen (Mai 2023), robotergestützte Bowl-Montage; 2,8 Mio. $ Umsatz im ersten Jahr, 31,1 % Marge in Q2 2024.",
+          "src": "https://restaurantdive.com/news/sweetgreen-automated-kitchen-higher-margins-sales-labor-retention/723863/",
+          "yr": "2024"
+        },
+        {
+          "n": "Sweetgreen Huntington Beach",
+          "c": "USA",
+          "la": 33.66,
+          "lo": -117.999,
+          "en": "Second Infinite Kitchen, equipped in early 2024; Sweetgreen reported results similar to Naperville.",
+          "de": "Zweite Infinite Kitchen, Anfang 2024 ausgestattet; Sweetgreen meldete ähnliche Ergebnisse wie in Naperville.",
+          "src": "https://restaurantdive.com/news/sweetgreen-automated-kitchen-higher-margins-sales-labor-retention/723863/",
+          "yr": "2024"
+        },
+        {
+          "n": "Sweetgreen Penn Plaza, New York",
+          "c": "USA",
+          "la": 40.75,
+          "lo": -73.993,
+          "en": "Retrofitted to an Infinite Kitchen in July 2024; made nearly 200 bowls in 30 minutes, average order time under 3.5 minutes.",
+          "de": "Im Juli 2024 auf Infinite Kitchen umgerüstet; fast 200 Bowls in 30 Minuten, durchschnittliche Bestellzeit unter 3,5 Minuten.",
+          "src": "https://restaurantdive.com/news/sweetgreen-automated-kitchen-higher-margins-sales-labor-retention/723863/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "visual-inspection-predictive-maintenance": {
+      "name": {
+        "en": "Visual inspection & predictive maintenance",
+        "de": "Visuelle Prüfung & vorausschauende Instandhaltung"
+      },
+      "places": [
+        {
+          "n": "Rockwell Automation Singapore",
+          "c": "SGP",
+          "la": 1.343,
+          "lo": 103.719,
+          "en": "WEF Lighthouse (June 2026) after 50+ digital and AI solutions incl. AI quality control and predictive maintenance; fewer defects, faster onboarding.",
+          "de": "WEF-Leuchtturm (Juni 2026) nach über 50 digitalen und KI-Lösungen inkl. KI-Qualitätskontrolle und vorausschauender Wartung; weniger Fehler, schnellere Einarbeitung.",
+          "src": "https://www.aap.com.au/aapreleases/cision20260624ae91098/",
+          "yr": "2026"
+        },
+        {
+          "site": "CATL Liyang"
+        },
+        {
+          "site": "CATL Yibin"
+        },
+        {
+          "site": "Micron Singapore Fab 10"
+        },
+        {
+          "n": "GE HealthCare Beijing",
+          "c": "CHN",
+          "la": 39.795,
+          "lo": 116.505,
+          "en": "WEF Lighthouse (Oct 2024): AI defect detection and deep learning across 26 production lines; scrap -66%, customer complaints -73%.",
+          "de": "WEF-Leuchtturm (Okt. 2024): KI-Fehlererkennung und Deep Learning an 26 Linien; Ausschuss -66 %, Kundenreklamationen -73 %.",
+          "src": "https://www.edb.gov.sg/en/news-and-insights/world-economic-forum-recognizes-leading-companies-transforming-global-manufacturing-with-ai-innovation",
+          "yr": "2024"
+        },
+        {
+          "n": "Siemens Electronics Factory Erlangen",
+          "c": "DEU",
+          "la": 49.578,
+          "lo": 11.022,
+          "en": "WEF Lighthouse (Oct 2024) running 100+ AI algorithms and digital twins; labour productivity +69%, energy use -42%.",
+          "de": "WEF-Leuchtturm (Okt. 2024) mit über 100 KI-Algorithmen und digitalen Zwillingen; Arbeitsproduktivität +69 %, Energieverbrauch -42 %.",
+          "src": "https://www.edb.gov.sg/en/news-and-insights/world-economic-forum-recognizes-leading-companies-transforming-global-manufacturing-with-ai-innovation",
+          "yr": "2024"
+        },
+        {
+          "n": "GlobalFoundries Singapore 300mm fab",
+          "c": "SGP",
+          "la": 1.441,
+          "lo": 103.785,
+          "en": "WEF Lighthouse (2025): machine learning for predictive maintenance, quality control and workflow; labour productivity +40%.",
+          "de": "WEF-Leuchtturm (2025): maschinelles Lernen für vorausschauende Wartung, Qualitätskontrolle und Abläufe; Arbeitsproduktivität +40 %.",
+          "src": "https://www.edb.gov.sg/en/news-and-insights/singapores-wef-lighthouse-factories-how-theyre-shaping-the-future-of-manufacturing-in-southeast-asia",
+          "yr": "2025"
+        },
+        {
+          "n": "Agilent Technologies Singapore",
+          "c": "SGP",
+          "la": 1.433,
+          "lo": 103.836,
+          "en": "WEF Lighthouse (2022): AI-driven visual inspection and IIoT stations with AI algorithms for predictive testing; productivity +60%.",
+          "de": "WEF-Leuchtturm (2022): KI-gestützte Sichtprüfung und IIoT-Stationen mit KI-Algorithmen für vorausschauende Tests; Produktivität +60 %.",
+          "src": "https://www.edb.gov.sg/en/news-and-insights/singapores-wef-lighthouse-factories-how-theyre-shaping-the-future-of-manufacturing-in-southeast-asia",
+          "yr": "2022"
+        },
+        {
+          "site": "CATL Ningde"
+        },
+        {
+          "site": "Boeing Everett"
+        },
+        {
+          "site": "Boeing Renton"
+        },
+        {
+          "site": "Itaipú"
+        },
+        {
+          "site": "Belo Monte"
+        },
+        {
+          "site": "Hanul"
+        }
+      ]
+    },
+    "ai-weather-forecasting": {
+      "name": {
+        "en": "AI weather forecasting",
+        "de": "KI-Wettervorhersage"
+      },
+      "places": [
+        {
+          "n": "ECMWF data centre, Bologna",
+          "c": "ITA",
+          "la": 44.52,
+          "lo": 11.367,
+          "en": "ECMWF runs its AI forecasting system AIFS operationally since 25 Feb 2025, side by side with the physics-based IFS; tropical cyclone tracks up to 20% better.",
+          "de": "Das EZMW betreibt sein KI-Vorhersagesystem AIFS seit 25.02.2025 operationell neben dem physikbasierten IFS; Zugbahnen tropischer Wirbelstürme bis zu 20 % besser.",
+          "src": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
+          "yr": "2025"
+        },
+        {
+          "n": "NOAA NCEP, College Park",
+          "c": "USA",
+          "la": 38.972,
+          "lo": -76.925,
+          "en": "NCEP put AIGFS, AIGEFS and hybrid HGEFS (GraphCast-based) into operations on 17 Dec 2025; a 16-day AIGFS run uses 0.3% of GFS compute.",
+          "de": "NCEP nahm am 17.12.2025 AIGFS, AIGEFS und das hybride HGEFS (auf GraphCast-Basis) in Betrieb; ein 16-Tage-Lauf braucht 0,3 % der GFS-Rechenleistung.",
+          "src": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+          "yr": "2025"
+        },
+        {
+          "n": "Deutscher Wetterdienst, Offenbach",
+          "c": "DEU",
+          "la": 50.103,
+          "lo": 8.749,
+          "en": "DWD switched its AI model AICON live on 2 Mar 2026; it delivers global forecasts every three hours at 13 km resolution, twice as often as before.",
+          "de": "Der DWD schaltete sein KI-Modell AICON am 02.03.2026 live; es liefert alle drei Stunden globale Vorhersagen mit 13 km Auflösung, doppelt so oft wie bisher.",
+          "src": "https://www.hessenschau.de/panorama/dwd-feiert-meilenstein-ki-soll-wettervorhersage-und-unwetterwarnungen-verbessern-v1,dwd-ki-100.html",
+          "yr": "2026"
+        },
+        {
+          "n": "MET Norway, Oslo",
+          "c": "NOR",
+          "la": 59.942,
+          "lo": 10.72,
+          "en": "MET Norway's graph-network model Bris has entered production, issuing 10-day forecasts four times a day for the Yr service (about 10 million weekly users).",
+          "de": "Das Graph-Netz-Modell Bris von MET Norway ist in Produktion und liefert viermal täglich 10-Tage-Vorhersagen für den Dienst Yr (rund 10 Mio. Nutzer pro Woche).",
+          "src": "https://www.ecmwf.int/en/about/media-centre/aifs-blog/2026/building-shared-foundations-machine-learned-weather-prediction",
+          "yr": "2026"
+        },
+        {
+          "n": "China Meteorological Administration, Beijing",
+          "c": "CHN",
+          "la": 39.951,
+          "lo": 116.322,
+          "en": "CMA's AI-physics model FengQing passed CMA's operational access review in Sept 2024 and is used by forecasters nationwide, incl. typhoon tracks in 2025.",
+          "de": "Das KI-Physik-Modell FengQing der CMA bestand im Sept. 2024 die operative Zulassung und wird landesweit von Vorhersagern genutzt, u. a. für Taifunbahnen 2025.",
+          "src": "https://typhooncommittee.org/20IWS/docs/Technical%20Presentations/4.%20FengQing%20and%20Its%20Performance%20in%202025%20Typhoon%20Season.pdf",
+          "yr": "2025"
+        }
+      ]
+    },
+    "fusion-plasma-control": {
+      "name": {
+        "en": "Fusion plasma control",
+        "de": "Plasmasteuerung in der Fusion"
+      },
+      "places": [
+        {
+          "n": "TCV tokamak, EPFL Lausanne",
+          "c": "CHE",
+          "la": 46.517,
+          "lo": 6.565,
+          "en": "A DeepMind reinforcement-learning agent, trained in simulation, controlled all 19 magnetic coils of the TCV tokamak and held plasma shapes (Nature, 2022).",
+          "de": "Ein in Simulation trainierter Reinforcement-Learning-Agent von DeepMind steuerte alle 19 Magnetspulen des TCV-Tokamaks und hielt Plasmaformen (Nature, 2022).",
+          "src": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+          "yr": "2022"
+        },
+        {
+          "n": "DIII-D National Fusion Facility, San Diego",
+          "c": "USA",
+          "la": 32.894,
+          "lo": -117.232,
+          "en": "A Princeton/PPPL AI controller forecast tearing instabilities up to 300 ms ahead on DIII-D and adjusted the plasma in real time to avoid them (Nature, 2024).",
+          "de": "Ein KI-Regler von Princeton/PPPL sagte an DIII-D Tearing-Instabilitäten bis 300 ms voraus und passte das Plasma in Echtzeit an, um sie zu vermeiden (Nature, 2024).",
+          "src": "https://ans.org/news/article-5835/ai-can-predict-and-prevent-fusion-plasma-instabilities-in-milliseconds",
+          "yr": "2024"
+        },
+        {
+          "n": "KSTAR tokamak, Daejeon",
+          "c": "KOR",
+          "la": 36.373,
+          "lo": 127.365,
+          "en": "An ML-integrated adaptive controller tuned 3D magnetic perturbations in real time on KSTAR and DIII-D to suppress edge bursts at record performance.",
+          "de": "Ein ML-gestützter adaptiver Regler stellte an KSTAR und DIII-D 3D-Magnetstörfelder in Echtzeit ein und unterdrückte Randinstabilitäten bei Rekordleistung.",
+          "src": "https://www.energy.gov/node/4847508",
+          "yr": "2024"
+        },
+        {
+          "n": "SPARC tokamak (CFS), Devens",
+          "c": "USA",
+          "la": 42.536,
+          "lo": -71.616,
+          "en": "CFS and Google DeepMind develop RL control strategies for SPARC using the TORAX simulator; development stage, the machine is not yet operating.",
+          "de": "CFS und Google DeepMind entwickeln mit dem Simulator TORAX RL-Regelstrategien für SPARC; Entwicklungsphase, die Anlage läuft noch nicht.",
+          "src": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "fusion-disruption-prediction": {
+      "name": {
+        "en": "Fusion disruption prediction",
+        "de": "Disruptionsvorhersage in der Fusion"
+      },
+      "places": [
+        {
+          "n": "DIII-D National Fusion Facility, San Diego",
+          "c": "USA",
+          "la": 32.894,
+          "lo": -117.232,
+          "en": "The FRNN deep-learning disruption predictor was built into the DIII-D plasma control system; it outputs a disruption score plus a sensitivity score per signal.",
+          "de": "Der Deep-Learning-Disruptionsprädiktor FRNN wurde in das Plasmaregelsystem von DIII-D eingebaut; er liefert einen Disruptions- und einen Sensitivitätswert je Signal.",
+          "src": "https://arxiv.org/abs/2204.01289",
+          "yr": "2022"
+        },
+        {
+          "n": "HL-2A tokamak, SWIP Chengdu",
+          "c": "CHN",
+          "la": 30.575,
+          "lo": 103.95,
+          "en": "SWIP's CNN+LSTM disruption predictor runs in the HL-2A plasma control system at 0.3 ms per slice, with 89.0% accuracy in online tests.",
+          "de": "Der CNN+LSTM-Disruptionsprädiktor des SWIP läuft im Plasmaregelsystem von HL-2A mit 0,3 ms pro Zeitschritt und 89,0 % Genauigkeit im Online-Test.",
+          "src": "https://indico.fusenet.eu/event/28/contributions/36/attachments/50/111/An%20interpretable,%20transferable%20and%20real-time%20disruption%20predictor%20in%20HL-2A%20based%20on%20deep%20learning.pdf",
+          "yr": "2022"
+        },
+        {
+          "n": "EAST tokamak, ASIPP Hefei",
+          "c": "CHN",
+          "la": 31.906,
+          "lo": 117.167,
+          "en": "A random-forest disruption predictor ran in the EAST plasma control system (~250 µs per call), 92% alarm rate, and triggered neon-gas mitigation in tests.",
+          "de": "Ein Random-Forest-Disruptionsprädiktor lief im Plasmaregelsystem von EAST (~250 µs), 92 % Trefferquote, und löste in Tests eine Neon-Gas-Abschwächung aus.",
+          "src": "https://collaborate.princeton.edu/en/publications/real-time-prediction-of-high-density-east-disruptions-using-rando/",
+          "yr": "2021"
+        }
+      ]
+    },
+    "fusion-simulation-surrogates": {
+      "name": {
+        "en": "Fusion simulation surrogates",
+        "de": "Simulations-Surrogate in der Fusion"
+      },
+      "places": [
+        {
+          "n": "National Ignition Facility, LLNL Livermore",
+          "c": "USA",
+          "la": 37.691,
+          "lo": -121.701,
+          "en": "An LLNL surrogate model trained on 150,000+ simulations gave a >70% chance that the 5 Dec 2022 NIF shot would pass breakeven before it did (Science, 2025).",
+          "de": "Ein LLNL-Surrogatmodell, trainiert mit über 150.000 Simulationen, gab dem NIF-Schuss vom 05.12.2022 vorab über 70 % Chance auf Breakeven (Science, 2025).",
+          "src": "https://www.llnl.gov/article/53316/llnl-used-ai-predict-historic-fusion-ignition-shot",
+          "yr": "2025"
+        },
+        {
+          "site": "El Capitan"
+        },
+        {
+          "n": "JET / UKAEA Culham",
+          "c": "GBR",
+          "la": 51.659,
+          "lo": -1.228,
+          "en": "QLKNN neural surrogates of QuaLiKiz, trained on JET data, run inside JINTRAC: 10^4x faster per call, 60-100x faster for full integrated runs.",
+          "de": "Neuronale QLKNN-Surrogate von QuaLiKiz, trainiert mit JET-Daten, laufen in JINTRAC: 10^4-fach schneller pro Aufruf, 60- bis 100-fach im Gesamtlauf.",
+          "src": "https://arxiv.org/abs/2105.01168",
+          "yr": "2021"
+        },
+        {
+          "n": "Commonwealth Fusion Systems, Devens",
+          "c": "USA",
+          "la": 42.536,
+          "lo": -71.616,
+          "en": "CFS uses DeepMind's open-source TORAX simulator to run virtual SPARC campaigns before the machine starts; CFS says it saved countless hours.",
+          "de": "CFS nutzt DeepMinds Open-Source-Simulator TORAX für virtuelle SPARC-Kampagnen vor dem Start der Anlage; laut CFS spart das unzählige Stunden.",
+          "src": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "self-driving-laboratories": {
+      "name": {
+        "en": "Self-driving laboratories",
+        "de": "Selbstfahrende Labore"
+      },
+      "places": [
+        {
+          "n": "University of Liverpool",
+          "c": "GBR",
+          "la": 53.406,
+          "lo": -2.965,
+          "en": "Liverpool's mobile robot chemist ran 688 experiments over 8 days on its own and found a photocatalyst six times more active (Nature, 2020).",
+          "de": "Der mobile Roboterchemiker in Liverpool führte selbstständig 688 Experimente in 8 Tagen durch und fand einen sechsmal aktiveren Photokatalysator (Nature, 2020).",
+          "src": "https://news.liverpool.ac.uk/2020/07/08/experiment-too-big-hire-a-mobile-robot-scientist/",
+          "yr": "2020"
+        },
+        {
+          "n": "A-Lab, Berkeley Lab",
+          "c": "USA",
+          "la": 37.876,
+          "lo": -122.247,
+          "en": "Berkeley Lab's A-Lab began operating in 2023: robots guided by AI synthesise inorganic powders, processing 50-100 times as many samples per day as a human.",
+          "de": "Das A-Lab am Berkeley Lab läuft seit 2023: KI-gesteuerte Roboter synthetisieren anorganische Pulver und verarbeiten 50- bis 100-mal mehr Proben pro Tag als ein Mensch.",
+          "src": "https://newscenter.lbl.gov/2023/12/18/top-science-stories-of-2023/",
+          "yr": "2023"
+        },
+        {
+          "n": "Polybot, Argonne National Laboratory",
+          "c": "USA",
+          "la": 41.716,
+          "lo": -87.98,
+          "en": "Polybot at Argonne's Center for Nanoscale Materials picks recipes, prints and tests polymer films and uses ML to choose the next experiment.",
+          "de": "Polybot am Center for Nanoscale Materials in Argonne wählt Rezepte, druckt und testet Polymerfilme und bestimmt per ML das nächste Experiment.",
+          "src": "https://pme.uchicago.edu/news/self-driving-lab-accelerates-discovery-process-materials-multiple-applications",
+          "yr": "2023"
+        },
+        {
+          "n": "Acceleration Consortium, University of Toronto",
+          "c": "CAN",
+          "la": 43.661,
+          "lo": -79.398,
+          "en": "The Acceleration Consortium runs six self-driving labs at U of T (plus one at UBC) for materials, drug discovery, polymers and tissue models.",
+          "de": "Das Acceleration Consortium betreibt sechs selbstfahrende Labore an der U of T (plus eines an der UBC) für Materialien, Wirkstoffe, Polymere und Gewebemodelle.",
+          "src": "https://acceleration.utoronto.ca/ac-labs-and-facilities",
+          "yr": "2026"
+        },
+        {
+          "n": "USTC, Hefei",
+          "c": "CHN",
+          "la": 31.839,
+          "lo": 117.264,
+          "en": "USTC's robotic AI chemist optimised an oxygen-evolution catalyst from Martian meteorites in about two months (Nature Synthesis, 2023).",
+          "de": "Der robotische KI-Chemiker der USTC optimierte in etwa zwei Monaten einen Sauerstoff-Katalysator aus Mars-Meteoriten (Nature Synthesis, 2023).",
+          "src": "https://en.ustc.edu.cn/info/1007/4733.htm",
+          "yr": "2023"
+        }
+      ]
+    },
+    "self-driving-labs": {
+      "name": {
+        "en": "Self-driving labs",
+        "de": "Selbstfahrende Labore"
+      },
+      "places": [
+        {
+          "n": "Recursion, Salt Lake City",
+          "c": "USA",
+          "la": 40.767,
+          "lo": -111.904,
+          "en": "Recursion's automated labs in Salt Lake City run up to 2 million experiments a week, feeding a 50+ petabyte dataset for drug discovery models.",
+          "de": "Die automatisierten Labore von Recursion in Salt Lake City fahren bis zu 2 Mio. Experimente pro Woche und speisen einen Datensatz von über 50 Petabyte.",
+          "src": "https://www.recursion.com/platform",
+          "yr": "2026"
+        },
+        {
+          "n": "Insilico Medicine Life Star lab, Suzhou",
+          "c": "CHN",
+          "la": 31.268,
+          "lo": 120.744,
+          "en": "Insilico's Life Star robotics lab at Suzhou BioBAY (opened Dec 2022) links its Pharma.AI platform to six automated modules for screening and validation.",
+          "de": "Insilicos Robotiklabor Life Star in Suzhou BioBAY (eröffnet Dez. 2022) verbindet die Plattform Pharma.AI mit sechs automatisierten Modulen für Screening und Validierung.",
+          "src": "https://www.eurekalert.org/news-releases/975722",
+          "yr": "2023"
+        },
+        {
+          "n": "Emerald Cloud Lab, Austin",
+          "c": "USA",
+          "la": 30.448,
+          "lo": -97.676,
+          "en": "Emerald Cloud Lab in Austin runs remote experiments on 200+ instrument models, 24 hours a day, 365 days a year.",
+          "de": "Emerald Cloud Lab in Austin führt Fernexperimente auf über 200 Gerätemodellen aus, 24 Stunden am Tag, 365 Tage im Jahr.",
+          "src": "https://emeraldcloudlab.com/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "pharma-in-house-ai-factories": {
+      "name": {
+        "en": "Pharma in-house AI factories",
+        "de": "Pharma-eigene AI-Factories"
+      },
+      "places": [
+        {
+          "n": "LillyPod, Eli Lilly Indianapolis",
+          "c": "USA",
+          "la": 39.758,
+          "lo": -86.15,
+          "en": "Lilly's LillyPod DGX SuperPOD went live in Indianapolis on 26 Feb 2026: 1,016 Blackwell Ultra GPUs, over 9,000 petaflops of AI performance.",
+          "de": "Lillys DGX SuperPOD LillyPod ging am 26.02.2026 in Indianapolis in Betrieb: 1.016 Blackwell-Ultra-GPUs, über 9.000 Petaflops KI-Leistung.",
+          "src": "https://blogs.nvidia.com/blog/2026/02/26/lilly-ai-factory-live/",
+          "yr": "2026"
+        },
+        {
+          "n": "Recursion BioHive-2, Salt Lake City",
+          "c": "USA",
+          "la": 40.767,
+          "lo": -111.904,
+          "en": "Recursion's BioHive-2 at its Salt Lake City HQ: 504 H100 GPUs in 63 DGX H100 systems, about 2 exaflops of AI performance, No. 35 on TOP500 (May 2024).",
+          "de": "Recursions BioHive-2 am Hauptsitz Salt Lake City: 504 H100-GPUs in 63 DGX-H100-Systemen, rund 2 Exaflops KI-Leistung, Platz 35 der TOP500 (Mai 2024).",
+          "src": "https://blogs.nvidia.com/blog/drug-discovery-recursion-supercomputer",
+          "yr": "2024"
+        }
+      ]
+    },
+    "autonomous-surgery-steps": {
+      "name": {
+        "en": "Autonomous surgery steps",
+        "de": "Autonome Chirurgie-Schritte"
+      },
+      "places": [
+        {
+          "n": "Johns Hopkins University, Baltimore",
+          "c": "USA",
+          "la": 39.329,
+          "lo": -76.62,
+          "en": "JHU's SRT-H robot performed the clipping-and-cutting phase of gallbladder removal autonomously, 8 of 8 ex vivo pig gallbladders (Science Robotics, 2025).",
+          "de": "Der Roboter SRT-H der JHU führte die Clip-und-Schnitt-Phase der Gallenblasenentfernung autonom aus, 8 von 8 Ex-vivo-Schweinegallenblasen (Science Robotics, 2025).",
+          "src": "https://pubmed.ncbi.nlm.nih.gov/40632876/",
+          "yr": "2025"
+        },
+        {
+          "n": "School of Stomatology, Fourth Military Medical University, Xi'an",
+          "c": "CHN",
+          "la": 34.272,
+          "lo": 108.988,
+          "en": "An autonomous dental implant robot placed 102 implants in 12 patients (full arch); mean platform deviation 0.53 mm, stable at 1 year.",
+          "de": "Ein autonomer Zahnimplantat-Roboter setzte 102 Implantate bei 12 Patienten (ganzer Kiefer); mittlere Abweichung 0,53 mm, stabil nach 1 Jahr.",
+          "src": "https://pubmed.ncbi.nlm.nih.gov/38318691/",
+          "yr": "2024"
+        },
+        {
+          "n": "West China Hospital of Stomatology, Chengdu",
+          "c": "CHN",
+          "la": 30.643,
+          "lo": 104.062,
+          "en": "An autonomous robotic implant system placed 71 implants in 43 patients (Dec 2022-Mar 2024) with lower deviation than dynamic navigation.",
+          "de": "Ein autonomes Implantat-Robotersystem setzte 71 Implantate bei 43 Patienten (Dez. 2022-März 2024), mit geringerer Abweichung als dynamische Navigation.",
+          "src": "https://pubmed.ncbi.nlm.nih.gov/39623953/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "materials-science": {
+      "name": {
+        "en": "Materials science",
+        "de": "Materialwissenschaft"
+      },
+      "places": [
+        {
+          "n": "Google DeepMind, London",
+          "c": "GBR",
+          "la": 51.533,
+          "lo": -0.126,
+          "en": "DeepMind's GNoME graph network predicted 2.2 million crystal structures, 380,000 of them stable; 736 were synthesised independently by outside labs.",
+          "de": "DeepMinds Graph-Netz GNoME sagte 2,2 Mio. Kristallstrukturen voraus, davon 380.000 stabil; 736 wurden unabhängig von externen Laboren synthetisiert.",
+          "src": "https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/",
+          "yr": "2023"
+        },
+        {
+          "n": "Berkeley Lab Materials Project and A-Lab",
+          "c": "USA",
+          "la": 37.876,
+          "lo": -122.247,
+          "en": "Berkeley Lab's Materials Project added GNoME's 380,000 stable compounds; its A-Lab made 41 new materials in 17 days (71% of targets).",
+          "de": "Das Materials Project am Berkeley Lab nahm 380.000 stabile GNoME-Verbindungen auf; das A-Lab stellte in 17 Tagen 41 neue Materialien her (71 % der Ziele).",
+          "src": "https://newscenter.lbl.gov/2023/11/29/google-deepmind-new-compounds-materials-project/",
+          "yr": "2023"
+        }
+      ]
+    },
+    "hospital-care-robots": {
+      "name": {
+        "en": "Hospital & care robots",
+        "de": "Klinik- & Pflegerobotik"
+      },
+      "places": [
+        {
+          "n": "Mary Washington Hospital, Fredericksburg",
+          "c": "USA",
+          "la": 38.309,
+          "lo": -77.5,
+          "en": "Mary Washington Healthcare uses Diligent's Moxi for ward deliveries; Diligent reports 595+ days of time returned to nurses.",
+          "de": "Mary Washington Healthcare setzt Diligents Moxi für Stationstransporte ein; laut Diligent wurden Pflegekräften über 595 Tage Arbeitszeit zurückgegeben.",
+          "src": "https://www.diligentrobots.com/",
+          "yr": "2026"
+        },
+        {
+          "n": "UTMB Angleton Danbury Campus, Angleton",
+          "c": "USA",
+          "la": 29.182,
+          "lo": -95.437,
+          "en": "UTMB Angleton Danbury runs Moxi to carry lab samples; Diligent reports more than 9,900 lab deliveries.",
+          "de": "UTMB Angleton Danbury nutzt Moxi für Labortransporte; Diligent meldet über 9.900 Laborlieferungen.",
+          "src": "https://www.diligentrobots.com/",
+          "yr": "2026"
+        },
+        {
+          "n": "Shannon Medical Center, San Angelo",
+          "c": "USA",
+          "la": 31.461,
+          "lo": -100.442,
+          "en": "Shannon Health uses Moxi for pharmacy runs; Diligent reports 6,350 hours saved in the pharmacy department.",
+          "de": "Shannon Health setzt Moxi für Apothekentransporte ein; Diligent meldet 6.350 eingesparte Stunden in der Apotheke.",
+          "src": "https://www.diligentrobots.com/",
+          "yr": "2026"
+        },
+        {
+          "n": "Edward Hospital (Endeavor Health), Naperville",
+          "c": "USA",
+          "la": 41.762,
+          "lo": -88.15,
+          "en": "Edward Hospital of Endeavor Health is listed by Diligent as a Moxi customer for hospital deliveries.",
+          "de": "Das Edward Hospital von Endeavor Health wird von Diligent als Moxi-Kunde für Krankenhaustransporte geführt.",
+          "src": "https://www.diligentrobots.com/",
+          "yr": "2026"
+        },
+        {
+          "n": "UCSF Health, San Francisco",
+          "c": "USA",
+          "la": 37.767,
+          "lo": -122.391,
+          "en": "UCSF Health is listed by Aethon as a user of its TUG autonomous delivery robots for medication, lab and supply transport.",
+          "de": "UCSF Health wird von Aethon als Nutzer seiner autonomen TUG-Lieferroboter für Medikamente, Laborproben und Material geführt.",
+          "src": "https://aethon.com/",
+          "yr": "2026"
+        },
+        {
+          "n": "Royal Melbourne Hospital, Melbourne",
+          "c": "AUS",
+          "la": -37.799,
+          "lo": 144.956,
+          "en": "The Royal Melbourne Hospital is listed by Aethon as a customer of its TUG hospital delivery robots.",
+          "de": "Das Royal Melbourne Hospital wird von Aethon als Kunde seiner TUG-Lieferroboter für Krankenhäuser geführt.",
+          "src": "https://aethon.com/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "data-center-cooling": {
+      "name": {
+        "en": "Data-center cooling",
+        "de": "Rechenzentrum-Kühlung"
+      },
+      "places": [
+        {
+          "n": "Huawei Cloud Data Centre Langfang",
+          "c": "CHN",
+          "la": 39.53,
+          "lo": 116.7,
+          "en": "Huawei iCooling (deep-learning cooling control) runs at Huawei's Langfang cloud data centre; PUE reported 8% lower than before.",
+          "de": "Huawei iCooling (KI-gestützte Kühlungssteuerung mit Deep Learning) läuft im Cloud-Rechenzentrum Langfang; PUE laut Huawei um 8 % gesenkt.",
+          "src": "https://www.intelligentcio.com/me/2020/10/23/how-artificial-intelligence-helps-huawei-build-green-data-centres/",
+          "yr": "2020"
+        },
+        {
+          "n": "China Mobile Data Centre, Ningxia",
+          "c": "CHN",
+          "la": 37.514,
+          "lo": 105.19,
+          "en": "Huawei iCooling@AI optimises cooling at a China Mobile data centre in Ningxia; phase-1 test cut total energy use 3.2%, over 400,000 kWh a year.",
+          "de": "Huawei iCooling@AI optimiert die Kühlung eines China-Mobile-Rechenzentrums in Ningxia; Phase-1-Test: 3,2 % weniger Gesamtenergie, über 400.000 kWh pro Jahr.",
+          "src": "https://e.huawei.com/en/news/ebg/2020/watt-bit-heat-synergy",
+          "yr": "2020"
+        }
+      ]
+    },
+    "grid-energy-trading": {
+      "name": {
+        "en": "Grid energy trading",
+        "de": "Energienetz-Trading"
+      },
+      "places": [
+        {
+          "n": "Hornsdale Power Reserve",
+          "c": "AUS",
+          "la": -33.086,
+          "lo": 138.519,
+          "en": "Tesla Autobidder trades Neoen's 150 MW Hornsdale battery in the NEM energy and FCAS markets; Tesla says it has operated there successfully.",
+          "de": "Tesla Autobidder vermarktet Neoens 150-MW-Batterie Hornsdale im australischen Energie- und FCAS-Markt; laut Tesla erfolgreich im Betrieb.",
+          "src": "https://electrek.co/2020/05/03/tesla-autobidder-new-product-electric-utility/",
+          "yr": "2020"
+        },
+        {
+          "n": "Bouldercombe Battery (Genex)",
+          "c": "AUS",
+          "la": -23.541,
+          "lo": 150.476,
+          "en": "Tesla operates Genex's 50 MW Bouldercombe battery near Rockhampton with Autobidder, bidding into arbitrage and FCAS markets.",
+          "de": "Tesla betreibt die 50-MW-Batterie Bouldercombe von Genex bei Rockhampton mit Autobidder für Arbitrage und FCAS-Märkte.",
+          "src": "https://www.indailyqld.com.au/news/archive/2023/11/10/genex-flags-revenue-boost-from-tesla-as-fire-damaged-battery-comes-on-line",
+          "yr": "2023"
+        },
+        {
+          "n": "Pillswood BESS (Harmony Energy)",
+          "c": "GBR",
+          "la": 53.795,
+          "lo": -0.435,
+          "en": "Harmony Energy's 98 MW / 196 MWh Pillswood battery near Hull is operated via Tesla Autobidder for GB balancing services; energised Nov 2022.",
+          "de": "Harmony Energys Batterie Pillswood bei Hull (98 MW / 196 MWh) wird über Tesla Autobidder für britische Regelleistung vermarktet; seit Nov. 2022.",
+          "src": "https://www.energyglobal.com/energy-storage/22112022/harmony-energy-income-trust-brings-europes-largest-battery-energy-storage-system-online/amp/",
+          "yr": "2022"
+        },
+        {
+          "n": "ACT Battery, Queanbeyan substation (GPG)",
+          "c": "AUS",
+          "la": -35.349,
+          "lo": 149.207,
+          "en": "Fluence Mosaic AI bidding software optimises Global Power Generation's 10 MW / 20 MWh ACT Battery in the NEM.",
+          "de": "Die KI-Bietsoftware Fluence Mosaic optimiert die 10-MW/20-MWh-Batterie ACT Battery von Global Power Generation im australischen Strommarkt.",
+          "src": "https://www.globenewswire.com/news-release/2023/02/03/2601034/0/en/fluence-mosaic-optimises-global-power-generation-gpg-s-act-battery.html",
+          "yr": "2023"
+        },
+        {
+          "n": "Waratah Super Battery (Akaysha)",
+          "c": "AUS",
+          "la": -33.207,
+          "lo": 151.548,
+          "en": "Akaysha chose Fluence Mosaic, which uses machine learning to forecast prices and bid, for its 850 MW / 1,680 MWh Waratah Super Battery in NSW.",
+          "de": "Akaysha setzt Fluence Mosaic (Preisprognose und Gebote per Machine Learning) für die 850-MW/1.680-MWh-Batterie Waratah Super Battery in NSW ein.",
+          "src": "https://www.pv-magazine-australia.com/2024/11/20/fluence-to-optimise-akaysha-energys-battery-assets/",
+          "yr": "2024"
+        },
+        {
+          "n": "Orana BESS, Wellington (Akaysha)",
+          "c": "AUS",
+          "la": -32.54,
+          "lo": 148.96,
+          "en": "Fluence Mosaic was selected to bid Akaysha's 415 MW / 1,660 MWh Orana battery near Wellington, NSW, into the NEM.",
+          "de": "Fluence Mosaic wurde ausgewählt, Akayshas Batterie Orana bei Wellington, NSW (415 MW / 1.660 MWh), im australischen Strommarkt zu vermarkten.",
+          "src": "https://www.pv-magazine-australia.com/2024/11/20/fluence-to-optimise-akaysha-energys-battery-assets/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "grid-operation-load-forecasting": {
+      "name": {
+        "en": "Grid operation & load forecasting",
+        "de": "Netzbetrieb & Lastprognose"
+      },
+      "places": [
+        {
+          "n": "PJM Interconnection, Audubon (Valley Forge)",
+          "c": "USA",
+          "la": 40.117,
+          "lo": -75.432,
+          "en": "PJM and Google/Tapestry run a multi-year AI collaboration (from April 2025) to speed review of interconnection requests; about 67 GW sat in the transition queue.",
+          "de": "PJM und Google/Tapestry arbeiten seit April 2025 mehrjährig an KI-Werkzeugen zur schnelleren Prüfung von Netzanschlussanträgen; rund 67 GW lagen in der Übergangsphase.",
+          "src": "https://insidelines.pjm.com/pjm-google-tapestry-join-forces-to-apply-ai-to-enhance-regional-planning-generation-interconnection/",
+          "yr": "2025"
+        },
+        {
+          "n": "NESO National Electricity Control Room, Wokingham",
+          "c": "GBR",
+          "la": 51.411,
+          "lo": -0.834,
+          "en": "Open Climate Fix's Quartz Solar ML forecast runs in NESO's control room, day-ahead to real time; estimated £30m a year in avoided imbalance costs.",
+          "de": "Die ML-Solarprognose Quartz Solar von Open Climate Fix läuft im NESO-Kontrollraum vom Day-Ahead bis zur Echtzeit; geschätzt 30 Mio. £ weniger Ausgleichskosten pro Jahr.",
+          "src": "https://www.openclimatefix.org/insights/neso-adopts-ai-solar-forecasting-control-room",
+          "yr": "2025"
+        },
+        {
+          "n": "ERCOT control centre, Taylor, Texas",
+          "c": "USA",
+          "la": 30.571,
+          "lo": -97.409,
+          "en": "ERCOT lists ML forecasting of large flexible loads (mainly crypto mining) and battery state of charge as in operation in its grid operations.",
+          "de": "ERCOT nennt ML-Prognosen für große flexible Lasten (vor allem Krypto-Mining) und den Ladezustand von Batterien als im Betrieb der Netzführung.",
+          "src": "https://www.doc.ic.ac.uk/~fleofant/aaai25-xai-eci/material/ercot.pdf",
+          "yr": "2025"
+        },
+        {
+          "n": "Grid-India National Load Despatch Centre, New Delhi",
+          "c": "IND",
+          "la": 28.54,
+          "lo": 77.188,
+          "en": "Grid-India uses neural-network and XGBoost models for short-term load forecasting at the National Load Despatch Centre, with 2–5% MAPE.",
+          "de": "Grid-India setzt am National Load Despatch Centre neuronale Netze und XGBoost-Modelle für die Kurzfrist-Lastprognose ein; MAPE 2–5 %.",
+          "src": "https://powerline.net.in/2025/09/01/ai-in-grid-operations-enhancing-flexibility-security-and-reliability/",
+          "yr": "2025"
+        },
+        {
+          "n": "Hydro-Québec, Montréal",
+          "c": "CAN",
+          "la": 45.509,
+          "lo": -73.568,
+          "en": "Hydro-Québec runs deep-learning short-term load forecasts (TCN, Transformer) in production; it reports 95% less human intervention in forecasting.",
+          "de": "Hydro-Québec betreibt Deep-Learning-Kurzfristlastprognosen (TCN, Transformer) produktiv; laut Unternehmen 95 % weniger manuelle Eingriffe.",
+          "src": "https://lfenergy.org/?p=10072",
+          "yr": "2024"
+        },
+        {
+          "n": "50Hertz Transmission, Berlin",
+          "c": "DEU",
+          "la": 52.531,
+          "lo": 13.369,
+          "en": "German TSO 50Hertz has used a neural-network day-ahead forecast of grid losses in system operation since December 2019; losses cost about €70m a year.",
+          "de": "Der Übertragungsnetzbetreiber 50Hertz nutzt seit Dezember 2019 ein neuronales Netz zur Day-Ahead-Prognose der Netzverluste; diese kosten rund 70 Mio. € pro Jahr.",
+          "src": "https://innovation.eliagroup.eu/projects/using-artificial-intelligence-to-reduce-the-cost-of-transmission-losses",
+          "yr": "2023"
+        }
+      ]
+    },
+    "solar-panel-cleaning-robots": {
+      "name": {
+        "en": "Solar panel cleaning robots",
+        "de": "Reinigungsroboter für Solarparks"
+      },
+      "places": [
+        {
+          "site": "Bhadla"
+        },
+        {
+          "site": "Al Dhafra"
+        },
+        {
+          "site": "Mohammed bin Rashid"
+        },
+        {
+          "n": "Noor Abu Dhabi, Sweihan",
+          "c": "ARE",
+          "la": 24.536,
+          "lo": 55.432,
+          "en": "1,430 dry-cleaning robots travel 800 km a day to clean over 3.3 million panels at the 1.2 GW Noor Abu Dhabi plant without water.",
+          "de": "1.430 Trockenreinigungsroboter legen täglich 800 km zurück und reinigen über 3,3 Mio. Module des 1,2-GW-Kraftwerks Noor Abu Dhabi ohne Wasser.",
+          "src": "https://noorabudhabi.ae/plants/robotic-cleaning-system/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "offshore-asset-integrity": {
+      "name": {
+        "en": "Offshore asset integrity",
+        "de": "Offshore-Anlagenintegrität"
+      },
+      "places": [
+        {
+          "n": "Johan Sverdrup field centre",
+          "c": "NOR",
+          "la": 58.849,
+          "lo": 2.627,
+          "en": "Johan Sverdrup is run with machine-learning tools, a digital twin and an onshore operations centre aimed at less unscheduled downtime; digital tools added over NOK 2 billion in earnings.",
+          "de": "Johan Sverdrup wird mit Machine-Learning-Werkzeugen, digitalem Zwilling und Onshore-Betriebszentrale gegen ungeplante Stillstände betrieben; digitale Tools brachten über 2 Mrd. NOK.",
+          "src": "https://jpt.spe.org/digital-technologies-boost-earnings-johan-sverdrup",
+          "yr": "2020"
+        },
+        {
+          "n": "Ivar Aasen platform (Aker BP)",
+          "c": "NOR",
+          "la": 58.926,
+          "lo": 2.198,
+          "en": "Aker BP, Framo and Cognite use sensor data and algorithms to predict maintenance on seawater lift pumps; piloted on Ivar Aasen, then a 6-year contract covering 5 field centres.",
+          "de": "Aker BP, Framo und Cognite sagen mit Sensordaten und Algorithmen die Wartung von Meerwasser-Förderpumpen voraus; Pilot auf Ivar Aasen, dann 6-Jahres-Vertrag für 5 Feldzentren.",
+          "src": "https://www.cognite.com/en/press-release/aker-bp-and-framo-sign-first-long-term-smart-contract-for-offshore-maintenance",
+          "yr": "2020"
+        }
+      ]
+    },
+    "seismic-interpretation-subsurface-ai": {
+      "name": {
+        "en": "Seismic interpretation (subsurface AI)",
+        "de": "Seismische Interpretation (Untergrund-KI)"
+      },
+      "places": [
+        {
+          "n": "Johan Sverdrup field (phase 3 well planning)",
+          "c": "NOR",
+          "la": 58.849,
+          "lo": 2.627,
+          "en": "Equinor's AI-based well and field planning found a phase 3 solution at Johan Sverdrup that saved USD 12 million; Equinor interpreted 2 million km² of seismic data with AI in 2025.",
+          "de": "Equinors KI-gestützte Bohr- und Feldplanung fand für Phase 3 von Johan Sverdrup eine Lösung, die 12 Mio. USD sparte; 2025 wurden 2 Mio. km² Seismik per KI interpretiert.",
+          "src": "https://www.equinor.com/news/20260107-artificial-intelligence-saved-equinor-usd-130-million",
+          "yr": "2026"
+        },
+        {
+          "n": "Aker BP head office, Lysaker",
+          "c": "NOR",
+          "la": 59.902,
+          "lo": 10.627,
+          "en": "Aker BP built an in-house 'exploration robot' that uses machine learning and generative AI to flag possible exploration targets in seismic data from the Norwegian shelf.",
+          "de": "Aker BP hat einen eigenen „Explorationsroboter“ entwickelt, der mit Machine Learning und generativer KI mögliche Explorationsziele in Seismikdaten markiert.",
+          "src": "https://akerbp.com/en/can-artificial-intelligence-help-us-find-oil/",
+          "yr": "2024"
+        },
+        {
+          "n": "Santos and Campos basins pre-salt (Petrobras)",
+          "c": "BRA",
+          "la": -25.3,
+          "lo": -43.0,
+          "en": "Petrobras exploration uses Geoteric's AI fault interpretation in the Santos and Campos pre-salt to map salt movement, traps and compartments under a multi-year contract.",
+          "de": "Die Petrobras-Exploration nutzt Geoterics KI-Störungsinterpretation im Santos- und Campos-Vorsalz für Salzbewegung, Fallen und Kompartimente; Vertrag über mehrere Jahre.",
+          "src": "https://www.energy-pedia.com/news/brazil/geoteric-announced-as-key-player-in-petrobras%E2%80%99-ambitious-business-strategies-196649",
+          "yr": "2024"
+        }
+      ]
+    },
+    "ai-ran-network-operation": {
+      "name": {
+        "en": "AI-RAN & network operation",
+        "de": "AI-RAN & Netzbetrieb"
+      },
+      "places": [
+        {
+          "n": "T-Mobile AI-RAN Innovation Center, Bellevue",
+          "c": "USA",
+          "la": 47.61,
+          "lo": -122.201,
+          "en": "Pilot: T-Mobile, NVIDIA, Ericsson and Nokia test AI-RAN here; Nokia ran AirScale Massive MIMO (3.7 GHz) with AI and RAN workloads on one NVIDIA GH200 server.",
+          "de": "Pilot: T-Mobile, NVIDIA, Ericsson und Nokia testen hier AI-RAN; Nokia betrieb AirScale-Massive-MIMO (3,7 GHz) mit KI- und RAN-Last auf einem NVIDIA-GH200-Server.",
+          "src": "https://www.telecomtv.com/content/5g/t-mobile-us-teams-with-nvidia-ericsson-and-nokia-on-ai-ran-51317/",
+          "yr": "2024"
+        },
+        {
+          "n": "SoftBank AI-RAN outdoor trial, Fujisawa",
+          "c": "JPN",
+          "la": 35.339,
+          "lo": 139.49,
+          "en": "Pilot: SoftBank ran 5G vRAN on NVIDIA GH200 with NVIDIA Aerial L1 software in an outdoor proof-of-concept in Fujisawa; basis of its AITRAS product.",
+          "de": "Pilot: SoftBank betrieb in Fujisawa 5G-vRAN auf NVIDIA GH200 mit NVIDIA-Aerial-L1-Software im Außen-Feldversuch; Grundlage des Produkts AITRAS.",
+          "src": "https://www.softbank.jp/en/corp/technology/research/news/052/",
+          "yr": "2024"
+        },
+        {
+          "n": "Indosat AI-RAN centre, Surabaya",
+          "c": "IDN",
+          "la": -7.257,
+          "lo": 112.752,
+          "en": "Pilot: Indosat, Nokia and NVIDIA run an AI-RAN research centre on NVIDIA ARC-1, linked to Indosat's AI factory; first Nokia-NVIDIA AI-RAN site in Asia.",
+          "de": "Pilot: Indosat, Nokia und NVIDIA betreiben ein AI-RAN-Forschungszentrum auf NVIDIA ARC-1, angebunden an Indosats KI-Fabrik; erster Nokia-NVIDIA-AI-RAN-Standort in Asien.",
+          "src": "https://www.telecomreviewasia.com/news/industry-news/26935-indosat-nokia-and-nvidia-launch-ai-ran-research-center-in-surabaya-indonesia/",
+          "yr": "2025"
+        },
+        {
+          "n": "City of Las Vegas private 5G AI-RAN (Vapor IO)",
+          "c": "USA",
+          "la": 36.17,
+          "lo": -115.14,
+          "en": "Vapor IO runs a private 5G AI-RAN on NVIDIA AI Aerial and Supermicro servers for the City of Las Vegas, the first live private 5G customer of NVIDIA AI Aerial.",
+          "de": "Vapor IO betreibt für die Stadt Las Vegas ein privates 5G-AI-RAN auf NVIDIA AI Aerial und Supermicro-Servern, erster Live-Kunde von NVIDIA AI Aerial für privates 5G.",
+          "src": "https://www.silicon.co.uk/press-release/vapor-io-brings-nvidia-ai-aerial-to-the-city-of-las-vegas",
+          "yr": "2024"
+        }
+      ]
+    },
+    "wildfire-detection-camera-networks": {
+      "name": {
+        "en": "Wildfire detection camera networks",
+        "de": "Kameranetze zur Waldbranderkennung"
+      },
+      "places": [
+        {
+          "n": "ALERTCalifornia network (UC San Diego / CAL FIRE)",
+          "c": "USA",
+          "la": 32.881,
+          "lo": -117.238,
+          "en": "UC San Diego runs 1,211 AI cameras across California for CAL FIRE dispatch; in 2024 they detected 1,668 fires, 38% before any 911 call.",
+          "de": "Die UC San Diego betreibt 1.211 KI-Kameras in ganz Kalifornien für die CAL-FIRE-Leitstellen; 2024 erkannten sie 1.668 Brände, 38 % vor jedem Notruf.",
+          "src": "https://www.firerescue1.com/artificial-intelligence/over-1-000-ai-cameras-help-spot-calif-wildfires-before-the-first-911-call",
+          "yr": "2025"
+        },
+        {
+          "n": "Xcel Energy Colorado service area",
+          "c": "USA",
+          "la": 39.739,
+          "lo": -104.99,
+          "en": "Xcel Energy operates more than 130 Pano AI smoke-detection cameras across Colorado that alert fire departments such as Grand Junction.",
+          "de": "Xcel Energy betreibt in Colorado über 130 Pano-AI-Kameras zur Raucherkennung, die Feuerwehren wie die in Grand Junction alarmieren.",
+          "src": "https://www.kkco11news.com/2026/05/05/xcel-energy-deploys-ai-cameras-detect-wildfires-early-colorado/",
+          "yr": "2026"
+        },
+        {
+          "n": "APS service area, northern and central Arizona",
+          "c": "USA",
+          "la": 35.198,
+          "lo": -111.651,
+          "en": "APS runs Pano AI smoke-detection cameras around Flagstaff, Payson, Prescott, Sedona, north Phoenix and SE Arizona; more than 30 planned by summer 2025.",
+          "de": "APS betreibt Pano-AI-Rauchkameras um Flagstaff, Payson, Prescott, Sedona, Nord-Phoenix und Südost-Arizona; über 30 bis Sommer 2025 geplant.",
+          "src": "https://www.aps.com/en/About/Our-Company/Newsroom/Articles/Extra_Eyes_APS_Firefighters_Team_Up_with_New_AI_Smoke-Detection_Cameras",
+          "yr": "2025"
+        },
+        {
+          "n": "Xcel Energy Texas service area (Panhandle)",
+          "c": "USA",
+          "la": 35.222,
+          "lo": -101.831,
+          "en": "Xcel Energy installed more than 50 Pano AI camera stations at the highest-fire-risk locations in its Texas territory, with New Mexico to follow.",
+          "de": "Xcel Energy installierte über 50 Pano-AI-Kamerastationen an den brandgefährdetsten Orten seines Gebiets in Texas; New Mexico soll folgen.",
+          "src": "https://www.renewableenergyworld.com/power-grid/outage-management/another-texas-utility-is-using-ai-cameras-to-help-detect-wildfires",
+          "yr": "2025"
+        },
+        {
+          "n": "Xcel Energy northwestern Wisconsin service area",
+          "c": "USA",
+          "la": 46.013,
+          "lo": -91.485,
+          "en": "Xcel Energy runs 8 Pano AI cameras in Wisconsin (Hayward, Spooner, Mercer, Manitowish Waters and others); each covers about 70 miles.",
+          "de": "Xcel Energy betreibt 8 Pano-AI-Kameras in Wisconsin (Hayward, Spooner, Mercer, Manitowish Waters u. a.); jede überwacht etwa 70 Meilen.",
+          "src": "https://wpr.org/news/ai-powered-cameras-wildfires-wisconsin",
+          "yr": "2026"
+        },
+        {
+          "n": "Xcel Energy Minnesota service area (Mankato)",
+          "c": "USA",
+          "la": 44.164,
+          "lo": -93.999,
+          "en": "Xcel Energy installed its first Minnesota Pano AI wildfire cameras in Mankato and Clear Lake, the first 2 of 38 planned systems.",
+          "de": "Xcel Energy installierte die ersten Pano-AI-Waldbrandkameras in Minnesota in Mankato und Clear Lake, die ersten 2 von 38 geplanten Systemen.",
+          "src": "https://radiomankato.com/xcel-energy-brings-ai-driven-wildfire-detection-to-minnesota/",
+          "yr": "2025"
+        },
+        {
+          "n": "NSW state forest fire towers (Tamworth to Victorian border)",
+          "c": "AUS",
+          "la": -33.284,
+          "lo": 149.1,
+          "en": "NSW funds Pano AI cameras on 22 forest fire towers between Tamworth and the Victorian border, watching 1.2 million hectares (A$1.4m); service area centre.",
+          "de": "NSW finanziert Pano-AI-Kameras auf 22 Feuertürmen zwischen Tamworth und der Grenze zu Victoria, die 1,2 Mio. Hektar überwachen (1,4 Mio. A$); Mittelpunkt des Gebiets.",
+          "src": "https://www.canberratimes.com.au/story/9070795/why-ai-powered-cameras-are-watching-australian-forests/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "biometric-airport-check-in-border": {
+      "name": {
+        "en": "Biometric airport check-in & border",
+        "de": "Biometrischer Check-in & Grenze am Flughafen"
+      },
+      "places": [
+        {
+          "n": "Singapore Changi Airport",
+          "c": "SGP",
+          "la": 1.364,
+          "lo": 103.991,
+          "en": "ICA runs passport-free clearance by face and iris at all four terminals since Sept 2024; average clearance fell from 25 s to 10 s per traveller.",
+          "de": "Die ICA betreibt seit Sept. 2024 passfreie Grenzkontrolle per Gesicht und Iris in allen vier Terminals; im Schnitt 10 statt 25 s pro Reisendem.",
+          "src": "https://www.ica.gov.sg/news-and-publications/newsroom/media-release/passport-less-clearance-fully-rolled-out-at-changi-airport",
+          "yr": "2024"
+        },
+        {
+          "n": "Hamad International Airport, Doha",
+          "c": "QAT",
+          "la": 25.273,
+          "lo": 51.608,
+          "en": "Fast Pass by HIA, Qatar Airways and SITA uses face matching for check-in, bag drop, security and boarding across 700+ touchpoints (opt-in).",
+          "de": "Fast Pass von HIA, Qatar Airways und SITA nutzt Gesichtsabgleich für Check-in, Gepäckabgabe, Sicherheitskontrolle und Boarding an über 700 Punkten (freiwillig).",
+          "src": "https://www.sita.aero/about-us/pressroom/news-releases/hamad-international-airport-rolls-out-biometric-travel-across-more-than-700-touchpoints-one-of-the-largest-rollouts-of-its-kind-globally/",
+          "yr": "2026"
+        },
+        {
+          "n": "Hartsfield-Jackson Atlanta International Airport",
+          "c": "USA",
+          "la": 33.641,
+          "lo": -84.428,
+          "en": "Delta and TSA run PreCheck Touchless ID face matching at bag drop and security since 2021; Delta reports 30 s per bag-drop transaction vs about 2 min.",
+          "de": "Delta und TSA nutzen seit 2021 Touchless ID per Gesichtsabgleich an Gepäckabgabe und Sicherheitskontrolle; laut Delta 30 s statt rund 2 min pro Gepäckabgabe.",
+          "src": "https://news.delta.com/delta-expands-tsa-precheck-touchless-id-program-lax-lga-and-jfk-touchless-airport-experience",
+          "yr": "2023"
+        },
+        {
+          "n": "Dubai International Airport",
+          "c": "ARE",
+          "la": 25.253,
+          "lo": 55.365,
+          "en": "GDRFA Dubai runs face- and iris-based passport control at 122 smart gates across terminals; registered travellers clear in about five seconds.",
+          "de": "Die GDRFA Dubai betreibt Passkontrolle per Gesicht und Iris an 122 Smart Gates in den Terminals; registrierte Reisende sind in rund fünf Sekunden durch.",
+          "src": "https://gdrfad.gov.ae/en/node/2049",
+          "yr": "2021"
+        },
+        {
+          "n": "San Ysidro Port of Entry, San Diego",
+          "c": "USA",
+          "la": 32.542,
+          "lo": -117.029,
+          "en": "CBP uses facial comparison for pedestrians at the busiest US land crossing (about 40M crossings in FY2019); CBP states >97% accuracy.",
+          "de": "CBP nutzt Gesichtsabgleich für Fußgänger am verkehrsreichsten US-Landübergang (rund 40 Mio. Grenzübertritte im FJ 2019); laut CBP über 97 % Genauigkeit.",
+          "src": "https://cbp.gov/newsroom/national-media-release/cbp-announces-new-facial-biometric-comparison-technology-san-ysidro",
+          "yr": "2021"
+        }
+      ]
+    },
+    "adaptive-traffic-signals": {
+      "name": {
+        "en": "Adaptive traffic signals",
+        "de": "Adaptive Ampelsteuerung"
+      },
+      "places": [
+        {
+          "n": "Pittsburgh (Surtrac, from East Liberty)",
+          "c": "USA",
+          "la": 40.441,
+          "lo": -79.996,
+          "en": "CMU's Surtrac runs at 50 signalised intersections, about 15% of the city's total, growing from a 9-intersection 2012 pilot; travel times cut about 25%.",
+          "de": "Surtrac der CMU läuft an 50 Ampelkreuzungen, rund 15 % der Stadt, hervorgegangen aus einem Pilot mit 9 Kreuzungen 2012; Fahrzeiten etwa 25 % kürzer.",
+          "src": "https://www.cmu.edu/news/stories/archives/2019/october/traffic-moves-at-speed-of-technology.html",
+          "yr": "2019"
+        },
+        {
+          "n": "Boston",
+          "c": "USA",
+          "la": 42.36,
+          "lo": -71.058,
+          "en": "Boston Transportation Department retimed 114 intersections in 20 neighbourhoods with Google Green Light recommendations; up to 33% fewer stops.",
+          "de": "Bostons Verkehrsamt hat 114 Kreuzungen in 20 Stadtteilen nach Empfehlungen von Google Green Light neu getaktet; bis zu 33 % weniger Halte.",
+          "src": "https://www.boston.gov/node/16381291",
+          "yr": "2025"
+        },
+        {
+          "n": "Seattle",
+          "c": "USA",
+          "la": 47.606,
+          "lo": -122.332,
+          "en": "Seattle is one of the first cities where Google Green Light timing recommendations are live; Google reports up to 30% fewer stops across its cities.",
+          "de": "Seattle gehört zu den ersten Städten mit aktiven Ampel-Empfehlungen von Google Green Light; Google meldet bis zu 30 % weniger Halte.",
+          "src": "https://blog.google/outreach-initiatives/sustainability/google-ai-reduce-greenhouse-emissions-project-greenlight/",
+          "yr": "2023"
+        },
+        {
+          "n": "Hamburg",
+          "c": "DEU",
+          "la": 53.551,
+          "lo": 9.994,
+          "en": "Hamburg is among 12 cities where Google Green Light signal-timing recommendations were live in 2023, covering 70 intersections in total.",
+          "de": "Hamburg zählt zu 12 Städten, in denen Google Green Light 2023 Ampel-Empfehlungen umsetzte, insgesamt an 70 Kreuzungen.",
+          "src": "https://blog.google/outreach-initiatives/sustainability/google-ai-reduce-greenhouse-emissions-project-greenlight/",
+          "yr": "2023"
+        },
+        {
+          "n": "Greater Manchester",
+          "c": "GBR",
+          "la": 53.481,
+          "lo": -2.243,
+          "en": "Transport for Greater Manchester engineers retime signals using Google Green Light analyses based on Maps driving data.",
+          "de": "Ingenieure von Transport for Greater Manchester stellen Ampeln anhand von Google-Green-Light-Analysen auf Basis von Maps-Fahrdaten neu ein.",
+          "src": "https://blog.google/outreach-initiatives/sustainability/google-ai-reduce-greenhouse-emissions-project-greenlight/",
+          "yr": "2023"
+        },
+        {
+          "n": "Rio de Janeiro",
+          "c": "BRA",
+          "la": -22.907,
+          "lo": -43.173,
+          "en": "Rio de Janeiro is one of the live Google Green Light cities; Google cites up to 30% fewer stops and up to 10% lower emissions at treated intersections.",
+          "de": "Rio de Janeiro ist eine der aktiven Green-Light-Städte; Google nennt bis zu 30 % weniger Halte und bis zu 10 % weniger Emissionen an den Kreuzungen.",
+          "src": "https://blog.google/outreach-initiatives/sustainability/google-ai-reduce-greenhouse-emissions-project-greenlight/",
+          "yr": "2023"
+        }
+      ]
+    },
+    "rail-predictive-maintenance": {
+      "name": {
+        "en": "Rail predictive maintenance",
+        "de": "Vorausschauende Wartung im Bahnnetz"
+      },
+      "places": [
+        {
+          "n": "Deutsche Bahn network (DB InfraGO, Frankfurt)",
+          "c": "DEU",
+          "la": 50.11,
+          "lo": 8.682,
+          "en": "DB's DIANA platform reads switch-motor current on more than 27,400 switches network-wide; DB says switch faults can drop by up to 50%.",
+          "de": "DBs Plattform DIANA wertet die Stromaufnahme von Weichenantrieben an über 27.400 Weichen bundesweit aus; laut DB bis zu 50 % weniger Weichenstörungen.",
+          "src": "https://www.deutschebahn.com/de/smarteinfrastruktur-6898504",
+          "yr": "2020"
+        },
+        {
+          "n": "Siemens Mobility depot Dortmund-Eving",
+          "c": "DEU",
+          "la": 51.548,
+          "lo": 7.47,
+          "en": "Siemens maintains the Rhine-Ruhr Express fleet here using Railigent X, which analyses train sensor data to predict faults; €150M expansion to 2026.",
+          "de": "Siemens wartet hier die RRX-Flotte mit Railigent X, das Sensordaten der Züge zur Fehlerprognose auswertet; Ausbau für 150 Mio. € bis 2026.",
+          "src": "https://press.siemens.com/global/en/node/6925",
+          "yr": "2024"
+        },
+        {
+          "n": "Infrabel network, Brussels",
+          "c": "BEL",
+          "la": 50.836,
+          "lo": 4.335,
+          "en": "KONUX holds a 3-year Infrabel framework contract to monitor 6,600+ switches with sensors and AI; first installations completed by June 2025.",
+          "de": "KONUX hat einen 3-jährigen Rahmenvertrag mit Infrabel zur Überwachung von über 6.600 Weichen mit Sensoren und KI; erste Installationen bis Juni 2025.",
+          "src": "https://www.konux.com/konux-wins-infrabel-tender/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "autonomous-street-cleaning": {
+      "name": {
+        "en": "Autonomous street cleaning",
+        "de": "Autonome Straßenreinigung"
+      },
+      "places": [
+        {
+          "n": "Marina Coastal Drive & Esplanade, Singapore",
+          "c": "SGP",
+          "la": 1.271,
+          "lo": 103.862,
+          "en": "WeRide Robosweepers with CTM have run Singapore's first commercial autonomous street cleaning since Nov 2024; S6 sweeps nightly 9 pm to 3 am.",
+          "de": "WeRide-Robosweeper mit CTM betreiben seit Nov. 2024 Singapurs erste kommerzielle autonome Straßenreinigung; der S6 kehrt nachts von 21 bis 3 Uhr.",
+          "src": "https://www.sec.gov/Archives/edgar/data/1867729/000117184325004513/exh_991.htm",
+          "yr": "2025"
+        },
+        {
+          "n": "Guangzhou International Bio Island",
+          "c": "CHN",
+          "la": 23.077,
+          "lo": 113.366,
+          "en": "WeRide operates driverless sweepers commercially on the 1.9 km² island in Huangpu district since Sept 2022, cleaning from midnight to 7 pm.",
+          "de": "WeRide betreibt seit Sept. 2022 fahrerlose Kehrfahrzeuge kommerziell auf der 1,9 km² großen Insel im Bezirk Huangpu, Einsatz von Mitternacht bis 19 Uhr.",
+          "src": "https://investinchina.chinadaily.com.cn/s/202209/02/WS6311d431498ea274927a26b0/commercial-operation-of-driverless-sanitation-vehicles-launched-in-south-china.html",
+          "yr": "2022"
+        },
+        {
+          "n": "Duisburg",
+          "c": "DEU",
+          "la": 51.435,
+          "lo": 6.763,
+          "en": "Shanghai-based Autowise.ai lists Duisburg among 30+ cities where its autonomous sweepers are in commercial use (company-reported).",
+          "de": "Autowise.ai aus Shanghai nennt Duisburg unter 30+ Städten mit kommerziellem Einsatz seiner autonomen Kehrmaschinen (Firmenangabe).",
+          "src": "https://investinchina.chinadaily.com.cn/s/202404/09/WS66150506498ed2d7b7eab63c/chinese-high-tech-helps-sweep-world-off-its-feet.html",
+          "yr": "2024"
+        },
+        {
+          "n": "Jumeirah Beach bikeway, Dubai",
+          "c": "ARE",
+          "la": 25.204,
+          "lo": 55.24,
+          "en": "Autowise.ai autonomous sweepers clean the Jumeirah Beach bikeway; Dubai and Sharjah are listed among its commercial cities (company-reported).",
+          "de": "Autonome Kehrmaschinen von Autowise.ai reinigen den Radweg am Jumeirah Beach; Dubai und Sharjah zählen zu den kommerziellen Einsatzorten (Firmenangabe).",
+          "src": "https://investinchina.chinadaily.com.cn/s/202404/09/WS66150506498ed2d7b7eab63c/chinese-high-tech-helps-sweep-world-off-its-feet.html",
+          "yr": "2024"
+        },
+        {
+          "n": "Jätkäsaari, Helsinki",
+          "c": "FIN",
+          "la": 60.157,
+          "lo": 24.918,
+          "en": "Pilot: Trombia Free electric autonomous sweeper tested on Välimerenkatu and Baana path in April 2021 with an operator; uses 15% of usual energy.",
+          "de": "Pilot: Die elektrische autonome Kehrmaschine Trombia Free wurde im April 2021 mit Begleitperson getestet; sie braucht 15 % der üblichen Energie.",
+          "src": "https://forumvirium.fi/en/street-sweeper-robot-trombia/",
+          "yr": "2021"
+        }
+      ]
+    },
+    "river-ocean-plastic-cleanup": {
+      "name": {
+        "en": "River & ocean plastic cleanup",
+        "de": "Plastik aus Flüssen & Meeren"
+      },
+      "places": [
+        {
+          "n": "Klang River, Selangor",
+          "c": "MYS",
+          "la": 3.035,
+          "lo": 101.44,
+          "en": "The Ocean Cleanup's Interceptors 002 (2019) and 005 (2021) run on the Klang River with local partner Landasan Lumayan; operating in Malaysia since 2018.",
+          "de": "Die Interceptors 002 (2019) und 005 (2021) von The Ocean Cleanup arbeiten mit dem Partner Landasan Lumayan am Klang; in Malaysia aktiv seit 2018.",
+          "src": "https://theoceancleanup.com/press/press-releases/malaysia-and-the-ocean-cleanup-extend-cooperation/",
+          "yr": "2023"
+        },
+        {
+          "n": "Rio Las Vacas, Guatemala City",
+          "c": "GTM",
+          "la": 14.77,
+          "lo": -90.5,
+          "en": "Interceptor Barricade 006 on this Motagua tributary had removed 856,973 kg of trash by June 2023, with the municipality and environment ministry.",
+          "de": "Interceptor Barricade 006 an diesem Motagua-Zufluss hatte bis Juni 2023 856.973 kg Müll entfernt, betrieben mit Stadt und Umweltministerium.",
+          "src": "https://theoceancleanup.com/press/press-releases/interceptor-makes-promising-start-in-guatemala-ahead-of-first-seasonal-heavy-floods/",
+          "yr": "2023"
+        },
+        {
+          "n": "Rio Motagua mouth",
+          "c": "GTM",
+          "la": 15.727,
+          "lo": -88.23,
+          "en": "The Ocean Cleanup deployed its largest Interceptor, the Barricade XL, at the Motagua mouth in 2024 to keep trash out of the Gulf of Honduras.",
+          "de": "The Ocean Cleanup installierte 2024 seinen größten Interceptor, die Barricade XL, an der Motagua-Mündung, um Müll vom Golf von Honduras fernzuhalten.",
+          "src": "https://theoceancleanup.com/updates/2024-a-record-breaking-year-for-the-ocean-cleanup/",
+          "yr": "2024"
+        },
+        {
+          "n": "Kingston Harbour gullies",
+          "c": "JAM",
+          "la": 17.975,
+          "lo": -76.795,
+          "en": "Kingston is The Ocean Cleanup's first 'Interceptor city': a network in drainage gullies targets about 1,000 t of trash a year into the harbour.",
+          "de": "Kingston ist die erste 'Interceptor-Stadt' von The Ocean Cleanup: ein Netz in Abflussrinnen soll rund 1.000 t Müll pro Jahr vom Hafen fernhalten.",
+          "src": "https://theoceancleanup.com/updates/kingston-jamaica-the-first-interceptor-city/",
+          "yr": "2024"
+        },
+        {
+          "n": "Ballona Creek, Los Angeles County",
+          "c": "USA",
+          "la": 33.966,
+          "lo": -118.458,
+          "en": "LA County Public Works runs Interceptor 007 at the creek mouth; it caught over 250,000 lb of trash in the pilot and was approved for ongoing use in Oct 2024.",
+          "de": "LA County Public Works betreibt Interceptor 007 an der Mündung; im Pilot fing er über 250.000 lb Müll, im Okt. 2024 wurde der Dauerbetrieb beschlossen.",
+          "src": "https://ballonainterceptor.lacounty.gov/",
+          "yr": "2024"
+        },
+        {
+          "n": "Chao Phraya River, Bangkok",
+          "c": "THA",
+          "la": 13.75,
+          "lo": 100.495,
+          "en": "The Ocean Cleanup added an Interceptor on Bangkok's Chao Phraya River in 2024, one of three new river sites that year.",
+          "de": "The Ocean Cleanup setzte 2024 einen Interceptor auf dem Chao Phraya in Bangkok ein, einer von drei neuen Flussstandorten in jenem Jahr.",
+          "src": "https://theoceancleanup.com/updates/2024-a-record-breaking-year-for-the-ocean-cleanup/",
+          "yr": "2024"
+        },
+        {
+          "n": "Río Abajo, Panama City",
+          "c": "PAN",
+          "la": 9.02,
+          "lo": -79.49,
+          "en": "Interceptor 022 was deployed on the Río Abajo in 2025 with partner Marea Verde; The Ocean Cleanup removed over 25M kg in 2025 across all sites.",
+          "de": "Interceptor 022 wurde 2025 mit Partner Marea Verde am Río Abajo installiert; The Ocean Cleanup entfernte 2025 an allen Standorten über 25 Mio. kg.",
+          "src": "https://theoceancleanup.com/updates/2025-in-review-the-ocean-cleanup/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "road-damage-detection-repair": {
+      "name": {
+        "en": "Road damage detection & repair",
+        "de": "Straßenschäden erkennen & reparieren"
+      },
+      "places": [
+        {
+          "n": "Goslar",
+          "c": "DEU",
+          "la": 51.906,
+          "lo": 10.428,
+          "en": "After a 2023 test, Goslar uses vialytics smartphone images every 4 m and AI grading; about 300 km driven, some 80 km rated grade 5 (worst).",
+          "de": "Nach einem Test 2023 nutzt Goslar vialytics: Smartphone-Bilder alle 4 m, KI-Benotung; rund 300 km erfasst, etwa 80 km mit Note 5 (schlechteste).",
+          "src": "https://www.goslar.de/fileadmin/media-goslar/stadt/pressemeldungen_stadtgoslar/240313_ki_im_kampf_gegen_schlagloecher_1_.pdf",
+          "yr": "2024"
+        },
+        {
+          "n": "Tettnang",
+          "c": "DEU",
+          "la": 47.669,
+          "lo": 9.588,
+          "en": "Tettnang contracted vialytics to survey its whole road network once a year with a windscreen-mounted device; about €71,400 for three years.",
+          "de": "Tettnang beauftragte vialytics, das gesamte Straßennetz einmal jährlich per Gerät an der Windschutzscheibe zu erfassen; rund 71.400 € für drei Jahre.",
+          "src": "https://www.schwaebische.de/regional/bodensee/tettnang/tettnang-will-strassenschaeden-besser-in-den-griff-bekommen-3659990",
+          "yr": "2025"
+        },
+        {
+          "n": "Menden (Sauerland)",
+          "c": "DEU",
+          "la": 51.443,
+          "lo": 7.796,
+          "en": "Pilot: waste firm Lobbe mounted iPhones on three refuse trucks to capture road damage for vialytics on regular collection routes.",
+          "de": "Pilot: Entsorger Lobbe montierte iPhones an drei Müllfahrzeugen, die auf normalen Touren Straßenschäden für vialytics erfassen.",
+          "src": "https://www.eurotransport.de/logistik/it-und-telematik/mit-vialytics-gegen-schlagloecher-entsorger-lkw-erfasst-strassenzustand/",
+          "yr": "2023"
+        },
+        {
+          "n": "Potters Bar, Hertfordshire",
+          "c": "GBR",
+          "la": 51.694,
+          "lo": -0.178,
+          "en": "Pilot: Robotiz3d's ARRES Prevent prototype detected and sealed cracks on a public road in March 2024 with Hertfordshire County Council.",
+          "de": "Pilot: Der Prototyp ARRES Prevent von Robotiz3d erkannte und versiegelte im März 2024 Risse auf einer öffentlichen Straße mit dem Hertfordshire County Council.",
+          "src": "https://www.highwaysmagazine.co.uk/Pothole-repair-robot-passes-first-road-test/13790",
+          "yr": "2024"
         }
       ]
     }
@@ -534,7 +2524,8 @@
         "LITE",
         "ANET",
         "ALAB",
-        "CRDO"
+        "CRDO",
+        "TSM"
       ],
       "800-vdc-rack-power": [
         "NVDA",
@@ -569,7 +2560,8 @@
         "OUST",
         "AEVA",
         "ROBOSENSE",
-        "INVZ"
+        "INVZ",
+        "SONY"
       ],
       "robotaxis-autonomous-driving": [
         "GOOGL",
@@ -635,7 +2627,66 @@
       ],
       "ai-smart-glasses": [
         "META",
+        "QCOM",
+        "GOOGL"
+      ],
+      "materials-science": [
+        "GOOGL"
+      ],
+      "fusion-plasma-control": [
+        "GOOGL"
+      ],
+      "fusion-simulation-surrogates": [
+        "GOOGL"
+      ],
+      "disaster-early-warning": [
+        "GOOGL"
+      ],
+      "adaptive-traffic-signals": [
+        "GOOGL"
+      ],
+      "grid-operation-load-forecasting": [
+        "GOOGL"
+      ],
+      "machine-translation": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "delivery-medical-drones": [
+        "GOOGL"
+      ],
+      "agent-to-agent-protocol-a2a": [
+        "GOOGL"
+      ],
+      "agent-payments-ap2-acp": [
+        "GOOGL"
+      ],
+      "seismic-interpretation-subsurface-ai": [
+        "GOOGL"
+      ],
+      "identity-access-security": [
+        "MSFT"
+      ],
+      "ambient-clinical-documentation": [
+        "MSFT"
+      ],
+      "warehouse-robots": [
+        "AMZN"
+      ],
+      "ai-ran-network-operation": [
+        "NVDA"
+      ],
+      "be-my-eyes": [
+        "META"
+      ],
+      "5g-connectivity-for-robotics": [
         "QCOM"
+      ],
+      "self-driving-labs": [
+        "RXRX"
+      ],
+      "federated-learning-across-hospitals": [
+        "INTC"
       ]
     },
     "cards": {
@@ -754,6 +2805,82 @@
       "ai-smart-glasses": {
         "en": "AI smart glasses",
         "de": "KI-Brillen"
+      },
+      "materials-science": {
+        "en": "Materials science",
+        "de": "Materialwissenschaft"
+      },
+      "fusion-plasma-control": {
+        "en": "Fusion plasma control",
+        "de": "Plasmasteuerung in der Fusion"
+      },
+      "fusion-simulation-surrogates": {
+        "en": "Fusion simulation surrogates",
+        "de": "Simulations-Surrogate in der Fusion"
+      },
+      "disaster-early-warning": {
+        "en": "Disaster early warning",
+        "de": "Katastrophen-Frühwarnung"
+      },
+      "adaptive-traffic-signals": {
+        "en": "Adaptive traffic signals",
+        "de": "Adaptive Ampelsteuerung"
+      },
+      "grid-operation-load-forecasting": {
+        "en": "Grid operation & load forecasting",
+        "de": "Netzbetrieb & Lastprognose"
+      },
+      "machine-translation": {
+        "en": "Machine translation",
+        "de": "Maschinelle Übersetzung"
+      },
+      "delivery-medical-drones": {
+        "en": "Delivery & medical drones",
+        "de": "Liefer- & Medizin-Drohnen"
+      },
+      "agent-to-agent-protocol-a2a": {
+        "en": "Agent-to-agent protocol (A2A)",
+        "de": "Agenten-Protokoll zwischen Firmen (A2A)"
+      },
+      "agent-payments-ap2-acp": {
+        "en": "Agent payments (AP2, ACP)",
+        "de": "Bezahlen durch KI-Agenten (AP2, ACP)"
+      },
+      "seismic-interpretation-subsurface-ai": {
+        "en": "Seismic interpretation (subsurface AI)",
+        "de": "Seismische Interpretation (Untergrund-KI)"
+      },
+      "identity-access-security": {
+        "en": "Identity & access security",
+        "de": "Identity & Access Security"
+      },
+      "ambient-clinical-documentation": {
+        "en": "Ambient clinical documentation",
+        "de": "Ambient Clinical Documentation"
+      },
+      "warehouse-robots": {
+        "en": "Warehouse robots",
+        "de": "Lagerroboter"
+      },
+      "ai-ran-network-operation": {
+        "en": "AI-RAN & network operation",
+        "de": "AI-RAN & Netzbetrieb"
+      },
+      "be-my-eyes": {
+        "en": "Be My Eyes",
+        "de": "Be My Eyes"
+      },
+      "5g-connectivity-for-robotics": {
+        "en": "5G / connectivity for robotics",
+        "de": "5G / Konnektivität für Robotik"
+      },
+      "self-driving-labs": {
+        "en": "Self-driving labs",
+        "de": "Selbstfahrende Labore"
+      },
+      "federated-learning-across-hospitals": {
+        "en": "Federated learning across hospitals",
+        "de": "Föderiertes Lernen über Kliniken"
       }
     },
     "roles": {
@@ -816,5 +2943,307 @@
       ]
     },
     "_relations_about": "Roles beyond ownership. Evidence: Supply Atlas site notes (Fab 18 'main source of Nvidia silicon', AP6 'CoWoS bottleneck for Nvidia accelerators', Fairwater Mount Pleasant 'Blackwell GPUs', Humain 'GB300'); Colossus 2 and Stargate Abilene run Nvidia GB200 systems per wide press coverage."
+  },
+  "wiki": {
+    "_about": "Background entries in blackbeard_wikki. Paths are relative to 'base'; 'entries' holds the titles (de from the file, en translated). use_cases = card slug -> paths, companies = ticker -> paths, atlas.ai_use = shown with every AI-use note on the globe, atlas.layers = Atlas layer key -> paths.",
+    "base": "https://github.com/mendeltem/blackbeard_wikki/blob/main/knowledge/",
+    "entries": {
+      "memory_supply/SUMMARY.md": {
+        "de": "Speicherangebot: Waferfläche, Werke, HBM gegen DDR (Kurzstand)",
+        "en": "Memory supply: wafer area, fabs, HBM vs DDR (overview)"
+      },
+      "memory_earnings/SUMMARY.md": {
+        "de": "Gemeldete Zahlen der Speicherhersteller (Kurzstand)",
+        "en": "Memory makers' reported earnings (overview)"
+      },
+      "ai_demand_drivers/SUMMARY.md": {
+        "de": "Warum KI die Speichernachfrage treibt (Kurzstand)",
+        "en": "Why AI keeps driving memory demand (overview)"
+      },
+      "ai_buyers/SUMMARY.md": {
+        "de": "Wer die Rechenleistung kauft: Modellanbieter, Umsätze, Zusagen (Kurzstand)",
+        "en": "Who buys the compute: model labs, revenue, commitments (overview)"
+      },
+      "compute_bottlenecks/SUMMARY.md": {
+        "de": "Engpässe außerhalb des Speichers: Packaging, Rackstrom, Optik, Turbinen (Kurzstand)",
+        "en": "Bottlenecks beyond memory: packaging, rack power, optics, turbines (overview)"
+      },
+      "local_llm_operation/SUMMARY.md": {
+        "de": "Betrieb lokaler Sprachmodelle: was passt, wie man misst (Kurzstand)",
+        "en": "Running local language models: what fits, how to measure (overview)"
+      },
+      "manufacturing_costs/SUMMARY.md": {
+        "de": "Fertigungskosten: was billiger wird und was KI ändert (Kurzstand)",
+        "en": "Manufacturing costs: what gets cheaper and what AI changes (overview)"
+      },
+      "agent_tooling/SUMMARY.md": {
+        "de": "Werkzeuge bauen, auf die sich Agenten verlassen (Kurzstand)",
+        "en": "Building tools agents rely on (overview)"
+      },
+      "memory_supply/mechanisms/hbm-eats-wafer-area.md": {
+        "de": "HBM frisst Waferflaeche",
+        "en": "HBM eats wafer area"
+      },
+      "ai_demand_drivers/findings/hbm-gb-per-mw-three-generations.md": {
+        "de": "GB HBM je MW: seit sechs Jahren kein Zuwachs, mit Rubin ein Rückgang",
+        "en": "GB of HBM per MW across three GPU generations"
+      },
+      "ai_demand_drivers/findings/custom-asics-use-hbm.md": {
+        "de": "Hyperscaler-ASICs verbauen HBM",
+        "en": "Hyperscaler ASICs use HBM too"
+      },
+      "ai_demand_drivers/findings/rubin-shipments-start-q3-fy27.md": {
+        "de": "Rubin: Auslieferung ab August 2026, rund 20 Prozent des DC-Umsatzes im Q3 GJ2027",
+        "en": "Rubin shipments start August 2026"
+      },
+      "compute_bottlenecks/mechanisms/allocation-beats-datasheet.md": {
+        "de": "Zuteilung schlägt Datenblatt",
+        "en": "Allocation beats the datasheet"
+      },
+      "compute_bottlenecks/mechanisms/cowos-capacity-and-package-area.md": {
+        "de": "CoWoS: Kapazität gegen Fläche je Package",
+        "en": "CoWoS: capacity versus area per package"
+      },
+      "compute_bottlenecks/mechanisms/cpo-scale-out-before-scale-up.md": {
+        "de": "Optik im Package: erst zwischen Racks, dann im Rack",
+        "en": "Co-packaged optics: scale-out before scale-up"
+      },
+      "compute_bottlenecks/mechanisms/rack-current-forces-800vdc.md": {
+        "de": "Rackstrom erzwingt 800 V Gleichspannung",
+        "en": "Rack current forces 800 V DC"
+      },
+      "compute_bottlenecks/findings/gas-turbine-order-backlog.md": {
+        "de": "Gasturbinen: Auftragsbestand der drei Hersteller",
+        "en": "Gas turbines: order backlog of the three makers"
+      },
+      "compute_bottlenecks/mechanisms/transformer-lead-times.md": {
+        "de": "Transformatoren: Lieferzeit über zwei Jahre",
+        "en": "Transformers: lead times over two years"
+      },
+      "compute_bottlenecks/findings/lidar-robotics-unit-crossover.md": {
+        "de": "LiDAR: Robotik überholt Auto nach Stückzahl bei RoboSense",
+        "en": "LiDAR: robotics overtakes cars in units at RoboSense"
+      },
+      "memory_earnings/findings/sk-hynix-nand-solidigm-turnaround.md": {
+        "de": "SK Hynix NAND und Solidigm: zweite Säule aus der Verlustzone",
+        "en": "SK hynix NAND and Solidigm turnaround"
+      },
+      "memory_earnings/findings/sk-hynix-kioxia-stake.md": {
+        "de": "SK Hynix und Kioxia: Herkunft des Q2-Einmalertrags, verbleibende Wandelposition",
+        "en": "SK hynix and Kioxia: the stake"
+      },
+      "memory_earnings/findings/operating-margin-three-makers.md": {
+        "de": "Operative Marge der drei Hersteller: sechs Quartale gleichgerichtet",
+        "en": "Operating margin of the three memory makers"
+      },
+      "ai_demand_drivers/open_checks/capex-vs-operating-cash-flow-2026.md": {
+        "de": "Capex gegen operativen Cashflow je Hyperscaler, 2026",
+        "en": "Capex versus operating cash flow per hyperscaler, 2026 (open check)"
+      },
+      "ai_buyers/risks/circular-financing.md": {
+        "de": "Zirkulaere Finanzierung zwischen Kaeufer und Lieferant",
+        "en": "Circular financing between buyer and supplier"
+      },
+      "ai_application_layer/findings/supply-atlas-ai-use-level5.md": {
+        "de": "KI-Einsatz an den 128 wichtigsten Standorten des Supply Atlas",
+        "en": "AI use at the 128 most important Supply Atlas sites"
+      },
+      "ai_application_layer/rules/operator-evidence-is-not-site-evidence.md": {
+        "de": "Konzernbeleg ist kein Standortbeleg",
+        "en": "Operator evidence is not site evidence"
+      },
+      "ai_application_layer/open_checks/airport-biometric-checkin-use-case.md": {
+        "de": "Flughafen: biometrischer Check-in als Use Case erfassen",
+        "en": "Airport biometric check-in as a use case (open check)"
+      },
+      "manufacturing_costs/open_checks/physical-ai-material-handling.md": {
+        "de": "Physical AI: Teiletransport zwischen Maschinen",
+        "en": "Physical AI: moving parts between machines (open check)"
+      },
+      "manufacturing_costs/mechanisms/ai-cuts-thinking-not-physics.md": {
+        "de": "KI senkt Denkarbeit, nicht Physik",
+        "en": "AI cuts thinking work, not physics"
+      },
+      "risk_communication/findings/probability-of-precipitation-misread.md": {
+        "de": "Eine Wahrscheinlichkeit allein wird als Anteil gelesen",
+        "en": "A rain probability on its own is misread"
+      },
+      "local_llm_operation/mechanisms/moe-expert-offloading.md": {
+        "de": "Ein MoE-Modell laeuft auf einer GPU, auf die es nicht passt",
+        "en": "An MoE model runs on a GPU it does not fit"
+      }
+    },
+    "use_cases": {
+      "hbm-memory-the-supercycle": [
+        "memory_supply/SUMMARY.md",
+        "memory_supply/mechanisms/hbm-eats-wafer-area.md",
+        "ai_demand_drivers/findings/hbm-gb-per-mw-three-generations.md"
+      ],
+      "nand-flash-enterprise-ssd": [
+        "memory_earnings/findings/sk-hynix-nand-solidigm-turnaround.md"
+      ],
+      "ai-accelerators-custom-silicon": [
+        "ai_demand_drivers/findings/custom-asics-use-hbm.md",
+        "ai_demand_drivers/findings/rubin-shipments-start-q3-fy27.md",
+        "compute_bottlenecks/mechanisms/allocation-beats-datasheet.md"
+      ],
+      "cowos-advanced-packaging": [
+        "compute_bottlenecks/mechanisms/cowos-capacity-and-package-area.md"
+      ],
+      "co-packaged-optics-cpo": [
+        "compute_bottlenecks/mechanisms/cpo-scale-out-before-scale-up.md"
+      ],
+      "800-vdc-rack-power": [
+        "compute_bottlenecks/mechanisms/rack-current-forces-800vdc.md"
+      ],
+      "data-center-power-the-grid": [
+        "compute_bottlenecks/findings/gas-turbine-order-backlog.md",
+        "compute_bottlenecks/mechanisms/transformer-lead-times.md"
+      ],
+      "lidar-for-physical-ai": [
+        "compute_bottlenecks/findings/lidar-robotics-unit-crossover.md"
+      ],
+      "biometric-airport-check-in-border": [
+        "ai_application_layer/open_checks/airport-biometric-checkin-use-case.md"
+      ],
+      "industrial-robots": [
+        "manufacturing_costs/SUMMARY.md",
+        "manufacturing_costs/open_checks/physical-ai-material-handling.md"
+      ],
+      "humanoid-robots": [
+        "manufacturing_costs/open_checks/physical-ai-material-handling.md"
+      ],
+      "foundation-models-for-robotics": [
+        "manufacturing_costs/mechanisms/ai-cuts-thinking-not-physics.md"
+      ],
+      "ai-weather-forecasting": [
+        "risk_communication/findings/probability-of-precipitation-misread.md"
+      ],
+      "autonomous-mine-fleets": [
+        "ai_application_layer/findings/supply-atlas-ai-use-level5.md"
+      ],
+      "ai-container-terminals": [
+        "ai_application_layer/findings/supply-atlas-ai-use-level5.md"
+      ],
+      "process-industry-metallurgy-chemicals": [
+        "ai_application_layer/findings/supply-atlas-ai-use-level5.md",
+        "ai_application_layer/rules/operator-evidence-is-not-site-evidence.md"
+      ],
+      "semiconductor-fab-automation": [
+        "ai_application_layer/findings/supply-atlas-ai-use-level5.md"
+      ],
+      "local-language-models": [
+        "local_llm_operation/SUMMARY.md",
+        "local_llm_operation/mechanisms/moe-expert-offloading.md"
+      ],
+      "offline-coding-website-building": [
+        "local_llm_operation/SUMMARY.md"
+      ],
+      "private-knowledge-base-over-your-own-files": [
+        "local_llm_operation/SUMMARY.md"
+      ],
+      "local-fine-tuning-of-open-models": [
+        "local_llm_operation/SUMMARY.md"
+      ],
+      "coding-agents": [
+        "agent_tooling/SUMMARY.md"
+      ],
+      "model-context-protocol-mcp": [
+        "agent_tooling/SUMMARY.md"
+      ]
+    },
+    "companies": {
+      "SKHYNIX": [
+        "memory_earnings/SUMMARY.md",
+        "memory_supply/SUMMARY.md",
+        "memory_earnings/findings/operating-margin-three-makers.md",
+        "memory_earnings/findings/sk-hynix-kioxia-stake.md"
+      ],
+      "MU": [
+        "memory_earnings/SUMMARY.md",
+        "memory_supply/SUMMARY.md",
+        "memory_earnings/findings/operating-margin-three-makers.md"
+      ],
+      "SAMSUNG": [
+        "memory_earnings/SUMMARY.md",
+        "memory_supply/SUMMARY.md",
+        "memory_earnings/findings/operating-margin-three-makers.md"
+      ],
+      "KIOXIA": [
+        "memory_earnings/findings/sk-hynix-kioxia-stake.md"
+      ],
+      "NVDA": [
+        "ai_demand_drivers/SUMMARY.md",
+        "ai_demand_drivers/findings/rubin-shipments-start-q3-fy27.md",
+        "compute_bottlenecks/mechanisms/allocation-beats-datasheet.md"
+      ],
+      "AMD": [
+        "compute_bottlenecks/mechanisms/allocation-beats-datasheet.md",
+        "ai_buyers/risks/circular-financing.md"
+      ],
+      "AVGO": [
+        "compute_bottlenecks/mechanisms/allocation-beats-datasheet.md",
+        "compute_bottlenecks/mechanisms/cpo-scale-out-before-scale-up.md",
+        "ai_demand_drivers/findings/custom-asics-use-hbm.md"
+      ],
+      "TSM": [
+        "compute_bottlenecks/mechanisms/cowos-capacity-and-package-area.md"
+      ],
+      "MSFT": [
+        "ai_demand_drivers/open_checks/capex-vs-operating-cash-flow-2026.md",
+        "ai_buyers/SUMMARY.md"
+      ],
+      "GOOGL": [
+        "ai_demand_drivers/open_checks/capex-vs-operating-cash-flow-2026.md",
+        "ai_buyers/SUMMARY.md"
+      ],
+      "AMZN": [
+        "ai_demand_drivers/open_checks/capex-vs-operating-cash-flow-2026.md",
+        "ai_buyers/SUMMARY.md"
+      ],
+      "META": [
+        "ai_demand_drivers/open_checks/capex-vs-operating-cash-flow-2026.md",
+        "ai_buyers/SUMMARY.md"
+      ],
+      "ORCL": [
+        "ai_demand_drivers/open_checks/capex-vs-operating-cash-flow-2026.md",
+        "ai_buyers/SUMMARY.md"
+      ],
+      "GEV": [
+        "compute_bottlenecks/findings/gas-turbine-order-backlog.md"
+      ],
+      "VRT": [
+        "compute_bottlenecks/mechanisms/rack-current-forces-800vdc.md"
+      ],
+      "MPWR": [
+        "compute_bottlenecks/mechanisms/rack-current-forces-800vdc.md"
+      ],
+      "COHR": [
+        "compute_bottlenecks/mechanisms/cpo-scale-out-before-scale-up.md"
+      ],
+      "LITE": [
+        "compute_bottlenecks/mechanisms/cpo-scale-out-before-scale-up.md"
+      ],
+      "ROBOSENSE": [
+        "compute_bottlenecks/findings/lidar-robotics-unit-crossover.md"
+      ],
+      "HSAI": [
+        "compute_bottlenecks/findings/lidar-robotics-unit-crossover.md"
+      ]
+    },
+    "atlas": {
+      "ai_use": [
+        "ai_application_layer/findings/supply-atlas-ai-use-level5.md",
+        "ai_application_layer/rules/operator-evidence-is-not-site-evidence.md"
+      ],
+      "layers": {
+        "y": [
+          "memory_supply/SUMMARY.md"
+        ],
+        "d": [
+          "compute_bottlenecks/SUMMARY.md"
+        ]
+      }
+    }
   }
 }
