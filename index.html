@@ -719,6 +719,36 @@ const UC = [
     E("Per the official FDA list (as of Jun 2026), ~1,451 AI devices are authorized, ~1,104 in radiology. A peer-review analysis counts 168 ML devices for 2024 alone.","Laut offizieller FDA-Liste (Stand Juni 2026) ~1.451 KI-Geräte, ~1.104 Radiologie. Peer-Review-Analyse zählt 168 ML-Geräte allein für 2024."),
     E("FDA list (tally: The Imaging Wire); PMC 2024","FDA-Liste (Tally: The Imaging Wire); PMC 2024"),
     "good", E("FDA registry","FDA-Register")),
+  U(5,"Viz.ai, Brainomix, RapidAI","prod",3,"strong",
+    E("Stroke triage AI","Schlaganfall-Triage-KI"),
+    E("NHS: AI-read CT at 70+ hospitals; thrombectomy rate doubled at sites using it","NHS: KI-gelesene CTs an über 70 Kliniken; Thrombektomierate an diesen Standorten verdoppelt"),
+    E("Thrombectomy <b>2.3% → 4.6%</b> at 26 NHS hospitals with AI vs <b>1.6% → 2.6%</b> without","Thrombektomie <b>2,3 % → 4,6 %</b> an 26 NHS-Kliniken mit KI gegenüber <b>1,6 % → 2,6 %</b> ohne"),
+    E("Software reads the CT angiogram as it leaves the scanner, flags a large-vessel occlusion and pushes the images to the stroke team's phones, so the decision to transfer for clot removal no longer waits for a radiologist. This is the most outcome-linked imaging AI on the board. In England, Brainomix e-Stroke runs at more than 70 hospitals; an evaluation of 26 of them, published in The Lancet Digital Health in December 2025, found thrombectomy rates doubled from 2.3% to 4.6% against 1.6% to 2.6% at sites without it, and door-in-door-out time at primary stroke centres fell by about an hour. In the US, a multicentre trial of Viz LVO found door-to-groin time 11 minutes shorter, and a meta-analysis of 12 studies with 15,595 patients links it to faster CT-to-treatment times. Read carefully: most evidence is before-after or observational, much of it vendor-funded, and the NHS rise coincides with a national expansion of thrombectomy services.",
+      "Die Software liest die CT-Angiographie, sobald sie den Scanner verlässt, markiert einen Großgefäßverschluss und schickt die Bilder aufs Handy des Stroke-Teams; die Entscheidung zur Verlegung für die Thrombektomie wartet nicht mehr auf den Radiologen. Das ist die Bildgebungs-KI mit dem engsten Bezug zu Behandlungsergebnissen auf dem Board. In England läuft Brainomix e-Stroke an über 70 Kliniken; eine Auswertung von 26 davon in The Lancet Digital Health (Dezember 2025) fand eine Verdopplung der Thrombektomierate von 2,3 % auf 4,6 %, gegenüber 1,6 % auf 2,6 % an Standorten ohne, und die Door-in-door-out-Zeit an Primärzentren sank um rund eine Stunde. In den USA verkürzte Viz LVO in einer multizentrischen Studie die Door-to-groin-Zeit um 11 Minuten, und eine Metaanalyse von 12 Studien mit 15.595 Patienten verbindet es mit kürzeren Zeiten vom CT bis zur Behandlung. Genau lesen: Die meisten Belege sind Vorher-nachher- oder Beobachtungsstudien, viele herstellerfinanziert, und der NHS-Anstieg fällt mit dem landesweiten Ausbau der Thrombektomie zusammen."),
+    E("The Lancet Digital Health (Dec 2025), NHS e-Stroke evaluation; Viz LVO multicentre trial; meta-analysis of 12 studies","The Lancet Digital Health (Dez. 2025), NHS-Auswertung e-Stroke; multizentrische Viz-LVO-Studie; Metaanalyse von 12 Studien"),
+    "good", E("Peer-reviewed outcome data, but mostly observational and overlapping with a national service expansion",
+      "Begutachtete Ergebnisdaten, aber überwiegend beobachtend und überlagert vom landesweiten Ausbau der Versorgung")),
+
+  U(5,"icometrix, Qynapse, nnU-Net (DKFZ)","prod",2,"strong",
+    E("Brain MRI lesion segmentation & volumetry","Läsionssegmentierung & Volumetrie im Hirn-MRT"),
+    E("Anti-amyloid drugs made ARIA monitoring a regulated AI job; first FDA clearance Nov 2024","Anti-Amyloid-Medikamente machen ARIA-Überwachung zur regulierten KI-Aufgabe; erste FDA-Freigabe Nov. 2024"),
+    E("First FDA-cleared <b>ARIA</b> detector (Nov 2024); clinical WMH Dice around <b>0.77</b>","Erster FDA-freigegebener <b>ARIA</b>-Detektor (Nov. 2024); klinischer WMH-Dice um <b>0,77</b>"),
+    E("Segmenting multiple-sclerosis lesions, white-matter hyperintensities or tumours by hand takes hours per scan; U-Net-type networks now do it in minutes on routine T1, T2 and FLAIR. Research has converged on nnU-Net, the self-configuring framework from DKFZ, which is the baseline in nearly every benchmark - a 2025 cortical-MS study pooled 656 scans from four sites at 3T and 7T. Clinically, CE- and FDA-marked products report lesion load and atrophy against normative data: Qynapse's QyScore WMH model was validated on GE, Philips and Siemens scanners and beat LST-LGA and LPA in that validation. The new demand driver is Alzheimer's therapy: lecanemab and donanemab require serial MRI to catch amyloid-related imaging abnormalities (ARIA), and icobrain aria became the first FDA-cleared AI for detecting and grading ARIA in November 2024, after reader studies showed higher radiologist sensitivity with AI. Read carefully: the evidence is accuracy and reader agreement, not patient outcomes, and performance still drops across scanners and sites.",
+      "Läsionen bei Multipler Sklerose, White-Matter-Hyperintensitäten oder Tumoren von Hand zu segmentieren dauert Stunden je Scan; U-Net-artige Netze schaffen das in Minuten auf Routine-T1, -T2 und -FLAIR. Die Forschung hat sich auf nnU-Net geeinigt, das selbstkonfigurierende Framework des DKFZ, das in fast jedem Benchmark die Basislinie ist - eine Studie zu kortikalen MS-Läsionen von 2025 bündelte 656 Scans aus vier Zentren bei 3T und 7T. Klinisch berichten CE- und FDA-gekennzeichnete Produkte Läsionslast und Atrophie gegen Normdaten: Das QyScore-WMH-Modell von Qynapse wurde auf GE-, Philips- und Siemens-Scannern validiert und schlug dort LST-LGA und LPA. Der neue Nachfragetreiber ist die Alzheimer-Therapie: Lecanemab und Donanemab verlangen serielle MRTs, um amyloidbedingte Bildgebungsauffälligkeiten (ARIA) zu erkennen, und icobrain aria wurde im November 2024 die erste FDA-freigegebene KI zur Erkennung und Graduierung von ARIA, nachdem Reader-Studien höhere Sensitivität der Radiologen mit KI zeigten. Genau lesen: Belegt sind Genauigkeit und Befunderübereinstimmung, nicht Behandlungsergebnisse, und die Leistung sinkt weiterhin zwischen Scannern und Zentren."),
+    E("FDA clearance icobrain aria (Nov 2024); QyScore WMH validation (PMC 2025); cortical MS lesion benchmark (arXiv 2507.12092)","FDA-Freigabe icobrain aria (Nov. 2024); QyScore-WMH-Validierung (PMC 2025); Benchmark kortikale MS-Läsionen (arXiv 2507.12092)"),
+    "note", E("Regulatory clearances and reader studies, not outcome trials; scanner shift unsolved",
+      "Zulassungen und Reader-Studien, keine Ergebnisstudien; Scanner-Verschiebung ungelöst")),
+
+  U(5,"UK Biobank research, academic brain-age models","research",2,"steady",
+    E("Brain age estimation","Hirnalter-Schätzung"),
+    E("Popular research biomarker; clinical value contested","Beliebter Forschungsbiomarker; klinischer Wert umstritten"),
+    E("Less accurate age models detected disease <b>better</b> - simple ridge regression beat CNNs and Swin transformers","Ungenauere Altersmodelle erkannten Krankheit <b>besser</b> - einfache Ridge-Regression schlug CNNs und Swin-Transformer"),
+    E("A 3D CNN or vision transformer trained on structural MRI of healthy people predicts age; the gap between predicted and actual age is read as accelerated brain ageing and is reported as raised in dementia, MS, schizophrenia and diabetes. Combining the image with clinical tables in multimodal models is the current direction. The caution matters more than the headline: a 2025 study found that models with lower age-prediction accuracy were more sensitive to disease, with ridge regression outperforming CNNs and Swin transformers - so chasing accuracy can make the biomarker worse. Other work finds systematic bias in healthy subjects, weak links to longitudinal memory decline, and poor reproducibility across scanners and populations. A research tool, not a clinical test.",
+      "Ein 3D-CNN oder Vision Transformer, trainiert auf strukturellen MRTs gesunder Menschen, sagt das Alter voraus; die Lücke zwischen vorhergesagtem und tatsächlichem Alter gilt als beschleunigte Hirnalterung und wird bei Demenz, MS, Schizophrenie und Diabetes erhöht berichtet. Bild und klinische Tabellen in multimodalen Modellen zu kombinieren ist die aktuelle Richtung. Der Vorbehalt wiegt schwerer als die Schlagzeile: Eine Studie von 2025 fand, dass Modelle mit geringerer Altersgenauigkeit empfindlicher für Krankheit waren, Ridge-Regression schlug CNNs und Swin-Transformer - wer Genauigkeit jagt, kann den Biomarker also verschlechtern. Andere Arbeiten finden systematische Verzerrung bei Gesunden, schwache Bezüge zum Gedächtnisverlauf und schlechte Reproduzierbarkeit über Scanner und Populationen. Ein Forschungswerkzeug, kein klinischer Test."),
+    E("Brain-age models with lower accuracy have higher sensitivity for disease detection (2025, PMC); eLife reviewed preprint on clinical utility","Brain-age models with lower accuracy have higher sensitivity for disease detection (2025, PMC); eLife-Preprint zum klinischen Nutzen"),
+    "warn", E("Peer-reviewed, but the biomarker's clinical meaning is disputed in the literature itself",
+      "Begutachtet, aber die klinische Bedeutung des Biomarkers ist in der Literatur selbst umstritten")),
+
   U(5,"Neocis Yomi, Dentsply Sirona","early",2,"steady",
     E("Dental / implant robots","Zahn- / Implantat-Roboter"),
     E("early production, steady","frühe Produktion, stetig"),
@@ -1258,6 +1288,9 @@ const UC = [
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "Stroke triage AI":"https://neuronewsinternational.com/report-finds-improved-thrombectomy-access-at-nhs-hospitals-using-brainomixs-ai-technology/",
+  "Brain MRI lesion segmentation & volumetry":"https://appliedradiology.com/articles/icometrix-nets-fda-clearance-for-ai-based-aria-diagnosis-and-monitoring-solution",
+  "Brain age estimation":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12633945/",
   "Fusion plasma control":"https://www.pppl.gov/news/2024/engineers-use-ai-wrangle-fusion-power-grid",
   "Fusion disruption prediction":"https://arxiv.org/abs/2204.01289",
   "Fusion simulation surrogates":"https://www.llnl.gov/article/53316/llnl-used-ai-predict-historic-fusion-ignition-shot",
@@ -1359,6 +1392,14 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "Stroke triage AI":[
+    {n:"Viz.ai", u:"https://www.viz.ai/"},
+    {n:"Brainomix", u:"https://www.brainomix.com/"},
+    {n:"RapidAI", u:"https://www.rapidai.com/"}],
+  "Brain MRI lesion segmentation & volumetry":[
+    {n:"icometrix", u:"https://icometrix.com/"},
+    {n:"Qynapse", u:"https://qynapse.com/"},
+    {n:"nnU-Net", u:"https://github.com/MIC-DKFZ/nnUNet"}],
   "Fusion plasma control":[
     {n:"Google DeepMind", u:"https://deepmind.google/"},
     {n:"PPPL", u:"https://www.pppl.gov/"},
@@ -1766,6 +1807,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "Stroke triage AI":[1,"inf"],
+  "Brain MRI lesion segmentation & volumetry":[1,"inf"],
+  "Brain age estimation":[1,"train"],
   "Fusion plasma control":[1,"sim"],
   "Fusion disruption prediction":[1,"edge"],
   "Fusion simulation surrogates":[2,"sim"],
@@ -1955,6 +1999,24 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "Stroke triage AI":{
+    name:"Тархины харвалтын ангилалтын хиймэл оюун",
+    glab:"NHS: 70 гаруй эмнэлэгт хиймэл оюун CT уншдаг; эдгээр газарт тромбэктомийн түвшин хоёр дахин өссөн",
+    metric:"Хиймэл оюунтай 26 NHS эмнэлэгт тромбэктоми <b>2.3% → 4.6%</b>, хиймэл оюунгүйд <b>1.6% → 2.6%</b>",
+    detail:"Програм CT ангиографийг сканераас гармагц уншиж, том судасны бөглөрлийг тэмдэглэж, зургийг харвалтын багийн утас руу илгээдэг тул бүлэн авах эмчилгээнд шилжүүлэх шийдвэр радиологичийг хүлээхгүй. Энэ нь самбар дээрх эмчилгээний үр дүнтэй хамгийн нягт холбоотой дүрслэлийн хиймэл оюун юм. Англид Brainomix e-Stroke 70 гаруй эмнэлэгт ажилладаг; The Lancet Digital Health-д 2025 оны 12-р сард нийтлэгдсэн 26 эмнэлгийн үнэлгээгээр тромбэктомийн түвшин 2.3%-иас 4.6% болж хоёр дахин өссөн бол хэрэглээгүй газарт 1.6%-иас 2.6% болсон, анхан шатны төвүүдэд door-in-door-out хугацаа ойролцоогоор нэг цагаар багассан. АНУ-д Viz LVO-ийн олон төвийн судалгаагаар door-to-groin хугацаа 11 минутаар богиноссон, 15,595 өвчтөнтэй 12 судалгааны мета-анализ үүнийг CT-ээс эмчилгээ хүртэлх хугацаа богиноссонтой холбодог. Анхааралтай унших: ихэнх нотолгоо нь өмнө-дараа эсвэл ажиглалтын судалгаа, ихэнхийг нь үйлдвэрлэгч санхүүжүүлсэн, NHS-ийн өсөлт улсын хэмжээнд тромбэктомийн үйлчилгээ өргөжсөнтэй давхцдаг.",
+    flag:"хянан магадлагдсан үр дүнгийн өгөгдөл, гэхдээ ихэвчлэн ажиглалтын бөгөөд үйлчилгээний өргөжилттэй давхцдаг"},
+  "Brain MRI lesion segmentation & volumetry":{
+    name:"Тархины MRI-ийн гэмтлийн сегментчлэл ба эзэлхүүн хэмжилт",
+    glab:"Амилоидын эсрэг эм ARIA хяналтыг зохицуулалттай хиймэл оюуны ажил болгосон; анхны FDA зөвшөөрөл 2024 оны 11-р сар",
+    metric:"FDA-ийн зөвшөөрөлтэй анхны <b>ARIA</b> илрүүлэгч (2024.11); эмнэлзүйн WMH Dice ойролцоогоор <b>0.77</b>",
+    detail:"Олон склероз, цагаан бодисын гиперинтенсив, хавдрын гэмтлийг гараар сегментчлэхэд нэг скан тутамд хэдэн цаг шаардагддаг; U-Net төрлийн сүлжээ үүнийг энгийн T1, T2, FLAIR дээр хэдэн минутад хийдэг. Судалгаа DKFZ-ийн өөрөө тохируулагддаг nnU-Net дээр нэгдсэн бөгөөд энэ нь бараг бүх жишиг туршилтын суурь шугам юм - 2025 оны кортикал MS-ийн судалгаа дөрвөн төвийн 3T, 7T-ийн 656 сканыг нэгтгэсэн. Эмнэлзүйд CE, FDA тэмдэгтэй бүтээгдэхүүнүүд гэмтлийн ачаалал, хатингаршлыг норматив өгөгдөлтэй харьцуулан мэдээлдэг: Qynapse-ийн QyScore WMH загварыг GE, Philips, Siemens сканер дээр баталгаажуулж, LST-LGA, LPA-аас илүү гарсан. Шинэ эрэлтийн хөдөлгөгч нь Альцгеймерийн эмчилгээ: lecanemab, donanemab нь амилоидтой холбоотой дүрслэлийн гажиг (ARIA)-ийг илрүүлэхийн тулд давтан MRI шаарддаг бөгөөд icobrain aria нь 2024 оны 11-р сард ARIA илрүүлж, зэрэглэх анхны FDA-ийн зөвшөөрөлтэй хиймэл оюун болсон. Анхааралтай унших: нотолгоо нь нарийвчлал ба уншигчдын санал нийлэлт, өвчтөний үр дүн биш, сканер ба төв хооронд гүйцэтгэл буурсаар байна.",
+    flag:"зохицуулалтын зөвшөөрөл ба уншигчийн судалгаа, үр дүнгийн судалгаа биш; сканерын шилжилт шийдэгдээгүй"},
+  "Brain age estimation":{
+    name:"Тархины насны үнэлгээ",
+    glab:"Түгээмэл судалгааны биомаркер; эмнэлзүйн үнэ цэнэ маргаантай",
+    metric:"Нарийвчлал багатай насны загварууд өвчнийг <b>илүү сайн</b> илрүүлсэн - энгийн ridge регресс CNN, Swin трансформерыг давсан",
+    detail:"Эрүүл хүмүүсийн бүтцийн MRI дээр сургасан 3D CNN эсвэл vision transformer насыг таамагладаг; таамагласан ба бодит насны зөрүүг тархины хурдасгасан хөгшрөлт гэж үзэж, дементи, MS, шизофрени, чихрийн шижинд өндөр гэж мэдээлдэг. Зургийг эмнэлзүйн хүснэгттэй олон модалын загварт нэгтгэх нь одоогийн чиглэл. Анхааруулга нь гарчгаас илүү чухал: 2025 оны судалгаагаар насны таамаглалын нарийвчлал багатай загварууд өвчинд илүү мэдрэмтгий байсан, ridge регресс CNN, Swin трансформерыг давсан - нарийвчлал хөөх нь биомаркерыг муутгаж болзошгүй. Бусад ажлууд эрүүл хүмүүст системтэй хазайлт, ой санамжийн бууралттай сул холбоо, сканер ба популяц хооронд муу давтагдах чанарыг илрүүлсэн. Судалгааны хэрэгсэл, эмнэлзүйн шинжилгээ биш.",
+    flag:"хянан магадлагдсан, гэхдээ биомаркерын эмнэлзүйн утга судалгааны ном зохиолд өөрөө маргаантай"},
   "Fusion plasma control":{
     name:"Нийлэгжилтийн плазмын удирдлага",
     glab:"Ажиллаж буй токамак дээрх RL удирдлага: TCV 2022, DIII-D 2024; 2025 оны 10-р сараас SPARC-ийн түншлэл",
