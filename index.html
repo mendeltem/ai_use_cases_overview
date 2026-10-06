@@ -26,8 +26,9 @@
   a{color:var(--petrol)}
   .wrap{max-width:1180px; margin:0 auto; padding:0 22px}
 
-  header.top{background:linear-gradient(180deg,#12242C 0%,#132A31 100%); color:#EAF0EE; position:relative; overflow:hidden; border-bottom:3px solid var(--petrol);}
+  header.top{background:url("images/header/header_a.webp") right 38%/max(68%,820px) auto no-repeat,linear-gradient(180deg,#123E4D 0%,#0E2C40 100%); color:#EAF0EE; position:relative; overflow:hidden; border-bottom:3px solid var(--petrol);}
   header.top::before{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--petrol-dark) 1px,transparent 1px),linear-gradient(90deg,var(--petrol-dark) 1px,transparent 1px); background-size:34px 34px; opacity:.14; pointer-events:none;}
+  @media (max-width:640px){ header.top{background:linear-gradient(180deg,rgba(14,36,46,.82) 0%,rgba(14,36,46,.72) 100%),url("images/header/header_a_mobile.webp") center/cover no-repeat,#0F2A36} }
   .top .wrap{position:relative; padding-top:18px; padding-bottom:14px}
   .topbar{display:flex; justify-content:space-between; align-items:flex-start; gap:16px}
   .eyebrow{font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#7FD0C4; margin:0 0 7px;}
@@ -53,6 +54,7 @@
                   white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .sisterlink .sgo{color:#7FD0C4; font-size:12px; flex-shrink:0}
   @media(max-width:640px){ .topright{align-items:flex-start} .sisterlink{max-width:none} }
+  .topright .sisterlink, .topright .langtoggle{background-color:rgba(12,36,50,.82); backdrop-filter:blur(6px)}
   .langtoggle{display:inline-flex; border:1px solid rgba(127,208,196,.4); border-radius:8px; overflow:hidden; flex-shrink:0}
   .langtoggle button{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.08em; padding:6px 12px; background:transparent; color:#9FB4AF; border:none; cursor:pointer; transition:.12s}
   .langtoggle button[aria-pressed="true"]{background:var(--petrol); color:#fff}
