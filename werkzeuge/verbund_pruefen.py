@@ -160,11 +160,17 @@ def main():
         pfade.update(at.get("ai_use", []))
         for ps in at.get("layers", {}).values():
             pfade.update(ps)
+        fehlt = []
         for p in sorted(pfade):
             if p not in w.get("entries", {}):
                 fehler.append("wiki.entries: Titel fuer %s fehlt" % p)
             if not wiki_da(a.wiki, p):
-                fehler.append("wiki: %s existiert nicht" % p)
+                fehlt.append(p)
+        if fehlt and len(fehlt) == len(pfade) and re.match(r"https?://", a.wiki):
+            # blackbeard_wikki ist privat: von aussen liefert GitHub fuer jeden Pfad 404.
+            fehler.append("wiki: kein Pfad von aussen erreichbar (Repo privat?) - mit --wiki <lokaler Klon> pruefen")
+        else:
+            fehler += ["wiki: %s existiert nicht" % p for p in fehlt]
 
     orte = sum(len(u["places"]) for u in d["use_cases"].values())
     print("%d Karten im Board, %d mit Orten (%d Orte), %d Atlas-Standorte, %d Firmenseiten"
