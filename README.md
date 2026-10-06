@@ -6,7 +6,7 @@ An interactive, single-page dashboard cataloguing concrete AI deployments runnin
 
 ## What's in it
 
-111 use cases across 15 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
+116 use cases across 16 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
 
 ## Rating axes
 
@@ -16,7 +16,7 @@ An interactive, single-page dashboard cataloguing concrete AI deployments runnin
 
 ## Clusters
 
-Mobility & transport · Warehouse & energy · Industry & humanoids · Agriculture · Medicine & the body · Hazardous zones · Science & forecasting · Knowledge-work agents · Security & fraud · Back office & bureaucracy · The city in the background · Enablers · The compute & energy substrate · Consumer & home robots · Media & entertainment
+Mobility & transport · Warehouse & energy · Industry & humanoids · Agriculture · Medicine & the body · Hazardous zones · Science & forecasting · Knowledge-work agents · Security & fraud · Back office & bureaucracy · The city in the background · Enablers · The compute & energy substrate · Consumer & home robots · Media & entertainment · Maintenance & upkeep
 
 ## Features
 
