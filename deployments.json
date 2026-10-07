@@ -2430,6 +2430,3020 @@
           "yr": "2025"
         }
       ]
+    },
+    "ar-remote-assistance-vision-picking": {
+      "name": {
+        "en": "AR remote assistance & vision picking",
+        "de": "AR-Fernassistenz & Vision Picking"
+      },
+      "places": [
+        {
+          "n": "Brack.Alltron logistics centre, Willisau",
+          "c": "CHE",
+          "la": 47.122,
+          "lo": 7.994,
+          "en": "The 75,000 m² logistics centre (about 4.5 million parcels a year) has run TeamViewer Frontline Pick on RealWear smart glasses since 2024; the vendor reports 30% higher picking efficiency.",
+          "de": "Das Logistikzentrum mit 75.000 m² (rund 4,5 Mio. Pakete pro Jahr) nutzt seit 2024 TeamViewer Frontline Pick auf RealWear-Datenbrillen; der Anbieter meldet 30 % höhere Kommissioniereffizienz.",
+          "src": "https://www.teamviewer.com/en/success-stories/brackalltron/",
+          "yr": "2024"
+        },
+        {
+          "n": "Coca-Cola HBC distribution centre, Thessaloniki",
+          "c": "GRC",
+          "la": 40.64,
+          "lo": 22.944,
+          "en": "Pilot site for Coca-Cola HBC's vision picking with smart glasses; the rollout reached 29 warehouses in 17 countries by 2022 with over 1,000 pickers, and the vendor reports 99.99% picking accuracy.",
+          "de": "Pilotstandort für Vision Picking mit Datenbrillen bei Coca-Cola HBC; bis 2022 wurde auf 29 Lager in 17 Ländern mit über 1.000 Kommissionierern ausgerollt, der Anbieter meldet 99,99 % Kommissioniergenauigkeit.",
+          "src": "https://www.teamviewer.com/en/success-stories/coca-cola/",
+          "yr": "2023"
+        },
+        {
+          "n": "DHL Supply Chain warehouse, Lockbourne (Ohio)",
+          "c": "USA",
+          "la": 39.809,
+          "lo": -82.973,
+          "en": "Named DHL site fulfilling orders for a consumer brand with Frontline Pick on smart glasses; about 1,500 operators across 25 DHL sites in the US use the glasses.",
+          "de": "Namentlich genannter DHL-Standort, der Bestellungen für eine Konsumgütermarke mit Frontline Pick auf Datenbrillen abwickelt; rund 1.500 Beschäftigte an 25 DHL-Standorten in den USA nutzen die Brillen.",
+          "src": "https://www.teamviewer.com/en/success-stories/dhl/",
+          "yr": ""
+        },
+        {
+          "n": "Volvo Group Service Market Logistics distribution centre, Sydney",
+          "c": "AUS",
+          "la": -33.869,
+          "lo": 151.209,
+          "en": "Volvo's APAC spare-parts distribution centre uses vision picking with smart glasses; Volvo reports 25% better picking quality.",
+          "de": "Das APAC-Ersatzteilzentrum von Volvo nutzt Vision Picking mit Datenbrillen; Volvo meldet 25 % bessere Kommissionierqualität.",
+          "src": "https://www.teamviewer.com/en/success-stories/volvo/",
+          "yr": ""
+        },
+        {
+          "n": "Samsung SDS Global Parts Center Europe, Breda",
+          "c": "NLD",
+          "la": 51.589,
+          "lo": 4.776,
+          "en": "Samsung's European spare-parts warehouse introduced TeamViewer Frontline vision picking within four weeks and reports 25–30% faster picking.",
+          "de": "Samsungs europäisches Ersatzteillager führte TeamViewer-Frontline-Vision-Picking in unter vier Wochen ein und meldet 25–30 % schnelleres Kommissionieren.",
+          "src": "https://www.teamviewer.com/en/success-stories/samsung-sds/",
+          "yr": ""
+        }
+      ]
+    },
+    "precision-spraying-see-spray": {
+      "name": {
+        "en": "Precision spraying (See & Spray)",
+        "de": "Präzisions-Spritzen (See & Spray)"
+      },
+      "places": [
+        {
+          "n": "Northeast Research and Extension Center, Keiser (Arkansas)",
+          "c": "USA",
+          "la": 35.675,
+          "lo": -90.097,
+          "en": "University of Arkansas System Division of Agriculture ran a three-year See & Spray field trial in soybeans (2022–2024); herbicide use fell 43–59% versus broadcast application.",
+          "de": "Die University of Arkansas System Division of Agriculture testete See & Spray drei Jahre lang (2022–2024) in Sojabohnen; der Herbizideinsatz sank gegenüber Flächenbehandlung um 43–59 %.",
+          "src": "https://uaex.uada.edu/media-resources/news/2025/march/03-10-2025-see-and-spray-research.aspx",
+          "yr": "2025"
+        },
+        {
+          "n": "Soybean fields in Boone and Story counties, Iowa",
+          "c": "USA",
+          "la": 42.03,
+          "lo": -93.75,
+          "en": "Iowa State University ran See & Spray Ultimate on five conventionally managed soybean fields (415 acres) in the 2024 season; average herbicide product savings were 76% (43.9–90.6% per field).",
+          "de": "Die Iowa State University setzte See & Spray Ultimate in der Saison 2024 auf fünf konventionellen Sojafeldern (415 Acres) ein; im Mittel wurden 76 % Herbizid eingespart (43,9–90,6 % je Feld).",
+          "src": "https://growiwm.org/?p=15010",
+          "yr": "2024"
+        },
+        {
+          "n": "'Yannarie', North Star (New South Wales)",
+          "c": "AUS",
+          "la": -28.932,
+          "lo": 150.392,
+          "en": "Grower Angus Siddins runs a John Deere 412R sprayer with See & Spray Select over 4,500 ha of fallow on a 7,500 ha operation since the 2022–23 summer; he reported 25% lower chemical spend in the first season.",
+          "de": "Landwirt Angus Siddins setzt seit Sommer 2022/23 eine John-Deere-412R-Spritze mit See & Spray Select auf 4.500 ha Brache eines 7.500-ha-Betriebs ein; er meldete in der ersten Saison 25 % weniger Pflanzenschutzkosten.",
+          "src": "https://www.rdoequipment.com.au/input-savings-achieved-with-see-spray-select-on-course-to-pay-for-equipment-in-year-one/",
+          "yr": "2023"
+        }
+      ]
+    },
+    "agricultural-drones": {
+      "name": {
+        "en": "Agricultural drones",
+        "de": "Agrar-Drohnen"
+      },
+      "places": [
+        {
+          "n": "XAG smart cotton farm, Yuli County (Xinjiang)",
+          "c": "CHN",
+          "la": 41.345,
+          "lo": 86.262,
+          "en": "Since 2021 XAG has run a 3,000-mu (about 200 ha) cotton farm in Yuli County where autonomous drones patrol the fields and two operators manage the plot; in 2024 it averaged 529 kg of seed cotton per mu.",
+          "de": "Seit 2021 betreibt XAG im Kreis Yuli eine Baumwollfarm mit 3.000 Mu (rund 200 ha), auf der autonome Drohnen die Felder abfliegen und zwei Bediener die Fläche führen; 2024 lag der Ertrag im Mittel bei 529 kg Rohbaumwolle je Mu.",
+          "src": "https://capeargus.co.za/business/window-on-china/2026-07-08-drones-raise-farming-efficiency-quality-in-china/",
+          "yr": "2026"
+        },
+        {
+          "n": "Steep-slope vineyards of the Mosel, Bernkastel-Kues",
+          "c": "DEU",
+          "la": 49.916,
+          "lo": 7.069,
+          "en": "Spray drones have been used in Mosel steep-slope vineyards for about three years, on roughly 200 of some 3,200 ha of steep terrain; DLR Mosel carried out drift measurements for approval and demonstrated a newly approved drone at Bernkastel-Kues in 2025.",
+          "de": "In den Steillagen der Mosel werden seit rund drei Jahren Sprühdrohnen eingesetzt, auf etwa 200 von rund 3.200 ha Steillagenfläche; das DLR Mosel führte Abdriftmessungen für die Zulassung durch und stellte 2025 in Bernkastel-Kues eine neu zugelassene Drohne vor.",
+          "src": "https://www.tageskarte.io/industrie/detail/wie-eine-neue-drohne-bedrohten-wein-steillagen-helfen-kann.html",
+          "yr": "2025"
+        },
+        {
+          "n": "Liantang Village, Huangpu District, Guangzhou",
+          "c": "CHN",
+          "la": 23.106,
+          "lo": 113.459,
+          "en": "A drone sowed 300 mu (20 ha) of rice in 30 minutes; the village reports 47% lower water and electricity costs and 30% less pesticide with the drone-based system.",
+          "de": "Eine Drohne säte 300 Mu (20 ha) Reis in 30 Minuten; das Dorf meldet mit dem drohnengestützten System 47 % geringere Wasser- und Stromkosten und 30 % weniger Pflanzenschutzmittel.",
+          "src": "https://capeargus.co.za/business/window-on-china/2026-07-08-drones-raise-farming-efficiency-quality-in-china/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "harvest-pickers-laser-weeding": {
+      "name": {
+        "en": "Harvest pickers & laser weeding",
+        "de": "Ernte-Picker & Laser-Unkraut"
+      },
+      "places": [
+        {
+          "n": "Oishii Amatelas Farm, Phillipsburg NJ",
+          "c": "USA",
+          "la": 40.694,
+          "lo": -75.19,
+          "en": "Indoor vertical strawberry farm opened June 2024 where nearly 50 robots pick berries at peak ripeness and collect growing data; Oishii bought Tortuga AgTech's harvest-robot IP in 2025 to extend this.",
+          "de": "Vertikale Indoor-Erdbeerfarm, eröffnet im Juni 2024, auf der knapp 50 Roboter die Beeren bei optimaler Reife pflücken und Anbaudaten erfassen; Oishii kaufte 2025 die Ernteroboter-Technik von Tortuga AgTech, um das auszubauen.",
+          "src": "https://www.freshplaza.com/europe/article/9632551/oishii-opens-its-22-000m2-solar-powered-farm-in-phillipsburg/",
+          "yr": "2024"
+        },
+        {
+          "n": "Tripod Farmers, Bacchus Marsh, Victoria",
+          "c": "AUS",
+          "la": -37.675,
+          "lo": 144.438,
+          "en": "Leafy-vegetable grower on raised beds that runs Carbon Robotics' AI-guided LaserWeeders for weed control (reported July 2024).",
+          "de": "Blattgemüse-Betrieb auf Dammbeeten, der KI-gesteuerte LaserWeeder von Carbon Robotics zur Unkrautbekämpfung einsetzt (berichtet Juli 2024).",
+          "src": "https://www.farmonline.com.au/story/8669614/victoria-horticulture-adopts-leading-tech-for-weed-control/",
+          "yr": "2024"
+        },
+        {
+          "n": "Littywood Farm, Stafford",
+          "c": "GBR",
+          "la": 52.807,
+          "lo": -2.117,
+          "en": "Commercial raspberry farm in a two-year Innovate UK trial of Fieldwork Robotics' autonomous raspberry-picking robots (announced April 2026); fleet use is planned from 2027, so this is a trial site.",
+          "de": "Kommerzieller Himbeerbetrieb in einem zweijährigen Innovate-UK-Versuch mit den autonomen Himbeer-Pflückrobotern von Fieldwork Robotics (angekündigt April 2026); Flotteneinsatz ist ab 2027 geplant, es ist also ein Versuchsstandort.",
+          "src": "https://www.uktech.news/agtech/berry-picking-robot-maker-secures-3m-for-farm-trials-20260407",
+          "yr": "2026"
+        }
+      ]
+    },
+    "aquaculture-robots": {
+      "name": {
+        "en": "Aquaculture robots",
+        "de": "Aquakultur-Roboter"
+      },
+      "places": [
+        {
+          "n": "Nordlaks Havfarmen, off Hadseløya (Vesterålen)",
+          "c": "NOR",
+          "la": 68.565,
+          "lo": 14.909,
+          "en": "Nordlaks' largest salmon facility runs Stingray underwater lasers that detect and shoot sea lice; the site manager reported getting through the 2023 season without a delousing treatment. Nordlaks went from 12 lasers (2022) to 20 (2023) and ordered 50 more for 2024.",
+          "de": "Die größte Lachsanlage von Nordlaks setzt Unterwasser-Laser von Stingray ein, die Lachsläuse erkennen und abschießen; laut Standortleiter kam die Anlage in der Saison 2023 ohne Entlausungsbehandlung aus. Nordlaks steigerte von 12 Lasern (2022) auf 20 (2023) und bestellte 50 weitere für 2024.",
+          "src": "https://weareaquaculture.com/amp/story/news/aquaculture/nordlaks-invests-in-50-stingray-lice-lasers-after-sensational-trial-results",
+          "yr": "2024"
+        },
+        {
+          "n": "Nordlaks Litjevika, Dyrøy",
+          "c": "NOR",
+          "la": 69.093,
+          "lo": 17.68,
+          "en": "Nordlaks salmon site in Dyrøy municipality named as one of the farms using Stingray lice lasers in the trial that led to the 2024 order of 50 more units.",
+          "de": "Lachsstandort von Nordlaks in der Gemeinde Dyrøy, genannt als eine der Anlagen mit Stingray-Läuselasern im Versuch, der 2024 zur Bestellung von 50 weiteren Einheiten führte.",
+          "src": "https://weareaquaculture.com/amp/story/news/aquaculture/nordlaks-invests-in-50-stingray-lice-lasers-after-sensational-trial-results",
+          "yr": "2024"
+        },
+        {
+          "n": "Samherji Staður land-based farm, Reykjanes",
+          "c": "ISL",
+          "la": 63.842,
+          "lo": -22.434,
+          "en": "Land-based Arctic charr farm where ReelData's AI feeding system (ReelAppetite) ran as a commercial pilot for over a year; in October 2024 Samherji extended it to all three of its land-based sites under a three-year agreement.",
+          "de": "Landbasierte Saiblingsfarm, auf der das KI-Fütterungssystem ReelAppetite von ReelData über ein Jahr als kommerzieller Pilot lief; im Oktober 2024 weitete Samherji es per Dreijahresvertrag auf alle drei landbasierten Standorte aus.",
+          "src": "https://reeldata.ai/news/samherji-and-reeldata-announce-expansion-agreement",
+          "yr": "2024"
+        }
+      ]
+    },
+    "livestock-welfare-monitoring": {
+      "name": {
+        "en": "Livestock welfare monitoring",
+        "de": "Tierwohl-Ueberwachung im Stall"
+      },
+      "places": [
+        {
+          "n": "Ferme Caribou, Terrebonne, Quebec",
+          "c": "CAN",
+          "la": 45.7,
+          "lo": -73.647,
+          "en": "Family dairy that installed CattleEye camera-based mobility scoring in March 2025 after moving to a free-stall barn; alerts are combined with its existing CowScout activity data. No outcome figures yet.",
+          "de": "Familien-Milchviehbetrieb, der im März 2025 nach dem Umstieg auf einen Laufstall die kamerabasierte Bewegungsbewertung von CattleEye installierte; die Warnungen werden mit den vorhandenen CowScout-Aktivitätsdaten kombiniert. Noch keine Ergebniszahlen.",
+          "src": "https://cattleeye.com/en-gb/resources/help-centre/from-observation-to-data-how-a-quebec-dairy-transformed-its-approach-to-herd-health",
+          "yr": "2026"
+        },
+        {
+          "n": "Moreton Farm, Wrexham",
+          "c": "GBR",
+          "la": 53.046,
+          "lo": -2.993,
+          "en": "440-cow dairy using CattleEye cameras within the Farming Connect Healthy Feet Programme; the farm reports 75% fewer sole ulcers between two calving seasons (vendor case study).",
+          "de": "Milchviehbetrieb mit 440 Kühen, der CattleEye-Kameras im Rahmen des Farming-Connect-Programms Healthy Feet nutzt; der Betrieb meldet 75 % weniger Sohlengeschwüre zwischen zwei Abkalbesaisons (Hersteller-Fallstudie).",
+          "src": "https://cattleeye.com/en-gb/resources/help-centre/hardware-free-ai-lameness-detection-delivers-measurable-herd-health-improvements-on-a-440-cow-welsh-dairy-farm",
+          "yr": "2023"
+        },
+        {
+          "n": "Triple G Dairy, Buckeye, Arizona",
+          "c": "USA",
+          "la": 33.37,
+          "lo": -112.584,
+          "en": "Dairy of about 5,000-6,000 cows where CattleEye scores each cow's mobility at every milking; after about two years a 100-cow audit found no visibly lame cows (vendor case study).",
+          "de": "Milchviehbetrieb mit rund 5.000-6.000 Kühen, in dem CattleEye die Bewegung jeder Kuh bei jedem Melken bewertet; nach etwa zwei Jahren fand ein Audit an 100 Kühen keine sichtbar lahmen Tiere (Hersteller-Fallstudie).",
+          "src": "https://cattleeye.com/en-gb/resources/help-centre/ai-lameness-detection-helps-5000-cow-arizona-dairy-achieve-zero-visible-lameness-in-herd-audit",
+          "yr": "2023"
+        }
+      ]
+    },
+    "infrastructure-underwater-inspection": {
+      "name": {
+        "en": "Infrastructure / underwater inspection",
+        "de": "Infrastruktur- / Unterwasser-Inspektion"
+      },
+      "places": [
+        {
+          "n": "LNG Canada export terminal, Kitimat, British Columbia",
+          "c": "CAN",
+          "la": 54.012,
+          "lo": -128.689,
+          "en": "A Skydio X10 drone in a dock monitors the LNG plant's flare (up to 1,200 °C) with a custom thermal filter as part of daily operations; Skydio calls it the first docked-drone deployment in Canada.",
+          "de": "Eine Skydio-X10-Drohne in einer Dockingstation überwacht mit einem eigenen Thermofilter die Fackel der LNG-Anlage (bis 1.200 °C) im täglichen Betrieb; laut Skydio der erste Einsatz einer Drohne mit Dockingstation in Kanada.",
+          "src": "https://www.skydio.com/customer-stories/lng-canada-deploys-first-docked-drone-for-flare-monitoring",
+          "yr": ""
+        },
+        {
+          "n": "Jeremiah Morrow Bridge, Warren County, Ohio",
+          "c": "USA",
+          "la": 39.426,
+          "lo": -84.072,
+          "en": "Ohio DOT uses Skydio drones to build 3D models of Ohio's tallest bridge for condition monitoring, resolving cracks down to 0.2 mm; ODOT reports over $800K cost avoidance statewide from fewer snooper trucks and climbing crews (vendor case study).",
+          "de": "Das Verkehrsministerium von Ohio erstellt mit Skydio-Drohnen 3D-Modelle der höchsten Brücke Ohios zur Zustandsüberwachung, mit Rissauflösung bis 0,2 mm; landesweit meldet ODOT über 800.000 $ vermiedene Kosten durch weniger Brückenuntersichtgeräte und Kletterteams (Hersteller-Fallstudie).",
+          "src": "https://www.skydio.com/customer-stories/Ohio-Department-of-transportation",
+          "yr": ""
+        },
+        {
+          "n": "ICL Dead Sea Works, Sdom",
+          "c": "ISR",
+          "la": 31.04,
+          "lo": 35.39,
+          "en": "ICL Dead Sea, a potash and minerals producer, replaced manual site inspection rounds with Percepto drone-in-a-box flights that run without human involvement (vendor case study).",
+          "de": "ICL Dead Sea, ein Kali- und Mineralienproduzent, ersetzte manuelle Inspektionsrundgänge durch Percepto-Drohnen mit Dockingstation, die ohne menschliches Zutun fliegen (Hersteller-Fallstudie).",
+          "src": "https://percepto.com/automated-inspection-rounds/",
+          "yr": ""
+        }
+      ]
+    },
+    "sewer-pipe-inspection-ai": {
+      "name": {
+        "en": "Sewer pipe inspection AI",
+        "de": "KI für die Kanalinspektion"
+      },
+      "places": [
+        {
+          "n": "City of Houston wastewater collection system, Houston",
+          "c": "USA",
+          "la": 29.76,
+          "lo": -95.37,
+          "en": "Since August 2021 Houston has used SewerAI (AutoCode, PIONEER) to assess its ~6,000-mile sewer network under an EPA consent decree; the vendor reports 97% coding accuracy and ~12 million linear feet of PACP assessments a year.",
+          "de": "Seit August 2021 nutzt Houston SewerAI (AutoCode, PIONEER), um sein rund 6.000 Meilen langes Kanalnetz im Rahmen einer EPA-Auflage zu bewerten; der Anbieter nennt 97 % Codiergenauigkeit und rund 12 Mio. laufende Fuß PACP-Bewertungen pro Jahr.",
+          "src": "https://sewerai.com/customers/city-of-houston",
+          "yr": "2025"
+        },
+        {
+          "n": "City of Phoenix sewer rehabilitation programme, Phoenix",
+          "c": "USA",
+          "la": 33.448,
+          "lo": -112.074,
+          "en": "Customer since 2024: a 100-mile first-year pilot uses SewerAI's AI assessment on small-diameter sewers; 181,782 ft (34.4 miles) assessed so far, 38% flagged for lining.",
+          "de": "Kunde seit 2024: Ein 100-Meilen-Pilot im ersten Jahr nutzt die KI-Bewertung von SewerAI für Kanäle mit kleinem Durchmesser; bisher 181.782 Fuß (34,4 Meilen) bewertet, 38 % für Inliner-Sanierung markiert.",
+          "src": "https://sewerai.com/customers/city-of-phoenix",
+          "yr": "2025"
+        },
+        {
+          "n": "City of Madison Engineering, Madison, Wisconsin",
+          "c": "USA",
+          "la": 43.073,
+          "lo": -89.401,
+          "en": "Customer since 2022; about 1,859 miles of field inspection captured through SewerAI's platform, with 94% of new footage now coded by AutoCode on the city's ~800-mile sanitary network.",
+          "de": "Kunde seit 2022; rund 1.859 Meilen Feldinspektion über die SewerAI-Plattform erfasst, 94 % des neuen Materials werden inzwischen von AutoCode codiert, bei einem Schmutzwassernetz von rund 800 Meilen.",
+          "src": "https://sewerai.com/customers/city-of-madison-engineering",
+          "yr": "2025"
+        },
+        {
+          "n": "Wessex Water sewer network, Bath (South West England)",
+          "c": "GBR",
+          "la": 51.381,
+          "lo": -2.359,
+          "en": "Since April 2023 Wessex Water has used Molfar's AI tool, which logs defects from CCTV footage, for most of its proactive sewer condition surveys - over 100 km by early 2024, with crew productivity more than doubled.",
+          "de": "Seit April 2023 nutzt Wessex Water das KI-Werkzeug von Molfar, das Schäden aus Kanal-TV-Aufnahmen protokolliert, für den Großteil seiner vorsorglichen Zustandserhebungen - bis Anfang 2024 über 100 km, die Produktivität der Trupps hat sich mehr als verdoppelt.",
+          "src": "https://cms.marketplace.wessexwater.co.uk/blog/ai-revolutionises-sewer-surveys",
+          "yr": "2024"
+        }
+      ]
+    },
+    "facade-window-cleaning-robots": {
+      "name": {
+        "en": "Facade & window cleaning robots",
+        "de": "Fassaden- & Fensterreinigungsroboter"
+      },
+      "places": [
+        {
+          "n": "1133 Avenue of the Americas, New York",
+          "c": "USA",
+          "la": 40.755,
+          "lo": -73.984,
+          "en": "Since 28 August 2024 Skyline Robotics' Ozmo, a KUKA arm on the building's gondola, cleans the windows of this 45-storey Durst Organization tower with Palladium Window Solutions; approved by the New York State Department of Labor, with a vendor-claimed 3x speed.",
+          "de": "Seit dem 28. August 2024 reinigt Ozmo von Skyline Robotics, ein KUKA-Arm auf der Fassadengondel, mit Palladium Window Solutions die Fenster dieses 45-stöckigen Turms der Durst Organization; vom Arbeitsministerium des Staates New York zugelassen, laut Hersteller 3-mal schneller.",
+          "src": "https://www.therobotreport.com/skyline-robotics-deploys-ozmo-window-cleaning-robot-new-york-city/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "industrial-exoskeletons": {
+      "name": {
+        "en": "Industrial exoskeletons",
+        "de": "Industrie-Exoskelette"
+      },
+      "places": [
+        {
+          "n": "Nuremberg Airport, Nuremberg",
+          "c": "DEU",
+          "la": 49.499,
+          "lo": 11.078,
+          "en": "Nuremberg Airport has introduced German Bionic's powered exoskeletons for its ground-handling teams, used in ongoing operations such as moving suitcases of up to 32 kg from chutes onto trolleys.",
+          "de": "Der Flughafen Nürnberg setzt aktive Exoskelette von German Bionic bei seinen Bodenverkehrsdiensten ein, im laufenden Betrieb etwa beim Umsetzen von bis zu 32 kg schweren Koffern von Rutschen auf Gepäckwagen.",
+          "src": "https://germanbionic.com/news/human-centric-robotics-takes-off-supporting-the-people-who-keep-airports-moving",
+          "yr": "2026"
+        },
+        {
+          "n": "Maastricht Aachen Airport, Beek",
+          "c": "NLD",
+          "la": 50.912,
+          "lo": 5.77,
+          "en": "German Bionic's AI-controlled EXIA exosuit is used in daily cargo handling; per the vendor the airport is the first in the Netherlands to put it into operational cargo workflows.",
+          "de": "Das KI-gesteuerte Exoskelett EXIA von German Bionic wird im täglichen Frachtumschlag genutzt; laut Hersteller ist der Flughafen der erste in den Niederlanden, der es im operativen Frachtbetrieb einsetzt.",
+          "src": "https://germanbionic.com/news/human-centric-robotics-takes-off-supporting-the-people-who-keep-airports-moving",
+          "yr": "2026"
+        },
+        {
+          "n": "Weingut Graf von Bentzel-Sturmfeder, Schozach (Ilsfeld)",
+          "c": "DEU",
+          "la": 49.063,
+          "lo": 9.226,
+          "en": "Winery staff use the EXIA exoskeleton for lifting barrels and wine crates in the cellar and carrying tools and materials in the vineyards (reported July 2026).",
+          "de": "Das Personal des Weinguts nutzt das Exoskelett EXIA beim Heben von Fässern und Weinkisten im Keller und beim Tragen von Werkzeug und Material im Weinberg (Bericht Juli 2026).",
+          "src": "https://germanbionic.com/news/where-tradition-meets-physical-ai-how-ai-powered-exoskeletons-are-supporting-modern-winemaking",
+          "yr": "2026"
+        }
+      ]
+    },
+    "robotic-lawn-mowers": {
+      "name": {
+        "en": "Robotic lawn mowers",
+        "de": "Mähroboter"
+      },
+      "places": [
+        {
+          "n": "Carus Green Golf Club, Kendal",
+          "c": "GBR",
+          "la": 54.312,
+          "lo": -2.738,
+          "en": "After a demonstration in August 2023 the 18-hole course automated its mowing within about nine months, with a fleet of ten Husqvarna robots (5 CEORA, 4 Automower 550 EPOS, 1 Automower 430X NERA) cutting fairways overnight.",
+          "de": "Nach einer Vorführung im August 2023 automatisierte der 18-Loch-Platz das Mähen binnen etwa neun Monaten mit einer Flotte aus zehn Husqvarna-Robotern (5 CEORA, 4 Automower 550 EPOS, 1 Automower 430X NERA), die die Fairways nachts schneiden.",
+          "src": "https://greenkeepingeu.com/carus-green-gc-becomes-fully-automated-with-fleet-of-husqvarna-mowers/",
+          "yr": "2024"
+        },
+        {
+          "n": "The Belfry, Brabazon Course, Wishaw",
+          "c": "GBR",
+          "la": 52.561,
+          "lo": -1.737,
+          "en": "Seven Husqvarna CEORA robots have been maintaining the Brabazon fairways ahead of the 2026 British Masters; during tournament week (26-30 Aug 2026) a fleet of 15 cut the fairways overnight.",
+          "de": "Sieben Husqvarna-CEORA-Roboter pflegen die Fairways des Brabazon-Kurses im Vorfeld der British Masters 2026; in der Turnierwoche (26.-30.8.2026) mähen 15 Geräte die Fairways nachts.",
+          "src": "https://greenkeepingeu.com/husqvarna-robotic-mowers-take-on-the-brabazon-ahead-of-2026-british-masters/",
+          "yr": "2026"
+        },
+        {
+          "n": "Woodford Golf Club, Woodford, Queensland",
+          "c": "AUS",
+          "la": -26.953,
+          "lo": 152.778,
+          "en": "After a trial, the 18-hole club operates two Husqvarna CEORA 546 robots overnight, scheduled via Husqvarna's Fleet Services app; the vendor projects 50% lower operating costs over five years.",
+          "de": "Nach einem Test betreibt der 18-Loch-Club zwei Husqvarna-CEORA-546-Roboter nachts, gesteuert über die Fleet-Services-App von Husqvarna; der Hersteller rechnet mit 50 % niedrigeren Betriebskosten über fünf Jahre.",
+          "src": "https://outdoordesign.com.au/news-info/woodford-golf-club-pioneers-the-future-of-turf-care/10473",
+          "yr": "2024"
+        },
+        {
+          "n": "Ellsworth Air Force Base, South Dakota",
+          "c": "USA",
+          "la": 44.145,
+          "lo": -103.104,
+          "en": "Renu Robotics autonomous mowers maintain grounds in parts of the base, introduced to cope with large grass areas and staffing shortages (reported July 2024).",
+          "de": "Autonome Mäher von Renu Robotics pflegen Grünflächen in Teilen des Stützpunkts, eingeführt wegen großer Rasenflächen und Personalmangels (Bericht Juli 2024).",
+          "src": "https://renurobotics.com/ellsworth-embraces-innovation-through-use-of-robotic-mowers/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "surgical-robots-assisted": {
+      "name": {
+        "en": "Surgical robots (assisted)",
+        "de": "OP-Roboter (assistiert)"
+      },
+      "places": [
+        {
+          "n": "Cleveland Clinic, Cleveland (Ohio)",
+          "c": "USA",
+          "la": 41.503,
+          "lo": -81.621,
+          "en": "Site of the first US operation with Medtronic's Hugo system after FDA clearance: a robot-assisted prostatectomy announced in February 2026. Duke University Hospital and Atrium Health Wake Forest Baptist High Point were among the first other US installations.",
+          "de": "Hier fand nach der FDA-Freigabe die erste US-Operation mit Medtronics Hugo-System statt: eine roboterassistierte Prostatektomie, gemeldet im Februar 2026. Duke University Hospital und Atrium Health Wake Forest Baptist High Point gehörten zu den ersten weiteren US-Installationen.",
+          "src": "https://news.medtronic.com/2026-02-17-Medtronic-announces-first-surgery-with-Hugo-TM-robotic-assisted-surgery-system-in-the-U-S-performed-at-Cleveland-Clinic",
+          "yr": "2026"
+        },
+        {
+          "n": "Fox Chase Cancer Center, Philadelphia",
+          "c": "USA",
+          "la": 40.074,
+          "lo": -75.09,
+          "en": "The cancer centre reached 10,000 operations with the da Vinci system in June 2025, across urologic, gynaecologic, colorectal, thoracic, upper-GI and head-and-neck cancers.",
+          "de": "Das Krebszentrum erreichte im Juni 2025 10.000 Operationen mit dem da-Vinci-System, in Urologie, Gynäkologie, Kolorektal-, Thorax-, oberer GI- sowie Kopf-Hals-Onkologie.",
+          "src": "https://www.foxchase.org/news/fox-chase-cancer-center-reaches-10000-surgeries-using-da-vinci-robotic-surgical-system",
+          "yr": "2025"
+        },
+        {
+          "n": "Guy's and St Thomas' NHS Foundation Trust, London",
+          "c": "GBR",
+          "la": 51.503,
+          "lo": -0.087,
+          "en": "The UK's largest robotic surgery programme, running since 2004, passed 10,000 cases in September 2023 with seven robots, five of them da Vinci; almost all prostate, kidney and lung cancer surgery there is now robotic.",
+          "de": "Das größte Roboterchirurgie-Programm Großbritanniens, seit 2004 in Betrieb, überschritt im September 2023 10.000 Fälle mit sieben Robotern, davon fünf da Vinci; fast alle Prostata-, Nieren- und Lungenkrebs-OPs laufen dort robotisch.",
+          "src": "https://guysandstthomas.nhs.uk/news/robo-docs-guys-and-st-thomas-complete-10000-cases",
+          "yr": "2023"
+        },
+        {
+          "n": "Ruijin Hospital, Shanghai",
+          "c": "CHN",
+          "la": 31.211,
+          "lo": 121.468,
+          "en": "In April 2025 surgeons at Ruijin's Remote Surgery Intelligence Center used MicroPort's Toumai robot to operate simultaneously on five patients in hospitals in Fujian, Yunnan, Jiangxi, Hainan and Shanghai over 5G.",
+          "de": "Im April 2025 operierten Chirurgen im Remote Surgery Intelligence Center des Ruijin-Krankenhauses mit dem Toumai-Roboter von MicroPort gleichzeitig fünf Patienten in Kliniken in Fujian, Yunnan, Jiangxi, Hainan und Shanghai über 5G.",
+          "src": "https://microport.com/news/toumai-surgical-robot-enables-five-center-simultaneous-telesurgery-across-china",
+          "yr": "2025"
+        },
+        {
+          "n": "Continental Hospitals, Hyderabad",
+          "c": "IND",
+          "la": 17.416,
+          "lo": 78.339,
+          "en": "By August 2024 the hospital had performed 100 operations with the Indian-built SSI Mantra robot in general, gynaecological, urological and oncological surgery.",
+          "de": "Bis August 2024 führte die Klinik 100 Operationen mit dem in Indien gebauten SSI-Mantra-Roboter durch, in Allgemein-, gynäkologischer, urologischer und onkologischer Chirurgie.",
+          "src": "https://biovoicenews.com/continental-hospitals-completes-100-robotic-surgeries-using-indias-indigenous-ssi-mantra-system/",
+          "yr": "2024"
+        },
+        {
+          "n": "Mahkota Medical Centre, Melaka",
+          "c": "MYS",
+          "la": 2.187,
+          "lo": 102.252,
+          "en": "Malaysia's first hinotori system (Kawasaki/Sysmex) was launched here in September 2025 for urology, gynaecology, colorectal and general surgery; the system was in use at 87 hospitals in Japan and at Singapore General Hospital.",
+          "de": "Hier startete im September 2025 Malaysias erstes hinotori-System (Kawasaki/Sysmex) für Urologie, Gynäkologie, Kolorektal- und Allgemeinchirurgie; das System lief zu diesem Zeitpunkt an 87 Kliniken in Japan und am Singapore General Hospital.",
+          "src": "https://www.mahkotamedical.com/about-us/media-coverage/mahkota-medical-centre-launch-malaysia-s-first-japanese-robotic-assisted-systems-to-enhance-tertiary-care-standards-for-patients",
+          "yr": "2025"
+        }
+      ]
+    },
+    "ai-drug-discovery": {
+      "name": {
+        "en": "AI drug discovery",
+        "de": "KI-Wirkstoffentwicklung"
+      },
+      "places": [
+        {
+          "n": "Recursion BioHive-2, Salt Lake City (Utah)",
+          "c": "USA",
+          "la": 40.767,
+          "lo": -111.904,
+          "en": "Recursion's NVIDIA DGX H100 supercomputer BioHive-2, ranked No. 35 on the TOP500 list in May 2024, trains the company's biology and chemistry models at its Salt Lake City headquarters.",
+          "de": "Recursions NVIDIA-DGX-H100-Supercomputer BioHive-2, im Mai 2024 auf Platz 35 der TOP500-Liste, trainiert am Firmensitz in Salt Lake City die Biologie- und Chemiemodelle des Unternehmens.",
+          "src": "https://recursion.com/news/drug-discovery-stat-nvidia-recursion-speed-pharma-r-d-with-ai-supercomputer",
+          "yr": "2024"
+        },
+        {
+          "n": "LillyPod, Eli Lilly campus, Indianapolis",
+          "c": "USA",
+          "la": 39.757,
+          "lo": -86.15,
+          "en": "Lilly's DGX B300 SuperPOD with 1,016 Blackwell Ultra GPUs went live in February 2026 to train protein diffusion, small-molecule and genomics foundation models.",
+          "de": "Lillys DGX-B300-SuperPOD mit 1.016 Blackwell-Ultra-GPUs ging im Februar 2026 in Betrieb, um Protein-Diffusions-, Kleinmolekül- und Genomik-Foundation-Modelle zu trainieren.",
+          "src": "https://blogs.nvidia.com/blog/lilly-ai-factory-live/",
+          "yr": "2026"
+        },
+        {
+          "n": "Peking Union Medical College Hospital, Beijing",
+          "c": "CHN",
+          "la": 39.912,
+          "lo": 116.416,
+          "en": "Lead site of GENESIS-IPF-3, the Phase III trial of Insilico's AI-designed drug Rentosertib in pulmonary fibrosis; the first patient was dosed here in September 2026 (320 patients planned at 47 centres in China).",
+          "de": "Leitzentrum von GENESIS-IPF-3, der Phase-III-Studie mit Insilicos KI-entworfenem Wirkstoff Rentosertib bei Lungenfibrose; hier wurde im September 2026 der erste Patient behandelt (geplant 320 Patienten an 47 Zentren in China).",
+          "src": "https://insilico.com/news/isn1009261-insilico-medicine-doses-first-patient-genesis-ipf-3",
+          "yr": "2026"
+        },
+        {
+          "n": "Shanghai Pulmonary Hospital, Shanghai",
+          "c": "CHN",
+          "la": 31.297,
+          "lo": 121.509,
+          "en": "Co-lead site of the Rentosertib Phase III trial; it enrolled its first patient on the same day as Beijing in September 2026.",
+          "de": "Ko-Leitzentrum der Rentosertib-Phase-III-Studie; es nahm im September 2026 am selben Tag wie Peking seinen ersten Patienten auf.",
+          "src": "https://insilico.com/news/isn1009261-insilico-medicine-doses-first-patient-genesis-ipf-3",
+          "yr": "2026"
+        }
+      ]
+    },
+    "personalised-cancer-vaccines-neoantigen": {
+      "name": {
+        "en": "Personalised cancer vaccines (neoantigen)",
+        "de": "Personalisierte Krebsvakzine (Neoantigen)"
+      },
+      "places": [
+        {
+          "n": "Moderna manufacturing site, Marlborough (Massachusetts)",
+          "c": "USA",
+          "la": 42.346,
+          "lo": -71.552,
+          "en": "Moderna's Marlborough plant was purpose-built for the individualised neoantigen therapy intismeran and began clinical batch supply in September 2025.",
+          "de": "Modernas Werk in Marlborough wurde eigens für die individualisierte Neoantigen-Therapie Intismeran gebaut und liefert seit September 2025 klinische Chargen.",
+          "src": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000033/mrna-20251231.htm",
+          "yr": "2026"
+        },
+        {
+          "n": "Queen Elizabeth Hospital (University Hospitals Birmingham), Birmingham",
+          "c": "GBR",
+          "la": 52.452,
+          "lo": -1.942,
+          "en": "In 2024 the first patient of NHS England's Cancer Vaccine Launch Pad received a personalised mRNA bowel-cancer vaccine from BioNTech here; 30 hospitals had signed up, with 10,000 patients targeted by 2030.",
+          "de": "Hier erhielt 2024 der erste Patient der Cancer Vaccine Launch Pad von NHS England einen personalisierten mRNA-Darmkrebsimpfstoff von BioNTech; 30 Kliniken hatten sich angeschlossen, Ziel sind 10.000 Patienten bis 2030.",
+          "src": "https://www.southampton.ac.uk/ctu/news/2024/06/03-first-patient-treated-on-nhs-cancer-vaccine-programme.page",
+          "yr": "2024"
+        },
+        {
+          "n": "NCT/UCC Dresden, Dresden",
+          "c": "DEU",
+          "la": 51.056,
+          "lo": 13.781,
+          "en": "Since 2025 the only site in Saxony in the Phase 2 IMCODE003 trial, which tests BioNTech/Genentech's personalised mRNA vaccine autogene cevumeran after pancreatic-cancer surgery.",
+          "de": "Seit 2025 einziger sächsischer Standort der Phase-2-Studie IMCODE003, die den personalisierten mRNA-Impfstoff Autogene Cevumeran von BioNTech/Genentech nach Bauchspeicheldrüsenkrebs-OP testet.",
+          "src": "https://www.nct-dresden.de/en/about-nctucc-dresden/newsroom/news/only-site-in-saxony-nct-ucc-dresden-offers-personalized-mrna-vaccine-for-pancreatic-cancer",
+          "yr": "2025"
+        },
+        {
+          "n": "Memorial Sloan Kettering Cancer Center, New York",
+          "c": "USA",
+          "la": 40.764,
+          "lo": -73.956,
+          "en": "Single-centre Phase 1 of autogene cevumeran in resected pancreatic cancer (16 patients); 3-year follow-up in 2024 showed lasting T-cell responses in 8 of them.",
+          "de": "Monozentrische Phase 1 mit Autogene Cevumeran beim operierten Pankreaskarzinom (16 Patienten); die 3-Jahres-Nachbeobachtung 2024 zeigte bei 8 davon anhaltende T-Zell-Antworten.",
+          "src": "https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2024/04/three-year-phase-1-follow-data-mrna-based-individualized.html",
+          "yr": "2024"
+        }
+      ]
+    },
+    "diagnostic-ai-radiology": {
+      "name": {
+        "en": "Diagnostic AI (radiology)",
+        "de": "Diagnostik-KI (Radiologie)"
+      },
+      "places": [
+        {
+          "n": "Skåne University Hospital, Malmö",
+          "c": "SWE",
+          "la": 55.589,
+          "lo": 12.99,
+          "en": "Home of the MASAI randomised trial: in 105,934 women screened 2021-2022, Transpara-supported reading found 29% more cancers and cut screen-reading workload by 44% without more false positives (Lancet Digital Health 2025).",
+          "de": "Standort der randomisierten MASAI-Studie: Bei 105.934 gescreenten Frauen 2021-2022 fand die Transpara-gestützte Befundung 29 % mehr Krebsfälle und senkte den Leseaufwand um 44 %, ohne mehr Fehlalarme (Lancet Digital Health 2025).",
+          "src": "https://doi.org/10.1016/S2589-7500(24)00267-X",
+          "yr": "2025"
+        },
+        {
+          "n": "Capio S:t Göran Hospital, Stockholm",
+          "c": "SWE",
+          "la": 59.334,
+          "lo": 18.025,
+          "en": "In the prospective ScreenTrustCAD study (55,581 women, 2021-2022) one radiologist plus Lunit's AI detected 4% more cancers than two radiologists; the hospital then moved to controlled routine use.",
+          "de": "In der prospektiven ScreenTrustCAD-Studie (55.581 Frauen, 2021-2022) fand eine Radiologin plus Lunit-KI 4 % mehr Krebsfälle als zwei Radiologen; die Klinik ging danach in einen kontrollierten Routineeinsatz.",
+          "src": "https://doi.org/10.1016/S2589-7500(23)00153-X",
+          "yr": "2023"
+        },
+        {
+          "n": "Northwestern Memorial Hospital, Chicago",
+          "c": "USA",
+          "la": 41.895,
+          "lo": -87.621,
+          "en": "Since November 2023 radiologists at Northwestern Medicine have used an in-house generative model that drafts radiograph reports; across 23,960 studies it made reporting 15.5% faster with no loss of accuracy.",
+          "de": "Seit November 2023 nutzen Radiologen bei Northwestern Medicine ein selbst entwickeltes generatives Modell, das Röntgenbefunde vorformuliert; über 23.960 Untersuchungen beschleunigte es die Befundung um 15,5 % ohne Qualitätsverlust.",
+          "src": "https://doi.org/10.1001/jamanetworkopen.2025.13921",
+          "yr": "2025"
+        },
+        {
+          "n": "Royal Derby Hospital (University Hospitals of Derby and Burton), Derby",
+          "c": "GBR",
+          "la": 52.911,
+          "lo": -1.514,
+          "en": "One of 14 NHS screening units that ran a commercial AI live as a silent third reader; across 9,547 cases it missed 8 cancers found by humans and found none extra, so the unit judged it not yet safe for practice (2025).",
+          "de": "Eine von 14 NHS-Screening-Einheiten, die eine kommerzielle KI live als stillen Drittbefunder laufen ließen; bei 9.547 Fällen übersah sie 8 von Menschen gefundene Krebsfälle und fand keinen zusätzlichen, weshalb die Einheit sie noch nicht für praxistauglich hielt (2025).",
+          "src": "https://doi.org/10.1016/j.crad.2025.106872",
+          "yr": "2025"
+        }
+      ]
+    },
+    "stroke-triage-ai": {
+      "name": {
+        "en": "Stroke triage AI",
+        "de": "Schlaganfall-Triage-KI"
+      },
+      "places": [
+        {
+          "n": "Royal Berkshire Hospital, Reading",
+          "c": "GBR",
+          "la": 51.45,
+          "lo": -0.958,
+          "en": "Brainomix e-Stroke has run in this acute stroke centre's pathway since March 2020; door-in-door-out time for thrombectomy transfers fell from 141 to 79 minutes in the year after deployment.",
+          "de": "Brainomix e-Stroke läuft seit März 2020 im Schlaganfallpfad dieser Klinik; die Door-in-door-out-Zeit für Thrombektomie-Verlegungen sank im Jahr danach von 141 auf 79 Minuten.",
+          "src": "https://doi.org/10.3389/fneur.2023.1329643",
+          "yr": "2024"
+        },
+        {
+          "n": "Sahlgrenska University Hospital, Gothenburg",
+          "c": "SWE",
+          "la": 57.683,
+          "lo": 11.961,
+          "en": "Region Västra Götaland introduced Brainomix 360 Stroke across its stroke network; among 970 thrombectomy patients treated at Sahlgrenska 2021-2024, median CT-to-puncture time fell from 47 to 35 minutes.",
+          "de": "Die Region Västra Götaland führte Brainomix 360 Stroke im gesamten Schlaganfallnetz ein; bei 970 an Sahlgrenska thrombektomierten Patienten 2021-2024 sank die mediane Zeit vom CT bis zur Punktion von 47 auf 35 Minuten.",
+          "src": "https://doi.org/10.1093/esj/aakag098",
+          "yr": "2026"
+        },
+        {
+          "n": "UC San Diego Health, Jacobs Medical Center, La Jolla",
+          "c": "USA",
+          "la": 32.878,
+          "lo": -117.224,
+          "en": "UCSD's telestroke network uses Viz.ai for suspected vessel occlusions and in 2025-2026 added Life Flight helicopter crews to the Viz case threads to speed transfers.",
+          "de": "Das Telestroke-Netz der UCSD nutzt Viz.ai bei Verdacht auf Gefäßverschluss und nahm 2025-2026 die Hubschrauber-Teams von Life Flight in die Viz-Fallkommunikation auf, um Verlegungen zu beschleunigen.",
+          "src": "https://doi.org/10.1016/j.jstrokecerebrovasdis.2026.108581",
+          "yr": "2026"
+        },
+        {
+          "n": "Gil Medical Center (Gachon University), Incheon",
+          "c": "KOR",
+          "la": 37.452,
+          "lo": 126.704,
+          "en": "This comprehensive stroke centre introduced Heuron ELVO, which flags large-vessel occlusion on non-contrast CT; door-to-thrombectomy time dropped by about 30 minutes.",
+          "de": "Dieses überregionale Schlaganfallzentrum führte Heuron ELVO ein, das Großgefäßverschlüsse auf dem nativen CT markiert; die Zeit bis zur Thrombektomie sank um rund 30 Minuten.",
+          "src": "https://doi.org/10.3390/jcm14041281",
+          "yr": "2025"
+        },
+        {
+          "n": "Guglielmo da Saliceto Hospital, Piacenza",
+          "c": "ITA",
+          "la": 45.049,
+          "lo": 9.705,
+          "en": "Brainomix e-CTA has been used in routine stroke imaging since at least May 2023; across 531 CT angiograms it detected occlusions with 84% sensitivity and 95% specificity, weaker for distal M1.",
+          "de": "Brainomix e-CTA ist hier spätestens seit Mai 2023 in der Routine-Schlaganfallbildgebung im Einsatz; bei 531 CT-Angiographien erkannte es Verschlüsse mit 84 % Sensitivität und 95 % Spezifität, schwächer bei distalen M1-Verschlüssen.",
+          "src": "https://doi.org/10.1159/000553264",
+          "yr": "2026"
+        }
+      ]
+    },
+    "brain-mri-lesion-segmentation-volumetry": {
+      "name": {
+        "en": "Brain MRI lesion segmentation & volumetry",
+        "de": "Läsionssegmentierung & Volumetrie im Hirn-MRT"
+      },
+      "places": [
+        {
+          "n": "Rigshospitalet, Copenhagen",
+          "c": "DNK",
+          "la": 55.696,
+          "lo": 12.566,
+          "en": "Prospective real-world test of mdbrain on routine MS follow-up MRI (112 patients, Sept-Dec 2024, 8 scanner models): radiologists found it helpful in 87% of cases, but positive predictive value was low.",
+          "de": "Prospektiver Praxistest von mdbrain an Routine-MS-Verlaufs-MRTs (112 Patienten, Sept.-Dez. 2024, 8 Scannermodelle): Die Radiologen fanden es in 87 % der Fälle hilfreich, der positive Vorhersagewert war aber niedrig.",
+          "src": "https://doi.org/10.1007/s00234-025-03834-4",
+          "yr": "2025"
+        },
+        {
+          "n": "University Hospital Schleswig-Holstein, Campus Kiel",
+          "c": "DEU",
+          "la": 54.329,
+          "lo": 10.141,
+          "en": "Neuroradiologists here tested mdbrain for MS lesion counting; reporting time for follow-up scans fell from about 196 to 121 seconds without loss of inter-rater agreement.",
+          "de": "Neuroradiologen testeten hier mdbrain für die Zählung von MS-Läsionen; die Befundzeit für Verlaufsscans sank von etwa 196 auf 121 Sekunden ohne Einbußen bei der Übereinstimmung.",
+          "src": "https://doi.org/10.1016/j.ejrad.2024.111638",
+          "yr": "2024"
+        },
+        {
+          "n": "Tel Aviv Sourasky Medical Center, Tel Aviv",
+          "c": "ISR",
+          "la": 32.08,
+          "lo": 34.789,
+          "en": "For 82 Alzheimer's patients starting lecanemab from November 2023 to June 2025, the hospital used FDA-cleared icobrain for brain volumes and microbleed counts; microbleed burden best predicted ARIA side effects.",
+          "de": "Bei 82 Alzheimer-Patienten, die zwischen November 2023 und Juni 2025 Lecanemab begannen, nutzte die Klinik das FDA-freigegebene icobrain für Hirnvolumina und Mikroblutungen; die Mikroblutungslast sagte ARIA-Nebenwirkungen am besten voraus.",
+          "src": "https://doi.org/10.1186/s13195-026-02127-z",
+          "yr": "2026"
+        },
+        {
+          "n": "German Cancer Research Center (DKFZ), Heidelberg",
+          "c": "DEU",
+          "la": 49.416,
+          "lo": 8.671,
+          "en": "nnU-Net, the self-configuring segmentation framework used as baseline in most lesion-segmentation benchmarks, is developed and maintained here by DKFZ's Division of Medical Image Computing and Helmholtz Imaging.",
+          "de": "nnU-Net, das selbstkonfigurierende Segmentierungs-Framework und Basislinie der meisten Läsions-Benchmarks, wird hier von der Abteilung Medical Image Computing des DKFZ und Helmholtz Imaging entwickelt und gepflegt.",
+          "src": "https://github.com/MIC-DKFZ/nnUNet",
+          "yr": "2026"
+        }
+      ]
+    },
+    "brain-age-estimation": {
+      "name": {
+        "en": "Brain age estimation",
+        "de": "Hirnalter-Schätzung"
+      },
+      "places": [
+        {
+          "n": "Oslo University Hospital (Ullevål), Oslo",
+          "c": "NOR",
+          "la": 59.937,
+          "lo": 10.735,
+          "en": "MS cohort site for a 2025 study that ran a deep-learning brain-age model on 4,584 MRIs of 1,516 patients from Oslo and Karolinska; a higher brain age was linked to greater disability.",
+          "de": "MS-Kohortenstandort einer Studie von 2025, die ein Deep-Learning-Hirnaltermodell auf 4.584 MRTs von 1.516 Patienten aus Oslo und vom Karolinska anwandte; ein höheres Hirnalter ging mit stärkerer Behinderung einher.",
+          "src": "https://doi.org/10.1093/braincomms/fcaf152",
+          "yr": "2025"
+        },
+        {
+          "n": "Karolinska Institutet, Stockholm (Solna)",
+          "c": "SWE",
+          "la": 59.349,
+          "lo": 18.025,
+          "en": "Second data source of the same 2025 MS brain-age study; the deep-learning model tracked chronological age more closely (r = 0.90) than classic machine learning and was less scanner-dependent.",
+          "de": "Zweite Datenquelle derselben MS-Hirnalter-Studie von 2025; das Deep-Learning-Modell folgte dem Lebensalter enger (r = 0,90) als klassisches maschinelles Lernen und war weniger scannerabhängig.",
+          "src": "https://doi.org/10.1093/braincomms/fcaf152",
+          "yr": "2025"
+        },
+        {
+          "n": "Shenzhen Hospital (Futian) of Guangzhou University of Chinese Medicine, Shenzhen",
+          "c": "CHN",
+          "la": 22.559,
+          "lo": 114.05,
+          "en": "A 2026 study trained a multimodal MRI brain-age model partly on this hospital's healthy subjects and applied it to 258 insomnia patients from the same hospital, who showed a larger brain-age gap.",
+          "de": "Eine Studie von 2026 trainierte ein multimodales MRT-Hirnaltermodell teils an Gesunden dieser Klinik und wandte es auf 258 Insomnie-Patienten derselben Klinik an, die eine größere Hirnalterslücke zeigten.",
+          "src": "https://doi.org/10.1186/s12938-026-01512-x",
+          "yr": "2026"
+        }
+      ]
+    },
+    "vr-pain-therapy": {
+      "name": {
+        "en": "VR pain therapy",
+        "de": "VR-Schmerztherapie"
+      },
+      "places": [
+        {
+          "n": "VA Caribbean Healthcare System, San Juan",
+          "c": "PRI",
+          "la": 18.405,
+          "lo": -66.055,
+          "en": "RelieVRx has been adopted into the VA's Interdisciplinary Pain Rehabilitation Program in San Juan, with staff training, supervised trial use and standard documentation; a 2026 case series reports on Veterans completing all 56 sessions.",
+          "de": "RelieVRx wurde in das interdisziplinäre Schmerz-Rehabilitationsprogramm der VA in San Juan aufgenommen, mit Schulung, betreuter Erprobung und Standarddokumentation; eine Fallserie von 2026 beschreibt Veteranen, die alle 56 Sitzungen absolvierten.",
+          "src": "https://doi.org/10.3389/fpsyt.2026.1864629",
+          "yr": "2026"
+        },
+        {
+          "n": "Cedars-Sinai Medical Center, Los Angeles",
+          "c": "USA",
+          "la": 34.075,
+          "lo": -118.38,
+          "en": "Its Center for Virtual Medicine ran a 385-patient home VR trial for chronic low back pain; published in 2026, it found no advantage of skills-based or distraction VR over sham VR for pain interference.",
+          "de": "Das Center for Virtual Medicine führte eine Heim-VR-Studie mit 385 Patienten mit chronischen Rückenschmerzen durch; 2026 veröffentlicht, fand sie keinen Vorteil von Skills- oder Ablenkungs-VR gegenüber Schein-VR bei der Schmerzbeeinträchtigung.",
+          "src": "https://doi.org/10.1038/s41746-026-02437-4",
+          "yr": "2026"
+        },
+        {
+          "n": "Massachusetts General Hospital, Boston",
+          "c": "USA",
+          "la": 42.363,
+          "lo": -71.069,
+          "en": "Patients from Mass General Brigham Level 1 trauma clinics used RelieVRx at home for 8 weeks after orthopaedic injuries in pilot studies published in 2024 and 2026, with high acceptability and pain improvements.",
+          "de": "Patienten aus Level-1-Traumaambulanzen von Mass General Brigham nutzten RelieVRx nach orthopädischen Verletzungen 8 Wochen zu Hause, in Pilotstudien von 2024 und 2026, mit hoher Akzeptanz und Schmerzverbesserungen.",
+          "src": "https://doi.org/10.1097/AJP.0000000000001231",
+          "yr": "2024"
+        }
+      ]
+    },
+    "ar-surgical-navigation": {
+      "name": {
+        "en": "AR surgical navigation",
+        "de": "AR-Navigation in der Chirurgie"
+      },
+      "places": [
+        {
+          "n": "Johns Hopkins Hospital, Baltimore",
+          "c": "USA",
+          "la": 39.296,
+          "lo": -76.592,
+          "en": "Spine surgeons here have placed pedicle screws with headset AR navigation; a 2025 follow-up of 59 patients (median 25 months) showed lasting gains in disability and quality-of-life scores.",
+          "de": "Wirbelsäulenchirurgen setzen hier Pedikelschrauben mit Headset-AR-Navigation; eine Nachbeobachtung von 59 Patienten (median 25 Monate) zeigte 2025 anhaltende Verbesserungen bei Behinderung und Lebensqualität.",
+          "src": "https://doi.org/10.1007/s00701-025-06729-8",
+          "yr": "2025"
+        },
+        {
+          "n": "Hospital for Special Surgery, New York",
+          "c": "USA",
+          "la": 40.765,
+          "lo": -73.953,
+          "en": "In a 2025 comparison of 1,109 lumbar pedicle screws, the 548 placed with AR navigation were clinically acceptable in 99.3% of cases versus 96.4% freehand.",
+          "de": "In einem Vergleich von 1.109 lumbalen Pedikelschrauben (2025) lagen die 548 mit AR-Navigation gesetzten in 99,3 % klinisch akzeptabel, freihändig in 96,4 %.",
+          "src": "https://doi.org/10.1097/BRS.0000000000005594",
+          "yr": "2025"
+        },
+        {
+          "n": "Vanderbilt University Medical Center, Nashville",
+          "c": "USA",
+          "la": 36.142,
+          "lo": -86.8,
+          "en": "Between January 2023 and 2025 the neurosurgery department performed 138 spinal fusions with a wireless AR headset projecting navigation into the surgical field, including minimally invasive TLIF.",
+          "de": "Zwischen Januar 2023 und 2025 führte die Neurochirurgie 138 Wirbelsäulenfusionen mit einem kabellosen AR-Headset durch, das die Navigation ins OP-Feld projiziert, darunter minimalinvasive TLIF.",
+          "src": "https://doi.org/10.1007/s00586-026-09972-4",
+          "yr": "2026"
+        },
+        {
+          "n": "Beijing Tsinghua Changgung Hospital, Beijing",
+          "c": "CHN",
+          "la": 40.072,
+          "lo": 116.42,
+          "en": "From April 2024 to May 2025 neurosurgeons used head-mounted AR navigation for glioma resection in a 6-patient pilot, with about 2 mm registration error against the optical navigation system.",
+          "de": "Von April 2024 bis Mai 2025 nutzten Neurochirurgen in einer Pilotstudie mit 6 Patienten kopfgetragene AR-Navigation bei Gliom-Resektionen, mit rund 2 mm Registrierfehler gegenüber dem optischen Navigationssystem.",
+          "src": "https://doi.org/10.3389/fsurg.2026.1802289",
+          "yr": "2026"
+        }
+      ]
+    },
+    "dental-implant-robots": {
+      "name": {
+        "en": "Dental / implant robots",
+        "de": "Zahn- / Implantat-Roboter"
+      },
+      "places": [
+        {
+          "n": "Stomatology Hospital, Zhejiang University School of Medicine, Hangzhou",
+          "c": "CHN",
+          "la": 30.274,
+          "lo": 120.155,
+          "en": "Between March 2022 and May 2024 the hospital placed 138 implants in 85 patients with an autonomous dental implant robot and analysed what drives its placement error.",
+          "de": "Zwischen März 2022 und Mai 2024 setzte die Klinik bei 85 Patienten 138 Implantate mit einem autonomen Implantatroboter und analysierte, was dessen Abweichungen bestimmt.",
+          "src": "https://doi.org/10.1111/jopr.70076",
+          "yr": "2025"
+        },
+        {
+          "n": "College of Stomatology, Xi'an Jiaotong University, Xi'an",
+          "c": "CHN",
+          "la": 34.27,
+          "lo": 108.944,
+          "en": "A 2026 retrospective series covers 173 implants placed robot-assisted in 83 patients; accuracy was lower in the upper front jaw and in soft bone.",
+          "de": "Eine retrospektive Serie von 2026 umfasst 173 robotergestützt gesetzte Implantate bei 83 Patienten; die Genauigkeit war im Oberkiefer-Frontbereich und bei weichem Knochen geringer.",
+          "src": "https://doi.org/10.1155/ijod/3947015",
+          "yr": "2026"
+        },
+        {
+          "n": "PSM College of Dental Science and Research, Thrissur (Kerala)",
+          "c": "IND",
+          "la": 10.68,
+          "lo": 76.104,
+          "en": "A single-centre randomised study of 180 patients compared robotic guidance, optical navigation and freehand implant placement; the robot gave the smallest angular deviation (1.8 degrees vs 4.9 freehand) but took longer.",
+          "de": "Eine monozentrische randomisierte Studie mit 180 Patienten verglich Roboterführung, optische Navigation und Freihand-Implantation; der Roboter erreichte die geringste Winkelabweichung (1,8 Grad vs. 4,9 freihändig), brauchte aber länger.",
+          "src": "https://doi.org/10.26574/maedica.2026.21.2.393",
+          "yr": "2026"
+        },
+        {
+          "n": "NYU College of Dentistry, New York",
+          "c": "USA",
+          "la": 40.738,
+          "lo": -73.978,
+          "en": "Robot-assisted implant placement is used in the school's predoctoral clinic; a 2026 case report describes a full maxillary anterior rehabilitation carried out there.",
+          "de": "Robotergestützte Implantation wird in der studentischen Behandlungsklinik der Hochschule eingesetzt; ein Fallbericht von 2026 beschreibt eine dort durchgeführte Versorgung der Oberkieferfront.",
+          "src": "https://doi.org/10.1111/jopr.70146",
+          "yr": "2026"
+        }
+      ]
+    },
+    "ambient-clinical-documentation": {
+      "name": {
+        "en": "Ambient clinical documentation",
+        "de": "Ambient Clinical Documentation"
+      },
+      "places": [
+        {
+          "n": "Stanford Hospital Emergency Department, Palo Alto",
+          "c": "USA",
+          "la": 37.434,
+          "lo": -122.175,
+          "en": "From February 2025 to March 2026 the academic ED rolled out an ambient AI scribe to 100 attendings; across 10,344 encounters it cut on-shift documentation by about 73 seconds per patient.",
+          "de": "Von Februar 2025 bis März 2026 führte die universitäre Notaufnahme einen Ambient-KI-Scribe für 100 Fachärzte ein; über 10.344 Fälle sparte er rund 73 Sekunden Dokumentation pro Patient während der Schicht.",
+          "src": "https://doi.org/10.2196/92193",
+          "yr": "2026"
+        },
+        {
+          "n": "Inova Health System emergency departments, Falls Church (Virginia)",
+          "c": "USA",
+          "la": 38.857,
+          "lo": -77.227,
+          "en": "Abridge ambient AI was rolled out across Inova's 14 EDs from May 2024 to June 2025; it was used in 8.6% of 315,242 notes and halved copied-forward content, without reducing editing time.",
+          "de": "Abridge-Ambient-KI wurde von Mai 2024 bis Juni 2025 in den 14 Notaufnahmen von Inova eingeführt; sie kam bei 8,6 % von 315.242 Notizen zum Einsatz und halbierte kopierte Inhalte, ohne die Bearbeitungszeit zu senken.",
+          "src": "https://doi.org/10.1055/a-2939-3038",
+          "yr": "2026"
+        },
+        {
+          "n": "Singapore General Hospital, Singapore",
+          "c": "SGP",
+          "la": 1.279,
+          "lo": 103.835,
+          "en": "Since January 2026 nurse supervisors have used a nursing-led ambient AI workflow (NARRATE) to draft patient-safety incident reports, which came out more complete than conventional reports.",
+          "de": "Seit Januar 2026 nutzen Pflegeleitungen einen pflegegeführten Ambient-KI-Ablauf (NARRATE), um Berichte zu Patientensicherheitsereignissen zu entwerfen; diese waren vollständiger als herkömmliche Berichte.",
+          "src": "https://doi.org/10.2196/100775",
+          "yr": "2026"
+        }
+      ]
+    },
+    "federated-learning-across-hospitals": {
+      "name": {
+        "en": "Federated learning across hospitals",
+        "de": "Föderiertes Lernen über Kliniken"
+      },
+      "places": [
+        {
+          "n": "Heidelberg University Hospital, Heidelberg",
+          "c": "DEU",
+          "la": 49.418,
+          "lo": 8.667,
+          "en": "Led the largest federated cardiac CT analysis so far (8,104 scans) in a real-world setting across eight German hospitals of the DZHK network, published 2025.",
+          "de": "Leitete die bisher größte föderierte Herz-CT-Analyse (8.104 Scans) unter Realbedingungen an acht deutschen Kliniken des DZHK-Netzes, veröffentlicht 2025.",
+          "src": "https://doi.org/10.1038/s41746-025-01434-3",
+          "yr": "2025"
+        },
+        {
+          "n": "University Hospital Essen, Essen",
+          "c": "DEU",
+          "la": 51.435,
+          "lo": 6.988,
+          "en": "One of six university hospitals in the RACOON radiology network where federated models for lung-pathology segmentation were trained on local data with DKFZ-built infrastructure (2025).",
+          "de": "Eine von sechs Universitätskliniken im Radiologie-Netz RACOON, an denen föderierte Modelle zur Segmentierung von Lungenbefunden mit DKFZ-Infrastruktur auf lokalen Daten trainiert wurden (2025).",
+          "src": "https://doi.org/10.1093/jamia/ocae259",
+          "yr": "2025"
+        },
+        {
+          "n": "University Hospital Cologne, Cologne",
+          "c": "DEU",
+          "la": 50.925,
+          "lo": 6.918,
+          "en": "Participant in the RACOON federated radiology runs and in TheODen (2026), the first nationwide federated histopathology training across three German university hospitals without opening firewall ports.",
+          "de": "Teilnehmer an den föderierten RACOON-Radiologieläufen und an TheODen (2026), dem ersten bundesweiten föderierten Histopathologie-Training an drei deutschen Unikliniken, ohne Firewall-Ports zu öffnen.",
+          "src": "https://doi.org/10.1038/s41746-026-02958-y",
+          "yr": "2026"
+        },
+        {
+          "n": "Charité - Universitätsmedizin Berlin, Berlin",
+          "c": "DEU",
+          "la": 52.526,
+          "lo": 13.377,
+          "en": "Took part in both the RACOON radiology federation and the TheODen histopathology federation, training colorectal and breast cancer segmentation models on data that stayed in-house.",
+          "de": "Beteiligt an der RACOON-Radiologie-Föderation und der TheODen-Histopathologie-Föderation; trainierte Segmentierungsmodelle für Darm- und Brustkrebs auf Daten, die im Haus blieben.",
+          "src": "https://doi.org/10.1038/s41746-026-02958-y",
+          "yr": "2026"
+        },
+        {
+          "n": "University Hospital Leipzig, Leipzig",
+          "c": "DEU",
+          "la": 51.33,
+          "lo": 12.385,
+          "en": "Third clinical site of the 2026 TheODen federated histopathology study, which reached Dice scores of about 0.75 for colorectal cancer segmentation.",
+          "de": "Dritter klinischer Standort der TheODen-Studie zu föderierter Histopathologie (2026), die bei der Darmkrebs-Segmentierung Dice-Werte um 0,75 erreichte.",
+          "src": "https://doi.org/10.1038/s41746-026-02958-y",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-medical-image-segmentation": {
+      "name": {
+        "en": "Local medical image segmentation",
+        "de": "Lokale Segmentierung medizinischer Bilder"
+      },
+      "places": [
+        {
+          "n": "University Hospital Basel, Basel",
+          "c": "CHE",
+          "la": 47.562,
+          "lo": 7.583,
+          "en": "TotalSegmentator is developed and maintained by the hospital's radiology research group; the pip-installable tool segments 117 CT structures, and an MRI version was published in Radiology in 2025.",
+          "de": "TotalSegmentator wird von der Radiologie-Forschungsgruppe des Spitals entwickelt und gepflegt; das per pip installierbare Werkzeug segmentiert 117 CT-Strukturen, eine MRT-Version erschien 2025 in Radiology.",
+          "src": "https://doi.org/10.1148/radiol.241613",
+          "yr": "2025"
+        },
+        {
+          "n": "Brigham and Women's Hospital / Dana-Farber Cancer Institute, Boston",
+          "c": "USA",
+          "la": 42.336,
+          "lo": -71.107,
+          "en": "A TotalSegmentator-based check of palliative spine radiotherapy plans ran prospectively for 15 months, reviewing 520 cases and flagging documentation errors and anatomical variants by automated email.",
+          "de": "Eine TotalSegmentator-basierte Prüfung von Bestrahlungsplänen an der Wirbelsäule lief 15 Monate prospektiv, prüfte 520 Fälle und meldete Dokumentationsfehler und anatomische Varianten per automatischer E-Mail.",
+          "src": "https://doi.org/10.1016/S2589-7500(24)00243-7",
+          "yr": "2025"
+        },
+        {
+          "n": "University Hospital Frankfurt (Goethe University), Frankfurt am Main",
+          "c": "DEU",
+          "la": 50.094,
+          "lo": 8.661,
+          "en": "The radiology department ran TotalSegmentator over 25,161 of its own abdominal CTs to build age- and sex-specific reference curves for organ volume and density (2026).",
+          "de": "Die Radiologie ließ TotalSegmentator über 25.161 eigene Abdomen-CTs laufen, um alters- und geschlechtsspezifische Referenzkurven für Organvolumen und -dichte zu erstellen (2026).",
+          "src": "https://doi.org/10.1016/j.ejrad.2026.113247",
+          "yr": "2026"
+        },
+        {
+          "n": "Daejeon Eulji Medical Center, Daejeon",
+          "c": "KOR",
+          "la": 36.355,
+          "lo": 127.38,
+          "en": "The hospital used TotalSegmentator on low-dose CT from routine health-screening PET/CT to flag low bone density in 131 women without extra radiation (AUC about 0.86).",
+          "de": "Die Klinik nutzte TotalSegmentator auf Niedrigdosis-CTs aus Vorsorge-PET/CTs, um bei 131 Frauen ohne zusätzliche Strahlung niedrige Knochendichte zu erkennen (AUC etwa 0,86).",
+          "src": "https://doi.org/10.3390/tomography12060089",
+          "yr": "2026"
+        }
+      ]
+    },
+    "disaster-search-robotics": {
+      "name": {
+        "en": "Disaster / search robotics",
+        "de": "Katastrophen- / Suchrobotik"
+      },
+      "places": [
+        {
+          "n": "Fukushima Daiichi Nuclear Power Station, Okuma",
+          "c": "JPN",
+          "la": 37.421,
+          "lo": 141.033,
+          "en": "TEPCO has used Boston Dynamics' Spot quadruped in decommissioning since 2022; in August 2025 Spot and a PackBot were sent into a damaged reactor building to measure radiation ahead of full-scale fuel-debris retrieval.",
+          "de": "TEPCO setzt den Vierbeiner Spot von Boston Dynamics seit 2022 beim Rückbau ein; im August 2025 wurden Spot und ein PackBot in ein beschädigtes Reaktorgebäude geschickt, um vor der großtechnischen Bergung von Brennstofftrümmern die Strahlung zu messen.",
+          "src": "https://thepeninsulaqatar.com/article/20/08/2025/robots-deployed-for-fukushima-radioactive-debris-removal",
+          "yr": "2025"
+        },
+        {
+          "n": "Fukushima Robot Test Field, Minamisoma",
+          "c": "JPN",
+          "la": 37.651,
+          "lo": 141.004,
+          "en": "The test field in Minamisoma has a debris/landslide field, test plant and tunnel for disaster-response robots; the crawler robot MISORA2 of the Minamisoma Robot Industry Council is tested there, with software from the University of Aizu.",
+          "de": "Das Testfeld in Minamisoma bietet ein Trümmer-/Erdrutschfeld, eine Testanlage und einen Tunnel für Katastrophenroboter; dort wird der Kettenroboter MISORA2 des Minamisoma Robot Industry Council erprobt, mit Software der Universität Aizu.",
+          "src": "https://u-aizu.ac.jp/en/information/2025-6.html",
+          "yr": "2025"
+        },
+        {
+          "n": "Deutsches Rettungsrobotik-Zentrum (DRZ), Dortmund",
+          "c": "DEU",
+          "la": 51.494,
+          "lo": 7.494,
+          "en": "The German Rescue Robotics Center runs a Living Lab in Dortmund for testing rescue robots; in September 2025 the fire services of Dortmund and Werl agreed to build a joint Rescue Robotics Task Force with the DRZ.",
+          "de": "Das Deutsche Rettungsrobotik-Zentrum betreibt in Dortmund ein Living Lab zur Erprobung von Rettungsrobotern; im September 2025 vereinbarten die Feuerwehren Dortmund und Werl mit dem DRZ den Aufbau einer gemeinsamen Rescue Robotics Task Force.",
+          "src": "https://www.dortmund.de/newsroom/presse-mitteilungen/kooperation-vereinbart-roboter-sollen-die-feuerwehren-dortmund-und-werl-bei-einsaetzen-unterstuetzen.html",
+          "yr": "2025"
+        },
+        {
+          "n": "Asheville Police Department, Asheville (North Carolina)",
+          "c": "USA",
+          "la": 35.595,
+          "lo": -82.551,
+          "en": "After Hurricane Helene (2024) the Asheville Police Department operated 13 DJI drone docks across the city to assess damage and direct rescue teams; the vendor report gives no rescue statistics.",
+          "de": "Nach Hurrikan Helene (2024) betrieb die Polizei Asheville 13 DJI-Drohnenstationen im Stadtgebiet, um Schäden zu erfassen und Rettungsteams zu lenken; der Herstellerbericht nennt keine Rettungsstatistik.",
+          "src": "https://enterprise-insights.dji.com/user-stories/ashevilles-blueprint-how-drones-redefined-disaster-response-during-hurricane-helene",
+          "yr": "2025"
+        }
+      ]
+    },
+    "firefighting-robots": {
+      "name": {
+        "en": "Firefighting robots",
+        "de": "Feuerwehrroboter"
+      },
+      "places": [
+        {
+          "n": "Los Angeles Fire Department, Los Angeles",
+          "c": "USA",
+          "la": 34.052,
+          "lo": -118.244,
+          "en": "The LAFD has run a Thermite RS3 robotic firefighting vehicle (Howe & Howe) since October 2020; it was used in the January 2025 wildfires and at a large commercial building fire on 10 March 2025.",
+          "de": "Die Feuerwehr Los Angeles betreibt seit Oktober 2020 ein ferngesteuertes Löschfahrzeug Thermite RS3 (Howe & Howe); es kam bei den Bränden im Januar 2025 und am 10. März 2025 bei einem Großbrand in einem Geschäftsgebäude zum Einsatz.",
+          "src": "https://intersecglobal.ae.messefrankfurt.com/dubai/en/intersec-pulse/intersec-pulse-article-8.html",
+          "yr": "2025"
+        },
+        {
+          "n": "Kansas City Fire Department, Kansas City (Missouri)",
+          "c": "USA",
+          "la": 39.12,
+          "lo": -94.546,
+          "en": "In March 2025 the KCFD used its new remote-controlled tracked robot for the first time, at an industrial fire at Batliner Recycling (2501 Front Street); it delivers up to 2,500 gallons of water per minute. Local media called it the seventh such robot at a US fire department.",
+          "de": "Im März 2025 setzte die Feuerwehr Kansas City ihren neuen ferngesteuerten Kettenroboter erstmals ein, bei einem Industriebrand bei Batliner Recycling (2501 Front Street); er liefert bis zu 2.500 Gallonen Wasser pro Minute. Lokalmedien nannten ihn den siebten solchen Roboter einer US-Feuerwehr.",
+          "src": "https://www.kshb.com/news/local-news/kansas-city-missouri-firefighters-call-up-remote-controlled-robot-to-help-battle-blaze",
+          "yr": "2025"
+        },
+        {
+          "n": "Collins Fire Department, Collins (Mississippi)",
+          "c": "USA",
+          "la": 31.645,
+          "lo": -89.555,
+          "en": "In December 2024 the Collins Fire Department received a Thermite RS3 bought with a $260,000 state homeland-security grant, to cover the large petroleum storage and pipeline sites in its area.",
+          "de": "Im Dezember 2024 erhielt die Feuerwehr Collins einen Thermite RS3, finanziert mit 260.000 US-Dollar aus einem Heimatschutz-Zuschuss des Bundesstaats, für die großen Erdöl-Tanklager und Pipelineanlagen in ihrem Gebiet.",
+          "src": "https://www.fireapparatusmagazine.com/fire-technology-innovation/collins-ms-fd-receives-260k-grant-for-robot-to-help-fight-industrial-fires",
+          "yr": "2024"
+        },
+        {
+          "n": "Qingdao Fire and Rescue Detachment, Qingdao",
+          "c": "CHN",
+          "la": 36.067,
+          "lo": 120.383,
+          "en": "In February 2025 two quadruped robot dogs (about 70 kg, 3.6 hours runtime) entered service with the Qingdao fire brigade for reconnaissance, with gas sensors, laser scanning and thermal tracking.",
+          "de": "Im Februar 2025 wurden zwei vierbeinige Roboterhunde (etwa 70 kg, 3,6 Stunden Laufzeit) bei der Feuerwehr Qingdao für die Erkundung in Dienst gestellt, mit Gassensoren, Laserscanner und Wärmeverfolgung.",
+          "src": "https://www.ithome.com/0/832/872.htm",
+          "yr": "2025"
+        },
+        {
+          "n": "Kent Fire and Rescue Service, Kent",
+          "c": "GBR",
+          "la": 51.272,
+          "lo": 0.522,
+          "en": "From January 2025 Kent Fire and Rescue Service began using a remotely operated firefighting robot that can be controlled from 600 metres away and spray up to 2,000 litres of water per minute.",
+          "de": "Ab Januar 2025 setzte der Kent Fire and Rescue Service einen ferngesteuerten Löschroboter ein, der aus 600 Metern Entfernung gesteuert werden kann und bis zu 2.000 Liter Wasser pro Minute abgibt.",
+          "src": "https://engx.theiet.org/b/articles/posts/remotely-operated-firefighting-robot-to-start-tackling-blazes-in-kent",
+          "yr": "2025"
+        }
+      ]
+    },
+    "disaster-early-warning": {
+      "name": {
+        "en": "Disaster early warning",
+        "de": "Katastrophen-Frühwarnung"
+      },
+      "places": [
+        {
+          "n": "Ibaji, Kogi State",
+          "c": "NGA",
+          "la": 6.97,
+          "lo": 6.8,
+          "en": "In 2024 GiveDirectly used Google's AI Flood Hub forecasts to pay early cash to 3,250 people in six wards of Ibaji between 29 August and 6 October, weeks before the floods peaked on 21 October; over 4,600 people were paid in total.",
+          "de": "2024 nutzte GiveDirectly die KI-Hochwasserprognosen von Google Flood Hub, um zwischen dem 29. August und 6. Oktober 3.250 Menschen in sechs Wards von Ibaji vorab Bargeld zu zahlen, Wochen vor dem Hochwasserscheitel am 21. Oktober; insgesamt erhielten über 4.600 Menschen Zahlungen.",
+          "src": "https://www.givedirectly.org/flood-forecast-ai",
+          "yr": "2024"
+        },
+        {
+          "n": "Gaibandha district, northern Bangladesh",
+          "c": "BGD",
+          "la": 25.329,
+          "lo": 89.543,
+          "en": "Along the Jamuna River around Gaibandha, GiveDirectly runs a pilot with Bangladesh's Flood Forecasting and Warning Centre that sends cash (10,375 taka per household) when Flood Hub forecasts flooding up to five days ahead; a 2026 trial is planned to cover over 100,000 families.",
+          "de": "Am Jamuna rund um Gaibandha führt GiveDirectly mit Bangladeschs Flood Forecasting and Warning Centre einen Pilotversuch durch, der Bargeld (10.375 Taka pro Haushalt) auszahlt, wenn Flood Hub bis zu fünf Tage im Voraus Hochwasser vorhersagt; für 2026 ist ein Versuch mit über 100.000 Familien geplant.",
+          "src": "https://restofworld.org/2025/google-flood-hub-cash-aid/",
+          "yr": "2025"
+        },
+        {
+          "n": "Vandenberg Space Force Base, California",
+          "c": "USA",
+          "la": 34.632,
+          "lo": -120.611,
+          "en": "The first three operational FireSat wildfire-detection satellites (Earth Fire Alliance, built by Muon Space) launched from Vandenberg on a Falcon 9 on 7 July 2026; first active-fire images followed in September 2026.",
+          "de": "Die ersten drei operativen FireSat-Satelliten zur Waldbranderkennung (Earth Fire Alliance, gebaut von Muon Space) starteten am 7. Juli 2026 mit einer Falcon 9 von Vandenberg; erste Bilder aktiver Brände folgten im September 2026.",
+          "src": "https://earthfirealliance.org/news-article/earth-fire-alliances-first-three-operational-firesats-reach-orbit/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "protein-folding-biology": {
+      "name": {
+        "en": "Protein folding / biology",
+        "de": "Proteinfaltung / Biologie"
+      },
+      "places": [
+        {
+          "n": "EMBL-EBI, Wellcome Genome Campus, Hinxton",
+          "c": "GBR",
+          "la": 52.079,
+          "lo": 0.186,
+          "en": "EMBL's European Bioinformatics Institute runs the AlphaFold Protein Structure Database with Google DeepMind; it holds over 260 million predicted structures under a CC-BY-4.0 licence and added literature-linked residue annotations in October 2026.",
+          "de": "Das Europäische Bioinformatik-Institut des EMBL betreibt mit Google DeepMind die AlphaFold-Strukturdatenbank; sie enthält über 260 Millionen vorhergesagte Strukturen unter CC-BY-4.0-Lizenz und erhielt im Oktober 2026 mit Fachliteratur verknüpfte Annotationen auf Residuen-Ebene.",
+          "src": "https://alphafold.ebi.ac.uk/",
+          "yr": "2026"
+        },
+        {
+          "n": "Google DeepMind, King's Cross, London",
+          "c": "GBR",
+          "la": 51.533,
+          "lo": -0.126,
+          "en": "AlphaFold was developed at Google DeepMind in London; AlphaFold 3 followed on 8 May 2024 with Isomorphic Labs. DeepMind reports more than 3 million researchers in over 190 countries using AlphaFold.",
+          "de": "AlphaFold wurde bei Google DeepMind in London entwickelt; AlphaFold 3 folgte am 8. Mai 2024 gemeinsam mit Isomorphic Labs. Laut DeepMind nutzen über 3 Millionen Forschende in mehr als 190 Ländern AlphaFold.",
+          "src": "https://deepmind.google/science/alphafold/",
+          "yr": "2026"
+        },
+        {
+          "n": "Institute for Protein Design, University of Washington, Seattle",
+          "c": "USA",
+          "la": 47.652,
+          "lo": -122.312,
+          "en": "David Baker's Institute for Protein Design develops the open RoseTTAFold/RFdiffusion family; RFdiffusion3, released openly in December 2025, designs proteins that bind almost any molecule found in cells.",
+          "de": "David Bakers Institute for Protein Design entwickelt die offene RoseTTAFold/RFdiffusion-Familie; RFdiffusion3, im Dezember 2025 offen veröffentlicht, entwirft Proteine, die nahezu jedes in Zellen vorkommende Molekül binden.",
+          "src": "https://www.ipd.uw.edu/2025/12/rfdiffusion3-now-available/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "emissions-satellites": {
+      "name": {
+        "en": "Emissions satellites",
+        "de": "Emissions-Satelliten"
+      },
+      "places": [
+        {
+          "n": "Kanjur landfill, Mumbai",
+          "c": "IND",
+          "la": 19.135,
+          "lo": 72.946,
+          "en": "Carbon Mapper's Tanager-1 satellite measured methane plumes of about 1,600 kg/h at Kanjur landfill on 9 February 2025 and 3,300 kg/h on 3 April 2026; nearby Deonar dumping ground also showed persistent emissions.",
+          "de": "Der Satellit Tanager-1 von Carbon Mapper maß an der Deponie Kanjur am 9. Februar 2025 Methanfahnen von rund 1.600 kg/h und am 3. April 2026 von 3.300 kg/h; die nahe Deponie Deonar zeigte ebenfalls anhaltende Emissionen.",
+          "src": "https://carbonmapper.org/articles/mumbai-waste-sites",
+          "yr": "2026"
+        },
+        {
+          "n": "Tupi oil field, Santos Basin (offshore Rio de Janeiro)",
+          "c": "BRA",
+          "la": -25.4,
+          "lo": -42.7,
+          "en": "On 23 April 2025 Tanager-1 detected a methane super-emitter from offshore oil and gas production at the Tupi field, about 250 km off Rio de Janeiro, at an estimated 367 kg/h.",
+          "de": "Am 23. April 2025 entdeckte Tanager-1 am Ölfeld Tupi, rund 250 km vor Rio de Janeiro, einen Methan-Großemittenten der Offshore-Öl- und Gasförderung mit geschätzt 367 kg/h.",
+          "src": "https://carbonmapper.org/articles/offshore-methane-detection",
+          "yr": "2025"
+        },
+        {
+          "n": "Offshore oil and gas, near Pointe-Noire",
+          "c": "COG",
+          "la": -4.85,
+          "lo": 11.75,
+          "en": "On 10 March 2025 Tanager-1 measured an offshore oil and gas methane source about 20 km from Pointe-Noire emitting an estimated 2,427 kg/h.",
+          "de": "Am 10. März 2025 maß Tanager-1 rund 20 km vor Pointe-Noire eine Methanquelle der Offshore-Öl- und Gasförderung mit geschätzt 2.427 kg/h.",
+          "src": "https://carbonmapper.org/articles/offshore-methane-detection",
+          "yr": "2025"
+        },
+        {
+          "n": "Waste site, El Hamam",
+          "c": "EGY",
+          "la": 30.83,
+          "lo": 29.39,
+          "en": "Carbon Mapper used NASA JPL's EMIT instrument on the ISS to observe a waste facility at El Hamam on nine dates in 2023, with methane emission rates between 1,800 and 7,100 kg/h.",
+          "de": "Carbon Mapper beobachtete mit dem EMIT-Instrument der NASA JPL auf der ISS eine Abfallanlage bei El Hamam an neun Terminen 2023, mit Methan-Emissionsraten zwischen 1.800 und 7.100 kg/h.",
+          "src": "https://carbonmapper.org/articles/repeat-observations",
+          "yr": "2024"
+        },
+        {
+          "n": "San Joaquin Basin oil and gas fields, California",
+          "c": "USA",
+          "la": 35.4,
+          "lo": -119.4,
+          "en": "MethaneSAT data from 2024-2025 show oil and gas operators in the San Joaquin Basin emitting about 18 tonnes of methane per hour, roughly 9% of marketed gas production and about 20% above the EPA inventory.",
+          "de": "MethaneSAT-Daten aus 2024-2025 zeigen, dass Öl- und Gasbetreiber im San-Joaquin-Becken rund 18 Tonnen Methan pro Stunde ausstoßen, etwa 9 % der vermarkteten Gasförderung und rund 20 % über dem EPA-Inventar.",
+          "src": "https://www.methanesat.org/project-updates/methanesat-reveals-high-emissions-intensity-californias-san-joaquin-basin",
+          "yr": "2026"
+        }
+      ]
+    },
+    "climate-ocean-monitoring": {
+      "name": {
+        "en": "Climate / ocean monitoring",
+        "de": "Klima- / Ozean-Monitoring"
+      },
+      "places": [
+        {
+          "n": "Hobart, Tasmania",
+          "c": "AUS",
+          "la": -42.883,
+          "lo": 147.333,
+          "en": "On 20 September 2026 the first Saildrone Explorer of the five-year COCO2 project (NOAA PMEL, CSIRO, Columbia, UW and others) left Hobart to measure air-sea CO2 exchange around Antarctica; a fleet of four drones is to cover about 24,000 km per deployment.",
+          "de": "Am 20. September 2026 verließ die erste Saildrone Explorer des fünfjährigen COCO2-Projekts (NOAA PMEL, CSIRO, Columbia, UW u. a.) Hobart, um den CO2-Austausch zwischen Luft und Meer rund um die Antarktis zu messen; eine Flotte von vier Drohnen soll pro Einsatz rund 24.000 km zurücklegen.",
+          "src": "https://www.saildrone.com/news/saildrone-embarks-multiyear-expedition-monitor-carbon-exchange-southern-ocean",
+          "yr": "2026"
+        },
+        {
+          "n": "Honolulu, Hawai'i",
+          "c": "USA",
+          "la": 21.307,
+          "lo": -157.866,
+          "en": "In September 2026 four Saildrone Explorers launched from Honolulu with NOAA PMEL on a four-month, 6,000-nautical-mile mission into the tropical Pacific to observe an unusually strong El Niño.",
+          "de": "Im September 2026 starteten vier Saildrone Explorer mit NOAA PMEL von Honolulu zu einer viermonatigen, 6.000 Seemeilen langen Mission in den tropischen Pazifik, um einen ungewöhnlich starken El Niño zu beobachten.",
+          "src": "https://www.saildrone.com/news/saildrone-noaa-return-tropical-pacific-track-el-nino",
+          "yr": "2026"
+        },
+        {
+          "n": "Argo Program Office, Scripps Institution of Oceanography, La Jolla",
+          "c": "USA",
+          "la": 32.867,
+          "lo": -117.253,
+          "en": "The international Argo array of close to 4,000 active profiling floats is coordinated from a program office at UC San Diego's Scripps Institution of Oceanography; the array reached its 3 millionth profile in July 2024.",
+          "de": "Das internationale Argo-Netz aus knapp 4.000 aktiven Profilbojen wird von einem Programmbüro an der Scripps Institution of Oceanography der UC San Diego koordiniert; im Juli 2024 erreichte es sein drei-millionstes Profil.",
+          "src": "https://argo.ucsd.edu/about/status/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "defense-isr-drones": {
+      "name": {
+        "en": "Defense & ISR drones",
+        "de": "Verteidigungs- & ISR-Drohnen"
+      },
+      "places": [
+        {
+          "n": "Anduril Arsenal-1, near Rickenbacker Airport, Pickaway County (Ohio)",
+          "c": "USA",
+          "la": 39.78,
+          "lo": -82.93,
+          "en": "In January 2025 Anduril announced Arsenal-1, a 5-million-square-foot plant on a 500-acre site near Rickenbacker International Airport south-east of Columbus, with 4,000 planned jobs; drone and autonomous-aircraft production was scheduled to begin in July 2026.",
+          "de": "Im Januar 2025 kündigte Anduril Arsenal-1 an, ein Werk mit rund 465.000 m² auf einem 200-Hektar-Gelände nahe dem Rickenbacker International Airport südöstlich von Columbus mit 4.000 geplanten Arbeitsplätzen; die Produktion von Drohnen und autonomen Fluggeräten sollte im Juli 2026 beginnen.",
+          "src": "https://www.defensenews.com/industry/2025/01/16/anduril-to-build-arsenal-1-autonomous-weapons-plant-in-central-ohio/",
+          "yr": "2025"
+        },
+        {
+          "n": "Anduril Ghost Shark factory, Sydney",
+          "c": "AUS",
+          "la": -33.869,
+          "lo": 151.209,
+          "en": "Anduril's Sydney factory produced the first Ghost Shark extra-large autonomous underwater vehicle for the Royal Australian Navy in late 2025, under an A$1.7 billion programme for dozens of vehicles over five years.",
+          "de": "Andurils Werk in Sydney fertigte Ende 2025 das erste extragroße autonome Unterwasserfahrzeug Ghost Shark für die australische Marine, im Rahmen eines Programms über 1,7 Mrd. australische Dollar für Dutzende Fahrzeuge in fünf Jahren.",
+          "src": "https://breakingdefense.com/2025/11/first-ghost-shark-extra-large-auv-delivered-to-australian-navy/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "space-robotics": {
+      "name": {
+        "en": "Space robotics",
+        "de": "Weltraumrobotik"
+      },
+      "places": [
+        {
+          "n": "Space Launch Complex 40, Cape Canaveral Space Force Station (Florida)",
+          "c": "USA",
+          "la": 28.562,
+          "lo": -80.577,
+          "en": "Northrop Grumman's Mission Robotic Vehicle and three Mission Extension Pods launched from SLC-40 on a Falcon 9 on 21 July 2026, the next step after the MEV servicing vehicles.",
+          "de": "Northrop Grummans Mission Robotic Vehicle und drei Mission Extension Pods starteten am 21. Juli 2026 mit einer Falcon 9 von SLC-40, der nächste Schritt nach den MEV-Servicefahrzeugen.",
+          "src": "https://www.northropgrumman.com/space/space-logistics-services",
+          "yr": "2026"
+        },
+        {
+          "n": "Andøya Spaceport, Andøya",
+          "c": "NOR",
+          "la": 69.1,
+          "lo": 15.59,
+          "en": "Astroscale Japan has booked an Isar Aerospace launch from Andøya for ADRAS-J2, planned for Japan's fiscal year 2027, which is to capture and remove a roughly 3-tonne rocket upper stage.",
+          "de": "Astroscale Japan hat für ADRAS-J2 einen Start mit Isar Aerospace von Andøya gebucht, geplant im japanischen Fiskaljahr 2027; die Mission soll eine rund 3 Tonnen schwere Raketenoberstufe einfangen und entfernen.",
+          "src": "https://www.astroscale.com/en/news/astroscale-japan-selects-isar-aerospace-to-launch-adras-j2",
+          "yr": "2026"
+        }
+      ]
+    },
+    "biology-foundation-models": {
+      "name": {
+        "en": "Biology foundation models",
+        "de": "Biologie-Foundation-Models"
+      },
+      "places": [
+        {
+          "n": "Arc Institute, Palo Alto (California)",
+          "c": "USA",
+          "la": 37.41,
+          "lo": -122.149,
+          "en": "Arc Institute released Evo 2 in February 2025 with NVIDIA, Stanford, UC Berkeley and UCSF: a DNA model trained on 9.3 trillion nucleotides from over 128,000 genomes using more than 2,000 H100 GPUs.",
+          "de": "Das Arc Institute veröffentlichte im Februar 2025 mit NVIDIA, Stanford, UC Berkeley und UCSF Evo 2: ein DNA-Modell, trainiert auf 9,3 Billionen Nukleotiden aus über 128.000 Genomen mit mehr als 2.000 H100-GPUs.",
+          "src": "https://arcinstitute.org/news/evo2",
+          "yr": "2025"
+        },
+        {
+          "n": "MIT Jameel Clinic and CSAIL, Cambridge (Massachusetts)",
+          "c": "USA",
+          "la": 42.362,
+          "lo": -71.091,
+          "en": "Researchers at MIT's Jameel Clinic and CSAIL released Boltz-1 in December 2024 as a fully open structure-prediction model at AlphaFold 3 level; Boltz-2 (June 2025) adds binding-affinity prediction under the MIT licence.",
+          "de": "Forschende der MIT Jameel Clinic und des CSAIL veröffentlichten im Dezember 2024 Boltz-1 als vollständig offenes Strukturvorhersagemodell auf AlphaFold-3-Niveau; Boltz-2 (Juni 2025) ergänzt die Vorhersage von Bindungsaffinitäten unter MIT-Lizenz.",
+          "src": "https://news.mit.edu/2024/researchers-introduce-boltz-1-open-source-model-predicting-biomolecular-structures-1217",
+          "yr": "2024"
+        },
+        {
+          "n": "Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton",
+          "c": "GBR",
+          "la": 52.08,
+          "lo": 0.185,
+          "en": "In June 2026 the Sanger Institute, Google DeepMind and Google.org launched a five-year genomics consortium, funded with $5 million a year, to generate large genomic datasets formatted for training biological AI models.",
+          "de": "Im Juni 2026 starteten das Sanger Institute, Google DeepMind und Google.org ein fünfjähriges Genomik-Konsortium mit 5 Mio. US-Dollar pro Jahr, das große, für das Training biologischer KI-Modelle aufbereitete Genomdatensätze erzeugen soll.",
+          "src": "https://www.sanger.ac.uk/news_item/google-deepmind-google-org-and-sanger-institute-to-launch-new-ai-consortium-for-genomics/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-microscopy-segmentation": {
+      "name": {
+        "en": "Local microscopy segmentation",
+        "de": "Lokale Mikroskopie-Segmentierung"
+      },
+      "places": [
+        {
+          "n": "HHMI Janelia Research Campus, Ashburn (Virginia)",
+          "c": "USA",
+          "la": 39.072,
+          "lo": -77.462,
+          "en": "Cellpose is developed by Carsen Stringer and Marius Pachitariu at HHMI Janelia as open-source software (BSD-3) that runs locally on GPU or CPU; the current Cellpose-SAM release also ships DINOv3-based models.",
+          "de": "Cellpose wird von Carsen Stringer und Marius Pachitariu bei HHMI Janelia als Open-Source-Software (BSD-3) entwickelt, die lokal auf GPU oder CPU läuft; die aktuelle Version Cellpose-SAM enthält auch DINOv3-basierte Modelle.",
+          "src": "https://github.com/MouseLand/cellpose",
+          "yr": "2026"
+        },
+        {
+          "n": "Department of Forensic Medicine, University of Copenhagen, Copenhagen",
+          "c": "DNK",
+          "la": 55.694,
+          "lo": 12.57,
+          "en": "Forensic pathologists in Copenhagen built a QuPath pipeline with Cellpose to quantify collagen, myocardium and fat in post-mortem heart tissue from autopsies, aimed at diagnosing arrhythmogenic cardiomyopathy (published 2024).",
+          "de": "Rechtsmediziner in Kopenhagen bauten eine QuPath-Pipeline mit Cellpose, um Kollagen, Herzmuskel und Fett in Herzgewebe aus Obduktionen zu quantifizieren, für die Diagnose der arrhythmogenen Kardiomyopathie (veröffentlicht 2024).",
+          "src": "https://doi.org/10.1016/j.labinv.2024.102181",
+          "yr": "2024"
+        },
+        {
+          "n": "Morgridge Institute for Research and University of Wisconsin, Madison",
+          "c": "USA",
+          "la": 43.072,
+          "lo": -89.408,
+          "en": "A Madison team trained a Cellpose model on autofluorescence images and applied it to patient-derived cancer organoids from 9 patients treated with chemotherapy; agreement with manual masks was high (R > 0.9) (published 2025).",
+          "de": "Ein Team in Madison trainierte ein Cellpose-Modell auf Autofluoreszenzbildern und wandte es auf von Patienten stammende Krebs-Organoide von 9 Patienten unter Chemotherapie an; die Übereinstimmung mit manuellen Masken war hoch (R > 0,9) (veröffentlicht 2025).",
+          "src": "https://doi.org/10.1038/s41598-024-82639-6",
+          "yr": "2025"
+        },
+        {
+          "n": "ERIBA, University Medical Center Groningen, Groningen",
+          "c": "NLD",
+          "la": 53.221,
+          "lo": 6.577,
+          "en": "Researchers at UMC Groningen published a 2024 protocol that uses Cellpose to count xenografted human glioblastoma stem cells in zebrafish larvae from confocal images.",
+          "de": "Forschende am UMC Groningen veröffentlichten 2024 ein Protokoll, das mit Cellpose xenotransplantierte menschliche Glioblastom-Stammzellen in Zebrafischlarven auf Konfokalbildern zählt.",
+          "src": "https://doi.org/10.1016/j.xpro.2024.103479",
+          "yr": "2024"
+        },
+        {
+          "n": "Flaum Eye Institute, University of Rochester Medical Center, Rochester (New York)",
+          "c": "USA",
+          "la": 43.122,
+          "lo": -77.626,
+          "en": "Glaucoma researchers at URMC trained custom Cellpose models to count and measure retinal ganglion cell somas in healthy and injured mouse retinas (published 2026).",
+          "de": "Glaukomforschende am URMC trainierten eigene Cellpose-Modelle, um Somata retinaler Ganglienzellen in gesunden und verletzten Mausnetzhäuten zu zählen und zu vermessen (veröffentlicht 2026).",
+          "src": "https://doi.org/10.1016/j.exer.2026.110929",
+          "yr": "2026"
+        },
+        {
+          "n": "Faculty of Medical Technology, Van Lang University, Ho Chi Minh City",
+          "c": "VNM",
+          "la": 10.827,
+          "lo": 106.7,
+          "en": "A Van Lang University team used Cellpose 2.0 on 270 Gram-stained images of S. aureus and E. coli to measure how culture medium and incubation time bias Gram staining (published 2026).",
+          "de": "Ein Team der Van-Lang-Universität nutzte Cellpose 2.0 für 270 Gram-gefärbte Bilder von S. aureus und E. coli, um zu messen, wie Nährmedium und Inkubationszeit die Gram-Färbung verfälschen (veröffentlicht 2026).",
+          "src": "https://doi.org/10.1016/j.mimet.2026.107546",
+          "yr": "2026"
+        }
+      ]
+    },
+    "hbm-memory-the-supercycle": {
+      "name": {
+        "en": "HBM memory (the supercycle)",
+        "de": "HBM-Speicher (der Supercycle)"
+      },
+      "places": [
+        {
+          "n": "SK Hynix Cheongju M15X",
+          "c": "KOR",
+          "la": 36.645,
+          "lo": 127.462,
+          "en": "New SK hynix fab making 1b-DRAM wafers for HBM4 since February 2026, about 10,000 wafers a month at the start.",
+          "de": "Neues SK-hynix-Werk, das seit Februar 2026 1b-DRAM-Wafer für HBM4 fertigt, anfangs rund 10.000 Wafer im Monat.",
+          "src": "https://finance.yahoo.com/news/exclusive-sk-hynix-speeds-chip-220217637.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Samsung Pyeongtaek",
+          "c": "KOR",
+          "la": 37.02,
+          "lo": 127.05,
+          "en": "Samsung's P4 line runs 1c-DRAM for HBM; HBM4 mass production started in February 2026.",
+          "de": "Samsungs Linie P4 fertigt 1c-DRAM für HBM; die Massenfertigung von HBM4 begann im Februar 2026.",
+          "src": "https://trendforce.com/news/2026/08/20/news-samsung-to-break-ground-on-krw-6t-onyang-hbm-fab-in-sept-p5-eyes-triple-fab-shift-as-expansion-accelerates",
+          "yr": "2026"
+        },
+        {
+          "n": "Samsung Onyang",
+          "c": "KOR",
+          "la": 36.78,
+          "lo": 126.99,
+          "en": "Planned: Samsung's KRW 6 trillion HBM fab, groundbreaking September 2026. Not producing yet.",
+          "de": "Geplant: Samsungs HBM-Werk für 6 Billionen Won, Spatenstich September 2026. Produziert noch nicht.",
+          "src": "https://trendforce.com/news/2026/08/20/news-samsung-to-break-ground-on-krw-6t-onyang-hbm-fab-in-sept-p5-eyes-triple-fab-shift-as-expansion-accelerates",
+          "yr": "2026"
+        },
+        {
+          "n": "Micron Singapore HBM Packaging",
+          "c": "SGP",
+          "la": 1.448,
+          "lo": 103.8,
+          "en": "Micron's roughly US$7 billion HBM packaging plant, groundbreaking January 2025, operations from 2026 and more capacity from 2027.",
+          "de": "Microns HBM-Packaging-Werk für rund 7 Mrd. US-Dollar, Spatenstich Januar 2025, Betrieb ab 2026, mehr Kapazität ab 2027.",
+          "src": "https://www.edb.gov.sg/en/news-and-insights/micron-breaks-ground-on-7billion-hbm-facility-in-singapore",
+          "yr": "2025"
+        },
+        {
+          "n": "Micron Hiroshima",
+          "c": "JPN",
+          "la": 34.55,
+          "lo": 132.75,
+          "en": "Planned: a roughly JPY 1.5 trillion HBM fab on Micron's Hiroshima site, construction from May 2026, shipments around 2028.",
+          "de": "Geplant: HBM-Werk für rund 1,5 Billionen Yen auf Microns Gelände in Hiroshima, Bau ab Mai 2026, Auslieferung etwa 2028.",
+          "src": "https://www.verdict.co.uk/micron-hbm-chip-facility-hiroshima-japan/",
+          "yr": "2025"
+        },
+        {
+          "n": "SK Hynix West Lafayette",
+          "c": "USA",
+          "la": 40.43,
+          "lo": -86.91,
+          "en": "Planned: SK hynix's HBM advanced-packaging plant (over US$4 billion), groundbreaking August 2026, mass production in the second half of 2029.",
+          "de": "Geplant: HBM-Packaging-Werk von SK hynix (über 4 Mrd. US-Dollar), Spatenstich August 2026, Massenfertigung ab der zweiten Jahreshälfte 2029.",
+          "src": "https://evertiq.com/news/2026-08-28-sk-hynix-breaks-ground-on-4-billion-packaging-facility-in-indiana",
+          "yr": "2026"
+        }
+      ]
+    },
+    "nand-flash-enterprise-ssd": {
+      "name": {
+        "en": "NAND flash & enterprise SSD",
+        "de": "NAND-Flash & Enterprise-SSD"
+      },
+      "places": [
+        {
+          "n": "Kioxia Kitakami",
+          "c": "JPN",
+          "la": 39.29,
+          "lo": 141.11,
+          "en": "Kioxia and Sandisk's Fab 2 started operating on 29 September 2025 for 218-layer BiCS flash aimed at AI storage demand; meaningful output from 2026.",
+          "de": "Fab 2 von Kioxia und Sandisk läuft seit dem 29. September 2025 und fertigt 218-Lagen-BiCS-Flash für KI-Speicher; nennenswerter Ausstoß ab 2026.",
+          "src": "https://www.kioxia.com/en-jp/about/news/2025/20250930-1.html",
+          "yr": "2025"
+        },
+        {
+          "n": "SK Hynix Dalian",
+          "c": "CHN",
+          "la": 38.93,
+          "lo": 121.63,
+          "en": "The former Intel NAND plant supplies Solidigm's enterprise SSDs (up to 122.88 TB); a second plant is to add wafer output from 2027.",
+          "de": "Das frühere Intel-NAND-Werk beliefert Solidigms Rechenzentrums-SSDs (bis 122,88 TB); ein zweites Werk soll ab 2027 Wafer liefern.",
+          "src": "https://www.blocksandfiles.com/flash/2026/08/12/sk-hynix-expanding-solidigm-dalian-nand-plant/5286679",
+          "yr": "2026"
+        },
+        {
+          "n": "Micron Singapore Fab 10",
+          "c": "SGP",
+          "la": 1.44,
+          "lo": 103.79,
+          "en": "Micron broke ground in February 2026 on a roughly US$24 billion NAND fab on its Singapore NAND campus, for AI and data-centre demand; wafer output from the second half of 2028.",
+          "de": "Micron hat im Februar 2026 auf seinem NAND-Gelände in Singapur mit einem neuen NAND-Werk für rund 24 Mrd. US-Dollar begonnen, für KI und Rechenzentren; Wafer ab der zweiten Jahreshälfte 2028.",
+          "src": "https://cleanroomtechnology.com/micron-breaks-ground-on-24bn-nand-wafer-fab",
+          "yr": "2026"
+        }
+      ]
+    },
+    "ai-accelerators-custom-silicon": {
+      "name": {
+        "en": "AI accelerators & custom silicon",
+        "de": "KI-Beschleuniger & Custom-Silizium"
+      },
+      "places": [
+        {
+          "n": "TSMC Arizona Fab 21",
+          "c": "USA",
+          "la": 33.72,
+          "lo": -112.13,
+          "en": "The first NVIDIA Blackwell wafer made in the US came out of TSMC's Arizona fab in October 2025.",
+          "de": "Der erste in den USA gefertigte NVIDIA-Blackwell-Wafer kam im Oktober 2025 aus TSMCs Werk in Arizona.",
+          "src": "https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/",
+          "yr": "2025"
+        },
+        {
+          "n": "Samsung Taylor",
+          "c": "USA",
+          "la": 30.58,
+          "lo": -97.41,
+          "en": "Samsung is to make Tesla's AI6 inference chip on 2 nm in Taylor under a US$16.5 billion contract running to 2033.",
+          "de": "Samsung soll in Taylor Teslas Inferenzchip AI6 in 2 nm fertigen, Vertrag über 16,5 Mrd. US-Dollar bis 2033.",
+          "src": "https://www.maginative.com/article/tesla-just-handed-samsung-its-biggest-foundry-win-ever-with-a-16-5-billion-ai-chip-deal/",
+          "yr": "2025"
+        },
+        {
+          "n": "Foxconn Houston",
+          "c": "USA",
+          "la": 29.75,
+          "lo": -95.35,
+          "en": "NVIDIA named Foxconn's Houston plant as the site where it builds AI supercomputers in the US (announced April 2025).",
+          "de": "NVIDIA nannte Foxconns Werk in Houston als Ort, an dem es KI-Supercomputer in den USA bauen lässt (angekündigt April 2025).",
+          "src": "https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/",
+          "yr": "2025"
+        },
+        {
+          "n": "New Carlisle (Project Rainier)",
+          "c": "USA",
+          "la": 41.7,
+          "lo": -86.5,
+          "en": "Amazon's Project Rainier runs about 500,000 of its own Trainium2 chips, including at this Indiana site, used by Anthropic.",
+          "de": "Amazons Project Rainier betreibt rund 500.000 eigene Trainium2-Chips, auch an diesem Standort in Indiana; Nutzer ist Anthropic.",
+          "src": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster",
+          "yr": "2025"
+        }
+      ]
+    },
+    "cowos-advanced-packaging": {
+      "name": {
+        "en": "CoWoS / advanced packaging",
+        "de": "CoWoS / Advanced Packaging"
+      },
+      "places": [
+        {
+          "n": "TSMC AP6 Zhunan",
+          "c": "TWN",
+          "la": 24.69,
+          "lo": 120.88,
+          "en": "TSMC's largest back-end fab, opened in June 2023 for SoIC, InFO and CoWoS, sized for over a million 12-inch wafer equivalents a year.",
+          "de": "TSMCs größtes Back-End-Werk, eröffnet im Juni 2023 für SoIC, InFO und CoWoS, ausgelegt auf über eine Million 12-Zoll-Wafer-Äquivalente im Jahr.",
+          "src": "https://pr.tsmc.com/english/news/3033",
+          "yr": "2023"
+        },
+        {
+          "n": "TSMC AP7 Chiayi",
+          "c": "TWN",
+          "la": 23.46,
+          "lo": 120.3,
+          "en": "TSMC's new packaging site: phase 2 produces from 2026 (WMCM), phase 1 from 2027; SoIC and CoPoS are planned here.",
+          "de": "TSMCs neuer Packaging-Standort: Phase 2 produziert ab 2026 (WMCM), Phase 1 ab 2027; SoIC und CoPoS sind hier geplant.",
+          "src": "https://www.trendforce.com/news/2025/12/04/news-tsmc-speeds-advanced-packaging-ap7-targets-2026-output-arizona-p6-eyed-for-u-s-packaging-hub/",
+          "yr": "2025"
+        },
+        {
+          "n": "ASE Kaohsiung",
+          "c": "TWN",
+          "la": 22.58,
+          "lo": 120.35,
+          "en": "ASE is investing NT$17.6 billion in a new Kaohsiung plant (K18B) for CoWoS packaging and test, operating from early 2028.",
+          "de": "ASE investiert 17,6 Mrd. NT-Dollar in ein neues Werk in Kaohsiung (K18B) für CoWoS-Packaging und Test, Betrieb ab Anfang 2028.",
+          "src": "https://www.taipeitimes.com/News/biz/archives/2025/10/04/2003844876",
+          "yr": "2025"
+        },
+        {
+          "n": "Amkor Peoria",
+          "c": "USA",
+          "la": 33.7,
+          "lo": -112.3,
+          "en": "Planned: Amkor's US$7 billion advanced-packaging campus for AI chips, groundbreaking October 2025, volume production from early 2028, with CoWoS support for TSMC.",
+          "de": "Geplant: Amkors Packaging-Campus für KI-Chips für 7 Mrd. US-Dollar, Spatenstich Oktober 2025, Serienfertigung ab Anfang 2028, mit CoWoS für TSMC.",
+          "src": "https://www.trendforce.com/news/2025/10/14/news-amkor-breaks-ground-on-usd-7-billion-advanced-semiconductor-packaging-facility-in-arizona/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "coding-agents": {
+      "name": {
+        "en": "Coding agents",
+        "de": "Coding-Agenten"
+      },
+      "places": [
+        {
+          "n": "National Australia Bank, Melbourne",
+          "c": "AUS",
+          "la": -37.817,
+          "lo": 144.947,
+          "en": "NAB standardised 6,000+ developers on Cursor after evaluating Amazon Q and GitHub Copilot and is extending it to 10,000+ technology staff; legacy migrations ran about 3x faster.",
+          "de": "Die NAB hat 6.000+ Entwickler nach einem Vergleich mit Amazon Q und GitHub Copilot auf Cursor standardisiert und weitet es auf 10.000+ Technikmitarbeitende aus; Legacy-Migrationen liefen etwa 3× schneller.",
+          "src": "https://cursor.com/blog/nab",
+          "yr": "2026"
+        },
+        {
+          "n": "Rakuten, Tokyo",
+          "c": "JPN",
+          "la": 35.611,
+          "lo": 139.627,
+          "en": "Rakuten uses Claude Code across engineering and other departments; time to market for new features fell 79% (24 to 5 days), and one test ran 7 hours of autonomous coding.",
+          "de": "Rakuten setzt Claude Code in der Entwicklung und weiteren Abteilungen ein; die Time-to-Market neuer Features sank um 79 % (24 auf 5 Tage), ein Test lief 7 Stunden autonom.",
+          "src": "https://claude.com/customers/rakuten",
+          "yr": "2025"
+        },
+        {
+          "n": "Grab, Singapore",
+          "c": "SGP",
+          "la": 1.299,
+          "lo": 103.787,
+          "en": "Grab introduced Cursor in late 2024; by January 2026, 98% of its engineers were monthly users and over a third of merge requests involved Cursor.",
+          "de": "Grab führte Cursor Ende 2024 ein; im Januar 2026 nutzten 98 % der Entwickler es monatlich, und über ein Drittel der Merge Requests enthielt Cursor-Beiträge.",
+          "src": "https://engineering.grab.com/cursor-at-grab-adoption-and-impact",
+          "yr": "2026"
+        },
+        {
+          "n": "Spotify, Stockholm",
+          "c": "SWE",
+          "la": 59.334,
+          "lo": 18.069,
+          "en": "Spotify's in-house background coding agent 'Honk' had produced more than 1,500 pull requests merged into production by November 2025, mostly migrations and upgrades across many repositories.",
+          "de": "Spotifys hauseigener Hintergrund-Coding-Agent „Honk“ hatte bis November 2025 über 1.500 Pull Requests erzeugt, die in den Produktivcode übernommen wurden, vor allem Migrationen und Upgrades über viele Repositories.",
+          "src": "https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1",
+          "yr": "2025"
+        },
+        {
+          "n": "Nubank, São Paulo",
+          "c": "BRA",
+          "la": -23.559,
+          "lo": -46.676,
+          "en": "Nubank used the coding agent Devin in 2023–2024 to split its multi-million-line ETL monolith into sub-modules, reporting 8–12x faster migrations and over 20x lower cost.",
+          "de": "Nubank nutzte 2023–2024 den Coding-Agenten Devin, um seinen ETL-Monolithen mit mehreren Millionen Codezeilen in Submodule aufzuteilen, und meldet 8–12× schnellere Migrationen und über 20× geringere Kosten.",
+          "src": "https://devin.ai/customers/nubank",
+          "yr": "2024"
+        }
+      ]
+    },
+    "customer-service-agents": {
+      "name": {
+        "en": "Customer service agents",
+        "de": "Kundenservice-Agenten"
+      },
+      "places": [
+        {
+          "n": "Heathrow Airport, London",
+          "c": "GBR",
+          "la": 51.47,
+          "lo": -0.454,
+          "en": "Since 2025 Heathrow has run 'Hallie', a Salesforce Agentforce agent on WhatsApp for passenger questions; Salesforce reports a 90% chat resolution rate without handover to a human.",
+          "de": "Seit 2025 betreibt Heathrow „Hallie“, einen Salesforce-Agentforce-Agenten auf WhatsApp für Passagierfragen; Salesforce meldet 90 % der Chats ohne Übergabe an einen Menschen gelöst.",
+          "src": "https://www.salesforce.com/uk/news/press-releases/2025/06/11/heathrow-airport-agentforce-passenger-experience/",
+          "yr": "2025"
+        },
+        {
+          "n": "Klarna, Stockholm",
+          "c": "SWE",
+          "la": 59.337,
+          "lo": 18.062,
+          "en": "Klarna's OpenAI-based assistant handled 2.3 million conversations in its first month (two-thirds of customer service chats), which Klarna equated to the work of 700 full-time agents.",
+          "de": "Klarnas OpenAI-basierter Assistent führte im ersten Monat 2,3 Mio. Gespräche (zwei Drittel der Kundenservice-Chats), was Klarna mit der Arbeit von 700 Vollzeitkräften gleichsetzte.",
+          "src": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+          "yr": "2024"
+        },
+        {
+          "n": "LINE MAN Wongnai, Bangkok",
+          "c": "THA",
+          "la": 13.756,
+          "lo": 100.502,
+          "en": "The Thai delivery and services platform is moving a Sierra rider-support chat agent into phased production and building a merchant agent for over 500,000 local merchants.",
+          "de": "Die thailändische Liefer- und Serviceplattform führt einen Sierra-Chatagenten für Fahrer-Support schrittweise in den Produktivbetrieb und baut einen Händler-Agenten für über 500.000 lokale Händler.",
+          "src": "https://sierra.ai/customers/line-man-wongnai",
+          "yr": "2026"
+        },
+        {
+          "n": "Sutter Health, Sacramento",
+          "c": "USA",
+          "la": 38.582,
+          "lo": -121.494,
+          "en": "Sutter Health, with 25 hospitals in Northern California, uses Sierra agents in its virtual chronic-disease programme SutterSync for device troubleshooting and patient support.",
+          "de": "Sutter Health mit 25 Kliniken in Nordkalifornien nutzt Sierra-Agenten in seinem virtuellen Chroniker-Programm SutterSync für Geräte-Fehlerbehebung und Patientensupport.",
+          "src": "https://sierra.ai/customers/sutter-health",
+          "yr": "2025"
+        }
+      ]
+    },
+    "legal-agents": {
+      "name": {
+        "en": "Legal agents",
+        "de": "Legal-Agenten"
+      },
+      "places": [
+        {
+          "n": "Willkie Farr & Gallagher, New York",
+          "c": "USA",
+          "la": 40.762,
+          "lo": -73.982,
+          "en": "Willkie began a firmwide rollout of Harvey in September 2025 for lawyers and business staff across its offices, integrated into its in-house AI platform Wendell Intelligence.",
+          "de": "Willkie startete im September 2025 die kanzleiweite Einführung von Harvey für Anwälte und Fachpersonal aller Büros, eingebunden in die hauseigene KI-Plattform Wendell Intelligence.",
+          "src": "https://www.willkie.com/news/2025/08/willkie-announces-global-rollout-of-harvey",
+          "yr": "2025"
+        },
+        {
+          "n": "Gowling WLG, Toronto",
+          "c": "CAN",
+          "la": 43.649,
+          "lo": -79.382,
+          "en": "In July 2025 Gowling WLG became the first Canadian law firm to roll out Harvey enterprise-wide across all its Canadian offices and practice areas.",
+          "de": "Im Juli 2025 führte Gowling WLG als erste kanadische Kanzlei Harvey unternehmensweit in allen kanadischen Büros und Praxisgruppen ein.",
+          "src": "https://gowlingwlg.com/en/news/firm-news/2025/gowling-wlg-becomes-first-canadian-law-firm-to-roll-out-harvey-ai-enterprise-wide",
+          "yr": "2025"
+        },
+        {
+          "n": "Mannheimer Swartling, Stockholm",
+          "c": "SWE",
+          "la": 59.335,
+          "lo": 18.072,
+          "en": "Lawyers at Mannheimer Swartling, the largest Nordic law firm (about 600 staff), have used Legora daily since September 2023.",
+          "de": "Anwälte bei Mannheimer Swartling, der größten nordischen Kanzlei (rund 600 Beschäftigte), nutzen Legora seit September 2023 täglich.",
+          "src": "https://legora.com/customers/mannheimer-swartling",
+          "yr": "2025"
+        },
+        {
+          "n": "Deutsche Telekom Legal, Bonn",
+          "c": "DEU",
+          "la": 50.716,
+          "lo": 7.131,
+          "en": "Since early 2024 Deutsche Telekom's legal department and its outside counsel Gleiss Lutz have used Harvey for contract analysis, due diligence and board summaries, now in shared Harvey workspaces.",
+          "de": "Seit Anfang 2024 nutzen die Rechtsabteilung der Deutschen Telekom und ihre Kanzlei Gleiss Lutz Harvey für Vertragsanalyse, Due Diligence und Vorstandszusammenfassungen, inzwischen in gemeinsamen Harvey-Arbeitsbereichen.",
+          "src": "https://www.harvey.ai/customers/deutsche-telekom-gleiss-lutz-collaboration",
+          "yr": "2025"
+        },
+        {
+          "n": "Dentsu Legal & Compliance, Tokyo",
+          "c": "JPN",
+          "la": 35.664,
+          "lo": 139.762,
+          "en": "Dentsu's 250-person legal and compliance function has used Harvey for about 18 months, with 93% weekly lawyer engagement and 4–10 hours saved per lawyer per week.",
+          "de": "Die 250-köpfige Rechts- und Compliance-Abteilung von Dentsu nutzt Harvey seit rund 18 Monaten; 93 % der Juristen nutzen es wöchentlich, die Ersparnis liegt bei 4–10 Stunden pro Person und Woche.",
+          "src": "https://www.harvey.ai/customers/dentsu",
+          "yr": "2026"
+        }
+      ]
+    },
+    "sales-marketing-agents": {
+      "name": {
+        "en": "Sales & marketing agents",
+        "de": "Sales- & Marketing-Agenten"
+      },
+      "places": [
+        {
+          "n": "Mistral AI, Paris",
+          "c": "FRA",
+          "la": 48.86,
+          "lo": 2.346,
+          "en": "Mistral's RevOps team uses Clay and its research agent Claygent to enrich and score accounts; 25,000 accounts were mapped in 2 weeks instead of about 2 months, and agent outputs make up 25% of account scoring.",
+          "de": "Mistrals RevOps-Team nutzt Clay und den Recherche-Agenten Claygent zur Anreicherung und Bewertung von Accounts; 25.000 Accounts wurden in 2 statt rund 8 Wochen erfasst, Agenten-Ergebnisse machen 25 % des Account-Scorings aus.",
+          "src": "https://www.clay.com/customers/mistral-ai",
+          "yr": "2025"
+        },
+        {
+          "n": "Pendo, Raleigh (North Carolina)",
+          "c": "USA",
+          "la": 35.781,
+          "lo": -78.642,
+          "en": "Pendo used Claygents to build a ranked list of about 13,000 target accounts in two days for a product launch that exceeded 200% of its Q1 sales target.",
+          "de": "Pendo erstellte mit Claygents in zwei Tagen eine priorisierte Liste von rund 13.000 Zielaccounts für einen Produktlaunch, der über 200 % des Q1-Verkaufsziels erreichte.",
+          "src": "https://www.clay.com/customers/pendo",
+          "yr": "2025"
+        },
+        {
+          "n": "Verkada EMEA, London",
+          "c": "GBR",
+          "la": 51.507,
+          "lo": -0.128,
+          "en": "Verkada's London-based EMEA go-to-market team uses Clay workflows with 150+ regional data sources; outbound reply rates for warm leads doubled and direct-mail spend fell by over GBP 80,000 a year.",
+          "de": "Verkadas Londoner EMEA-Vertriebsteam nutzt Clay-Workflows mit 150+ regionalen Datenquellen; die Antwortquote bei warmen Leads verdoppelte sich, die Direktmailing-Kosten sanken um über 80.000 GBP pro Jahr.",
+          "src": "https://www.clay.com/customers/verkada-emea",
+          "yr": "2025"
+        }
+      ]
+    },
+    "deep-research-knowledge": {
+      "name": {
+        "en": "Deep research / knowledge",
+        "de": "Deep Research / Wissen"
+      },
+      "places": [
+        {
+          "n": "Norges Bank Investment Management, Oslo",
+          "c": "NOR",
+          "la": 59.909,
+          "lo": 10.741,
+          "en": "The manager of Norway's sovereign wealth fund uses Claude Enterprise for investment research, ESG analysis and compliance work; it reached 600+ active users within two months and reports about 20% weekly time savings on assisted tasks.",
+          "de": "Der Verwalter des norwegischen Staatsfonds nutzt Claude Enterprise für Investment-Research, ESG-Analysen und Compliance; nach zwei Monaten gab es 600+ aktive Nutzer, gemeldet werden rund 20 % Zeitersparnis pro Woche bei unterstützten Aufgaben.",
+          "src": "https://claude.com/customers/nbim",
+          "yr": "2025"
+        },
+        {
+          "n": "Pictet Group, Geneva",
+          "c": "CHE",
+          "la": 46.188,
+          "lo": 6.136,
+          "en": "Since early 2026 about 700 Pictet staff have access to Claude Code and Claude Cowork; a compliance gap analysis across 50+ directives took hours instead of two weeks.",
+          "de": "Seit Anfang 2026 haben rund 700 Pictet-Mitarbeitende Zugang zu Claude Code und Claude Cowork; eine Compliance-Lückenanalyse über 50+ Richtlinien dauerte Stunden statt zwei Wochen.",
+          "src": "https://claude.com/customers/pictet",
+          "yr": "2026"
+        },
+        {
+          "n": "Nomura Research Institute, Tokyo",
+          "c": "JPN",
+          "la": 35.687,
+          "lo": 139.766,
+          "en": "NRI uses Claude via Amazon Bedrock to analyse specialised Japanese business documents for financial, manufacturing and retail clients, halving document review times.",
+          "de": "NRI nutzt Claude über Amazon Bedrock zur Analyse fachspezifischer japanischer Geschäftsdokumente für Kunden aus Finanzwesen, Industrie und Handel und halbiert damit die Prüfzeiten.",
+          "src": "https://claude.com/customers/nri",
+          "yr": "2025"
+        },
+        {
+          "n": "International Rescue Committee, Ouagadougou",
+          "c": "BFA",
+          "la": 12.371,
+          "lo": -1.52,
+          "en": "In a 2025 pilot in Burkina Faso, IRC staff used Claude to build offline dashboards for 15+ health indicators; half of users save 4+ hours a month and the dashboards flagged a pneumonia spike of 25,000+ cases in February 2026.",
+          "de": "In einem Pilotprojekt 2025 in Burkina Faso bauten IRC-Mitarbeitende mit Claude Offline-Dashboards für 15+ Gesundheitsindikatoren; die Hälfte der Nutzer spart 4+ Stunden im Monat, die Dashboards zeigten im Februar 2026 einen Anstieg auf 25.000+ Lungenentzündungsfälle.",
+          "src": "https://claude.com/customers/irc",
+          "yr": "2026"
+        }
+      ]
+    },
+    "hr-recruiting-agents": {
+      "name": {
+        "en": "HR / recruiting agents",
+        "de": "HR- / Recruiting-Agenten"
+      },
+      "places": [
+        {
+          "n": "The Adecco Group, Zurich",
+          "c": "CHE",
+          "la": 47.357,
+          "lo": 8.553,
+          "en": "Since April 2025 Adecco has run a Salesforce Agentforce prescreening agent in French and English; it completed 65,000+ candidate conversations, and screened candidates are twice as likely to be hired. A UK voice pilot started in November 2025.",
+          "de": "Seit April 2025 betreibt Adecco einen Agentforce-Vorauswahl-Agenten auf Französisch und Englisch; er führte über 65.000 Bewerbergespräche, so gescreente Kandidaten werden doppelt so oft eingestellt. Im November 2025 startete ein Voice-Pilot in Großbritannien.",
+          "src": "https://www.salesforce.com/customer-stories/the-adecco-group/agentic-prescreening/",
+          "yr": "2026"
+        },
+        {
+          "n": "7-Eleven, Irving (Texas)",
+          "c": "USA",
+          "la": 32.876,
+          "lo": -96.958,
+          "en": "7-Eleven uses Paradox's conversational assistant 'Rita' for applications and interview scheduling; store managers save 40,000 hours a week and time-to-hire fell from 10+ to under 5 days.",
+          "de": "7-Eleven nutzt den Paradox-Dialogassistenten „Rita“ für Bewerbungen und Terminplanung; Filialleitungen sparen 40.000 Stunden pro Woche, die Time-to-Hire sank von über 10 auf unter 5 Tage.",
+          "src": "https://www.paradox.ai/case-studies/7-eleven",
+          "yr": "2026"
+        },
+        {
+          "n": "Chipotle, Newport Beach (California)",
+          "c": "USA",
+          "la": 33.616,
+          "lo": -117.876,
+          "en": "Chipotle hires with Paradox's assistant 'Ava Cado'; time to hire fell 75% (12 to 4 days) and application completion rose from 50% to 85%.",
+          "de": "Chipotle stellt mit dem Paradox-Assistenten „Ava Cado“ ein; die Time-to-Hire sank um 75 % (12 auf 4 Tage), die Abschlussquote der Bewerbungen stieg von 50 % auf 85 %.",
+          "src": "https://www.paradox.ai/case-studies/chipotle",
+          "yr": "2025"
+        }
+      ]
+    },
+    "machine-translation": {
+      "name": {
+        "en": "Machine translation",
+        "de": "Maschinelle Übersetzung"
+      },
+      "places": [
+        {
+          "n": "Nagashima Ohno & Tsunematsu, Tokyo",
+          "c": "JPN",
+          "la": 35.68,
+          "lo": 139.765,
+          "en": "One of Japan's five largest law firms (about 600 lawyers, 1,000+ staff) rolled out DeepL for Enterprise firm-wide for confidential legal documents; translation tasks that took a day now take minutes.",
+          "de": "Eine der fünf größten Kanzleien Japans (rund 600 Anwälte, über 1.000 Beschäftigte) hat DeepL for Enterprise kanzleiweit für vertrauliche Rechtsdokumente eingeführt; Übersetzungen, die einen Tag dauerten, brauchen nun Minuten.",
+          "src": "https://www.deepl.com/en/customer-stories/nagashima-ohno-tsunematsu",
+          "yr": "2025"
+        },
+        {
+          "n": "Deutsche Bahn, Berlin",
+          "c": "DEU",
+          "la": 52.509,
+          "lo": 13.376,
+          "en": "Deutsche Bahn has used DeepL since January 2022 for internal communication and document translation, available to all employees as a browser extension, with 30,000 glossary entries in up to 16 languages.",
+          "de": "Die Deutsche Bahn nutzt DeepL seit Januar 2022 für interne Kommunikation und Dokumentübersetzung, für alle Beschäftigten als Browser-Erweiterung verfügbar, mit 30.000 Glossareinträgen in bis zu 16 Sprachen.",
+          "src": "https://www.deepl.com/en/customer-stories/deutsche-bahn",
+          "yr": "2025"
+        },
+        {
+          "n": "KBC Bank, Brussels",
+          "c": "BEL",
+          "la": 50.862,
+          "lo": 4.351,
+          "en": "Belgium's largest bank-insurer uses DeepL in its in-house Language Centre and across teams; KBC reports a 20% productivity gain for its translators and 2 million fewer words translated manually per year.",
+          "de": "Belgiens größter Bank-Versicherer nutzt DeepL im hauseigenen Language Centre und in den Fachteams; KBC meldet 20 % mehr Produktivität der Übersetzer und 2 Millionen Wörter weniger manuelle Übersetzung pro Jahr.",
+          "src": "https://www.deepl.com/en/customer-stories/kbc-bank",
+          "yr": "2025"
+        },
+        {
+          "n": "Swiss Federal Chancellery, Bern",
+          "c": "CHE",
+          "la": 46.947,
+          "lo": 7.444,
+          "en": "The Federal Chancellery procured DeepL Pro for all employees of the Swiss federal administration; the system has been available since July 2024, initially for two years with possible extension to 2033.",
+          "de": "Die Bundeskanzlei hat DeepL Pro für alle Mitarbeitenden der Schweizer Bundesverwaltung beschafft; das System ist seit Juli 2024 verfügbar, zunächst für zwei Jahre mit möglicher Verlängerung bis 2033.",
+          "src": "https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-99327.html",
+          "yr": "2023"
+        },
+        {
+          "n": "Texas Commission on Environmental Quality (TCEQ), Austin",
+          "c": "USA",
+          "la": 30.398,
+          "lo": -97.689,
+          "en": "The Texas environmental agency uses the Google Cloud Translation API with an in-house glossary to publish Spanish versions of its English public website; bilingual staff translators review the output.",
+          "de": "Die texanische Umweltbehörde nutzt die Google Cloud Translation API mit eigenem Glossar, um spanische Fassungen ihrer englischen Website zu veröffentlichen; zweisprachige Übersetzer der Behörde prüfen die Ergebnisse.",
+          "src": "https://www.tceq.texas.gov/downloads/help/ai-system-facts-google-cloud-translation.pdf",
+          "yr": "2026"
+        }
+      ]
+    },
+    "email-bec-security": {
+      "name": {
+        "en": "Email / BEC security",
+        "de": "Email- / BEC-Security"
+      },
+      "places": [
+        {
+          "n": "Adelphi University, Garden City (New York)",
+          "c": "USA",
+          "la": 40.721,
+          "lo": -73.651,
+          "en": "After evaluating providers in summer 2025, Adelphi University runs Abnormal on its Gmail service university-wide; it automatically detects and removes phishing, malware attachments and business email compromise.",
+          "de": "Nach einer Anbieterauswahl im Sommer 2025 betreibt die Adelphi University Abnormal universitätsweit auf ihrem Gmail-Dienst; es erkennt und entfernt automatisch Phishing, Malware-Anhänge und Business-Email-Compromise.",
+          "src": "https://www.adelphi.edu/it-services/abnormal-ai/",
+          "yr": "2025"
+        },
+        {
+          "n": "REA Group, Melbourne",
+          "c": "AUS",
+          "la": -37.825,
+          "lo": 144.996,
+          "en": "The Australian property-portal operator protects 11,000+ mailboxes across Microsoft 365 and Google Workspace with Abnormal's behavioral AI, including detection of vendor fraud.",
+          "de": "Der australische Immobilienportal-Betreiber schützt über 11.000 Postfächer in Microsoft 365 und Google Workspace mit Abnormals Verhaltens-KI, einschließlich Erkennung von Lieferantenbetrug.",
+          "src": "https://abnormal.ai/customers/stories/rea-group",
+          "yr": "2026"
+        },
+        {
+          "n": "McLaren Construction Group, London",
+          "c": "GBR",
+          "la": 51.507,
+          "lo": -0.128,
+          "en": "The UK construction group protects 1,300+ Microsoft 365 mailboxes with Abnormal, which disables compromised accounts within seconds; its AI Security Mailbox saves about one analyst workweek per month.",
+          "de": "Die britische Baugruppe schützt über 1.300 Microsoft-365-Postfächer mit Abnormal, das kompromittierte Konten binnen Sekunden sperrt; die AI Security Mailbox spart etwa eine Analysten-Arbeitswoche pro Monat.",
+          "src": "https://abnormal.ai/customers/stories/mclaren-construction-group",
+          "yr": "2026"
+        },
+        {
+          "n": "Valvoline Inc., Lexington (Kentucky)",
+          "c": "USA",
+          "la": 38.051,
+          "lo": -84.497,
+          "en": "Valvoline replaced its secure email gateway and an API tool with Abnormal, now protecting 9,100+ mailboxes; Abnormal stopped a recurring invoice-fraud attack.",
+          "de": "Valvoline ersetzte sein Secure Email Gateway und ein API-Tool durch Abnormal und schützt damit über 9.100 Postfächer; Abnormal stoppte einen wiederkehrenden Rechnungsbetrug.",
+          "src": "https://abnormal.ai/customers/stories/valvoline",
+          "yr": "2026"
+        }
+      ]
+    },
+    "fraud-aml-banking": {
+      "name": {
+        "en": "Fraud / AML (banking)",
+        "de": "Fraud / AML (Banking)"
+      },
+      "places": [
+        {
+          "n": "First National Bank of Omaha (FNBO), Omaha",
+          "c": "USA",
+          "la": 41.259,
+          "lo": -95.938,
+          "en": "FNBO uses Nasdaq Verafin's Agentic EDD Analyst and Agentic Sanctions Analyst; the bank reports 50% less time spent on enhanced-due-diligence and sanctions alerts.",
+          "de": "FNBO setzt Nasdaq Verafins Agentic EDD Analyst und Agentic Sanctions Analyst ein; die Bank meldet 50 % weniger Zeitaufwand für Enhanced-Due-Diligence- und Sanktions-Alerts.",
+          "src": "https://verafin.com/resource/fnbo-seizes-the-agentic-ai-advantage/",
+          "yr": "2026"
+        },
+        {
+          "n": "Origin Bank, Ruston (Louisiana)",
+          "c": "USA",
+          "la": 32.523,
+          "lo": -92.637,
+          "en": "The $10.1 billion-asset Origin Bank runs Verafin's Agentic AI Workforce for EDD and sanctions workflows and reports 412% more completed EDD reviews with no valid cases missed.",
+          "de": "Die Origin Bank (10,1 Mrd. US-Dollar Bilanzsumme) nutzt Verafins Agentic AI Workforce für EDD- und Sanktions-Workflows und meldet 412 % mehr abgeschlossene EDD-Prüfungen ohne verpassten relevanten Fall.",
+          "src": "https://verafin.com/resource/origin-bank-proves-the-business-case-for-the-agentic-ai-workforce/",
+          "yr": "2026"
+        },
+        {
+          "n": "bunq, Amsterdam",
+          "c": "NLD",
+          "la": 52.388,
+          "lo": 4.837,
+          "en": "The Dutch neobank uses Sardine for fraud prevention and AML across 20+ million customers; it reports 82% less fraudulent incoming funds and a 4x drop in false positives.",
+          "de": "Die niederländische Neobank nutzt Sardine für Betrugsprävention und Geldwäschebekämpfung bei über 20 Millionen Kunden; sie meldet 82 % weniger betrügerische Zahlungseingänge und viermal weniger Fehlalarme.",
+          "src": "https://www.sardine.ai/customers/bunq",
+          "yr": "2026"
+        },
+        {
+          "n": "TBC Bank, Tbilisi",
+          "c": "GEO",
+          "la": 41.709,
+          "lo": 44.802,
+          "en": "Georgia's TBC Bank uses Feedzai Digital Trust for real-time fraud detection and account monitoring; 65% of fraudulent sessions are identified through it.",
+          "de": "Die georgische TBC Bank nutzt Feedzai Digital Trust zur Echtzeit-Betrugserkennung und Kontoüberwachung; 65 % der betrügerischen Sitzungen werden darüber erkannt.",
+          "src": "https://www.feedzai.com/customer-stories/tbc-bank/",
+          "yr": "2026"
+        },
+        {
+          "n": "Wio Bank, Abu Dhabi",
+          "c": "ARE",
+          "la": 24.501,
+          "lo": 54.389,
+          "en": "Wio Bank, a UAE platform bank, uses Feedzai Transaction Fraud and Digital Trust for real-time fraud prevention and account monitoring.",
+          "de": "Die Wio Bank, eine Plattformbank in den VAE, nutzt Feedzai Transaction Fraud und Digital Trust für Echtzeit-Betrugsprävention und Kontoüberwachung.",
+          "src": "https://www.feedzai.com/customer-stories/wio-bank/",
+          "yr": "2026"
+        },
+        {
+          "n": "BTG Pactual, São Paulo",
+          "c": "BRA",
+          "la": -23.587,
+          "lo": -46.682,
+          "en": "Brazil's BTG Pactual uses Feedzai for fraud prevention and transaction monitoring across Pix, cards and current accounts, reporting very low fraud rates at high approval rates.",
+          "de": "Brasiliens BTG Pactual nutzt Feedzai zur Betrugsprävention und Transaktionsüberwachung bei Pix, Karten und Girokonten und meldet sehr niedrige Betrugsraten bei hohen Freigabequoten.",
+          "src": "https://www.feedzai.com/customer-stories/btg-pactual/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "ot-ics-security": {
+      "name": {
+        "en": "OT / ICS security",
+        "de": "OT / ICS-Security"
+      },
+      "places": [
+        {
+          "n": "Dubai Electricity and Water Authority (DEWA), Dubai",
+          "c": "ARE",
+          "la": 25.205,
+          "lo": 55.271,
+          "en": "DEWA monitors more than 180 transmission-network sites and two control centres with Nozomi Networks Guardian sensors (IEC 101/104/61850), a programme begun in 2016, with extension to further substations planned.",
+          "de": "DEWA überwacht mehr als 180 Standorte des Übertragungsnetzes und zwei Leitstellen mit Nozomi-Networks-Guardian-Sensoren (IEC 101/104/61850), ein 2016 begonnenes Programm; die Ausweitung auf weitere Umspannwerke ist geplant.",
+          "src": "https://www.nozominetworks.com/resources/dewa-relies-on-nozomi-networks-to-ensure-world-class-delivery-of-electricity-and-water-utility-services",
+          "yr": "2026"
+        },
+        {
+          "n": "Vermont Electric Cooperative, Johnson (Vermont)",
+          "c": "USA",
+          "la": 44.636,
+          "lo": -72.68,
+          "en": "The distribution cooperative serving 75 Vermont communities uses Nozomi Guardian to monitor ICS assets and protocols in its grid, recovering 10-12 staff hours per week.",
+          "de": "Die Verteilnetz-Genossenschaft für 75 Gemeinden in Vermont nutzt Nozomi Guardian zur Überwachung von ICS-Anlagen und -Protokollen im Netz und spart 10-12 Arbeitsstunden pro Woche.",
+          "src": "https://www.nozominetworks.com/resources/regional-power-operator-improves-ics-cyber-security",
+          "yr": "2026"
+        },
+        {
+          "n": "Konkuk University Hospital, Seoul",
+          "c": "KOR",
+          "la": 37.541,
+          "lo": 127.072,
+          "en": "Konkuk University Hospital runs Nozomi Networks Vantage, a cloud-based OT security service, to inventory and monitor medical devices, CCTV and building OT; it is described as the first Korean general hospital with cloud-based OT security.",
+          "de": "Das Konkuk University Hospital nutzt Nozomi Networks Vantage, einen cloudbasierten OT-Sicherheitsdienst, zur Inventarisierung und Überwachung von Medizingeräten, CCTV und Gebäude-OT; laut Quelle das erste koreanische Allgemeinkrankenhaus mit cloudbasierter OT-Security.",
+          "src": "https://www.nozominetworks.com/resources/konkuk-university-hospital-strengthens-their-security-and-collaboration",
+          "yr": "2026"
+        }
+      ]
+    },
+    "identity-access-security": {
+      "name": {
+        "en": "Identity & access security",
+        "de": "Identity & Access Security"
+      },
+      "places": [
+        {
+          "n": "Memorial Hermann Health System, Houston",
+          "c": "USA",
+          "la": 29.76,
+          "lo": -95.37,
+          "en": "The 11-hospital system secures 63,000+ user accounts and 200+ SaaS apps with Okta, including adaptive MFA for over 95% of active users and Identity Threat Protection; password-reset tickets fell by more than 50%.",
+          "de": "Der Klinikverbund mit 11 Krankenhäusern sichert über 63.000 Benutzerkonten und mehr als 200 SaaS-Anwendungen mit Okta, darunter adaptive MFA für über 95 % der aktiven Nutzer und Identity Threat Protection; Passwort-Reset-Tickets sanken um mehr als 50 %.",
+          "src": "https://www.okta.com/customers/memorial-hermann/",
+          "yr": "2026"
+        },
+        {
+          "n": "Hitachi, Ltd., Tokyo",
+          "c": "JPN",
+          "la": 35.682,
+          "lo": 139.766,
+          "en": "Hitachi has used Okta since August 2017 and by mid-2024 secured about 480,000 identities and roughly 1,500 applications across its group, adding identity governance in April 2024.",
+          "de": "Hitachi nutzt Okta seit August 2017 und sicherte Mitte 2024 rund 480.000 Identitäten und etwa 1.500 Anwendungen im Konzern; im April 2024 kam Identity Governance hinzu.",
+          "src": "https://www.okta.com/en-gb/customers/hitachi/",
+          "yr": "2024"
+        },
+        {
+          "n": "Harris Computer, Ottawa",
+          "c": "CAN",
+          "la": 45.421,
+          "lo": -75.697,
+          "en": "The Canadian software group (10,000+ employees) runs CrowdStrike Falcon Next-Gen Identity Security for real-time protection across its hybrid identity environment.",
+          "de": "Die kanadische Softwaregruppe (über 10.000 Beschäftigte) setzt CrowdStrike Falcon Next-Gen Identity Security für Echtzeitschutz in ihrer hybriden Identitätsumgebung ein.",
+          "src": "https://www.crowdstrike.com/en-us/resources/customer-stories/harris-computer/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "autonomous-soc-agents-ai-vs-ai": {
+      "name": {
+        "en": "Autonomous SOC agents (AI vs AI)",
+        "de": "Autonome SOC-Agenten (KI gegen KI)"
+      },
+      "places": [
+        {
+          "n": "J.B. Poindexter & Co, Houston",
+          "c": "USA",
+          "la": 29.76,
+          "lo": -95.37,
+          "en": "The industrial holding runs Prophet AI for 24/7 alert triage and investigation; in a 60-day period it investigated 4,407 alerts with a mean time to investigate under four minutes, about 6.3 analyst FTEs freed on an annual basis.",
+          "de": "Die Industrieholding nutzt Prophet AI für Alert-Triage und Untersuchung rund um die Uhr; in 60 Tagen untersuchte es 4.407 Alerts mit unter vier Minuten mittlerer Untersuchungszeit, hochgerechnet rund 6,3 freigesetzte Analysten-Vollzeitstellen.",
+          "src": "https://www.prophetsecurity.ai/case-studies/jb-poindexter-co-unlocking-soc-capacity-and-speed-with-prophet-ai",
+          "yr": "2026"
+        },
+        {
+          "n": "Zip, San Francisco",
+          "c": "USA",
+          "la": 37.775,
+          "lo": -122.419,
+          "en": "Prophet AI autonomously triages and investigates Zip's identity, email, endpoint and SaaS alerts; over 12 months it completed 20,182 investigations, saving 6,727 analyst hours.",
+          "de": "Prophet AI triagiert und untersucht bei Zip autonom Alerts aus Identität, E-Mail, Endpunkten und SaaS; in 12 Monaten waren es 20.182 Untersuchungen und 6.727 eingesparte Analystenstunden.",
+          "src": "https://www.prophetsecurity.ai/case-studies/zip-boosting-soc-throughput-with-prophet-ai",
+          "yr": "2026"
+        },
+        {
+          "n": "Banco Galicia, Buenos Aires",
+          "c": "ARG",
+          "la": -34.604,
+          "lo": -58.374,
+          "en": "One of Argentina's largest private banks uses Darktrace Cyber AI Analyst and autonomous containment; in just over three months it ran 22,457 AI investigations and autonomously contained 706 anomalous behaviours.",
+          "de": "Eine der größten Privatbanken Argentiniens nutzt Darktrace Cyber AI Analyst und autonome Eindämmung; in gut drei Monaten liefen 22.457 KI-Untersuchungen, 706 auffällige Verhaltensweisen wurden autonom eingedämmt.",
+          "src": "https://www.darktrace.com/customers/banco-galicia",
+          "yr": "2026"
+        },
+        {
+          "n": "NCG (college group), Newcastle upon Tyne",
+          "c": "GBR",
+          "la": 54.978,
+          "lo": -1.618,
+          "en": "The seven-college UK group uses Darktrace Cyber AI Analyst, which ran 20,940 AI investigations in one month and resolves 97% of potential incidents autonomously.",
+          "de": "Die britische Gruppe aus sieben Colleges nutzt Darktrace Cyber AI Analyst, der in einem Monat 20.940 KI-Untersuchungen durchführte und 97 % der potenziellen Vorfälle autonom erledigt.",
+          "src": "https://www.darktrace.com/customers/ncg",
+          "yr": "2026"
+        },
+        {
+          "n": "Tohoku Electrical Safety Association, Sendai",
+          "c": "JPN",
+          "la": 38.268,
+          "lo": 140.87,
+          "en": "Since full deployment in April 2024 the foundation, which inspects 55,000 facilities across Tohoku and Niigata, uses Darktrace for autonomous detection and containment, with Cyber AI Analyst writing incident reports in Japanese.",
+          "de": "Seit dem vollständigen Rollout im April 2024 nutzt die Stiftung, die 55.000 Anlagen in Tohoku und Niigata prüft, Darktrace zur autonomen Erkennung und Eindämmung; Cyber AI Analyst erstellt Vorfallberichte auf Japanisch.",
+          "src": "https://www.darktrace.com/customers/tohoku-electrical-safety-association-foundation",
+          "yr": "2026"
+        }
+      ]
+    },
+    "insurance-claims": {
+      "name": {
+        "en": "Insurance claims",
+        "de": "Versicherungs-Claims"
+      },
+      "places": [
+        {
+          "n": "Covéa (MAAF, MMA, GMF), Paris",
+          "c": "FRA",
+          "la": 48.876,
+          "lo": 2.327,
+          "en": "France's Covéa group has used Tractable's photo-based AI to assess vehicle damage in motor claims since 2018; more than 160,000 claims have been processed, and the contract was renewed for three years in 2026.",
+          "de": "Die französische Covéa-Gruppe nutzt seit 2018 Tractables fotobasierte KI zur Bewertung von Fahrzeugschäden in Kfz-Schadenfällen; mehr als 160.000 Schäden wurden damit bearbeitet, 2026 wurde der Vertrag um drei Jahre verlängert.",
+          "src": "https://tractable.ai/covea-renewal-tractable/",
+          "yr": "2026"
+        },
+        {
+          "n": "Sompo Japan, South Tohoku claims service department (Sendai region)",
+          "c": "JPN",
+          "la": 38.268,
+          "lo": 140.87,
+          "en": "Sompo Japan's South Tohoku claims department uses Tractable AI in motor claims and achieved Japan's first total-loss decisions made by AI alone; the insurer aims to automate 40% of about 1 million damage assessments a year.",
+          "de": "Die Schadenabteilung Süd-Tohoku von Sompo Japan setzt Tractable-KI in der Kfz-Schadenregulierung ein und erreichte Japans erste allein von KI getroffene Totalschaden-Entscheidungen; der Versicherer will 40 % von rund 1 Mio. Schadenbegutachtungen pro Jahr automatisieren.",
+          "src": "https://tractable.ai/ja/?p=2993",
+          "yr": "2023"
+        },
+        {
+          "n": "The Standard, Portland (Oregon)",
+          "c": "USA",
+          "la": 45.516,
+          "lo": -122.68,
+          "en": "After a 2024 rollout, The Standard expanded EvolutionIQ's AI claims-guidance platform to all of its disability insurance products in May 2025.",
+          "de": "Nach einer Einführung 2024 weitete The Standard im Mai 2025 die KI-Claims-Guidance-Plattform von EvolutionIQ auf alle seine Berufsunfähigkeitsprodukte aus.",
+          "src": "https://www.standard.com/get-to-know-standard/newsroom/press-releases/standard-expands-partnership-evolutioniq-improve-disability-claims-experience",
+          "yr": "2025"
+        },
+        {
+          "n": "Lincoln Financial Group, Radnor (Pennsylvania)",
+          "c": "USA",
+          "la": 40.041,
+          "lo": -75.36,
+          "en": "Lincoln Financial's Group Protection business has used EvolutionIQ's AI to prioritise long-term disability claims since early 2023 and extended it to short-term disability in 2024.",
+          "de": "Die Sparte Group Protection von Lincoln Financial nutzt seit Anfang 2023 EvolutionIQs KI zur Priorisierung von Langzeit-Berufsunfähigkeitsfällen und dehnte sie 2024 auf Kurzzeit-Berufsunfähigkeit aus.",
+          "src": "https://www.evolutioniq.com/resources/lincoln-financial-group-expands-partnership-to-support-customers-as-they-recover-and-return-to-work",
+          "yr": "2024"
+        }
+      ]
+    },
+    "finance-accounting": {
+      "name": {
+        "en": "Finance / accounting",
+        "de": "Finance / Accounting"
+      },
+      "places": [
+        {
+          "n": "University Health Network, Toronto",
+          "c": "CAN",
+          "la": 43.659,
+          "lo": -79.388,
+          "en": "Canada's University Health Network (10 hospital and care sites, 44,000+ staff) runs accounts payable on Basware alongside SAP Cloud ERP/Ariba, using Basware's 'Governed Autonomy' to apply AI inside AP workflows, including SmartCoding.",
+          "de": "Das kanadische University Health Network (10 Klinik- und Pflegestandorte, über 44.000 Beschäftigte) wickelt die Kreditorenbuchhaltung mit Basware neben SAP Cloud ERP/Ariba ab und setzt über Basware „Governed Autonomy“ KI in den AP-Abläufen ein, u. a. SmartCoding.",
+          "src": "https://www.basware.com/en/why-basware/customers/uhn",
+          "yr": "2025"
+        },
+        {
+          "n": "Billerud, Solna (Stockholm)",
+          "c": "SWE",
+          "la": 59.364,
+          "lo": 18.006,
+          "en": "Paper and packaging maker Billerud converts PDF invoices into validated e-invoices with Basware's AI-based SmartPDF; over 90% are validated automatically and PDF extraction costs fell 66%.",
+          "de": "Der Papier- und Verpackungshersteller Billerud wandelt PDF-Rechnungen mit Baswares KI-basiertem SmartPDF in validierte E-Rechnungen um; über 90 % werden automatisch validiert, die Extraktionskosten sanken um 66 %.",
+          "src": "https://www.basware.com/en/why-basware/customers/billerud",
+          "yr": "2025"
+        },
+        {
+          "n": "Perplexity, San Francisco",
+          "c": "USA",
+          "la": 37.79,
+          "lo": -122.401,
+          "en": "Perplexity's 10-person finance team uses Ramp's Accounting Agent to code 7,000–9,000 card transactions a month, with an auto-coding rate above 97% and about 163 hours of monthly work automated.",
+          "de": "Das zehnköpfige Finanzteam von Perplexity kontiert mit Ramps Accounting Agent monatlich 7.000–9.000 Kartentransaktionen, mit über 97 % automatischer Kontierung und rund 163 automatisierten Arbeitsstunden pro Monat.",
+          "src": "https://ramp.com/customers/perplexity",
+          "yr": "2026"
+        }
+      ]
+    },
+    "public-administration-government": {
+      "name": {
+        "en": "Public administration / government",
+        "de": "Öffentliche Verwaltung / Behörden"
+      },
+      "places": [
+        {
+          "n": "Scottish Government, St Andrew's House, Edinburgh",
+          "c": "GBR",
+          "la": 55.953,
+          "lo": -3.181,
+          "en": "The Scottish Government used the UK i.AI tool Consult to generate themes for and classify the 2,207 responses to its 2024/25 consultation on non-surgical cosmetic procedures; staff checked every response.",
+          "de": "Die schottische Regierung ließ die 2.207 Antworten ihrer Konsultation 2024/25 zu nichtchirurgischen kosmetischen Eingriffen mit dem i.AI-Werkzeug Consult thematisch auswerten und zuordnen; Mitarbeitende prüften jede Antwort.",
+          "src": "https://www.gov.scot/publications/regulation-licensing-non-surgical-cosmetic-procedures-consultation-analysis-response/pages/3/",
+          "yr": "2025"
+        },
+        {
+          "n": "BITBW / Baden-Württemberg state administration, Stuttgart",
+          "c": "DEU",
+          "la": 48.818,
+          "lo": 9.143,
+          "en": "Baden-Württemberg's state IT service BITBW runs the open-source AI assistant F13 in production for about 50,000 state employees; the state also runs it for about 100,000 teachers and for the police.",
+          "de": "Der Landes-IT-Dienstleister BITBW betreibt den Open-Source-KI-Assistenten F13 produktiv für rund 50.000 Beschäftigte der Landesverwaltung Baden-Württemberg; das Land setzt ihn außerdem für rund 100.000 Lehrkräfte und bei der Polizei ein.",
+          "src": "https://f13-os.de/community",
+          "yr": "2026"
+        },
+        {
+          "n": "Saarland Ministry for Economy, Innovation, Digital and Energy, Saarbrücken",
+          "c": "DEU",
+          "la": 49.234,
+          "lo": 6.996,
+          "en": "Saarland runs F13 in production in its state administration with 1,800 users, planned to reach about 3,500–4,000 by the end of 2026.",
+          "de": "Das Saarland betreibt F13 produktiv in der Landesverwaltung mit 1.800 Nutzenden; bis Ende 2026 sollen es rund 3.500–4.000 werden.",
+          "src": "https://f13-os.de/community",
+          "yr": "2026"
+        },
+        {
+          "n": "Building and Construction Authority, Singapore",
+          "c": "SGP",
+          "la": 1.334,
+          "lo": 103.742,
+          "en": "Singapore's Building and Construction Authority uses the government AI suite Pair to summarise and check Integrated Digital Delivery reports from industry and draft first responses; Pair is free to all public officers.",
+          "de": "Singapurs Bau- und Baubehörde BCA nutzt die staatliche KI-Suite Pair, um Berichte zu Integrated Digital Delivery aus der Branche zusammenzufassen, zu prüfen und erste Antworten zu entwerfen; Pair steht allen Beamten kostenlos zur Verfügung.",
+          "src": "https://pair.gov.sg/pages/case-studies/bca-pair",
+          "yr": "2025"
+        },
+        {
+          "n": "Information System Authority (RIA), Tallinn",
+          "c": "EST",
+          "la": 59.437,
+          "lo": 24.745,
+          "en": "Estonia's state chatbot network Bürokratt runs on public-sector websites; RIA's electronic-identity service (id.ee) was the first to adopt its large-language-model version to answer user questions.",
+          "de": "Estlands staatliches Chatbot-Netz Bürokratt läuft auf Behördenwebseiten; der E-Identitäts-Dienst der RIA (id.ee) setzte als Erster dessen Version mit großem Sprachmodell zur Beantwortung von Nutzerfragen ein.",
+          "src": "https://www.kratid.ee/en/burokratt",
+          "yr": "2025"
+        }
+      ]
+    },
+    "robo-advisory-wealth": {
+      "name": {
+        "en": "Robo-advisory & wealth",
+        "de": "Robo-Advisory & Wealth"
+      },
+      "places": [
+        {
+          "n": "CaixaBank Private Banking, Barcelona",
+          "c": "ESP",
+          "la": 41.388,
+          "lo": 2.128,
+          "en": "Since November 2024 CaixaBank Private Banking has offered 'Advisory GPS', an advisory service built on BlackRock's Aladdin Wealth for portfolio construction and proposals, run by more than 1,100 private bankers in 75 centres.",
+          "de": "Seit November 2024 bietet CaixaBank Private Banking „Advisory GPS“ an, einen Beratungsdienst auf Basis von BlackRocks Aladdin Wealth für Portfolioaufbau und Anlagevorschläge, getragen von über 1.100 Private Bankern in 75 Zentren.",
+          "src": "https://www.caixabank.com/en/headlines/news/caixabank-private-banking-is-launching-a-new-service-unique-in-spain-that-combines-agility-in-portfolio-construction-with-maximum-personalization-in-advisory",
+          "yr": "2024"
+        },
+        {
+          "n": "National Pension Service of Korea, Jeonju",
+          "c": "KOR",
+          "la": 35.844,
+          "lo": 127.06,
+          "en": "In February 2025 Korea's National Pension Service went live on BlackRock's Aladdin investment and risk platform across its operations in Korea, New York, London and Singapore.",
+          "de": "Im Februar 2025 ging Koreas Nationaler Pensionsfonds NPS mit BlackRocks Investment- und Risikoplattform Aladdin live, an seinen Standorten in Korea, New York, London und Singapur.",
+          "src": "https://www.blackrock.com/aladdin/discover/press-release/nps-unveils-technology-platform-unified-by-blackrocks-aladdin-with-state-street-and-bny-specialized-investment-operations-services",
+          "yr": "2025"
+        },
+        {
+          "n": "Cathay United Bank Private Banking, Taipei",
+          "c": "TWN",
+          "la": 25.037,
+          "lo": 121.567,
+          "en": "In June 2026 Cathay United Bank Private Banking became the first private bank in Taiwan to go live on Aladdin Wealth, covering its clients in Taiwan, Hong Kong and Singapore.",
+          "de": "Im Juni 2026 ging Cathay United Bank Private Banking als erste Privatbank Taiwans mit Aladdin Wealth live, für ihre Kunden in Taiwan, Hongkong und Singapur.",
+          "src": "https://www.blackrock.com/aladdin/discover/press-release/cathay-united-bank-private-banking-announcement",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-language-models": {
+      "name": {
+        "en": "Local language models",
+        "de": "Lokale Sprachmodelle"
+      },
+      "places": [
+        {
+          "n": "University Hospital Bonn (UKB), Bonn",
+          "c": "DEU",
+          "la": 50.698,
+          "lo": 7.103,
+          "en": "University Hospital Bonn runs the open-weights model DeepSeek-R1 on its own isolated servers (UKB-GPT, served with vLLM) so unanonymised patient data stays in-house; a one-week pilot with 22 radiologists was reported in 2026.",
+          "de": "Das Universitätsklinikum Bonn betreibt das offene Modell DeepSeek-R1 auf eigenen, abgeschotteten Servern (UKB-GPT, ausgeliefert mit vLLM), sodass nicht anonymisierte Patientendaten im Haus bleiben; 2026 wurde ein einwöchiger Pilot mit 22 Radiologinnen und Radiologen veröffentlicht.",
+          "src": "https://arxiv.org/abs/2604.22768",
+          "yr": "2026"
+        },
+        {
+          "n": "University Medicine Magdeburg, Magdeburg",
+          "c": "DEU",
+          "la": 52.103,
+          "lo": 11.622,
+          "en": "University Medicine Magdeburg offers staff an on-premise AI platform (KI-DIZ) running gpt-oss-120b and Gemma 3 27B; it was cleared for patient data in October 2025 and had 322 registered users by April 2026.",
+          "de": "Die Universitätsmedizin Magdeburg stellt ihren Beschäftigten eine On-Premise-KI-Plattform (KI-DIZ) mit gpt-oss-120b und Gemma 3 27B bereit; seit Oktober 2025 ist sie für Patientendaten freigegeben, im April 2026 hatte sie 322 registrierte Nutzer.",
+          "src": "https://imds.med.ovgu.de/News.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Heidelberg University Computing Centre (URZ), Heidelberg",
+          "c": "DEU",
+          "la": 49.417,
+          "lo": 8.672,
+          "en": "Heidelberg University's YoKI platform serves open models (Llama as default, DeepSeek, Qwen, Aya) to students and staff from the university's own servers, so prompts never leave the university.",
+          "de": "Die YoKI-Plattform der Universität Heidelberg stellt Studierenden und Beschäftigten offene Modelle (Llama als Standard, DeepSeek, Qwen, Aya) von eigenen Servern der Universität bereit; Eingaben verlassen die Universität nicht.",
+          "src": "https://www.urz.uni-heidelberg.de/en/newsroom/an-interdisciplinary-approach-to-open-source-ai-a-spotlight-on-yoki",
+          "yr": "2025"
+        },
+        {
+          "n": "Japanese Red Cross Nasu Hospital, Ōtawara",
+          "c": "JPN",
+          "la": 36.862,
+          "lo": 140.016,
+          "en": "Since spring 2025 doctors at Nasu Red Cross Hospital draft discharge summaries from the electronic record with a 7B Ricoh language model running on on-premises GPU servers with the open-source Dify platform.",
+          "de": "Seit Frühjahr 2025 entwerfen Ärztinnen und Ärzte im Rotkreuz-Krankenhaus Nasu Entlassberichte aus der elektronischen Akte mit einem 7-Mrd.-Sprachmodell von Ricoh, das auf hauseigenen GPU-Servern mit der Open-Source-Plattform Dify läuft.",
+          "src": "https://it.impress.co.jp/articles/-/27813",
+          "yr": "2025"
+        },
+        {
+          "n": "Hongo Masago Heart Clinic, Bunkyō (Tokyo)",
+          "c": "JPN",
+          "la": 35.708,
+          "lo": 139.758,
+          "en": "The clinic's director built an in-house AI server on an Apple Mac Studio running Google's Gemma 4 31B in the closed clinic network, used to summarise past records and draft notes from voice transcripts (reported September 2026).",
+          "de": "Der Leiter der Praxis hat auf einem Apple Mac Studio einen hauseigenen KI-Server mit Googles Gemma 4 31B im geschlossenen Praxisnetz aufgebaut; er fasst frühere Befunde zusammen und erstellt Notizen aus Sprachaufnahmen (berichtet im September 2026).",
+          "src": "https://www.itmedia.co.jp/aiplus/article/2609/17/2000001587/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-speech-transcription": {
+      "name": {
+        "en": "Local speech transcription",
+        "de": "Lokale Spracherkennung"
+      },
+      "places": [
+        {
+          "n": "Institute for Social Research (IfS), Frankfurt am Main",
+          "c": "DEU",
+          "la": 50.12,
+          "lo": 8.652,
+          "en": "Sociologist Kai Dröge (Institute for Social Research Frankfurt and Lucerne University of Applied Sciences) develops noScribe, an open-source app that transcribes research and journalistic interviews entirely on the user's computer with faster-whisper and speaker detection; version 0.8 appeared in October 2024.",
+          "de": "Der Soziologe Kai Dröge (Institut für Sozialforschung Frankfurt und Hochschule Luzern) entwickelt noScribe, eine quelloffene App, die Forschungs- und journalistische Interviews mit faster-whisper und Sprechererkennung vollständig auf dem eigenen Rechner verschriftet; Version 0.8 erschien im Oktober 2024.",
+          "src": "https://github.com/kaixxx/noScribe",
+          "yr": "2024"
+        },
+        {
+          "n": "University of Graz, Business Analytics and Data Science Center, Graz",
+          "c": "AUT",
+          "la": 47.078,
+          "lo": 15.45,
+          "en": "Researchers at the University of Graz build aTrain, an open-source tool that transcribes recordings fully offline on the user's device with faster-whisper (large-v3) and speaker detection in 99 languages; release 1.4.1 dates from January 2025.",
+          "de": "Forschende der Universität Graz entwickeln aTrain, ein quelloffenes Werkzeug, das Aufnahmen mit faster-whisper (large-v3) und Sprechererkennung in 99 Sprachen vollständig offline auf dem eigenen Gerät verschriftet; Version 1.4.1 stammt vom Januar 2025.",
+          "src": "https://github.com/JuergenFleiss/aTrain",
+          "yr": "2025"
+        },
+        {
+          "n": "Hongo Masago Heart Clinic, Bunkyō (Tokyo)",
+          "c": "JPN",
+          "la": 35.708,
+          "lo": 139.758,
+          "en": "The clinic uses speech recognition on its own in-house AI server (Mac Studio, closed network) to help draft medical notes from consultations, alongside a local Gemma language model (reported September 2026).",
+          "de": "Die Praxis nutzt Spracherkennung auf einem hauseigenen KI-Server (Mac Studio, geschlossenes Netz), um aus Gesprächen Entwürfe für die Patientenakte zu erstellen, zusammen mit einem lokalen Gemma-Sprachmodell (berichtet im September 2026).",
+          "src": "https://www.itmedia.co.jp/aiplus/article/2609/17/2000001587/",
+          "yr": "2026"
+        }
+      ]
+    },
+    "private-knowledge-base-over-your-own-files": {
+      "name": {
+        "en": "Private knowledge base over your own files",
+        "de": "Private Wissensbasis über eigene Dateien"
+      },
+      "places": [
+        {
+          "n": "GWDG, Göttingen",
+          "c": "DEU",
+          "la": 51.56,
+          "lo": 9.946,
+          "en": "GWDG, the computing centre of the University of Göttingen and Max Planck Society, runs Arcana, a RAG service in its Chat AI: academic users upload PDFs, text or Markdown, Docling indexes them, and open-weights models on GWDG's own HPC hardware answer questions over the collection.",
+          "de": "Die GWDG, Rechenzentrum der Universität Göttingen und der Max-Planck-Gesellschaft, betreibt in ihrem Chat AI den RAG-Dienst Arcana: Nutzer aus der Wissenschaft laden PDFs, Text- oder Markdown-Dateien hoch, Docling indexiert sie, und offene Modelle auf GWDG-eigener HPC-Hardware beantworten Fragen dazu.",
+          "src": "https://docs.hpc.gwdg.de/services/ai-services/arcana/index.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Friedrich Schiller University Jena, Jena",
+          "c": "DEU",
+          "la": 50.929,
+          "lo": 11.59,
+          "en": "Jena University runs Open WebUI entirely on university servers, connected to its own GPUStack engine with models such as Gemma 4 and Qwen 3.6; uploaded PDFs, Word files and URLs are vectorised into a database on university servers (test phase, 2026).",
+          "de": "Die Universität Jena betreibt Open WebUI vollständig auf Universitätsservern, angebunden an die eigene GPUStack-Engine mit Modellen wie Gemma 4 und Qwen 3.6; hochgeladene PDFs, Word-Dateien und URLs werden in einer Vektordatenbank auf Universitätsservern abgelegt (Testphase, 2026).",
+          "src": "https://www.uni-jena.de/en/425975/openwebui",
+          "yr": "2026"
+        },
+        {
+          "n": "University of Otago, Dunedin",
+          "c": "NZL",
+          "la": -45.866,
+          "lo": 170.514,
+          "en": "Otago's eResearch team hosts an Open WebUI instance (ai.uod) on campus; combined with on-campus models from its LLM gateway, document upload and knowledge-base chat run without any external cloud service.",
+          "de": "Das eResearch-Team der University of Otago betreibt eine Open-WebUI-Instanz (ai.uod) auf dem Campus; mit den campuseigenen Modellen ihres LLM-Gateways laufen Dokument-Upload und Chat mit Wissensbasen ohne externen Clouddienst.",
+          "src": "https://researchcomputing.otago.ac.nz/other_services/hosted/openwebui/",
+          "yr": "2025"
+        },
+        {
+          "n": "Michigan State University ICER, East Lansing",
+          "c": "USA",
+          "la": 42.725,
+          "lo": -84.481,
+          "en": "MSU's Institute for Cyber-Enabled Research documents running Open WebUI with an Ollama backend on its HPC cluster, pairing local models with knowledge bases whose files stay in users' home directories (March 2025).",
+          "de": "Das Institute for Cyber-Enabled Research der Michigan State University beschreibt den Betrieb von Open WebUI mit Ollama auf seinem HPC-Cluster; lokale Modelle werden mit Wissensbasen verknüpft, deren Dateien in den Home-Verzeichnissen der Nutzer bleiben (März 2025).",
+          "src": "https://docs.icer.msu.edu/2025-03-05_LabNotebook_How_to_run_OpenWebUI_RAG",
+          "yr": "2025"
+        }
+      ]
+    },
+    "local-document-ai-for-sensitive-records": {
+      "name": {
+        "en": "Local document AI for sensitive records",
+        "de": "Lokale Dokumenten-KI für sensible Akten"
+      },
+      "places": [
+        {
+          "n": "IBM Research Zurich, Rüschlikon",
+          "c": "CHE",
+          "la": 47.315,
+          "lo": 8.553,
+          "en": "Docling, the MIT-licensed document parser that converts PDFs, Office files and scans into structured text and tables, is developed at IBM Research in Rüschlikon; its 2025 paper stresses fully local execution on commodity hardware, suitable for sensitive data and air-gapped networks.",
+          "de": "Docling, der MIT-lizenzierte Dokumentparser, der PDFs, Office-Dateien und Scans in strukturierten Text und Tabellen umwandelt, wird bei IBM Research in Rüschlikon entwickelt; das Paper von 2025 betont die vollständig lokale Ausführung auf Standardhardware, geeignet für sensible Daten und abgeschottete Netze.",
+          "src": "https://arxiv.org/html/2501.17887",
+          "yr": "2025"
+        },
+        {
+          "n": "University Hospital Bonn (UKB), Bonn",
+          "c": "DEU",
+          "la": 50.698,
+          "lo": 7.103,
+          "en": "UKB researchers showed in January 2025 that open language models running locally can turn free-text radiology reports into structured data with all patient data staying inside the clinic; 17 open and 4 closed models were compared.",
+          "de": "Forschende des UKB zeigten im Januar 2025, dass lokal betriebene offene Sprachmodelle Freitext-Radiologiebefunde in strukturierte Daten überführen können, wobei alle Patientendaten in der Klinik bleiben; verglichen wurden 17 offene und 4 geschlossene Modelle.",
+          "src": "https://www.uni-bonn.de/en/news/from-text-to-structured-information-securely-with-ai",
+          "yr": "2025"
+        },
+        {
+          "n": "Japanese Red Cross Nasu Hospital, Ōtawara",
+          "c": "JPN",
+          "la": 36.862,
+          "lo": 140.016,
+          "en": "Nasu Red Cross Hospital generates draft discharge summaries from its electronic medical records with a 7B language model on on-premises GPU servers (Dify platform); physicians began using it in routine work in 2025, with outpatient summaries planned next.",
+          "de": "Das Rotkreuz-Krankenhaus Nasu erstellt Entwürfe von Entlassberichten aus der elektronischen Patientenakte mit einem 7-Mrd.-Sprachmodell auf hauseigenen GPU-Servern (Plattform Dify); seit 2025 nutzen Ärztinnen und Ärzte es im Alltag, Ambulanzberichte sollen folgen.",
+          "src": "https://it.impress.co.jp/articles/-/27813",
+          "yr": "2025"
+        },
+        {
+          "n": "GWDG, Göttingen",
+          "c": "DEU",
+          "la": 51.56,
+          "lo": 9.946,
+          "en": "In GWDG's Arcana service, documents uploaded by academic users are parsed with Docling and indexed on GWDG's own HPC platform, where self-hosted open-weights models answer questions about them.",
+          "de": "Im Arcana-Dienst der GWDG werden von Wissenschaftlern hochgeladene Dokumente mit Docling geparst und auf der GWDG-eigenen HPC-Plattform indexiert, wo selbst betriebene offene Modelle Fragen dazu beantworten.",
+          "src": "https://docs.hpc.gwdg.de/services/ai-services/arcana/index.html",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-image-generation": {
+      "name": {
+        "en": "Local image generation",
+        "de": "Lokale Bildgenerierung"
+      },
+      "places": [
+        {
+          "n": "Black Forest Labs, Freiburg im Breisgau",
+          "c": "DEU",
+          "la": 47.999,
+          "lo": 7.842,
+          "en": "Black Forest Labs, headquartered and hiring in Freiburg, released FLUX.2 [dev] in November 2025 as a 32B open-weight model; an FP8 version built with NVIDIA and ComfyUI runs on consumer GeForce RTX cards.",
+          "de": "Black Forest Labs mit Hauptsitz in Freiburg veröffentlichte im November 2025 FLUX.2 [dev] als offenes 32-Mrd.-Modell; eine mit NVIDIA und ComfyUI erstellte FP8-Fassung läuft auf GeForce-RTX-Karten für Endkunden.",
+          "src": "https://bfl.ai/blog/flux-2",
+          "yr": "2025"
+        },
+        {
+          "n": "GWDG, Göttingen",
+          "c": "DEU",
+          "la": 51.56,
+          "lo": 9.946,
+          "en": "GWDG hosts the open-weight FLUX.1-schnell model on its own HPC platform as 'Image AI' for academic users (offered e.g. to the University of Marburg via KISSKI); prompts and images are not stored.",
+          "de": "Die GWDG betreibt das offene Modell FLUX.1-schnell auf ihrer eigenen HPC-Plattform als 'Image AI' für Nutzer aus der Wissenschaft (etwa für die Universität Marburg über KISSKI); Prompts und Bilder werden nicht gespeichert.",
+          "src": "https://docs.hpc.gwdg.de/services/ai-services/image-ai/index.html",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-image-editing-design": {
+      "name": {
+        "en": "Local image editing & design",
+        "de": "Lokale Bildbearbeitung & Gestaltung"
+      },
+      "places": [
+        {
+          "n": "Black Forest Labs, Freiburg im Breisgau",
+          "c": "DEU",
+          "la": 47.999,
+          "lo": 7.842,
+          "en": "Black Forest Labs in Freiburg released FLUX.2 [dev] (November 2025), an open-weight checkpoint that combines generation with editing from multiple reference images and runs at FP8 on consumer RTX cards; FLUX.1 Kontext [dev] (12B, June 2025) preceded it.",
+          "de": "Black Forest Labs in Freiburg veröffentlichte im November 2025 FLUX.2 [dev], ein offenes Modell, das Generierung und Bearbeitung mit mehreren Referenzbildern vereint und in FP8 auf RTX-Karten für Endkunden läuft; vorausging FLUX.1 Kontext [dev] (12 Mrd., Juni 2025).",
+          "src": "https://bfl.ai/blog/flux-2",
+          "yr": "2025"
+        },
+        {
+          "n": "GWDG, Göttingen",
+          "c": "DEU",
+          "la": 51.56,
+          "lo": 9.946,
+          "en": "GWDG runs Alibaba's open Qwen-Image-Edit-2511 for semantic and appearance editing on its own HPC platform for academic users, without storing prompts or images.",
+          "de": "Die GWDG betreibt Alibabas offenes Qwen-Image-Edit-2511 für inhaltliche und optische Bildbearbeitung auf ihrer eigenen HPC-Plattform für Nutzer aus der Wissenschaft, ohne Prompts oder Bilder zu speichern.",
+          "src": "https://docs.hpc.gwdg.de/services/ai-services/image-ai/index.html",
+          "yr": "2026"
+        }
+      ]
+    },
+    "local-3d-scanning-with-gaussian-splatting": {
+      "name": {
+        "en": "Local 3D scanning with Gaussian splatting",
+        "de": "Lokales 3D-Scannen mit Gaussian Splatting"
+      },
+      "places": [
+        {
+          "n": "UC Berkeley (Kanazawa lab / Nerfstudio), Berkeley",
+          "c": "USA",
+          "la": 37.872,
+          "lo": -122.259,
+          "en": "gsplat, the open-source CUDA library for training Gaussian splats used in local pipelines, is developed mainly by UC Berkeley researchers with contributors from Aalto, ShanghaiTech and companies; paper September 2024, Apache 2.0.",
+          "de": "gsplat, die quelloffene CUDA-Bibliothek zum Trainieren von Gaussian Splats in lokalen Ketten, wird vor allem von Forschenden der UC Berkeley mit Beiträgen von Aalto, ShanghaiTech und Firmen entwickelt; Paper September 2024, Apache 2.0.",
+          "src": "https://arxiv.org/html/2409.06765",
+          "yr": "2024"
+        },
+        {
+          "n": "HKU University of the Arts Utrecht, Utrecht",
+          "c": "NLD",
+          "la": 52.091,
+          "lo": 5.115,
+          "en": "HKU's 3D-scan guide shows students how to make Gaussian splats both online and locally on 'a somewhat beefy computer' with Postshot, where a 50-second video took about 20 minutes to process.",
+          "de": "Der 3D-Scan-Leitfaden der Kunsthochschule HKU Utrecht zeigt Studierenden, wie Gaussian Splats online und lokal auf einem 'etwas kräftigeren Rechner' mit Postshot entstehen; ein 50-Sekunden-Video brauchte dort rund 20 Minuten.",
+          "src": "https://bookstack.hku.nl/books/3d-scan/page/gaussian-splatting-online-and-local",
+          "yr": "2026"
+        }
+      ]
+    },
+    "robot-vacuums": {
+      "name": {
+        "en": "Robot vacuums",
+        "de": "Saugroboter"
+      },
+      "places": [
+        {
+          "n": "Roborock manufacturing centre, Huizhou",
+          "c": "CHN",
+          "la": 23.111,
+          "lo": 114.416,
+          "en": "Roborock's own robot-vacuum factory, in operation since April 2023; People's Daily showed its assembly line in Huizhou in October 2025, with output shipped worldwide.",
+          "de": "Roborocks eigene Saugroboter-Fabrik, in Betrieb seit April 2023; People's Daily zeigte im Oktober 2025 die Montagelinie in Huizhou, die Geräte gehen in alle Welt.",
+          "src": "https://en.people.cn/n3/2025/1027/c90000-20381873.html",
+          "yr": "2025"
+        }
+      ]
+    },
+    "window-pool-cleaning-robots": {
+      "name": {
+        "en": "Window & pool cleaning robots",
+        "de": "Fenster- & Poolroboter"
+      },
+      "places": [
+        {
+          "n": "Ecovacs Linding plant, Nanxun (Huzhou)",
+          "c": "CHN",
+          "la": 30.879,
+          "lo": 120.418,
+          "en": "Ecovacs' Linding plant assembles and tests Winbot window-cleaning robots; expected annual capacity in 2026 is over 2 million units, more than 40% sold to Europe.",
+          "de": "Im Ecovacs-Werk Linding werden Winbot-Fensterputzroboter montiert und geprüft; die erwartete Jahreskapazität 2026 liegt bei über 2 Mio. Geräten, mehr als 40 % gehen nach Europa.",
+          "src": "https://c.m.163.com/news/a/L63PS4AF05118O92.html",
+          "yr": "2026"
+        },
+        {
+          "n": "Maytronics Yizre'el site, Kibbutz Yizre'el",
+          "c": "ISR",
+          "la": 32.56,
+          "lo": 35.322,
+          "en": "One of Maytronics' two production sites for Dolphin pool-cleaning robots; together with Dalton the maximum capacity is about 1.2 million robots a year (2023 periodic report).",
+          "de": "Einer von zwei Produktionsstandorten von Maytronics für Dolphin-Poolroboter; zusammen mit Dalton liegt die Höchstkapazität bei rund 1,2 Mio. Robotern im Jahr (Jahresbericht 2023).",
+          "src": "https://brand.maytronics.com/m/713ae8b6af8423a6/original/Maytronics-2023FY-PR-EN.pdf",
+          "yr": "2024"
+        },
+        {
+          "n": "Maytronics Dalton site, Dalton Industrial Park",
+          "c": "ISR",
+          "la": 33.012,
+          "lo": 35.489,
+          "en": "Pool-robot plant opened in 2016 to raise capacity for private-pool robotic cleaners, with 5,650 m² of production halls; production continued through the 2023-24 war near the Lebanese border.",
+          "de": "2016 eröffnetes Werk zur Erweiterung der Kapazität für Poolroboter, mit 5.650 m² Produktionshallen; die Fertigung lief im Krieg 2023/24 nahe der libanesischen Grenze weiter.",
+          "src": "https://brand.maytronics.com/m/713ae8b6af8423a6/original/Maytronics-2023FY-PR-EN.pdf",
+          "yr": "2024"
+        }
+      ]
+    },
+    "game-development": {
+      "name": {
+        "en": "Game development",
+        "de": "Spieleentwicklung"
+      },
+      "places": [
+        {
+          "n": "Embark Studios, Stockholm",
+          "c": "SWE",
+          "la": 59.331,
+          "lo": 18.072,
+          "en": "Embark developed ARC Raiders (released 30 Oct 2025) here; its Steam page discloses use of procedural and AI-based tools in content creation, and the game uses text-to-speech voices.",
+          "de": "Embark hat hier ARC Raiders entwickelt (erschienen 30.10.2025); die Steam-Seite legt den Einsatz prozeduraler und KI-basierter Werkzeuge offen, das Spiel nutzt Text-zu-Sprache-Stimmen.",
+          "src": "https://store.steampowered.com/app/1808500/",
+          "yr": "2025"
+        },
+        {
+          "n": "KRAFTON / inZOI Studio, Seoul",
+          "c": "KOR",
+          "la": 37.517,
+          "lo": 127.047,
+          "en": "inZOI (early access 27 Mar 2025) lets players generate textures from text, 3D objects from images and motions from video; Steam disclosure also names AI-assisted content creation and localization.",
+          "de": "inZOI (Early Access seit 27.3.2025) lässt Spieler Texturen aus Text, 3D-Objekte aus Bildern und Bewegungen aus Video erzeugen; die Steam-Offenlegung nennt zudem KI-gestützte Inhaltserstellung und Lokalisierung.",
+          "src": "https://store.steampowered.com/app/2456740/",
+          "yr": "2025"
+        },
+        {
+          "n": "Treyarch, Los Angeles area",
+          "c": "USA",
+          "la": 34.019,
+          "lo": -118.456,
+          "en": "Lead studio of Call of Duty: Black Ops 7 (2025); Treyarch described AI tools as assisting the team, and Activision confirmed AI use after criticism of calling-card art.",
+          "de": "Federführendes Studio von Call of Duty: Black Ops 7 (2025); Treyarch beschrieb KI-Werkzeuge als Unterstützung des Teams, Activision bestätigte den KI-Einsatz nach Kritik an Calling-Card-Grafiken.",
+          "src": "https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_7",
+          "yr": "2025"
+        }
+      ]
+    },
+    "generative-3d-models": {
+      "name": {
+        "en": "Generative 3D models",
+        "de": "Generative 3D-Modelle"
+      },
+      "places": [
+        {
+          "n": "Yonggang Middle School, Seoul",
+          "c": "KOR",
+          "la": 37.566,
+          "lo": 126.978,
+          "en": "Technology teacher Jiho Han uses Meshy to turn students' prompts, sketches and reference images into 3D starting points for product design, robotics, games and virtual exhibitions.",
+          "de": "Techniklehrer Jiho Han nutzt Meshy, um Prompts, Skizzen und Referenzbilder der Schüler in 3D-Ausgangsmodelle für Produktdesign, Robotik, Spiele und virtuelle Ausstellungen zu verwandeln.",
+          "src": "https://www.meshy.ai/blog/ai-3d-modeling-student-prototyping",
+          "yr": "2026"
+        },
+        {
+          "n": "Suzhou Museum, Suzhou",
+          "c": "CHN",
+          "la": 31.323,
+          "lo": 120.627,
+          "en": "For an immersive Monet-garden exhibition, display maker Jupiter used Meshy to build 3D models of the garden, shown on a glasses-free 3D screen.",
+          "de": "Für eine immersive Monet-Garten-Ausstellung erstellte der Displayhersteller Jupiter mit Meshy 3D-Modelle des Gartens, gezeigt auf einem brillenlosen 3D-Bildschirm.",
+          "src": "https://www.meshy.ai/customers/jupiter-enterprise-use-case",
+          "yr": ""
+        }
+      ]
+    },
+    "be-my-eyes": {
+      "name": {
+        "en": "Be My Eyes",
+        "de": "Be My Eyes"
+      },
+      "places": [
+        {
+          "n": "New York Penn Station, New York",
+          "c": "USA",
+          "la": 40.75,
+          "lo": -73.993,
+          "en": "One of 16 Northeast Corridor stations in a three-month Amtrak pilot (from Aug 2025): blind passengers use the Be My Eyes app for live video help finding tracks and reading departure boards.",
+          "de": "Einer von 16 Bahnhöfen am Northeast Corridor in einem dreimonatigen Amtrak-Pilot (ab Aug. 2025): Blinde Fahrgäste bekommen über die Be-My-Eyes-App Live-Videohilfe, um Gleise zu finden und Abfahrtstafeln zu lesen.",
+          "src": "https://www.bemyeyes.com/blog/be-my-eyes-and-amtrak-launch-pilot-to-make-train-travel-more-accessible/",
+          "yr": "2025"
+        },
+        {
+          "n": "30th Street Station, Philadelphia",
+          "c": "USA",
+          "la": 39.956,
+          "lo": -75.182,
+          "en": "Named station in the 2025 Amtrak pilot offering free live visual assistance through Be My Eyes for navigating the station.",
+          "de": "Genannter Bahnhof im Amtrak-Pilot 2025 mit kostenloser Live-Sehhilfe über Be My Eyes zur Orientierung im Bahnhof.",
+          "src": "https://www.bemyeyes.com/blog/be-my-eyes-and-amtrak-launch-pilot-to-make-train-travel-more-accessible/",
+          "yr": "2025"
+        },
+        {
+          "n": "South Station, Boston",
+          "c": "USA",
+          "la": 42.352,
+          "lo": -71.055,
+          "en": "Named station in the 2025 Amtrak pilot offering free live visual assistance through Be My Eyes for gates, tracks and signage.",
+          "de": "Genannter Bahnhof im Amtrak-Pilot 2025 mit kostenloser Live-Sehhilfe über Be My Eyes für Ausgänge, Gleise und Beschilderung.",
+          "src": "https://www.bemyeyes.com/blog/be-my-eyes-and-amtrak-launch-pilot-to-make-train-travel-more-accessible/",
+          "yr": "2025"
+        },
+        {
+          "n": "Guide Dogs NSW/ACT, St Leonards (Sydney)",
+          "c": "AUS",
+          "la": -33.823,
+          "lo": 151.195,
+          "en": "Since November 2025 Guide Dogs NSW/ACT specialists take Be My Eyes video calls on weekdays, available to the more than 9,000 Australian users of the app.",
+          "de": "Seit November 2025 nehmen Fachkräfte von Guide Dogs NSW/ACT werktags Be-My-Eyes-Videoanrufe an, erreichbar für die über 9.000 Nutzer der App in Australien.",
+          "src": "https://www.bemyeyes.com/blog/be-my-eyes-partners-with-guide-dogs-nsw-act/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "be-my-ai": {
+      "name": {
+        "en": "Be My AI",
+        "de": "Be My AI"
+      },
+      "places": [
+        {
+          "n": "Rome Fiumicino 'Leonardo da Vinci' Airport",
+          "c": "ITA",
+          "la": 41.8,
+          "lo": 12.239,
+          "en": "Since March 2025 Aeroporti di Roma offers blind and low-vision passengers Be My Eyes Service Connect, combining AI and dedicated agents for terminal navigation and flight information; the airport handles 40+ million passengers a year.",
+          "de": "Seit März 2025 bietet Aeroporti di Roma blinden und sehbehinderten Fluggästen Be My Eyes Service Connect an, eine Kombination aus KI und Servicekräften für Orientierung im Terminal und Fluginformationen; der Flughafen hat über 40 Mio. Passagiere im Jahr.",
+          "src": "https://www.bemyeyes.com/blog/be-my-eyes-partners-with-aeroporti-di-roma-to-improve-global-travel-accessibility-for-blind-and-low-vision-travelers/",
+          "yr": "2025"
+        },
+        {
+          "n": "Rome Ciampino Airport",
+          "c": "ITA",
+          "la": 41.799,
+          "lo": 12.595,
+          "en": "Covered by the same Aeroporti di Roma partnership from March 2025: AI-plus-agent visual assistance through the Be My Eyes app.",
+          "de": "Von derselben Partnerschaft von Aeroporti di Roma seit März 2025 abgedeckt: Sehhilfe aus KI und Servicekräften über die Be-My-Eyes-App.",
+          "src": "https://www.bemyeyes.com/blog/be-my-eyes-partners-with-aeroporti-di-roma-to-improve-global-travel-accessibility-for-blind-and-low-vision-travelers/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "paperless-freight-documents-efti": {
+      "name": {
+        "en": "Paperless freight documents (eFTI)",
+        "de": "Papierlose Frachtdokumente (eFTI)"
+      },
+      "places": [
+        {
+          "n": "Verona (Italy–Austria cross-border pilot)",
+          "c": "ITA",
+          "la": 45.438,
+          "lo": 10.992,
+          "en": "On 22 May 2025 the eFTI4EU 'Pilot 3A' ran a real Italy–Austria road shipment with an electronic consignment note (e-CMR); Verona municipal police and traffic police checked it via a web app connected through the eFTI Gate Italy.",
+          "de": "Am 22. Mai 2025 lief im eFTI4EU-„Pilot 3A“ ein echter Straßentransport Italien–Österreich mit elektronischem Frachtbrief (e-CMR); die Stadtpolizei Verona und die Verkehrspolizei prüften ihn per Web-App über das eFTI Gate Italy.",
+          "src": "https://www.ramspa.it/sites/default/files/2025-12/2025-12-04-efti4eu-ita-pilots_sent_abatello.pdf",
+          "yr": "2025"
+        },
+        {
+          "n": "Port of La Spezia → Interporto Bologna",
+          "c": "ITA",
+          "la": 44.103,
+          "lo": 9.835,
+          "en": "Italy's first fully paperless freight test (Gruber Logistics, Oct 2025): an e-CMR shipment from the port of La Spezia to Bologna freight village, checked by police and customs via QR code and the national eFTI platform, linked to La Spezia's Port Community System.",
+          "de": "Italiens erster vollständig papierloser Frachttest (Gruber Logistics, Okt. 2025): Sendung mit e-CMR vom Hafen La Spezia zum Güterverkehrszentrum Bologna, von Polizei und Zoll per QR-Code über die nationale eFTI-Plattform geprüft, angebunden an das Port Community System von La Spezia.",
+          "src": "https://www.ajot.com/news/gruber-logistics-manages-italys-first-paperless-freight-transport",
+          "yr": "2025"
+        },
+        {
+          "n": "Kabli, Pärnu County (Estonia–Latvia border, Via Baltica)",
+          "c": "EST",
+          "la": 58.015,
+          "lo": 24.452,
+          "en": "First live test of the eFTI4EU Baltic Corridor pilot on 9 September 2025: eFTI road-freight data exchanged between Estonia and Latvia, with real-time roadside checks by Estonian and Latvian authorities.",
+          "de": "Erster Live-Test des eFTI4EU-Pilots „Baltic Corridor“ am 9. September 2025: eFTI-Daten für Straßenfracht zwischen Estland und Lettland ausgetauscht, mit Kontrollen am Straßenrand durch estnische und lettische Behörden in Echtzeit.",
+          "src": "https://www.iru.org/node/17506",
+          "yr": "2025"
+        },
+        {
+          "n": "Port of Klaipėda",
+          "c": "LTU",
+          "la": 55.71,
+          "lo": 21.12,
+          "en": "Lithuania's eFTI4EU pilot is centred on the port of Klaipėda and integrates eFTI requirements for dangerous goods into the port's information systems.",
+          "de": "Litauens eFTI4EU-Pilot ist auf den Hafen Klaipėda ausgerichtet und bindet die eFTI-Anforderungen für Gefahrgut in die Informationssysteme des Hafens ein.",
+          "src": "https://www.etp-logistics.eu/efti4eu-project-at-alice-innovation-theatre/",
+          "yr": "2025"
+        }
+      ]
     }
   },
   "companies": {
