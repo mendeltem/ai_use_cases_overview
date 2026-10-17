@@ -2010,11 +2010,37 @@ const UC = [
     E("<b>1,806 intelligent mining faces</b> in 907 Chinese coal mines; labour productivity +20%","<b>1.806 intelligente Abbaufronten</b> in 907 chinesischen Kohlegruben; Arbeitsproduktivität +20 %"),
     E("State policy is pushing people out of the most dangerous workplaces. China counts 1,806 'intelligent' mining faces across 907 coal mines, now above half of national capacity, with labour productivity up about 20% on average. Note that an 'intelligent face' means an automated longwall, not necessarily AI; the AI layer on top is models like Huawei's Pangu mining model, live in 9 Shandong Energy mines with rollout to 70+ more, which Huawei says cut data-labelling work by 85% and drill-inspection labour by 80% at one mine (company-reported). Even the industry press calls the transformation 'still in its early stage'. Distinct from the surface-haulage card 'Autonomous mine fleets'.","Staatliche Politik drängt Menschen aus den gefährlichsten Arbeitsplätzen. China zählt 1.806 „intelligente“ Abbaufronten in 907 Kohlegruben, inzwischen über die Hälfte der nationalen Kapazität, mit rund 20 % höherer Arbeitsproduktivität. Wichtig: „Intelligente Front“ heißt automatisierter Strebbau, nicht unbedingt KI; die KI-Schicht darüber sind Modelle wie Huaweis Pangu-Bergbaumodell, live in 9 Gruben von Shandong Energy mit Ausbau auf 70+, das laut Huawei in einer Grube Datenannotation um 85 % und Bohrinspektion um 80 % reduzierte (Firmenangabe). Selbst die Branchenpresse nennt den Wandel „noch am Anfang“. Abgegrenzt von der Karte „Autonome Minenflotten“ für den Tagebau."),
     E("sxcoal (25 Dec 2025); Huawei Cloud case study","sxcoal (25.12.2025); Huawei-Cloud-Fallstudie"),
-    "note", E("national counts from industry press; AI effects vendor-reported","Landeszahlen aus Branchenpresse; KI-Effekte Herstellerangabe"))
+    "note", E("national counts from industry press; AI effects vendor-reported","Landeszahlen aus Branchenpresse; KI-Effekte Herstellerangabe")),
+
+  // ---- Added 2026-10-17: emergency response ----
+  U(5,"Corti, Copenhagen EMS (Region Hovedstaden)","pilot",3,"steady",
+    E("AI in emergency calls","KI im Notruf"),
+    E("RCT in 2021; newer studies still retrospective","RCT 2021; neuere Studien noch retrospektiv"),
+    E("AI caught more cardiac arrests than dispatchers (<b>85.0% vs 77.5%</b>), but dispatcher recognition did not improve","KI erkannte mehr Herzstillstände als Disponenten (<b>85,0 % vs. 77,5 %</b>), die Erkennung durch Disponenten wurde aber nicht besser"),
+    E("In Copenhagen, Corti's model listened to live 112 calls and flagged suspected out-of-hospital cardiac arrest. In a randomized trial of 5,242 calls it was more sensitive than dispatchers (85.0% vs 77.5%), but its positive predictive value was only 17.8%, against 55.8% for dispatchers, and alerting dispatchers did not significantly improve their recognition (93.1% vs 90.5%). Detection is not the same as better care: false alarms and workflow fit decided the result. Newer work is mostly retrospective, such as a Korean language model trained on 158,973 call transcripts (AUROC 0.937, 2026); groups in Canada and Spain are still at the planning stage. Corti now markets itself as a general clinical-AI platform, and AI in US 911 centres is spreading mainly on non-emergency lines, with vendor-reported figures.","In Kopenhagen hörte Cortis Modell live bei 112-Notrufen mit und meldete Verdachtsfälle von Herzstillstand außerhalb des Krankenhauses. In einer randomisierten Studie mit 5.242 Anrufen war es sensitiver als die Disponenten (85,0 % vs. 77,5 %), sein positiver Vorhersagewert lag aber nur bei 17,8 % gegenüber 55,8 % bei den Disponenten, und die Warnungen verbesserten deren Erkennung nicht signifikant (93,1 % vs. 90,5 %). Erkennen heißt nicht besser versorgen: Fehlalarme und die Einbindung in den Arbeitsablauf entschieden das Ergebnis. Neuere Arbeiten sind meist retrospektiv, etwa ein koreanisches Sprachmodell aus 158.973 Gesprächstranskripten (AUROC 0,937, 2026); Gruppen in Kanada und Spanien sind noch in der Planung. Corti tritt heute als allgemeine klinische KI-Plattform auf, und in US-Notrufzentralen verbreitet sich KI vor allem auf Nicht-Notfall-Leitungen, mit Zahlen der Anbieter."),
+    E("Blomberg et al., JAMA Netw Open (2021); Choi et al., NPJ Digit Med (2026)","Blomberg et al., JAMA Netw Open (2021); Choi et al., NPJ Digit Med (2026)"),
+    "warn", E("in the RCT, AI alerts did not improve dispatcher recognition; 82% of alerts were false","im RCT verbesserten KI-Warnungen die Erkennung nicht; 82 % der Warnungen waren Fehlalarme")),
+  U(6,"DJI, SARUAV, Bergwacht Bayern, police and fire services","early",2,"strong",
+    E("Search-and-rescue drones (thermal & AI)","Such-Drohnen mit Wärmebild & KI"),
+    E("DJI tally: 65 (2017/18) → 1,000+ by 2023","DJI-Zählung: 65 (2017/18) → über 1.000 bis 2023"),
+    E("<b>1,000+ people</b> rescued with direct drone involvement (DJI tally, July 2023)","<b>Über 1.000 Menschen</b> mit direkter Drohnenbeteiligung gerettet (DJI-Zählung, Juli 2023)"),
+    E("Police, fire services and mountain rescue fly camera drones, often with thermal imaging, to find missing people, especially at night; Bavaria's mountain rescue has built a dedicated unit since 2012. DJI's Drone Rescue Map, compiled from news reports and agency posts, counted more than 1,000 people by July 2023 whose rescue a drone directly enabled, up from 65 in its first report for 2017/18. These are company-compiled counts, neither complete nor controlled. AI person detection is newer: the Polish SARUAV software, which analyses RGB/near-infrared photos rather than thermal images, produced the first documented rescue through automated detection in 2021, after analysing 782 images in about 4.5 hours. A 2026 review notes documented live rescues but calls for prospective outcome studies; most detection papers are still benchmark datasets.","Polizei, Feuerwehr und Bergrettung suchen mit Kameradrohnen, oft mit Wärmebild, nach Vermissten, vor allem nachts; die Bergwacht Bayern baut dafür seit 2012 eine eigene Einheit auf. DJIs „Drone Rescue Map“, zusammengestellt aus Medienberichten und Behördenmeldungen, zählte bis Juli 2023 über 1.000 Menschen, deren Rettung eine Drohne direkt ermöglichte, nach 65 im ersten Bericht für 2017/18. Diese Zahlen stellt das Unternehmen selbst zusammen; sie sind weder vollständig noch kontrolliert. KI-Personenerkennung ist jünger: Die polnische Software SARUAV wertet RGB- und Nahinfrarot-Fotos aus, keine Wärmebilder, und führte 2021 zur ersten dokumentierten Rettung durch automatische Erkennung, nach 782 Bildern in rund 4,5 Stunden. Ein Review von 2026 verweist auf dokumentierte Rettungen, fordert aber prospektive Ergebnisstudien; die meisten Erkennungsarbeiten sind noch Benchmark-Datensätze."),
+    E("DJI press release (Jul 2023); Niedzielski et al., Remote Sensing (2021); Iserson, Wilderness Environ Med (2026)","DJI-Pressemitteilung (Juli 2023); Niedzielski et al., Remote Sensing (2021); Iserson, Wilderness Environ Med (2026)"),
+    "note", E("rescue count compiled by DJI from media reports; no controlled outcome data","Rettungszahl von DJI aus Medienberichten zusammengestellt; keine kontrollierten Ergebnisdaten")),
+  U(14,"Apple (Watch, iPhone), Google (Pixel)","prod",2,"steady",
+    E("Fall & crash detection (watch, phone)","Sturz- & Unfallerkennung (Uhr, Handy)"),
+    E("from the watch to phones, now on by default","von der Uhr aufs Handy, inzwischen standardmäßig an"),
+    E("Wearable fall detection in real-world studies: <b>81.9% sensitivity, only 62.5% specificity</b> (pooled)","Sturzerkennung mit Wearables in Alltagsstudien: <b>81,9 % Sensitivität, nur 62,5 % Spezifität</b> (gepoolt)"),
+    E("Apple Watch fall detection (Series 4 or later, on by default from age 55), crash detection on iPhone 14 or later and recent Apple Watches, and Google Pixel car crash detection call emergency services automatically if the user does not respond. Case reports describe cardiac arrests caught this way. Accuracy is limited: a 2024 meta-analysis of real-world studies on wearables in general (not Apple-specific) found pooled fall-detection sensitivity of 81.9% and specificity of only 62.5%, from three studies with wide uncertainty. False alarms load dispatch centres: a Nagano fire department logged 134 false calls among 919 over winter 2022/23, mostly from skiers, and Pitt County (North Carolina) reported more than 200 automatic crash calls in 2025, of which only 10 were real emergencies. No trial shows that consumer fall or crash detection reduces deaths or injuries in older adults, and the vendors publish no activation counts.","Die Sturzerkennung der Apple Watch (ab Series 4, ab 55 Jahren standardmäßig aktiv), die Unfallerkennung auf dem iPhone ab Modell 14 und neueren Apple Watches sowie die Autounfallerkennung von Google Pixel rufen automatisch den Notruf, wenn der Nutzer nicht reagiert. Fallberichte beschreiben Herzstillstände, die so bemerkt wurden. Die Genauigkeit ist begrenzt: Eine Metaanalyse von 2024 zu Alltagsstudien mit Wearables allgemein (nicht nur Apple) fand für die Sturzerkennung eine gepoolte Sensitivität von 81,9 % und eine Spezifität von nur 62,5 %, aus drei Studien mit großer Unsicherheit. Fehlalarme belasten die Leitstellen: Eine Feuerwehr in Nagano zählte im Winter 2022/23 134 Fehlanrufe unter 919, meist von Skifahrern, und Pitt County (North Carolina) meldete 2025 über 200 automatische Unfallanrufe, davon nur 10 echte Notfälle. Keine Studie belegt, dass Sturz- oder Unfallerkennung auf Verbrauchergeräten bei Älteren Todesfälle oder Verletzungen verringert, und die Hersteller veröffentlichen keine Auslösezahlen."),
+    E("Singh et al., JMIR mHealth uHealth (2024); WITN (Oct 2025); iMore (Jan 2023)","Singh et al., JMIR mHealth uHealth (2024); WITN (Okt. 2025); iMore (Jan. 2023)"),
+    "warn", E("many false alarms reach 911/112; no outcome trial in older adults","viele Fehlalarme landen beim Notruf; keine Ergebnisstudie bei Älteren"))
 ];
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "AI in emergency calls":"https://pmc.ncbi.nlm.nih.gov/articles/PMC7788469/",
+  "Search-and-rescue drones (thermal & AI)":"https://www.mynewsdesk.com/uk/dji/pressreleases/dji-records-more-than-1000-people-rescued-by-drones-globally-3264171",
+  "Fall & crash detection (watch, phone)":"https://doi.org/10.2196/56972",
   "Autonomous vulnerability discovery":"https://www.darpa.mil/news/2025/aixcc-results",
   "AI ad automation (creative & bidding)":"https://ppc.land/meta-profit-drops-8-to-15-8bn-as-legal-charges-hit-ad-gains/",
   "Conversational shopping assistants":"https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/",
@@ -2181,6 +2207,14 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "AI in emergency calls":[
+    {n:"Corti", u:"https://www.corti.ai"},
+    {n:"Region Hovedstaden", u:"https://www.regionh.dk"}],
+  "Search-and-rescue drones (thermal & AI)":[
+    {n:"DJI", u:"https://www.dji.com"}],
+  "Fall & crash detection (watch, phone)":[
+    {n:"Apple", u:"https://www.apple.com"},
+    {n:"Google Pixel", u:"https://store.google.com"}],
   "Autonomous vulnerability discovery":[
     {n:"DARPA AIxCC", u:"https://aicyberchallenge.com"},
     {n:"Google DeepMind", u:"https://deepmind.google"},
@@ -2774,6 +2808,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "AI in emergency calls":[2, "inf"],
+  "Search-and-rescue drones (thermal & AI)":[2, "edge"],
+  "Fall & crash detection (watch, phone)":[1, "edge"],
   "Autonomous vulnerability discovery":[2,"inf"],
   "AI ad automation (creative & bidding)":[3,"train"],
   "Conversational shopping assistants":[3,"inf"],
