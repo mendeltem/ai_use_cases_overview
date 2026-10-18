@@ -191,6 +191,8 @@
             text-transform:none; color:var(--ink); margin-bottom:4px}
   .brtoggle .chev{color:var(--ink-faint); font-size:13px}
   #bridgeBody[hidden]{display:none}
+  #fazitBody[hidden]{display:none}
+  #fazitBody{margin-top:12px}
   #bridgeBody{margin-top:12px}
   #bridgeBody .brfig{margin-top:0; border-top:none; padding-top:0}
   .warum .disclose{font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:600; letter-spacing:0;
@@ -308,6 +310,22 @@
   </div>
 </header>
 
+<section class="bridge fazit">
+  <div class="wrap">
+    <div>
+      <button class="disclose brtoggle" id="fazitToggle" aria-expanded="true" aria-controls="fazitBody"><span class="chev">▸</span><span id="fzTitle"></span></button>
+      <div id="fazitBody">
+        <p id="fzP1"></p>
+        <p id="fzP2"></p>
+        <p id="fzP3"></p>
+        <p id="fzP4"></p>
+        <p id="fzP5"></p>
+        <p class="brnote" id="fzNote"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bridge">
   <div class="wrap">
     <div>
@@ -414,6 +432,13 @@ const UI = {
     lkP2:"An empty row does not mean the industry uses no AI. It means this board carries no evidenced case for it. The suggested case in the last column is my own proposal, not a source.",
     lkHeadG:"industry group", lkHeadN:"firms", lkHeadB:"assets $bn", lkHeadF:"the case that is missing",
     lkNote:"The universe is SEC filers only, so US-listed companies plus foreign issuers filing 20-F or 40-F. Most European, Japanese and Korean listings are absent, as is everything unlisted. Holdings, funds and filings without an industry code are excluded here because they are not an industry. Source: SEC Financial Statement Data Sets, sub.txt for 2025q2 to 2026q1; size measure us-gaap:Assets, latest date in 2026Q1.",
+    fzTitle:"What the board shows",
+    fzP1:"<b>Physical AI is the bulk, but the least documented.</b> __PHYS__ of __N__ cards are physical: robots, vehicles, drones, machines. Only __PHYSQ__ of them (__PHYSP__%) rest on solid evidence, against __SOFTQ__ of __SOFT__ (__SOFTP__%) for software. Fleet and robot counts mostly come from the operators themselves; audited figures are rare.",
+    fzP2:"<b>Running is not the same as proven.</b> __PROD__ cards are in production, but only __PRODQ__ of them have solid evidence. For most, the board can show that a system runs, not that it works better than what it replaced.",
+    fzP3:"<b>Where growth is explosive, the evidence is better than average.</b> __EXQ__ of __EX__ explosive cards are solidly evidenced (__EXP__%), against __ALLP__% across the board. Fast growth shows up in revenue lines and filings, and those are audited.",
+    fzP4:"<b>Medicine and science have the strongest studies, and the most sobering ones.</b> __MEDQ__ of __MED__ medical and __SCIQ__ of __SCI__ science cards are solid. Trials also show where detection does not turn into better care, as with AI in emergency calls. __WARN__ cards carry an explicit warning that the evidence undercuts the claim.",
+    fzP5:"<b>Blind spots:</b> not a single solidly evidenced card in __ZERO__.",
+    fzNote:"The numbers in this section are counted live from the cards on this page. The reading of them is mine.",
     brTitle:"Where the money goes",
     brP1:"Every use case on this board runs on compute that somebody pays for. Most companies rent it, and that is the whole reason the cloud providers earn from this list without operating a single use case themselves: <b>Google Cloud $24.8B</b> and <b>AWS $42.2B</b> in the quarter to 30 Jun 2026, together +51% year on year. Those rents fund the next round of buildout, and the buildout lands one layer down — memory, accelerators, packaging, power.",
     brP2:"Renting is not open to everyone. Where personal or regulated data is processed, where sovereignty rules apply, or where a contract fixes the place of processing, the only options are an own data centre or a sovereign region. That demand does not disappear, it changes buyer: hardware bought directly instead of capacity rented. For the layer underneath this board it makes no difference; for cloud revenue it does.",
@@ -424,7 +449,7 @@ const UI = {
     brCardK:"Sister page", brCardT:"The Nvidia ecosystem", brAtlasT:"Supply Atlas globe", brWikiT:"Background wiki",
     brCardS:"Valuation and quarterly figures for 66 listed companies along the supply chain: memory, foundry, packaging, power, cloud, application.",
     brCardG:"open →",
-    eyebrow:"AI Use Cases · As of 6 August 2026 · Maturity · Evidence · Growth",
+    eyebrow:"AI Use Cases · As of 19 October 2026 · Maturity · Evidence · Growth",
     h1a:"What AI is ", h1accent:"actually", h1b:" doing<br>in the real world",
     thesis:"From robots on the factory floor to agents in the back office — the concrete AI use cases that already run. Each rated on three axes: <strong>how far it runs</strong>, <strong>how solid the numbers are</strong>, and <strong>how fast it's growing</strong>.",
     distUC:"Use cases", distSolid:"Solidly evidenced", distMid:"Medium evidence", distThin:"Thin evidence", distGrow:"Fast-growing", distCl:"Clusters",
@@ -435,7 +460,7 @@ const UI = {
     all:"All", searchPh:"Search: provider, metric, term…", countSuffix:"use cases",
     empty:"No matches for these filters.", srcLabel:"Source:", firmsLabel:"Companies:", legendLbl:"Legend", filtersLbl:"More filters", growLabel:"Growth:", detailsHint:"Details & source",
     physical:"Physical", software:"Software / agentic", infra:"Infrastructure",
-    footer:"<b>Source base:</b> project knowledge plus web verification, August 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Cluster 13 (compute & energy substrate) adds the hardware layer the whole board runs on — HBM and NAND (SK Hynix Q2'26, Sandisk Q4 FY26), accelerators (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), power/turbines, LiDAR (RoboSense Q1'26) — verified against company earnings. Click a card for detail, source and caveat."
+    footer:"<b>Source base:</b> project knowledge plus web verification, August–October 2026. Solid anchors incl.: Intuitive Surgical SEC 10-K, Lemonade 10-K, Aurora SEC 8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operational), John Deere See & Spray (peer-review), IFR World Robotics 2025 (4.66M industrial robots, +9% YoY). Growth signals reflect the best recent figure per case; where growth is a company target rather than realized, the card says so. Efficiency percentages not marked \"solid\" are mostly company figures — directionally right, not point-precise. Cluster 13 (compute & energy substrate) adds the hardware layer the whole board runs on — HBM and NAND (SK Hynix Q2'26, Sandisk Q4 FY26), accelerators (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), power/turbines, LiDAR (RoboSense Q1'26) — verified against company earnings. Click a card for detail, source and caveat."
   },
   de:{
     ciHigh:"GPU schwer", ciMid:"GPU mittel", ciLow:"GPU gering", ciSub:"Substrat",
@@ -449,6 +474,13 @@ const UI = {
     lkP2:"Eine leere Zeile heißt nicht, dass die Branche keine KI einsetzt. Sie heißt, dass dieses Board dafür keinen belegten Fall führt. Der vorgeschlagene Fall in der letzten Spalte ist mein eigener Vorschlag, keine Quelle.",
     lkHeadG:"Branchengruppe", lkHeadN:"Firmen", lkHeadB:"Bilanz Mrd $", lkHeadF:"der Fall, der fehlt",
     lkNote:"Das Universum umfasst nur SEC-Einreicher, also US-notierte Gesellschaften plus ausländische Emittenten mit 20-F oder 40-F. Die meisten europäischen, japanischen und koreanischen Notierungen fehlen, ebenso alles Nichtbörsennotierte. Holdings, Fonds und Einreichungen ohne Branchenkennung sind hier herausgerechnet, weil sie keine Branche sind. Quelle: SEC Financial Statement Data Sets, sub.txt der Quartale 2025q2 bis 2026q1; Größenmaß us-gaap:Assets, letzter Stichtag 2026Q1.",
+    fzTitle:"Was das Board zeigt",
+    fzP1:"<b>Physische KI ist die Masse, aber am schlechtesten belegt.</b> __PHYS__ von __N__ Karten sind physisch: Roboter, Fahrzeuge, Drohnen, Maschinen. Nur __PHYSQ__ davon (__PHYSP__ %) stehen auf soliden Belegen, gegenüber __SOFTQ__ von __SOFT__ (__SOFTP__ %) bei Software. Flotten- und Roboterzahlen stammen meist von den Betreibern selbst; geprüfte Zahlen sind selten.",
+    fzP2:"<b>Läuft heißt nicht bewiesen.</b> __PROD__ Karten sind in Produktion, aber nur __PRODQ__ davon sind solide belegt. Bei den meisten zeigt das Board, dass ein System läuft, nicht, dass es besser wirkt als das, was es ersetzt hat.",
+    fzP3:"<b>Wo das Wachstum explosiv ist, sind die Belege besser als im Schnitt.</b> __EXQ__ von __EX__ explosiven Karten sind solide belegt (__EXP__ %), gegenüber __ALLP__ % auf dem ganzen Board. Schnelles Wachstum zeigt sich in Umsatzzeilen und Pflichtberichten, und die sind geprüft.",
+    fzP4:"<b>Medizin und Wissenschaft haben die stärksten Studien, und die ernüchterndsten.</b> __MEDQ__ von __MED__ Medizin- und __SCIQ__ von __SCI__ Wissenschaftskarten sind solide. Studien zeigen dort auch, wo Erkennen nicht zu besserer Versorgung wird, etwa bei KI im Notruf. __WARN__ Karten tragen eine ausdrückliche Warnung, dass die Belege die Behauptung untergraben.",
+    fzP5:"<b>Blinde Flecken:</b> keine einzige solide belegte Karte in __ZERO__.",
+    fzNote:"Die Zahlen in diesem Abschnitt werden live aus den Karten dieser Seite gezählt. Die Deutung ist meine.",
     brTitle:"Wohin das Geld fließt",
     brP1:"Jeder Use-Case auf diesem Board läuft auf Rechenzeit, die jemand bezahlt. Die meisten Firmen mieten sie, und genau deshalb verdienen die Cloud-Anbieter an dieser Liste, ohne selbst einen einzigen Use-Case zu betreiben: <b>Google Cloud 24,8 Mrd $</b> und <b>AWS 42,2 Mrd $</b> im Quartal bis 30.6.2026, zusammen +51% gegenüber Vorjahr. Aus diesen Mieten finanzieren die Anbieter den nächsten Ausbau, und der landet eine Ebene tiefer: Speicher, Beschleuniger, Packaging, Strom.",
     brP2:"Mieten steht aber nicht allen offen. Wo personenbezogene oder regulierte Daten verarbeitet werden, wo Souveränitätsauflagen gelten oder ein Vertrag den Ort der Verarbeitung festlegt, bleibt nur das eigene Rechenzentrum oder eine souveräne Region. Diese Nachfrage verschwindet nicht, sie wechselt den Käufer: Hardware direkt gekauft statt Kapazität gemietet. Für die Ebene unter diesem Board macht das keinen Unterschied, für die Cloud-Umsätze schon.",
@@ -459,7 +491,7 @@ const UI = {
     brCardK:"Schwesterseite", brCardT:"Das Nvidia-Ökosystem", brAtlasT:"Supply-Atlas-Globus", brWikiT:"Hintergrund-Wiki",
     brCardS:"Bewertung und Quartalszahlen von 66 börsennotierten Firmen entlang der Lieferkette: Speicher, Fertigung, Packaging, Strom, Cloud, Anwendung.",
     brCardG:"öffnen →",
-    eyebrow:"KI-Use-Cases · Stand 6. August 2026 · Reifegrad · Datenlage · Wachstum",
+    eyebrow:"KI-Use-Cases · Stand 19. Oktober 2026 · Reifegrad · Datenlage · Wachstum",
     h1a:"Was KI ", h1accent:"wirklich", h1b:" schon tut,<br>in der echten Welt",
     thesis:"Von Robotern in der Fabrik bis zu Agenten im Backoffice — die konkreten KI-Use-Cases, die real laufen. Jeder nach drei Achsen: <strong>wie weit er läuft</strong>, <strong>wie belastbar die Zahlen sind</strong> und <strong>wie schnell er wächst</strong>.",
     distUC:"Use Cases", distSolid:"Solide belegt", distMid:"Mittlere Datenlage", distThin:"Dünne Datenlage", distGrow:"Stark wachsend", distCl:"Cluster",
@@ -470,7 +502,7 @@ const UI = {
     all:"Alle", searchPh:"Suche: Anbieter, Kennzahl, Begriff…", countSuffix:"Use Cases",
     empty:"Keine Treffer für diese Filter.", srcLabel:"Quelle:", firmsLabel:"Firmen:", legendLbl:"Legende", filtersLbl:"Weitere Filter", growLabel:"Wachstum:", detailsHint:"Details & Quelle",
     physical:"Physisch", software:"Software / Agentic", infra:"Infrastruktur",
-    footer:"<b>Quellenbasis:</b> Projektwissen plus Web-Verifikation August 2026. Solide-Anker u.a.: Intuitive Surgical SEC-10-K, Lemonade 10-K, Aurora SEC-8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operativ), John Deere See & Spray (Peer-Review), IFR World Robotics 2025 (4,66 Mio. Industrieroboter, +9 % YoY). Wachstums-Signale zeigen die beste aktuelle Kennzahl je Fall; wo Wachstum ein Firmenziel statt realisiert ist, steht das auf der Karte. Effizienz-Prozente ohne „solide\"-Kennzeichnung sind überwiegend Firmenangaben — richtungssicher, nicht punktgenau. Cluster 13 (Compute- & Energie-Substrat) ergänzt die Hardware-Ebene, auf der das ganze Board läuft — HBM und NAND (SK Hynix Q2'26, Sandisk Q4 FY26), Beschleuniger (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), Strom/Turbinen, LiDAR (RoboSense Q1'26) — gegen Firmen-Earnings verifiziert. Klick auf eine Karte öffnet Detail, Quelle und Vorbehalt."
+    footer:"<b>Quellenbasis:</b> Projektwissen plus Web-Verifikation August–Oktober 2026. Solide-Anker u.a.: Intuitive Surgical SEC-10-K, Lemonade 10-K, Aurora SEC-8-K, Insilico Rentosertib (Nature Medicine + Phase III), Johns Hopkins SRT-H (Science Robotics), ECMWF AIFS (operativ), John Deere See & Spray (Peer-Review), IFR World Robotics 2025 (4,66 Mio. Industrieroboter, +9 % YoY). Wachstums-Signale zeigen die beste aktuelle Kennzahl je Fall; wo Wachstum ein Firmenziel statt realisiert ist, steht das auf der Karte. Effizienz-Prozente ohne „solide\"-Kennzeichnung sind überwiegend Firmenangaben — richtungssicher, nicht punktgenau. Cluster 13 (Compute- & Energie-Substrat) ergänzt die Hardware-Ebene, auf der das ganze Board läuft — HBM und NAND (SK Hynix Q2'26, Sandisk Q4 FY26), Beschleuniger (NVIDIA Q1 FY27), CoWoS (TSMC Q2'26), Strom/Turbinen, LiDAR (RoboSense Q1'26) — gegen Firmen-Earnings verifiziert. Klick auf eine Karte öffnet Detail, Quelle und Vorbehalt."
   }
 };
 
@@ -2783,7 +2815,7 @@ const COMPANIES = {
 UI.mn = {
   brCardK:"Холбоотой хуудас", brCardT:"Nvidia-гийн экосистем", brAtlasT:"Supply Atlas бөмбөрцөг", brWikiT:"Суурь вики",
   ciHigh:"GPU их", ciMid:"GPU дунд", ciLow:"GPU бага", ciSub:"суурь", lblComp:"Тооцооллын ачаалал",
-  eyebrow:"Хиймэл оюуны хэрэглээ · 2026 оны 8-р сарын байдлаар · Төлөвшил · Нотолгоо · Өсөлт",
+  eyebrow:"Хиймэл оюуны хэрэглээ · 2026 оны 10-р сарын байдлаар · Төлөвшил · Нотолгоо · Өсөлт",
   h1a:"Хиймэл оюун бодит ертөнцөд ", h1accent:"үнэхээр", h1b:" юу хийж байна вэ",
   thesis:"Үйлдвэрийн шалан дээрх роботоос эхлээд ар талын оффисын агент хүртэл — аль хэдийн ажиллаж буй бодит хиймэл оюуны хэрэглээ. Тус бүрийг гурван тэнхлэгээр үнэлэв: <strong>хэр өргөн ажиллаж байгаа</strong>, <strong>тоо баримт хэр бат</strong>, <strong>хэр хурдан өсөж буй</strong>.",
   distUC:"Хэрэглээ", distSolid:"Бат нотлогдсон", distMid:"Дунд нотолгоо", distThin:"Сул нотолгоо", distGrow:"Хурдан өсөж буй", distCl:"Бүлэг",
@@ -2966,6 +2998,19 @@ const CK_LABEL = {
 };
 CK_LABEL.mn = {train:"сургалт", inf:"дата төвд тооцоолол", edge:"төхөөрөмж дээр", sim:"GPU симуляц", sub:"суурь дэд бүтэц"};
 const CI_KEY = {3:"ciHigh", 2:"ciMid", 1:"ciLow", 0:"ciSub"};
+function fazitStat(){
+  const pc=(a,b)=>b?Math.round(100*a/b):0, solid=a=>a.filter(x=>x.q===3).length;
+  const cat={}; CLUSTERS.forEach(c=>cat[c.n]=c.cat);
+  const phys=UC.filter(x=>cat[x.c]==='phys'), soft=UC.filter(x=>cat[x.c]==='soft');
+  const prod=UC.filter(x=>x.mat==='prod'), ex=UC.filter(x=>x.g==='explosive');
+  const med=UC.filter(x=>x.c===5), sci=UC.filter(x=>x.c===7);
+  const zero=CLUSTERS.filter(c=>{ const a=UC.filter(x=>x.c===c.n); return a.length && !solid(a); }).map(c=>T(c.short));
+  return {N:UC.length, PHYS:phys.length, PHYSQ:solid(phys), PHYSP:pc(solid(phys),phys.length),
+    SOFT:soft.length, SOFTQ:solid(soft), SOFTP:pc(solid(soft),soft.length),
+    PROD:prod.length, PRODQ:solid(prod), EX:ex.length, EXQ:solid(ex), EXP:pc(solid(ex),ex.length),
+    ALLP:pc(solid(UC),UC.length), MED:med.length, MEDQ:solid(med), SCI:sci.length, SCIQ:solid(sci),
+    WARN:UC.filter(x=>x.flag && x.flag.t==='warn').length, ZERO:zero.join(', ')};
+}
 function computeStat(){
   const n=k=>UC.filter(x=>x.ci===k).length;
   const schwer=UC.filter(x=>x.ci===3);
@@ -3814,6 +3859,10 @@ function renderStatic(){
                    'brF3v','brF3l','brCardK','brCardT','brCardS','brCardG','brAtlasT','brWikiT','cdTitle','cdNote']){
     const el = document.getElementById(id); if(el) el.innerHTML = u[id];
   }
+  const fz = fazitStat();
+  for(const id of ['fzTitle','fzP1','fzP2','fzP3','fzP4','fzP5','fzNote']){
+    const el = document.getElementById(id); if(el) el.innerHTML = u[id].replace(/__([A-Z]+)__/g,(m,k)=>fz[k]!==undefined?fz[k]:m);
+  }
   const cs = computeStat();
   for(const id of ['cdP1','cdP2']){
     const el = document.getElementById(id); if(!el) continue;
@@ -4042,6 +4091,7 @@ function wireDisclosure(btnId, bodyId){
 wireDisclosure('legendToggle','legendBody');
 wireDisclosure('filtToggle','moreFilters');
 wireDisclosure('warumToggle','warumBody');
+wireDisclosure('fazitToggle','fazitBody');
 wireDisclosure('bridgeToggle','bridgeBody');
 
 function syncFilterCount(){
