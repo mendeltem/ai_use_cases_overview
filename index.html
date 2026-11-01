@@ -277,6 +277,21 @@
     .lk{grid-template-columns:1fr 60px; row-gap:2px}
     .lk-b{display:none} .lk-f{grid-column:1 / -1}
   }
+  /* Touch: Tippflaechen von mindestens 30-40 px statt 13-20 px, und das
+     Suchfeld mit 16 px, weil iOS bei kleinerer Schrift beim Antippen zoomt. */
+  @media (max-width:760px), (pointer:coarse){
+    .disclose{min-height:40px; padding-top:8px; padding-bottom:8px}
+    .chip{min-height:36px}
+    .langtoggle button{min-height:36px; min-width:44px}
+    .search{font-size:16px; min-height:40px}
+    .firmlink{display:inline-flex; align-items:center; min-height:30px; padding:4px 9px; font-size:11px}
+    .complinks a, .wikilinks a{display:inline-flex; align-items:center; min-height:32px}
+  }
+  /* Ohne Maus bleibt :hover nach dem Antippen haengen; der Tooltip laege dann
+     ueber dem aufgeklappten Inhalt. */
+  @media (hover:none){
+    .card-btn[data-tip]:hover::after, .chip[data-tip]:hover::after{display:none}
+  }
 </style>
 </head>
 <body>
