@@ -1,22 +1,22 @@
 # AI Use Cases Overview
 
-An interactive, single-page dashboard cataloguing concrete AI deployments running in the real world, last updated **October 2026**. Every use case is rated on three axes: how far it has scaled, how solid the evidence is, and how fast it is growing.
+An interactive, single-page dashboard cataloguing concrete AI deployments running in the real world, last updated **November 2026**. Every use case is rated on three axes: how far it has scaled, how solid the evidence is, and how fast it is growing.
 
 **Live demo:** https://mendeltem.github.io/ai_use_cases_overview/
 
 ## What's in it
 
-177 use cases across 22 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
+210 use cases across 24 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
 
 ## Rating axes
 
-- **Maturity** – production · early production · pilot · research
+- **Maturity** – production · early production · pilot · research · stopped
 - **Evidence** – solid (primary / peer-reviewed) · medium (plausible claim) · thin (marketing / single source)
 - **Growth** – explosive · strong · steady · nascent
 
 ## Clusters
 
-Mobility & transport · Warehouse & energy · Industry & humanoids · Agriculture · Medicine & the body · Hazardous zones · Science & forecasting · Knowledge-work agents · Security & fraud · Back office & bureaucracy · The city in the background · Enablers · The compute & energy substrate · Consumer & home robots · Media & entertainment · Maintenance & upkeep · AI on the local workstation · Communication · Retail & commerce · Education · Nature & conservation · Culture & heritage
+Mobility & transport · Warehouse & energy · Industry & humanoids · Agriculture · Medicine & the body · Hazardous zones · Science & forecasting · Knowledge-work agents · Security & fraud · Back office & bureaucracy · The city in the background · Enablers · The compute & energy substrate · Consumer & home robots · Media & entertainment · Maintenance & upkeep · AI on the local workstation · Communication · Retail & commerce · Education · Nature & conservation · Culture & heritage · Stopped & failed · Humanitarian aid
 
 ## Features
 
