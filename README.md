@@ -21,6 +21,7 @@ Mobility & transport · Warehouse & energy · Industry & humanoids · Agricultur
 ## Features
 
 - Filter by cluster, maturity, growth, and evidence
+- Growth chart: how many use cases had started, year by year (rule, years and sources in `startjahre_2026-11-02.md`)
 - Source link and official company pages on every card that has them
 - Free-text search across provider, metric, and term
 - EN/DE/MN language toggle

@@ -239,6 +239,40 @@
   .bridge p{margin:0 0 11px; color:var(--ink-soft); max-width:62ch}
   .bridge p b{color:var(--ink); font-weight:600}
   .bridge .brnote{font-size:12.5px; color:var(--ink-faint); margin:12px 0 0; border-left:2px solid var(--line-strong); padding-left:10px}
+  .gw{margin-top:18px; padding-top:16px; border-top:1px solid var(--line)}
+  .gw h3{font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:600; margin:0 0 6px; letter-spacing:-.01em}
+  .gw-charts{display:grid; grid-template-columns:1.25fr 1fr; gap:14px 26px; margin:12px 0 2px}
+  .gw-fig{margin:0; min-width:0}
+  .gw-fig figcaption{font-size:12.5px; color:var(--ink-soft); margin:0 0 4px}
+  .gw-plot{position:relative; min-height:170px}
+  .gw-plot svg{display:block; width:100%; touch-action:pan-y; cursor:crosshair}
+  .gw-plot svg:focus{outline:none}
+  .gw-plot svg:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
+  .gw-gitter{stroke:var(--line); stroke-width:1}
+  .gw-ax{font:10.5px 'JetBrains Mono',monospace; fill:var(--ink-faint)}
+  .gw-wert{font:600 12px 'Space Grotesk',sans-serif; fill:var(--ink)}
+  .gw-flaeche{fill:var(--petrol); opacity:.12}
+  .gw-linie{fill:none; stroke:var(--petrol); stroke-width:2; stroke-linejoin:round; stroke-linecap:round}
+  .gw-marke{fill:var(--petrol); stroke:var(--surface-2); stroke-width:2}
+  .gw-balken{fill:var(--petrol)}
+  .gw-balken.gw-teil{opacity:.45}
+  .gw-balken.gw-an{fill:var(--petrol-dark); opacity:1}
+  .gw-kreuz{stroke:var(--ink-faint); stroke-width:1}
+  .gw-tip{position:absolute; top:0; pointer-events:none; background:var(--surface); border:1px solid var(--line-strong); box-shadow:var(--shadow); padding:4px 8px; font-size:12px; line-height:1.4; color:var(--ink-soft); white-space:nowrap; z-index:2}
+  .gw-tip[hidden]{display:none}
+  .gw-tip b{color:var(--ink); font-weight:600}
+  #gwTabBody[hidden]{display:none}
+  .gw-tabhuelle{max-height:420px; overflow-y:auto; margin-top:8px; border:1px solid var(--line); background:var(--surface)}
+  .gw-tabelle{width:100%; border-collapse:collapse; font-size:13px}
+  .gw-tabelle th,.gw-tabelle td{padding:5px 8px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-weight:400}
+  .gw-tabelle thead th{position:sticky; top:0; background:var(--surface); font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint)}
+  .gw-tabelle tbody th{white-space:nowrap; font-weight:600; color:var(--ink)}
+  .gw-tabelle .z{text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums}
+  .gw-tabelle a{color:var(--petrol); text-decoration:none}
+  .gw-tabelle a:hover{text-decoration:underline}
+  @media (max-width:760px){ .gw-charts{grid-template-columns:1fr} .gw-tabelle td{line-height:1.9} .gw-tabelle th,.gw-tabelle td{padding:5px 5px} .gw-tabelle thead th{font-size:9.5px; letter-spacing:.04em} .gw-tabelle td:last-child{overflow-wrap:anywhere} }
+  .gw-tab{margin-top:10px}
+  .bridge p.gw-lesen{margin:10px 0 0; font-size:14px}
   .brcard{display:block; background:var(--surface); border:1px solid var(--line-strong);
           border-top:3px solid var(--petrol); padding:15px 16px 16px; text-decoration:none; color:inherit;
           box-shadow:var(--shadow)}
@@ -336,6 +370,20 @@
         <p id="fzP3"></p>
         <p id="fzP4"></p>
         <p id="fzP5"></p>
+        <div class="gw">
+          <h3 id="gwTitle"></h3>
+          <p id="gwLead"></p>
+          <div class="gw-charts">
+            <figure class="gw-fig"><figcaption id="gwCapCum"></figcaption><div class="gw-plot" id="gwCum"></div></figure>
+            <figure class="gw-fig"><figcaption id="gwCapNew"></figcaption><div class="gw-plot" id="gwNew"></div></figure>
+          </div>
+          <p class="gw-lesen" id="gwRead"></p>
+          <p class="brnote" id="gwNote"></p>
+          <div class="gw-tab">
+            <button class="disclose" id="gwTabToggle" aria-expanded="false" aria-controls="gwTabBody"><span class="chev">▸</span><span id="gwTabT"></span></button>
+            <div id="gwTabBody" hidden></div>
+          </div>
+        </div>
         <p class="brnote" id="fzNote"></p>
       </div>
     </div>
@@ -450,6 +498,13 @@ const UI = {
     lkHeadG:"industry group", lkHeadN:"firms", lkHeadB:"assets $bn", lkHeadF:"the case that is missing",
     lkNote:"The universe is SEC filers only, so US-listed companies plus foreign issuers filing 20-F or 40-F. Most European, Japanese and Korean listings are absent, as is everything unlisted. Holdings, funds and filings without an industry code are excluded here because they are not an industry. Source: SEC Financial Statement Data Sets, sub.txt for 2025q2 to 2026q1; size measure us-gaap:Assets, latest date in 2026Q1.",
     fzTitle:"What the board shows",
+    gwTitle:"How the use cases grew over the years",
+    gwLead:"<b>__SOCKEL__ of these __N__ AI use cases started before __VOR__, __BYA__ had started by 2015, __BYB__ by 2020 and __BYD__ by 2025.</b> Half of them began in __HALF__ or later.",
+    gwCapCum:"Use cases started so far (running total)", gwCapNew:"New starts per year",
+    gwTipNew:"started in __Y__", gwTipAll:"in total by then",
+    gwRead:"<b>The lower bars after 2023 do not show a decline:</b> the board needs evidence, and evidence takes years to appear, so recent years are undercounted (lighter bars; 2026* is unfinished). This counts documented cases on this board, not all AI in the world, and more searching would raise every year. The board itself grew from 57 cards in July 2026 to __ALL__ today: that is our searching, not this curve.",
+    gwNote:"Each case counts from the year a system first did the job in real use by perceiving, learning or deciding for itself, pilots included. __RES__ cases still in research count from their first published result. Remote-controlled or scripted forerunners do not count, and __STD__ cards on chips, standards or technology without an AI core are left out. __SRC__ of the years rest on a source we opened, __MID__ on search summaries or dated reports, __EST__ are estimates. <a href=\"https://github.com/mendeltem/ai_use_cases_overview/blob/main/startjahre_2026-11-02.md\" target=\"_blank\" rel=\"noopener\">All years and sources</a>.",
+    gwTabT:"Year by year, with every card", gwThY:"Year", gwThN:"New", gwThT:"Total", gwThC:"Cards", gwVor:"before __Y__",
     fzP1:"<b>Physical AI is the bulk, but the least documented.</b> __PHYS__ of __N__ cards are physical: robots, vehicles, drones, machines. Only __PHYSQ__ of them (__PHYSP__%) rest on solid evidence, against __SOFTQ__ of __SOFT__ (__SOFTP__%) for software. Fleet and robot counts mostly come from the operators themselves; audited figures are rare.",
     fzP2:"<b>Running is not the same as proven.</b> __PROD__ cards are in production, but only __PRODQ__ of them have solid evidence. For most, the board can show that a system runs, not that it works better than what it replaced.",
     fzP3:"<b>Where growth is explosive, the evidence is better than average.</b> __EXQ__ of __EX__ explosive cards are solidly evidenced (__EXP__%), against __ALLP__% across the board. Fast growth shows up in revenue lines and filings, and those are audited.",
@@ -492,6 +547,13 @@ const UI = {
     lkHeadG:"Branchengruppe", lkHeadN:"Firmen", lkHeadB:"Bilanz Mrd $", lkHeadF:"der Fall, der fehlt",
     lkNote:"Das Universum umfasst nur SEC-Einreicher, also US-notierte Gesellschaften plus ausländische Emittenten mit 20-F oder 40-F. Die meisten europäischen, japanischen und koreanischen Notierungen fehlen, ebenso alles Nichtbörsennotierte. Holdings, Fonds und Einreichungen ohne Branchenkennung sind hier herausgerechnet, weil sie keine Branche sind. Quelle: SEC Financial Statement Data Sets, sub.txt der Quartale 2025q2 bis 2026q1; Größenmaß us-gaap:Assets, letzter Stichtag 2026Q1.",
     fzTitle:"Was das Board zeigt",
+    gwTitle:"Wie die Use Cases über die Jahre gewachsen sind",
+    gwLead:"<b>__SOCKEL__ dieser __N__ KI-Anwendungen starteten vor __VOR__, __BYA__ waren es bis 2015, __BYB__ bis 2020 und __BYD__ bis 2025.</b> Die Hälfte davon begann erst __HALF__ oder später.",
+    gwCapCum:"Bisher gestartete Anwendungen (Summe)", gwCapNew:"Neue Starts pro Jahr",
+    gwTipNew:"gestartet __Y__", gwTipAll:"insgesamt bis dahin",
+    gwRead:"<b>Die niedrigeren Balken nach 2023 zeigen keinen Rückgang:</b> Das Board braucht Belege, und die erscheinen oft erst Jahre später, deshalb sind die letzten Jahre untererfasst (hellere Balken; 2026* läuft noch). Gezählt sind dokumentierte Fälle auf diesem Board, nicht alle KI der Welt, und mehr Suche würde jedes Jahr erhöhen. Das Board selbst wuchs von 57 Karten im Juli 2026 auf heute __ALL__: Das ist unsere Suche, nicht diese Kurve.",
+    gwNote:"Jeder Fall zählt ab dem Jahr, in dem ein System die Aufgabe erstmals real erledigte und dabei selbst wahrnahm, lernte oder entschied, Piloten eingeschlossen. __RES__ Fälle, die noch in der Forschung stecken, zählen ab dem ersten veröffentlichten Ergebnis. Ferngesteuerte oder fest programmierte Vorläufer zählen nicht, und __STD__ Karten zu Chips, Standards oder Technik ohne KI-Kern bleiben draußen. __SRC__ der Jahre stützen sich auf eine geöffnete Quelle, __MID__ auf Suchauszüge oder datierte Berichte, __EST__ sind Schätzungen. <a href=\"https://github.com/mendeltem/ai_use_cases_overview/blob/main/startjahre_2026-11-02.md\" target=\"_blank\" rel=\"noopener\">Alle Jahre und Quellen</a>.",
+    gwTabT:"Jahr für Jahr, mit allen Karten", gwThY:"Jahr", gwThN:"Neu", gwThT:"Summe", gwThC:"Karten", gwVor:"vor __Y__",
     fzP1:"<b>Physische KI ist die Masse, aber am schlechtesten belegt.</b> __PHYS__ von __N__ Karten sind physisch: Roboter, Fahrzeuge, Drohnen, Maschinen. Nur __PHYSQ__ davon (__PHYSP__ %) stehen auf soliden Belegen, gegenüber __SOFTQ__ von __SOFT__ (__SOFTP__ %) bei Software. Flotten- und Roboterzahlen stammen meist von den Betreibern selbst; geprüfte Zahlen sind selten.",
     fzP2:"<b>Läuft heißt nicht bewiesen.</b> __PROD__ Karten sind in Produktion, aber nur __PRODQ__ davon sind solide belegt. Bei den meisten zeigt das Board, dass ein System läuft, nicht, dass es besser wirkt als das, was es ersetzt hat.",
     fzP3:"<b>Wo das Wachstum explosiv ist, sind die Belege besser als im Schnitt.</b> __EXQ__ von __EX__ explosiven Karten sind solide belegt (__EXP__ %), gegenüber __ALLP__ % auf dem ganzen Board. Schnelles Wachstum zeigt sich in Umsatzzeilen und Pflichtberichten, und die sind geprüft.",
@@ -3355,6 +3417,13 @@ const COMPANIES = {
 // value falls back to English via T().
 
 UI.mn = {
+  gwTitle:"Хэрэглээнүүд он жилээр хэрхэн өссөн бэ",
+  gwLead:"<b>Эдгээр __N__ хиймэл оюуны хэрэглээний __SOCKEL__ нь __VOR__ оноос өмнө эхэлсэн; 2015 он гэхэд __BYA__, 2020 он гэхэд __BYB__, 2025 он гэхэд __BYD__ болсон.</b> Тэдний тал хувь нь __HALF__ онд буюу түүнээс хойш эхэлсэн.",
+  gwCapCum:"Одоогоор эхэлсэн хэрэглээ (нийт)", gwCapNew:"Жил бүрийн шинэ эхлэл",
+  gwTipNew:"__Y__ онд эхэлсэн", gwTipAll:"тэр үе хүртэлх нийт",
+  gwRead:"<b>2023 оноос хойшхи нам багана нь бууралтыг харуулахгүй:</b> самбарт нотолгоо хэрэгтэй, нотолгоо хэдэн жилийн дараа гардаг тул сүүлийн жилүүд дутуу тоологддог (цайвар багана; 2026* дуусаагүй). Энэ нь дэлхийн бүх хиймэл оюун биш, зөвхөн энэ самбарт баримтжуулсан тохиолдлууд бөгөөд илүү хайвал жил бүрийн тоо өснө. Самбар өөрөө 2026 оны 7-р сард 57 карттай байсан бол одоо __ALL__ болсон: энэ нь бидний хайлт, энэ муруй биш.",
+  gwNote:"Хэрэглээ бүрийг систем тухайн ажлыг бодит нөхцөлд анх удаа өөрөө мэдэрч, суралцаж эсвэл шийдвэр гаргаж хийсэн оноос тоолно; туршилтууд орно. Судалгааны шатанд буй __RES__ хэрэглээг анхны нийтлэгдсэн үр дүнгээс нь тоолно. Алсын удирдлагатай эсвэл урьдчилан програмчилсан өмнөх төрлүүд тоологдохгүй; чип, стандарт, хиймэл оюуны цөмгүй технологийн __STD__ карт ороогүй. Он жилүүдийн __SRC__ нь нээж үзсэн эх сурвалжид, __MID__ нь хайлтын хураангуй эсвэл огноотой тайланд тулгуурласан, __EST__ нь тооцоолол. <a href=\"https://github.com/mendeltem/ai_use_cases_overview/blob/main/startjahre_2026-11-02.md\" target=\"_blank\" rel=\"noopener\">Бүх он, эх сурвалж</a>.",
+  gwTabT:"Жил жилээр, бүх картаар", gwThY:"Он", gwThN:"Шинэ", gwThT:"Нийт", gwThC:"Картууд", gwVor:"__Y__ оноос өмнө",
   brCardK:"Холбоотой хуудас", brCardT:"Nvidia-гийн экосистем", brAtlasT:"Supply Atlas бөмбөрцөг", brWikiT:"Суурь вики",
   ciHigh:"GPU их", ciMid:"GPU дунд", ciLow:"GPU бага", ciSub:"суурь", lblComp:"Тооцооллын ачаалал",
   eyebrow:"Хиймэл оюуны хэрэглээ · 2026 оны 11-р сарын байдлаар · Төлөвшил · Нотолгоо · Өсөлт",
@@ -3578,12 +3647,337 @@ const COMPUTE = {
   "Process industry: metallurgy & chemicals":[1,"edge"]
 };
 UC.forEach(function(x){ const c = COMPUTE[x.name.en]; x.ci = c?c[0]:1; x.ck = c?c[1]:"inf"; });
+/* ---------- Startjahre ----------
+   [Jahr, Art, Beleg]: erster realer Einsatz, bei dem das System selbst wahrnimmt,
+   lernt oder entscheidet; Art "standard" = kein KI-Kern, zaehlt nicht.
+   Ereignis und Quelle je Karte: startjahre_2026-11-02.md */
+const SINCE = {
+  "Robotaxis / autonomous driving":[2016, "pilot", "high"],
+  "Autonomous trucks":[2016, "pilot", "high"],
+  "eVTOL / flying taxis":[2018, "pilot", "medium"],
+  "Autonomous ships":[2022, "pilot", "medium"],
+  "Delivery & medical drones":[2014, "pilot", "medium"],
+  "Sidewalk delivery robots":[2016, "pilot", "high"],
+  "Autonomous rail yards":[2017, "production", "medium"],
+  "Warehouse robots":[2005, "commercial", "high"],
+  "Logistics orchestration":[2016, "production", "medium"],
+  "Autonomous mine fleets":[2005, "pilot", "high"],
+  "AI container terminals":[2017, "production", "medium"],
+  "Grid energy trading":[2018, "production", "medium"],
+  "Grid operation & load forecasting":[1992, "production", "low"],
+  "AR remote assistance & vision picking":[2015, "pilot", "medium"],
+  "Industrial robots":[1982, "production", "medium"],
+  "Humanoid robots":[2023, "pilot", "high"],
+  "Construction robots":[2018, "commercial", "medium"],
+  "Semiconductor fab automation":[1996, "production", "low"],
+  "Visual inspection & predictive maintenance":[2015, "commercial", "medium"],
+  "Process industry: metallurgy & chemicals":[1993, "production", "low"],
+  "Precision spraying (See & Spray)":[2014, "commercial", "medium"],
+  "Milking robots":[1992, "pilot", "high"],
+  "Agricultural drones":[2015, "commercial", "medium"],
+  "Harvest pickers & laser weeding":[2019, "commercial", "medium"],
+  "Aquaculture robots":[2014, "commercial", "high"],
+  "Livestock welfare monitoring":[2018, "pilot", "medium"],
+  "Industrial exoskeletons":[2018, "pilot", "medium"],
+  "Seismic interpretation (subsurface AI)":[1996, "production", "low"],
+  "Offshore asset integrity":[2020, "production", "medium"],
+  "Restaurant kitchen automation":[2017, "pilot", "medium"],
+  "AI air-traffic flow & route optimisation":[2020, "pilot", "medium"],
+  "Machine-vision track inspection":[2003, "pilot", "medium"],
+  "AI log grading with CT and X-ray":[2025, "production", "medium"],
+  "AI cement kiln control":[2024, "production", "medium"],
+  "AI-guided exploration for metals & geothermal":[2019, "pilot", "low"],
+  "Food-waste cameras in commercial kitchens":[2018, "pilot", "high"],
+  "Surgical robots (assisted)":[1992, "pilot", "low"],
+  "AI drug discovery":[2020, "pilot", "medium"],
+  "Personalised cancer vaccines (neoantigen)":[2013, "pilot", "medium"],
+  "Autonomous surgery steps":[2016, "research", "high"],
+  "Diagnostic AI (radiology)":[1997, "commercial", "high"],
+  "Stroke triage AI":[2015, "commercial", "medium"],
+  "Brain MRI lesion segmentation & volumetry":[2006, "commercial", "medium"],
+  "Brain age estimation":[2010, "research", "high"],
+  "VR pain therapy":[1996, "standard", "medium"],
+  "AR surgical navigation":[2017, "commercial", "medium"],
+  "Dental / implant robots":[2017, "commercial", "medium"],
+  "Hospital & care robots":[1989, "pilot", "high"],
+  "Disaster / search robotics":[2020, "pilot", "medium"],
+  "Firefighting robots":[2019, "standard", "medium"],
+  "Mine / ordnance clearance":[2016, "research", "low"],
+  "Disaster early warning":[2018, "pilot", "high"],
+  "Wildfire detection camera networks":[1999, "pilot", "medium"],
+  "Defense & ISR drones":[2017, "production", "medium"],
+  "Space robotics":[1997, "production", "medium"],
+  "Intelligent coal mines (China)":[2014, "production", "medium"],
+  "AI in emergency calls":[2018, "pilot", "high"],
+  "Search-and-rescue drones (thermal & AI)":[2021, "production", "medium"],
+  "Sepsis early warning":[2016, "production", "high"],
+  "Autonomous diabetic eye screening":[2011, "production", "medium"],
+  "Speech neuroprostheses (brain implants)":[2009, "research", "high"],
+  "AI-assisted colonoscopy":[2015, "pilot", "medium"],
+  "Hidden heart failure via AI-ECG & AI stethoscope":[2019, "pilot", "high"],
+  "TB screening with AI chest X-ray":[2012, "pilot", "medium"],
+  "Autonomous skin cancer triage":[2020, "pilot", "medium"],
+  "AI embryo selection in IVF":[2020, "commercial", "medium"],
+  "Suicide risk prediction for veterans":[2016, "pilot", "medium"],
+  "Neural-network hearing aids":[2021, "commercial", "medium"],
+  "AI weather forecasting":[2023, "production", "medium"],
+  "Protein folding / biology":[2020, "pilot", "high"],
+  "Emissions satellites":[2019, "production", "medium"],
+  "Materials science":[2014, "research", "high"],
+  "Climate / ocean monitoring":[1999, "standard", "medium"],
+  "AI in chip design (EDA)":[2020, "commercial", "high"],
+  "Self-driving laboratories":[2009, "pilot", "medium"],
+  "Fusion plasma control":[1994, "research", "high"],
+  "Fusion disruption prediction":[1997, "pilot", "high"],
+  "Fusion simulation surrogates":[2015, "research", "medium"],
+  "Coding agents":[2023, "pilot", "medium"],
+  "Customer service agents":[2016, "pilot", "medium"],
+  "Legal agents":[2016, "commercial", "high"],
+  "Sales & marketing agents":[2010, "commercial", "high"],
+  "Deep research / knowledge":[2024, "commercial", "high"],
+  "HR / recruiting agents":[2013, "commercial", "high"],
+  "Machine translation":[2003, "commercial", "medium"],
+  "Email / BEC security":[2017, "commercial", "medium"],
+  "Fraud / AML (banking)":[1992, "production", "high"],
+  "OT / ICS security":[2013, "commercial", "medium"],
+  "Identity & access security":[2013, "production", "medium"],
+  "Autonomous SOC agents (AI vs AI)":[2016, "pilot", "high"],
+  "Biometric airport check-in & border":[2002, "pilot", "high"],
+  "Biology foundation models":[2019, "research", "high"],
+  "Pharma in-house AI factories":[2021, "production", "low"],
+  "Self-driving labs":[2023, "production", "low"],
+  "Autonomous vulnerability discovery":[2024, "pilot", "high"],
+  "AI mathematics & formal proofs":[2013, "production", "medium"],
+  "Self-checkout loss prevention (vision AI)":[2009, "commercial", "medium"],
+  "Automated content moderation":[2010, "production", "medium"],
+  "ML anomaly triggers at the LHC":[2024, "production", "high"],
+  "Connectomics: AI reconstructs brains":[2007, "research", "low"],
+  "AI triage of sky surveys":[1992, "research", "medium"],
+  "Deep Loop Shaping for LIGO":[2025, "research", "high"],
+  "Neural decoders for quantum error correction":[2016, "research", "high"],
+  "Digital olfaction":[2018, "pilot", "medium"],
+  "Insurance claims":[2016, "commercial", "high"],
+  "Ambient clinical documentation":[2019, "pilot", "medium"],
+  "Regulatory writing in pharma (LLMs)":[2023, "commercial", "medium"],
+  "Revenue cycle & prior authorization":[2020, "pilot", "medium"],
+  "Finance / accounting":[2017, "commercial", "medium"],
+  "Public administration / government":[2023, "pilot", "medium"],
+  "Adaptive traffic signals":[2012, "pilot", "high"],
+  "Recycling sortation":[2011, "commercial", "medium"],
+  "Data-center cooling":[2008, "pilot", "medium"],
+  "Foundation models for robotics":[2022, "research", "medium"],
+  "Digital twins":[2021, "standard", "low"],
+  "5G / connectivity for robotics":[2019, "standard", "low"],
+  "AI-RAN & network operation":[2024, "pilot", "medium"],
+  "World models & 3D generation":[2018, "research", "high"],
+  "HBM memory (the supercycle)":[2016, "standard", "medium"],
+  "NAND flash & enterprise SSD":[2016, "standard", "medium"],
+  "AI accelerators & custom silicon":[2015, "standard", "medium"],
+  "CoWoS / advanced packaging":[2016, "standard", "medium"],
+  "Co-packaged optics (CPO)":[2025, "standard", "medium"],
+  "Data-center power & the grid":[2024, "standard", "medium"],
+  "800-VDC rack power":[null, "standard", "medium"],
+  "LiDAR for physical AI":[2010, "standard", "medium"],
+  "Edge-AI perception chips":[2007, "standard", "medium"],
+  "Robo-advisory & wealth":[2010, "commercial", "medium"],
+  "Agentic chip verification (EDA)":[2025, "pilot", "low"],
+  "AI credit underwriting":[2009, "commercial", "medium"],
+  "Wastewater aeration control":[2022, "production", "medium"],
+  "AI police report drafting":[2024, "commercial", "medium"],
+  "AI traffic-enforcement cameras":[2018, "pilot", "medium"],
+  "Live facial recognition by police":[2001, "pilot", "medium"],
+  "Algorithmic video surveillance (France)":[2024, "pilot", "high"],
+  "Aerial detection of undeclared pools":[2021, "pilot", "medium"],
+  "Courts building their own AI (Brazil)":[2018, "production", "medium"],
+  "Solar panel cleaning robots":[2013, "commercial", "medium"],
+  "Infrastructure / underwater inspection":[2016, "commercial", "high"],
+  "Local language models":[2023, "production", "high"],
+  "Local image generation":[2022, "production", "high"],
+  "Local medical image segmentation":[2018, "commercial", "high"],
+  "Local image editing & design":[2022, "production", "medium"],
+  "Offline coding & website building":[2023, "production", "medium"],
+  "Local document AI for sensitive records":[2023, "pilot", "high"],
+  "Local speech transcription":[1997, "commercial", "high"],
+  "Private knowledge base over your own files":[2023, "production", "medium"],
+  "Local microscopy segmentation":[2011, "production", "high"],
+  "Local fine-tuning of open models":[2023, "production", "high"],
+  "Local 3D scanning with Gaussian splatting":[2023, "research", "high"],
+  "Federated learning across hospitals":[2016, "pilot", "high"],
+  "Distributed inference across local machines":[2022, "pilot", "medium"],
+  "Decentralized training on contributed GPUs":[2017, "research", "high"],
+  "Road damage detection & repair":[2017, "commercial", "high"],
+  "River & ocean plastic cleanup":[2018, "pilot", "medium"],
+  "Sewer pipe inspection AI":[2019, "commercial", "medium"],
+  "Facade & window cleaning robots":[2024, "production", "medium"],
+  "Autonomous street cleaning":[2018, "pilot", "high"],
+  "Robot vacuums":[2001, "commercial", "high"],
+  "Window & pool cleaning robots":[2011, "commercial", "medium"],
+  "Game development":[2019, "commercial", "medium"],
+  "Generative 3D models":[2022, "commercial", "high"],
+  "Video & avatar generation":[2018, "production", "high"],
+  "AI smart glasses":[2015, "commercial", "high"],
+  "Be My Eyes":[2015, "standard", "high"],
+  "Be My AI":[2023, "pilot", "high"],
+  "3D print failure detection":[2019, "pilot", "medium"],
+  "Robotic lawn mowers":[2019, "commercial", "medium"],
+  "Rail predictive maintenance":[2016, "production", "medium"],
+  "AI ad automation (creative & bidding)":[2007, "commercial", "medium"],
+  "AI in news: generated articles & licensing":[2022, "production", "medium"],
+  "AI music generation":[2015, "commercial", "high"],
+  "Fall & crash detection (watch, phone)":[2018, "commercial", "medium"],
+  "Recommender systems (feeds & video)":[1994, "pilot", "low"],
+  "Electronic line calling & semi-automated offside":[2006, "commercial", "high"],
+  "AI dubbing & synthetic voices":[2020, "commercial", "medium"],
+  "Smartwatch hypertension alerts":[2025, "commercial", "high"],
+  "AI cameras for amateur sports":[2016, "commercial", "medium"],
+  "AI language learning":[2022, "commercial", "high"],
+  "Agent-to-agent protocol (A2A)":[2025, "standard", "medium"],
+  "Model Context Protocol (MCP)":[2024, "standard", "high"],
+  "Agent payments (AP2, ACP)":[2025, "standard", "high"],
+  "Catena-X automotive data space":[2023, "standard", "medium"],
+  "EU digital battery passport":[2023, "standard", "medium"],
+  "Paperless freight documents (eFTI)":[2025, "standard", "medium"],
+  "Electronic bill of lading (eBL)":[1986, "standard", "medium"],
+  "Supply-chain event data (GS1 EPCIS 2.0)":[2007, "standard", "medium"],
+  "Machine-to-machine language (OPC UA)":[2007, "standard", "medium"],
+  "Vehicle-to-everything radio (C-V2X)":[2017, "standard", "high"],
+  "Satellite direct-to-device link":[2023, "standard", "high"],
+  "Conversational shopping assistants":[2023, "pilot", "high"],
+  "AI in schools nationwide (Estonia AI Leap)":[2025, "pilot", "high"],
+  "Generative AI tutoring":[2023, "pilot", "high"],
+  "Drive-thru voice ordering":[2019, "pilot", "medium"],
+  "Shelf-scanning store robots":[2013, "pilot", "high"],
+  "Camera-trap AI":[2018, "production", "medium"],
+  "Satellite deforestation alerts":[2012, "production", "medium"],
+  "Reading the Herculaneum scrolls":[2023, "pilot", "high"],
+  "AI-discovered Nazca geoglyphs":[2019, "research", "medium"],
+  "Dark-fleet detection at sea":[2018, "production", "medium"],
+  "ML targeting of cash aid":[2020, "production", "high"],
+  "Post-disaster building damage mapping":[2021, "pilot", "medium"],
+  "Citizen species ID apps":[2011, "production", "medium"],
+  "Oil-slick attribution from radar":[2023, "production", "medium"],
+  "Bird-triggered turbine shutdown":[2009, "pilot", "medium"],
+  "Handwritten text recognition in archives":[2015, "production", "medium"],
+  "Restoring ancient inscriptions & cuneiform":[2019, "research", "high"],
+  "AI hallucinations in court filings":[2023, "production", "high"],
+  "Welfare fraud risk scoring":[2008, "production", "medium"],
+  "Gunshot & weapons detection":[1996, "pilot", "medium"]
+};
+UC.forEach(function(x){ x.seit = SINCE[x.name.en] || null; });
 const CK_LABEL = {
   en:{train:"training", inf:"DC inference", edge:"on-device", sim:"GPU simulation", sub:"substrate"},
   de:{train:"Training", inf:"Inferenz im RZ", edge:"auf dem Gerät", sim:"GPU-Simulation", sub:"Substrat"}
 };
 CK_LABEL.mn = {train:"сургалт", inf:"дата төвд тооцоолол", edge:"төхөөрөмж дээр", sim:"GPU симуляц", sub:"суурь дэд бүтэц"};
 const CI_KEY = {3:"ciHigh", 2:"ciMid", 1:"ciLow", 0:"ciSub"};
+/* ---------- Wachstum ueber die Jahre ----------
+   Jede Karte zaehlt ab ihrem Startjahr (SINCE). Fruehere Jahre als GW_AB
+   gehen nur als Sockel in die Summe ein; die Tabelle nennt sie einzeln. */
+const GW_AB = 2010, GW_BIS = 2026, GW_UNSICHER = 2024;
+function gwDaten(){
+  const karten = UC.filter(x=>x.seit && x.seit[1]!=='standard');
+  const sockel = karten.filter(x=>x.seit[0]<GW_AB);
+  const jahre = []; let ges = sockel.length;
+  for(let j=GW_AB;j<=GW_BIS;j++){ const neu = karten.filter(x=>x.seit[0]===j); ges += neu.length; jahre.push({j,neu,ges}); }
+  return {karten,sockel,jahre};
+}
+function gwStat(){
+  const d = gwDaten(), bis = j=>d.karten.filter(x=>x.seit[0]<=j).length;
+  const s = d.karten.map(x=>x.seit[0]).sort((a,b)=>a-b);
+  return {N:d.karten.length, HALF:s[Math.floor(s.length/2)], BYA:bis(2015), BYB:bis(2020), BYC:bis(2022), BYD:bis(2025),
+    ALL:UC.length, STD:UC.filter(x=>x.seit && x.seit[1]==='standard').length,
+    SRC:d.karten.filter(x=>x.seit[2]==='high').length, MID:d.karten.filter(x=>x.seit[2]==='medium').length,
+    EST:d.karten.filter(x=>x.seit[2]==='low').length, RES:d.karten.filter(x=>x.seit[1]==='research').length, VOR:GW_AB, SOCKEL:d.sockel.length};
+}
+function gwAchse(max){
+  const s = [1,2,5,10,20,25,50,100].find(v=>max/v<=4)||200, o = [];
+  for(let v=0;v<=Math.ceil(max/s)*s;v+=s) o.push(v);
+  return o;
+}
+function gwZeigeX(i,n,w){
+  const schritt = Math.ceil(n/(w<420?5:8)), letzte = n-1;
+  return i===letzte||(i%schritt===0&&letzte-i>=Math.ceil(schritt*0.7));
+}
+function gwPlot(el,art,d){
+  const w = el.clientWidth; if(!w) return;
+  const u = UI[lang], h = window.innerWidth<=760?170:190, m = {l:30,r:art==='ges'?34:6,t:22,b:22};
+  const pw = w-m.l-m.r, ph = h-m.t-m.b, n = d.jahre.length, slot = pw/n;
+  const wert = r=>art==='ges'?r.ges:r.neu.length;
+  const ticks = gwAchse(Math.max(...d.jahre.map(wert))), top = ticks[ticks.length-1];
+  const x = i=>m.l+slot*(i+.5), y = v=>m.t+ph-ph*v/top;
+  let s = '<svg width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" role="img" tabindex="0" aria-label="'+(art==='ges'?u.gwCapCum:u.gwCapNew)+'">';
+  ticks.forEach(v=>{ s += '<line class="gw-gitter" x1="'+m.l+'" x2="'+(w-m.r)+'" y1="'+y(v)+'" y2="'+y(v)+'"/><text class="gw-ax" x="'+(m.l-6)+'" y="'+(y(v)+3.5)+'" text-anchor="end">'+v+'</text>'; });
+  d.jahre.forEach((r,i)=>{ if(gwZeigeX(i,n,w)) s += '<text class="gw-ax" x="'+x(i)+'" y="'+(h-6)+'" text-anchor="middle">'+r.j+(r.j===GW_BIS?'*':'')+'</text>'; });
+  if(art==='ges'){
+    const pkt = d.jahre.map((r,i)=>x(i).toFixed(1)+','+y(r.ges).toFixed(1));
+    s += '<path class="gw-flaeche" d="M'+x(0).toFixed(1)+','+y(0)+' L'+pkt.join(' L')+' L'+x(n-1).toFixed(1)+','+y(0)+' Z"/><polyline class="gw-linie" points="'+pkt.join(' ')+'"/>';
+    d.jahre.forEach((r,i)=>{
+      if(r.j!==2015 && r.j!==2020 && i!==n-1) return;
+      s += '<circle class="gw-marke" cx="'+x(i)+'" cy="'+y(r.ges)+'" r="4"/>';
+      s += i===n-1 ? '<text class="gw-wert" x="'+(x(i)+8)+'" y="'+(y(r.ges)+4)+'">'+r.ges+'</text>'
+                   : '<text class="gw-wert" x="'+x(i)+'" y="'+(y(r.ges)-9)+'" text-anchor="middle">'+r.ges+'</text>';
+    });
+  } else {
+    const hoch = d.jahre.filter(r=>r.j<GW_BIS).reduce((a,b)=>b.neu.length>a.neu.length?b:a);
+    d.jahre.forEach((r,i)=>{
+      const v = r.neu.length; if(!v) return;
+      const bw = Math.min(24,slot-2), x0 = x(i)-bw/2, y1 = y(v), b = y(0), q = Math.min(4,bw/2,b-y1);
+      s += '<path class="gw-balken'+(r.j>=GW_UNSICHER?' gw-teil':'')+'" data-i="'+i+'" d="M'+x0.toFixed(1)+','+b+' V'+(y1+q).toFixed(1)+' Q'+x0.toFixed(1)+','+y1.toFixed(1)+' '+(x0+q).toFixed(1)+','+y1.toFixed(1)+' H'+(x0+bw-q).toFixed(1)+' Q'+(x0+bw).toFixed(1)+','+y1.toFixed(1)+' '+(x0+bw).toFixed(1)+','+(y1+q).toFixed(1)+' V'+b+' Z"/>';
+      if(r===hoch) s += '<text class="gw-wert" x="'+x(i)+'" y="'+(y1-6)+'" text-anchor="middle">'+v+'</text>';
+    });
+  }
+  s += '<line class="gw-kreuz" y1="'+m.t+'" y2="'+y(0)+'" visibility="hidden"/></svg><div class="gw-tip" hidden></div>';
+  el.innerHTML = s;
+  const svg = el.querySelector('svg'), kreuz = el.querySelector('.gw-kreuz'), tip = el.querySelector('.gw-tip');
+  el.gwSetze = function(i){
+    if(i===null){ kreuz.setAttribute('visibility','hidden'); tip.hidden = true; el.querySelectorAll('.gw-an').forEach(b=>b.classList.remove('gw-an')); return; }
+    kreuz.setAttribute('x1',x(i)); kreuz.setAttribute('x2',x(i)); kreuz.setAttribute('visibility','visible');
+    el.querySelectorAll('.gw-balken').forEach(b=>b.classList.toggle('gw-an',+b.dataset.i===i));
+  };
+  el.gwTip = function(i){
+    const r = d.jahre[i];
+    tip.innerHTML = '<b>'+r.neu.length+'</b> '+u.gwTipNew.replace('__Y__',r.j+(r.j===GW_BIS?'*':''))+'<br><b>'+r.ges+'</b> '+u.gwTipAll;
+    tip.hidden = false;
+    tip.style.left = Math.max(0,Math.min(w-tip.offsetWidth,x(i)-tip.offsetWidth/2))+'px';
+  };
+  let akt = null;
+  const zeige = i=>{ akt = i; document.querySelectorAll('.gw-plot').forEach(p=>{ if(p.gwSetze) p.gwSetze(i); }); el.gwTip(i); };
+  const vonX = e=>zeige(Math.max(0,Math.min(n-1,Math.floor((e.clientX-svg.getBoundingClientRect().left-m.l)/slot))));
+  svg.addEventListener('pointermove',vonX);
+  svg.addEventListener('pointerdown',vonX);
+  svg.addEventListener('pointerleave',e=>{ if(e.pointerType==='mouse') gwAus(); });
+  svg.addEventListener('blur',gwAus);
+  svg.addEventListener('keydown',e=>{
+    if(e.key!=='ArrowLeft' && e.key!=='ArrowRight') return;
+    e.preventDefault();
+    zeige(akt===null?n-1:Math.max(0,Math.min(n-1,akt+(e.key==='ArrowRight'?1:-1))));
+  });
+}
+function gwAus(){ document.querySelectorAll('.gw-plot').forEach(p=>{ if(p.gwSetze) p.gwSetze(null); }); }
+document.addEventListener('pointerdown',e=>{ if(!e.target.closest('.gw-plot')) gwAus(); });
+function zeichneWachstum(){
+  const d = gwDaten();
+  gwPlot(document.getElementById('gwCum'),'ges',d);
+  gwPlot(document.getElementById('gwNew'),'neu',d);
+}
+function gwTabelle(){
+  const d = gwDaten(), u = UI[lang];
+  const link = x=>'<a href="#uc='+ucSlug(x.name.en)+'">'+T(x.name)+'</a>';
+  const zeile = (j,neu,ges)=>'<tr><th scope="row">'+j+'</th><td class="z">'+neu+'</td><td class="z">'+ges+'</td><td>';
+  let s = '<div class="gw-tabhuelle"><table class="gw-tabelle"><thead><tr><th scope="col">'+u.gwThY+'</th><th scope="col" class="z">'+u.gwThN+'</th><th scope="col" class="z">'+u.gwThT+'</th><th scope="col">'+u.gwThC+'</th></tr></thead><tbody>';
+  d.jahre.slice().reverse().forEach(r=>{ s += zeile(r.j+(r.j===GW_BIS?'*':''),r.neu.length,r.ges)+r.neu.map(link).join(' · ')+'</td></tr>'; });
+  const alt = d.sockel.slice().sort((a,b)=>a.seit[0]-b.seit[0]);
+  s += zeile(u.gwVor.replace('__Y__',GW_AB),alt.length,alt.length)+alt.map(x=>link(x)+' ('+x.seit[0]+')').join(' · ')+'</td></tr></tbody></table></div>';
+  document.getElementById('gwTabBody').innerHTML = s;
+}
+function renderWachstum(){
+  const u = UI[lang], gw = gwStat();
+  for(const id of ['gwTitle','gwLead','gwCapCum','gwCapNew','gwRead','gwNote','gwTabT']){
+    const el = document.getElementById(id); if(el) el.innerHTML = u[id].replace(/__([A-Z]+)__/g,(m,k)=>gw[k]!==undefined?gw[k]:m);
+  }
+  gwTabelle(); zeichneWachstum();
+}
+
 function fazitStat(){
   const pc=(a,b)=>b?Math.round(100*a/b):0, solid=a=>a.filter(x=>x.q===3).length;
   const cat={}; CLUSTERS.forEach(c=>cat[c.n]=c.cat);
@@ -4450,6 +4844,7 @@ function renderStatic(){
   for(const id of ['fzTitle','fzP1','fzP2','fzP3','fzP4','fzP5','fzNote']){
     const el = document.getElementById(id); if(el) el.innerHTML = u[id].replace(/__([A-Z]+)__/g,(m,k)=>fz[k]!==undefined?fz[k]:m);
   }
+  renderWachstum();
   const cs = computeStat();
   for(const id of ['cdP1','cdP2']){
     const el = document.getElementById(id); if(!el) continue;
@@ -4680,6 +5075,11 @@ wireDisclosure('filtToggle','moreFilters');
 wireDisclosure('warumToggle','warumBody');
 wireDisclosure('fazitToggle','fazitBody');
 wireDisclosure('bridgeToggle','bridgeBody');
+wireDisclosure('gwTabToggle','gwTabBody');
+if(window.ResizeObserver){
+  let gwBreite = 0;
+  new ResizeObserver(function(e){ const b = Math.round(e[0].contentRect.width); if(b && b!==gwBreite){ gwBreite = b; zeichneWachstum(); } }).observe(document.getElementById('gwCum'));
+} else { window.addEventListener('resize',zeichneWachstum); }
 
 function syncFilterCount(){
   const n = fMat.size + fGrow.size + fComp.size + fQual.size;
