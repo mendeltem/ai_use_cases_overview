@@ -4,6 +4,8 @@ An interactive, single-page dashboard cataloguing concrete AI deployments runnin
 
 **Live demo:** https://mendeltem.github.io/ai_use_cases_overview/
 
+**Film (2:40, English):** https://mendeltem.github.io/ai_use_cases_overview/film/
+
 ## What's in it
 
 210 use cases across 24 clusters, from robotaxis and warehouse robots to knowledge-work agents and weather forecasting. Each card shows a headline metric, a detail note with caveats, and a linked source. Interface is trilingual (English / German / Mongolian).
