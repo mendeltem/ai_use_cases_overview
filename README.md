@@ -4,7 +4,7 @@ An interactive, single-page dashboard cataloguing concrete AI deployments runnin
 
 **Live demo:** https://mendeltem.github.io/ai_use_cases_overview/
 
-**Films (English):** https://mendeltem.github.io/ai_use_cases_overview/film/ -- a 2:40 guide to the board and the 49-minute long film "AI in the real world: 210 use cases" with chapters per cluster
+**Films (English):** https://mendeltem.github.io/ai_use_cases_overview/film/ -- a 2:40 guide to the board and the 40-minute long film "AI in the real world: 210 use cases" with chapters per cluster
 
 ## What's in it
 
