@@ -522,7 +522,7 @@ const UI = {
     brCardK:"Sister page", brCardT:"The Nvidia ecosystem", brAtlasT:"Supply Atlas globe", brWikiT:"Background wiki",
     brCardS:"Valuation and quarterly figures for 66 listed companies along the supply chain: memory, foundry, packaging, power, cloud, application.",
     brCardG:"open →",
-    eyebrow:"AI Use Cases · As of 2 November 2026 · Maturity · Evidence · Growth",
+    eyebrow:"AI Use Cases · As of 17 November 2026 · Maturity · Evidence · Growth",
     h1a:"What AI is ", h1accent:"actually", h1b:" doing<br>in the real world",
     thesis:"From robots on the factory floor to agents in the back office — the concrete AI use cases that already run. Each rated on three axes: <strong>how far it runs</strong>, <strong>how solid the numbers are</strong>, and <strong>how fast it's growing</strong>.",
     distUC:"Use cases", distSolid:"Solidly evidenced", distMid:"Medium evidence", distThin:"Thin evidence", distGrow:"Fast-growing", distCl:"Clusters",
@@ -571,7 +571,7 @@ const UI = {
     brCardK:"Schwesterseite", brCardT:"Das Nvidia-Ökosystem", brAtlasT:"Supply-Atlas-Globus", brWikiT:"Hintergrund-Wiki",
     brCardS:"Bewertung und Quartalszahlen von 66 börsennotierten Firmen entlang der Lieferkette: Speicher, Fertigung, Packaging, Strom, Cloud, Anwendung.",
     brCardG:"öffnen →",
-    eyebrow:"KI-Use-Cases · Stand 2. November 2026 · Reifegrad · Datenlage · Wachstum",
+    eyebrow:"KI-Use-Cases · Stand 17. November 2026 · Reifegrad · Datenlage · Wachstum",
     h1a:"Was KI ", h1accent:"wirklich", h1b:" schon tut,<br>in der echten Welt",
     thesis:"Von Robotern in der Fabrik bis zu Agenten im Backoffice — die konkreten KI-Use-Cases, die real laufen. Jeder nach drei Achsen: <strong>wie weit er läuft</strong>, <strong>wie belastbar die Zahlen sind</strong> und <strong>wie schnell er wächst</strong>.",
     distUC:"Use Cases", distSolid:"Solide belegt", distMid:"Mittlere Datenlage", distThin:"Dünne Datenlage", distGrow:"Stark wachsend", distCl:"Cluster",
@@ -1050,9 +1050,9 @@ const UC = [
     E("Livestock welfare monitoring","Tierwohl-Ueberwachung im Stall"),
     E("46 dairy farms, whole supply chain, cameras score cows continuously","46 Milchviehbetriebe, ganze Lieferkette, Kameras bewerten Kuehe laufend"),
     E("<b>46 farms</b> - an entire retail supply chain monitored, not a pilot herd","<b>46 Betriebe</b> - eine ganze Handelslieferkette ueberwacht, keine Pilotherde"),
-    E("Cameras above the stalls score gait, body condition and behaviour, on an algorithm trained with veterinarians. What makes this notable is not the technique but the scope: welfare monitoring rolled out across every farm supplying one retailer, announced 27 August 2026, rather than a trial at one site. The claim of a first is the retailer's own, and no outcome figures - fewer lameness cases, better condition scores - have been published yet.",
-      "Kameras ueber den Staenden bewerten Gang, Koerperkondition und Verhalten, mit einem Algorithmus, der zusammen mit Tieraerzten trainiert wurde. Bemerkenswert ist nicht die Technik, sondern der Umfang: Tierwohl-Ueberwachung ueber jeden Betrieb einer Handelslieferkette hinweg, angekuendigt am 27. August 2026, statt eines Versuchs an einem Standort. Der Anspruch, der Erste zu sein, stammt vom Haendler selbst, und Ergebniszahlen - weniger Lahmheit, bessere Konditionswerte - liegen noch nicht vor."),
-    E("M&S / CattleEye (27 Aug 2026)","M&S / CattleEye (27.8.2026)"),
+    E("Cameras above the stalls score gait, body condition and behaviour, on an algorithm trained with veterinarians. What makes this notable is not the technique but the scope: welfare monitoring rolled out across every farm supplying one retailer, announced 27 August 2026, rather than a trial at one site. The claim of a first is the retailer's own, and no outcome figures - fewer lameness cases, better condition scores - have been published yet. Poultry is earlier: Royal GD's FlockVision cameras, whose AI scores sixteen broiler behaviours, were tested on five Dutch commercial farms and launched in 2025 on a 'growing number' of farms, with no farm count or outcome figures. Robots that drive through poultry houses (such as Tibot's Spoutnic) mainly keep the flock moving; their published role does not mention AI.",
+      "Kameras ueber den Staenden bewerten Gang, Koerperkondition und Verhalten, mit einem Algorithmus, der zusammen mit Tieraerzten trainiert wurde. Bemerkenswert ist nicht die Technik, sondern der Umfang: Tierwohl-Ueberwachung ueber jeden Betrieb einer Handelslieferkette hinweg, angekuendigt am 27. August 2026, statt eines Versuchs an einem Standort. Der Anspruch, der Erste zu sein, stammt vom Haendler selbst, und Ergebniszahlen - weniger Lahmheit, bessere Konditionswerte - liegen noch nicht vor. Bei Gefluegel ist es frueher: Die FlockVision-Kameras von Royal GD, deren KI sechzehn Verhaltensweisen von Masthaehnchen bewertet, wurden auf fuenf niederlaendischen Praxisbetrieben getestet und 2025 auf einer „wachsenden Zahl“ von Betrieben eingefuehrt, ohne Betriebszahl oder Ergebniszahlen. Roboter, die durch Gefluegelstaelle fahren (etwa Tibots Spoutnic), halten vor allem die Herde in Bewegung; ihre veroeffentlichte Aufgabe nennt keine KI."),
+    E("M&S / CattleEye (27 Aug 2026); Royal GD, Int Animal Health J (2026)","M&S / CattleEye (27.8.2026); Royal GD, Int Animal Health J (2026)"),
     "medium", E("Deployment size confirmed by the retailer; welfare outcomes not yet measured publicly",
       "Umfang vom Haendler bestaetigt; Wirkung auf das Tierwohl oeffentlich noch nicht gemessen")),
 
@@ -1646,10 +1646,10 @@ const UC = [
   U(12,"NVIDIA GR00T, Physical Intelligence, Gemini Robotics","early",2,"explosive",
     E("Foundation models for robotics","Foundation Models für Robotik"),
     E("new model generation every few months","neue Modellgeneration alle paar Monate"),
-    E("Generalist robot policies; GR00T 1.7 (GTC Mar 2026); validated on Unitree G1, AgiBot","Generalist-Policies; GR00T 1.7 (GTC März 2026); validiert auf Unitree G1, AgiBot"),
-    E("Robot foundation models (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) are iterating every few months and are the software layer that makes humanoids and general robots trainable. Early but explosively active.","Roboter-Foundation-Models (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) iterieren alle paar Monate und sind die Software-Ebene, die Humanoide/Generalroboter trainierbar macht. Früh, aber explosiv aktiv."),
-    E("NVIDIA GTC 2026; company releases","NVIDIA GTC 2026; Firmenreleases"),
-    "note", E("early, iterating fast","früh, iteriert schnell")),
+    E("GR00T 2 (Nov 2026, research): <b>40% zero-shot</b> on 50 unseen tasks, 95% after 5 demos; GR00T 1.7 validated on Unitree G1, AgiBot","GR00T 2 (Nov. 2026, Forschung): <b>40 % zero-shot</b> bei 50 unbekannten Aufgaben, 95 % nach 5 Demos; GR00T 1.7 validiert auf Unitree G1, AgiBot"),
+    E("Robot foundation models (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) are iterating every few months and are the software layer that makes humanoids and general robots trainable. Newest step: NVIDIA's GR00T 2 (Nov 2026) is a 'world-action model' that predicts future video and robot actions together, pretrained on about 402,730 hours of first-person human video, 10,184 hours of handheld gripper demos (2,897 tasks) and 23,500 hours of robot teleoperation. On 50 tasks unseen on the target robot it succeeds 40% of the time zero-shot and 95% after five demos and a 30-minute fine-tune on one RTX 5090; the 2-billion-parameter Turbo version runs on a Unitree G1 at 124 ms per step on Jetson AGX Thor. These are NVIDIA's own research results, code is announced for December, and no customer deployments are named. Early but explosively active.","Roboter-Foundation-Models (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) iterieren alle paar Monate und sind die Software-Ebene, die Humanoide/Generalroboter trainierbar macht. Neuester Schritt: NVIDIAs GR00T 2 (Nov. 2026) ist ein „World-Action-Model“, das künftiges Video und Roboteraktionen zusammen vorhersagt, vortrainiert mit rund 402.730 Stunden Ich-Perspektive-Video von Menschen, 10.184 Stunden Handgreifer-Demos (2.897 Aufgaben) und 23.500 Stunden Roboter-Teleoperation. Bei 50 Aufgaben, die der Zielroboter nie gesehen hat, gelingt es zero-shot in 40 % der Fälle und nach fünf Demos und 30 Minuten Feinabstimmung auf einer RTX 5090 in 95 %; die Turbo-Version mit 2 Mrd. Parametern läuft auf einem Unitree G1 mit 124 ms pro Schritt auf Jetson AGX Thor. Das sind NVIDIAs eigene Forschungsergebnisse, der Code ist für Dezember angekündigt, Kundeneinsätze werden nicht genannt. Früh, aber explosiv aktiv."),
+    E("NVIDIA GEAR, GR00T 2 (Nov 2026); NVIDIA GTC 2026; company releases","NVIDIA GEAR, GR00T 2 (Nov. 2026); NVIDIA GTC 2026; Firmenreleases"),
+    "note", E("early, iterating fast; GR00T 2 numbers are NVIDIA's own research results","früh, iteriert schnell; GR00T-2-Zahlen sind NVIDIAs eigene Forschungsergebnisse")),
   U(12,"NVIDIA Omniverse, Siemens, GE Digital","prod",2,"strong",
     E("Digital twins","Digital Twins"),
     E("training env for nearly all physical AI","Trainingsumgebung für fast alle Physical AI"),
@@ -2506,11 +2506,40 @@ const UC = [
     E("Chicago's Inspector General (2021) found signs of a gun crime in only 4,556 of 50,176 ShotSpotter alerts (9.1%); New York's Comptroller (20 Jun 2024) found 13% confirmed shootings but a 1:38-minute lead over emergency calls. An NIJ study (Feb 2024) shows no decline in shootings but more guns recovered. Chicago left in 2024 (about $9M in revenue), yet SoundThinking reports $104.1M for 2025 and 10 new cities (company-reported), so this only partly belongs in the stopped cluster. The FTC acted against Evolv on 26 Nov 2024 (5:0) for deceptive advertising; certain school customers may cancel. An NYPD test (Oct 2024): 2,749 scans, 0 guns, 12 knives, 118 false alarms.",
       "Chicagos Generalinspektor (2021) fand nur bei 4.556 von 50.176 ShotSpotter-Alarmen Hinweise auf ein Waffendelikt (9,1 %); New Yorks Comptroller (20.6.2024) fand 13 % bestätigte Schüsse, aber 1:38 Minuten Vorsprung vor Notrufen. Eine NIJ-Studie (Feb. 2024) zeigt keine Abnahme von Schießereien, aber mehr sichergestellte Waffen. Chicago stieg 2024 aus (rund 9 Mio. $ Umsatz), trotzdem meldet SoundThinking für 2025 104,1 Mio. $ und 10 neue Städte (Firmenangabe), die Karte passt also nur teilweise in diesen Cluster. Die FTC ging am 26.11.2024 (5:0) gegen Evolv wegen irreführender Werbung vor, bestimmte Schulkunden dürfen kündigen. Ein NYPD-Test (Okt. 2024): 2.749 Scans, 0 Schusswaffen, 12 Messer, 118 Fehlalarme."),
     E("Chicago OIG (2021); NYC Comptroller (20 Jun 2024); NIJ (Feb 2024); FTC (26 Nov 2024); City & State (Oct 2024)","Chicago OIG (2021); NYC Comptroller (20.6.2024); NIJ (Feb. 2024); FTC (26.11.2024); City & State (Okt. 2024)"),
-    "warn", E("audits and regulator contradict the marketing","Prüfberichte und Aufsicht widersprechen dem Marketing"))
+    "warn", E("audits and regulator contradict the marketing","Prüfberichte und Aufsicht widersprechen dem Marketing")),
+
+  // ---- Added 2026-11-17: research round ----
+  U(4,"TOMRA Food (LUCAi, Compac Spectrim); Prima Frutta, Kings River Packing","prod",2,"strong",
+    E("AI fruit grading on packing lines","KI-Sortierung von Obst in Packhäusern"),
+    E("launched 2018; 3,500+ lanes sold by 2025 (vendor)","Start 2018; über 3.500 Bahnen verkauft bis 2025 (Hersteller)"),
+    E("<b>3,500+ grading lanes</b> sold worldwide with TOMRA's deep-learning grader LUCAi (vendor, 2025)","<b>Über 3.500 Sortierbahnen</b> weltweit mit TOMRAs Deep-Learning-Sortierung LUCAi verkauft (Hersteller, 2025)"),
+    E("On a packing line, cameras photograph every apple, cherry or orange from several sides, and a deep-learning model decides its grade: rot, sunburn, stem damage, size and colour, at up to 40,000 images per second. TOMRA says LUCAi, launched in 2018 as the first deep-learning grader for fresh fruit and trained on more than 20 seasons of images, now runs on apples, cherries, citrus, blueberries, stonefruit, kiwifruit and avocados. Its own page gives 3,500+ lanes sold and, in another section, 1,600+ installed. Named users: Prima Frutta in Linden, California, ran 132 cherry lanes in 2024, and the US citrus group Kings River Packing went from a 20-lane trial to almost 100 lanes across three packhouses in 2025. Accuracy (\">99% for difficult defects\") and a ~10% throughput gain at a New Zealand cherry packer come from vendor press releases; we found no independent field evaluation of accuracy or labour savings. Other makers sell optical graders too; the numbers here are TOMRA's. Distinct from the cards on recycling sortation and log grading.",
+      "Am Packband fotografieren Kameras jeden Apfel, jede Kirsche, jede Orange von mehreren Seiten, und ein Deep-Learning-Modell entscheidet über die Güteklasse: Fäulnis, Sonnenbrand, Stielschäden, Größe und Farbe, mit bis zu 40.000 Bildern pro Sekunde. Laut TOMRA läuft LUCAi, 2018 als erste Deep-Learning-Sortierung für Frischobst eingeführt und mit Bildern aus über 20 Saisons trainiert, heute bei Äpfeln, Kirschen, Zitrusfrüchten, Heidelbeeren, Steinobst, Kiwis und Avocados. Die eigene Seite nennt über 3.500 verkaufte Bahnen und an anderer Stelle über 1.600 installierte. Namentlich genannt: Prima Frutta in Linden, Kalifornien, mit 132 Kirschbahnen 2024, und die US-Zitrusgruppe Kings River Packing, die 2025 von einem Versuch mit 20 Bahnen auf fast 100 Bahnen in drei Packhäusern ging. Genauigkeit („>99 % bei schwierigen Fehlern“) und rund 10 % mehr Durchsatz bei einem neuseeländischen Kirschpacker stammen aus Pressemitteilungen des Herstellers; eine unabhängige Feldauswertung von Genauigkeit oder Personaleinsparung fanden wir nicht. Auch andere Hersteller verkaufen optische Sortierer; die Zahlen hier sind TOMRAs. Abgegrenzt von den Karten zu Recycling-Sortierung und Rundholz-Sortierung."),
+    E("TOMRA LUCAi page (Apr 2025); FreshPlaza (13 Jun 2025); FreshFruitPortal (7 May 2024)","TOMRA-Seite LUCAi (Apr. 2025); FreshPlaza (13.6.2025); FreshFruitPortal (7.5.2024)"),
+    "warn", E("all counts and accuracy figures are vendor-reported; two lane counts on the same page","alle Zahlen und Genauigkeiten vom Hersteller; zwei Bahnzahlen auf derselben Seite")),
+  U(6,"WSL Institute for Snow and Avalanche Research SLF (Davos)","early",3,"steady",
+    E("Machine-learning avalanche forecasting","Lawinenwarnung mit maschinellem Lernen"),
+    E("consulted daily by Swiss forecasters since about winter 2020/21","seit etwa Winter 2020/21 täglich von Schweizer Prognostikern genutzt"),
+    E("Three ML models consulted daily for the Swiss avalanche bulletin; skill <b>close to, but still below, human forecasters</b>","Drei ML-Modelle täglich für das Schweizer Lawinenbulletin genutzt; Trefferqualität <b>nahe an, aber noch unter der von Menschen</b>"),
+    E("The SLF in Davos writes Switzerland's public avalanche bulletin. For about three winters before 2023, and since then every season, its forecasters have consulted three machine-learning models fed by the SNOWPACK snow-cover simulation: a random forest that predicts the danger level, one that estimates how unstable the snowpack is, and one for natural avalanches. They run for 147 automated weather stations, up to 27 hours ahead, and appear as maps. A peer-reviewed comparison over the winters 2022/23 to 2024/25 found that the models reliably track rising avalanche activity, while the published human forecasts kept a small but statistically significant edge. The comparison is not independent: forecasters saw the model outputs while writing the bulletin, and the models had no field observations. The developers describe the models as a 'virtual forecaster' that helps, not one that decides; humans still set the danger level.",
+      "Das SLF in Davos schreibt das öffentliche Lawinenbulletin der Schweiz. Seit etwa drei Wintern vor 2023 und seither jede Saison ziehen seine Prognostiker drei Modelle des maschinellen Lernens heran, die mit der Schneedecken-Simulation SNOWPACK gespeist werden: ein Random Forest für die Gefahrenstufe, eines für die Instabilität der Schneedecke und eines für spontane Lawinen. Sie rechnen für 147 automatische Wetterstationen bis zu 27 Stunden voraus und erscheinen als Karten. Ein begutachteter Vergleich über die Winter 2022/23 bis 2024/25 fand, dass die Modelle steigende Lawinenaktivität verlässlich abbilden, die veröffentlichten menschlichen Prognosen aber einen kleinen, statistisch signifikanten Vorsprung behielten. Der Vergleich ist nicht unabhängig: Die Prognostiker sahen die Modellausgaben beim Schreiben des Bulletins, und die Modelle hatten keine Feldbeobachtungen. Die Entwickler sehen die Modelle als „virtuellen Prognostiker“, der hilft, nicht entscheidet; die Gefahrenstufe setzen weiter Menschen."),
+    E("Techel et al., NHESS (2025); van Herwijnen et al., ISSW (2023)","Techel et al., NHESS (2025); van Herwijnen et al., ISSW (2023)"),
+    "note", E("decision aid; humans set the danger level and still forecast slightly better","Entscheidungshilfe; Menschen setzen die Gefahrenstufe und prognostizieren noch etwas besser")),
+  U(11,"Debug (Google), Singapore National Environment Agency (Project Wolbachia)","early",2,"strong",
+    E("AI sex-sorting of mosquitoes against dengue","KI-Sortierung von Mücken gegen Dengue"),
+    E("6 million males a week in Singapore (2024) → over 10 million (2026)","6 Mio. Männchen pro Woche in Singapur (2024) → über 10 Mio. (2026)"),
+    E("Releases of Wolbachia males cut dengue by up to <b>77%</b> in Singapore towns (peer-reviewed); computer vision sorts out the females","Freisetzungen von Wolbachia-Männchen senkten Dengue in Singapurer Stadtteilen um bis zu <b>77 %</b> (begutachtet); Bildverarbeitung sortiert die Weibchen aus"),
+    E("Only male mosquitoes, which do not bite, may be released: the Wolbachia bacteria they carry make the eggs of wild females fail. Separating males from females at scale is the bottleneck. Debug, started at Verily and now part of Google, says it sorts adult mosquitoes with its own AI computer vision, described since 2018, after a first size-based separation of pupae; Singapore's own pupae sorter, co-developed by the NEA and Orinno, uses sieves, light and water flow, not AI. In Singapore's Project Wolbachia, a synthetic-control study of releases from 2018 to 2022 in four towns with 607,872 residents found up to 77.28% fewer dengue cases. In May 2026 Debug said it releases more than 10 million males a week in Singapore, up from 6 million in 2024, and more than 1 billion worldwide (Singapore, Italy, Australia, US); in 2026 it sought approval for large releases in California and Florida. Earlier, a Fresno trial with 14.4 million males in 2018 cut female mosquitoes by 95.5% (Nature Biotechnology, 2020).",
+      "Freigesetzt werden dürfen nur Männchen, die nicht stechen: Die Wolbachia-Bakterien, die sie tragen, lassen die Eier wilder Weibchen absterben. Männchen und Weibchen in großer Zahl zu trennen ist der Engpass. Debug, bei Verily gestartet und heute Teil von Google, sortiert nach eigenen Angaben erwachsene Mücken mit eigener KI-Bildverarbeitung, beschrieben seit 2018, nach einer ersten Trennung der Puppen nach Größe; Singapurs eigener Puppensortierer, gemeinsam von NEA und Orinno entwickelt, arbeitet mit Sieben, Licht und Wasserstrom, ohne KI. In Singapurs Project Wolbachia fand eine Synthetic-Control-Studie der Freisetzungen von 2018 bis 2022 in vier Stadtteilen mit 607.872 Einwohnern bis zu 77,28 % weniger Dengue-Fälle. Im Mai 2026 gab Debug an, in Singapur über 10 Mio. Männchen pro Woche freizusetzen, nach 6 Mio. im Jahr 2024, und weltweit über 1 Mrd. (Singapur, Italien, Australien, USA); 2026 beantragte es große Freisetzungen in Kalifornien und Florida. Zuvor senkte ein Versuch in Fresno mit 14,4 Mio. Männchen 2018 die Zahl der Weibchen um 95,5 % (Nature Biotechnology, 2020)."),
+    E("Lim et al., Lancet Microbe (2024); Crawford et al., Nat Biotechnol (2020); Debug announcement via TechEdt (12 May 2026)","Lim et al., Lancet Microbe (2024); Crawford et al., Nat Biotechnol (2020); Debug-Ankündigung via TechEdt (12.5.2026)"),
+    "warn", E("the dengue effect belongs to the Wolbachia method, not the AI; sorting accuracy unpublished, release counts from the company","der Dengue-Effekt gehört zur Wolbachia-Methode, nicht zur KI; Sortiergenauigkeit unveröffentlicht, Freisetzungszahlen vom Unternehmen"))
 ];
 
 // ---------- source URLs (keyed by English use-case name); verified July 2026 ----------
 const URLS = {
+  "AI fruit grading on packing lines":"https://www.tomra.com/food/tomra-food-technology/lucai",
+  "Machine-learning avalanche forecasting":"https://nhess.copernicus.org/articles/25/3333/2025/",
+  "AI sex-sorting of mosquitoes against dengue":"https://doi.org/10.1016/S2666-5247(23)00397-X",
   "ML anomaly triggers at the LHC":"https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/MLG-25-001/index.html",
   "Connectomics: AI reconstructs brains":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/",
   "AI triage of sky surveys":"https://skyandtelescope.org/astronomy-news/rubin-observatory-sends-800000-alerts-to-astronomers-per-night/",
@@ -2665,7 +2694,7 @@ const URLS = {
   "Emissions satellites":"https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite",
   "Finance / accounting":"https://ramp.com/blog/ramp-policy-agent-ga-launch",
   "Firefighting robots":"https://lafd.org/news/lafd-debuts-rs3-first-robotic-firefighting-vehicle-united-states",
-  "Foundation models for robotics":"https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world",
+  "Foundation models for robotics":"https://research.nvidia.com/labs/gear/gr00t-2/",
   "Fraud / AML (banking)":"https://verafin.com/news/nasdaq-verafin-announces-expansion-of-its-agentic-ai-workforce/",
   "Game development":"https://www.totallyhuman.io/blog/the-surprising-new-number-of-genai-games-on-steam",
   "Grid energy trading":"https://reneweconomy.com.au/tesla-big-battery-paves-way-for-artificial-intelligence-to-dominate-energy-trades-31949/",
@@ -2724,6 +2753,13 @@ const URLS = {
    n = Anzeigename wie im prov-Feld, u = offizielle Unternehmensseite.
    Jede URL wurde abgerufen und der Firma zugeordnet; ungeprueft = nicht aufgenommen. */
 const COMPANIES = {
+  "AI fruit grading on packing lines":[
+    {n:"TOMRA Food", u:"https://www.tomra.com/food"}],
+  "Machine-learning avalanche forecasting":[
+    {n:"WSL Institute for Snow and Avalanche Research SLF", u:"https://www.slf.ch"}],
+  "AI sex-sorting of mosquitoes against dengue":[
+    {n:"Debug (Google)", u:"https://debug.com"},
+    {n:"National Environment Agency (Singapore)", u:"https://www.nea.gov.sg"}],
   "ML anomaly triggers at the LHC":[
     {n:"CMS", u:"https://cms.cern"},
     {n:"hls4ml", u:"https://fastmachinelearning.org/hls4ml/"}],
@@ -3452,6 +3488,9 @@ for (const k in UI.en) if (UI.mn[k] === undefined) UI.mn[k] = UI.en[k];
    k: train = Training grosser Modelle, inf = Inferenz im Rechenzentrum,
       edge = Inferenz auf dem Geraet, sim = GPU-Simulation, sub = Substrat. */
 const COMPUTE = {
+  "AI fruit grading on packing lines":[1, "edge"],
+  "Machine-learning avalanche forecasting":[1, "inf"],
+  "AI sex-sorting of mosquitoes against dengue":[1, "edge"],
   "ML anomaly triggers at the LHC":[1, "edge"],
   "Connectomics: AI reconstructs brains":[3, "inf"],
   "AI triage of sky surveys":[2, "inf"],
@@ -3653,6 +3692,9 @@ UC.forEach(function(x){ const c = COMPUTE[x.name.en]; x.ci = c?c[0]:1; x.ck = c?
    lernt oder entscheidet; Art "standard" = kein KI-Kern, zaehlt nicht.
    Ereignis und Quelle je Karte: startjahre_2026-11-02.md */
 const SINCE = {
+  "AI fruit grading on packing lines":[2018, "commercial", "high"],
+  "Machine-learning avalanche forecasting":[2020, "pilot", "high"],
+  "AI sex-sorting of mosquitoes against dengue":[2018, "pilot", "high"],
   "Robotaxis / autonomous driving":[2016, "pilot", "high"],
   "Autonomous trucks":[2016, "pilot", "high"],
   "eVTOL / flying taxis":[2018, "pilot", "medium"],
@@ -4089,6 +4131,30 @@ CLUSTERS.forEach(function(c){
 
 // ---- use-case translations (keyed by English use-case name) ----
 const MN_UC = {
+  "AI fruit grading on packing lines":{
+    name:"Савлах шугам дээр жимсийг хиймэл оюунаар ангилах",
+    glab:"2018 онд гарсан; 2025 он гэхэд 3,500 гаруй шугам зарагдсан (үйлдвэрлэгчийн)",
+    metric:"TOMRA-гийн гүн сургалтын ангилагч LUCAi-тай <b>3,500 гаруй ангилах шугам</b> дэлхий даяар зарагдсан (үйлдвэрлэгч, 2025)",
+    detail:"Савлах шугам дээр камерууд алим, интоор, жүрж бүрийг хэд хэдэн талаас нь зураг авч, гүн сургалтын загвар түүний зэрэглэлийг шийддэг: ялзрал, нарны түлэгдэл, ишний гэмтэл, хэмжээ, өнгө, секундэд 40,000 хүртэл зураг. TOMRA-гийн хэлснээр 2018 онд шинэ жимсний анхны гүн сургалтын ангилагч болж гарсан, 20 гаруй улирлын зургаар сургагдсан LUCAi одоо алим, интоор, цитрус, нэрс, чулуун жимс, киви, авокадо дээр ажилладаг. Үйлдвэрлэгчийн өөрийн хуудсанд 3,500 гаруй шугам зарагдсан, өөр хэсэгт нь 1,600 гаруй суурилуулсан гэж бичсэн. Нэрлэгдсэн хэрэглэгчид: Калифорнийн Линден дэх Prima Frutta 2024 онд интоорын 132 шугам ажиллуулсан, АНУ-ын цитрусын Kings River Packing групп 2025 онд 20 шугамын туршилтаас гурван савлах байранд бараг 100 шугам болгосон. Нарийвчлал (\"хүнд согогт >99%\") болон Шинэ Зеландын интоор савлагч дахь ~10% илүү гүйцэтгэл нь үйлдвэрлэгчийн хэвлэлийн мэдээнээс гаралтай; нарийвчлал эсвэл ажиллах хүчний хэмнэлтийн бие даасан хээрийн үнэлгээ олдсонгүй. Бусад үйлдвэрлэгч ч оптик ангилагч зардаг; энд байгаа тоо TOMRA-гийнх. Дахин боловсруулалтын ангилалт, дүнзний ангилалтын картаас ялгаатай.",
+    flag:"бүх тоо, нарийвчлал үйлдвэрлэгчийн; нэг хуудсанд хоёр өөр шугамын тоо"},
+  "Machine-learning avalanche forecasting":{
+    name:"Машин сургалтаар нурангийн аюулыг урьдчилан таамаглах",
+    glab:"2020/21 оны өвлөөс хойш Швейцарийн мэргэжилтнүүд өдөр бүр ашигладаг",
+    metric:"Швейцарийн нурангийн мэдээнд өдөр бүр гурван ML загвар ашигладаг; ур чадвар нь <b>хүний таамаглалд ойр, гэхдээ одоохондоо доогуур</b>",
+    detail:"Давос дахь SLF Швейцарийн олон нийтэд зориулсан нурангийн мэдээг гаргадаг. 2023 оноос өмнөх гурван өвөл болон түүнээс хойш улирал бүр тэдний мэргэжилтнүүд SNOWPACK цасан бүрхүүлийн симуляцаас өгөгдөл авдаг гурван машин сургалтын загварыг ашигладаг: аюулын түвшинг таамагладаг random forest, цасан бүрхүүл хэр тогтворгүйг үнэлдэг загвар, байгалийн нурангийн загвар. Тэд 147 автомат цаг уурын станцад 27 цаг хүртэл урьдчилан тооцож, газрын зураг хэлбэрээр гардаг. 2022/23-аас 2024/25 оны өвлийн хооронд хийсэн хянан магадлагдсан харьцуулалтаар загварууд нурангийн идэвхжил нэмэгдэхийг найдвартай тусгадаг ч нийтлэгдсэн хүний таамаглал бага боловч статистикийн хувьд ач холбогдолтой давуу талаа хадгалсан. Харьцуулалт бие даасан биш: мэргэжилтнүүд мэдээгээ бичихдээ загварын үр дүнг харж байсан, загваруудад хээрийн ажиглалт байгаагүй. Хөгжүүлэгчид загваруудыг шийддэг биш, тусалдаг \"виртуал мэргэжилтэн\" гэж үздэг; аюулын түвшинг хүмүүс тогтоосоор байна.",
+    flag:"шийдвэрийн туслах; аюулын түвшинг хүн тогтоож, бага зэрэг илүү сайн таамагладаг"},
+  "AI sex-sorting of mosquitoes against dengue":{
+    name:"Денгийн эсрэг шумуулыг хүйсээр нь хиймэл оюунаар ангилах",
+    glab:"Сингапурт долоо хоногт 6 сая эр шумуул (2024) → 10 саяас дээш (2026)",
+    metric:"Wolbachia-тай эр шумуул суллах нь Сингапурын хорооллуудад денгийг <b>77%</b> хүртэл бууруулсан (хянан магадлагдсан); дүрс боловсруулалт эм шумуулыг ялгадаг",
+    detail:"Зөвхөн хаздаггүй эр шумуулыг суллаж болно: тэдний тээж буй Wolbachia бактери зэрлэг эм шумуулын өндгийг үр хөврөлгүй болгодог. Эр, эмийг их хэмжээгээр ялгах нь гол саад. Verily-д эхэлж одоо Google-ийн нэг хэсэг болсон Debug өсвөр шумуулыг хэмжээгээр нь эхлээд ялгасны дараа насанд хүрсэн шумуулыг өөрийн хиймэл оюуны дүрс боловсруулалтаар ангилдаг гэж мэдэгддэг (2018 оноос тайлбарласан); Сингапурын NEA ба Orinno-гийн хамтран бүтээсэн өсвөр шумуулын ангилагч хиймэл оюун биш, шүүр, гэрэл, усны урсгал ашигладаг. Сингапурын Project Wolbachia-д 2018-2022 онд 607,872 оршин суугчтай дөрвөн хороололд хийсэн суллалтын synthetic control судалгаагаар денгийн тохиолдол 77.28% хүртэл буурсан. 2026 оны 5-р сард Debug Сингапурт долоо хоногт 10 саяас дээш эр шумуул (2024 онд 6 сая), дэлхий даяар 1 тэрбумаас дээш (Сингапур, Итали, Австрали, АНУ) суллаж байгаагаа мэдэгдсэн; 2026 онд Калифорни, Флоридад томоохон суллалт хийх зөвшөөрөл хүссэн. Өмнө нь Фресно дахь туршилтад 2018 онд 14.4 сая эр шумуул суллаж эм шумуулыг 95.5%-иар бууруулсан (Nature Biotechnology, 2020).",
+    flag:"денгийн нөлөө нь хиймэл оюун биш Wolbachia аргынх; ангилалтын нарийвчлал нийтлэгдээгүй, суллалтын тоо компанийх"},
+  "Livestock welfare monitoring":{
+    name:"Саравчин дахь малын сайн сайхан байдлын хяналт",
+    glab:"46 саалийн ферм, бүх нийлүүлэлтийн сүлжээ, камерууд үнээг тасралтгүй үнэлдэг",
+    metric:"<b>46 ферм</b> - туршилтын сүрэг биш, жижиглэн худалдаачны бүх нийлүүлэлтийн сүлжээ хяналтад",
+    detail:"Хашааны дээрх камерууд малын явдал, биеийн байдал, зан төлөвийг мал эмч нартай хамт сургасан алгоритмаар үнэлдэг. Онцлог нь техник биш, хамрах хүрээ: нэг газарт туршилт биш, нэг жижиглэн худалдаачинд нийлүүлдэг бүх ферм дээр хяналт нэвтрүүлсэн, 2026 оны 8-р сарын 27-нд зарласан. Анхдагч гэсэн мэдэгдэл нь худалдаачных өөрийнх бөгөөд үр дүнгийн тоо - доголол цөөрсөн, биеийн байдлын оноо сайжирсан - хараахан нийтлэгдээгүй. Шувууны аж ахуйд энэ нь илүү эрт шатандаа: Royal GD-ийн FlockVision камерын систем хиймэл оюунаар бройлерын арван зургаан зан төлөвийг үнэлдэг, Нидерландын таван арилжааны фермд туршиж, 2025 онд нэвтрүүлсэн бөгөөд \"өсөн нэмэгдэж буй\" фермд ашиглагдаж байна; ферм тоо, үр дүнгийн тоо нийтлэгдээгүй. Шувууны байранд явдаг роботууд (жишээ нь Tibot Spoutnic) голчлон сүргийг хөдөлгөдөг; тэдний нийтэлсэн үүрэгт хиймэл оюун дурдагдаагүй.",
+    flag:"Хэмжээг худалдаачин баталсан; малын сайн сайхан байдалд үзүүлэх нөлөө олон нийтэд хараахан хэмжигдээгүй"},
   "Agent-to-agent protocol (A2A)":{
     name:"Компаниуд хоорондын агентын протокол (A2A)",
     glab:"2025 онд Google-ийн төслөөс Linux Foundation-ийн стандарт болсон",
@@ -4716,9 +4782,9 @@ const MN_UC = {
   "Foundation models for robotics":{
     name:"Робот техникийн суурь загвар",
     glab:"хэдэн сар тутам шинэ загварын үе",
-    metric:"Ерөнхий зориулалтын роботын бодлого; GR00T 1.7 (GTC 2026.03); Unitree G1, AgiBot дээр баталгаажсан",
-    detail:"Роботын суурь загварууд (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) хэдэн сар тутам шинэчлэгдэж, хүн хэлбэрт ба ерөнхий роботыг сургах боломжтой болгодог программ давхарга юм. Эрт ч тэсрэлттэй идэвхтэй.",
-    flag:"эрт, хурдан давтагддаг"},
+    metric:"GR00T 2 (2026.11, судалгаа): 50 шинэ даалгаварт <b>40% zero-shot</b>, 5 үзүүлэнгийн дараа 95%; GR00T 1.7 Unitree G1, AgiBot дээр баталгаажсан",
+    detail:"Роботын суурь загварууд (NVIDIA GR00T/Cosmos, Physical Intelligence π0, Gemini Robotics, Figure Helix) хэдэн сар тутам шинэчлэгдэж, хүн хэлбэрт ба ерөнхий роботыг сургах боломжтой болгодог программ давхарга юм. Хамгийн сүүлийн алхам: NVIDIA-ийн GR00T 2 (2026.11) нь ирээдүйн видео болон роботын үйлдлийг хамт таамагладаг \"ертөнц-үйлдлийн загвар\" бөгөөд хүний нүднээс авсан ойролцоогоор 402,730 цагийн видео, гар баригчийн 10,184 цагийн үзүүлэн (2,897 даалгавар), роботын алсын удирдлагын 23,500 цагийн өгөгдлөөр урьдчилан сургагдсан. Зорилтот роботын урьд үзээгүй 50 даалгаварт zero-shot байдлаар 40%, таван үзүүлэн ба нэг RTX 5090 дээр 30 минутын нарийн тохируулгын дараа 95% амжилттай; 2 тэрбум параметртэй Turbo хувилбар Jetson AGX Thor дээр Unitree G1-д алхам бүрт 124 мс-д ажилладаг. Эдгээр нь NVIDIA-ийн өөрийн судалгааны үр дүн, кодыг 12-р сард гаргана гэж зарласан, хэрэглэгчийн ашиглалт нэрлэгдээгүй. Эрт ч тэсрэлттэй идэвхтэй.",
+    flag:"эрт, хурдан давтагддаг; GR00T 2-ын тоо NVIDIA-ийн өөрийн судалгааны үр дүн"},
   "Digital twins":{
     name:"Дижитал ихэр",
     glab:"бараг бүх физик хиймэл оюуны сургалтын орчин",

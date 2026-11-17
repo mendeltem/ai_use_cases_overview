@@ -5444,6 +5444,70 @@
           "yr": "2025"
         }
       ]
+    },
+    "ai-fruit-grading-on-packing-lines": {
+      "name": {
+        "en": "AI fruit grading on packing lines",
+        "de": "KI-Sortierung von Obst in Packhäusern"
+      },
+      "places": [
+        {
+          "n": "Prima Frutta Packing, Linden, California",
+          "c": "USA",
+          "la": 38.021,
+          "lo": -121.084,
+          "en": "Cherry packer that ran TOMRA's deep-learning grader LUCAi on all its machines, 132 lanes, for the 2024 season; it reports far fewer good-in-bad errors, without figures (vendor press release).",
+          "de": "Kirschpacker, der TOMRAs Deep-Learning-Sortierung LUCAi in der Saison 2024 auf allen Maschinen nutzte, 132 Bahnen; er meldet deutlich weniger Fehlsortierungen, ohne Zahlen (Pressemitteilung des Herstellers).",
+          "src": "https://www.freshfruitportal.com/archive/2024/05/07/efficiency-and-profitability-in-cherry-packhouses-with-tomra-lucai-deep-learning-technology/",
+          "yr": "2024"
+        }
+      ]
+    },
+    "machine-learning-avalanche-forecasting": {
+      "name": {
+        "en": "Machine-learning avalanche forecasting",
+        "de": "Lawinenwarnung mit maschinellem Lernen"
+      },
+      "places": [
+        {
+          "n": "WSL Institute for Snow and Avalanche Research SLF, Davos",
+          "c": "CHE",
+          "la": 46.812,
+          "lo": 9.847,
+          "en": "Writes the Swiss avalanche bulletin; its forecasters consult three machine-learning models daily, run for 147 automated weather stations.",
+          "de": "Schreibt das Schweizer Lawinenbulletin; die Prognostiker ziehen täglich drei ML-Modelle heran, die für 147 automatische Wetterstationen rechnen.",
+          "src": "https://nhess.copernicus.org/articles/25/3333/2025/",
+          "yr": "2025"
+        }
+      ]
+    },
+    "ai-sex-sorting-of-mosquitoes-against-dengue": {
+      "name": {
+        "en": "AI sex-sorting of mosquitoes against dengue",
+        "de": "KI-Sortierung von Mücken gegen Dengue"
+      },
+      "places": [
+        {
+          "n": "Tampines and Yishun, Singapore",
+          "c": "SGP",
+          "la": 1.354,
+          "lo": 103.944,
+          "en": "Project Wolbachia release towns; releases from 2018 to 2022 in four towns cut dengue by up to 77% against synthetic controls (Lancet Microbe 2024).",
+          "de": "Freisetzungsgebiete von Project Wolbachia; Freisetzungen 2018 bis 2022 in vier Stadtteilen senkten Dengue gegenüber synthetischen Kontrollen um bis zu 77 % (Lancet Microbe 2024).",
+          "src": "https://doi.org/10.1016/S2666-5247(23)00397-X",
+          "yr": "2022"
+        },
+        {
+          "n": "Fresno County, California",
+          "c": "USA",
+          "la": 36.737,
+          "lo": -119.787,
+          "en": "Debug release trial: 14.4 million Wolbachia males across three neighbourhoods in 2018 cut female mosquitoes by 95.5% at peak season.",
+          "de": "Freisetzungsversuch von Debug: 14,4 Mio. Wolbachia-Männchen in drei Wohnvierteln 2018 senkten die Zahl der Weibchen in der Hochsaison um 95,5 %.",
+          "src": "https://doi.org/10.1038/s41587-020-0471-x",
+          "yr": "2018"
+        }
+      ]
     }
   },
   "companies": {
